@@ -1,0 +1,7 @@
+while True:
+    reply = input("Enter digit")
+    if reply == "stop":break
+    elif not reply.isdigit():
+        print("Error!" * 5)
+    else: print(int(reply) ** 2)
+print("End")
