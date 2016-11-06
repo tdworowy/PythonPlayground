@@ -5,6 +5,7 @@ import sys
 from threading import Event, Lock, Thread
 
 
+
 class SimpleChatWWW():
     def __init__(self, the_end):
         sys.stdout.write("[ INFO ] Simple chat initialization")
@@ -49,8 +50,8 @@ class SimpleChatWWW():
             return {'status':(400,'Bad request')}
         if type(obj) is not dict or 'text' not in obj:
             return {'status':(400,'Bad request')}
-        text = obj['text']    
-        if type(text) is not str and  type(text) is not unicode:
+        text = obj['text']
+        if type(text) is not str :
             return {'status':(400,'Bad request')}
         sender_ip = req['client_ip']
         with self.messages_lock:
@@ -74,7 +75,7 @@ class SimpleChatWWW():
              return {'status':(400,'Bad request')}
 
         with self.messages_lock:
-            last_message_id -= self.messages_offset
+            last_massage_id -= self.messages_offset
             if last_massage_id <0:
                 last_massage_id =0
             messages = self.messages[last_massage_id:]

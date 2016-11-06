@@ -1,6 +1,6 @@
 
-from TestChat import SimpleChatWWW
-from TestChat import serverHTTP
+from Playground.TestChat.TestChat import SimpleChatWWW
+from Playground.TestChat.TestChat import serverHTTP
 import sys
 import socket
 from threading import Event

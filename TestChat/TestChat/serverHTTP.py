@@ -12,7 +12,7 @@ class ClientThread(Thread):
         self.website = website
 
     def __recy_http_request(self):
-        data = recv_until(self.s, '\r\n\r\n')
+        data = self.recv_until(self.s, '\r\n\r\n')
         if not data:
             return None
         lines = data.split('\r\n')
@@ -34,9 +34,9 @@ class ClientThread(Thread):
         if method == 'POST':
           try:
               data_length = int (headers['content-length'])
-              data = recv_all(self.s, data_length)
+              data = self.recv_all(self.s, data_length)
           except KeyError as e:
-              data = recv_remaining(self.s)
+              data = self.recv_remaining(self.s)
           except ValueError as e:
               return None
           else:
@@ -98,7 +98,7 @@ class ClientThread(Thread):
         except socket.timeout as e :
             sys.stdout.write("[WARNING] Client %s:%i tomed out. "
                              "Disconnecting. \n" % self.s_addr)
-            self.s.shutdown(socked.SHUT_RDWR)
+            self.s.shutdown(socket.SHUT_RDWR)
             self.s.close()
 
     def recv_until(sock, txt):
