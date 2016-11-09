@@ -1,12 +1,31 @@
-x = "test"*10
-while x:
-    print(x)
-    x = x[1:]
+while True:
+    reply = input("Enter digit")
+    if reply == "stop":break
+    elif not reply.isdigit():
+        print("Error!" * 5)
+    else: print(int(reply) ** 2)
+print("End")
 
 
-x = 100
-while x:
-    x -= 1
-    print(x)
-    if x % 2 != 0: continue
-    print(x, end=' ')
+
+while True:
+    reply = input("Enter digit")
+    if reply == "stop":break
+    try:
+        num = int(reply)
+    except:
+        print("Error")
+    else:
+        print(int(reply)*2)
+print("End")
+
+
+L = [1,2,3,4]
+while L:
+    front , L =L[0],L[1:]
+    print(front,L)
+
+L = [1, 2, 3, 4]
+while L:
+        front, *L= L
+        print(front, L)
