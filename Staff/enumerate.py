@@ -6,3 +6,12 @@ for(offset,item) in enumerate(s):
 
 e = enumerate(s)
 print(e)
+
+
+E = enumerate('SPAM')
+I = iter(E)
+print(next(I))
+print(next(I))
+print(next(I))
+print(list(E))
+print(list(enumerate('SPAM')))
