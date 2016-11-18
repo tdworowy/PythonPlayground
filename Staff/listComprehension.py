@@ -28,7 +28,7 @@ print(lines)
 lines = [line.rstrip() for line in open("testFile.txt")]
 print(lines)
 
-f2 = open('testFike2.txt','r+')
+f2 = open('testFile2.txt','r+')
 for _ in range(1,30):
     print(''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(50)), file=f2)
 lines = f2.readlines()

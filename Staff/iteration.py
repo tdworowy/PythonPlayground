@@ -1,3 +1,8 @@
+import functools
+import operator
+import random
+import string
+
 L = [1,2,3,4]
 I = iter(L)
 print(next(I))
@@ -10,3 +15,24 @@ D= {'a':1,'b':2,'c':3}
 
 for key in D:
     print(key ,D[key])
+
+    f2 = open('testFile2.txt', 'r+')
+    for _ in range(1, 30):
+        print(''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(50)), file=f2)
+    lines = f2.readlines()
+    print(lines)
+
+
+print(sorted(open("testFile2.txt")))
+print(list(enumerate(open("testfile2.txt"))))
+print(list(filter(bool,open("testFile2.txt"))))
+functools.reduce(operator.add,open("testFile2.txt"))
+
+print(list(open("testFile2.txt")))
+tuple((open("testFile2.txt")))
+
+print(sum([1,2,3]))
+print(max([1,2,3]))
+print(min([1,2,3]))
+print(any([1,2,3,"","Spam"]))
+print(all([1,2,3,"","Spam"]))
