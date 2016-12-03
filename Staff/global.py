@@ -1,5 +1,5 @@
 
-# for python 2.6 (can us nonlocal in 3.x)
+# for python 2.6 (can use nonlocal in 3.x)
 def tester(start):
     global state
     state = start

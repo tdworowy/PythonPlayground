@@ -1,8 +1,11 @@
 def tester(start):
     state = start
-    def nasted (label):
-        print(label,state)
-    return nasted
+
+    def nested(label):
+        print(label, state)
+
+    return nested
+
 
 F = tester(0)
 
@@ -12,11 +15,14 @@ print(F('Dupa'))
 
 def tester(start):
     state = start
-    def nasted (label):
-        nonlocal  state
-        print(label,state)
-        state +=1
-    return nasted
+
+    def nested(label):
+        nonlocal state
+        print(label, state)
+        state += 1
+
+    return nested
+
 
 F = tester(0)
 print(F('Spam'))
