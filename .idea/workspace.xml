@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74059ddd-4c74-4733-a753-22db6be1b4c0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Staff/calss_.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Staff/functionAttribute.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Staff/functionArguments.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Staff/global.py" afterPath="$PROJECT_DIR$/Staff/global.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Staff/nonLocal.py" afterPath="$PROJECT_DIR$/Staff/nonLocal.py" />
     </list>
     <ignored path="Playground.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -88,11 +85,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="calss_.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="calss_.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Staff/calss_.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
               <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="functionArguments.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Staff/functionArguments.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -113,16 +120,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="544">
               <caret line="32" column="24" lean-forward="false" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="file4.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Staff/file4.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="8" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -182,6 +179,7 @@
         <option value="$PROJECT_DIR$/Staff/functionAttribute.py" />
         <option value="$PROJECT_DIR$/Staff/global.py" />
         <option value="$PROJECT_DIR$/Staff/nonLocal.py" />
+        <option value="$PROJECT_DIR$/Staff/functionArguments.py" />
       </list>
     </option>
   </component>
@@ -251,24 +249,7 @@
       <recent name="D:\Google_drive\Python\Playground\Staff" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.functionAttribute">
-    <configuration default="false" name="lambda" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Staff/otherStaff" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Playground" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Staff/otherStaff/lambda.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.functionArguments">
     <configuration default="false" name="nonLocal" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -338,6 +319,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Playground" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Staff/functionAttribute.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="functionArguments" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Staff" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Playground" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Staff/functionArguments.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -477,19 +475,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.lambda" />
-      <item index="1" class="java.lang.String" itemvalue="Python.nonLocal" />
-      <item index="2" class="java.lang.String" itemvalue="Python.global" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in calss_" />
-      <item index="4" class="java.lang.String" itemvalue="Python.functionAttribute" />
+      <item index="0" class="java.lang.String" itemvalue="Python.nonLocal" />
+      <item index="1" class="java.lang.String" itemvalue="Python.global" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in calss_" />
+      <item index="3" class="java.lang.String" itemvalue="Python.functionAttribute" />
+      <item index="4" class="java.lang.String" itemvalue="Python.functionArguments" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.functionAttribute" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in calss_" />
-        <item index="2" class="java.lang.String" itemvalue="Python.global" />
-        <item index="3" class="java.lang.String" itemvalue="Python.nonLocal" />
-        <item index="4" class="java.lang.String" itemvalue="Python.lambda" />
+        <item index="0" class="java.lang.String" itemvalue="Python.functionArguments" />
+        <item index="1" class="java.lang.String" itemvalue="Python.functionAttribute" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in calss_" />
+        <item index="3" class="java.lang.String" itemvalue="Python.global" />
+        <item index="4" class="java.lang.String" itemvalue="Python.nonLocal" />
       </list>
     </recent_temporary>
   </component>
@@ -605,7 +603,14 @@
       <option name="project" value="LOCAL" />
       <updated>1480702759430</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="update">
+      <created>1480782735598</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1480782735598</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -628,7 +633,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5570825" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -669,7 +674,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Staff/file3.py" />
     <entry file="file://$PROJECT_DIR$/Staff/file4.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -993,6 +997,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Staff/functionArguments.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
