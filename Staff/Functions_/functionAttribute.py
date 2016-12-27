@@ -4,7 +4,7 @@ def tester(start):
         print(label, nested.state)
         nested.state += 1
         nested.state = start
-        return nested
+    return nested
 
 F = tester(0)
 F("spam")
