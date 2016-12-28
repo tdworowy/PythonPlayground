@@ -6,10 +6,20 @@ def tester(start):
         nested.state = start
     return nested
 
-F = tester(0)
-F("spam")
-F('dupa')
+# F = tester(0)
+# F("spam")
+# F('dupa')
+#
+# g = tester(33)
+# g("spam2")
+# F('dupa2')
 
-g = tester(33)
-g("spam2")
-F('dupa2')
+
+def func(x):
+    if(x):func.count = 0
+    print(func.count)
+
+f = func
+f(True)
+f.count = 1
+f(False)
