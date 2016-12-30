@@ -11,6 +11,20 @@ class crawler():
     def googleURL(self, find):
         return "https://www.google.pl?gws_rd=ssl#q={x}".format(x=find)
 
+    def getLinksPages(self, URLs):
+        if not isinstance(URLs, list):
+            return self.getLinksPagesForBase(URLs)
+        else:
+            mapsList = []
+            for baseURL in URLs:
+                mapsList.append(self.getLinksPagesForBase(baseURL))
+            return mapsList
+
+    def getLinksPagesForBase(self, url):
+        linksParent = self.getLinksPage(url)
+        map_ = map(self.getLinksPage, linksParent)
+        return (list(map_))
+
     def getLinksPage(self, link):
         links = []
         try:
@@ -23,32 +37,15 @@ class crawler():
             print(ex)
         return self.regexLinks(links)
 
-    def getLinksPages(self, URLs):
-
-        if not isinstance(URLs, list): return self.getLinksPagesForBase(URLs)
-        else:
-            mapsList = []
-            for baseURL in URLs:
-                mapsList.append(self.getLinksPagesForBase(baseURL))
-            return mapsList
-
-
-    def getLinksPagesForBase(self,url):
-        linksParent = self.getLinksPage(url)
-        map_ = map(self.getLinksPage, linksParent)
-        return (list(map_))
-
     def regexLinks(self, text):
         all = re.findall(r'(https?://\S+)', str(text))
-        map_ = map(self.cleanLink,all)
+        map_ = map(self.cleanLink, all)
         list_ = list(map_)
         return list_
 
-
-    def cleanLink(self,link):
+    def cleanLink(self, link):
         if ('>' in link): link = link[:link.index('>')]
         return link.replace("\"", "")
-
 
 
 def main():
@@ -58,7 +55,6 @@ def main():
     linksList2 = bot.getLinksPages(linksList)
     print(linksList)
     print(linksList2)
-
 
 
 if __name__ == "__main__":
