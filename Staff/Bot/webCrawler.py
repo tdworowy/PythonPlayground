@@ -1,3 +1,4 @@
+import os
 import re
 
 import requests
@@ -47,14 +48,31 @@ class crawler():
         if ('>' in link): link = link[:link.index('>')]
         return link.replace("\"", "")
 
+    def tofile(self,list):
+        list = self.cleanList(list)
+        path = os.path.dirname(os.path.abspath(__file__))
+        f = open(path+"\\links.txt",'w')
+        for line in list:
+            f.write(line.strip()+'\n')
+            f.flush()
+        print("Links saved: "+str(len(list)))
+
+    def cleanList(self,list):
+         list = str(list).replace("[","").replace("]","")
+         list=list.split(',')
+         return list
 
 def main():
     bot = crawler()
-    googl = bot.googleURL("Testowanie")
+    googl = bot.googleURL("Tomasz Dworowy")
     linksList = bot.getLinksPages(googl)
     linksList2 = bot.getLinksPages(linksList)
-    print(linksList)
-    print(linksList2)
+    linksList3 = bot.getLinksPages(linksList2)
+    linksList4 = bot.getLinksPages(linksList3)
+
+    bot.tofile(linksList4)
+
+
 
 
 if __name__ == "__main__":
