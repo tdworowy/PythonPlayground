@@ -39,19 +39,19 @@ class TestStringMethods(unittest.TestCase):
         list1 = [0, 8]
         self.assertTrue(numbersPairSum.finndPair(list1, 8))
 
-    def test_8(self):
+    def test_9(self):
         notList = "Test"
         self.assertEqual(numbersPairSum.finndPair(notList, 8), "First argument must be list")
 
-    def test_9(self):
+    def test_10(self):
         list1 = [0]
         self.assertEqual(numbersPairSum.finndPair(list1, 8), "List must have at leas 2 elements")
 
-    def test_10(self):
+    def test_11(self):
         list1 = [1, 2]
         self.assertEqual(numbersPairSum.finndPair(list1, "A"), "Second argument must be the int")
 
-    def test_11(self):
+    def test_12(self):
         list1 = [1, 2]
         self.assertEqual(numbersPairSum.finndPair(list1, [1, 2, 3]), "Second argument must be the int")
 
