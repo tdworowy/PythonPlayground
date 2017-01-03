@@ -2,9 +2,9 @@ import sys
 import time
 
 if sys.platform[:3] == 'win':
-    timefunc = time.clock()
+    timefunc = time.clock
 else:
-    timefunc = time.time()
+    timefunc = time.time
 
 def trace(*args) : pass
 

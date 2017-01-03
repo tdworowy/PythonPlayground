@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74059ddd-4c74-4733-a753-22db6be1b4c0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Staff/moreStaff/PerformenceCheck.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Staff/myUtils/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Staff/myUtils/myTimer2.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Staff/myUtils/mytimer.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Staff/moreStaff/PerformenceCheck.py" afterPath="$PROJECT_DIR$/Staff/moreStaff/PerformenceCheck.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Staff/myUtils/myTimer2.py" afterPath="$PROJECT_DIR$/Staff/myUtils/myTimer2.py" />
     </list>
     <ignored path="Playground.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,9 +37,11 @@
       <file leaf-file-name="myTimer2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Staff/myUtils/myTimer2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="15" lean-forward="false" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
-              <folding />
+            <state relative-caret-position="102">
+              <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -834,7 +834,14 @@
       <option name="project" value="LOCAL" />
       <updated>1483288887545</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="update">
+      <created>1483467812781</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1483467812781</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1297,9 +1304,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Staff/myUtils/myTimer2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="15" lean-forward="false" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
-          <folding />
+        <state relative-caret-position="102">
+          <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
