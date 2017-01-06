@@ -12,3 +12,6 @@ print(test3)
 test4 = [M[row][col] * N[row][col] for row in range(3) for col in range(3)]
 
 print(test4)
+
+
+
