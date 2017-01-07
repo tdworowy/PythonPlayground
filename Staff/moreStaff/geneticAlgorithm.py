@@ -7,9 +7,9 @@ class Cities:
         print("Generate Cities")
         keys = self.generateKeysCombinations(count)
         values = [random.randrange(distanceRange[0], distanceRange[1], 10) for _ in range(len(keys))]
-        print("Values: ",values)
-        distances =dict({(key, value) for key in keys for value in values})
-        print("Before clan: ",distances)
+        print("Values: ", values)
+        distances = dict({(key, value) for key in keys for value in values})
+        print("Before clan: ", distances)
         clean = self.cleanCityList(distances)
         print("After clan: ", clean)
         return self.cleanCityList(clean)
@@ -35,26 +35,53 @@ class Cities:
         keys = dictionaries.keys()
         newDictionaries = dictionaries
         for key in keys:
-            #print(key)
+            # print(key)
             newDictionaries[key] = dictionaries[key[::-1]]
-            if key[0] is key[1] : newDictionaries[key] = 0
+            if key[0] is key[1]: newDictionaries[key] = 0
         return newDictionaries
 
 
-
-
 class TravelingSalesman():
-    def __init__(self, distances,initPopulation,iterations):
+    def __init__(self, distances, cityCount, initPopulationCount, iterations):
         self.distances = distances
-        self.iniPopulation = initPopulation
+        self.initPopulationCount = initPopulationCount
         self.iterations = iterations
-        #TODO
+        self.cityCount = cityCount
+
+    def generateInitialPopulation(self):
+        population = []
+        allKeys = list(self.distances.keys())
+        sample_size = random.randint(1, self.cityCount)
+        for i in range(self.initPopulationCount):
+            randomKeys = random.sample(allKeys, sample_size)
+            population.append([(key, self.distances[key]) for key in randomKeys])
+
+        return population
+
+    def displayPopulation(self, population):
+        print("Initial population size: ", len(population))
+        print("Initial population: ", population)
+        for vector in population:
+            print("vector size: ", len(vector))
+            print(vector)
+
+    def resolve(self):
+        initialPopulation = self.generateInitialPopulation()
+        self.displayPopulation(initialPopulation)
 
 
 def main():
     cities = Cities()
-    print(cities.generateCityDistances(20, (100, 1000)))
+    distances = cities.generateCityDistances(20, (100, 1000))
+    print(distances)
+    ts = TravelingSalesman(distances, 20, 30, 100)
+    ts.resolve()
 
 
 if __name__ == '__main__':
     main()
+
+#TODO
+# 1. w vektorze odległości powinny być posortowane , kontynłować goenrowanie i sprawdzanie initial population aż będzie odpowidenia ich ilość
+# 2. funkcja sprawdzajaca i krzyrzujaca
+# 3. mutacje
