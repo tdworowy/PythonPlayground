@@ -7,7 +7,7 @@ class Cities:
         print("Generate Cities")
         keys = self.generateKeysCombinations(count)
         values = [random.randrange(distanceRange[0], distanceRange[1], 10) for _ in range(len(keys))]
-        print(values)
+        print("Values: ",values)
         distances =dict({(key, value) for key in keys for value in values})
         print("Before clan: ",distances)
         clean = self.cleanCityList(distances)
@@ -20,7 +20,7 @@ class Cities:
         for i in range(count):
             try:
                 city1 = "City" + alphabet[i]
-                keys.extend([(city1, "City" + x) for x in alphabet[i:]])
+                keys.extend([(city1, "City" + x) for x in alphabet[:count]])
 
             except (IndexError):
                 index = 1
@@ -41,9 +41,14 @@ class Cities:
         return newDictionaries
 
 
-class travelingSalesman():
-    def __init__(self, distances):
-        self.distanes = distances
+
+
+class TravelingSalesman():
+    def __init__(self, distances,initPopulation,iterations):
+        self.distances = distances
+        self.iniPopulation = initPopulation
+        self.iterations = iterations
+        #TODO
 
 
 def main():
