@@ -117,3 +117,4 @@ if __name__ == '__main__':
 # 1. w vektorze odległości powinny być posortowane , kontynłować goenrowanie i sprawdzanie initial population aż będzie odpowidenia ich ilość
 # 2. funkcja sprawdzajaca i krzyrzujaca
 # 3. mutacje
+# and more
