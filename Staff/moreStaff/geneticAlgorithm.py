@@ -50,30 +50,42 @@ class TravelingSalesman():
 
     def generateInitialPopulation(self):
         population = []
-        allKeys = list(self.distances.keys())
-        sample_size = random.randint(1, self.cityCount)
-        for i in range(self.initPopulationCount):
-            randomKeys = random.sample(allKeys, sample_size)
-            keys = self.cleanInitialPopulation(randomKeys)
-            while(len(keys) < self.cityCount):#TODO
-                 keys.extend(self.cleanInitialPopulation(random.sample(allKeys, sample_size-len(keys))))
+        allRoutes = list(self.distances.keys())
 
+        for i in range(self.initPopulationCount):
+            randomRoute = random.sample(allRoutes, 1)
+            print("randomRoute ",randomRoute[0])
+            keys = self.cleanInitialPopulation(randomRoute[0],allRoutes)
+            print("Population keys: ", keys )
             population.append([(key, self.distances[key]) for key in keys])
 
         return population
 
-    def cleanInitialPopulation(self,keys):#TODO
-        newKeys = []
-        i =0
-        for key in keys:
-            first = key
-            for key in keys[i:]:
-                if first[1] == key[0]:
-                    newKeys.append(key)
-            i +=1
-            print(newKeys)
-        return newKeys
+    def cleanInitialPopulation(self,firstRoute,routes): #works fine before refactor now is shit
+        check = firstRoute
+        newRoutes = self.cleanList(check,routes)
+        if len(newRoutes) == self.cityCount:
+                   print("New Routes",newRoutes)
+                   return newRoutes
+        else:
+           check = newRoutes[-1]
+           return self.cleanList(check,newRoutes)
 
+    def cleanList(self,first,list):
+        check = first
+        print("Check: ", check)
+        print("List: ",list)
+        for route in list:
+             if check[1] == route[0]:
+                 list.append(route)
+                 print("List after append: ", list)
+                 print("List after append size: ", len(list))
+                 check = route
+             if len(list) >= self.cityCount:
+                return list
+        else:
+            print("New Routes", list)
+            return list
 
 
     def displayPopulation(self, population):
