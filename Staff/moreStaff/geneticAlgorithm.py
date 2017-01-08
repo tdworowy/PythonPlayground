@@ -64,7 +64,7 @@ class TravelingSalesman():
     def cleanInitialPopulation(self,firstRoute,routes): #works fine before refactor now is shit
         check = firstRoute
         newRoutes = self.cleanList(check,routes)
-        if len(newRoutes) == self.cityCount:
+        if len(newRoutes) >= self.cityCount: #self.cityCount is propably stupid
                    print("New Routes",newRoutes)
                    return newRoutes
         else:
@@ -73,19 +73,21 @@ class TravelingSalesman():
 
     def cleanList(self,first,list):
         check = first
+        newList = list;
         print("Check: ", check)
-        print("List: ",list)
-        for route in list:
+        print("List: ",newList)
+        print("List size: ", len(newList))
+        for route in newList:
              if check[1] == route[0]:
-                 list.append(route)
-                 print("List after append: ", list)
-                 print("List after append size: ", len(list))
+                 newList.append(route)
+                 print("List after append: ", newList)
+                 print("List after append size: ", len(newList))
                  check = route
-             if len(list) >= self.cityCount:
-                return list
+             if len(newList) >= self.cityCount: #self.cityCount is propably stupid
+                return newList
         else:
-            print("New Routes", list)
-            return list
+            print("New Routes", newList)
+            return newList
 
 
     def displayPopulation(self, population):
