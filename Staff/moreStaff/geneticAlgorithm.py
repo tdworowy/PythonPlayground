@@ -54,9 +54,27 @@ class TravelingSalesman():
         sample_size = random.randint(1, self.cityCount)
         for i in range(self.initPopulationCount):
             randomKeys = random.sample(allKeys, sample_size)
-            population.append([(key, self.distances[key]) for key in randomKeys])
+            keys = self.cleanInitialPopulation(randomKeys)
+            while(len(keys) < self.cityCount):#TODO
+                 keys.extend(self.cleanInitialPopulation(random.sample(allKeys, sample_size-len(keys))))
+
+            population.append([(key, self.distances[key]) for key in keys])
 
         return population
+
+    def cleanInitialPopulation(self,keys):#TODO
+        newKeys = []
+        i =0
+        for key in keys:
+            first = key
+            for key in keys[i:]:
+                if first[1] == key[0]:
+                    newKeys.append(key)
+            i +=1
+            print(newKeys)
+        return newKeys
+
+
 
     def displayPopulation(self, population):
         print("Initial population size: ", len(population))
