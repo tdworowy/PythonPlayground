@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="74059ddd-4c74-4733-a753-22db6be1b4c0" name="Default" comment="update">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Staff/myUtils/empJsonExtend.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Staff/reload_/changer.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Staff/reload_/module.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Staff/users_with_traits2.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Staff/users_with_traits2_Oryginal.txt" />
+    <list default="true" id="74059ddd-4c74-4733-a753-22db6be1b4c0" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Staff/file.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Playground.iws" />
@@ -61,10 +57,8 @@
         <entry file="file://$PROJECT_DIR$/Staff/reload_/module.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
-              <caret line="21" column="18" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-              <folding>
-                <element signature="e#1#23#0" expanded="true" />
-              </folding>
+              <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -549,13 +543,6 @@
       <option name="presentableId" value="Default" />
       <updated>1477905013655</updated>
     </task>
-    <task id="LOCAL-00001" summary="update">
-      <created>1478427990145</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1478427990146</updated>
-    </task>
     <task id="LOCAL-00002" summary="fix">
       <created>1478445479925</created>
       <option name="number" value="00002" />
@@ -892,7 +879,14 @@
       <option name="project" value="LOCAL" />
       <updated>1485275708520</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="update">
+      <created>1486318000228</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1486318000228</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1326,10 +1320,8 @@
     <entry file="file://$PROJECT_DIR$/Staff/reload_/module.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="21" column="18" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-          <folding>
-            <element signature="e#1#23#0" expanded="true" />
-          </folding>
+          <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
