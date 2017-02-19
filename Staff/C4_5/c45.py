@@ -14,5 +14,6 @@ class c45Algorithm:
         print(self.c45Util.checkClass(self.calss_))
         print("Possible values: ")
         print(self.c45Util.getValues())
-        self.c45Util.valuesPretty()
+        self.c45Util.displayValues()
 
+#TODO lot of work

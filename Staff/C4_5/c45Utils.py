@@ -25,7 +25,7 @@ class c45U:
              index +=1
         return valuesPerAttribute
 
-    def valuesPretty(self):
+    def displayValues(self):
         values = self.getValues()
         for atr in self.attributes:
             print(atr, ":")
