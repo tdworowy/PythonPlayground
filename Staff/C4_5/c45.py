@@ -12,5 +12,7 @@ class c45Algorithm:
         print("Attributes: ",self.c45Util .getAttributes())
         print("Class: ",self.calss_)
         print(self.c45Util.checkClass(self.calss_))
-        print("Possible values: ",self.c45Util.getValues())
+        print("Possible values: ")
+        print(self.c45Util.getValues())
+        self.c45Util.valuesPretty()
 

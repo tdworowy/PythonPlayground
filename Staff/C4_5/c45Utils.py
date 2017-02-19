@@ -14,8 +14,25 @@ class c45U:
         else: return "incorrect Class"
 
     def getValues(self):
-        values = []
-        for row in self.rawData:
-            for data in row:
-                if(data not in values): values.append(data)
-        return values
+        valuesPerAttribute = []
+        index =0
+        for atr in self.attributes:
+             for row in self.rawData:
+                 value = row[index]
+                 dic = dict([(atr, value)])
+                 if(dic not in valuesPerAttribute):
+                     valuesPerAttribute.append(dic)
+             index +=1
+        return valuesPerAttribute
+
+    def valuesPretty(self):
+        values = self.getValues()
+        for atr in self.attributes:
+            print(atr, ":")
+            for dictionary in  values:
+               try:
+                 print(dictionary[atr])
+               except  KeyError:
+                   continue
+
+
