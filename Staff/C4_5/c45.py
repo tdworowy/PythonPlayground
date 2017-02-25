@@ -13,7 +13,8 @@ class c45Algorithm:
         print("Class: ",self.calss_)
         print(self.c45Util.checkClass(self.calss_))
         print("Possible values: ")
-        print(self.c45Util.getValues())
+        print(self.c45Util.getValuesPerAttribute())
         self.c45Util.displayValues()
-
+        print("Values count: ", self.c45Util.getValueCount())
+        print("Values to numeric",list(self.c45Util.getDumies()))
 #TODO lot of work
