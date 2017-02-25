@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74059ddd-4c74-4733-a753-22db6be1b4c0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Staff/scikit-learn/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Staff/scikit-learn/sckitExample.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Staff/C4_5/c45.py" afterPath="$PROJECT_DIR$/Staff/C4_5/c45.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Staff/C4_5/c45Utils.py" afterPath="$PROJECT_DIR$/Staff/C4_5/c45Utils.py" />
@@ -48,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="c45Utils.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="c45Utils.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Staff/C4_5/c45Utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+            <state relative-caret-position="413">
+              <caret line="62" column="18" lean-forward="false" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -78,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="c45.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="c45.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Staff/C4_5/c45.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+            <state relative-caret-position="340">
+              <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -203,8 +201,8 @@
         <option value="$PROJECT_DIR$/Staff/funnyStaff/iteration.txt" />
         <option value="$PROJECT_DIR$/Staff/scikit-learn/__init__.py" />
         <option value="$PROJECT_DIR$/Staff/scikit-learn/sckitExample.py" />
-        <option value="$PROJECT_DIR$/Staff/C4_5/c45.py" />
         <option value="$PROJECT_DIR$/Staff/C4_5/c45Utils.py" />
+        <option value="$PROJECT_DIR$/Staff/C4_5/c45.py" />
       </list>
     </option>
   </component>
@@ -580,13 +578,6 @@
       <option name="presentableId" value="Default" />
       <updated>1477905013655</updated>
     </task>
-    <task id="LOCAL-00008" summary="update">
-      <created>1479493112362</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1479493112362</updated>
-    </task>
     <task id="LOCAL-00009" summary="update">
       <created>1479501204575</created>
       <option name="number" value="00009" />
@@ -923,7 +914,14 @@
       <option name="project" value="LOCAL" />
       <updated>1487956791008</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="update">
+      <created>1488025371533</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1488025371533</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1388,10 +1386,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Staff/C4_5/c45.py">
+    <entry file="file://$PROJECT_DIR$/Staff/C4_5/c45Utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+        <state relative-caret-position="413">
+          <caret line="62" column="18" lean-forward="false" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -1404,10 +1402,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Staff/C4_5/c45Utils.py">
+    <entry file="file://$PROJECT_DIR$/Staff/C4_5/c45.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+        <state relative-caret-position="340">
+          <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
           <folding />
         </state>
       </provider>

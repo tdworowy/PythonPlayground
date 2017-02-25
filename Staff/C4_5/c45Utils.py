@@ -55,8 +55,12 @@ class c45U:
         return valuesCount
 
 
-    def getDumies(self):
+    def convertValuesToNumeric(self):
         s= map(pd.Series,self.rawData)
         return  map( pd.get_dummies,s)
 
+
+    def prettyList(self,list):
+        for item in list:
+            print(item)
 
