@@ -39,7 +39,7 @@ def extedEmploy(file,range_):
     for i in range(range_[0],range_[1]):
         addString = addString + ToAppend.replace("employee{x}".format(x=range_[0]), "employee" + str(i))
 
-    addString = addString[] + " ]"
+    addString = addString + " ]"
     file.write(addString)
 
 
