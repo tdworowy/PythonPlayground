@@ -1,7 +1,7 @@
 import random
 import string
 
-from Staff.Utils import rootDirectory
+from Staff.rootDirectory import  getRootDirectory
 
 L1=[1,2,3,4,5]
 L2 = [x+10 for x in L1]
@@ -20,17 +20,17 @@ test = "Test" * 10
 test2 = [x +"X" for x in test]
 print(test2)
 
-f = open(rootDirectory()+"\\testFile.txt")
+f = open(getRootDirectory()+"\\testFile.txt")
 lines = f.readlines()
 print(lines)
 
 lines = [line.rstrip() for line in lines]
 print(lines)
 
-lines = [line.rstrip() for line in open(rootDirectory()+"\\testFile.txt")]
+lines = [line.rstrip() for line in open(getRootDirectory()+"\\testFile.txt")]
 print(lines)
 
-f2 = open(rootDirectory()+'\\testFile2.txt','r+')
+f2 = open(getRootDirectory()+'\\testFile2.txt','r+')
 for _ in range(1,30):
     print(''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(50)), file=f2)
 lines = f2.readlines()

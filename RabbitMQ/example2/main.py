@@ -3,10 +3,10 @@ import random
 import threading
 import time
 
-from example2.connect import conection_
-from example2.connectionInfo import conectionInfo
-from example2.receiver import reciver
-from example2.sender import sneder
+from RabbitMQ.example2.connect import conection_
+from RabbitMQ.example2.connectionInfo import conectionInfo
+from RabbitMQ.example2.receiver import reciver
+from RabbitMQ.example2.sender import sneder
 
 
 def prepareSenders(queues):

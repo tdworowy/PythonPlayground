@@ -1,7 +1,7 @@
 import os
 import unittest
 
-from appium import webdriver
+from appium.webdriver import webdriver
 
 
 class ChessAndroidTests(unittest.TestCase):

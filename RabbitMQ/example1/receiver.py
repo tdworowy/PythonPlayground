@@ -1,7 +1,6 @@
 #reciver
-
-import  connect
-import connectionInfo
+from RabbitMQ.example1 import connect
+from RabbitMQ.example1 import connectionInfo
 
 
 def receive(connect):

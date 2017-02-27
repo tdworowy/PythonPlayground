@@ -1,10 +1,10 @@
 import csv
 
-from Staff.Utils import rootDirectory
+from Staff.rootDirectory import  getRootDirectory
 
 
 def getFirstColumn(sep,file):
-    f2 =open(rootDirectory()+'//file.csv','w')
+    f2 =open(getRootDirectory()+'//file.csv','w')
     with open(file, 'r') as f:
         reader = csv.reader(f, delimiter=';')
         for row in reader:

@@ -1,7 +1,6 @@
-
-#conect
-import connectionInfo
 import  pika
+
+from RabbitMQ.example1 import connectionInfo
 
 
 def conect():

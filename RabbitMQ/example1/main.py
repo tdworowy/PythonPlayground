@@ -3,7 +3,7 @@
 import _thread
 import time
 
-import connect
+from RabbitMQ.example1 import connect
 
 conn1 = connect
 conn1.conect()
@@ -13,14 +13,14 @@ conn2.conect()
 
 def sedningThread():
     i=0
-    import sender
+    from RabbitMQ.example1 import sender
     while(True):
         i+=1
         sender.send("Python_Message" + str(i), conn1)
         time.sleep(2)
 
 def recivingThread():
-        import receiver
+        from RabbitMQ.example1 import receiver
         receiver.receive(conn2)
         time.sleep(2)
 

@@ -1,7 +1,7 @@
 import os
 
 
-def rootDirectory():
+def getRootDirectory():
     return  os.path.dirname(os.path.abspath(__file__))
 
-print(rootDirectory())
+print(getRootDirectory())

@@ -2,7 +2,7 @@ import os
 import unittest
 from time import sleep
 
-from appium import webdriver
+from appium.webdriver import webdriver
 
 
 class ApiumTests(unittest.TestCase):
