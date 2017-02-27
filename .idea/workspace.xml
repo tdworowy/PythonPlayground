@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="74059ddd-4c74-4733-a753-22db6be1b4c0" name="Default" comment="marged with AppiumPython and RabbitMQPython">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Staff/credentials.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApiumPython" afterPath="$PROJECT_DIR$/ApiumPython" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RabbitMQPython" afterPath="$PROJECT_DIR$/RabbitMQPython" />
+    <list default="true" id="74059ddd-4c74-4733-a753-22db6be1b4c0" name="Default" comment="Add appium">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Appium/Tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Appium/Tests2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RabbitMQ/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RabbitMQ/example1/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RabbitMQ/example1/connect.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RabbitMQ/example1/connectionInfo.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RabbitMQ/example1/main.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RabbitMQ/example1/receiver.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RabbitMQ/example1/sender.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RabbitMQ/example2/connect.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RabbitMQ/example2/connectionInfo.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RabbitMQ/example2/main.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RabbitMQ/example2/receiver.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RabbitMQ/example2/sender.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ApiumPython" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RabbitMQPython" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Playground.iws" />
@@ -25,26 +38,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="NeuralNetwork.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Staff/moreStaff/NeuralNetwork.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="20" column="11" lean-forward="false" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MonteCarlo.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Staff/moreStaff/MonteCarlo.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="unitests1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Staff/Tests/unitests1.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -58,21 +51,61 @@
       <file leaf-file-name="generateCSVforPT.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Staff/myUtils/generateCSVforPT.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="45" lean-forward="false" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="45" />
+            <state relative-caret-position="187">
+              <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tests.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ApiumPython/Tests.py">
+      <file leaf-file-name="Tests.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Appium/Tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="663">
+              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/RabbitMQ/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="connect.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RabbitMQ/example2/connect.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="connectionInfo.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RabbitMQ/example2/connectionInfo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="receiver.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RabbitMQ/example2/receiver.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -107,26 +140,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="check.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Staff/Tests/check.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Staff/Tests/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -153,8 +166,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Staff/BasicStuff/mapEmulator.py" />
-        <option value="$PROJECT_DIR$/Staff/BasicStuff/zipEmulator.py" />
         <option value="$PROJECT_DIR$/Staff/BasicStuff/Sets.py" />
         <option value="$PROJECT_DIR$/Staff/BasicStuff/DIctionaryComprehension.py" />
         <option value="$PROJECT_DIR$/Staff/Utlis/mytimer.py" />
@@ -204,6 +215,8 @@
         <option value="$PROJECT_DIR$/Staff/Tests/unitests1.py" />
         <option value="$PROJECT_DIR$/Staff/myUtils/empJsonExtend.py" />
         <option value="$PROJECT_DIR$/Staff/myUtils/generateCSVforPT.py" />
+        <option value="$PROJECT_DIR$/ApiumPython/Tests.py" />
+        <option value="$PROJECT_DIR$/RabbitMQ/__init__.py" />
       </list>
     </option>
   </component>
@@ -253,11 +266,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Google_drive\Python_\Playground" />
       <recent name="D:\Google_drive\Python_\Playground\Staff" />
       <recent name="D:\Google_drive\Python\Playground\Staff\myUtils" />
       <recent name="D:\Google_drive\Python\Playground\Staff\moreStaff" />
       <recent name="D:\Google_drive\Python\Playground\Staff\BasicStuff" />
-      <recent name="D:\Google_drive\Python\Playground\Staff\FunctionalPrograming" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Google_drive\Python_\Playground\Staff" />
@@ -514,13 +527,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1477905013655</updated>
-    </task>
-    <task id="LOCAL-00013" summary="update">
-      <created>1480617008420</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1480617008420</updated>
     </task>
     <task id="LOCAL-00014" summary="update">
       <created>1480702759430</created>
@@ -858,7 +864,14 @@
       <option name="project" value="LOCAL" />
       <updated>1488210464613</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="marged with AppiumPython and RabbitMQPython">
+      <created>1488210848707</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1488210848707</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -945,7 +958,8 @@
     <MESSAGE value="cd,5 algorithm - work in progress" />
     <MESSAGE value="update" />
     <MESSAGE value="marged with AppiumPython and RabbitMQPython" />
-    <option name="LAST_COMMIT_MESSAGE" value="marged with AppiumPython and RabbitMQPython" />
+    <MESSAGE value="Add appium" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add appium" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -984,41 +998,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Staff/Functions_/PrimeNumbers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Staff/moreStaff/PerformenceCheck.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
-          <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Staff/BasicStuff/listComprehension.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="49" column="33" lean-forward="false" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Staff/BasicStuff/listComprehension2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Staff/otherStaff/a.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Staff/moreStaff/geneticAlgorithm.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2006">
@@ -1325,21 +1304,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Staff/myUtils/generateCSVforPT.py">
+    <entry file="file://$PROJECT_DIR$/ApiumPython/Tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="45" lean-forward="false" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="45" />
+        <state relative-caret-position="612">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ApiumPython/Tests.py">
+    <entry file="file://$PROJECT_DIR$/Staff/myUtils/generateCSVforPT.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="187">
+          <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Appium/Tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RabbitMQ/example2/connect.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RabbitMQ/example2/connectionInfo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RabbitMQ/example2/receiver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RabbitMQ/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
