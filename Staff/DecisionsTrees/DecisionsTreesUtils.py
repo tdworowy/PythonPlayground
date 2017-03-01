@@ -1,6 +1,6 @@
 import pandas as pd
 
-class c45U:
+class dtUtils:
     def __init__(self, data):
         self.data = data
         self.attributes = self.data[0]

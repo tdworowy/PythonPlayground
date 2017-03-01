@@ -1,11 +1,12 @@
 import csv
 
-from Staff.C4_5.c45 import c45Algorithm
+from Staff.DecisionsTrees.C45.c45 import c45Algorithm
+from Staff.DecisionsTrees.data.dataUtils import getDataPath
 
 
 def main():
     rows = []
-    with open("exampleData.csv", 'r') as f:
+    with open(getDataPath()+"\\exampleData.csv", 'r') as f:
         reader = csv.reader(f, delimiter=',')
         for row in reader:
             print(row)
