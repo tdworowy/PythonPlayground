@@ -42,6 +42,17 @@ class cart:
         else:
             print('%s[%s]' % ((depth * ' ', node)))
 
+    def predict(self,node,row):
+        if row[node['index']] < node['value']:
+            if isinstance(node['left'],dict):
+                return self.predict(node['left'],row)
+            else: return node['left']
+        else:
+            if isinstance(node['right'], dict):
+                return self.predict(node['right'], row)
+            else:
+                return node['right']
+
 
 def test():
     cart_ = cart()
@@ -57,6 +68,11 @@ def test():
                [6.642287351, 3.319983761, 1]]
     tree = cart_.build_tree(dataset, 1, 1)
     cart_.print_tree(tree)
+
+    stump = {'index': 0, 'right': 1, 'value': 6.642287351, 'left': 0}
+    for row in dataset:
+        prediction = cart_.predict(stump, row)
+        print('Expected=%d, Got=%d' % (row[-1], prediction))
 
 
 if __name__ == "__main__":
