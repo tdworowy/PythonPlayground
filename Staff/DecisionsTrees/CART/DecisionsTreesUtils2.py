@@ -1,7 +1,9 @@
+import pandas as pd
+
 
 class utils:
       def __init__(self,):
-          print("Init")
+          print("")
 
 
 
@@ -37,6 +39,9 @@ class utils:
                       b_index,b_value,b_score,b_groups = index,row[index] ,gini , groups
           return {'index':b_index,'value':b_value,'groups':b_groups}
 
+      def convertValuesToNumeric(self,data):
+          s = map(pd.Series, data)
+          return map(pd.get_dummies, s)
 
 def test():
     utils_ = utils()
