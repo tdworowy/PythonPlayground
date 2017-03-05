@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74059ddd-4c74-4733-a753-22db6be1b4c0" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Staff/DecisionsTrees/CART/data.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Staff/DecisionsTrees/CART/source.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Staff/DecisionsTrees/DecisionsTreesUtils2.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Staff/DecisionsTrees/CART/DecisionsTreesUtils2.py" afterPath="$PROJECT_DIR$/Staff/DecisionsTrees/CART/DecisionsTreesUtils2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Staff/DecisionsTrees/CART/main.py" afterPath="$PROJECT_DIR$/Staff/DecisionsTrees/CART/main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Staff/DecisionsTrees/CART/tree.py" afterPath="$PROJECT_DIR$/Staff/DecisionsTrees/CART/tree.py" />
     </list>
     <ignored path="Playground.iws" />
@@ -26,28 +31,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Staff/DecisionsTrees/C45/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="formats.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Staff/otherStaff/formats.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="38" column="7" lean-forward="false" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DecisionsTreesUtils.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Staff/DecisionsTrees/C45/DecisionsTreesUtils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="54" column="2" lean-forward="false" selection-start-line="54" selection-start-column="2" selection-end-line="54" selection-end-column="2" />
+            <state relative-caret-position="68">
+              <caret line="7" column="3" lean-forward="false" selection-start-line="7" selection-start-column="3" selection-end-line="12" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -56,28 +41,42 @@
       <file leaf-file-name="DecisionsTreesUtils2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Staff/DecisionsTrees/CART/DecisionsTreesUtils2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-153">
-              <caret line="15" column="28" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="28" />
+            <state relative-caret-position="209">
+              <caret line="49" column="31" lean-forward="true" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DecisionsTreesUtils2.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Staff/DecisionsTrees/DecisionsTreesUtils2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tree.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tree.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Staff/DecisionsTrees/CART/tree.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="940">
-              <caret line="79" column="0" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="430">
+              <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Staff/DecisionsTrees/CART/main.py">
+      <file leaf-file-name="data.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Staff/DecisionsTrees/CART/data.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="16" column="123" lean-forward="false" selection-start-line="16" selection-start-column="123" selection-end-line="16" selection-end-column="123" />
+            <state relative-caret-position="328">
+              <caret line="1301" column="5" lean-forward="true" selection-start-line="1301" selection-start-column="5" selection-end-line="1301" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -93,31 +92,43 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myTimer2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Staff/myUtils/myTimer2.py">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Staff/DecisionsTrees/CART/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="379">
+              <caret line="25" column="10" lean-forward="true" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="source.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Staff/DecisionsTrees/CART/source.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="83" lean-forward="false" selection-start-line="0" selection-start-column="83" selection-end-line="0" selection-end-column="83" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="exampleData.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Staff/DecisionsTrees/data/exampleData.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="6" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Staff/DecisionsTrees/CART/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="getSystemInfo.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Staff/myUtils/getSystemInfo.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rootDirectory.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Staff/rootDirectory.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -149,9 +160,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Staff/reload_/module.py" />
-        <option value="$PROJECT_DIR$/Staff/users_with_traits2.txt" />
-        <option value="$PROJECT_DIR$/Staff/BasicStuff/Modules/dir1/__init__.py" />
         <option value="$PROJECT_DIR$/Staff/BasicStuff/Modules/dir1/dir2/dir3/__init__.py" />
         <option value="$PROJECT_DIR$/Staff/BasicStuff/Modules/dir1/dir2/__init__.py" />
         <option value="$PROJECT_DIR$/Staff/BasicStuff/Modules/__init__.py" />
@@ -197,9 +205,12 @@
         <option value="$PROJECT_DIR$/Staff/DecisionsTrees/DecisionsTreesUtils.py" />
         <option value="$PROJECT_DIR$/Staff/DecisionsTrees/functions.py" />
         <option value="$PROJECT_DIR$/Staff/DecisionsTrees/DecisionsTreesUtils2.py" />
-        <option value="$PROJECT_DIR$/Staff/DecisionsTrees/CART/DecisionsTreesUtils2.py" />
-        <option value="$PROJECT_DIR$/Staff/DecisionsTrees/CART/main.py" />
+        <option value="$PROJECT_DIR$/Staff/DecisionsTrees/CART/vizualization.py" />
+        <option value="$PROJECT_DIR$/Staff/DecisionsTrees/CART/data.txt" />
         <option value="$PROJECT_DIR$/Staff/DecisionsTrees/CART/tree.py" />
+        <option value="$PROJECT_DIR$/Staff/DecisionsTrees/CART/main.py" />
+        <option value="$PROJECT_DIR$/Staff/DecisionsTrees/CART/DecisionsTreesUtils2.py" />
+        <option value="$PROJECT_DIR$/Staff/DecisionsTrees/CART/source.txt" />
       </list>
     </option>
   </component>
@@ -225,7 +236,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -306,6 +316,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Playground" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Playground" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Staff" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DecisionsTrees" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="CART" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -335,6 +367,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -342,6 +375,11 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Google_drive\Python_\Playground\Staff\DecisionsTrees" />
+      <recent name="D:\Google_drive\Python_\Playground\Staff" />
+      <recent name="D:\Google_drive\Python\Playground" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Google_drive\Python_\Playground\Staff\DecisionsTrees\C45" />
       <recent name="D:\Google_drive\Python_\Playground\Staff\DecisionsTrees\CART" />
@@ -349,12 +387,8 @@
       <recent name="D:\Google_drive\Python_\Playground" />
       <recent name="D:\Google_drive\Python_\Playground\Staff" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Google_drive\Python_\Playground\Staff" />
-      <recent name="D:\Google_drive\Python\Playground" />
-    </key>
   </component>
-  <component name="RunManager" selected="Python.tree">
+  <component name="RunManager" selected="Python.main">
     <configuration default="false" name="giniIndex" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -583,9 +617,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.tree" />
+        <item index="0" class="java.lang.String" itemvalue="Python.main" />
         <item index="1" class="java.lang.String" itemvalue="Python.main (1)" />
-        <item index="2" class="java.lang.String" itemvalue="Python.main" />
+        <item index="2" class="java.lang.String" itemvalue="Python.tree" />
         <item index="3" class="java.lang.String" itemvalue="Python.DecisionsTreesUtils2" />
         <item index="4" class="java.lang.String" itemvalue="Python.giniIndex" />
       </list>
@@ -604,13 +638,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1477905013655</updated>
-    </task>
-    <task id="LOCAL-00020" summary="update">
-      <created>1481818068142</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1481818068142</updated>
     </task>
     <task id="LOCAL-00021" summary="update">
       <created>1481987858076</created>
@@ -948,7 +975,14 @@
       <option name="project" value="LOCAL" />
       <updated>1488643630461</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="update">
+      <created>1488643895243</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1488643895243</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1072,57 +1106,15 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="27" />
+      <option name="time" value="31" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Staff/file.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Staff/users_with_traits2_Oryginal.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1147024">
-          <caret line="67472" column="12" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="67473" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Staff/users_with_traits2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229959">
-          <caret line="13527" column="3" lean-forward="false" selection-start-line="13527" selection-start-column="3" selection-end-line="13527" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Staff/funnyStaff/iteration.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Staff/funnyStaff/script.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Staff/myUtils/mytimer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Staff/DecisionsTrees/data/exampleData.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="6" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -1316,26 +1308,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Staff/DecisionsTrees/CART/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Staff/DecisionsTrees/C45/c45.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Staff/DecisionsTrees/data/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1343,9 +1319,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1353,7 +1326,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1376,15 +1348,7 @@
     <entry file="file://$PROJECT_DIR$/Staff/rootDirectory.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Staff/DecisionsTrees/data/dataUtils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="15" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="15" />
+          <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="54" />
           <folding />
         </state>
       </provider>
@@ -1397,50 +1361,121 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Staff/DecisionsTrees/functions.py">
+    <entry file="file://$PROJECT_DIR$/Staff/DecisionsTrees/functions.py" />
+    <entry file="file://$PROJECT_DIR$/Staff/DecisionsTrees/C45/c45.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="3" lean-forward="false" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+        <state relative-caret-position="323">
+          <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Staff/DecisionsTrees/C45/DecisionsTreesUtils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="54" column="2" lean-forward="false" selection-start-line="54" selection-start-column="2" selection-end-line="54" selection-end-column="2" />
+        <state relative-caret-position="725">
+          <caret line="62" column="4" lean-forward="false" selection-start-line="62" selection-start-column="4" selection-end-line="64" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Staff/DecisionsTrees/data/temp.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Staff/DecisionsTrees/CART/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Staff/DecisionsTrees/CART/vizualization.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Staff/DecisionsTrees/data/exampleData.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="6" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Staff/DecisionsTrees/data/dataUtils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="15" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Staff/DecisionsTrees/DecisionsTreesUtils2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Staff/DecisionsTrees/C45/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Staff/DecisionsTrees/CART/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="16" column="123" lean-forward="false" selection-start-line="16" selection-start-column="123" selection-end-line="16" selection-end-column="123" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Staff/DecisionsTrees/CART/DecisionsTreesUtils2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153">
-          <caret line="15" column="28" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="28" />
+        <state relative-caret-position="68">
+          <caret line="7" column="3" lean-forward="false" selection-start-line="7" selection-start-column="3" selection-end-line="12" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Staff/DecisionsTrees/CART/tree.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="940">
-          <caret line="79" column="0" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+        <state relative-caret-position="430">
+          <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Staff/DecisionsTrees/CART/data.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="1301" column="5" lean-forward="true" selection-start-line="1301" selection-start-column="5" selection-end-line="1301" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Staff/DecisionsTrees/CART/DecisionsTreesUtils2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="49" column="31" lean-forward="true" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Staff/DecisionsTrees/CART/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="25" column="10" lean-forward="true" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Staff/DecisionsTrees/CART/source.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="83" lean-forward="false" selection-start-line="0" selection-start-column="83" selection-end-line="0" selection-end-column="83" />
           <folding />
         </state>
       </provider>

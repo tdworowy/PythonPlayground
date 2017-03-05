@@ -1,6 +1,3 @@
-from _csv import reader
-
-
 class utils:
       def __init__(self,):
           print("")
@@ -39,16 +36,21 @@ class utils:
                       b_index,b_value,b_score,b_groups = index,row[index] ,gini , groups
           return {'index':b_index,'value':b_value,'groups':b_groups}
 
+      # def convertValuesToDummies(self,data):
+      #     s = map(pd.Series, data)
+      #     return map(pd.get_dummies, s)
+      #
+      #
+      # def prettyList(self, inputlist):
+      #     for item in inputlist:
+      #         print(item)
+      #
+      # def dumiesToFile(self,dumiesList):
+      #     with open(getDataPath() + "\\temp.csv", 'w') as f:
+      #         for item in dumiesList:
+      #           f.write(str(item)+",")
+      #           f.flush()
 
-      def load_csv(self,filename):
-          file = open(filename, "r")
-          lines = reader(file)
-          dataset = list(lines)
-          return dataset
-
-      def str_column_to_float(self,dataset, column):
-          for row in dataset:
-              row[column] = float(row[column].strip())
 
 
 def test():
