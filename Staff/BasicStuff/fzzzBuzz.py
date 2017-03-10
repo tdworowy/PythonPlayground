@@ -46,6 +46,8 @@ def fizzbuzz6():
 def fizzbuzz7():
     print(list(map((lambda i:"FizzBuzz" if i % 3 ==0 and i % 5 ==0 else "Fizz" if i % 3 ==0 else "Buzz" if i % 5 ==0 else i),range(1,100))))
 
+def fuzzbuzz8():
+    print(["Fizz" * (not i % 3) + "Buzz" * (not i % 5) or i for i in range(1,100)])
 
 fizzbuzz6()
 fizzbuzz7()
