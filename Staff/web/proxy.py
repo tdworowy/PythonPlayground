@@ -78,7 +78,7 @@ def main():
   while 1:
     conn, client_addr = s.accept()
     print(conn,client_addr)
-    _thread.start_new_thread(proxy_thread, (conn,))
+    _thread.start_new_thread(proxy_thread, (conn,client_addr)) # TODO Check
 
 
 
