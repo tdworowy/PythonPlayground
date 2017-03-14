@@ -2,42 +2,43 @@ from neo4j.v1 import GraphDatabase, basic_auth
 
 
 class neo4jPython():
+    def __init__(self):
+       self.driver = GraphDatabase.driver("bolt://localhost:7687", auth=basic_auth("neo4j", "test10"))
 
-    def connectLocalHost(self):
-       driver = GraphDatabase.driver("bolt://localhost:7687", auth=basic_auth("neo4j", "test10"))
-       self.session = driver.session()
+
 
     def clearBase(self):
-        self.connectLocalHost()
+        session = self.driver.session()
         print("Clear data base")
-        self.session.run("MATCH (n)OPTIONAL MATCH (n)-[r]-()DELETE n,r")
+        session.run("MATCH (n)OPTIONAL MATCH (n)-[r]-()DELETE n,r")
 
     def createPersons(self,personsList):
-       self.connectLocalHost()
+       session = self.driver.session()
        print("Create Persons with data: ",personsList)
        for person in personsList:
-            self.session.run("CREATE (a:Person{FirstName: {fname}, LastName: {lname}})",
+            session.run("CREATE (a:Person{FirstName: {fname}, LastName: {lname}})",
                   {"fname": person[0], "lname": person[1]})
 
     def createShows(self, showsList):
-        self.connectLocalHost()
+        session = self.driver.session()
         print("Create Show with data: ", showsList)
         for show in showsList:
-            self.session.run("CREATE (a:Show {Title: {title}})",
+            session.run("CREATE (a:Show {Title: {title}})",
                              {"title": show})
     def createGroups(self):
-        self.connectLocalHost()
+        session = self.driver.session()
         print("Create groups")
-        self.session.run("CREATE (a:Group {Name: 'Shows'})")
-        self.session.run("CREATE (a:Group {Name: 'Persons'})")
+        session.run("CREATE (a:Group {Name: 'Shows'})")
+        session.run("CREATE (a:Group {Name: 'Persons'})")
 
 
     def getPerson(self,personsList):
         resultList = []
+        session = self.driver.session()
         for person in personsList:
             query = "MATCH (a:Person) WHERE a.FirstName =" +"\""+person[0]+"\""+ " RETURN a.FirstName AS FirstName, a.LastName AS LastName"
             print(query)
-            result = self.session.run(query)
+            result = session.run(query)
             resultList.append(result)
         for res in resultList:
             self.displayRecords(res)
@@ -48,29 +49,30 @@ class neo4jPython():
              print("%s %s" % (record["FirstName"], record["LastName"]))
 
     def addCharacterRelations(self,personFName, show):
-        self.connectLocalHost()
+        session = self.driver.session()
         query = "MATCH (p:Person {FirstName:'"+personFName+"'}), (s:Show {Title:'"+show+"'})CREATE (p)-[:CHARACTER_FROM]->(s)"
         print(query)
-        self.session.run(query)
+        session.run(query)
 
     def addGroupRelations(self, persons, shows):
 
         for peson in persons:
-            self.connectLocalHost()
+            session = self.driver.session()
             query = "MATCH (p:Person {FirstName:'" + peson[0] + "'}), (g:Group {Name:'Persons'})CREATE (p)-[:BELONGS_TO_GROUP]->(g)"
             print(query)
-            self.session.run(query)
+            session.run(query)
 
         for show in shows:
-            self.connectLocalHost()
+            session = self.driver.session()
             query = "MATCH (s:Show {Title:'" + show + "'}), (g:Group {Name:'Shows'})CREATE (s)-[:BELONGS_TO_GROUP]->(g)"
             print(query)
-            self.session.run(query)
+            session.run(query)
 
 
 def main():
 
-   persons = [("Homer","Simpson"),("Rick","Sanchez"),("Sterling","Archer")]
+   # persons = [("Homer","Simpson"),("Rick","Sanchez"),("Sterling","Archer")]
+   persons = [("Homer", "Simpson"), ("Rick", "Sanchez"),("Morty", "Sanchez"), ("Sterling", "Archer")]
    shows = ["Rick & Morty", "Simpsons","Archer"]
 
    neo4j_ = neo4jPython()
@@ -84,9 +86,10 @@ def main():
 
    neo4j_.addCharacterRelations(persons[0][0],shows[1])
    neo4j_.addCharacterRelations(persons[1][0], shows[0])
-   neo4j_.addCharacterRelations(persons[2][0], shows[2])
+   neo4j_.addCharacterRelations(persons[2][0], shows[0])
+   neo4j_.addCharacterRelations(persons[3][0], shows[2])
 
-   neo4j_.getPerson(persons[0:2])
+   neo4j_.getPerson(persons[0:1])
 
 if __name__ == "__main__":
     main()
