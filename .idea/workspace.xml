@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74059ddd-4c74-4733-a753-22db6be1b4c0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Staff/myUtils/empJsonGenerator.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Staff/users_with_traits2.txt" afterPath="$PROJECT_DIR$/Staff/users_with_traits2.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Staff/myUtils/empJsonGenerator.py" afterPath="$PROJECT_DIR$/Staff/myUtils/empJsonGenerator.py" />
     </list>
     <ignored path="Playground.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,8 +59,8 @@
       <file leaf-file-name="empJsonGenerator.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Staff/myUtils/empJsonGenerator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+            <state relative-caret-position="728">
+              <caret line="45" column="57" lean-forward="false" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -594,13 +593,6 @@
       <option name="presentableId" value="Default" />
       <updated>1477905013655</updated>
     </task>
-    <task id="LOCAL-00033" summary="update">
-      <created>1483288887545</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1483288887545</updated>
-    </task>
     <task id="LOCAL-00034" summary="update">
       <created>1483467812781</created>
       <option name="number" value="00034" />
@@ -937,7 +929,14 @@
       <option name="project" value="LOCAL" />
       <updated>1489491173207</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="update">
+      <created>1489513048488</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1489513048489</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1028,10 +1027,10 @@
     <MESSAGE value="CART added" />
     <MESSAGE value="CART update" />
     <MESSAGE value="fizzbuzz" />
-    <MESSAGE value="update" />
     <MESSAGE value="neo4j example added" />
     <MESSAGE value="neo4j example update" />
-    <option name="LAST_COMMIT_MESSAGE" value="neo4j example update" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1420,8 +1419,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Staff/myUtils/empJsonGenerator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+        <state relative-caret-position="728">
+          <caret line="45" column="57" lean-forward="false" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
           <folding />
         </state>
       </provider>

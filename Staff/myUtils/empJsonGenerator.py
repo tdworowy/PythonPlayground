@@ -43,6 +43,6 @@ def extedEmploy(file,range_):
 
 
 #file = open("C:/PLIKI/Load_tests/users_with_traits2.txt",'a')
-file = open(getRootDirectory()+"\\users_with_traits2.txt",'w+')
+file = open(getRootDirectory()+"\\users_with_traits2.json",'w+')
 
 extedEmploy(file,(2499,3000))
