@@ -1,3 +1,6 @@
+# dupa
+
+
 from neo4j.v1 import GraphDatabase, basic_auth
 
 
@@ -71,7 +74,6 @@ class neo4jPython():
 
 def main():
 
-   # persons = [("Homer","Simpson"),("Rick","Sanchez"),("Sterling","Archer")]
    persons = [("Homer", "Simpson"), ("Rick", "Sanchez"),("Morty", "Sanchez"), ("Sterling", "Archer")]
    shows = ["Rick & Morty", "Simpsons","Archer"]
 
@@ -89,8 +91,9 @@ def main():
    neo4j_.addCharacterRelations(persons[2][0], shows[0])
    neo4j_.addCharacterRelations(persons[3][0], shows[2])
 
-   neo4j_.getPerson(persons[0:1])
+   neo4j_.getPerson(persons[0:3])
 
 if __name__ == "__main__":
-    main()
+     main()
+
 
