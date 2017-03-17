@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<workers>
+<first name>SpongeBob</first name>
+<last name>SquarePants</last name>
+<Picture><memory at 0x02D86850></Picture>
+<hierarchy>BOSS.SPONGE</hierarchy>
+</workers>
