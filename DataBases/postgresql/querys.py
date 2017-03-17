@@ -1,6 +1,6 @@
 import os
 
-from filesUtilitis import filesUtllitis
+from DataBases.postgresql.filesUtilitis import filesUtllitis
 
 path = os.path.dirname(os.path.abspath(__file__)) + "\Dane\\"
 
