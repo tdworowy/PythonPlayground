@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74059ddd-4c74-4733-a753-22db6be1b4c0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Staff/BasicStuff/counter.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Staff/OOP/Inheritance.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Staff/OOP/static.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Appium/apk/Chess_Free.apk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Appium/apk/shopping.list.grocery.recipes.coupons.apk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Appium/installAPK.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Staff/OOP/calssStaff.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Staff/OOP/calss_.py" afterPath="$PROJECT_DIR$/Staff/OOP/calss_.py" />
     </list>
     <ignored path="Playground.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -82,18 +82,28 @@
       <file leaf-file-name="Inheritance.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Staff/OOP/Inheritance.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+            <state relative-caret-position="238">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="static.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="static.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Staff/OOP/static.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
               <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="calssStaff.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Staff/OOP/calssStaff.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -145,7 +155,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Staff/DecisionsTrees/data/__init__.py" />
         <option value="$PROJECT_DIR$/Staff/DecisionsTrees/data/dataUtils.py" />
         <option value="$PROJECT_DIR$/Staff/DecisionsTrees/C45/main.py" />
         <option value="$PROJECT_DIR$/Staff/otherStaff/formats.py" />
@@ -196,6 +205,7 @@
         <option value="$PROJECT_DIR$/Staff/OOP/Inheritance.py" />
         <option value="$PROJECT_DIR$/Staff/OOP/static.py" />
         <option value="$USER_HOME$/AppData/Local/Temp/OFFICIAL TRAILER - Doctor Who Season 10 - Saturday April 15 @ 9-8c - YouTube.url" />
+        <option value="$PROJECT_DIR$/Staff/OOP/calssStaff.py" />
       </list>
     </option>
   </component>
@@ -313,24 +323,7 @@
       <recent name="D:\Google_drive\Python\Playground" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.static">
-    <configuration default="false" name="keyloger" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Staff/Hacking" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Playground" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Staff/Hacking/keyloger.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Unittests in calssStaff">
     <configuration default="false" name="mymodule" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -402,6 +395,28 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Staff/OOP/static.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in calssStaff" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Staff/OOP" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Playground" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Staff/OOP/calssStaff.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -557,19 +572,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.fzzzBuzz" />
-      <item index="1" class="java.lang.String" itemvalue="Python.keyloger" />
-      <item index="2" class="java.lang.String" itemvalue="Python.mymodule" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in calss_" />
-      <item index="4" class="java.lang.String" itemvalue="Python.Inheritance" />
-      <item index="5" class="java.lang.String" itemvalue="Python.static" />
+      <item index="1" class="java.lang.String" itemvalue="Python.mymodule" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in calss_" />
+      <item index="3" class="java.lang.String" itemvalue="Python.Inheritance" />
+      <item index="4" class="java.lang.String" itemvalue="Python.static" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in calssStaff" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.static" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Inheritance" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in calss_" />
-        <item index="3" class="java.lang.String" itemvalue="Python.mymodule" />
-        <item index="4" class="java.lang.String" itemvalue="Python.keyloger" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in calssStaff" />
+        <item index="1" class="java.lang.String" itemvalue="Python.static" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Inheritance" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in calss_" />
+        <item index="4" class="java.lang.String" itemvalue="Python.mymodule" />
       </list>
     </recent_temporary>
   </component>
@@ -586,13 +601,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1477905013655</updated>
-    </task>
-    <task id="LOCAL-00039" summary="update">
-      <created>1483787336779</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1483787336779</updated>
     </task>
     <task id="LOCAL-00040" summary="update">
       <created>1483792052540</created>
@@ -930,22 +938,17 @@
       <option name="project" value="LOCAL" />
       <updated>1489782859199</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="update">
+      <created>1489918892482</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1489918892482</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_TestStringMethods - 2016.12.17 at 17h 51m 05s.xml">
-      <configuration name="Unittests in TestStringMethods" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_TestStringMethods - 2016.12.17 at 17h 51m 54s.xml">
-      <configuration name="Unittests in TestStringMethods" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_TestStringMethods - 2016.12.17 at 17h 52m 09s.xml">
-      <configuration name="Unittests in TestStringMethods" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_TestStringMethods - 2016.12.17 at 17h 58m 07s.xml">
-      <configuration name="Unittests in TestStringMethods" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_Tests - 2016.11.11 at 11h 31m 01s.xml">
       <configuration name="Unittests in Tests" configurationId="tests" />
     </history-entry>
@@ -954,6 +957,18 @@
     </history-entry>
     <history-entry file="Unittests_in_UnitTests - 2016.12.17 at 17h 54m 49s.xml">
       <configuration name="Unittests in UnitTests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_calssStaff - 2017.03.19 at 11h 56m 44s.xml">
+      <configuration name="Unittests in calssStaff" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_calssStaff - 2017.03.19 at 11h 56m 50s.xml">
+      <configuration name="Unittests in calssStaff" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_calssStaff - 2017.03.19 at 11h 57m 55s.xml">
+      <configuration name="Unittests in calssStaff" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_calssStaff - 2017.03.19 at 14h 03m 43s.xml">
+      <configuration name="Unittests in calssStaff" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittests_in_calss_ - 2016.12.03 at 16h 47m 07s.xml">
       <configuration name="Unittests in calss_" configurationId="tests" />
@@ -1090,13 +1105,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Staff/otherStaff/sys_check.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Staff/otherStaff/lambda.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1347,7 +1355,7 @@
         <state relative-caret-position="85">
           <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="false" />
             <marker date="1482575008260" expanded="true" signature="65:150" ph="..." />
           </folding>
         </state>
@@ -1358,7 +1366,7 @@
         <state relative-caret-position="136">
           <caret line="9" column="31" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="31" />
           <folding>
-            <element signature="e#0#60#0" expanded="true" />
+            <element signature="e#0#60#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1376,7 +1384,7 @@
         <state relative-caret-position="0">
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1437,14 +1445,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Staff/OOP/Inheritance.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Staff/Hacking/keyloger.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1465,6 +1465,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Staff/OOP/Inheritance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Staff/OOP/calssStaff.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
           <folding />
         </state>
       </provider>
