@@ -31,3 +31,15 @@ class tester2:
 H = tester2(99)
 H("xxx")
 H("xxx2")
+
+
+
+class klas1:
+    class klaas2:
+        def display(self):
+            print("___________")
+            print("Test")
+
+obj1 = klas1()
+obj2 = obj1.klaas2()
+obj2.display()
