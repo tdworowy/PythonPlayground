@@ -1,8 +1,8 @@
-ToAppend = """[{
+ToAppend = """{
   "firstName" : "firstName",
   "lastName" : "lastName",
-  "email" : "employee2499@cream.local",
-  "login" : "employee2499",
+  "email" : "employee2500@cream.local",
+  "login" : "employee2500",
   "password" : "test10",
   "auth" : "LOCAL",
   "roles" : [ "employee", "seller", "casemanager", "businessadmin", "appadmin", "activitymanager", "campadmin", "productmanager", "servicemanager", "campviewer", "salesmanager", "sysadmin", "productowner" ],
@@ -39,17 +39,12 @@ def extedEmploy(file,range_):
     for i in range(range_[0],range_[1]):
         addString = addString + ToAppend.replace("employee{x}".format(x=range_[0]), "employee" + str(i))
 
-    addString = addString + " ]"
+    addString ="["+ addString + " ]"
     file.write(addString)
 
 
 
 #file = open("C:/PLIKI/Load_tests/users_with_traits2.txt",'a')
-file = open("D:\Google_drive\Python_\Playground\Staff\\users_with_traits2.txt",'w+')
+file = open(getRootDirectory()+"\\users_with_traits2.json",'w+')
 
-extedEmploy(file,(2499,3000))
-
-#wymagane są dodatkowe zmiany ręczne (już raczje nie )
-#- dodać }, po ostatnim employee
-#- dodać } ] na końcu (usunać z miejsca gdzie wczesniej był koniec)
-#- usunąć ostanie ),
+extedEmploy(file,(2500,5000))
