@@ -1,14 +1,14 @@
 import _thread
 
-def test():
+def func():
     for i in range(10):
-        print()
+        print(i)
 
 
 
 try:
-    _thread.start_new_thread( test ,() )
-    _thread.start_new_thread( test ,() )
+    _thread.start_new_thread( func ,() )
+    _thread.start_new_thread( func ,() )
 except:
    print ("Error: unable to start thread")
 
