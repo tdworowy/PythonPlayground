@@ -14,4 +14,9 @@ test4 = [M[row][col] * N[row][col] for row in range(3) for col in range(3)]
 print(test4)
 
 
+def create_multipliers():
+     return [lambda x, i=i : i * x for i in range(5)]
+
+for multiplier in create_multipliers():
+     print( multiplier(2))
 
