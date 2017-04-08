@@ -1,4 +1,7 @@
-class Person:
+from Staff.OOP.classTools_.classTools import AttrDisplay
+
+
+class Person(AttrDisplay):
     def __init__(self,name,job=None ,pay=0):
         self.name  = name
         self.job = job
@@ -9,10 +12,6 @@ class Person:
 
     def giveRaise(self,precent):
         self.pay  =self.pay * (1+precent/100)
-
-    def __str__(self):
-        return '[Person : %s, Job: %s , Pay: %s]' % (self.name, self.job,self.pay)
-
 
 class Manager(Person):
 
