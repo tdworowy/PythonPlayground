@@ -1,7 +1,7 @@
 import _thread
 import socket
 
-from Staff.myUtils import randomString
+from myUtils import randomString
 
 
 class tcp:
@@ -35,7 +35,7 @@ class tcp:
     def infiniteSent(self):
         socket = self.clientConect()
         while 1 :
-            self.clientSent(socket,randomString.randomString(50))
+            self.clientSent(socket, randomString.randomString(50))
 
 
 

@@ -1,7 +1,7 @@
 import sys
 
-from Staff.myUtils import myTimer2
 from Staff.myUtils import mytimer
+from myUtils import myTimer2
 reps = 10000
 replist = range(reps)
 
@@ -63,7 +63,7 @@ for test in (forLoop2,listComp2,mapCall2,genExpr2,genFunction2):
 
 
 print(sys.version)
-for tester in(myTimer2.timer,myTimer2.best):
+for tester in(myTimer2.timer, myTimer2.best):
     print(('<%s>' % tester.__name__))
     for test in (forLoop,listComp,mapCall,genExpr,genFunction):
         elapsed,result = tester(test)
@@ -71,7 +71,7 @@ for tester in(myTimer2.timer,myTimer2.best):
         print('%-9s: %.5f =>[%s...%s]' % (test.__name__,elapsed,result[0],result[-1]))
 
 print(sys.version)
-for tester in(myTimer2.timer,myTimer2.best):
+for tester in(myTimer2.timer, myTimer2.best):
     print(('<%s>' % tester.__name__))
     for test in (forLoop2,listComp2,mapCall2,genExpr2,genFunction2):
         elapsed,result = tester(test)
