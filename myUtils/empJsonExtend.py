@@ -1,3 +1,5 @@
+from Staff.rootDirectory import getRootDirectory
+
 ToAppend = """{
   "firstName" : "firstName",
   "lastName" : "lastName",
