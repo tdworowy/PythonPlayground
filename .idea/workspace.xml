@@ -4,13 +4,8 @@
     <bookmark url="file://$PROJECT_DIR$/Staff/web/proxy.py" line="44" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74059ddd-4c74-4733-a753-22db6be1b4c0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Staff/OOP/example/checkDB.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Staff/OOP/example/updateDB.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Staff/OOP/example/personDB.dat" afterPath="$PROJECT_DIR$/Staff/OOP/example/personDB.dat" />
+    <list default="true" id="74059ddd-4c74-4733-a753-22db6be1b4c0" name="Default" comment="mysql added">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Staff/OOP/example/personDB.bak" afterPath="$PROJECT_DIR$/Staff/OOP/example/personDB.bak" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Staff/OOP/example/personDB.dir" afterPath="$PROJECT_DIR$/Staff/OOP/example/personDB.dir" />
     </list>
     <ignored path="Playground.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -591,13 +586,6 @@
       <option name="presentableId" value="Default" />
       <updated>1477905013655</updated>
     </task>
-    <task id="LOCAL-00053" summary="cd,5 algorithm - work in progress">
-      <created>1487496079481</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1487496079482</updated>
-    </task>
     <task id="LOCAL-00054" summary="update">
       <created>1487498938929</created>
       <option name="number" value="00054" />
@@ -934,7 +922,14 @@
       <option name="project" value="LOCAL" />
       <updated>1492186839124</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="mysql added">
+      <created>1492433878449</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1492433878450</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TestHistory">
