@@ -1,7 +1,7 @@
 import random
 import string
 
-from Staff.rootDirectory import  getRootDirectory
+from rootDirectory import getRootDirectory
 
 L1=[1,2,3,4,5]
 L2 = [x+10 for x in L1]

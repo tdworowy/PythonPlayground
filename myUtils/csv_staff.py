@@ -1,6 +1,6 @@
 import csv
 
-from Staff.rootDirectory import getRootDirectory
+from rootDirectory import getRootDirectory
 
 
 def getFirstColumn(sep,file):
