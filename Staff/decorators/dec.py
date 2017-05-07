@@ -4,6 +4,10 @@ def show(f):
              return f(*args, **kwds)
     return warp
 
+def dupa(f):
+    def warp():
+        print("Dupa")
+    return warp
 
 
 @show
@@ -12,7 +16,13 @@ def foo():
 
 @show
 def foo2():
-    print("Foo")
+    print("Foo2")
+
+@dupa
+def foo3():
+    print("Foo3")
+
 
 foo()
 foo2()
+foo3()
