@@ -1,4 +1,4 @@
-from Staff.OOP.classTools_.classTools import AttrDisplay
+from myUtils.classTools_.classTools import AttrDisplay
 
 
 class Person(AttrDisplay):
