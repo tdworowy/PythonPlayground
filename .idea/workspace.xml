@@ -4,38 +4,27 @@
     <bookmark url="file://$PROJECT_DIR$/Staff/web/proxy.py" line="44" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74059ddd-4c74-4733-a753-22db6be1b4c0" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Staff/DecisionsTrees/C45/DecisionsTreesUtils.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Staff/DecisionsTrees/C45/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Staff/DecisionsTrees/C45/c45.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Staff/DecisionsTrees/C45/main.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Staff/DecisionsTrees/CART/DecisionsTreesUtils2.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Staff/DecisionsTrees/CART/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Staff/DecisionsTrees/CART/data.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Staff/DecisionsTrees/CART/main.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Staff/DecisionsTrees/CART/source.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Staff/DecisionsTrees/CART/tree.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Staff/DecisionsTrees/DecisionsTreesUtils2.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Staff/DecisionsTrees/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Staff/DecisionsTrees/data/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Staff/DecisionsTrees/data/dataUtils.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Staff/DecisionsTrees/data/exampleData.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Staff/DecisionsTrees/data/temp.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Staff/OOP/classTools_/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Staff/OOP/classTools_/classTools.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Staff/TCP/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Staff/web/Bot/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Staff/web/__init__.py" afterPath="" />
+    <list default="true" id="74059ddd-4c74-4733-a753-22db6be1b4c0" name="Default" comment="update">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DecisionsTrees/C45/DecisionsTreesUtils.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DecisionsTrees/C45/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DecisionsTrees/C45/c45.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DecisionsTrees/C45/main.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DecisionsTrees/CART/DecisionsTreesUtils2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DecisionsTrees/CART/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DecisionsTrees/CART/data.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DecisionsTrees/CART/main.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DecisionsTrees/CART/source.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DecisionsTrees/CART/tree.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DecisionsTrees/DecisionsTreesUtils2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DecisionsTrees/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DecisionsTrees/data/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DecisionsTrees/data/dataUtils.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DecisionsTrees/data/exampleData.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DecisionsTrees/data/temp.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myUtils/classTools_/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myUtils/classTools_/classTools.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myUtils/classTools_/class_Tree.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Staff/OOP/example/person.py" afterPath="$PROJECT_DIR$/Staff/OOP/example/person.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/DecisionsTrees/C45/__init__.py" afterPath="$PROJECT_DIR$/web/Bot/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/DecisionsTrees/CART/__init__.py" afterPath="$PROJECT_DIR$/web/TCP/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/DecisionsTrees/__init__.py" afterPath="$PROJECT_DIR$/web/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/Modules/reloadall.py" afterPath="$PROJECT_DIR$/myUtils/reloadall.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/TCP/TCP.py" afterPath="$PROJECT_DIR$/web/TCP/TCP.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/web/Bot/links.txt" afterPath="$PROJECT_DIR$/web/Bot/links.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/web/Bot/webCrawler.py" afterPath="$PROJECT_DIR$/web/Bot/webCrawler.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/web/proxy.py" afterPath="$PROJECT_DIR$/web/proxy.py" />
     </list>
     <ignored path="Playground.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,10 +44,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PerformenceCheck.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Staff/moreStaff/PerformenceCheck.py">
+      <file leaf-file-name="getFiles.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myUtils/files/getFiles.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1025">
+            <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
@@ -67,8 +56,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="os_check.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Staff/otherStaff/os_check.py">
+      <file leaf-file-name="abstractMethod.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Staff/OOP/abstractMethod.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -77,44 +66,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lambda.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Staff/otherStaff/lambda.py">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DecisionsTrees/C45/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sys_check.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Staff/otherStaff/sys_check.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="module.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Staff/reload_/module.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="153">
+              <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="21" />
               <folding>
-                <element signature="e#0#22#0" expanded="true" />
+                <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="changer.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Staff/reload_/changer.py">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DecisionsTrees/CART/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="17">
+              <caret line="1" column="32" lean-forward="false" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tree.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DecisionsTrees/CART/tree.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-986">
+              <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -124,9 +105,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="318">
               <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -141,8 +120,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="check.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="check.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Staff/Tests/check.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rootDirectory.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rootDirectory.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -151,10 +140,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="formats.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Staff/otherStaff/formats.py">
+      <file leaf-file-name="os_.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myUtils/os_.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-328">
+            <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -187,9 +176,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/DataBases/postgresql/display.py" />
-        <option value="$PROJECT_DIR$/DataBases/postgresql/Main.py" />
-        <option value="$PROJECT_DIR$/DataBases/postgresql/querys.py" />
         <option value="$PROJECT_DIR$/DataBases/postgresql/tests.py" />
         <option value="$PROJECT_DIR$/DataBases/postgresql/xmlGenerator.py" />
         <option value="$PROJECT_DIR$/Staff/Hacking/keyloger.py" />
@@ -238,6 +224,9 @@
         <option value="$PROJECT_DIR$/Staff/decorators/dec.py" />
         <option value="$PROJECT_DIR$/Staff/OOP/interfaces/abstractMethod.py" />
         <option value="$PROJECT_DIR$/Staff/OOP/class_Tree.py" />
+        <option value="$PROJECT_DIR$/DecisionsTrees/C45/main.py" />
+        <option value="$PROJECT_DIR$/DecisionsTrees/CART/main.py" />
+        <option value="$PROJECT_DIR$/DecisionsTrees/CART/tree.py" />
       </list>
     </option>
   </component>
@@ -271,6 +260,38 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT USER_OBJECT="Playground">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Playground">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Staff">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Playground">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Staff">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="OOP">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -609,13 +630,6 @@
       <option name="presentableId" value="Default" />
       <updated>1477905013655</updated>
     </task>
-    <task id="LOCAL-00065" summary="update">
-      <created>1488396274173</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1488396274173</updated>
-    </task>
     <task id="LOCAL-00066" summary="update">
       <created>1488479124520</created>
       <option name="number" value="00066" />
@@ -952,7 +966,14 @@
       <option name="project" value="LOCAL" />
       <updated>1494504942512</updated>
     </task>
-    <option name="localTasksCounter" value="114" />
+    <task id="LOCAL-00114" summary="update">
+      <created>1494508607098</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1494508607098</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -999,10 +1020,11 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38859275" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38859275" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44853738" sideWeight="0.5021075" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13001083" sideWeight="0.49789253" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13001083" sideWeight="0.49789253" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3261105" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27410617" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1011,7 +1033,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1092,27 +1113,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Staff/OOP/calssStaff.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Staff/OOP/example/persondb.bak">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myUtils/classTools_/classTools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Staff/OOP/calss4.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1169,13 +1169,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myUtils/os_.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Staff/OOP/example/makeDB.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1199,13 +1192,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sl4A/testScript.py" />
     <entry file="file://$PROJECT_DIR$/Staff/files.txt" />
-    <entry file="file://$PROJECT_DIR$/rootDirectory.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/myUtils/mytimer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1265,16 +1251,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myUtils/files/getFiles.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="65" lean-forward="false" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="66" />
-          <folding>
-            <element signature="e#0#10#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/myUtils/margePATHS.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1324,14 +1300,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Staff/OOP/class4_staticMethods.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Staff/OOP/abstractMethod.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1455,9 +1423,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="318">
           <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1471,9 +1437,71 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Staff/Tests/check.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rootDirectory.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myUtils/os_.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myUtils/files/getFiles.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Staff/OOP/abstractMethod.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DecisionsTrees/C45/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DecisionsTrees/CART/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="32" lean-forward="false" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DecisionsTrees/CART/tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-986">
+          <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
