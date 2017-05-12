@@ -1,7 +1,7 @@
 
-import sys
 import socket
-from threading import Event, Lock, Thread
+import sys
+from threading import Thread
 
 
 class ClientThread(Thread):

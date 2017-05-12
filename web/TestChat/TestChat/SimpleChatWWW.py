@@ -1,9 +1,7 @@
 import json
 import os
-import socket
 import sys
-from threading import Event, Lock, Thread
-
+from threading import Lock
 
 
 class SimpleChatWWW():
