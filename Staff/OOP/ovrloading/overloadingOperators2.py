@@ -43,3 +43,6 @@ print(Y[0:])
 Y[20] = 20
 
 print(Y[0:])
+
+for i in Y:
+    print(i)
