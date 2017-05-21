@@ -5,12 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74059ddd-4c74-4733-a753-22db6be1b4c0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Staff/OOP/ovrloading/Call.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Staff/OOP/ovrloading/bool.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Staff/OOP/ovrloading/destructor.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Staff/OOP/ovrloading/iadd.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Staff/OOP/example/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Staff/OOP/example/example1/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Staff/OOP/example/example1/persondb.bak" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Staff/OOP/example/example1/persondb.dir" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Staff/OOP/example/example2_is_a/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Staff/OOP/example/example2_is_a/empoyees.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Staff/OOP/example/personDB.bak" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Staff/OOP/example/personDB.dir" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Staff/OOP/ovrloading/repr.py" afterPath="$PROJECT_DIR$/Staff/OOP/ovrloading/repr.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/example/checkDB.py" afterPath="$PROJECT_DIR$/Staff/OOP/example/example1/checkDB.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/example/makeDB.py" afterPath="$PROJECT_DIR$/Staff/OOP/example/example1/makeDB.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/example/person.py" afterPath="$PROJECT_DIR$/Staff/OOP/example/example1/person.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/example/personDB.dat" afterPath="$PROJECT_DIR$/Staff/OOP/example/example1/personDB.dat" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/example/updateDB.py" afterPath="$PROJECT_DIR$/Staff/OOP/example/example1/updateDB.py" />
     </list>
     <ignored path="Playground.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,28 +38,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Tests2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Appium/Tests2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="getatrr.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Staff/OOP/ovrloading/getatrr.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="17" lean-forward="false" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="setattr.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Staff/OOP/ovrloading/setattr.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -112,11 +98,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="destructor.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="destructor.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Staff/OOP/ovrloading/destructor.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
               <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="empoyees.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Staff/OOP/example/example2_is_a/empoyees.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="505">
+              <caret line="44" column="14" lean-forward="false" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Staff/OOP/example/example2_is_a/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -158,8 +164,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Staff/Hacking/wifi.py" />
-        <option value="$PROJECT_DIR$/Staff/Hacking/wifiNetworks.py" />
         <option value="$PROJECT_DIR$/Staff/OOP/overloadingOperators.py" />
         <option value="$PROJECT_DIR$/Staff/OOP/class2.py" />
         <option value="$PROJECT_DIR$/Staff/OOP/class3.py" />
@@ -209,6 +213,8 @@
         <option value="$PROJECT_DIR$/Staff/OOP/ovrloading/Call.py" />
         <option value="$PROJECT_DIR$/Staff/OOP/ovrloading/bool.py" />
         <option value="$PROJECT_DIR$/Staff/OOP/ovrloading/destructor.py" />
+        <option value="$PROJECT_DIR$/Staff/OOP/example/example2_is_a/__init__.py" />
+        <option value="$PROJECT_DIR$/Staff/OOP/example/example2_is_a/empoyees.py" />
       </list>
     </option>
   </component>
@@ -338,7 +344,33 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="ovrloading">
+            <PATH_ELEMENT USER_OBJECT="example">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Playground">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Staff">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="OOP">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="example">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="example2_is_a">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -359,11 +391,11 @@
       <recent name="D:\Google_drive\Python\Playground" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Google_drive\Python_\Playground\Staff\OOP\example\example1" />
       <recent name="D:\Google_drive\Python_\Playground\DecisionsTrees\old" />
       <recent name="D:\Google_drive\Python_\Playground\web" />
       <recent name="D:\Google_drive\Python_\Playground\Staff\OOP\ovrloading" />
       <recent name="D:\Google_drive\Python_\Playground" />
-      <recent name="D:\Google_drive\Python_\Playground\Staff\web" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -378,25 +410,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.destructor">
-    <configuration default="false" name="repr" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Staff/OOP/ovrloading" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Playground" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Staff/OOP/ovrloading/repr.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.empoyees">
     <configuration default="false" name="iadd" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -464,6 +478,24 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Playground" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Staff/OOP/ovrloading/destructor.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="empoyees" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Staff/OOP/example/example2_is_a" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Playground" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Staff/OOP/example/example2_is_a/empoyees.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -588,19 +620,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.fzzzBuzz" />
-      <item index="1" class="java.lang.String" itemvalue="Python.repr" />
-      <item index="2" class="java.lang.String" itemvalue="Python.iadd" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Call" />
-      <item index="4" class="java.lang.String" itemvalue="Python.bool" />
-      <item index="5" class="java.lang.String" itemvalue="Python.destructor" />
+      <item index="1" class="java.lang.String" itemvalue="Python.iadd" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Call" />
+      <item index="3" class="java.lang.String" itemvalue="Python.bool" />
+      <item index="4" class="java.lang.String" itemvalue="Python.destructor" />
+      <item index="5" class="java.lang.String" itemvalue="Python.empoyees" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.destructor" />
-        <item index="1" class="java.lang.String" itemvalue="Python.bool" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Call" />
-        <item index="3" class="java.lang.String" itemvalue="Python.iadd" />
-        <item index="4" class="java.lang.String" itemvalue="Python.repr" />
+        <item index="0" class="java.lang.String" itemvalue="Python.empoyees" />
+        <item index="1" class="java.lang.String" itemvalue="Python.destructor" />
+        <item index="2" class="java.lang.String" itemvalue="Python.bool" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Call" />
+        <item index="4" class="java.lang.String" itemvalue="Python.iadd" />
       </list>
     </recent_temporary>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -636,13 +668,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1477905013655</updated>
-    </task>
-    <task id="LOCAL-00078" summary="update">
-      <created>1489266794745</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1489266794745</updated>
     </task>
     <task id="LOCAL-00079" summary="neo4j example added">
       <created>1489487773669</created>
@@ -980,7 +1005,14 @@
       <option name="project" value="LOCAL" />
       <updated>1495352828754</updated>
     </task>
-    <option name="localTasksCounter" value="127" />
+    <task id="LOCAL-00127" summary="update">
+      <created>1495369607826</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1495369607827</updated>
+    </task>
+    <option name="localTasksCounter" value="128" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1130,20 +1162,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Staff/decorators/dec.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myUtils/reloadall.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Staff/moreStaff/quickGrab.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1491,6 +1509,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Staff/OOP/example/example2_is_a/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Staff/OOP/example/example2_is_a/empoyees.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="44" column="14" lean-forward="false" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
           <folding />
         </state>
       </provider>
