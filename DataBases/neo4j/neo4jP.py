@@ -1,5 +1,4 @@
-# dupa
-
+# neo4j
 
 from neo4j.v1 import GraphDatabase, basic_auth
 
