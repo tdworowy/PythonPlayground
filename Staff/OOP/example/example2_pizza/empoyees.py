@@ -26,7 +26,7 @@ class Server(Employee):
     def work(self):
         print(self.name, 'Serving client')
 
-class PIzzaRobot(Chef):
+class PizzaRobot(Chef):
     def __init__(self,name):
          Chef.__init__(self,name)
 
@@ -34,12 +34,12 @@ class PIzzaRobot(Chef):
         print(self.name,'Makeing pizza')
 
 if __name__ == '__main__':
-    bob = PIzzaRobot('Robert')
+    bob = PizzaRobot('Robert')
     print(bob)
     bob.work()
     bob.giveRaise(0.20)
     print(bob)
 
-    for klass in Employee,Chef,Server,PIzzaRobot:
+    for klass in Employee,Chef,Server,PizzaRobot:
         obj = klass(klass.__name__)
         obj.work()
