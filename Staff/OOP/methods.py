@@ -8,3 +8,4 @@ obj = Class()
 x = obj.method
 x()
 
+Class.method(obj)
