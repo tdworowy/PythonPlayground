@@ -11,6 +11,9 @@ class Prod:
 
 C = Calle()
 C(1,2,3)
+C(['a','b','c'])
+C("Spam")
+C({'a':1})
 
 
 x = Prod(2)
