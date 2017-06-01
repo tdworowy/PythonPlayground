@@ -7,6 +7,7 @@
     <list default="true" id="74059ddd-4c74-4733-a753-22db6be1b4c0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms/sorting/mergeSort.py" afterPath="$PROJECT_DIR$/algorithms/sorting/mergeSort.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms/sorting/quickSort.py" afterPath="$PROJECT_DIR$/algorithms/sorting/quickSort.py" />
     </list>
     <ignored path="Playground.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -79,9 +80,11 @@
       <file leaf-file-name="quickSort.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/algorithms/sorting/quickSort.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="6" selection-end-column="37" />
-              <folding />
+            <state relative-caret-position="476">
+              <caret line="28" column="27" lean-forward="false" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,8 +92,8 @@
       <file leaf-file-name="mergeSort.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/algorithms/sorting/mergeSort.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+            <state relative-caret-position="369">
+              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -207,8 +210,8 @@
         <option value="$PROJECT_DIR$/Staff/OOP/methods2.py" />
         <option value="$PROJECT_DIR$/Staff/OOP/ovrloading/Call.py" />
         <option value="$PROJECT_DIR$/Staff/OOP/class7.py" />
-        <option value="$PROJECT_DIR$/algorithms/sorting/quickSort.py" />
         <option value="$PROJECT_DIR$/algorithms/sorting/mergeSort.py" />
+        <option value="$PROJECT_DIR$/algorithms/sorting/quickSort.py" />
       </list>
     </option>
   </component>
@@ -374,7 +377,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.mergeSort">
+  <component name="RunManager" selected="Python.quickSort">
     <configuration default="false" name="methods2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -592,8 +595,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.mergeSort" />
-        <item index="1" class="java.lang.String" itemvalue="Python.quickSort" />
+        <item index="0" class="java.lang.String" itemvalue="Python.quickSort" />
+        <item index="1" class="java.lang.String" itemvalue="Python.mergeSort" />
         <item index="2" class="java.lang.String" itemvalue="Python.class7" />
         <item index="3" class="java.lang.String" itemvalue="Python.Call" />
         <item index="4" class="java.lang.String" itemvalue="Python.methods2" />
@@ -632,13 +635,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1477905013655</updated>
-    </task>
-    <task id="LOCAL-00087" summary="update">
-      <created>1489782859199</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1489782859199</updated>
     </task>
     <task id="LOCAL-00088" summary="update">
       <created>1489918892482</created>
@@ -976,7 +972,14 @@
       <option name="project" value="LOCAL" />
       <updated>1496332657808</updated>
     </task>
-    <option name="localTasksCounter" value="136" />
+    <task id="LOCAL-00136" summary="update">
+      <created>1496332796059</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1496332796059</updated>
+    </task>
+    <option name="localTasksCounter" value="137" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1022,9 +1025,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24733475" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24733475" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44853738" sideWeight="0.5021075" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28710726" sideWeight="0.49789253" order="2" side_tool="false" content_ui="tabs" />
@@ -1113,11 +1115,6 @@
           <url>file://$PROJECT_DIR$/Staff/OOP/ovrloading/iters.py</url>
           <line>12</line>
           <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/algorithms/sorting/mergeSort.py</url>
-          <line>38</line>
-          <option name="timeStamp" value="40" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -1478,16 +1475,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/algorithms/sorting/quickSort.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="6" selection-end-column="37" />
-          <folding />
+        <state relative-caret-position="476">
+          <caret line="28" column="27" lean-forward="false" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/algorithms/sorting/mergeSort.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+        <state relative-caret-position="369">
+          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>

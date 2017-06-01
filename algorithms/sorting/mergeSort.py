@@ -18,10 +18,10 @@ class mergesort:
         while i < len(partList1) and j < len(partList2):
             if partList1[i] > partList2[j]:
                 result.append(partList2[j])
-                j+=1
+                j += 1
             else:
                 result.append(partList1[i])
-                i+=1
+                i += 1
         result.extend(partList1[i:])
         result.extend(partList2[j:])
         return result
@@ -31,7 +31,7 @@ if __name__ == '__main__':
 
     list = [randint(0,10000) for x in range(1000)]
     ms = mergesort()
-    sortedList= ms.sort(list)
+    sortedList = ms.sort(list)
     print(sortedList)
 
     list.sort()
