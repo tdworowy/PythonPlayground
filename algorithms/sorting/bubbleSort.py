@@ -13,7 +13,7 @@ class bubbleSort:
               if list[j] > list[i]:
                  list[j],list[i] = list[i],list[j]
               i +=1
-          i=1
+          i =1
           resoult.append(list[-1])
           list = list[:-1]
       return  resoult[::-1]
