@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74059ddd-4c74-4733-a753-22db6be1b4c0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/algorithms/sorting/gnomeSort.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/algorithms/sorting/selectSort.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myUtils/classTools_/listInstance.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Playground.iws" />
@@ -27,16 +26,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Call.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Staff/OOP/ovrloading/Call.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="14" lean-forward="false" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="class7.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Staff/OOP/class7.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -91,11 +80,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gnomeSort.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="gnomeSort.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/algorithms/sorting/gnomeSort.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="442">
               <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listInstance.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/myUtils/classTools_/listInstance.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -161,7 +160,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Staff/OOP/example/updateDB.py" />
         <option value="$PROJECT_DIR$/Staff/OOP/example/person.py" />
         <option value="$PROJECT_DIR$/Staff/MyHDL_/myhdl.py" />
         <option value="$PROJECT_DIR$/Staff/MyHDL_/myhdl_.py" />
@@ -212,6 +210,7 @@
         <option value="$PROJECT_DIR$/algorithms/sorting/bubbleSort.py" />
         <option value="$PROJECT_DIR$/algorithms/sorting/selectSort.py" />
         <option value="$PROJECT_DIR$/algorithms/sorting/gnomeSort.py" />
+        <option value="$PROJECT_DIR$/myUtils/classTools_/listInstance.py" />
       </list>
     </option>
   </component>
@@ -276,7 +275,7 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="files">
+            <PATH_ELEMENT USER_OBJECT="classTools_">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -391,7 +390,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.gnomeSort">
+  <component name="RunManager" selected="Python.listInstance">
     <configuration default="false" name="quickSort" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -405,24 +404,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Playground" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithms/sorting/quickSort.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="mergeSort" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithms/sorting" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Playground" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithms/sorting/mergeSort.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -477,6 +458,24 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Playground" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithms/sorting/gnomeSort.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="listInstance" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/myUtils/classTools_" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Playground" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/myUtils/classTools_/listInstance.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -602,18 +601,18 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.fzzzBuzz" />
       <item index="1" class="java.lang.String" itemvalue="Python.quickSort" />
-      <item index="2" class="java.lang.String" itemvalue="Python.mergeSort" />
-      <item index="3" class="java.lang.String" itemvalue="Python.bubbleSort" />
-      <item index="4" class="java.lang.String" itemvalue="Python.selectSort" />
-      <item index="5" class="java.lang.String" itemvalue="Python.gnomeSort" />
+      <item index="2" class="java.lang.String" itemvalue="Python.bubbleSort" />
+      <item index="3" class="java.lang.String" itemvalue="Python.selectSort" />
+      <item index="4" class="java.lang.String" itemvalue="Python.gnomeSort" />
+      <item index="5" class="java.lang.String" itemvalue="Python.listInstance" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.gnomeSort" />
-        <item index="1" class="java.lang.String" itemvalue="Python.selectSort" />
-        <item index="2" class="java.lang.String" itemvalue="Python.bubbleSort" />
-        <item index="3" class="java.lang.String" itemvalue="Python.quickSort" />
-        <item index="4" class="java.lang.String" itemvalue="Python.mergeSort" />
+        <item index="0" class="java.lang.String" itemvalue="Python.listInstance" />
+        <item index="1" class="java.lang.String" itemvalue="Python.gnomeSort" />
+        <item index="2" class="java.lang.String" itemvalue="Python.selectSort" />
+        <item index="3" class="java.lang.String" itemvalue="Python.bubbleSort" />
+        <item index="4" class="java.lang.String" itemvalue="Python.quickSort" />
       </list>
     </recent_temporary>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -649,13 +648,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1477905013655</updated>
-    </task>
-    <task id="LOCAL-00091" summary="update">
-      <created>1491058822148</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1491058822148</updated>
     </task>
     <task id="LOCAL-00092" summary="update">
       <created>1491147749305</created>
@@ -993,7 +985,14 @@
       <option name="project" value="LOCAL" />
       <updated>1496339875132</updated>
     </task>
-    <option name="localTasksCounter" value="140" />
+    <task id="LOCAL-00140" summary="update">
+      <created>1496417684763</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1496417684765</updated>
+    </task>
+    <option name="localTasksCounter" value="141" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1148,14 +1147,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Staff/OOP/ovrloading/iters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="27" lean-forward="false" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/myUtils/os_.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1505,6 +1496,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myUtils/classTools_/listInstance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
           <folding />
         </state>
       </provider>
