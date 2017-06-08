@@ -14,7 +14,7 @@ print('pandas: {}'.format(pandas.__version__))
 import  lightning #sklearn
 print('lightning: {}'.format(lightning.__version__))
 
-# scikit-learn #TODO don't work mayby need to check __init__ in scikit p
+# scikit-learn #TODO don't work mayby need to check __init__ in scikit
 import sklearn
 print('sklearn: {}'.format(sklearn.__version__))
 
