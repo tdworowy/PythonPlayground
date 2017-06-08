@@ -14,7 +14,7 @@ print('pandas: {}'.format(pandas.__version__))
 import  lightning #sklearn
 print('lightning: {}'.format(lightning.__version__))
 
-# scikit-learn # don't work
+# scikit-learn # don't work mayby need to check __init__ in scikit p
 import sklearn
 print('sklearn: {}'.format(sklearn.__version__))
 
