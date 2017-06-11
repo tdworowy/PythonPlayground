@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import pandas
 from pandas.tools.plotting import scatter_matrix
+from sklearn import model_selection
 
 
 class machineL:
