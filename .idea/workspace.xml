@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74059ddd-4c74-4733-a753-22db6be1b4c0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FunctionalPrograming/basic/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FunctionalPrograming/basic/lambda2.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FunctionalPrograming/patternMatching.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Staff/BasicStuff/get_priomes_generator.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/machineLearning/dataUtils.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/machineLearning/namesClassification.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/FunctionalProgramingTools/Filter.py" afterPath="$PROJECT_DIR$/FunctionalPrograming/basic/Filter.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/FunctionalProgramingTools/Lambda.py" afterPath="$PROJECT_DIR$/FunctionalPrograming/basic/Lambda.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/FunctionalProgramingTools/Reduce.py" afterPath="$PROJECT_DIR$/FunctionalPrograming/basic/Reduce.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/FunctionalProgramingTools/__init__.py" afterPath="$PROJECT_DIR$/FunctionalPrograming/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/FunctionalProgramingTools/map.py" afterPath="$PROJECT_DIR$/FunctionalPrograming/basic/map.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/FunctionalProgramingTools/map2.py" afterPath="$PROJECT_DIR$/FunctionalPrograming/basic/map2.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/machineLearning/check.py" afterPath="$PROJECT_DIR$/machineLearning/example1/check.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/machineLearning/machine_learning.py" afterPath="$PROJECT_DIR$/machineLearning/example1/machine_learning.py" />
     </list>
     <ignored path="Playground.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,28 +29,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="machine_learning.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/machineLearning/machine_learning.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="listInstance.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myUtils/classTools_/listInstance.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="43" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="listtree.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myUtils/classTools_/listtree.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -93,7 +65,7 @@
         <entry file="file://$PROJECT_DIR$/FunctionalPrograming/basic/Filter.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+              <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -102,7 +74,7 @@
       <file leaf-file-name="Lambda.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FunctionalPrograming/basic/Lambda.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-56">
+            <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -123,17 +95,39 @@
         <entry file="file://$PROJECT_DIR$/Staff/BasicStuff/get_priomes_generator.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="patternMatching.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="patternMatching.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FunctionalPrograming/patternMatching.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="48" column="42" lean-forward="true" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="42" />
+            <state relative-caret-position="442">
+              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="namesClassification.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/machineLearning/namesClassification.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-170">
+              <caret line="17" column="42" lean-forward="false" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="42" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dataUtils.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/machineLearning/dataUtils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -165,8 +159,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/myUtils/margePATHS.py" />
-        <option value="$PROJECT_DIR$/Staff/OOP/example/class6.py" />
         <option value="$PROJECT_DIR$/Staff/OOP/interfaces/specialize.py" />
         <option value="$PROJECT_DIR$/Staff/decorators/dec.py" />
         <option value="$PROJECT_DIR$/Staff/OOP/interfaces/abstractMethod.py" />
@@ -216,6 +208,8 @@
         <option value="$PROJECT_DIR$/FunctionalPrograming/basic/lambda2.py" />
         <option value="$PROJECT_DIR$/Staff/BasicStuff/get_priomes_generator.py" />
         <option value="$PROJECT_DIR$/FunctionalPrograming/patternMatching.py" />
+        <option value="$PROJECT_DIR$/machineLearning/dataUtils.py" />
+        <option value="$PROJECT_DIR$/machineLearning/namesClassification.py" />
       </list>
     </option>
   </component>
@@ -248,32 +242,6 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="External Dependencies">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="D:">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Python">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Lib">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="site-packages">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
             <PATH_ELEMENT USER_OBJECT="Playground">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
@@ -288,31 +256,14 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="FunctionalPrograming">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Playground">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="algorithms">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="sorting">
+            <PATH_ELEMENT USER_OBJECT="machineLearning">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -355,7 +306,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -363,19 +313,19 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Google_drive\Python_\Playground\machineLearning\example1" />
+      <recent name="D:\Google_drive\Python_\Playground\FunctionalPrograming\basic" />
+      <recent name="D:\Google_drive\Python_\Playground" />
+      <recent name="D:\Google_drive\Python_\Playground\myUtils\danger" />
+      <recent name="D:\Google_drive\Python_\Playground\myUtils\classTools_" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Google_drive\Python_\Playground\machineLearning\data" />
       <recent name="D:\Google_drive\Python_\Playground\Staff\myUtils" />
       <recent name="D:\Google_drive\Python_\Playground\Staff\DecisionsTrees" />
       <recent name="D:\Google_drive\Python_\Playground\Staff" />
       <recent name="D:\Google_drive\Python\Playground" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Google_drive\Python_\Playground\FunctionalPrograming\basic" />
-      <recent name="D:\Google_drive\Python_\Playground" />
-      <recent name="D:\Google_drive\Python_\Playground\myUtils\danger" />
-      <recent name="D:\Google_drive\Python_\Playground\myUtils\classTools_" />
-      <recent name="D:\Google_drive\Python_\Playground\Staff\OOP\example\example1" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -390,25 +340,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.patternMatching">
-    <configuration default="false" name="factory" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/myUtils/classTools_" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Playground" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/myUtils/classTools_/factory.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.namesClassification">
     <configuration default="false" name="Filter" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -476,6 +408,24 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Playground" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FunctionalPrograming/patternMatching.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="namesClassification" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/machineLearning" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Playground" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/machineLearning/namesClassification.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -600,19 +550,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.fzzzBuzz" />
-      <item index="1" class="java.lang.String" itemvalue="Python.factory" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Filter" />
-      <item index="3" class="java.lang.String" itemvalue="Python.lambda2" />
-      <item index="4" class="java.lang.String" itemvalue="Python.get_priomes_generator" />
-      <item index="5" class="java.lang.String" itemvalue="Python.patternMatching" />
+      <item index="1" class="java.lang.String" itemvalue="Python.Filter" />
+      <item index="2" class="java.lang.String" itemvalue="Python.lambda2" />
+      <item index="3" class="java.lang.String" itemvalue="Python.get_priomes_generator" />
+      <item index="4" class="java.lang.String" itemvalue="Python.patternMatching" />
+      <item index="5" class="java.lang.String" itemvalue="Python.namesClassification" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.patternMatching" />
-        <item index="1" class="java.lang.String" itemvalue="Python.get_priomes_generator" />
-        <item index="2" class="java.lang.String" itemvalue="Python.lambda2" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Filter" />
-        <item index="4" class="java.lang.String" itemvalue="Python.factory" />
+        <item index="0" class="java.lang.String" itemvalue="Python.namesClassification" />
+        <item index="1" class="java.lang.String" itemvalue="Python.patternMatching" />
+        <item index="2" class="java.lang.String" itemvalue="Python.get_priomes_generator" />
+        <item index="3" class="java.lang.String" itemvalue="Python.lambda2" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Filter" />
       </list>
     </recent_temporary>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -648,13 +598,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1477905013655</updated>
-    </task>
-    <task id="LOCAL-00102" summary="mysql added">
-      <created>1492433878449</created>
-      <option name="number" value="00102" />
-      <option name="presentableId" value="LOCAL-00102" />
-      <option name="project" value="LOCAL" />
-      <updated>1492433878450</updated>
     </task>
     <task id="LOCAL-00103" summary="update">
       <created>1492433891107</created>
@@ -992,7 +935,14 @@
       <option name="project" value="LOCAL" />
       <updated>1497189048477</updated>
     </task>
-    <option name="localTasksCounter" value="151" />
+    <task id="LOCAL-00151" summary="update">
+      <created>1497195576361</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1497195576362</updated>
+    </task>
+    <option name="localTasksCounter" value="152" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1039,7 +989,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27132195" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2771855" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44853738" sideWeight="0.5021075" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28710726" sideWeight="0.49789253" order="2" side_tool="false" content_ui="tabs" />
@@ -1152,20 +1102,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Staff/OOP/example/example1/checkDB.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Staff/OOP/ovrloading/repr.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Staff/OOP/ovrloading/getatrr.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1384,7 +1320,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1392,9 +1327,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="26" column="11" lean-forward="false" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1402,7 +1334,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1410,9 +1341,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1420,24 +1348,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="34" column="32" lean-forward="false" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/machineLearning/check.py">
+    <entry file="file://$PROJECT_DIR$/machineLearning/example1/check.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="15" lean-forward="false" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="70" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/machineLearning/machine_learning.py">
+    <entry file="file://$PROJECT_DIR$/machineLearning/example1/machine_learning.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
           <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1479,14 +1405,14 @@
     <entry file="file://$PROJECT_DIR$/FunctionalPrograming/basic/Filter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+          <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FunctionalPrograming/basic/Lambda.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-56">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -1503,16 +1429,34 @@
     <entry file="file://$PROJECT_DIR$/Staff/BasicStuff/get_priomes_generator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FunctionalPrograming/patternMatching.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="42" lean-forward="true" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="42" />
+        <state relative-caret-position="442">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machineLearning/dataUtils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machineLearning/namesClassification.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-170">
+          <caret line="17" column="42" lean-forward="false" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
