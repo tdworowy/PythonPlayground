@@ -27,13 +27,13 @@ def scanPorts(host,min,max):
     hostip = gethostbyname(host)
     print("Host: %s IP: %s" % (host, hostip))
     print("Scan in progress...")
-    results = list(map(scanHost_,[(host,port)for port in range(min, max)]))
+    results = list(map(scanHost_,[(host,port)for port in range(min, max+1)]))
     print("Scan Done...")
     return [x[0] for x in results if x[1] == 0 ]
 
 
 if __name__ == '__main__':
-    openPorts = scanPorts('127.0.0.1',1,5000)
+    openPorts = scanPorts('127.0.0.1',8080,8080)
     print("Open Ports:",openPorts)
 
 
