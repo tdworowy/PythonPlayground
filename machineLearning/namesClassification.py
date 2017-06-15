@@ -1,5 +1,6 @@
-import nltk
 import random
+
+import nltk
 
 from machineLearning.dataUtils import getListPercent_head, getListPercent_tail
 
@@ -39,33 +40,44 @@ class NamesClassification:
         features = [self.getFeatures(name) for name in namesList]
         clasfified = self.bays_classifier.classify_many(features)
         return clasfified
+    # TODO
+    def Weka_clasyfication(self, namesList):
+        features = [self.getFeatures(name) for name in namesList]
+        self.Weka_classifier = nltk.WekaClassifier.train(self.train_set,features)
+
+        clasfified = self.Weka_classifier.classify_many(features)
+        return clasfified
 
     def printClassufierData(self):
         print("Accuracy: ", nltk.classify.accuracy(self.bays_classifier,self.test_Set))
         print(self.bays_classifier.show_most_informative_features())
 
-    def testClassify(self,train,test):
+    def testClassify(self,classification,train,test):
         self.set_Sets(train,test)
-        classufied = self.bays_clasyfication(["Adam","Anna","Thomas","Sigmund","Kathrin","Anthony"])
+        classified = classification(["Adam","Anna","Thomas","Sigmund","Kathrin","Anthony"])
         result = ['male','female','male','male','female','male']
-        if  classufied != result:
-            print("INCORECT CLASIFICATION")
-            print("WAS:", classufied)
+        if  classified != result:
+            print("INCORRECT CLASSIFICATION")
+            print("WAS:", classified)
             print("SHOULD BY: ",result)
+
+
+    def testBays(self,train,test):
+        self.testClassify(self.bays_clasyfication,train,test)
+
+    def testWeka(self, train, test):
+        self.testClassify(self.Weka_clasyfication,train, test)
 
 
 
 if __name__ == '__main__':
     x = NamesClassification()
-    x.testClassify(90,10)
-    x.printClassufierData()
-    x.testClassify(10,90)
-    x.printClassufierData()
-    x.testClassify(1, 99)
-    x.printClassufierData()
-    x.testClassify(99, 1)
-    x.printClassufierData()
+    x.testBays(90,10)
+    x.testBays(10,90)
+    x.testBays(1, 99)
+    x.testBays(99, 1)
 
-    x.testClassify(50, 50)
-    x.printClassufierData()
+
+
+
 
