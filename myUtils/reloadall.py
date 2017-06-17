@@ -1,5 +1,5 @@
 import types
-from imp import  reload
+from imp import reload
 
 def status(module):
     print("reload: "+module.__name__)
