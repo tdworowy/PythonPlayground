@@ -1,6 +1,5 @@
 import string
 
-# TODO refactor
 from myUtils.compareStrings import getDiff
 
 
@@ -14,14 +13,12 @@ def CesarUnCrypt(text,index):
 def getLetter(char,jump,setIndexFunction):
     if char.isalpha():
         alpha = string.ascii_lowercase
-        index = alpha.index(char)+jump
+        index = alpha.index(char) + jump
         while index not in range(0,len(alpha)):
             index =setIndexFunction(index,len(alpha))
-
         return alpha[index]
     else:
         return char
-
 
 
 def setIndexUP(i,alphabetSize):
@@ -38,7 +35,6 @@ def setIndexDOWN(i,alphabetSize):
 
 if __name__ == '__main__':
    test = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rhoncus laoreet erat, sed lobortis nibh venenatis sit amet. Nullam quis."
-   # test = "venenatis"
    encrypted =  CesarCrypt(test,100)
    unEncrypted = CesarUnCrypt(encrypted,100)
 
