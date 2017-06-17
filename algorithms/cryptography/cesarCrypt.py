@@ -38,5 +38,10 @@ if __name__ == '__main__':
    encrypted =  CesarCrypt(test,100)
    unEncrypted = CesarUnCrypt(encrypted,100)
 
+   print("ENCRYPTED: ", encrypted)
+   print("ORYGINAL: ", test.lower())
+   print("UNENCRYPTED: ", unEncrypted)
+   print(getDiff(unEncrypted, test.lower()))
+
    assert not getDiff(unEncrypted, test.lower())
 

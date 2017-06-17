@@ -3,7 +3,6 @@ from random import randint
 
 class bubbleSort:
 
-
     def sort(self,list_):
       list = list_[:]
       resoult = []
