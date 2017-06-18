@@ -1,7 +1,7 @@
 from imp import reload
 
 from Python_Staff.reload_ import changer
-from myUtils import randomString
+from myUtils.randomString import randomString
 
 f = open("changer.py",'w')
 f.write("""message = "{x}"
