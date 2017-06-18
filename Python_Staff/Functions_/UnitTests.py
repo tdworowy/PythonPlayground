@@ -1,6 +1,6 @@
 import unittest
 
-from Staff.Functions_ import numbersPairSum
+from Python_Staff.Functions_ import numbersPairSum
 
 
 class TestStringMethods(unittest.TestCase):

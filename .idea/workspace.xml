@@ -1,13 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="74059ddd-4c74-4733-a753-22db6be1b4c0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/algorithms/cryptography/cesarCrypt2.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myUtils/myList.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myUtils/set.py" />
+    <list default="true" id="74059ddd-4c74-4733-a753-22db6be1b4c0" name="Default" comment="update">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Python_Staff/scikit-learn/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms/cryptography/cesarCrypt.py" afterPath="$PROJECT_DIR$/algorithms/cryptography/cesarCrypt.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms/sorting/bubbleSort.py" afterPath="$PROJECT_DIR$/algorithms/sorting/bubbleSort.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/AdvanceStaff/Modules.py" afterPath="$PROJECT_DIR$/Python_Staff/AdvanceStaff/Modules.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/AdvanceStaff/__init__.py" afterPath="$PROJECT_DIR$/Python_Staff/AdvanceStaff/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/BasicStuff/DIctionaryComprehension.py" afterPath="$PROJECT_DIR$/Python_Staff/BasicStuff/DIctionaryComprehension.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/BasicStuff/Sets.py" afterPath="$PROJECT_DIR$/Python_Staff/BasicStuff/Sets.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/BasicStuff/Threads.py" afterPath="$PROJECT_DIR$/Python_Staff/BasicStuff/Threads.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/BasicStuff/__init__.py" afterPath="$PROJECT_DIR$/Python_Staff/BasicStuff/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/BasicStuff/counter.py" afterPath="$PROJECT_DIR$/Python_Staff/BasicStuff/counter.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/BasicStuff/enumerate.py" afterPath="$PROJECT_DIR$/Python_Staff/BasicStuff/enumerate.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/BasicStuff/exercise.py" afterPath="$PROJECT_DIR$/Python_Staff/BasicStuff/exercise.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/BasicStuff/file4.py" afterPath="$PROJECT_DIR$/Python_Staff/BasicStuff/file4.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/BasicStuff/file_iteration.py" afterPath="$PROJECT_DIR$/Python_Staff/BasicStuff/file_iteration.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/BasicStuff/for.py" afterPath="$PROJECT_DIR$/Python_Staff/BasicStuff/for.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/BasicStuff/for2.py" afterPath="$PROJECT_DIR$/Python_Staff/BasicStuff/for2.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/BasicStuff/fzzzBuzz.py" afterPath="$PROJECT_DIR$/Python_Staff/BasicStuff/fzzzBuzz.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/BasicStuff/generators.py" afterPath="$PROJECT_DIR$/Python_Staff/BasicStuff/generators.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/BasicStuff/generators2_wyrarzenia.py" afterPath="$PROJECT_DIR$/Python_Staff/BasicStuff/generators2_wyrarzenia.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/BasicStuff/get_priomes_generator.py" afterPath="$PROJECT_DIR$/Python_Staff/BasicStuff/get_priomes_generator.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/BasicStuff/if.py" afterPath="$PROJECT_DIR$/Python_Staff/BasicStuff/if.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/BasicStuff/inter2.py" afterPath="$PROJECT_DIR$/Python_Staff/BasicStuff/inter2.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/BasicStuff/iteration.py" afterPath="$PROJECT_DIR$/Python_Staff/BasicStuff/iteration.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/BasicStuff/listComprehension.py" afterPath="$PROJECT_DIR$/Python_Staff/BasicStuff/listComprehension.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/BasicStuff/listComprehension2.py" afterPath="$PROJECT_DIR$/Python_Staff/BasicStuff/listComprehension2.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/BasicStuff/lists.py" afterPath="$PROJECT_DIR$/Python_Staff/BasicStuff/lists.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/BasicStuff/mapEmulator.py" afterPath="$PROJECT_DIR$/Python_Staff/BasicStuff/mapEmulator.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/BasicStuff/range.py" afterPath="$PROJECT_DIR$/Python_Staff/BasicStuff/range.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/BasicStuff/tuple2.py" afterPath="$PROJECT_DIR$/Python_Staff/BasicStuff/tuple2.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/BasicStuff/while.py" afterPath="$PROJECT_DIR$/Python_Staff/BasicStuff/while.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/BasicStuff/write_read_from_file.py" afterPath="$PROJECT_DIR$/Python_Staff/BasicStuff/write_read_from_file.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/BasicStuff/zip.py" afterPath="$PROJECT_DIR$/Python_Staff/BasicStuff/zip.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/BasicStuff/zipEmulator.py" afterPath="$PROJECT_DIR$/Python_Staff/BasicStuff/zipEmulator.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/C++_inPython/bost.txt" afterPath="$PROJECT_DIR$/Python_Staff/C++_inPython/bost.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/Functions_/FunctionAnnotations.py" afterPath="$PROJECT_DIR$/Python_Staff/Functions_/FunctionAnnotations.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/Functions_/FunctionGenerator.py" afterPath="$PROJECT_DIR$/Python_Staff/Functions_/FunctionGenerator.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/Functions_/Functions" afterPath="$PROJECT_DIR$/Python_Staff/Functions_/Functions" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/Functions_/Functions2.py" afterPath="$PROJECT_DIR$/Python_Staff/Functions_/Functions2.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/Functions_/Minimum.py" afterPath="$PROJECT_DIR$/Python_Staff/Functions_/Minimum.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/Functions_/PrimeNumbers.py" afterPath="$PROJECT_DIR$/Python_Staff/Functions_/PrimeNumbers.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/Functions_/UnitTests.py" afterPath="$PROJECT_DIR$/Python_Staff/Functions_/UnitTests.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/Functions_/__init__.py" afterPath="$PROJECT_DIR$/Python_Staff/Functions_/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/Functions_/functionArguments.py" afterPath="$PROJECT_DIR$/Python_Staff/Functions_/functionArguments.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/Functions_/functionArguments2.py" afterPath="$PROJECT_DIR$/Python_Staff/Functions_/functionArguments2.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/Functions_/functionAttribute.py" afterPath="$PROJECT_DIR$/Python_Staff/Functions_/functionAttribute.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/Functions_/functionsMore.py" afterPath="$PROJECT_DIR$/Python_Staff/Functions_/functionsMore.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/Functions_/global.py" afterPath="$PROJECT_DIR$/Python_Staff/Functions_/global.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/Functions_/minMax.py" afterPath="$PROJECT_DIR$/Python_Staff/Functions_/minMax.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/Functions_/nonLocal.py" afterPath="$PROJECT_DIR$/Python_Staff/Functions_/nonLocal.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/Functions_/numbersPairSum.py" afterPath="$PROJECT_DIR$/Python_Staff/Functions_/numbersPairSum.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/Functions_/print3Emulation.py" afterPath="$PROJECT_DIR$/Python_Staff/Functions_/print3Emulation.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/Functions_/recursion.py" afterPath="$PROJECT_DIR$/Python_Staff/Functions_/recursion.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/Functions_/traps.py" afterPath="$PROJECT_DIR$/Python_Staff/Functions_/traps.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/Hacking/keyloger.py" afterPath="$PROJECT_DIR$/Python_Staff/Hacking/keyloger.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/Hacking/wifiNetworks.py" afterPath="$PROJECT_DIR$/Python_Staff/Hacking/wifiNetworks.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/Modules/__init__.py" afterPath="$PROJECT_DIR$/Python_Staff/Modules/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/Modules/dir1/__init__.py" afterPath="$PROJECT_DIR$/Python_Staff/Modules/dir1/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/Modules/dir1/dir2/__init__.py" afterPath="$PROJECT_DIR$/Python_Staff/Modules/dir1/dir2/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/Modules/dir1/dir2/dir3/__init__.py" afterPath="$PROJECT_DIR$/Python_Staff/Modules/dir1/dir2/dir3/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/Modules/dir1/dir2/dir3/dir4/__init__.py" afterPath="$PROJECT_DIR$/Python_Staff/Modules/dir1/dir2/dir3/dir4/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/Modules/dir1/dir2/dir3/dir4/script.py" afterPath="$PROJECT_DIR$/Python_Staff/Modules/dir1/dir2/dir3/dir4/script.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/Modules/dir1/dir2/dir3/test_.py" afterPath="$PROJECT_DIR$/Python_Staff/Modules/dir1/dir2/dir3/test_.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/Modules/importStaff.py" afterPath="$PROJECT_DIR$/Python_Staff/Modules/importStaff.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/MyHDL_/add_gate.vhd" afterPath="$PROJECT_DIR$/Python_Staff/MyHDL_/add_gate.vhd" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/MyHDL_/myhdl_.py" afterPath="$PROJECT_DIR$/Python_Staff/MyHDL_/myhdl_.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/MyHDL_/pck_myhdl_090.vhd" afterPath="$PROJECT_DIR$/Python_Staff/MyHDL_/pck_myhdl_090.vhd" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/Inheritance.py" afterPath="$PROJECT_DIR$/Python_Staff/OOP/Inheritance.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/__init__.py" afterPath="$PROJECT_DIR$/Python_Staff/OOP/Slots.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/abstractMethod.py" afterPath="$PROJECT_DIR$/Python_Staff/OOP/abstractMethod.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/calss4.py" afterPath="$PROJECT_DIR$/Python_Staff/OOP/calss4.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/calssStaff.py" afterPath="$PROJECT_DIR$/Python_Staff/OOP/calssStaff.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/calss_.py" afterPath="$PROJECT_DIR$/Python_Staff/OOP/calss_.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/class2.py" afterPath="$PROJECT_DIR$/Python_Staff/OOP/class2.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/class3.py" afterPath="$PROJECT_DIR$/Python_Staff/OOP/class3.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/class4_staticMethods.py" afterPath="$PROJECT_DIR$/Python_Staff/OOP/class4_staticMethods.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/class5.py" afterPath="$PROJECT_DIR$/Python_Staff/OOP/class5.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/class6.py" afterPath="$PROJECT_DIR$/Python_Staff/OOP/class6.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/class7.py" afterPath="$PROJECT_DIR$/Python_Staff/OOP/class7.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/example/__init__.py" afterPath="$PROJECT_DIR$/Python_Staff/OOP/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/example/example1/__init__.py" afterPath="$PROJECT_DIR$/Python_Staff/OOP/example/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/example/example1/checkDB.py" afterPath="$PROJECT_DIR$/Python_Staff/OOP/example/example1/checkDB.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/example/example1/makeDB.py" afterPath="$PROJECT_DIR$/Python_Staff/OOP/example/example1/makeDB.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/example/example1/person.py" afterPath="$PROJECT_DIR$/Python_Staff/OOP/example/example1/person.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/example/example1/personDB.dat" afterPath="$PROJECT_DIR$/Python_Staff/OOP/example/example1/personDB.dat" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/example/example1/persondb.bak" afterPath="$PROJECT_DIR$/Python_Staff/OOP/example/example1/persondb.bak" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/example/example1/persondb.dir" afterPath="$PROJECT_DIR$/Python_Staff/OOP/example/example1/persondb.dir" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/example/example1/updateDB.py" afterPath="$PROJECT_DIR$/Python_Staff/OOP/example/example1/updateDB.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/example/example2_pizza/__init__.py" afterPath="$PROJECT_DIR$/Python_Staff/OOP/example/example1/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/example/example2_pizza/empoyees.py" afterPath="$PROJECT_DIR$/Python_Staff/OOP/example/example2_pizza/empoyees.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/example/example2_pizza/pizzashop.py" afterPath="$PROJECT_DIR$/Python_Staff/OOP/example/example2_pizza/pizzashop.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/interfaces/specialize.py" afterPath="$PROJECT_DIR$/Python_Staff/OOP/interfaces/specialize.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/methods.py" afterPath="$PROJECT_DIR$/Python_Staff/OOP/methods.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/methods2.py" afterPath="$PROJECT_DIR$/Python_Staff/OOP/methods2.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/mixedNames.py" afterPath="$PROJECT_DIR$/Python_Staff/OOP/mixedNames.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/ovrloading/Call.py" afterPath="$PROJECT_DIR$/Python_Staff/OOP/ovrloading/Call.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/ovrloading/__init__.py" afterPath="$PROJECT_DIR$/Python_Staff/OOP/example/example2_pizza/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/ovrloading/bool.py" afterPath="$PROJECT_DIR$/Python_Staff/OOP/ovrloading/bool.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/ovrloading/destructor.py" afterPath="$PROJECT_DIR$/Python_Staff/OOP/ovrloading/destructor.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/ovrloading/getatrr.py" afterPath="$PROJECT_DIR$/Python_Staff/OOP/ovrloading/getatrr.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/ovrloading/iadd.py" afterPath="$PROJECT_DIR$/Python_Staff/OOP/ovrloading/iadd.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/ovrloading/iters.py" afterPath="$PROJECT_DIR$/Python_Staff/OOP/ovrloading/iters.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/ovrloading/iters2.py" afterPath="$PROJECT_DIR$/Python_Staff/OOP/ovrloading/iters2.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/ovrloading/overloadingOperators.py" afterPath="$PROJECT_DIR$/Python_Staff/OOP/ovrloading/overloadingOperators.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/ovrloading/overloadingOperators2.py" afterPath="$PROJECT_DIR$/Python_Staff/OOP/ovrloading/overloadingOperators2.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/ovrloading/repr.py" afterPath="$PROJECT_DIR$/Python_Staff/OOP/ovrloading/repr.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/ovrloading/setattr.py" afterPath="$PROJECT_DIR$/Python_Staff/OOP/ovrloading/setattr.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/ovrloading/skipIter.py" afterPath="$PROJECT_DIR$/Python_Staff/OOP/ovrloading/skipIter.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/pseudoPrivate.py" afterPath="$PROJECT_DIR$/Python_Staff/OOP/pseudoPrivate.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/OOP/static.py" afterPath="$PROJECT_DIR$/Python_Staff/OOP/static.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/Tests/__init__.py" afterPath="$PROJECT_DIR$/Python_Staff/OOP/ovrloading/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/Tests/check.py" afterPath="$PROJECT_DIR$/Python_Staff/Tests/check.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/Tests/unitests1.py" afterPath="$PROJECT_DIR$/Python_Staff/Tests/unitests1.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/__init__.py" afterPath="$PROJECT_DIR$/Python_Staff/Tests/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/credentials.csv" afterPath="$PROJECT_DIR$/Python_Staff/credentials.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/decorators/dec.py" afterPath="$PROJECT_DIR$/Python_Staff/decorators/dec.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/file.csv" afterPath="$PROJECT_DIR$/Python_Staff/file.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/funnyStaff/iteration.txt" afterPath="$PROJECT_DIR$/Python_Staff/funnyStaff/iteration.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/funnyStaff/script.py" afterPath="$PROJECT_DIR$/Python_Staff/funnyStaff/script.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/log.txt" afterPath="$PROJECT_DIR$/Python_Staff/log.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/moreStaff/MonteCarlo.py" afterPath="$PROJECT_DIR$/Python_Staff/moreStaff/MonteCarlo.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/moreStaff/NeuralNetwork.py" afterPath="$PROJECT_DIR$/Python_Staff/moreStaff/NeuralNetwork.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/moreStaff/PerformenceCheck.py" afterPath="$PROJECT_DIR$/Python_Staff/moreStaff/PerformenceCheck.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/moreStaff/__init__.py" afterPath="$PROJECT_DIR$/Python_Staff/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/moreStaff/geneticAlgorithm.py" afterPath="$PROJECT_DIR$/Python_Staff/moreStaff/geneticAlgorithm.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/moreStaff/quickGrab.py" afterPath="$PROJECT_DIR$/Python_Staff/moreStaff/quickGrab.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/otherStaff/Threads.py" afterPath="$PROJECT_DIR$/Python_Staff/otherStaff/Threads.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/otherStaff/__init__.py" afterPath="$PROJECT_DIR$/Python_Staff/moreStaff/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/otherStaff/a.py" afterPath="$PROJECT_DIR$/Python_Staff/otherStaff/a.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/otherStaff/cw.py" afterPath="$PROJECT_DIR$/Python_Staff/otherStaff/cw.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/otherStaff/formats.py" afterPath="$PROJECT_DIR$/Python_Staff/otherStaff/formats.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/otherStaff/lambda.py" afterPath="$PROJECT_DIR$/Python_Staff/otherStaff/lambda.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/otherStaff/os_check.py" afterPath="$PROJECT_DIR$/Python_Staff/otherStaff/os_check.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/otherStaff/result.txt" afterPath="$PROJECT_DIR$/Python_Staff/otherStaff/result.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/otherStaff/script1.py" afterPath="$PROJECT_DIR$/Python_Staff/otherStaff/script1.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/otherStaff/script1.txt" afterPath="$PROJECT_DIR$/Python_Staff/otherStaff/script1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/otherStaff/staff.py" afterPath="$PROJECT_DIR$/Python_Staff/otherStaff/staff.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/otherStaff/sys_check.py" afterPath="$PROJECT_DIR$/Python_Staff/otherStaff/sys_check.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/otherStaff/test.py" afterPath="$PROJECT_DIR$/Python_Staff/otherStaff/test.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/reload_/changer.py" afterPath="$PROJECT_DIR$/Python_Staff/reload_/changer.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/reload_/module.py" afterPath="$PROJECT_DIR$/Python_Staff/reload_/module.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/scikit-learn/__init__.py" afterPath="$PROJECT_DIR$/Python_Staff/otherStaff/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/scikit-learn/sckitExample.py" afterPath="$PROJECT_DIR$/Python_Staff/scikit-learn/sckitExample.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/testFike2.txt" afterPath="$PROJECT_DIR$/Python_Staff/testFike2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/testFile.txt" afterPath="$PROJECT_DIR$/Python_Staff/testFile.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/testFile2.txt" afterPath="$PROJECT_DIR$/Python_Staff/testFile2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/users_with_traits2.txt" afterPath="$PROJECT_DIR$/Python_Staff/users_with_traits2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Staff/users_with_traits2_Oryginal.txt" afterPath="$PROJECT_DIR$/Python_Staff/users_with_traits2_Oryginal.txt" />
     </list>
     <ignored path="Playground.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,11 +172,9 @@
       <file leaf-file-name="cesarCrypt.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/algorithms/cryptography/cesarCrypt.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="765">
+              <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -44,11 +182,9 @@
       <file leaf-file-name="cesarCrypt2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/algorithms/cryptography/cesarCrypt2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="516">
-              <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="527">
+              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -57,7 +193,7 @@
         <entry file="file://$PROJECT_DIR$/algorithms/sorting/bubbleSort.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+              <caret line="14" column="14" lean-forward="false" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -65,38 +201,6 @@
       </file>
       <file leaf-file-name="myEnum.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myUtils/myEnum.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="quickSort.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/algorithms/sorting/quickSort.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="selectSort.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/algorithms/sorting/selectSort.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="os_.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myUtils/os_.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -115,11 +219,43 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myList.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="myList.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myUtils/myList.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="43" lean-forward="true" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+            <state relative-caret-position="187">
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Slots.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Python_Staff/OOP/Slots.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="1" lean-forward="true" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PerformenceCheck.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Python_Staff/moreStaff/PerformenceCheck.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="55" column="24" lean-forward="true" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="importStaff.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Python_Staff/Modules/importStaff.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -128,7 +264,7 @@
       <file leaf-file-name="builtins.py" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/.PyCharmCE2017.1/system/python_stubs/-643338342/builtins.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1299">
+            <state relative-caret-position="60894">
               <caret line="3582" column="14" lean-forward="false" selection-start-line="3582" selection-start-column="8" selection-end-line="3582" selection-end-column="14" />
               <folding />
             </state>
@@ -161,8 +297,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Staff/OOP/ovrloading/iters.py" />
-        <option value="$PROJECT_DIR$/Staff/OOP/ovrloading/skipIter.py" />
         <option value="$PROJECT_DIR$/Staff/OOP/ovrloading/iters2.py" />
         <option value="$PROJECT_DIR$/UI/tkinterUI.py" />
         <option value="$PROJECT_DIR$/web/TestChat/TestChat/main.py" />
@@ -212,6 +346,8 @@
         <option value="$PROJECT_DIR$/algorithms/cryptography/cesarCrypt.py" />
         <option value="$PROJECT_DIR$/algorithms/cryptography/cesarCrypt2.py" />
         <option value="$PROJECT_DIR$/myUtils/myList.py" />
+        <option value="$PROJECT_DIR$/Python_Staff/OOP/Slots.py" />
+        <option value="$PROJECT_DIR$/Python_Staff/moreStaff/PerformenceCheck.py" />
       </list>
     </option>
   </component>
@@ -237,6 +373,52 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Playground">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Playground">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Python_Staff">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Playground">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Python_Staff">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="OOP">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -279,70 +461,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Playground">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Playground">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="myUtils">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Playground">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="algorithms">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="sorting">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Playground">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="algorithms">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="cryptography">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scratches" />
     </panes>
   </component>
@@ -378,43 +496,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.cesarCrypt">
-    <configuration default="false" name="namesClassification" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/machineLearning" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Playground" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/machineLearning/namesClassification.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="portScaner" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/web" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Playground" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/web/portScaner.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.importStaff">
     <configuration default="false" name="cesarCrypt" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -464,6 +546,42 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Playground" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithms/cryptography/cesarCrypt2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Slots" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python_Staff/OOP" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Playground" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_Staff/OOP/Slots.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="importStaff" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python_Staff/Modules" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Playground" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_Staff/Modules/importStaff.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -588,19 +706,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.fzzzBuzz" />
-      <item index="1" class="java.lang.String" itemvalue="Python.namesClassification" />
-      <item index="2" class="java.lang.String" itemvalue="Python.portScaner" />
-      <item index="3" class="java.lang.String" itemvalue="Python.cesarCrypt" />
-      <item index="4" class="java.lang.String" itemvalue="Python.compareStrings" />
-      <item index="5" class="java.lang.String" itemvalue="Python.cesarCrypt2" />
+      <item index="1" class="java.lang.String" itemvalue="Python.cesarCrypt" />
+      <item index="2" class="java.lang.String" itemvalue="Python.compareStrings" />
+      <item index="3" class="java.lang.String" itemvalue="Python.cesarCrypt2" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Slots" />
+      <item index="5" class="java.lang.String" itemvalue="Python.importStaff" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.cesarCrypt" />
-        <item index="1" class="java.lang.String" itemvalue="Python.cesarCrypt2" />
-        <item index="2" class="java.lang.String" itemvalue="Python.compareStrings" />
-        <item index="3" class="java.lang.String" itemvalue="Python.portScaner" />
-        <item index="4" class="java.lang.String" itemvalue="Python.namesClassification" />
+        <item index="0" class="java.lang.String" itemvalue="Python.importStaff" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Slots" />
+        <item index="2" class="java.lang.String" itemvalue="Python.cesarCrypt" />
+        <item index="3" class="java.lang.String" itemvalue="Python.cesarCrypt2" />
+        <item index="4" class="java.lang.String" itemvalue="Python.compareStrings" />
       </list>
     </recent_temporary>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -636,13 +754,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1477905013655</updated>
-    </task>
-    <task id="LOCAL-00113" summary="update">
-      <created>1494504942508</created>
-      <option name="number" value="00113" />
-      <option name="presentableId" value="LOCAL-00113" />
-      <option name="project" value="LOCAL" />
-      <updated>1494504942512</updated>
     </task>
     <task id="LOCAL-00114" summary="update">
       <created>1494508607098</created>
@@ -980,7 +1091,14 @@
       <option name="project" value="LOCAL" />
       <updated>1497692911994</updated>
     </task>
-    <option name="localTasksCounter" value="162" />
+    <task id="LOCAL-00162" summary="update">
+      <created>1497707585687</created>
+      <option name="number" value="00162" />
+      <option name="presentableId" value="LOCAL-00162" />
+      <option name="project" value="LOCAL" />
+      <updated>1497707585687</updated>
+    </task>
+    <option name="localTasksCounter" value="163" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1027,11 +1145,11 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30277187" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30916846" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44853738" sideWeight="0.5021075" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2751896" sideWeight="0.49789253" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2751896" sideWeight="0.49789253" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3261105" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27410617" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1086,7 +1204,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Staff/Functions_/numbersPairSum.py</url>
+          <url>file://$PROJECT_DIR$/Python_Staff/Functions_/numbersPairSum.py</url>
           <line>16</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
@@ -1096,7 +1214,7 @@
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Staff/Functions_/functionsMore.py</url>
+          <url>file://$PROJECT_DIR$/Python_Staff/Functions_/functionsMore.py</url>
           <line>20</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
@@ -1110,12 +1228,12 @@
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Staff/OOP/ovrloading/overloadingOperators2.py</url>
+          <url>file://$PROJECT_DIR$/Python_Staff/OOP/ovrloading/overloadingOperators2.py</url>
           <line>13</line>
           <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Staff/OOP/ovrloading/iters.py</url>
+          <url>file://$PROJECT_DIR$/Python_Staff/OOP/ovrloading/iters.py</url>
           <line>12</line>
           <option name="timeStamp" value="38" />
         </line-breakpoint>
@@ -1142,23 +1260,8 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/myUtils/PT/empJsonGenerator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Staff/funnyStaff/taskList.txt" />
-    <entry file="file://$PROJECT_DIR$/myUtils/tasksList.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/myUtils/Admin.py" />
-    <entry file="file://$PROJECT_DIR$/Staff/funnyStaff/taskList.csv">
+    <entry file="file://$PROJECT_DIR$/Python_Staff/funnyStaff/taskList.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="26" column="16" lean-forward="false" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
@@ -1250,7 +1353,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Staff/BasicStuff/get_priomes_generator.py">
+    <entry file="file://$PROJECT_DIR$/Python_Staff/BasicStuff/get_priomes_generator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
@@ -1306,7 +1409,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Staff/decorators/dec.py">
+    <entry file="file://$PROJECT_DIR$/Python_Staff/decorators/dec.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
@@ -1338,7 +1441,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1346,9 +1448,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="16" column="9" lean-forward="false" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#20#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1356,7 +1455,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
           <caret line="43" column="14" lean-forward="false" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1364,7 +1462,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1372,9 +1469,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1382,7 +1476,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1390,7 +1483,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1398,7 +1490,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="23" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1406,9 +1497,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="26" lean-forward="false" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#12#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1416,7 +1504,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1424,9 +1511,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1448,14 +1532,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myUtils/set">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/myUtils/set" />
     <entry file="file://$PROJECT_DIR$/myUtils/os_.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1474,7 +1551,7 @@
     </entry>
     <entry file="file://$USER_HOME$/.PyCharmCE2017.1/system/python_stubs/-643338342/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1299">
+        <state relative-caret-position="60894">
           <caret line="3582" column="14" lean-forward="false" selection-start-line="3582" selection-start-column="8" selection-end-line="3582" selection-end-column="14" />
           <folding />
         </state>
@@ -1491,35 +1568,57 @@
     <entry file="file://$PROJECT_DIR$/algorithms/sorting/bubbleSort.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+          <caret line="14" column="14" lean-forward="false" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/algorithms/cryptography/cesarCrypt2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="527">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/algorithms/cryptography/cesarCrypt.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="765">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/myUtils/myList.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="43" lean-forward="true" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+        <state relative-caret-position="187">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python_Staff/OOP/Slots.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="1" lean-forward="true" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python_Staff/moreStaff/PerformenceCheck.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="55" column="24" lean-forward="true" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python_Staff/Modules/importStaff.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
           <folding />
         </state>
       </provider>

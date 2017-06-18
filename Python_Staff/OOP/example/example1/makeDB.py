@@ -1,4 +1,4 @@
-from Staff.OOP.example.example1.person import Person, Manager
+from Python_Staff.OOP.example.example1.person import Person, Manager
 
 homer = Person("Homer Simposon")
 boJack = Person("BoJack Horseman ", job="Actor", pay=1000)

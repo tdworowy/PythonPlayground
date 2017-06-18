@@ -1,5 +1,5 @@
 
-from Staff.OOP.example.example2_pizza.empoyees import Server, PizzaRobot
+from Python_Staff.OOP.example.example2_pizza.empoyees import Server, PizzaRobot
 
 
 class Customer:
