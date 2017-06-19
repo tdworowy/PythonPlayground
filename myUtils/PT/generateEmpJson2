@@ -2,7 +2,7 @@ import os
 def getRootDirectory():
 	return os.path.dirname(os.path.abspath(__file__))
 
-ToAppend = """[{
+ToAppend = """{
   "firstName" : "firstName",
   "lastName" : "lastName",
   "email" : "employee1@cream.local",
@@ -25,7 +25,7 @@ ToAppend = """[{
 				},
 				{
 				  "dictionaryCode": "Shop",
-				  "itemCodes":["ACF","binguez.com","BORGATA","bwin.be","bwin.com","bwin.es","bwinfr","empirepoker.com","gamebookers.com","getminted","GiocoDigitale","intralot.it","party.com","party.dk","party.es","party.fr","party.it","party.net",PartyPokerNJ","pmu.fr","Premium"]
+				  "itemCodes":["ACF","binguez.com","BORGATA","bwin.be","bwin.com","bwin.es","bwinfr","empirepoker.com","gamebookers.com","getminted","GiocoDigitale","intralot.it","party.com","party.dk","party.es","party.fr","party.it","party.net","PartyPokerNJ","pmu.fr","Premium"]
 				}
 				]
 		},},
