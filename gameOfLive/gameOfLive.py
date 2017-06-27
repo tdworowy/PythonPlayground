@@ -28,6 +28,19 @@ class GameOfLive:
         for cell in self.cellList:
             print(cell)
 
+    def getAlive(self):
+        return [cell for cell in self.cellList if cell.live]
+
+    def getDead(self):
+        return [cell for cell in self.cellList if not cell.live]
+
+    def prinAlive(self):
+        for cell in self.getAlive():
+            print(cell)
+
+    def prinDead(self):
+        for cell in self.getDead():
+            print(cell)
 
 
 
