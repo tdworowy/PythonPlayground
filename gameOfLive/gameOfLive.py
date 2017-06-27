@@ -34,11 +34,11 @@ class GameOfLive:
     def getDead(self):
         return [cell for cell in self.cellList if not cell.live]
 
-    def prinAlive(self):
+    def printAlive(self):
         for cell in self.getAlive():
             print(cell)
 
-    def prinDead(self):
+    def printDead(self):
         for cell in self.getDead():
             print(cell)
 
