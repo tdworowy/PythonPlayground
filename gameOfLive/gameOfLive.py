@@ -34,6 +34,7 @@ class GameOfLive:
     def getDead(self):
         return [cell for cell in self.cellList if not cell.live]
 
+
     def printAlive(self):
         for cell in self.getAlive():
             print(cell)
@@ -41,6 +42,29 @@ class GameOfLive:
     def printDead(self):
         for cell in self.getDead():
             print(cell)
+
+    def getkNeighbours(self,cell_check):
+        neighbours = []
+        try:
+            for cell in self.cellList:
+                for i in range(cell_check.x-2,cell_check.x+2):
+                    for j in range(cell_check.y-2,cell_check.y+3):
+                        if cell.x == i and cell.y == j:
+                            neighbours.append(cell)
+        except Exception as ex:
+            print(str(ex))
+
+        return neighbours
+
+    def checkRules(self,bornCount,stayAlive):
+        for cell in self.cellList:
+            aliveCount = 0
+            for neighbour in self.getkNeighbours(cell):
+                if neighbour.live : aliveCount=+1
+            if aliveCount == bornCount : cell.Revive()
+            if aliveCount == stayAlive: pass
+            else: cell.kill()
+
 
 
 
