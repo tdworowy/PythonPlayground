@@ -2,7 +2,7 @@ import tkinter
 from doctest import master
 from tkinter import messagebox
 
-from gameOfLive.gameOfLive_ import GameOfLive
+from GameOfLive.gameOfLive_ import GameOfLive
 
 
 class Display:

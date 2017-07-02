@@ -1,9 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="74059ddd-4c74-4733-a753-22db6be1b4c0" name="Default" comment="">
+    <list default="true" id="74059ddd-4c74-4733-a753-22db6be1b4c0" name="Default" comment="Update + Refactor">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myUtils/generateTargetCSV.py" afterPath="$PROJECT_DIR$/myUtils/generateTargetCSV.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python_Staff/OOP/example/example1/person.py" afterPath="$PROJECT_DIR$/Python_Staff/OOP/example/example1/person.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python_Staff/reload_/module.py" afterPath="$PROJECT_DIR$/Python_Staff/reload_/module.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/algorithms/cryptography/cesarCrypt.py" afterPath="$PROJECT_DIR$/Algorithms/cryptography/cesarCrypt.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/algorithms/cryptography/cesarCrypt2.py" afterPath="$PROJECT_DIR$/Algorithms/cryptography/cesarCrypt2.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/algorithms/sorting/bubbleSort.py" afterPath="$PROJECT_DIR$/Algorithms/sorting/bubbleSort.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/algorithms/sorting/gnomeSort.py" afterPath="$PROJECT_DIR$/Algorithms/sorting/gnomeSort.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/algorithms/sorting/mergeSort.py" afterPath="$PROJECT_DIR$/Algorithms/sorting/mergeSort.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/algorithms/sorting/quickSort.py" afterPath="$PROJECT_DIR$/Algorithms/sorting/quickSort.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/algorithms/sorting/selectSort.py" afterPath="$PROJECT_DIR$/Algorithms/sorting/selectSort.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/gameOfLive/display.py" afterPath="$PROJECT_DIR$/GameOfLive/display.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/gameOfLive/gameOfLive_.py" afterPath="$PROJECT_DIR$/GameOfLive/gameOfLive_.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/machineLearning/MonteCarlo.py" afterPath="$PROJECT_DIR$/MachineLearning/MonteCarlo.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/machineLearning/NeuralNetwork.py" afterPath="$PROJECT_DIR$/MachineLearning/NeuralNetwork.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/machineLearning/__init__.py" afterPath="$PROJECT_DIR$/MachineLearning/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/machineLearning/data/IRIS.csv" afterPath="$PROJECT_DIR$/MachineLearning/data/IRIS.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/machineLearning/dataUtils.py" afterPath="$PROJECT_DIR$/MachineLearning/dataUtils.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/machineLearning/example1/check.py" afterPath="$PROJECT_DIR$/MachineLearning/example1/check.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/machineLearning/example1/machine_learning.py" afterPath="$PROJECT_DIR$/MachineLearning/example1/machine_learning.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/machineLearning/geneticAlgorithm.py" afterPath="$PROJECT_DIR$/MachineLearning/geneticAlgorithm.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/machineLearning/namesClassification.py" afterPath="$PROJECT_DIR$/MachineLearning/namesClassification.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/machineLearning/scikit-learn/__init__.py" afterPath="$PROJECT_DIR$/MachineLearning/scikit-learn/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/machineLearning/scikit-learn/sckitExample.py" afterPath="$PROJECT_DIR$/MachineLearning/scikit-learn/sckitExample.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/myUtils/CompareJsons.py" afterPath="$PROJECT_DIR$/MyUtils/CompareJsons.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/myUtils/PT/__init__.py" afterPath="$PROJECT_DIR$/MyUtils/PT/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/myUtils/PT/empJsonExtend.py" afterPath="$PROJECT_DIR$/MyUtils/PT/empJsonExtend.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/myUtils/PT/empJsonGenerator.py" afterPath="$PROJECT_DIR$/MyUtils/PT/empJsonGenerator.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/myUtils/PT/generateCSVforPT.py" afterPath="$PROJECT_DIR$/MyUtils/PT/generateCSVforPT.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/myUtils/PT/generateEmpJson2" afterPath="$PROJECT_DIR$/MyUtils/PT/generateEmpJson2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/myUtils/PerformenceCheck.py" afterPath="$PROJECT_DIR$/MyUtils/PerformenceCheck.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/myUtils/__init__.py" afterPath="$PROJECT_DIR$/MyUtils/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/myUtils/classTools_/__init__.py" afterPath="$PROJECT_DIR$/MyUtils/classTools_/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/myUtils/classTools_/classTools.py" afterPath="$PROJECT_DIR$/MyUtils/classTools_/classTools.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/myUtils/classTools_/class_Tree.py" afterPath="$PROJECT_DIR$/MyUtils/classTools_/class_Tree.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/myUtils/classTools_/factory.py" afterPath="$PROJECT_DIR$/MyUtils/classTools_/factory.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/myUtils/classTools_/listInstance.py" afterPath="$PROJECT_DIR$/MyUtils/classTools_/listInstance.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/myUtils/classTools_/listtree.py" afterPath="$PROJECT_DIR$/MyUtils/classTools_/listtree.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/myUtils/classTools_/privacy.py" afterPath="$PROJECT_DIR$/MyUtils/classTools_/privacy.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/myUtils/classTools_/trace.py" afterPath="$PROJECT_DIR$/MyUtils/classTools_/trace.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/myUtils/compareStrings.py" afterPath="$PROJECT_DIR$/MyUtils/compareStrings.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/myUtils/csv_staff.py" afterPath="$PROJECT_DIR$/MyUtils/csv_staff.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/myUtils/danger/__init__.py" afterPath="$PROJECT_DIR$/MyUtils/danger/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/myUtils/danger/ultraKill.py" afterPath="$PROJECT_DIR$/MyUtils/danger/ultraKill.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/myUtils/decorators.py" afterPath="$PROJECT_DIR$/MyUtils/decorators.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/myUtils/files/__init__.py" afterPath="$PROJECT_DIR$/MyUtils/files/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/myUtils/files/getFiles.py" afterPath="$PROJECT_DIR$/MyUtils/files/getFiles.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/myUtils/generateTargetCSV.py" afterPath="$PROJECT_DIR$/MyUtils/generateTargetCSV.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/myUtils/getSystemInfo.py" afterPath="$PROJECT_DIR$/MyUtils/getSystemInfo.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/myUtils/json1.json" afterPath="$PROJECT_DIR$/MyUtils/json1.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/myUtils/json2.json" afterPath="$PROJECT_DIR$/MyUtils/json2.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/myUtils/margePATHS.py" afterPath="$PROJECT_DIR$/MyUtils/margePATHS.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/myUtils/myEnum.py" afterPath="$PROJECT_DIR$/MyUtils/myEnum.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/myUtils/myList.py" afterPath="$PROJECT_DIR$/MyUtils/myList.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/myUtils/myTimer2.py" afterPath="$PROJECT_DIR$/MyUtils/myTimer2.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/myUtils/mytimer.py" afterPath="$PROJECT_DIR$/MyUtils/mytimer.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/myUtils/os_.py" afterPath="$PROJECT_DIR$/MyUtils/os_.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/myUtils/randomString.py" afterPath="$PROJECT_DIR$/MyUtils/randomString.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/myUtils/reloadall.py" afterPath="$PROJECT_DIR$/MyUtils/reloadall.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/myUtils/set.py" afterPath="$PROJECT_DIR$/MyUtils/set.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/myUtils/takeScreenShot.py" afterPath="$PROJECT_DIR$/MyUtils/takeScreenShot.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/myUtils/tasksList.py" afterPath="$PROJECT_DIR$/MyUtils/tasksList.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/Bot/__init__.py" afterPath="$PROJECT_DIR$/Python_Staff/Tests/Unit_Tests.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/Bot/links.txt" afterPath="$PROJECT_DIR$/Web/Bot/links.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/Bot/webCrawler.py" afterPath="$PROJECT_DIR$/Web/Bot/webCrawler.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/TCP/TCP.py" afterPath="$PROJECT_DIR$/Web/TCP/TCP.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/TCP/__init__.py" afterPath="$PROJECT_DIR$/Web/Bot/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/TestChat/.idea/TestChat.iml" afterPath="$PROJECT_DIR$/Web/TestChat/.idea/TestChat.iml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/TestChat/.idea/misc.xml" afterPath="$PROJECT_DIR$/Web/TestChat/.idea/misc.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/TestChat/.idea/modules.xml" afterPath="$PROJECT_DIR$/Web/TestChat/.idea/modules.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/TestChat/.idea/workspace.xml" afterPath="$PROJECT_DIR$/Web/TestChat/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/TestChat/.vs/TestChat/v14/.suo" afterPath="$PROJECT_DIR$/Web/TestChat/.vs/TestChat/v14/.suo" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/TestChat/TestChat/SimpleChatWWW.py" afterPath="$PROJECT_DIR$/Web/TestChat/TestChat/SimpleChatWWW.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/TestChat/TestChat/TestChat.pyproj" afterPath="$PROJECT_DIR$/Web/TestChat/TestChat/TestChat.pyproj" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/TestChat/TestChat/Tests.py" afterPath="$PROJECT_DIR$/Web/TestChat/TestChat/Tests.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/TestChat/TestChat/httpchat_index.html" afterPath="$PROJECT_DIR$/Web/TestChat/TestChat/httpchat_index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/TestChat/TestChat/httpchat_main.js" afterPath="$PROJECT_DIR$/Web/TestChat/TestChat/httpchat_main.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/TestChat/TestChat/httpchat_style.css" afterPath="$PROJECT_DIR$/Web/TestChat/TestChat/httpchat_style.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/TestChat/TestChat/main.py" afterPath="$PROJECT_DIR$/Web/TestChat/TestChat/main.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/TestChat/TestChat/serverHTTP.py" afterPath="$PROJECT_DIR$/Web/TestChat/TestChat/serverHTTP.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/__init__.py" afterPath="$PROJECT_DIR$/Web/TCP/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/portScaner.py" afterPath="$PROJECT_DIR$/Web/portScaner.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/proxy.py" afterPath="$PROJECT_DIR$/Web/proxy.py" />
     </list>
     <ignored path="Playground.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,53 +106,63 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="contextManager.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Python_Staff/AdvanceStaff/contextManager.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="14" lean-forward="false" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="exeptions.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Python_Staff/AdvanceStaff/exeptions.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="gameOfLive_.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gameOfLive/gameOfLive_.py">
+        <entry file="file://$PROJECT_DIR$/GameOfLive/gameOfLive_.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="45" column="31" lean-forward="false" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="csv_staff.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myUtils/csv_staff.py">
+      <file leaf-file-name="unitests1.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Python_Staff/Tests/unitests1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="8" column="44" lean-forward="false" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="44" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Unit_Tests.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Python_Staff/Tests/Unit_Tests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="module.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Python_Staff/reload_/module.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
-                <element signature="e#0#10#0" expanded="true" />
+                <element signature="e#0#22#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="generateTargetCSV.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/myUtils/generateTargetCSV.py">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://D:/Python/Lib/unittest/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="24" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="generateTargetCSV.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyUtils/generateTargetCSV.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
               <folding>
                 <element signature="e#0#53#0" expanded="true" />
               </folding>
@@ -90,13 +181,23 @@
         </entry>
       </file>
       <file leaf-file-name="randomString.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myUtils/randomString.py">
+        <entry file="file://$PROJECT_DIR$/MyUtils/randomString.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
+            <state relative-caret-position="68">
               <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="24" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dataUtils.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MachineLearning/dataUtils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="35" lean-forward="false" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -109,26 +210,6 @@
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="display.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gameOfLive/display.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1003">
-              <caret line="63" column="10" lean-forward="false" selection-start-line="63" selection-start-column="10" selection-end-line="63" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="overloadingOperators.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Python_Staff/OOP/ovrloading/overloadingOperators.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="6" selection-end-column="42" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -159,8 +240,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Locust/Locust1.py" />
-        <option value="$PROJECT_DIR$/Staff/OOP/example/example2_pizza/empoyees.py" />
         <option value="$PROJECT_DIR$/Staff/OOP/example/example2_pizza/pizzashop.py" />
         <option value="$PROJECT_DIR$/Staff/OOP/trace.py" />
         <option value="$PROJECT_DIR$/Staff/OOP/pseudoPrivate.py" />
@@ -196,7 +275,6 @@
         <option value="$PROJECT_DIR$/myUtils/myList.py" />
         <option value="$PROJECT_DIR$/Python_Staff/OOP/Slots.py" />
         <option value="$PROJECT_DIR$/Python_Staff/moreStaff/PerformenceCheck.py" />
-        <option value="$PROJECT_DIR$/Python_Staff/reload_/module.py" />
         <option value="$PROJECT_DIR$/myUtils/randomString_.py" />
         <option value="$PROJECT_DIR$/Python_Staff/OOP/Property_.py" />
         <option value="$PROJECT_DIR$/myUtils/netflixCategories.py" />
@@ -210,6 +288,9 @@
         <option value="$PROJECT_DIR$/gameOfLive/display.py" />
         <option value="$PROJECT_DIR$/gameOfLive/gameOfLive_.py" />
         <option value="$PROJECT_DIR$/myUtils/generateTargetCSV.py" />
+        <option value="$PROJECT_DIR$/Python_Staff/Tests/Unit_Tests.py" />
+        <option value="$PROJECT_DIR$/Python_Staff/reload_/module.py" />
+        <option value="$PROJECT_DIR$/MachineLearning/dataUtils.py" />
       </list>
     </option>
   </component>
@@ -298,7 +379,39 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="myUtils">
+            <PATH_ELEMENT USER_OBJECT="Python_Staff">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Playground">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Python_Staff">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Tests">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Playground">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="MyUtils">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -313,19 +426,19 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Google_drive\Python_\Playground\machineLearning" />
-      <recent name="D:\Google_drive\Python_\Playground\myUtils" />
-      <recent name="D:\Google_drive\Python_\Playground" />
-      <recent name="D:\Google_drive\Python_\Playground\Python_Staff\fizzbuzz" />
-      <recent name="D:\Google_drive\Python_\Playground\myUtils\PT" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Google_drive\Python_\Playground\algorithms\cryptography" />
       <recent name="D:\Google_drive\Python_\Playground\machineLearning\data" />
       <recent name="D:\Google_drive\Python_\Playground\Staff\myUtils" />
       <recent name="D:\Google_drive\Python_\Playground\Staff\DecisionsTrees" />
       <recent name="D:\Google_drive\Python_\Playground\Staff" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Google_drive\Python_\Playground\machineLearning" />
+      <recent name="D:\Google_drive\Python_\Playground\myUtils" />
+      <recent name="D:\Google_drive\Python_\Playground" />
+      <recent name="D:\Google_drive\Python_\Playground\Python_Staff\fizzbuzz" />
+      <recent name="D:\Google_drive\Python_\Playground\myUtils\PT" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -340,25 +453,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.generateTargetCSV">
-    <configuration default="false" name="exeptions" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python_Staff/AdvanceStaff" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Playground" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_Staff/AdvanceStaff/exeptions.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Unittests in Unit_Tests.py">
     <configuration default="false" name="gameOfLive" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -429,6 +524,21 @@
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in Unit_Tests.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python_Staff/Tests" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Playground" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Python_Staff/Tests/Unit_Tests.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
     <configuration default="true" type="CompoundRunConfigurationType" factoryName="Compound Run Configuration">
@@ -550,19 +660,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.fzzzBuzz" />
-      <item index="1" class="java.lang.String" itemvalue="Python.exeptions" />
-      <item index="2" class="java.lang.String" itemvalue="Python.gameOfLive" />
-      <item index="3" class="java.lang.String" itemvalue="Python.tkinterUI" />
-      <item index="4" class="java.lang.String" itemvalue="Python.display" />
-      <item index="5" class="java.lang.String" itemvalue="Python.generateTargetCSV" />
+      <item index="1" class="java.lang.String" itemvalue="Python.gameOfLive" />
+      <item index="2" class="java.lang.String" itemvalue="Python.tkinterUI" />
+      <item index="3" class="java.lang.String" itemvalue="Python.display" />
+      <item index="4" class="java.lang.String" itemvalue="Python.generateTargetCSV" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests in Unit_Tests.py" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.generateTargetCSV" />
-        <item index="1" class="java.lang.String" itemvalue="Python.display" />
-        <item index="2" class="java.lang.String" itemvalue="Python.tkinterUI" />
-        <item index="3" class="java.lang.String" itemvalue="Python.gameOfLive" />
-        <item index="4" class="java.lang.String" itemvalue="Python.exeptions" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in Unit_Tests.py" />
+        <item index="1" class="java.lang.String" itemvalue="Python.generateTargetCSV" />
+        <item index="2" class="java.lang.String" itemvalue="Python.display" />
+        <item index="3" class="java.lang.String" itemvalue="Python.tkinterUI" />
+        <item index="4" class="java.lang.String" itemvalue="Python.gameOfLive" />
       </list>
     </recent_temporary>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -598,13 +708,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1477905013655</updated>
-    </task>
-    <task id="LOCAL-00129" summary="update">
-      <created>1495552900185</created>
-      <option name="number" value="00129" />
-      <option name="presentableId" value="LOCAL-00129" />
-      <option name="project" value="LOCAL" />
-      <updated>1495552900185</updated>
     </task>
     <task id="LOCAL-00130" summary="update">
       <created>1495974867616</created>
@@ -942,27 +1045,34 @@
       <option name="project" value="LOCAL" />
       <updated>1498894124730</updated>
     </task>
-    <option name="localTasksCounter" value="178" />
+    <task id="LOCAL-00178" summary="Update">
+      <created>1498998379252</created>
+      <option name="number" value="00178" />
+      <option name="presentableId" value="LOCAL-00178" />
+      <option name="project" value="LOCAL" />
+      <updated>1498998379252</updated>
+    </task>
+    <option name="localTasksCounter" value="179" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_calssStaff - 2017.03.19 at 11h 57m 55s.xml">
-      <configuration name="Unittests in calssStaff" configurationId="tests" />
+    <history-entry file="Unittests_in_Unit_Tests_py - 2017.07.02 at 15h 45m 03s.xml">
+      <configuration name="Unittests in Unit_Tests.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_calssStaff - 2017.03.19 at 14h 03m 43s.xml">
-      <configuration name="Unittests in calssStaff" configurationId="tests" />
+    <history-entry file="Unittests_in_Unit_Tests_py - 2017.07.02 at 15h 45m 17s.xml">
+      <configuration name="Unittests in Unit_Tests.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_calss_ - 2016.12.03 at 16h 47m 07s.xml">
-      <configuration name="Unittests in calss_" configurationId="tests" />
+    <history-entry file="Unittests_in_Unit_Tests_py - 2017.07.02 at 15h 45m 59s.xml">
+      <configuration name="Unittests in Unit_Tests.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_calss_ - 2016.12.03 at 16h 49m 42s.xml">
-      <configuration name="Unittests in calss_" configurationId="tests" />
+    <history-entry file="Unittests_in_Unit_Tests_py - 2017.07.02 at 15h 46m 27s.xml">
+      <configuration name="Unittests in Unit_Tests.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_calss_ - 2017.03.19 at 10h 12m 53s.xml">
-      <configuration name="Unittests in calss_" configurationId="tests" />
+    <history-entry file="Unittests_in_Unit_Tests_py - 2017.07.02 at 15h 46m 40s.xml">
+      <configuration name="Unittests in Unit_Tests.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_iters2_py - 2017.05.12 at 15h 53m 38s.xml">
-      <configuration name="Unittests in iters2.py" configurationId="tests" />
+    <history-entry file="Unittests_in_Unit_Tests_py - 2017.07.02 at 15h 47m 45s.xml">
+      <configuration name="Unittests in Unit_Tests.py" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittests_in_iters2_py - 2017.05.12 at 15h 53m 44s.xml">
       <configuration name="Unittests in iters2.py" configurationId="tests" />
@@ -987,12 +1097,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38006395" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44853738" sideWeight="0.5021075" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2751896" sideWeight="0.49789253" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2751896" sideWeight="0.49789253" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3261105" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27410617" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1001,7 +1112,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1044,7 +1154,8 @@
     <MESSAGE value="update" />
     <MESSAGE value="fix" />
     <MESSAGE value="Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+    <MESSAGE value="Update + Refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update + Refactor" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1054,11 +1165,6 @@
           <url>file://$PROJECT_DIR$/Python_Staff/Functions_/numbersPairSum.py</url>
           <line>16</line>
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/web/TestChat/TestChat/main.py</url>
-          <line>1</line>
-          <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Python_Staff/Functions_/functionsMore.py</url>
@@ -1085,7 +1191,7 @@
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/algorithms/sorting/bubbleSort.py</url>
+          <url>file://$PROJECT_DIR$/Algorithms/sorting/bubbleSort.py</url>
           <line>10</line>
           <option name="timeStamp" value="41" />
         </line-breakpoint>
@@ -1107,29 +1213,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/algorithms/sorting/quickSort.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithms/sorting/selectSort.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myUtils/set" />
-    <entry file="file://$PROJECT_DIR$/myUtils/os_.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myUtils/set.py">
+    <entry file="file://$PROJECT_DIR$/MyUtils/set.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="36" column="38" lean-forward="false" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
@@ -1143,14 +1227,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myUtils/myEnum.py">
+    <entry file="file://$PROJECT_DIR$/MyUtils/myEnum.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/algorithms/sorting/bubbleSort.py">
+    <entry file="file://$PROJECT_DIR$/Algorithms/sorting/bubbleSort.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="14" lean-forward="false" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
@@ -1158,21 +1242,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/algorithms/cryptography/cesarCrypt2.py">
+    <entry file="file://$PROJECT_DIR$/Algorithms/cryptography/cesarCrypt2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/algorithms/cryptography/cesarCrypt.py">
+    <entry file="file://$PROJECT_DIR$/Algorithms/cryptography/cesarCrypt.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
           <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myUtils/myList.py">
+    <entry file="file://$PROJECT_DIR$/MyUtils/myList.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
@@ -1186,7 +1270,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myUtils/PerformenceCheck.py">
+    <entry file="file://$PROJECT_DIR$/MyUtils/PerformenceCheck.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="53" column="24" lean-forward="true" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
@@ -1221,14 +1305,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/machineLearning/scikit-learn/sckitExample.py">
+    <entry file="file://$PROJECT_DIR$/MachineLearning/scikit-learn/sckitExample.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myUtils/takeScreenShot.py">
+    <entry file="file://$PROJECT_DIR$/MyUtils/takeScreenShot.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="18" column="10" lean-forward="false" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
@@ -1242,13 +1326,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python_Staff/reload_/module.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Python_Staff/OOP/Property_.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -1257,7 +1334,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/myUtils/netflixCategories.py" />
-    <entry file="file://$PROJECT_DIR$/myUtils/myTimer2.py">
+    <entry file="file://$PROJECT_DIR$/MyUtils/myTimer2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="26" column="21" lean-forward="false" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
@@ -1403,7 +1480,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gameOfLive/display.py">
+    <entry file="file://$PROJECT_DIR$/GameOfLive/display.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1003">
           <caret line="63" column="10" lean-forward="false" selection-start-line="63" selection-start-column="10" selection-end-line="63" selection-end-column="10" />
@@ -1411,31 +1488,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gameOfLive/gameOfLive_.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="45" column="31" lean-forward="false" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myUtils/csv_staff.py">
+    <entry file="file://$PROJECT_DIR$/MyUtils/csv_staff.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="8" column="44" lean-forward="false" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myUtils/randomString.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1464,13 +1521,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myUtils/generateTargetCSV.py">
+    <entry file="file://$PROJECT_DIR$/MyUtils/generateTargetCSV.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="24" />
+        <state relative-caret-position="255">
+          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
           <folding>
             <element signature="e#0#53#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameOfLive/gameOfLive_.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python_Staff/Tests/unitests1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python/Lib/unittest/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python_Staff/Tests/Unit_Tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python_Staff/reload_/module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyUtils/randomString.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MachineLearning/dataUtils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="35" lean-forward="false" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>

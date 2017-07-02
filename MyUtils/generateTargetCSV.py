@@ -1,4 +1,4 @@
-from myUtils.randomString import generateRandomString
+from MyUtils.randomString import generateRandomString
 from rootDirectory import getRootDirectory
 
 

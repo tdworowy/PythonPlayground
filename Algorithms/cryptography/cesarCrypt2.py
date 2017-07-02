@@ -1,7 +1,7 @@
 import string
 
-from myUtils.compareStrings import getDiff
-from myUtils.myList import roundList
+from MyUtils.compareStrings import getDiff
+from MyUtils.myList import roundList
 
 
 def CesarCrypt(text,index):

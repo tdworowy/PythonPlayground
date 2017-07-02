@@ -1,6 +1,6 @@
 from socket import *
 
-from myUtils.decorators import cachExeption
+from MyUtils.decorators import cachExeption
 
 
 @cachExeption

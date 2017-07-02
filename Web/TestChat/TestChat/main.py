@@ -3,8 +3,8 @@ import socket
 import sys
 from threading import Event
 
-from web.TestChat.TestChat import serverHTTP
-from web.TestChat.TestChat.SimpleChatWWW import SimpleChatWWW
+from Web.TestChat.TestChat import serverHTTP
+from Web.TestChat.TestChat.SimpleChatWWW import SimpleChatWWW
 
 
 def main():

@@ -1,4 +1,4 @@
-from myUtils.randomString import randomString
+from MyUtils.randomString import generateRandomString
 
 
 def getListPercent_head(list,percent):
@@ -15,6 +15,6 @@ def getListPercent_tail(list,percent):
 
 
 if __name__ == '__main__':
-    list1= list(randomString(150))
+    list1= list(generateRandomString(150))
     print(getListPercent_head(list1,10))
     print(getListPercent_tail(list1, 10))

@@ -2,7 +2,7 @@ import random
 
 import nltk
 
-from machineLearning.dataUtils import getListPercent_head, getListPercent_tail
+from MachineLearning.dataUtils import getListPercent_head, getListPercent_tail
 
 
 class NamesClassification:

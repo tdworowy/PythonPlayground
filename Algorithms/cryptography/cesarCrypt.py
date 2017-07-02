@@ -1,6 +1,6 @@
 import string
 
-from myUtils.compareStrings import getDiff
+from MyUtils.compareStrings import getDiff
 
 
 def CesarCrypt(text,index):
