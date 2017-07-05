@@ -8,4 +8,4 @@ def generateRandomString(size):
 
 
 if __name__ == '__main__':
-    print(generateRandomString(25))
+    print(generateRandomString(100))
