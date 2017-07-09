@@ -3,8 +3,8 @@ from random import choice
 
 
 def generateRandomString(size):
-    val = "".join(choice(string.ascii_lowercase) for i in range(size))
-    return val
+    return "".join(choice(string.ascii_lowercase) for i in range(size))
+
 
 
 if __name__ == '__main__':
