@@ -9,3 +9,5 @@ urls_bag = dask.bag.from_sequence(urls,partition_size=1)
 
 # client = Client()
 # client
+
+#TODO
