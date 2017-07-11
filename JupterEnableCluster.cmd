@@ -1,0 +1,1 @@
+ipcluster nbextension enable
