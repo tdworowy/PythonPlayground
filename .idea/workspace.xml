@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74059ddd-4c74-4733-a753-22db6be1b4c0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JupterEnableCluster.cmd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyUtils/characters.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloud/runJupyterNotebook.cmd" afterPath="$PROJECT_DIR$/JupyterrRunNotebook.cmd" />
     </list>
     <ignored path="Playground.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,16 +25,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="unitests1.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Python_Staff/Tests/unitests1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Unit_Tests.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Python_Staff/Tests/Unit_Tests.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -81,7 +70,7 @@
       <file leaf-file-name="example.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cloud/example.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
+            <state relative-caret-position="374">
               <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
@@ -90,11 +79,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JupterEnableCluster.cmd" pinned="false" current-in-tab="true">
+      <file leaf-file-name="JupterEnableCluster.cmd" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JupterEnableCluster.cmd">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="28" lean-forward="false" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="characters.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MyUtils/characters.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -156,7 +155,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Staff/OOP/methods2.py" />
         <option value="$PROJECT_DIR$/Staff/OOP/ovrloading/Call.py" />
         <option value="$PROJECT_DIR$/Staff/OOP/class7.py" />
         <option value="$PROJECT_DIR$/algorithms/sorting/mergeSort.py" />
@@ -207,6 +205,7 @@
         <option value="$PROJECT_DIR$/cloud/runJupyterNotebook.cmd" />
         <option value="$PROJECT_DIR$/cloud/example.py" />
         <option value="$PROJECT_DIR$/JupterEnableCluster.cmd" />
+        <option value="$PROJECT_DIR$/MyUtils/characters.py" />
       </list>
     </option>
   </component>
@@ -233,20 +232,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Playground">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -289,6 +274,34 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Playground">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Playground">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="MyUtils">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -296,19 +309,19 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Google_drive\Python_\Playground" />
-      <recent name="D:\Google_drive\Python_\Playground\machineLearning" />
-      <recent name="D:\Google_drive\Python_\Playground\myUtils" />
-      <recent name="D:\Google_drive\Python_\Playground\Python_Staff\fizzbuzz" />
-      <recent name="D:\Google_drive\Python_\Playground\myUtils\PT" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Google_drive\Python_\Playground\algorithms\cryptography" />
       <recent name="D:\Google_drive\Python_\Playground\machineLearning\data" />
       <recent name="D:\Google_drive\Python_\Playground\Staff\myUtils" />
       <recent name="D:\Google_drive\Python_\Playground\Staff\DecisionsTrees" />
       <recent name="D:\Google_drive\Python_\Playground\Staff" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Google_drive\Python_\Playground" />
+      <recent name="D:\Google_drive\Python_\Playground\machineLearning" />
+      <recent name="D:\Google_drive\Python_\Playground\myUtils" />
+      <recent name="D:\Google_drive\Python_\Playground\Python_Staff\fizzbuzz" />
+      <recent name="D:\Google_drive\Python_\Playground\myUtils\PT" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -323,25 +336,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.example">
-    <configuration default="false" name="generateTargetCSV" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/myUtils" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Playground" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/myUtils/generateTargetCSV.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.characters">
     <configuration default="false" name="Unittests in Unit_Tests.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -406,6 +401,24 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Playground" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Algorithms/sorting/bubbleSort.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="characters" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MyUtils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Playground" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MyUtils/characters.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -530,19 +543,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.fzzzBuzz" />
-      <item index="1" class="java.lang.String" itemvalue="Python.generateTargetCSV" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in Unit_Tests.py" />
-      <item index="3" class="java.lang.String" itemvalue="Python.randomString" />
-      <item index="4" class="java.lang.String" itemvalue="Python.example" />
-      <item index="5" class="java.lang.String" itemvalue="Python.bubbleSort" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in Unit_Tests.py" />
+      <item index="2" class="java.lang.String" itemvalue="Python.randomString" />
+      <item index="3" class="java.lang.String" itemvalue="Python.example" />
+      <item index="4" class="java.lang.String" itemvalue="Python.bubbleSort" />
+      <item index="5" class="java.lang.String" itemvalue="Python.characters" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.example" />
-        <item index="1" class="java.lang.String" itemvalue="Python.bubbleSort" />
-        <item index="2" class="java.lang.String" itemvalue="Python.randomString" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in Unit_Tests.py" />
-        <item index="4" class="java.lang.String" itemvalue="Python.generateTargetCSV" />
+        <item index="0" class="java.lang.String" itemvalue="Python.characters" />
+        <item index="1" class="java.lang.String" itemvalue="Python.example" />
+        <item index="2" class="java.lang.String" itemvalue="Python.bubbleSort" />
+        <item index="3" class="java.lang.String" itemvalue="Python.randomString" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in Unit_Tests.py" />
       </list>
     </recent_temporary>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -578,13 +591,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1477905013655</updated>
-    </task>
-    <task id="LOCAL-00137" summary="update">
-      <created>1496333648546</created>
-      <option name="number" value="00137" />
-      <option name="presentableId" value="LOCAL-00137" />
-      <option name="project" value="LOCAL" />
-      <updated>1496333648546</updated>
     </task>
     <task id="LOCAL-00138" summary="update">
       <created>1496339795177</created>
@@ -922,7 +928,14 @@
       <option name="project" value="LOCAL" />
       <updated>1499791282161</updated>
     </task>
-    <option name="localTasksCounter" value="186" />
+    <task id="LOCAL-00186" summary="Update">
+      <created>1499792270147</created>
+      <option name="number" value="00186" />
+      <option name="presentableId" value="LOCAL-00186" />
+      <option name="project" value="LOCAL" />
+      <updated>1499792270147</updated>
+    </task>
+    <option name="localTasksCounter" value="187" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -969,7 +982,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4099147" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41471216" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3261105" sideWeight="0.5021322" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2751896" sideWeight="0.49789253" order="2" side_tool="false" content_ui="tabs" />
@@ -1083,13 +1096,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Algorithms/cryptography/cesarCrypt2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Algorithms/cryptography/cesarCrypt.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
@@ -1332,13 +1338,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file300000.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/file300000.csv" />
     <entry file="file://$PROJECT_DIR$/UI/tkinterUI.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1357,9 +1357,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#53#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1367,7 +1364,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1439,7 +1435,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cloud/example.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
+        <state relative-caret-position="374">
           <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
@@ -1451,6 +1447,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="28" lean-forward="false" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyUtils/characters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
