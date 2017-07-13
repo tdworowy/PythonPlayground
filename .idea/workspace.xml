@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74059ddd-4c74-4733-a753-22db6be1b4c0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyUtils/allChars.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyUtils/characters.py" afterPath="$PROJECT_DIR$/MyUtils/characters.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyUtils/CompareJsons.py" afterPath="$PROJECT_DIR$/MyUtils/CompareJsons.py" />
     </list>
     <ignored path="Playground.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,18 +25,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="randomString.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MyUtils/randomString.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="example.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cloud/example.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -110,11 +97,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bubbleSort.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bubbleSort.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Algorithms/sorting/bubbleSort.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state relative-caret-position="323">
+              <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CompareJsons.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MyUtils/CompareJsons.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -156,7 +153,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Staff/OOP/class7.py" />
         <option value="$PROJECT_DIR$/algorithms/sorting/mergeSort.py" />
         <option value="$PROJECT_DIR$/algorithms/sorting/quickSort.py" />
         <option value="$PROJECT_DIR$/algorithms/sorting/selectSort.py" />
@@ -207,6 +203,7 @@
         <option value="$PROJECT_DIR$/JupterEnableCluster.cmd" />
         <option value="$PROJECT_DIR$/MyUtils/characters.py" />
         <option value="$PROJECT_DIR$/MyUtils/allChars.txt" />
+        <option value="$PROJECT_DIR$/MyUtils/CompareJsons.py" />
       </list>
     </option>
   </component>
@@ -593,13 +590,6 @@
       <option name="presentableId" value="Default" />
       <updated>1477905013655</updated>
     </task>
-    <task id="LOCAL-00139" summary="update">
-      <created>1496339875132</created>
-      <option name="number" value="00139" />
-      <option name="presentableId" value="LOCAL-00139" />
-      <option name="project" value="LOCAL" />
-      <updated>1496339875132</updated>
-    </task>
     <task id="LOCAL-00140" summary="update">
       <created>1496417684763</created>
       <option name="number" value="00140" />
@@ -936,7 +926,14 @@
       <option name="project" value="LOCAL" />
       <updated>1499959871875</updated>
     </task>
-    <option name="localTasksCounter" value="188" />
+    <task id="LOCAL-00188" summary="Update">
+      <created>1499961079518</created>
+      <option name="number" value="00188" />
+      <option name="presentableId" value="LOCAL-00188" />
+      <option name="project" value="LOCAL" />
+      <updated>1499961079518</updated>
+    </task>
+    <option name="localTasksCounter" value="189" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1097,13 +1094,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Python_Staff/fizzbuzz/fzzzBuzz.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Hacking/wifiNetworks.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1459,8 +1449,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Algorithms/sorting/bubbleSort.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="323">
+          <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyUtils/CompareJsons.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
