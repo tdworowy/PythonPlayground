@@ -43,23 +43,29 @@ class GameOfLive:
         for cell in self.getDead():
             print(cell)
 
-    def getkNeighbours(self,cell_check):#need optimization
+
+    def getCall(self,x,y):
+
+        return [call for call in self.cellList if call.x ==x and call.y ==y][0]
+
+    def getkNeighbours(self,cell_check):#TODO
         neighbours = []
         try:
-            for cell in self.cellList:
-                print("Get neighbours for cell in  x: %s y: %s" % (cell.x, cell.y))
-                for i in range(cell_check.x-2,cell_check.x+2):
+            for i in range(cell_check.x-2,cell_check.x+2):
                     for j in range(cell_check.y-2,cell_check.y+3):
-                        if cell.x == i and cell.y == j:
-                            neighbours.append(cell)
+                           neighbours.append(self.getCall(i,j))
         except Exception as ex:
+            print((i,j))
             print(str(ex))
-
+            pass
         return neighbours
 
     def checkRules(self,bornCount,stayAlive):
+        index = 0
         for cell in self.cellList:
-            print("Check rule for cell in  x: %s y: %s" % (cell.x,cell.y))
+            index =+1
+            if index % 10 == 0 :
+                print("Calls checked: %s" % index)
             aliveCount = 0
             for neighbour in self.getkNeighbours(cell):
                 if neighbour.live : aliveCount=+1
