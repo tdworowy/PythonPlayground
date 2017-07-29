@@ -13,14 +13,16 @@ class Name:
         print("delete...")
         del instance._name
 
+
 class Person:
-    def __init__(self,name):
+    def __init__(self, name):
         self._name = name
+
     name = Name()
 
 
 bob = Person("Name test1")
 print(bob.name)
-bob.name= "Name test2"
+bob.name = "Name test2"
 print(bob.name)
 del bob.name
