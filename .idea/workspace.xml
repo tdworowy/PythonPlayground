@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74059ddd-4c74-4733-a753-22db6be1b4c0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Python_Staff/OOP/descriptors/desc2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Python_Staff/OOP/descriptors/propertyAsDesc.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Python_Staff/OOP/ovrloading/getattribute_loop.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Playground.iws" />
@@ -27,18 +28,8 @@
       <file leaf-file-name="properties.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Python_Staff/OOP/Property/properties.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="properties2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Python_Staff/OOP/interfaces/properties2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="30" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -48,30 +39,38 @@
         <entry file="file://$PROJECT_DIR$/Python_Staff/OOP/descriptors/desc.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="desc2.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="desc2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Python_Staff/OOP/descriptors/desc2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="12" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+            <state relative-caret-position="476">
+              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="portScaner.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Web/portScaner.py">
+      <file leaf-file-name="propertyAsDesc.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Python_Staff/OOP/descriptors/propertyAsDesc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="27" column="37" lean-forward="false" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
-              <folding>
-                <element signature="e#0#20#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="119">
+              <caret line="7" column="15" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getattribute_loop.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Python_Staff/OOP/ovrloading/getattribute_loop.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="52" lean-forward="false" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -99,7 +98,7 @@
       <file leaf-file-name="mergeSort.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Algorithms/sorting/mergeSort.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
+            <state relative-caret-position="85">
               <caret line="6" column="7" lean-forward="false" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="36" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
@@ -155,8 +154,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/machineLearning/namesClassification.py" />
-        <option value="$PROJECT_DIR$/myUtils/decorators.py" />
         <option value="$PROJECT_DIR$/web/portScaner.py" />
         <option value="$PROJECT_DIR$/myUtils/compareStrings.py" />
         <option value="$PROJECT_DIR$/myUtils/reloadall.py" />
@@ -206,6 +203,8 @@
         <option value="$PROJECT_DIR$/Web/portScaner.py" />
         <option value="$PROJECT_DIR$/Python_Staff/OOP/descriptors/desc.py" />
         <option value="$PROJECT_DIR$/Python_Staff/OOP/descriptors/desc2.py" />
+        <option value="$PROJECT_DIR$/Python_Staff/OOP/descriptors/propertyAsDesc.py" />
+        <option value="$PROJECT_DIR$/Python_Staff/OOP/ovrloading/getattribute_loop.py" />
       </list>
     </option>
   </component>
@@ -255,7 +254,14 @@
               <item name="Playground" type="cbb8eebc:String" user="Playground" />
               <item name="Python_Staff" type="cbb8eebc:String" user="Python_Staff" />
               <item name="OOP" type="cbb8eebc:String" user="OOP" />
-              <item name="descriptors" type="cbb8eebc:String" user="descriptors" />
+              <item name="ovrloading" type="cbb8eebc:String" user="ovrloading" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Playground" type="cbb8eebc:String" user="Playground" />
+              <item name="Python_Staff" type="cbb8eebc:String" user="Python_Staff" />
+              <item name="OOP" type="cbb8eebc:String" user="OOP" />
+              <item name="Property" type="cbb8eebc:String" user="Property" />
             </path>
           </expand>
           <select />
@@ -297,7 +303,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.desc2">
+  <component name="RunManager" selected="Python.getattribute_loop">
     <configuration default="true" type="CompoundRunConfigurationType" factoryName="Compound Run Configuration">
       <method />
     </configuration>
@@ -467,6 +473,23 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
+    <configuration name="getattribute_loop" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python_Staff/OOP/ovrloading" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Playground" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_Staff/OOP/ovrloading/getattribute_loop.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="portScaner" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -484,55 +507,38 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="properties" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="propertyAsDesc" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python_Staff/OOP/Property" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python_Staff/OOP/descriptors" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Playground" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_Staff/OOP/Property/properties.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="properties2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python_Staff/OOP/interfaces" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Playground" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_Staff/OOP/interfaces/properties2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_Staff/OOP/descriptors/propertyAsDesc.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.fzzzBuzz" />
-      <item index="1" class="java.lang.String" itemvalue="Python.properties" />
-      <item index="2" class="java.lang.String" itemvalue="Python.properties2" />
-      <item index="3" class="java.lang.String" itemvalue="Python.desc" />
-      <item index="4" class="java.lang.String" itemvalue="Python.portScaner" />
-      <item index="5" class="java.lang.String" itemvalue="Python.desc2" />
+      <item index="1" class="java.lang.String" itemvalue="Python.desc" />
+      <item index="2" class="java.lang.String" itemvalue="Python.portScaner" />
+      <item index="3" class="java.lang.String" itemvalue="Python.desc2" />
+      <item index="4" class="java.lang.String" itemvalue="Python.propertyAsDesc" />
+      <item index="5" class="java.lang.String" itemvalue="Python.getattribute_loop" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.desc2" />
-        <item index="1" class="java.lang.String" itemvalue="Python.desc" />
-        <item index="2" class="java.lang.String" itemvalue="Python.portScaner" />
-        <item index="3" class="java.lang.String" itemvalue="Python.properties2" />
-        <item index="4" class="java.lang.String" itemvalue="Python.properties" />
+        <item index="0" class="java.lang.String" itemvalue="Python.getattribute_loop" />
+        <item index="1" class="java.lang.String" itemvalue="Python.propertyAsDesc" />
+        <item index="2" class="java.lang.String" itemvalue="Python.desc2" />
+        <item index="3" class="java.lang.String" itemvalue="Python.desc" />
+        <item index="4" class="java.lang.String" itemvalue="Python.portScaner" />
       </list>
     </recent_temporary>
   </component>
@@ -549,20 +555,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1477905013655</updated>
-    </task>
-    <task id="LOCAL-00149" summary="update">
-      <created>1496955636284</created>
-      <option name="number" value="00149" />
-      <option name="presentableId" value="LOCAL-00149" />
-      <option name="project" value="LOCAL" />
-      <updated>1496955636284</updated>
-    </task>
-    <task id="LOCAL-00150" summary="update">
-      <created>1497189048476</created>
-      <option name="number" value="00150" />
-      <option name="presentableId" value="LOCAL-00150" />
-      <option name="project" value="LOCAL" />
-      <updated>1497189048477</updated>
     </task>
     <task id="LOCAL-00151" summary="update">
       <created>1497195576361</created>
@@ -893,7 +885,21 @@
       <option name="project" value="LOCAL" />
       <updated>1500997559203</updated>
     </task>
-    <option name="localTasksCounter" value="198" />
+    <task id="LOCAL-00198" summary="Update">
+      <created>1501343534277</created>
+      <option name="number" value="00198" />
+      <option name="presentableId" value="LOCAL-00198" />
+      <option name="project" value="LOCAL" />
+      <updated>1501343534278</updated>
+    </task>
+    <task id="LOCAL-00199" summary="Update">
+      <created>1501344042257</created>
+      <option name="number" value="00199" />
+      <option name="presentableId" value="LOCAL-00199" />
+      <option name="project" value="LOCAL" />
+      <updated>1501344042257</updated>
+    </task>
+    <option name="localTasksCounter" value="200" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -940,9 +946,8 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="1" width="1928" height="1046" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23233405" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23501071" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.4968017" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3261105" sideWeight="0.5042644" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3261105" sideWeight="0.49573562" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27410617" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -953,6 +958,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20087816" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.4968017" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1059,27 +1065,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Python_Staff/AdvanceStaff/contextManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="14" lean-forward="false" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python_Staff/AdvanceStaff/exeptions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python_Staff/OOP/ovrloading/overloadingOperators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="6" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MyUtils/csv_staff.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1321,9 +1306,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="17" column="41" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1331,9 +1313,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="4" column="33" lean-forward="false" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1341,17 +1320,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python_Staff/OOP/Property/properties.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1391,7 +1359,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Algorithms/sorting/mergeSort.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
+        <state relative-caret-position="85">
           <caret line="6" column="7" lean-forward="false" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="36" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
@@ -1418,15 +1386,47 @@
     <entry file="file://$PROJECT_DIR$/Python_Staff/OOP/descriptors/desc.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Python_Staff/OOP/descriptors/desc2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="12" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+        <state relative-caret-position="476">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python_Staff/OOP/Property/properties.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="30" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/sqlmap/sqlmapproject-sqlmap-62ae149/sqlmap.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python_Staff/OOP/descriptors/propertyAsDesc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="15" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python_Staff/OOP/ovrloading/getattribute_loop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="52" lean-forward="false" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
           <folding />
         </state>
       </provider>
