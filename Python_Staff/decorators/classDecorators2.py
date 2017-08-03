@@ -3,6 +3,7 @@ def decorator(cls):
         def __init__(self,*args):
             self.wrapped = cls(*args)
         def __getattr__(self, item):
+            print("Wrapped!!")
             return getattr(self.wrapped,item)
 
     return wrapped
