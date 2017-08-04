@@ -35,7 +35,7 @@ class tcp:
     def infiniteSent(self):
         socket = self.clientConect()
         while 1 :
-            self.clientSent(socket, randomString.randomString(50))
+            self.clientSent(socket, randomString.generateRandomString(50))
 
 
 

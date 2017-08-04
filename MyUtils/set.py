@@ -1,7 +1,7 @@
 class Set:
     def __init__(self,value = []):
         self.data = []
-        self.concat(value)
+        self.concat(value[:])
 
     def intersect(self,other):
         res = []
