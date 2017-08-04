@@ -10,17 +10,21 @@ class TCP:
         self.port = port
 
 
-    def startTCPServer(self):
-        socket_ = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        socket_.bind((self.host, self.port))
-        socket_.listen(10)
+    def startTCPServer(self,socketCount):
+        sockets = []
+        for i in range(socketCount):
+            socket_ = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            socket_.bind((self.host, self.port+i))
+            socket_.listen(10)
+            sockets.append(socket_)
         while 1:
-            conn, addr = socket_.accept() #TODO make work good for more connnections
-            print("Conected by", addr)
-            data = conn.recv(1024)
-            if  data:
-                print("Recived", data)
-            else:pass
+            for soc in sockets:
+                conn, addr = soc.accept()
+                print("Conected by", addr)
+                data = conn.recv(1024)
+                if  data:
+                    print("Recived", data)
+                else:pass
 
 
     def clientConect(self):
@@ -56,4 +60,4 @@ def inifinite():
 
 if __name__ == "__main__":
     tcp = TCP('127.0.0.1', 65524)
-    tcp.startTCPServer()
+    tcp.startTCPServer(2)
