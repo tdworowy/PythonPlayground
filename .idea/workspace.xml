@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74059ddd-4c74-4733-a753-22db6be1b4c0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyUtils/myTimer3.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyUtils/singleton_.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyUtils/Tracer_.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Playground.iws" />
@@ -25,16 +24,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TCP_client.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Web/TCP/TCP_client.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="randomString.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyUtils/randomString.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -99,11 +88,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="singleton_.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="singleton_.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyUtils/singleton_.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
               <caret line="23" column="18" lean-forward="false" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tracer_.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MyUtils/Tracer_.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -156,7 +155,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/myUtils/randomString_.py" />
         <option value="$PROJECT_DIR$/Python_Staff/OOP/Property_.py" />
         <option value="$PROJECT_DIR$/myUtils/netflixCategories.py" />
         <option value="$PROJECT_DIR$/Python_Staff/OOP/class_methods.py" />
@@ -207,6 +205,7 @@
         <option value="$PROJECT_DIR$/Python_Staff/decorators/tracer.py" />
         <option value="$PROJECT_DIR$/MyUtils/myTimer3.py" />
         <option value="$PROJECT_DIR$/MyUtils/singleton_.py" />
+        <option value="$PROJECT_DIR$/MyUtils/Tracer_.py" />
       </list>
     </option>
   </component>
@@ -285,7 +284,24 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.singleton_">
+  <component name="RunManager" selected="Python.Tracer_">
+    <configuration name="Tracer_" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MyUtils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Playground" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MyUtils/Tracer_.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration default="true" type="CompoundRunConfigurationType" factoryName="Compound Run Configuration">
       <method />
     </configuration>
@@ -455,23 +471,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="randomString" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MyUtils" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Playground" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MyUtils/randomString.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
     <configuration name="singleton_" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -508,19 +507,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.fzzzBuzz" />
-      <item index="1" class="java.lang.String" itemvalue="Python.randomString" />
-      <item index="2" class="java.lang.String" itemvalue="Python.dec2" />
-      <item index="3" class="java.lang.String" itemvalue="Python.tracer" />
-      <item index="4" class="java.lang.String" itemvalue="Python.myTimer3" />
-      <item index="5" class="java.lang.String" itemvalue="Python.singleton_" />
+      <item index="1" class="java.lang.String" itemvalue="Python.dec2" />
+      <item index="2" class="java.lang.String" itemvalue="Python.tracer" />
+      <item index="3" class="java.lang.String" itemvalue="Python.myTimer3" />
+      <item index="4" class="java.lang.String" itemvalue="Python.singleton_" />
+      <item index="5" class="java.lang.String" itemvalue="Python.Tracer_" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.singleton_" />
-        <item index="1" class="java.lang.String" itemvalue="Python.myTimer3" />
-        <item index="2" class="java.lang.String" itemvalue="Python.tracer" />
-        <item index="3" class="java.lang.String" itemvalue="Python.dec2" />
-        <item index="4" class="java.lang.String" itemvalue="Python.randomString" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Tracer_" />
+        <item index="1" class="java.lang.String" itemvalue="Python.singleton_" />
+        <item index="2" class="java.lang.String" itemvalue="Python.myTimer3" />
+        <item index="3" class="java.lang.String" itemvalue="Python.tracer" />
+        <item index="4" class="java.lang.String" itemvalue="Python.dec2" />
       </list>
     </recent_temporary>
   </component>
@@ -537,13 +536,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1477905013655</updated>
-    </task>
-    <task id="LOCAL-00161" summary="update">
-      <created>1497692911994</created>
-      <option name="number" value="00161" />
-      <option name="presentableId" value="LOCAL-00161" />
-      <option name="project" value="LOCAL" />
-      <updated>1497692911994</updated>
     </task>
     <task id="LOCAL-00162" summary="update">
       <created>1497707585687</created>
@@ -881,7 +873,14 @@
       <option name="project" value="LOCAL" />
       <updated>1501938375266</updated>
     </task>
-    <option name="localTasksCounter" value="210" />
+    <task id="LOCAL-00210" summary="Update">
+      <created>1501951567088</created>
+      <option name="number" value="00210" />
+      <option name="presentableId" value="LOCAL-00210" />
+      <option name="project" value="LOCAL" />
+      <updated>1501951567089</updated>
+    </task>
+    <option name="localTasksCounter" value="211" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1047,13 +1046,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Python_Staff/xml_/_xml_.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DataBases/postgresql/filesUtilitis.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -1416,6 +1408,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="23" column="18" lean-forward="false" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyUtils/Tracer_.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="10" />
           <folding />
         </state>
       </provider>
