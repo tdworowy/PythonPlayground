@@ -18,6 +18,26 @@ def timer(label = ' ',trace = True):
                 print(format % values)
             return result
     return Timer
+#dosen't work on methods
+
+
+def timer2(label = ' ',trace = True):
+    def onDecorator(func):
+        def onCall(*args, **kwargs):
+            start = time.clock()
+            result =func(*args,**kwargs)
+            elapsed = time.clock() - start
+            onCall.alltime +=elapsed
+            if trace:
+                format = '%s %s: %.5f, %.5f'
+                values = (label,func.__name__,elapsed,onCall.alltime)
+                print(format % values)
+            return result
+        onCall.alltime += 0
+        return onCall
+    return onDecorator
+
+
 
 
 @timer("==>")
