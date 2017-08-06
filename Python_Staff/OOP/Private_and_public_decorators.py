@@ -6,7 +6,7 @@ def accesControl(failIF):
     def onDecorator(aClass):
         class onInstance:
             def __init__(self,*args,**kwargs):
-                self.wrapped = aClass(*args,**kwargs)
+                self.__wrapped = aClass(*args,**kwargs)
             def __getattr__(self, attr):
                 trace('Get: ',attr)
                 if failIF(attr):
