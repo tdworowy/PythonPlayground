@@ -44,7 +44,7 @@ if __name__ == '__main__':
             print(self.value)
 
 #will create only one instance
-x = X('z')
-x.getvalue()
-y = X('a')
-y.getvalue()
+   x = X('z')
+   x.getvalue()
+   y = X('a')
+   y.getvalue()
