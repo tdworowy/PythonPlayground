@@ -17,7 +17,7 @@ def tracer(func):
         calls +=1
         print("Call %s %s" % (calls,func.__name__))
         return func(*args,**kwargs)
-
+    return onCall
 # work for functions and methods
 
 class Tracer2:
