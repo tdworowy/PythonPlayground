@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74059ddd-4c74-4733-a753-22db6be1b4c0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Python_Staff/fibonaci.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Python_Staff/BasicStuff/generators/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Python_Staff/BasicStuff/generators/gen3.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Python_Staff/BasicStuff/generators/gen4.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Python_Staff/BasicStuff/generators.py" afterPath="$PROJECT_DIR$/Python_Staff/BasicStuff/generators/generators.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Python_Staff/BasicStuff/generators2_wyrarzenia.py" afterPath="$PROJECT_DIR$/Python_Staff/BasicStuff/generators/generators2_wyrarzenia.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Playground.iws" />
@@ -24,26 +28,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DecorateAll_.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Python_Staff/metaclasses/DecorateAll_.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="col1.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Python_Staff/collections_/col1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="enumerate.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Python_Staff/BasicStuff/enumerate.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -84,11 +68,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fibonaci.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="fibonaci.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Python_Staff/fibonaci.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
               <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="a.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Python_Staff/otherStaff/a.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="generators.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Python_Staff/BasicStuff/generators/generators.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gen3.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Python_Staff/BasicStuff/generators/gen3.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="313">
+              <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gen4.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Python_Staff/BasicStuff/generators/gen4.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -99,26 +123,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
               <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://C:/Program Files/Python36/Lib/collections/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_collections.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.PyCharmCE2017.1/system/python_stubs/-1120166012/_collections.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3298">
-              <caret line="194" column="8" lean-forward="false" selection-start-line="194" selection-start-column="8" selection-end-line="194" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -151,8 +155,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/MyUtils/CompareJsons.py" />
-        <option value="$PROJECT_DIR$/Python_Staff/AdvanceStaff/encoding.py" />
         <option value="$PROJECT_DIR$/Python_Staff/AdvanceStaff/bystes_.py" />
         <option value="$PROJECT_DIR$/Python_Staff/AdvanceStaff/bytes2.py" />
         <option value="$PROJECT_DIR$/Python_Staff/AdvanceStaff/bytes3.py" />
@@ -202,6 +204,8 @@
         <option value="$PROJECT_DIR$/Python_Staff/collections_/col1.py" />
         <option value="$PROJECT_DIR$/Python_Staff/BasicStuff/enumerate_2.py" />
         <option value="$PROJECT_DIR$/Python_Staff/fibonaci.py" />
+        <option value="$PROJECT_DIR$/Python_Staff/BasicStuff/generators/gen3.py" />
+        <option value="$PROJECT_DIR$/Python_Staff/BasicStuff/generators/gen4.py" />
       </list>
     </option>
   </component>
@@ -241,6 +245,19 @@
               <item name="PythonPlayground" type="cbb8eebc:String" user="PythonPlayground" />
               <item name="Python_Staff" type="cbb8eebc:String" user="Python_Staff" />
             </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="PythonPlayground" type="cbb8eebc:String" user="PythonPlayground" />
+              <item name="Python_Staff" type="cbb8eebc:String" user="Python_Staff" />
+              <item name="BasicStuff" type="cbb8eebc:String" user="BasicStuff" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="PythonPlayground" type="cbb8eebc:String" user="PythonPlayground" />
+              <item name="Python_Staff" type="cbb8eebc:String" user="Python_Staff" />
+              <item name="BasicStuff" type="cbb8eebc:String" user="BasicStuff" />
+              <item name="generators" type="cbb8eebc:String" user="generators" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -253,19 +270,19 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Google_drive\Python_\Playground\Python_Staff\OOP" />
-      <recent name="D:\Google_drive\Python_\Playground\Python_Staff" />
-      <recent name="D:\Google_drive\Python_\Playground\Python_Staff\AdvanceStaff" />
-      <recent name="D:\Google_drive\Python_\Playground" />
-      <recent name="D:\Google_drive\Python_\Playground\machineLearning" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Google_drive\Python_\Playground\Python_Staff\metaclasses" />
       <recent name="D:\Google_drive\Python_\Playground\Python_Staff\OOP" />
       <recent name="D:\Google_drive\Python_\Playground\MyUtils" />
       <recent name="D:\Google_drive\Python_\Playground\Python_Staff\OOP\ovrloading" />
       <recent name="D:\Google_drive\Python_\Playground\Python_Staff\OOP\descriptors" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Thomas\PycharmProjects\PythonPlayground\Python_Staff\BasicStuff\generators" />
+      <recent name="D:\Google_drive\Python_\Playground\Python_Staff\OOP" />
+      <recent name="D:\Google_drive\Python_\Playground\Python_Staff" />
+      <recent name="D:\Google_drive\Python_\Playground\Python_Staff\AdvanceStaff" />
+      <recent name="D:\Google_drive\Python_\Playground" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -280,7 +297,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.fibonaci">
+  <component name="RunManager" selected="Python.gen4">
     <configuration default="true" type="CompoundRunConfigurationType" factoryName="Compound Run Configuration">
       <method />
     </configuration>
@@ -399,19 +416,19 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <configuration name="col1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="a" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python_Staff/collections_" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python_Staff/otherStaff" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Playground" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_Staff/collections_/col1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_Staff/otherStaff/a.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -429,23 +446,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Playground" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_Staff/BasicStuff/enumerate.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="enumerate_2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python_Staff/BasicStuff" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Playground" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_Staff/BasicStuff/enumerate_2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -484,38 +484,54 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="metaClassTracer" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="gen3" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python_Staff/metaclasses" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python_Staff/BasicStuff/generators" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Playground" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_Staff/metaclasses/metaClassTracer.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_Staff/BasicStuff/generators/gen3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="gen4" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python_Staff/BasicStuff/generators" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Playground" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_Staff/BasicStuff/generators/gen4.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="6">
-      <item index="0" class="java.lang.String" itemvalue="Python.fzzzBuzz" />
-      <item index="1" class="java.lang.String" itemvalue="Python.metaClassTracer" />
-      <item index="2" class="java.lang.String" itemvalue="Python.col1" />
-      <item index="3" class="java.lang.String" itemvalue="Python.enumerate_2" />
-      <item index="4" class="java.lang.String" itemvalue="Python.enumerate" />
-      <item index="5" class="java.lang.String" itemvalue="Python.fibonaci" />
+      <item index="0" class="java.lang.String" itemvalue="Python.gen4" />
+      <item index="1" class="java.lang.String" itemvalue="Python.fzzzBuzz" />
+      <item index="2" class="java.lang.String" itemvalue="Python.a" />
+      <item index="3" class="java.lang.String" itemvalue="Python.fibonaci" />
+      <item index="4" class="java.lang.String" itemvalue="Python.gen3" />
+      <item index="5" class="java.lang.String" itemvalue="Python.enumerate" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.fibonaci" />
-        <item index="1" class="java.lang.String" itemvalue="Python.enumerate" />
-        <item index="2" class="java.lang.String" itemvalue="Python.enumerate_2" />
-        <item index="3" class="java.lang.String" itemvalue="Python.col1" />
-        <item index="4" class="java.lang.String" itemvalue="Python.metaClassTracer" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Python.gen3" />
+        <item index="1" class="java.lang.String" itemvalue="Python.a" />
+        <item index="2" class="java.lang.String" itemvalue="Python.fibonaci" />
+        <item index="3" class="java.lang.String" itemvalue="Python.enumerate" />
       </list>
     </recent_temporary>
   </component>
@@ -532,13 +548,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1477905013655</updated>
-    </task>
-    <task id="LOCAL-00171" summary="update">
-      <created>1498409511235</created>
-      <option name="number" value="00171" />
-      <option name="presentableId" value="LOCAL-00171" />
-      <option name="project" value="LOCAL" />
-      <updated>1498409511236</updated>
     </task>
     <task id="LOCAL-00172" summary="game of live work in progress">
       <created>1498579389772</created>
@@ -876,7 +885,14 @@
       <option name="project" value="LOCAL" />
       <updated>1503577604765</updated>
     </task>
-    <option name="localTasksCounter" value="220" />
+    <task id="LOCAL-00220" summary="Update">
+      <created>1503584808310</created>
+      <option name="number" value="00220" />
+      <option name="presentableId" value="LOCAL-00220" />
+      <option name="project" value="LOCAL" />
+      <updated>1503584808311</updated>
+    </task>
+    <option name="localTasksCounter" value="221" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1047,34 +1063,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/MyUtils/margePATHS.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyUtils/json2.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyUtils/json1.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyUtils/getSystemInfo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MyUtils/set.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -1401,6 +1389,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python_Staff/otherStaff/a.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python_Staff/BasicStuff/generators/generators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python_Staff/BasicStuff/generators/gen3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python_Staff/BasicStuff/generators/gen4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
           <folding />
         </state>
       </provider>
