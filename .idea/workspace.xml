@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74059ddd-4c74-4733-a753-22db6be1b4c0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Python_Staff/BasicStuff/enumerate_2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Python_Staff/fibonaci.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Playground.iws" />
@@ -24,26 +24,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="metaTracer.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Python_Staff/metaclasses/metaTracer.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="metaClassTracer.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Python_Staff/metaclasses/metaClassTracer.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="39" lean-forward="false" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DecorateAll_.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Python_Staff/metaclasses/DecorateAll_.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -68,13 +48,13 @@
         <entry file="file://$PROJECT_DIR$/Python_Staff/BasicStuff/enumerate.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="zip.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="zip.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Python_Staff/BasicStuff/zip.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
@@ -84,11 +64,41 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="keyloger.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Hacking/keyloger.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wifiNetworks.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Hacking/wifiNetworks.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fibonaci.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Python_Staff/fibonaci.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="enumerate_2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Python_Staff/BasicStuff/enumerate_2.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+              <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -98,7 +108,7 @@
         <entry file="file://C:/Program Files/Python36/Lib/collections/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -107,18 +117,8 @@
       <file leaf-file-name="_collections.py" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/.PyCharmCE2017.1/system/python_stubs/-1120166012/_collections.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
+            <state relative-caret-position="3298">
               <caret line="194" column="8" lean-forward="false" selection-start-line="194" selection-start-column="8" selection-end-line="194" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tracer.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Python_Staff/decorators/tracer.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1394">
-              <caret line="82" column="17" lean-forward="false" selection-start-line="82" selection-start-column="17" selection-end-line="82" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -151,7 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/MyUtils/allChars.txt" />
         <option value="$PROJECT_DIR$/MyUtils/CompareJsons.py" />
         <option value="$PROJECT_DIR$/Python_Staff/AdvanceStaff/encoding.py" />
         <option value="$PROJECT_DIR$/Python_Staff/AdvanceStaff/bystes_.py" />
@@ -202,6 +201,7 @@
         <option value="$PROJECT_DIR$/Python_Staff/collections/col1.py" />
         <option value="$PROJECT_DIR$/Python_Staff/collections_/col1.py" />
         <option value="$PROJECT_DIR$/Python_Staff/BasicStuff/enumerate_2.py" />
+        <option value="$PROJECT_DIR$/Python_Staff/fibonaci.py" />
       </list>
     </option>
   </component>
@@ -227,8 +227,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane" />
+      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <expand>
@@ -240,12 +240,6 @@
               <item name="Root" type="cbb8eebc:String" user="Root" />
               <item name="PythonPlayground" type="cbb8eebc:String" user="PythonPlayground" />
               <item name="Python_Staff" type="cbb8eebc:String" user="Python_Staff" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="PythonPlayground" type="cbb8eebc:String" user="PythonPlayground" />
-              <item name="Python_Staff" type="cbb8eebc:String" user="Python_Staff" />
-              <item name="BasicStuff" type="cbb8eebc:String" user="BasicStuff" />
             </path>
           </expand>
           <select />
@@ -286,7 +280,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.enumerate">
+  <component name="RunManager" selected="Python.fibonaci">
     <configuration default="true" type="CompoundRunConfigurationType" factoryName="Compound Run Configuration">
       <method />
     </configuration>
@@ -456,6 +450,23 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
+    <configuration name="fibonaci" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python_Staff" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Playground" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_Staff/fibonaci.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="fzzzBuzz" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -490,38 +501,21 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="tracer" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python_Staff/decorators" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Playground" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_Staff/decorators/tracer.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.fzzzBuzz" />
       <item index="1" class="java.lang.String" itemvalue="Python.metaClassTracer" />
-      <item index="2" class="java.lang.String" itemvalue="Python.tracer" />
-      <item index="3" class="java.lang.String" itemvalue="Python.col1" />
-      <item index="4" class="java.lang.String" itemvalue="Python.enumerate_2" />
-      <item index="5" class="java.lang.String" itemvalue="Python.enumerate" />
+      <item index="2" class="java.lang.String" itemvalue="Python.col1" />
+      <item index="3" class="java.lang.String" itemvalue="Python.enumerate_2" />
+      <item index="4" class="java.lang.String" itemvalue="Python.enumerate" />
+      <item index="5" class="java.lang.String" itemvalue="Python.fibonaci" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.enumerate" />
-        <item index="1" class="java.lang.String" itemvalue="Python.enumerate_2" />
-        <item index="2" class="java.lang.String" itemvalue="Python.col1" />
-        <item index="3" class="java.lang.String" itemvalue="Python.metaClassTracer" />
-        <item index="4" class="java.lang.String" itemvalue="Python.tracer" />
+        <item index="0" class="java.lang.String" itemvalue="Python.fibonaci" />
+        <item index="1" class="java.lang.String" itemvalue="Python.enumerate" />
+        <item index="2" class="java.lang.String" itemvalue="Python.enumerate_2" />
+        <item index="3" class="java.lang.String" itemvalue="Python.col1" />
+        <item index="4" class="java.lang.String" itemvalue="Python.metaClassTracer" />
       </list>
     </recent_temporary>
   </component>
@@ -538,13 +532,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1477905013655</updated>
-    </task>
-    <task id="LOCAL-00170" summary="update">
-      <created>1498395863066</created>
-      <option name="number" value="00170" />
-      <option name="presentableId" value="LOCAL-00170" />
-      <option name="project" value="LOCAL" />
-      <updated>1498395863066</updated>
     </task>
     <task id="LOCAL-00171" summary="update">
       <created>1498409511235</created>
@@ -882,7 +869,14 @@
       <option name="project" value="LOCAL" />
       <updated>1503576228352</updated>
     </task>
-    <option name="localTasksCounter" value="219" />
+    <task id="LOCAL-00219" summary="Update">
+      <created>1503577604764</created>
+      <option name="number" value="00219" />
+      <option name="presentableId" value="LOCAL-00219" />
+      <option name="project" value="LOCAL" />
+      <updated>1503577604765</updated>
+    </task>
+    <option name="localTasksCounter" value="220" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1053,27 +1047,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/RabbitMQ/example2/connectionInfo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RabbitMQ/example2/sender.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RabbitMQ/example2/receiver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MyUtils/margePATHS.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1290,7 +1263,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1298,7 +1270,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1306,7 +1277,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1314,7 +1284,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1322,7 +1291,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1330,7 +1298,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1368,7 +1335,7 @@
     </entry>
     <entry file="file://$USER_HOME$/.PyCharmCE2017.1/system/python_stubs/-1120166012/_collections.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
+        <state relative-caret-position="3298">
           <caret line="194" column="8" lean-forward="false" selection-start-line="194" selection-start-column="8" selection-end-line="194" selection-end-column="8" />
           <folding />
         </state>
@@ -1377,7 +1344,7 @@
     <entry file="file://C:/Program Files/Python36/Lib/collections/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1393,7 +1360,7 @@
     <entry file="file://$PROJECT_DIR$/Python_Staff/BasicStuff/enumerate_2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+          <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -1401,7 +1368,7 @@
     <entry file="file://$PROJECT_DIR$/Python_Staff/BasicStuff/enumerate.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1410,6 +1377,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hacking/keyloger.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hacking/wifiNetworks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python_Staff/fibonaci.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
