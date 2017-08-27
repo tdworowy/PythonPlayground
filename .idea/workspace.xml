@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="74059ddd-4c74-4733-a753-22db6be1b4c0" name="Default" comment="Update">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Python_Staff/decorators/functols_wraps.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Playground.iml" afterPath="$PROJECT_DIR$/.idea/Playground.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="74059ddd-4c74-4733-a753-22db6be1b4c0" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Python_Staff/decorators/buffors_.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Playground.iws" />
@@ -26,16 +24,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="metaTracer.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Python_Staff/metaclasses/metaTracer.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="metaClassTracer.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Python_Staff/metaclasses/metaClassTracer.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -110,7 +98,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="functols_wraps.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="functols_wraps.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Python_Staff/decorators/functols_wraps.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="493">
@@ -120,11 +108,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tracer.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Python_Staff/decorators/tracer.py">
+      <file leaf-file-name="buffors_.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Python_Staff/decorators/buffors_.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1394">
-              <caret line="82" column="17" lean-forward="false" selection-start-line="82" selection-start-column="17" selection-end-line="82" selection-end-column="17" />
+            <state relative-caret-position="731">
+              <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hashlib.py" pinned="false" current-in-tab="false">
+        <entry file="file://D:/Python/Lib/hashlib.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="387">
+              <caret line="76" column="26" lean-forward="true" selection-start-line="76" selection-start-column="26" selection-end-line="76" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -157,7 +157,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Python_Staff/AdvanceStaff/bytes2.py" />
         <option value="$PROJECT_DIR$/Python_Staff/AdvanceStaff/bytes3.py" />
         <option value="$PROJECT_DIR$/Python_Staff/regex.py" />
         <option value="$PROJECT_DIR$/Python_Staff/AdvanceStaff/struct_.py" />
@@ -208,6 +207,7 @@
         <option value="$PROJECT_DIR$/Python_Staff/BasicStuff/generators/gen3.py" />
         <option value="$PROJECT_DIR$/Python_Staff/BasicStuff/generators/gen4.py" />
         <option value="$PROJECT_DIR$/Python_Staff/decorators/functols_wraps.py" />
+        <option value="$PROJECT_DIR$/Python_Staff/decorators/buffors_.py" />
       </list>
     </option>
   </component>
@@ -297,7 +297,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.functols_wraps">
+  <component name="RunManager" selected="Python.buffors_">
     <configuration default="true" type="CompoundRunConfigurationType" factoryName="Compound Run Configuration">
       <method />
     </configuration>
@@ -433,19 +433,19 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="fibonaci" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="buffors_" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python_Staff" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python_Staff/decorators" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Playground" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_Staff/fibonaci.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_Staff/decorators/buffors_.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -539,18 +539,18 @@
       <item index="0" class="java.lang.String" itemvalue="Python.gen4" />
       <item index="1" class="java.lang.String" itemvalue="Python.fzzzBuzz" />
       <item index="2" class="java.lang.String" itemvalue="Python.a" />
-      <item index="3" class="java.lang.String" itemvalue="Python.fibonaci" />
-      <item index="4" class="java.lang.String" itemvalue="Python.gen3" />
-      <item index="5" class="java.lang.String" itemvalue="Python.gnomeSort" />
-      <item index="6" class="java.lang.String" itemvalue="Python.functols_wraps" />
+      <item index="3" class="java.lang.String" itemvalue="Python.gen3" />
+      <item index="4" class="java.lang.String" itemvalue="Python.gnomeSort" />
+      <item index="5" class="java.lang.String" itemvalue="Python.functols_wraps" />
+      <item index="6" class="java.lang.String" itemvalue="Python.buffors_" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.functols_wraps" />
-        <item index="1" class="java.lang.String" itemvalue="Python.gnomeSort" />
-        <item index="2" class="java.lang.String" itemvalue="Python.gen3" />
-        <item index="3" class="java.lang.String" itemvalue="Python.a" />
-        <item index="4" class="java.lang.String" itemvalue="Python.fibonaci" />
+        <item index="0" class="java.lang.String" itemvalue="Python.buffors_" />
+        <item index="1" class="java.lang.String" itemvalue="Python.functols_wraps" />
+        <item index="2" class="java.lang.String" itemvalue="Python.gnomeSort" />
+        <item index="3" class="java.lang.String" itemvalue="Python.gen3" />
+        <item index="4" class="java.lang.String" itemvalue="Python.a" />
       </list>
     </recent_temporary>
   </component>
@@ -567,13 +567,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1477905013655</updated>
-    </task>
-    <task id="LOCAL-00172" summary="game of live work in progress">
-      <created>1498579389772</created>
-      <option name="number" value="00172" />
-      <option name="presentableId" value="LOCAL-00172" />
-      <option name="project" value="LOCAL" />
-      <updated>1498579389773</updated>
     </task>
     <task id="LOCAL-00173" summary="update">
       <created>1498579576359</created>
@@ -911,7 +904,14 @@
       <option name="project" value="LOCAL" />
       <updated>1503584808311</updated>
     </task>
-    <option name="localTasksCounter" value="221" />
+    <task id="LOCAL-00221" summary="Update">
+      <created>1503836893269</created>
+      <option name="number" value="00221" />
+      <option name="presentableId" value="LOCAL-00221" />
+      <option name="project" value="LOCAL" />
+      <updated>1503836893269</updated>
+    </task>
+    <option name="localTasksCounter" value="222" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1082,14 +1082,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Web/TCP/TCP_client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python/Lib/random.py" />
     <entry file="file://$PROJECT_DIR$/Python_Staff/C++_inPython/bost.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1437,6 +1429,24 @@
         <state relative-caret-position="493">
           <caret line="29" column="28" lean-forward="true" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python/Lib/hashlib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="76" column="26" lean-forward="true" selection-start-line="76" selection-start-column="26" selection-end-line="76" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python_Staff/decorators/buffors_.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
