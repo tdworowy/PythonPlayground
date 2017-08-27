@@ -17,7 +17,7 @@ def memoize(duration =10):
             key = compute_key(func,args,kw)
 
             if (key in cache and not is_obsolete(cache[key],duration)):
-                print("We have a winner !")
+                print("Value from cache")
                 return cache[key]['value']
 
             result = func(*args,**kw)
