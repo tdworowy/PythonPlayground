@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74059ddd-4c74-4733-a753-22db6be1b4c0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Python_Staff/decorators/block_.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Python_Staff/decorators/contextMenager_decorator.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Python_Staff/AdvanceStaff/annotations.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Playground.iws" />
@@ -25,18 +24,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="cesarCrypt.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Algorithms/cryptography/cesarCrypt.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="cesarCrypt2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Algorithms/cryptography/cesarCrypt2.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -111,11 +98,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contextMenager_decorator.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="contextMenager_decorator.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Python_Staff/decorators/contextMenager_decorator.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
               <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="annotations.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Python_Staff/AdvanceStaff/annotations.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="40" lean-forward="true" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -158,7 +155,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Python_Staff/AdvanceStaff/struct_.py" />
         <option value="$PROJECT_DIR$/Python_Staff/AdvanceStaff/xml_/books.html" />
         <option value="$PROJECT_DIR$/Python_Staff/AdvanceStaff/xml_/books.xml" />
         <option value="$PROJECT_DIR$/Python_Staff/AdvanceStaff/xml_/_xml_.py" />
@@ -209,6 +205,7 @@
         <option value="$PROJECT_DIR$/Python_Staff/decorators/buffors_.py" />
         <option value="$PROJECT_DIR$/Python_Staff/decorators/block_.py" />
         <option value="$PROJECT_DIR$/Python_Staff/decorators/contextMenager_decorator.py" />
+        <option value="$PROJECT_DIR$/Python_Staff/AdvanceStaff/annotations.py" />
       </list>
     </option>
   </component>
@@ -257,12 +254,6 @@
               <item name="Python_Staff" type="cbb8eebc:String" user="Python_Staff" />
               <item name="AdvanceStaff" type="cbb8eebc:String" user="AdvanceStaff" />
             </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Playground" type="cbb8eebc:String" user="Playground" />
-              <item name="Python_Staff" type="cbb8eebc:String" user="Python_Staff" />
-              <item name="decorators" type="cbb8eebc:String" user="decorators" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -304,7 +295,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.contextMenager_decorator">
+  <component name="RunManager" selected="Python.annotations">
     <configuration default="true" type="CompoundRunConfigurationType" factoryName="Compound Run Configuration">
       <method />
     </configuration>
@@ -423,6 +414,23 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
+    <configuration name="annotations" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python_Staff/AdvanceStaff" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Playground" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_Staff/AdvanceStaff/annotations.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="block_" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -491,23 +499,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="functols_wraps" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python_Staff/decorators" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Playground" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_Staff/decorators/functols_wraps.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
     <configuration name="fzzzBuzz" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -545,19 +536,19 @@
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Python.gen4" />
       <item index="1" class="java.lang.String" itemvalue="Python.fzzzBuzz" />
-      <item index="2" class="java.lang.String" itemvalue="Python.functols_wraps" />
-      <item index="3" class="java.lang.String" itemvalue="Python.buffors_" />
-      <item index="4" class="java.lang.String" itemvalue="Python.block_" />
-      <item index="5" class="java.lang.String" itemvalue="Python.contextManager" />
-      <item index="6" class="java.lang.String" itemvalue="Python.contextMenager_decorator" />
+      <item index="2" class="java.lang.String" itemvalue="Python.buffors_" />
+      <item index="3" class="java.lang.String" itemvalue="Python.block_" />
+      <item index="4" class="java.lang.String" itemvalue="Python.contextManager" />
+      <item index="5" class="java.lang.String" itemvalue="Python.contextMenager_decorator" />
+      <item index="6" class="java.lang.String" itemvalue="Python.annotations" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.contextMenager_decorator" />
-        <item index="1" class="java.lang.String" itemvalue="Python.contextManager" />
-        <item index="2" class="java.lang.String" itemvalue="Python.block_" />
-        <item index="3" class="java.lang.String" itemvalue="Python.buffors_" />
-        <item index="4" class="java.lang.String" itemvalue="Python.functols_wraps" />
+        <item index="0" class="java.lang.String" itemvalue="Python.annotations" />
+        <item index="1" class="java.lang.String" itemvalue="Python.contextMenager_decorator" />
+        <item index="2" class="java.lang.String" itemvalue="Python.contextManager" />
+        <item index="3" class="java.lang.String" itemvalue="Python.block_" />
+        <item index="4" class="java.lang.String" itemvalue="Python.buffors_" />
       </list>
     </recent_temporary>
   </component>
@@ -574,13 +565,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1477905013655</updated>
-    </task>
-    <task id="LOCAL-00175" summary="Update">
-      <created>1498664957429</created>
-      <option name="number" value="00175" />
-      <option name="presentableId" value="LOCAL-00175" />
-      <option name="project" value="LOCAL" />
-      <updated>1498664957429</updated>
     </task>
     <task id="LOCAL-00176" summary="Update">
       <created>1498750563451</created>
@@ -918,7 +902,14 @@
       <option name="project" value="LOCAL" />
       <updated>1503842894733</updated>
     </task>
-    <option name="localTasksCounter" value="224" />
+    <task id="LOCAL-00224" summary="Update">
+      <created>1504012506163</created>
+      <option name="number" value="00224" />
+      <option name="presentableId" value="LOCAL-00224" />
+      <option name="project" value="LOCAL" />
+      <updated>1504012506163</updated>
+    </task>
+    <option name="localTasksCounter" value="225" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1089,13 +1080,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/MyUtils/Tracer_.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="16" lean-forward="false" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MyUtils/mytimer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1453,6 +1437,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python_Staff/AdvanceStaff/annotations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="40" lean-forward="true" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
           <folding />
         </state>
       </provider>
