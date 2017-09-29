@@ -97,7 +97,7 @@ class NodesAPI:
             threads = [Thread(target=NodesAPI.start_node, args=(NodesAPI.add_node(), '0.0.0.0', node[-4:])) for node in bc.nodes]
             for thread in threads:
                 thread.start()
-                # thread.join()
+
             return "Created %s Nodes" % len(threads)
         return app
 
