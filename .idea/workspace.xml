@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74059ddd-4c74-4733-a753-22db6be1b4c0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyUtils/officeUtils.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Blockchain_/blockchain.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Blockchain_/node_.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Playground.iws" />
@@ -24,16 +25,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="sample.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/falcon_/sample.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="hyllo.hy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HY_/hyllo.hy">
           <provider selected="true" editor-type-id="text-editor">
@@ -54,12 +45,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="officeUtils.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="officeUtils.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyUtils/officeUtils.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
               <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="blockchain.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Blockchain_/blockchain.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="37" column="20" lean-forward="true" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="node_.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Blockchain_/node_.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="770">
+              <caret line="60" column="32" lean-forward="true" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#22#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -79,7 +94,7 @@
       <file leaf-file-name="temp.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyUtils/temp.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="0">
               <caret line="0" column="2264" lean-forward="false" selection-start-line="0" selection-start-column="2264" selection-end-line="0" selection-end-column="2264" />
               <folding />
             </state>
@@ -89,7 +104,7 @@
       <file leaf-file-name="opendocument.py" pinned="false" current-in-tab="false">
         <entry file="file://D:/Python/Lib/site-packages/odf/opendocument.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
+            <state relative-caret-position="4182">
               <caret line="246" column="28" lean-forward="false" selection-start-line="246" selection-start-column="18" selection-end-line="246" selection-end-column="28" />
               <folding />
             </state>
@@ -99,7 +114,7 @@
       <file leaf-file-name="temp.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyUtils/temp.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1972">
+            <state relative-caret-position="17">
               <caret line="1" column="48257" lean-forward="false" selection-start-line="1" selection-start-column="48096" selection-end-line="1" selection-end-column="48257" />
               <folding>
                 <element signature="e#489862#489867#0" expanded="true" />
@@ -132,18 +147,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hyTest.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HY_/hyTest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="32" lean-forward="false" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
-              <folding>
-                <marker date="1505056787557" expanded="true" signature="0:32" ph="import ..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -171,8 +174,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Python_Staff/OOP/ovrloading/getattribute_loop2.py" />
-        <option value="$PROJECT_DIR$/Python_Staff/decorators/classDecorators2.py" />
         <option value="$PROJECT_DIR$/MyUtils/set.py" />
         <option value="$PROJECT_DIR$/MyUtils/decorators.py" />
         <option value="$PROJECT_DIR$/Web/TCP/TCP.py" />
@@ -222,6 +223,8 @@
         <option value="$PROJECT_DIR$/HY_/hyllo.hy" />
         <option value="$PROJECT_DIR$/HY_/hyTest.py" />
         <option value="$PROJECT_DIR$/MyUtils/officeUtils.py" />
+        <option value="$PROJECT_DIR$/Blockchain_/blockchain.py" />
+        <option value="$PROJECT_DIR$/Blockchain_/node_.py" />
       </list>
     </option>
   </component>
@@ -247,8 +250,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane" />
+      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <expand>
@@ -259,48 +262,7 @@
             <path>
               <item name="Root" type="cbb8eebc:String" user="Root" />
               <item name="Playground" type="cbb8eebc:String" user="Playground" />
-              <item name="DataBases" type="cbb8eebc:String" user="DataBases" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Playground" type="cbb8eebc:String" user="Playground" />
-              <item name="DataBases" type="cbb8eebc:String" user="DataBases" />
-              <item name="postgresql" type="cbb8eebc:String" user="postgresql" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Playground" type="cbb8eebc:String" user="Playground" />
-              <item name="MyUtils" type="cbb8eebc:String" user="MyUtils" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="External Dependencies" type="cbb8eebc:String" user="External Dependencies" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="External Dependencies" type="cbb8eebc:String" user="External Dependencies" />
-              <item name="D:" type="cbb8eebc:String" user="D:" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="External Dependencies" type="cbb8eebc:String" user="External Dependencies" />
-              <item name="D:" type="cbb8eebc:String" user="D:" />
-              <item name="Python" type="cbb8eebc:String" user="Python" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="External Dependencies" type="cbb8eebc:String" user="External Dependencies" />
-              <item name="D:" type="cbb8eebc:String" user="D:" />
-              <item name="Python" type="cbb8eebc:String" user="Python" />
-              <item name="Lib" type="cbb8eebc:String" user="Lib" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="External Dependencies" type="cbb8eebc:String" user="External Dependencies" />
-              <item name="D:" type="cbb8eebc:String" user="D:" />
-              <item name="Python" type="cbb8eebc:String" user="Python" />
-              <item name="Lib" type="cbb8eebc:String" user="Lib" />
-              <item name="site-packages" type="cbb8eebc:String" user="site-packages" />
+              <item name="Blockchain_" type="cbb8eebc:String" user="Blockchain_" />
             </path>
           </expand>
           <select />
@@ -342,7 +304,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.officeUtils">
+  <component name="RunManager" selected="Python.node_">
     <configuration name="AST_" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -478,23 +440,6 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <configuration name="example_" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/openGL" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Playground" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/openGL/example_.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
     <configuration name="fzzzBuzz" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -546,6 +491,23 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
+    <configuration name="node_" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Blockchain_" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Playground" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Blockchain_/node_.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="officeUtils" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -583,19 +545,19 @@
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Python.gen4" />
       <item index="1" class="java.lang.String" itemvalue="Python.fzzzBuzz" />
-      <item index="2" class="java.lang.String" itemvalue="Python.example_" />
-      <item index="3" class="java.lang.String" itemvalue="Python.AST_" />
-      <item index="4" class="java.lang.String" itemvalue="Python.sample" />
-      <item index="5" class="java.lang.String" itemvalue="Python.hyTest" />
-      <item index="6" class="java.lang.String" itemvalue="Python.officeUtils" />
+      <item index="2" class="java.lang.String" itemvalue="Python.AST_" />
+      <item index="3" class="java.lang.String" itemvalue="Python.sample" />
+      <item index="4" class="java.lang.String" itemvalue="Python.hyTest" />
+      <item index="5" class="java.lang.String" itemvalue="Python.officeUtils" />
+      <item index="6" class="java.lang.String" itemvalue="Python.node_" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.officeUtils" />
-        <item index="1" class="java.lang.String" itemvalue="Python.hyTest" />
-        <item index="2" class="java.lang.String" itemvalue="Python.sample" />
-        <item index="3" class="java.lang.String" itemvalue="Python.AST_" />
-        <item index="4" class="java.lang.String" itemvalue="Python.example_" />
+        <item index="0" class="java.lang.String" itemvalue="Python.node_" />
+        <item index="1" class="java.lang.String" itemvalue="Python.officeUtils" />
+        <item index="2" class="java.lang.String" itemvalue="Python.hyTest" />
+        <item index="3" class="java.lang.String" itemvalue="Python.sample" />
+        <item index="4" class="java.lang.String" itemvalue="Python.AST_" />
       </list>
     </recent_temporary>
   </component>
@@ -612,13 +574,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1477905013655</updated>
-    </task>
-    <task id="LOCAL-00181" summary="Update">
-      <created>1499351521888</created>
-      <option name="number" value="00181" />
-      <option name="presentableId" value="LOCAL-00181" />
-      <option name="project" value="LOCAL" />
-      <updated>1499351521888</updated>
     </task>
     <task id="LOCAL-00182" summary="Update">
       <created>1499615304535</created>
@@ -956,7 +911,14 @@
       <option name="project" value="LOCAL" />
       <updated>1505056794153</updated>
     </task>
-    <option name="localTasksCounter" value="230" />
+    <task id="LOCAL-00230" summary="update">
+      <created>1505757252793</created>
+      <option name="number" value="00230" />
+      <option name="presentableId" value="LOCAL-00230" />
+      <option name="project" value="LOCAL" />
+      <updated>1505757252793</updated>
+    </task>
+    <option name="localTasksCounter" value="231" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1003,7 +965,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29584223" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3054371" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3261105" sideWeight="0.5042644" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2652174" sideWeight="0.49789253" order="2" side_tool="false" content_ui="tabs" />
@@ -1122,25 +1084,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="53" />
+      <option name="time" value="55" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Python_Staff/metaclasses/meta6_extendClasses.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python_Staff/decorators/tracer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="82" column="17" lean-forward="false" selection-start-line="82" selection-start-column="17" selection-end-line="82" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Python_Staff/metaclasses/metaTracer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -1372,7 +1320,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3604">
           <caret line="212" column="0" lean-forward="false" selection-start-line="212" selection-start-column="0" selection-end-line="212" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1380,7 +1327,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1388,7 +1334,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1396,7 +1341,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1404,7 +1348,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1452,7 +1395,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MyUtils/temp.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="0">
           <caret line="0" column="2264" lean-forward="false" selection-start-line="0" selection-start-column="2264" selection-end-line="0" selection-end-column="2264" />
           <folding />
         </state>
@@ -1470,7 +1413,7 @@
     </entry>
     <entry file="file://D:/Python/Lib/site-packages/odf/opendocument.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
+        <state relative-caret-position="4182">
           <caret line="246" column="28" lean-forward="false" selection-start-line="246" selection-start-column="18" selection-end-line="246" selection-end-column="28" />
           <folding />
         </state>
@@ -1478,7 +1421,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MyUtils/temp.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1972">
+        <state relative-caret-position="17">
           <caret line="1" column="48257" lean-forward="false" selection-start-line="1" selection-start-column="48096" selection-end-line="1" selection-end-column="48257" />
           <folding>
             <element signature="e#489862#489867#0" expanded="true" />
@@ -1505,6 +1448,26 @@
         <state relative-caret-position="170">
           <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blockchain_/blockchain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="20" lean-forward="true" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blockchain_/node_.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="770">
+          <caret line="60" column="32" lean-forward="true" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
