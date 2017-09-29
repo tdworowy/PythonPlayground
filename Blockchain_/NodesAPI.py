@@ -1,3 +1,4 @@
+from threading import Thread
 from uuid import uuid4
 
 from flask import Flask, jsonify, request
@@ -5,23 +6,26 @@ from flask import Flask, jsonify, request
 from Blockchain_.blockchain import Blockchain
 
 
-class node_API:
+class NodesAPI:
+    @staticmethod
+    def start_node(app, host, port):
+        app.run(host=host, port=port)
 
-    def add_node(self):
-        app = Flask(__name__)
-
-        node_identifier = str(uuid4()).replace('-','')
+    @staticmethod
+    def add_node():
+        node_identifier = str(uuid4()).replace('-', '')
+        app = Flask(__name__+node_identifier)
         bc = Blockchain()
 
         @app.route('/nodes/register', methods=['POST'])
         def register_nodes():
             values = request.get_json()
 
-            self.nodes = values.get('nodes')
-            if self.nodes is None:
+            nodes = values.get('nodes')
+            if nodes is None:
                 return "Error: Please supply a valid list of nodes", 400
 
-            for node in self.nodes:
+            for node in nodes:
                 bc.register_node(node)
 
             response = {
@@ -88,13 +92,14 @@ class node_API:
             }
             return jsonify(response), 200
 
+        @app.route('/startAllNodes', methods=['GET'])
+        def start_all_nodes():
+            threads = [Thread(target=NodesAPI.start_node, args=(NodesAPI.add_node(), '0.0.0.0', node[-4:])) for node in bc.nodes]
+            for thread in threads:
+                thread.start()
+                # thread.join()
+            return "Created %s Nodes" % len(threads)
         return app
 
-def start_node(app,host,port):
-    app.run(host=host, port=port)
-
 if __name__ == '__main__':
-    node_api = node_API()
-    first_node = node_api.add_node()
-    start_node(first_node,host='0.0.0.0', port=5000)
-    #TODO start all nodes, need to use threads
+    NodesAPI.start_node(NodesAPI.add_node(), host='0.0.0.0', port=5000)
