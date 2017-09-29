@@ -1,7 +1,7 @@
 import hashlib
 import json
 from time import time
-
+# based on: https://hackernoon.com/learn-blockchains-by-building-one-117428612f46
 
 class Blockchain:
     def __init__(self):
