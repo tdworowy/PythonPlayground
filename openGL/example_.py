@@ -36,3 +36,4 @@ if __name__ == "__main__":
     x = ObjectUsingShader()
     x.shader_program()
     #don't work :)
+    #TODO fix
