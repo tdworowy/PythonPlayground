@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="74059ddd-4c74-4733-a753-22db6be1b4c0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Blockchain_/NodesAPI.py" afterPath="$PROJECT_DIR$/Blockchain_/NodesAPI.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/webCrawler/webCrawler.py" afterPath="$PROJECT_DIR$/Web/webCrawler/webCrawler.py" />
     </list>
     <ignored path="Playground.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,16 +24,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="builtins.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/-643338342/builtins.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74936">
-              <caret line="4408" column="8" lean-forward="false" selection-start-line="4408" selection-start-column="8" selection-end-line="4408" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AST_.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Python_Staff/AST_/AST_.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -47,7 +37,7 @@
       <file leaf-file-name="example_.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/openGL/example_.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
+            <state relative-caret-position="612">
               <caret line="37" column="18" lean-forward="false" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
@@ -56,14 +46,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NodesAPI.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NodesAPI.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Blockchain_/NodesAPI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="99" column="0" lean-forward="true" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+            <state relative-caret-position="838">
+              <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".project" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.project">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -83,7 +83,7 @@
       <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
         <entry file="file://D:/Python/Lib/site-packages/flask/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
+            <state relative-caret-position="26724">
               <caret line="1597" column="0" lean-forward="false" selection-start-line="1597" selection-start-column="0" selection-end-line="1597" selection-end-column="0" />
               <folding />
             </state>
@@ -93,18 +93,8 @@
       <file leaf-file-name="_compat.py" pinned="false" current-in-tab="false">
         <entry file="file://D:/Python/Lib/site-packages/flask/_compat.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
+            <state relative-caret-position="544">
               <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="opendocument.py" pinned="false" current-in-tab="false">
-        <entry file="file://D:/Python/Lib/site-packages/odf/opendocument.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4182">
-              <caret line="246" column="28" lean-forward="false" selection-start-line="246" selection-start-column="18" selection-end-line="246" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -136,6 +126,26 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Web/webCrawler/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webCrawler.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Web/webCrawler/webCrawler.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="723">
+              <caret line="76" column="0" lean-forward="true" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -163,7 +173,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Web/TCP/TCP_client.py" />
         <option value="$PROJECT_DIR$/MyUtils/randomString.py" />
         <option value="$PROJECT_DIR$/Python_Staff/decorators/dec2.py" />
         <option value="$PROJECT_DIR$/MyUtils/Tracer_.py" />
@@ -214,6 +223,7 @@
         <option value="$PROJECT_DIR$/Python_Staff/C++_inPython/cppExample.py" />
         <option value="$PROJECT_DIR$/Blockchain_/node_API.py" />
         <option value="$PROJECT_DIR$/Blockchain_/NodesAPI.py" />
+        <option value="$PROJECT_DIR$/Web/webCrawler/webCrawler.py" />
       </list>
     </option>
   </component>
@@ -239,7 +249,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <expand>
@@ -250,13 +259,20 @@
             <path>
               <item name="Root" type="cbb8eebc:String" user="Root" />
               <item name="Playground" type="cbb8eebc:String" user="Playground" />
-              <item name="Blockchain_" type="cbb8eebc:String" user="Blockchain_" />
+              <item name="Web" type="cbb8eebc:String" user="Web" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Playground" type="cbb8eebc:String" user="Playground" />
+              <item name="Web" type="cbb8eebc:String" user="Web" />
+              <item name="webCrawler" type="cbb8eebc:String" user="webCrawler" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -266,19 +282,19 @@
     <property name="SearchEverywhereHistoryKey" value="hyllo&#9;FILE&#9;file://D:/Python_/Playground/HY_/hyllo.hy&#10;exa&#9;null&#9;null&#10;Exa&#9;null&#9;null" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Thomas\PycharmProjects\PythonPlayground\Python_Staff\BasicStuff\generators" />
-      <recent name="D:\Google_drive\Python_\Playground\Python_Staff\OOP" />
-      <recent name="D:\Google_drive\Python_\Playground\Python_Staff" />
-      <recent name="D:\Google_drive\Python_\Playground\Python_Staff\AdvanceStaff" />
-      <recent name="D:\Google_drive\Python_\Playground" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Google_drive\Python_\Playground\Python_Staff\metaclasses" />
       <recent name="D:\Google_drive\Python_\Playground\Python_Staff\OOP" />
       <recent name="D:\Google_drive\Python_\Playground\MyUtils" />
       <recent name="D:\Google_drive\Python_\Playground\Python_Staff\OOP\ovrloading" />
       <recent name="D:\Google_drive\Python_\Playground\Python_Staff\OOP\descriptors" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Thomas\PycharmProjects\PythonPlayground\Python_Staff\BasicStuff\generators" />
+      <recent name="D:\Google_drive\Python_\Playground\Python_Staff\OOP" />
+      <recent name="D:\Google_drive\Python_\Playground\Python_Staff" />
+      <recent name="D:\Google_drive\Python_\Playground\Python_Staff\AdvanceStaff" />
+      <recent name="D:\Google_drive\Python_\Playground" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -563,13 +579,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1477905013655</updated>
-    </task>
-    <task id="LOCAL-00187" summary="Update">
-      <created>1499959871875</created>
-      <option name="number" value="00187" />
-      <option name="presentableId" value="LOCAL-00187" />
-      <option name="project" value="LOCAL" />
-      <updated>1499959871875</updated>
     </task>
     <task id="LOCAL-00188" summary="Update">
       <created>1499961079518</created>
@@ -907,7 +916,14 @@
       <option name="project" value="LOCAL" />
       <updated>1506724920307</updated>
     </task>
-    <option name="localTasksCounter" value="236" />
+    <task id="LOCAL-00236" summary="update">
+      <created>1506724934876</created>
+      <option name="number" value="00236" />
+      <option name="presentableId" value="LOCAL-00236" />
+      <option name="project" value="LOCAL" />
+      <updated>1506724934876</updated>
+    </task>
+    <option name="localTasksCounter" value="237" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -954,14 +970,14 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30863538" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31183368" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3261105" sideWeight="0.5042644" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2652174" sideWeight="0.49789253" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2652174" sideWeight="0.49789253" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32527474" sideWeight="0.49573562" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27410617" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32826087" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20087816" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1079,14 +1095,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/Program Files/Python36/Lib/collections/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/Python_Staff/collections_/col1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Python_Staff/BasicStuff/enumerate_2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -1325,18 +1333,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.project">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MyUtils/temp.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="2264" lean-forward="false" selection-start-line="0" selection-start-column="2264" selection-end-line="0" selection-end-column="2264" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1344,9 +1344,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#60#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1355,30 +1352,6 @@
         <state relative-caret-position="4182">
           <caret line="246" column="28" lean-forward="false" selection-start-line="246" selection-start-column="18" selection-end-line="246" selection-end-column="28" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyUtils/temp.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="48257" lean-forward="false" selection-start-line="1" selection-start-column="48096" selection-end-line="1" selection-end-column="48257" />
-          <folding>
-            <element signature="e#489862#489867#0" expanded="true" />
-            <element signature="e#489880#489885#0" expanded="true" />
-            <element signature="e#664186#664190#0" expanded="true" />
-            <element signature="e#664193#664197#0" expanded="true" />
-            <element signature="e#664360#664364#0" expanded="true" />
-            <element signature="e#664370#664374#0" expanded="true" />
-            <element signature="e#743473#743477#0" expanded="true" />
-            <element signature="e#743482#743486#0" expanded="true" />
-            <element signature="e#743487#743491#0" expanded="true" />
-            <element signature="e#743495#743499#0" expanded="true" />
-            <element signature="e#746717#746722#0" expanded="true" />
-            <element signature="e#746722#746727#0" expanded="true" />
-            <element signature="e#746851#746856#0" expanded="true" />
-            <element signature="e#746856#746861#0" expanded="true" />
-            <element signature="e#806223#806228#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1407,7 +1380,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/openGL/example_.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
+        <state relative-caret-position="612">
           <caret line="37" column="18" lean-forward="false" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
@@ -1422,14 +1395,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Blockchain_/Insomnia_2017-09-29.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Blockchain_/Insomnia_2017-09-29.json" />
     <entry file="file://$PROJECT_DIR$/Blockchain_/blockchain.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1442,7 +1408,7 @@
     </entry>
     <entry file="file://D:/Python/Lib/site-packages/flask/_compat.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
+        <state relative-caret-position="544">
           <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding />
         </state>
@@ -1450,7 +1416,7 @@
     </entry>
     <entry file="file://D:/Python/Lib/site-packages/flask/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
+        <state relative-caret-position="26724">
           <caret line="1597" column="0" lean-forward="false" selection-start-line="1597" selection-start-column="0" selection-end-line="1597" selection-end-column="0" />
           <folding />
         </state>
@@ -1458,11 +1424,59 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Blockchain_/NodesAPI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="99" column="0" lean-forward="true" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+        <state relative-caret-position="838">
+          <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.project">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyUtils/temp.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="48257" lean-forward="false" selection-start-line="1" selection-start-column="48096" selection-end-line="1" selection-end-column="48257" />
+          <folding>
+            <element signature="e#489862#489867#0" expanded="true" />
+            <element signature="e#489880#489885#0" expanded="true" />
+            <element signature="e#664186#664190#0" expanded="true" />
+            <element signature="e#664193#664197#0" expanded="true" />
+            <element signature="e#664360#664364#0" expanded="true" />
+            <element signature="e#664370#664374#0" expanded="true" />
+            <element signature="e#743473#743477#0" expanded="true" />
+            <element signature="e#743482#743486#0" expanded="true" />
+            <element signature="e#743487#743491#0" expanded="true" />
+            <element signature="e#743495#743499#0" expanded="true" />
+            <element signature="e#746717#746722#0" expanded="true" />
+            <element signature="e#746722#746727#0" expanded="true" />
+            <element signature="e#746851#746856#0" expanded="true" />
+            <element signature="e#746856#746861#0" expanded="true" />
+            <element signature="e#806223#806228#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web/webCrawler/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Web/webCrawler/webCrawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="723">
+          <caret line="76" column="0" lean-forward="true" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

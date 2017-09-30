@@ -5,7 +5,7 @@ import requests
 from bs4 import BeautifulSoup
 
 
-class crawler():
+class Crawler():
     def __init__(self):
         print("Start")
 
@@ -24,7 +24,7 @@ class crawler():
     def getLinksPagesForBase(self, url):
         linksParent = self.getLinksPage(url)
         map_ = map(self.getLinksPage, linksParent)
-        return (list(map_))
+        return list(map_)
 
     def getLinksPage(self, link):
         links = []
@@ -48,22 +48,22 @@ class crawler():
         if ('>' in link): link = link[:link.index('>')]
         return link.replace("\"", "")
 
-    def tofile(self,list):
-        list = self.cleanList(list)
+    def tofile(self,list_):
+        list_ = self.cleanList(list_)
         path = os.path.dirname(os.path.abspath(__file__))
-        f = open(path+"\\links.txt",'w')
-        for line in list:
-            f.write(line.strip()+'\n')
-            f.flush()
-        print("Links saved: "+str(len(list)))
+        with open(path+"\\links.txt",'w') as f:
+            for line in list_:
+                f.write(line.strip()+'\n')
+                f.flush()
+        print("Links saved: "+str(len(list_)))
 
-    def cleanList(self,list):
-         list = str(list).replace("[","").replace("]","")
-         list=list.split(',')
-         return list
+    def cleanList(self,list_):
+         list_ = str(list_).replace("[","").replace("]","")
+         list_=list_.split(',')
+         return list_
 
 def main():
-    bot = crawler()
+    bot = Crawler()
     googl = bot.googleURL("Tomasz Dworowy")
     linksList = bot.getLinksPages(googl)
     linksList2 = bot.getLinksPages(linksList)
@@ -71,9 +71,6 @@ def main():
     linksList4 = bot.getLinksPages(linksList3)
 
     bot.tofile(linksList4)
-
-
-
 
 if __name__ == "__main__":
     main()
