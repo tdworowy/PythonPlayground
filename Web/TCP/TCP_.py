@@ -22,9 +22,9 @@ class TCP:
                 conn, addr = soc.accept()
                 print("Conected by", addr)
                 data = conn.recv(1024)
-                if  data:
+                if data:
                     print("Recived", data)
-                else:pass
+                else: pass
 
 
     def clientConect(self):
@@ -37,7 +37,7 @@ class TCP:
 
     def infiniteSent(self):
         self.clientConect()
-        while 1 :
+        while 1:
             self.clientSent( randomString.generateRandomString(50))
 
 
