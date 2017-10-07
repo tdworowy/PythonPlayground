@@ -1,6 +1,7 @@
 import random
 import string
 
+#THIS IS SHIT :)
 
 class Cities:
     def generateCityDistances(self, count, distanceRange):
