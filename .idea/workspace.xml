@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74059ddd-4c74-4733-a753-22db6be1b4c0" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zeroMQ/0mq_.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyUtils/decorators.py" afterPath="$PROJECT_DIR$/MyUtils/decorators.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/portScaner.py" afterPath="$PROJECT_DIR$/Web/portScaner.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloud/example__.py" afterPath="$PROJECT_DIR$/cloud/example__.py" />
     </list>
     <ignored path="Playground.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,28 +25,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="hex_convert.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MyUtils/hex_/hex_convert.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="geneticAlgorithm.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MachineLearning/geneticAlgorithm.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="machine_learning.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MachineLearning/example1/machine_learning.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -103,31 +81,55 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="decorators.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="decorators.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyUtils/decorators.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MonteCarlo.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MachineLearning/MonteCarlo.py">
+      <file leaf-file-name="example__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloud/example__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="221">
+              <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="0mq_.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/zeroMQ/0mq_.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+              <folding>
+                <element signature="e#84#95#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="socket.py" pinned="false" current-in-tab="false">
+        <entry file="file://D:/Python/Lib/site-packages/zmq/sugar/socket.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="217">
+              <caret line="420" column="8" lean-forward="false" selection-start-line="420" selection-start-column="8" selection-end-line="420" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="str.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MyUtils/hex_/str.txt">
+      <file leaf-file-name="context.py" pinned="false" current-in-tab="false">
+        <entry file="file://D:/Python/Lib/site-packages/zmq/sugar/context.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="318">
+              <caret line="138" column="36" lean-forward="false" selection-start-line="138" selection-start-column="32" selection-end-line="138" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -147,6 +149,9 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>substring</find>
+      <find>PAIR</find>
+      <find>socket_type</find>
+      <find>__init__</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -160,7 +165,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Python_Staff/OOP/Private_and_public_decorators.py" />
         <option value="$PROJECT_DIR$/MyUtils/RangeTest.py" />
         <option value="$PROJECT_DIR$/MyUtils/myTimer3.py" />
         <option value="$PROJECT_DIR$/Python_Staff/metaclasses/meta.py" />
@@ -191,7 +195,6 @@
         <option value="$PROJECT_DIR$/Python_Staff/OOP/descriptors/lazzyAtributes.py" />
         <option value="$PROJECT_DIR$/openGL/example.py" />
         <option value="$PROJECT_DIR$/Python_Staff/OOP/calss4.py" />
-        <option value="$PROJECT_DIR$/cloud/example__.py" />
         <option value="$PROJECT_DIR$/Python_Staff/AST_/AST_.py" />
         <option value="$PROJECT_DIR$/falcon_/sample.py" />
         <option value="$PROJECT_DIR$/HY_/hyllo.hy" />
@@ -211,6 +214,8 @@
         <option value="$PROJECT_DIR$/MachineLearning/NeuralNetworks/keras_example.py" />
         <option value="$PROJECT_DIR$/MachineLearning/NeuralNetworks/NeuralNetwork.py" />
         <option value="$PROJECT_DIR$/MyUtils/decorators.py" />
+        <option value="$PROJECT_DIR$/cloud/example__.py" />
+        <option value="$PROJECT_DIR$/zeroMQ/0mq_.py" />
       </list>
     </option>
   </component>
@@ -248,7 +253,37 @@
             <path>
               <item name="Root" type="cbb8eebc:String" user="Root" />
               <item name="Playground" type="cbb8eebc:String" user="Playground" />
-              <item name="MyUtils" type="cbb8eebc:String" user="MyUtils" />
+              <item name="zeroMQ" type="cbb8eebc:String" user="zeroMQ" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="External Dependencies" type="cbb8eebc:String" user="External Dependencies" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="External Dependencies" type="cbb8eebc:String" user="External Dependencies" />
+              <item name="D:" type="cbb8eebc:String" user="D:" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="External Dependencies" type="cbb8eebc:String" user="External Dependencies" />
+              <item name="D:" type="cbb8eebc:String" user="D:" />
+              <item name="Python" type="cbb8eebc:String" user="Python" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="External Dependencies" type="cbb8eebc:String" user="External Dependencies" />
+              <item name="D:" type="cbb8eebc:String" user="D:" />
+              <item name="Python" type="cbb8eebc:String" user="Python" />
+              <item name="Lib" type="cbb8eebc:String" user="Lib" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="External Dependencies" type="cbb8eebc:String" user="External Dependencies" />
+              <item name="D:" type="cbb8eebc:String" user="D:" />
+              <item name="Python" type="cbb8eebc:String" user="Python" />
+              <item name="Lib" type="cbb8eebc:String" user="Lib" />
+              <item name="site-packages" type="cbb8eebc:String" user="site-packages" />
             </path>
           </expand>
           <select />
@@ -290,7 +325,24 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.NeuralNetwork">
+  <component name="RunManager" selected="Python.0mq_">
+    <configuration name="0mq_" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/zeroMQ" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Playground" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zeroMQ/0mq_.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="NeuralNetwork" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -511,39 +563,22 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="node_API" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Blockchain_" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Playground" />
-      <option name="SCRIPT_NAME" value="D:\Python_\Playground\Blockchain_\NodesAPI.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Python.gen4" />
       <item index="1" class="java.lang.String" itemvalue="Python.fzzzBuzz" />
-      <item index="2" class="java.lang.String" itemvalue="Python.node_API" />
-      <item index="3" class="java.lang.String" itemvalue="Python.NodesAPI" />
-      <item index="4" class="java.lang.String" itemvalue="Python.hex_convert" />
-      <item index="5" class="java.lang.String" itemvalue="Python.keras_example" />
-      <item index="6" class="java.lang.String" itemvalue="Python.NeuralNetwork" />
+      <item index="2" class="java.lang.String" itemvalue="Python.NodesAPI" />
+      <item index="3" class="java.lang.String" itemvalue="Python.hex_convert" />
+      <item index="4" class="java.lang.String" itemvalue="Python.keras_example" />
+      <item index="5" class="java.lang.String" itemvalue="Python.NeuralNetwork" />
+      <item index="6" class="java.lang.String" itemvalue="Python.0mq_" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.NeuralNetwork" />
-        <item index="1" class="java.lang.String" itemvalue="Python.keras_example" />
-        <item index="2" class="java.lang.String" itemvalue="Python.hex_convert" />
-        <item index="3" class="java.lang.String" itemvalue="Python.NodesAPI" />
-        <item index="4" class="java.lang.String" itemvalue="Python.node_API" />
+        <item index="0" class="java.lang.String" itemvalue="Python.0mq_" />
+        <item index="1" class="java.lang.String" itemvalue="Python.NeuralNetwork" />
+        <item index="2" class="java.lang.String" itemvalue="Python.keras_example" />
+        <item index="3" class="java.lang.String" itemvalue="Python.hex_convert" />
+        <item index="4" class="java.lang.String" itemvalue="Python.NodesAPI" />
       </list>
     </recent_temporary>
   </component>
@@ -560,13 +595,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1477905013655</updated>
-    </task>
-    <task id="LOCAL-00194" summary="Update">
-      <created>1500390931657</created>
-      <option name="number" value="00194" />
-      <option name="presentableId" value="LOCAL-00194" />
-      <option name="project" value="LOCAL" />
-      <updated>1500390931657</updated>
     </task>
     <task id="LOCAL-00195" summary="Update">
       <created>1500575089786</created>
@@ -904,7 +932,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507972009724</updated>
     </task>
-    <option name="localTasksCounter" value="243" />
+    <task id="LOCAL-00243" summary="fix">
+      <created>1507973086752</created>
+      <option name="number" value="00243" />
+      <option name="presentableId" value="LOCAL-00243" />
+      <option name="project" value="LOCAL" />
+      <updated>1507973086752</updated>
+    </task>
+    <option name="localTasksCounter" value="244" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1079,27 +1114,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Algorithms/cryptography/cesarCrypt2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameOfLive/gameOfLive_.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1428">
-          <caret line="84" column="28" lean-forward="false" selection-start-line="84" selection-start-column="28" selection-end-line="84" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataBases/neo4j/neo4jP.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Python_Staff/decorators/functols_wraps.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -1195,13 +1209,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud/example__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1462,8 +1469,44 @@
     <entry file="file://$PROJECT_DIR$/MyUtils/decorators.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud/example__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python/Lib/site-packages/zmq/sugar/socket.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="420" column="8" lean-forward="false" selection-start-line="420" selection-start-column="8" selection-end-line="420" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python/Lib/site-packages/zmq/sugar/context.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="138" column="36" lean-forward="false" selection-start-line="138" selection-start-column="32" selection-end-line="138" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zeroMQ/0mq_.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding>
+            <element signature="e#84#95#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
