@@ -1,4 +1,4 @@
-def cach_exception(f):
+def catch_exception(f):
     def func(*args):
         try:
             return f(*args)

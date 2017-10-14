@@ -1,9 +1,9 @@
 from socket import *
 
-from MyUtils.decorators import cach_exception
+from MyUtils.decorators import catch_exception
 
 
-@cach_exception
+@catch_exception
 def scanHost(host, port):
         s = socket(AF_INET, SOCK_STREAM)
         code = s.connect_ex((host, port))
@@ -14,7 +14,7 @@ def scanHost(host, port):
 def scanHost_(hp):
     return scanHost(hp[0],hp[1])
 
-@cach_exception
+@catch_exception
 def scanPorts(host,min,max):
     hostip = gethostbyname(host)
     print("Host: %s IP: %s" % (host, hostip))

@@ -106,8 +106,8 @@
       <file leaf-file-name="decorators.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MyUtils/decorators.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="10" lean-forward="true" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="18" />
+            <state relative-caret-position="153">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -561,13 +561,6 @@
       <option name="presentableId" value="Default" />
       <updated>1477905013655</updated>
     </task>
-    <task id="LOCAL-00193" summary="Update">
-      <created>1500193695082</created>
-      <option name="number" value="00193" />
-      <option name="presentableId" value="LOCAL-00193" />
-      <option name="project" value="LOCAL" />
-      <updated>1500193695082</updated>
-    </task>
     <task id="LOCAL-00194" summary="Update">
       <created>1500390931657</created>
       <option name="number" value="00194" />
@@ -904,7 +897,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507410611623</updated>
     </task>
-    <option name="localTasksCounter" value="242" />
+    <task id="LOCAL-00242" summary="fix">
+      <created>1507972009724</created>
+      <option name="number" value="00242" />
+      <option name="presentableId" value="LOCAL-00242" />
+      <option name="project" value="LOCAL" />
+      <updated>1507972009724</updated>
+    </task>
+    <option name="localTasksCounter" value="243" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1005,10 +1005,10 @@
     <MESSAGE value="game of live work in progress" />
     <MESSAGE value="Update + Refactor" />
     <MESSAGE value="Update" />
-    <MESSAGE value="fix" />
     <MESSAGE value="add blockchenin exampple &#10;based on: https://hackernoon.com/learn-blockchains-by-building-one-117428612f46" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1461,8 +1461,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MyUtils/decorators.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="10" lean-forward="true" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="18" />
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
