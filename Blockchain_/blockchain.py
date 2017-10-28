@@ -13,7 +13,7 @@ class Blockchain:
         self.chain = []
         self.transactions = []
         self.nodes = set()
-        self.add_block(previous_hash=1,proof=100)
+        self.add_block(previous_hash=1, proof=100)
 
     @property
     def last_block(self):
@@ -21,7 +21,7 @@ class Blockchain:
 
     @staticmethod
     def hash(block):
-        block_string = json.dumps(block,sort_keys=True).encode()
+        block_string = json.dumps(block, sort_keys=True).encode()
         return hashlib.sha512(block_string).hexdigest()
 
     @staticmethod
@@ -35,32 +35,32 @@ class Blockchain:
         self.nodes.add(parsed_url.netloc)
 
     def add_block(self, proof, previous_hash=None):
-        block={
-            'index': len(self.chain)+1,
-            'timestamp':time(),
-            'transactions':self.transactions,
-            'proof':proof,
-            'previous_hash':previous_hash or self.hash(self.chain[-1])
+        block = {
+            'index': len(self.chain) + 1,
+            'timestamp': time(),
+            'transactions': self.transactions,
+            'proof': proof,
+            'previous_hash': previous_hash or self.hash(self.chain[-1])
         }
         self.transactions = []
         self.chain.append(block)
         return block
 
-    def add_transaction(self,sender,recipient,amount):
+    def add_transaction(self, sender, recipient, amount):
         self.transactions.append({
             'sender': sender,
             'recipient': recipient,
-            'amount':amount,
+            'amount': amount,
         })
-        return self.last_block['index']+1
+        return self.last_block['index'] + 1
 
-    def proof_of_work(self,last_proof):
+    def proof_of_work(self, last_proof):
         proof = 0
-        while self.valid_proof(last_proof,proof) is False:
-            proof +=1
+        while self.valid_proof(last_proof, proof) is False:
+            proof += 1
         return proof
 
-    def valid_chain(self,chain):
+    def valid_chain(self, chain):
         last_block = chain[0]
         current_index = 1
 

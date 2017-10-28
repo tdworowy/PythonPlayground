@@ -14,7 +14,7 @@ class NodesAPI:
     @staticmethod
     def add_node():
         node_identifier = str(uuid4()).replace('-', '')
-        app = Flask(__name__+node_identifier)
+        app = Flask(__name__ + node_identifier)
         bc = Blockchain()
 
         @app.route('/nodes/register', methods=['POST'])
@@ -94,12 +94,15 @@ class NodesAPI:
 
         @app.route('/startAllNodes', methods=['GET'])
         def start_all_nodes():
-            threads = [Thread(target=NodesAPI.start_node, args=(NodesAPI.add_node(), '0.0.0.0', node[-4:])) for node in bc.nodes]
+            threads = [Thread(target=NodesAPI.start_node, args=(NodesAPI.add_node(), '0.0.0.0', node[-4:])) for node in
+                       bc.nodes]
             for thread in threads:
                 thread.start()
 
             return "Created %s Nodes" % len(threads)
+
         return app
+
 
 if __name__ == '__main__':
     NodesAPI.start_node(NodesAPI.add_node(), host='0.0.0.0', port=5000)

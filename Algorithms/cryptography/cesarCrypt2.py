@@ -1,19 +1,20 @@
 import string
 
-from MyUtils.compareStrings import getDiff
-from MyUtils.myList import roundList
+from MyUtils.compareStrings import get_diff
+from MyUtils.myList import RoundList
 
 
-def CesarCrypt(text,index):
-    return ''.join([getLetter(char,index) for char in text.lower()])
-
-def CesarUnCrypt(text,index):
-    return ''.join([getLetter(char,-index) for char in text.lower()])
+def cesar_crypt(text, index):
+    return ''.join([get_letter(char, index) for char in text.lower()])
 
 
-def getLetter(char,jump):
+def cesar_uncrypt(text, index):
+    return ''.join([get_letter(char, -index) for char in text.lower()])
+
+
+def get_letter(char, jump):
     if char.isalpha():
-        alpha =roundList(string.ascii_lowercase)
+        alpha = RoundList(string.ascii_lowercase)
         index = alpha.index(char) + jump
         return alpha[index]
     else:
@@ -21,14 +22,14 @@ def getLetter(char,jump):
 
 
 if __name__ == '__main__':
-   test = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rhoncus laoreet erat, sed lobortis nibh venenatis sit amet. Nullam quis."
-   encrypted =  CesarCrypt(test,100)
-   unEncrypted = CesarUnCrypt(encrypted,100)
+    test = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rhoncus laoreet erat, sed lobortis nibh " \
+           "venenatis sit amet. Nullam quis. "
+    encrypted = cesar_crypt(test, 100)
+    unEncrypted = cesar_uncrypt(encrypted, 100)
 
-   print("ENCRYPTED: ",encrypted)
+    print("ENCRYPTED: ", encrypted)
 
-   print("ORYGINAL: ",test.lower())
-   print("UNENCRYPTED: ", unEncrypted)
-   print(getDiff(unEncrypted, test.lower()))
-   assert not getDiff(unEncrypted, test.lower())
-
+    print("ORYGINAL: ", test.lower())
+    print("UNENCRYPTED: ", unEncrypted)
+    print(get_diff(unEncrypted, test.lower()))
+    assert not get_diff(unEncrypted, test.lower())

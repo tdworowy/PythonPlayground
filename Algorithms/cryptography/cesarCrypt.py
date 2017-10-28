@@ -1,47 +1,49 @@
 import string
 
-from MyUtils.compareStrings import getDiff
+from MyUtils.compareStrings import get_diff
 
 
-def CesarCrypt(text,index):
-    return ''.join([getLetter(char,index,setIndexUP) for char in text.lower()])
-
-def CesarUnCrypt(text,index):
-    return ''.join([getLetter(char,-index,setIndexDOWN) for char in text.lower()])
+def cesar_crypt(text, index):
+    return ''.join([get_letter(char, index, set_index_up) for char in text.lower()])
 
 
-def getLetter(char,jump,setIndexFunction):
+def cesar_uncrypt(text, index):
+    return ''.join([get_letter(char, -index, set_index_down) for char in text.lower()])
+
+
+def get_letter(char, jump, set_index_function):
     if char.isalpha():
         alpha = string.ascii_lowercase
         index = alpha.index(char) + jump
-        while index not in range(0,len(alpha)):
-            index =setIndexFunction(index,len(alpha))
+        while index not in range(0, len(alpha)):
+            index = set_index_function(index, len(alpha))
         return alpha[index]
     else:
         return char
 
 
-def setIndexUP(i,alphabetSize):
+def set_index_up(i, alphabet_size):
     index = i
-    if index >= alphabetSize: index = alphabetSize - index
+    if index >= alphabet_size: index = alphabet_size - index
     if index < 0: index = index * -1
     return index
 
-def setIndexDOWN(i,alphabetSize):
+
+def set_index_down(i, alphabet_size):
     index = -i
-    index = alphabetSize - index
+    index = alphabet_size - index
     return index
 
 
 if __name__ == '__main__':
-   test = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rhoncus laoreet erat, sed lobortis nibh venenatis sit amet. Nullam quis."
-   encrypted =  CesarCrypt(test,100)
-   unEncrypted = CesarUnCrypt(encrypted,100)
+    test = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rhoncus laoreet erat, sed lobortis nibh " \
+           "venenatis sit amet. Nullam quis. "
+    encrypted = cesar_crypt(test, 100)
+    unEncrypted = cesar_uncrypt(encrypted, 100)
 
-   print("ENCRYPTED: ", encrypted)
-   print("ORYGINAL: ", test.lower())
-   print("UNENCRYPTED: ", unEncrypted)
-   print(getDiff(unEncrypted, test.lower()))
+    print("ENCRYPTED: ", encrypted)
+    print("ORYGINAL: ", test.lower())
+    print("UNENCRYPTED: ", unEncrypted)
+    print(get_diff(unEncrypted, test.lower()))
 
-   assert not getDiff(unEncrypted, test.lower())
-
+    assert not get_diff(unEncrypted, test.lower())

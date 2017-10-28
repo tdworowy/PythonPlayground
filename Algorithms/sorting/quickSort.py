@@ -2,7 +2,7 @@ import sys
 from random import randint
 
 
-class quicksort:
+class QuickSort:
     def __init__(self):
         sys.setrecursionlimit(10000)
 
@@ -12,15 +12,15 @@ class quicksort:
         pivot = list[ran]
 
         piwots = [x for x in list if x == pivot]
-        listSmaller = [x for x in list if x < pivot]
-        listBigger = [x for x in list if x > pivot]
+        list_smaller = [x for x in list if x < pivot]
+        list_bigger = [x for x in list if x > pivot]
 
-        return self.sort(listSmaller) + piwots + self.sort(listBigger)
+        return self.sort(list_smaller) + piwots + self.sort(list_bigger)
 
 
 if __name__ == '__main__':
     list = [randint(0, 1000) for x in range(10000)]
-    qs = quicksort()
+    qs = QuickSort()
     sortedList = qs.sort(list)
     print(sortedList)
 

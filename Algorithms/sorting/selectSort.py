@@ -1,9 +1,9 @@
 from random import randint
 
 
-class selectsort:
-
-    def sort(self,list_):
+class SelectSort:
+    @staticmethod
+    def sort(list_):
         result = []
         list = list_[:]
         while len(list) > 0:
@@ -13,11 +13,9 @@ class selectsort:
         return result
 
 
-
 if __name__ == '__main__':
     list = [randint(0, 1000) for x in range(10)]
-    ss = selectsort()
-    sortedList = ss.sort(list)
+    sortedList = SelectSort.sort(list)
     print(sortedList)
 
     list.sort()
