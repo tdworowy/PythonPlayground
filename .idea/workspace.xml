@@ -3,18 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="74059ddd-4c74-4733-a753-22db6be1b4c0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Algorithms/cryptography/cesarCrypt.py" afterPath="$PROJECT_DIR$/Algorithms/cryptography/cesarCrypt.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Algorithms/cryptography/cesarCrypt2.py" afterPath="$PROJECT_DIR$/Algorithms/cryptography/cesarCrypt2.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Algorithms/sorting/gnomeSort.py" afterPath="$PROJECT_DIR$/Algorithms/sorting/gnomeSort.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Algorithms/sorting/mergeSort.py" afterPath="$PROJECT_DIR$/Algorithms/sorting/mergeSort.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Algorithms/sorting/quickSort.py" afterPath="$PROJECT_DIR$/Algorithms/sorting/quickSort.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Algorithms/sorting/selectSort.py" afterPath="$PROJECT_DIR$/Algorithms/sorting/selectSort.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Blockchain_/NodesAPI.py" afterPath="$PROJECT_DIR$/Blockchain_/NodesAPI.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Blockchain_/blockchain.py" afterPath="$PROJECT_DIR$/Blockchain_/blockchain.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyUtils/compareStrings.py" afterPath="$PROJECT_DIR$/MyUtils/compareStrings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyUtils/myList.py" afterPath="$PROJECT_DIR$/MyUtils/myList.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UI/tkinterUI.py" afterPath="$PROJECT_DIR$/UI/tkinterUI.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Algorithms/sorting/bubbleSort.py" afterPath="$PROJECT_DIR$/Algorithms/sorting/BubbleSort.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/openGL/example_.py" afterPath="$PROJECT_DIR$/openGL/example_.py" />
     </list>
     <ignored path="Playground.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,9 +29,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="663">
               <caret line="39" column="12" lean-forward="false" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -62,9 +49,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
               <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -103,12 +88,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="selectSort.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="selectSort.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Algorithms/sorting/selectSort.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
               <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="example_.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/openGL/example_.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#22#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -186,7 +183,6 @@
         <option value="$PROJECT_DIR$/HY_/hyTest.py" />
         <option value="$PROJECT_DIR$/MyUtils/officeUtils.py" />
         <option value="$PROJECT_DIR$/Blockchain_/node_.py" />
-        <option value="$PROJECT_DIR$/openGL/example_.py" />
         <option value="$PROJECT_DIR$/Python_Staff/C++_inPython/cppExample.py" />
         <option value="$PROJECT_DIR$/Blockchain_/node_API.py" />
         <option value="$PROJECT_DIR$/Web/webCrawler/webCrawler.py" />
@@ -214,6 +210,7 @@
         <option value="$PROJECT_DIR$/Algorithms/sorting/mergeSort.py" />
         <option value="$PROJECT_DIR$/Algorithms/sorting/quickSort.py" />
         <option value="$PROJECT_DIR$/Algorithms/sorting/selectSort.py" />
+        <option value="$PROJECT_DIR$/openGL/example_.py" />
       </list>
     </option>
   </component>
@@ -246,28 +243,6 @@
             <path>
               <item name="Root" type="cbb8eebc:String" user="Root" />
               <item name="Playground" type="cbb8eebc:String" user="Playground" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Playground" type="cbb8eebc:String" user="Playground" />
-              <item name=".idea" type="cbb8eebc:String" user=".idea" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Playground" type="cbb8eebc:String" user="Playground" />
-              <item name="Algorithms" type="cbb8eebc:String" user="Algorithms" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Playground" type="cbb8eebc:String" user="Playground" />
-              <item name="Algorithms" type="cbb8eebc:String" user="Algorithms" />
-              <item name="cryptography" type="cbb8eebc:String" user="cryptography" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Playground" type="cbb8eebc:String" user="Playground" />
-              <item name="Algorithms" type="cbb8eebc:String" user="Algorithms" />
-              <item name="sorting" type="cbb8eebc:String" user="sorting" />
             </path>
           </expand>
           <select />
@@ -580,13 +555,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1477905013655</updated>
-    </task>
-    <task id="LOCAL-00198" summary="Update">
-      <created>1501343534277</created>
-      <option name="number" value="00198" />
-      <option name="presentableId" value="LOCAL-00198" />
-      <option name="project" value="LOCAL" />
-      <updated>1501343534278</updated>
     </task>
     <task id="LOCAL-00199" summary="Update">
       <created>1501344042257</created>
@@ -924,7 +892,14 @@
       <option name="project" value="LOCAL" />
       <updated>1508577488208</updated>
     </task>
-    <option name="localTasksCounter" value="247" />
+    <task id="LOCAL-00247" summary="refactor">
+      <created>1509222356626</created>
+      <option name="number" value="00247" />
+      <option name="presentableId" value="LOCAL-00247" />
+      <option name="project" value="LOCAL" />
+      <updated>1509222356627</updated>
+    </task>
+    <option name="localTasksCounter" value="248" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1020,7 +995,6 @@
     <MESSAGE value="fix imports" />
     <MESSAGE value="mysql added" />
     <MESSAGE value="cesar crypt added (refactor needed)" />
-    <MESSAGE value="refactor" />
     <MESSAGE value="Refactor" />
     <MESSAGE value="game of live work in progress" />
     <MESSAGE value="Update + Refactor" />
@@ -1028,7 +1002,8 @@
     <MESSAGE value="add blockchenin exampple &#10;based on: https://hackernoon.com/learn-blockchains-by-building-one-117428612f46" />
     <MESSAGE value="fix" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1164,13 +1139,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/openGL/example_.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="37" column="18" lean-forward="false" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1394,9 +1362,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1802">
           <caret line="106" column="16" lean-forward="false" selection-start-line="106" selection-start-column="16" selection-end-line="106" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1404,9 +1370,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1280">
           <caret line="97" column="19" lean-forward="true" selection-start-line="97" selection-start-column="19" selection-end-line="97" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1422,9 +1386,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
           <caret line="39" column="12" lean-forward="false" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1440,9 +1402,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1495,6 +1455,16 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openGL/example_.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
