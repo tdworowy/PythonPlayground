@@ -9,7 +9,7 @@ def timer(func, *params, **kargs):
     for i in repslist:
         ret = func(*params, **kargs)
     elapsed = time.clock() - start
-    return (elapsed, ret)
+    return elapsed, ret
 
 
 
