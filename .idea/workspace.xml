@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74059ddd-4c74-4733-a753-22db6be1b4c0" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Python_Staff/BasicStuff/factorial.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python_Staff/fizzbuzz/fzzzBuzz.py" afterPath="$PROJECT_DIR$/Python_Staff/fizzbuzz/fzzzBuzz.py" />
     </list>
     <ignored path="Playground.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,13 +34,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Quick_Sort.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Algorithms/sorting/Quick_Sort.py">
+      <file leaf-file-name="Merge_Sort.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Algorithms/sorting/Merge_Sort.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="15" column="57" lean-forward="false" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
+            <state relative-caret-position="34">
+              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cesarCrypt.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Algorithms/cryptography/cesarCrypt.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -98,31 +110,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fzzzBuzz.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="fzzzBuzz.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Python_Staff/fizzbuzz/fzzzBuzz.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-104">
-              <caret line="26" column="18" lean-forward="true" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+            <state relative-caret-position="731">
+              <caret line="43" column="11" lean-forward="false" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Select_Sort.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Algorithms/sorting/Select_Sort.py">
+      <file leaf-file-name="factorial.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Python_Staff/BasicStuff/factorial.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="myList.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MyUtils/myList.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="391">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -158,7 +160,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Python_Staff/BasicStuff/generators/gen4.py" />
         <option value="$PROJECT_DIR$/Python_Staff/decorators/functols_wraps.py" />
         <option value="$PROJECT_DIR$/Python_Staff/decorators/buffors_.py" />
         <option value="$PROJECT_DIR$/Python_Staff/decorators/block_.py" />
@@ -209,12 +210,13 @@
         <option value="$PROJECT_DIR$/Algorithms/sorting/Quick_Sort.py" />
         <option value="$PROJECT_DIR$/MyUtils/myTimer3.py" />
         <option value="$PROJECT_DIR$/Python_Staff/fizzbuzz/fzzzBuzz.py" />
+        <option value="$PROJECT_DIR$/Python_Staff/BasicStuff/factorial.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1461" />
-    <option name="y" value="225" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="196" />
+    <option name="y" value="330" />
     <option name="width" value="1930" />
     <option name="height" value="1044" />
   </component>
@@ -253,8 +255,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane" />
+      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <expand>
@@ -271,7 +273,7 @@
               <item name="Root" type="cbb8eebc:String" user="Root" />
               <item name="Playground" type="cbb8eebc:String" user="Playground" />
               <item name="Python_Staff" type="cbb8eebc:String" user="Python_Staff" />
-              <item name="fizzbuzz" type="cbb8eebc:String" user="fizzbuzz" />
+              <item name="BasicStuff" type="cbb8eebc:String" user="BasicStuff" />
             </path>
           </expand>
           <select />
@@ -313,7 +315,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Quick_Sort">
+  <component name="RunManager" selected="Python.factorial">
     <configuration name="Quick_Sort" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -449,19 +451,36 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <configuration name="dice" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="factorial" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python_Staff/BasicStuff" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Playground" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dice.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_Staff/BasicStuff/factorial.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="fzzzBuzz (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python_Staff/fizzbuzz" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Playground" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_Staff/fizzbuzz/fzzzBuzz.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -496,23 +515,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Playground" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_Staff/BasicStuff/generators/gen4.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="gnomeSort" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Algorithms/sorting" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Playground" />
-      <option name="SCRIPT_NAME" value="D:\Python_\Playground\Algorithms\sorting\Gnome_Sort.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -554,19 +556,19 @@
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Python.gen4" />
       <item index="1" class="java.lang.String" itemvalue="Python.fzzzBuzz" />
-      <item index="2" class="java.lang.String" itemvalue="Python.dice" />
-      <item index="3" class="java.lang.String" itemvalue="Python.gnomeSort" />
-      <item index="4" class="java.lang.String" itemvalue="Python.mergeSort" />
-      <item index="5" class="java.lang.String" itemvalue="Python.quickSort" />
-      <item index="6" class="java.lang.String" itemvalue="Python.Quick_Sort" />
+      <item index="2" class="java.lang.String" itemvalue="Python.mergeSort" />
+      <item index="3" class="java.lang.String" itemvalue="Python.quickSort" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Quick_Sort" />
+      <item index="5" class="java.lang.String" itemvalue="Python.fzzzBuzz (1)" />
+      <item index="6" class="java.lang.String" itemvalue="Python.factorial" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Quick_Sort" />
-        <item index="1" class="java.lang.String" itemvalue="Python.quickSort" />
-        <item index="2" class="java.lang.String" itemvalue="Python.mergeSort" />
-        <item index="3" class="java.lang.String" itemvalue="Python.gnomeSort" />
-        <item index="4" class="java.lang.String" itemvalue="Python.dice" />
+        <item index="0" class="java.lang.String" itemvalue="Python.factorial" />
+        <item index="1" class="java.lang.String" itemvalue="Python.fzzzBuzz (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Quick_Sort" />
+        <item index="3" class="java.lang.String" itemvalue="Python.quickSort" />
+        <item index="4" class="java.lang.String" itemvalue="Python.mergeSort" />
       </list>
     </recent_temporary>
   </component>
@@ -583,13 +585,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1477905013655</updated>
-    </task>
-    <task id="LOCAL-00202" summary="Update">
-      <created>1501780973208</created>
-      <option name="number" value="00202" />
-      <option name="presentableId" value="LOCAL-00202" />
-      <option name="project" value="LOCAL" />
-      <updated>1501780973209</updated>
     </task>
     <task id="LOCAL-00203" summary="Update">
       <created>1501781052351</created>
@@ -927,7 +922,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510079202341</updated>
     </task>
-    <option name="localTasksCounter" value="251" />
+    <task id="LOCAL-00251" summary="refactor">
+      <created>1510258915952</created>
+      <option name="number" value="00251" />
+      <option name="presentableId" value="LOCAL-00251" />
+      <option name="project" value="LOCAL" />
+      <updated>1510258915953</updated>
+    </task>
+    <option name="localTasksCounter" value="252" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -972,12 +974,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1448" y="165" width="1456" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49641833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.50053304" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3261105" sideWeight="0.5042644" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2652174" sideWeight="0.49789253" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26413044" sideWeight="0.49789253" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32527474" sideWeight="0.49573562" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27410617" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1029,9 +1031,9 @@
     <MESSAGE value="Update" />
     <MESSAGE value="add blockchenin exampple &#10;based on: https://hackernoon.com/learn-blockchains-by-building-one-117428612f46" />
     <MESSAGE value="fix" />
-    <MESSAGE value="update" />
     <MESSAGE value="refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1107,13 +1109,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/MyUtils/officeUtils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/-643338342/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="74936">
@@ -1349,13 +1344,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithms/cryptography/cesarCrypt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="39" column="12" lean-forward="false" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Algorithms/cryptography/cesarCrypt2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1378,28 +1366,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithms/sorting/Merge_Sort.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Algorithms/sorting/Select_Sort.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithms/sorting/Bubble_Sort.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1466,8 +1436,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Python_Staff/fizzbuzz/fzzzBuzz.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-104">
-          <caret line="26" column="18" lean-forward="true" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+        <state relative-caret-position="731">
+          <caret line="43" column="11" lean-forward="false" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithms/sorting/Bubble_Sort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithms/sorting/Merge_Sort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithms/cryptography/cesarCrypt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python_Staff/BasicStuff/factorial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
