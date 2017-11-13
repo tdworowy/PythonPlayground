@@ -18,4 +18,4 @@ def fib2(n):
     return b
 
 
-print(fib2(1000))
+print(fib2(1000000))
