@@ -1,11 +1,11 @@
 //#include <Python.h>
 #include "C:\\Program Files\\Python36\\include\\Python.h"
 
-long long fibonacci(unsigned int n){
+long long fibonacci_my(unsigned int n){
     if (n<2) {
         return 1;
     } else {
-        return fibonacci(n-2) + fibonacci(n-1);
+        return fibonacci_my(n-2) + fibonacci_my(n-1);
 
     }
 
@@ -32,7 +32,7 @@ static PyMethodDef fibonacci_module_methods[] = {
 
 static struct PyModuleDef fibonacci_module_definition ={
     PyModuleDef_HEAD_INIT,
-    "fibonacci",
+    "fibonacci_my",
     "Expansion module",
     -1,
     fibonacci_module_methods

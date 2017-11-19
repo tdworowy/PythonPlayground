@@ -1,5 +1,5 @@
-import fibonacci
+import fibonacci_my.obj
 
-print(fibonacci.fibonacci(20))
-print(fibonacci.fibonacci(200))
-print(fibonacci.fibonacci(2000))
+print(fibonacci_my.fibonacci(20))
+print(fibonacci_my.fibonacci(200))
+print(fibonacci_my.fibonacci(2000))
