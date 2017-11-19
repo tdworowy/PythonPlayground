@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74059ddd-4c74-4733-a753-22db6be1b4c0" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/Playground.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Web/TestChat/.idea/TestChat.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Web/TestChat/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Web/TestChat/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Web/TestChat/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Web/TestChat/.vs/TestChat/v14/.suo" afterPath="" />
     </list>
     <ignored path="Playground.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -225,7 +226,20 @@
             <path>
               <item name="Root" type="cbb8eebc:String" user="Root" />
               <item name="Playground" type="cbb8eebc:String" user="Playground" />
-              <item name="Python_Staff" type="cbb8eebc:String" user="Python_Staff" />
+              <item name="Web" type="cbb8eebc:String" user="Web" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Playground" type="cbb8eebc:String" user="Playground" />
+              <item name="Web" type="cbb8eebc:String" user="Web" />
+              <item name="TestChat" type="cbb8eebc:String" user="TestChat" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Playground" type="cbb8eebc:String" user="Playground" />
+              <item name="Web" type="cbb8eebc:String" user="Web" />
+              <item name="TestChat" type="cbb8eebc:String" user="TestChat" />
+              <item name="TestChat" type="cbb8eebc:String" user="TestChat" />
             </path>
           </expand>
           <select />
@@ -539,13 +553,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1477905013655</updated>
-    </task>
-    <task id="LOCAL-00210" summary="Update">
-      <created>1501951567088</created>
-      <option name="number" value="00210" />
-      <option name="presentableId" value="LOCAL-00210" />
-      <option name="project" value="LOCAL" />
-      <updated>1501951567089</updated>
     </task>
     <task id="LOCAL-00211" summary="Update">
       <created>1501964470516</created>
@@ -883,7 +890,14 @@
       <option name="project" value="LOCAL" />
       <updated>1511117539305</updated>
     </task>
-    <option name="localTasksCounter" value="259" />
+    <task id="LOCAL-00259" summary="fix">
+      <created>1511117857481</created>
+      <option name="number" value="00259" />
+      <option name="presentableId" value="LOCAL-00259" />
+      <option name="project" value="LOCAL" />
+      <updated>1511117857481</updated>
+    </task>
+    <option name="localTasksCounter" value="260" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -983,12 +997,12 @@
     <MESSAGE value="game of live work in progress" />
     <MESSAGE value="Update + Refactor" />
     <MESSAGE value="add blockchenin exampple &#10;based on: https://hackernoon.com/learn-blockchains-by-building-one-117428612f46" />
-    <MESSAGE value="fix" />
     <MESSAGE value="update" />
     <MESSAGE value="refactor" />
     <MESSAGE value="upadte" />
     <MESSAGE value="Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
