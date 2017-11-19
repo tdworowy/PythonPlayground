@@ -1,0 +1,8 @@
+fibonacci_my.exp
+fibonacci_my.lib
+fibonacci_my.obj
+setup.py
+fibonacci_my.egg-info/PKG-INFO
+fibonacci_my.egg-info/SOURCES.txt
+fibonacci_my.egg-info/dependency_links.txt
+fibonacci_my.egg-info/top_level.txt
