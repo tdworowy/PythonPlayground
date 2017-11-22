@@ -38,7 +38,7 @@ static struct PyModuleDef fibonacci_module_definition ={
     fibonacci_module_methods
 };
 
-PyMODINIT_FUNC PyInit_fibonacci(void){
+PyMODINIT_FUNC PyInit_fibonacci_my(void){
     Py_Initialize();
 
     return PyModule_Create(&fibonacci_module_definition);
