@@ -3,21 +3,21 @@ from random import randint
 
 def gnome_Sort(list_):
     pos = 0
-    list = list_[:]
-    while pos < len(list):
-        if pos == 0 or list[pos] >= list[pos - 1]:
+    list_sort = list_[:]
+    while pos < len(list_sort):
+        if pos == 0 or list_sort[pos] >= list_sort[pos - 1]:
             pos += 1
         else:
-            list[pos], list[pos - 1] = list[pos - 1], list[pos]
+            list_sort[pos], list_sort[pos - 1] = list_sort[pos - 1], list_sort[pos]
             pos -= 1
-    return list
+    return list_sort
 
 
 if __name__ == '__main__':
-    list = [randint(0, 10000) for x in range(1000)]
-    sortedList = gnome_Sort(list)
+    list_sort = [randint(0, 10000) for x in range(1000)]
+    sortedList = gnome_Sort(list_sort)
     print(sortedList)
 
-    list.sort()
-    print(list)
-    assert sortedList == list
+    list_sort.sort()
+    print(list_sort)
+    assert sortedList == list_sort
