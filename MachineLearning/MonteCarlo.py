@@ -1,18 +1,18 @@
 import random
 
 
-class calculatePI():
-    def __init__(self, timesToRepeat):
-        self.timesToRepeat = timesToRepeat
+class CalculatePI:
+    def __init__(self, count):
+        self.count = count
 
     def pi(self):
-        return 4 * sum(1 for _ in range(self.timesToRepeat) if
-                       random.random() ** 2 + random.random() ** 2 < 1) / self.timesToRepeat
+        return 4 * sum(1 for _ in range(self.count) if
+                       random.random() ** 2 + random.random() ** 2 < 1) / self.count
 
 
 def main():
-    piCalc = calculatePI(10 ** 8)
-    print(piCalc.pi())
+    pl = CalculatePI(10 ** 8)
+    print(pl.pi())
 
 
 if __name__ == '__main__':
