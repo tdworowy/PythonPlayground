@@ -1,21 +1,21 @@
 
-from DecisionsTrees.C45.DecisionsTreesUtils import dtUtils
+from DecisionsTrees.C45.DecisionsTreesUtils import DTUtils
 
 
-class c45Algorithm:
+class C45Algorithm:
     def __init__(self,data, class_):
         self.data = data
         self.class_ = class_
-        self.dtUtils = dtUtils(data)
+        self.dtUtils = DTUtils(data)
 
     def check(self):
-        print("Attributes: ",self.dtUtils .getAttributes())
+        print("Attributes: ", self.dtUtils .get_attributes())
         print("Class: ",self.class_)
-        print(self.dtUtils.checkClass(self.class_))
+        print(self.dtUtils.check_class(self.class_))
         print("Possible values: ")
-        print(self.dtUtils.getValuesPerAttribute())
-        self.dtUtils.displayValues()
-        print("Values count: ", self.dtUtils.getValueCount())
+        print(self.dtUtils.get_values_per_attribute())
+        self.dtUtils.display_values()
+        print("Values count: ", self.dtUtils.get_value_count())
         print("Values to numeric")
-        self.dtUtils.prettyList(list(self.dtUtils.convertValuesToNumeric()))
+        self.dtUtils.pretty_list(list(self.dtUtils.convert_values_to_numeric()))
 #TODO lot of work

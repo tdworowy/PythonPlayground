@@ -1,6 +1,6 @@
 import csv
 
-from DecisionsTrees.C45.c45 import c45Algorithm
+from DecisionsTrees.C45.c45 import C45Algorithm
 from DecisionsTrees.data.dataUtils import getDataPath
 
 
@@ -11,7 +11,7 @@ def main():
         for row in reader:
             print(row)
             rows.append(row)
-    c45 = c45Algorithm(rows,"atr3")
+    c45 = C45Algorithm(rows, "atr3")
     c45.check()
 
 
