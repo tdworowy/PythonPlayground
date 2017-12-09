@@ -43,6 +43,27 @@ def timer2(label=' ', trace=True):
     return on_decorator
 
 
+def timer3(f):
+    is_evaluating = False
+
+    def g(x):
+        nonlocal is_evaluating
+        if is_evaluating:
+            return f(x)
+        else:
+            start_time = time.clock()
+            is_evaluating = True
+            try:
+                value = f(x)
+            finally:
+                is_evaluating = False
+            end_time = time.clock()
+            print('time taken: {time}'.format(time=end_time - start_time))
+            return value
+
+    return g
+
+
 @timer("==>")
 def list_comp(x):
     return [x * 2 for x in range(x)]
