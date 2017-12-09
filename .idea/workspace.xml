@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74059ddd-4c74-4733-a753-22db6be1b4c0" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/objgraph_/obj_graph.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/MachineLearning/MonteCarlo.py" afterPath="$PROJECT_DIR$/MachineLearning/MonteCarlo.py" />
+      <change beforePath="$PROJECT_DIR$/scripts_.py" afterPath="$PROJECT_DIR$/scripts_.py" />
     </list>
     <ignored path="Playground.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,9 +28,21 @@
       <file leaf-file-name="scripts_.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts_.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="13" />
+            <state relative-caret-position="578">
+              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MonteCarlo.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MachineLearning/MonteCarlo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -39,16 +52,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
               <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tree.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DecisionsTrees/CART/tree.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="5" column="10" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -64,7 +67,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="obj_graph.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="obj_graph.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/objgraph_/obj_graph.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="770">
@@ -185,8 +188,6 @@
         <option value="F:/programowanie cpp python/2 projekt.py" />
         <option value="$PROJECT_DIR$/MachineLearning/dataUtils.py" />
         <option value="$PROJECT_DIR$/MachineLearning/namesClassification.py" />
-        <option value="$PROJECT_DIR$/MachineLearning/MonteCarlo.py" />
-        <option value="$PROJECT_DIR$/scripts_.py" />
         <option value="$PROJECT_DIR$/falcon_/sample.py" />
         <option value="$PROJECT_DIR$/DecisionsTrees/C45/c45.py" />
         <option value="$PROJECT_DIR$/DecisionsTrees/C45/DecisionsTreesUtils.py" />
@@ -194,6 +195,8 @@
         <option value="$PROJECT_DIR$/DecisionsTrees/CART/main.py" />
         <option value="$PROJECT_DIR$/DecisionsTrees/CART/tree.py" />
         <option value="$PROJECT_DIR$/objgraph_/obj_graph.py" />
+        <option value="$PROJECT_DIR$/scripts_.py" />
+        <option value="$PROJECT_DIR$/MachineLearning/MonteCarlo.py" />
       </list>
     </option>
   </component>
@@ -247,7 +250,7 @@
             <path>
               <item name="Root" type="cbb8eebc:String" user="Root" />
               <item name="Playground" type="cbb8eebc:String" user="Playground" />
-              <item name="objgraph_" type="cbb8eebc:String" user="objgraph_" />
+              <item name="MachineLearning" type="cbb8eebc:String" user="MachineLearning" />
             </path>
           </expand>
           <select />
@@ -568,13 +571,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1477905013655</updated>
-    </task>
-    <task id="LOCAL-00220" summary="Update">
-      <created>1503584808310</created>
-      <option name="number" value="00220" />
-      <option name="presentableId" value="LOCAL-00220" />
-      <option name="project" value="LOCAL" />
-      <updated>1503584808311</updated>
     </task>
     <task id="LOCAL-00221" summary="Update">
       <created>1503836893269</created>
@@ -912,7 +908,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512764852409</updated>
     </task>
-    <option name="localTasksCounter" value="269" />
+    <task id="LOCAL-00269" summary="update">
+      <created>1512767569501</created>
+      <option name="number" value="00269" />
+      <option name="presentableId" value="LOCAL-00269" />
+      <option name="project" value="LOCAL" />
+      <updated>1512767569501</updated>
+    </task>
+    <option name="localTasksCounter" value="270" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1015,9 +1018,9 @@
     <MESSAGE value="Update" />
     <MESSAGE value="fix" />
     <MESSAGE value="refactor" />
-    <MESSAGE value="update" />
     <MESSAGE value="Refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1287,13 +1290,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MachineLearning/MonteCarlo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MachineLearning/geneticAlgorithm.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1375,14 +1371,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts_.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DecisionsTrees/C45/c45.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1424,6 +1412,24 @@
         <state relative-caret-position="770">
           <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts_.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MachineLearning/MonteCarlo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
