@@ -1,4 +1,5 @@
 import sys
+from cmath import inf
 
 
 def staff():
@@ -33,8 +34,56 @@ def Ackermann(m, n):
         return Ackermann(m - 1, Ackermann(m, n - 1))
 
 
+def alg(n):
+    if n == 1:
+        return n
+    else:
+        res = 1 + alg(n) + 1
+        n = n - 1
+        return res
+
+
+def recur(num):
+    if num > 100:
+        return num - 10
+    else:
+        return recur(recur(num + 11))
+
+
+def minimalize_path(grid, num):
+    """min(x,y)=grid(x,y) + min(min(x+1,y),min(x,y+1)"""
+    def min(x, y):
+        if (x, y) == (num - 1, num - 1):
+            return grid[num - 1][num - 1]
+        to_visit = [(x + 1, y), (x, y + 1)]
+        minimum = inf
+        for m, n in to_visit:
+            if (m < 0) or (m >= num) or (n < 0) or (n >= num):
+                continue
+            else:
+                cost = grid[x][y] + min(m, n)
+                if cost < minimum:
+                    minimum = cost
+        return minimum
+
+    return min
+
+
 
 
 if __name__ == "__main__":
     # print(list(staff2()))
-    print(Ackermann(3, 6))
+     print(Ackermann(3, 6))
+    # print(recur(98))
+    # grid = [[23, 32, 62, 20, 77, 42, 31],
+    #         [15, 14, 10, 11, 48, 32, 30],
+    #         [14, 46, 71, 31, 53, 7, 82],
+    #         [20, 12, 78, 78, 46, 24, 43],
+    #         [37, 16, 12, 99, 15, 97, 85],
+    #         [13, 29, 82, 71, 63, 27, 75],
+    #         [44, 81, 80, 48, 2, 45, 17]]
+    #
+    # num = 7
+    # x = minimalize_path(grid, num)
+    # print(x(0, 0))
+

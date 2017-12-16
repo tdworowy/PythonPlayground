@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74059ddd-4c74-4733-a753-22db6be1b4c0" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Python_Staff/async_programing/example_.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/scripts_.py" afterPath="$PROJECT_DIR$/scripts_.py" />
     </list>
     <ignored path="Playground.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,12 +24,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="scripts_.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="scripts_.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts_.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="711">
+              <caret line="89" column="0" lean-forward="true" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -49,8 +51,8 @@
       <file leaf-file-name="fibonaci.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Python_Staff/fibonaci.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1088">
-              <caret line="66" column="19" lean-forward="false" selection-start-line="66" selection-start-column="19" selection-end-line="66" selection-end-column="19" />
+            <state relative-caret-position="-295">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -68,11 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="example_.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="example_.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Python_Staff/async_programing/example_.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="323">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -205,13 +207,13 @@
         <option value="$PROJECT_DIR$/DecisionsTrees/CART/main.py" />
         <option value="$PROJECT_DIR$/DecisionsTrees/CART/tree.py" />
         <option value="$PROJECT_DIR$/objgraph_/obj_graph.py" />
-        <option value="$PROJECT_DIR$/scripts_.py" />
         <option value="$PROJECT_DIR$/MachineLearning/MonteCarlo.py" />
         <option value="$PROJECT_DIR$/MyUtils/myTimer3.py" />
         <option value="$PROJECT_DIR$/Python_Staff/fibonaci2.py" />
-        <option value="$PROJECT_DIR$/Python_Staff/fibonaci.py" />
         <option value="$PROJECT_DIR$/MyUtils/margePATHS.py" />
         <option value="$PROJECT_DIR$/Python_Staff/async_programing/example_.py" />
+        <option value="$PROJECT_DIR$/Python_Staff/fibonaci.py" />
+        <option value="$PROJECT_DIR$/scripts_.py" />
       </list>
     </option>
   </component>
@@ -255,7 +257,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane" />
       <pane id="Scope">
         <subPane subId="Project Files">
@@ -269,16 +270,11 @@
               <item name="Playground" type="cbb8eebc:String" user="Playground" />
               <item name="Python_Staff" type="cbb8eebc:String" user="Python_Staff" />
             </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Playground" type="cbb8eebc:String" user="Playground" />
-              <item name="Python_Staff" type="cbb8eebc:String" user="Python_Staff" />
-              <item name="async_programing" type="cbb8eebc:String" user="async_programing" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -315,7 +311,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.example_">
+  <component name="RunManager" selected="Python.scripts_">
     <configuration name="2 projekt" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -571,10 +567,10 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.example_" />
+        <item index="0" class="java.lang.String" itemvalue="Python.scripts_" />
         <item index="1" class="java.lang.String" itemvalue="Python.fibonaci" />
-        <item index="2" class="java.lang.String" itemvalue="Python.obj_graph" />
-        <item index="3" class="java.lang.String" itemvalue="Python.scripts_" />
+        <item index="2" class="java.lang.String" itemvalue="Python.example_" />
+        <item index="3" class="java.lang.String" itemvalue="Python.obj_graph" />
         <item index="4" class="java.lang.String" itemvalue="Python.2 projekt" />
       </list>
     </recent_temporary>
@@ -592,13 +588,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1477905013655</updated>
-    </task>
-    <task id="LOCAL-00224" summary="Update">
-      <created>1504012506163</created>
-      <option name="number" value="00224" />
-      <option name="presentableId" value="LOCAL-00224" />
-      <option name="project" value="LOCAL" />
-      <updated>1504012506163</updated>
     </task>
     <task id="LOCAL-00225" summary="Update">
       <created>1504013693609</created>
@@ -936,7 +925,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512842499581</updated>
     </task>
-    <option name="localTasksCounter" value="273" />
+    <task id="LOCAL-00273" summary="update">
+      <created>1512929193245</created>
+      <option name="number" value="00273" />
+      <option name="presentableId" value="LOCAL-00273" />
+      <option name="project" value="LOCAL" />
+      <updated>1512929193245</updated>
+    </task>
+    <option name="localTasksCounter" value="274" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1039,9 +1035,9 @@
     <MESSAGE value="Update" />
     <MESSAGE value="fix" />
     <MESSAGE value="Refactor" />
-    <MESSAGE value="update" />
     <MESSAGE value="refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1370,14 +1366,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts_.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MachineLearning/MonteCarlo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -1423,16 +1411,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Python_Staff/fibonaci2.py" />
-    <entry file="file://$PROJECT_DIR$/Python_Staff/fibonaci.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="66" column="19" lean-forward="false" selection-start-line="66" selection-start-column="19" selection-end-line="66" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MyUtils/margePATHS.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1443,9 +1421,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Python_Staff/async_programing/example_.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="323">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python_Staff/fibonaci.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-295">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts_.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="711">
+          <caret line="89" column="0" lean-forward="true" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
