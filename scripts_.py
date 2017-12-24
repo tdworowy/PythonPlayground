@@ -78,6 +78,28 @@ def perfect_number(n):
     return sum == n
 
 
+# i thin it don't work
+def magic_squer(size):
+    count = size ** 2
+    matrix = [[(size * y) + x + 1 for x in range(size)] for y in range(size)]
+    for i in range(0, size // 4):
+        for j in range(3 * (size // 4), size):
+            matrix[i][j] = (count + 1) - matrix[i][j]
+
+    for i in range(3 * (size // 4), size):
+        for j in range(1, size // 4):
+            matrix[i][j] = (size * size + 1) - matrix[i][j]
+
+    for i in range(3 * (size // 4), size):
+        for j in range(3 * (size // 4), size):
+            matrix[i][j] = (count + 1) - matrix[i][j]
+
+    for i in range(size // 4, 3 * (size // 4)):
+        for j in range(size // 4, 3 * (size // 4)):
+            matrix[i][j] = (count + 1) - matrix[i][j]
+    return matrix
+
+
 if __name__ == "__main__":
     # print(list(staff2()))
     #  print(Ackermann(3, 6))
@@ -93,5 +115,7 @@ if __name__ == "__main__":
     # num = 7
     # x = minimalize_path(grid, num)
     # print(x(0, 0))
-    x = sum([i for i in range(10001) if perfect_number(i)])
-    print(x)
+    # x = sum([i for i in range(10001) if perfect_number(i)])
+    # print(x)
+    for row in magic_squer(4):
+        print(row)
