@@ -79,6 +79,7 @@ def perfect_number(n):
 
 
 # i thin it don't work
+#TODO
 def magic_squer(size):
     count = size ** 2
     matrix = [[(size * y) + x + 1 for x in range(size)] for y in range(size)]
