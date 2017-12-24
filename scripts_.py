@@ -52,6 +52,7 @@ def recur(num):
 
 def minimalize_path(grid, num):
     """min(x,y)=grid(x,y) + min(min(x+1,y),min(x,y+1)"""
+
     def min(x, y):
         if (x, y) == (num - 1, num - 1):
             return grid[num - 1][num - 1]
@@ -69,11 +70,17 @@ def minimalize_path(grid, num):
     return min
 
 
+def perfect_number(n):
+    sum = 0
+    for x in range(1, n):
+        if n % x == 0:
+            sum += x
+    return sum == n
 
 
 if __name__ == "__main__":
     # print(list(staff2()))
-     print(Ackermann(3, 6))
+    #  print(Ackermann(3, 6))
     # print(recur(98))
     # grid = [[23, 32, 62, 20, 77, 42, 31],
     #         [15, 14, 10, 11, 48, 32, 30],
@@ -86,4 +93,5 @@ if __name__ == "__main__":
     # num = 7
     # x = minimalize_path(grid, num)
     # print(x(0, 0))
-
+    x = sum([i for i in range(10001) if perfect_number(i)])
+    print(x)
