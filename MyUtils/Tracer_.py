@@ -1,24 +1,25 @@
-def Tracer(aClass):
+def tracer(aClass):
     class Wrapper:
-        def __init__(self,*args,**kwargs):
+        def __init__(self, *args, **kwargs):
             self.fetches = 0
-            self.wrapped = aClass(*args,**kwargs)
+            self.wrapped = aClass(*args, **kwargs)
+
         def __getattr__(self, item):
             print("Trace: %s" % item)
-            self.fetches +=1
-            return getattr(self.wrapped,item)
+            self.fetches += 1
+            return getattr(self.wrapped, item)
+
     return Wrapper
 
 
-
 if __name__ == '__main__':
-    @Tracer
-    class spam:
+    @tracer
+    class Spam:
         def display(self):
             print('SPAM')
 
-x = spam()
-y = spam()
+x = Spam()
+y = Spam()
 x.display()
 x.display()
 y.display()

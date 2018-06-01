@@ -1,8 +1,8 @@
 from rootDirectory import getRootDirectory
 
-def getToAppend(i):
 
-	return """{
+def get_to_append(i):
+    return """{
 	  "firstName" : "firstName%s",
 	  "lastName" : "lastName%s",
 	  "email" : "employee1@cream.local",
@@ -29,22 +29,20 @@ def getToAppend(i):
 					}
 					]
 			},},
-	""" % (i,i,i)
+	""" % (i, i, i)
 
 
-
-def extedEmploy(file,range_):
+def extend_employ(file, range_):
     file.write("[ ")
     addString = ""
-    for i in range(range_[0],range_[1]):
-        addString = addString + getToAppend(str(i))
+    for i in range(range_[0], range_[1]):
+        addString = addString + get_to_append(str(i))
 
     addString = addString + " ]"
     file.write(addString)
 
 
+# file = open("C:/PLIKI/Load_tests/users_with_traits2.txt",'a')
+file = open(getRootDirectory() + "\\users_with_No_traits.json", 'w+')
 
-#file = open("C:/PLIKI/Load_tests/users_with_traits2.txt",'a')
-file = open(getRootDirectory()+"\\users_with_No_traits.json",'w+')
-
-extedEmploy(file,(1,2000))
+extend_employ(file, (1, 2000))

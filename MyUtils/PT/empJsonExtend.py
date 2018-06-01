@@ -31,22 +31,22 @@ ToAppend = """{
 
 
 def clean(file):
-    tempString = file.read()
-    tempString = tempString[:-4]
-    file.write(tempString)
+    temp_string = file.read()
+    temp_string = temp_string[:-4]
+    file.write(temp_string)
 
-def extedEmploy(file,range_):
+
+def extend_employ(file, range_):
     clean(file)
-    addString = ""
-    for i in range(range_[0],range_[1]):
-        addString = addString + ToAppend.replace("employee{x}".format(x=range_[0]), "employee" + str(i))
+    add_string = ""
+    for i in range(range_[0], range_[1]):
+        add_string = add_string + ToAppend.replace("employee{x}".format(x=range_[0]), "employee" + str(i))
 
-    addString ="["+ addString + " ]"
-    file.write(addString)
+    add_string = "[" + add_string + " ]"
+    file.write(add_string)
 
 
+# file = open("C:/PLIKI/Load_tests/users_with_traits2.txt",'a')
+file = open(getRootDirectory() + "\\users_with_traits2.json", 'w+')
 
-#file = open("C:/PLIKI/Load_tests/users_with_traits2.txt",'a')
-file = open(getRootDirectory()+"\\users_with_traits2.json",'w+')
-
-extedEmploy(file,(2500,5000))
+extend_employ(file, (2500, 5000))

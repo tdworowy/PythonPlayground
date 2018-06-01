@@ -2,9 +2,9 @@ import sys
 import time
 
 if sys.platform[:3] == 'win':
-    timefunc = time.clock
+    time_func = time.clock
 else:
-    timefunc = time.time
+    time_func = time.time
 
 
 def trace(*args): pass
@@ -14,10 +14,10 @@ def timer(func, *pargs, **kargs):
     _reps = kargs.pop('_reps', 1000)
     trace(func, pargs, kargs, _reps)
     replist = range(_reps)
-    start = timefunc()
+    start = time_func()
     for i in replist:
         ret = func(*pargs, **kargs)
-    elapsed = timefunc() - start
+    elapsed = time_func() - start
     return elapsed, ret
 
 

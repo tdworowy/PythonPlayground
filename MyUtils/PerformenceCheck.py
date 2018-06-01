@@ -5,75 +5,85 @@ from MyUtils import myTimer2, mytimer
 reps = 10000
 replist = range(reps)
 
-def forLoop():
-    res= []
+
+def for_loop():
+    res = []
     for x in replist:
         res.append(abs(x))
     return res
 
-def listComp():
+
+def list_comp():
     return [abs(x) for x in replist]
 
-def mapCall():
-    return list(map(abs,replist))
 
-def genExpr():
-    return list(abs(x)for x in replist)
+def map_call():
+    return list(map(abs, replist))
 
-def genFunction():
+
+def gen_expr():
+    return list(abs(x) for x in replist)
+
+
+def gen_function():
     def gen():
         for x in replist:
-            yield  abs(x)
+            yield abs(x)
+
     return list(gen())
 
 
-def forLoop2():
-    res= []
+def for_loop2():
+    res = []
     for x in replist:
-        res.append(x+ 10)
+        res.append(x + 10)
     return res
 
-def listComp2():
-    return [x+10 for x in replist]
 
-def mapCall2():
-    return list(map( (lambda  x : x+10),replist))
+def list__comp2():
+    return [x + 10 for x in replist]
 
-def genExpr2():
-    return list(x+10for x in replist)
 
-def genFunction2():
+def map_call2():
+    return list(map((lambda x: x + 10), replist))
+
+
+def gen_expr2():
+    return list(x + 10 for x in replist)
+
+
+def gen_function2():
     def gen():
         for x in replist:
-            yield  x + 10
+            yield x + 10
+
     return list(gen())
 
 
 print(sys.version)
-for test in (forLoop,listComp,mapCall,genExpr,genFunction):
-    elapsed,result = mytimer.timer(test)
+for test in (for_loop, list_comp, map_call, gen_expr, gen_function):
+    elapsed, result = mytimer.timer(test)
     print('-' * 33)
-    print('%-9s: %.5f =>[%s...%s]' % (test.__name__,elapsed,result[0],result[-1]))
+    print('%-9s: %.5f =>[%s...%s]' % (test.__name__, elapsed, result[0], result[-1]))
 
 print(sys.version)
-for test in (forLoop2,listComp2,mapCall2,genExpr2,genFunction2):
-    elapsed,result = mytimer.timer(test)
+for test in (for_loop2, list__comp2, map_call2, gen_expr2, gen_function2):
+    elapsed, result = mytimer.timer(test)
     print('-' * 33)
-    print('%-9s: %.5f =>[%s...%s]' % (test.__name__,elapsed,result[0],result[-1]))
-
-
-print(sys.version)
-for tester in(myTimer2.timer, myTimer2.best):
-    print(('<%s>' % tester.__name__))
-    for test in (forLoop,listComp,mapCall,genExpr,genFunction):
-        elapsed,result = tester(test)
-        print('-' * 33)
-        print('%-9s: %.5f =>[%s...%s]' % (test.__name__,elapsed,result[0],result[-1]))
+    print('%-9s: %.5f =>[%s...%s]' % (test.__name__, elapsed, result[0], result[-1]))
 
 print(sys.version)
-for tester in(myTimer2.timer, myTimer2.best):
+for tester in (myTimer2.timer, myTimer2.best):
     print(('<%s>' % tester.__name__))
-    for test in (forLoop2,listComp2,mapCall2,genExpr2,genFunction2):
-        elapsed,result = tester(test)
+    for test in (for_loop, list_comp, map_call, gen_expr, gen_function):
+        elapsed, result = tester(test)
         print('-' * 33)
-        print('%-9s: %.5f =>[%s...%s]' % (test.__name__,elapsed,result[0],result[-1]))
+        print('%-9s: %.5f =>[%s...%s]' % (test.__name__, elapsed, result[0], result[-1]))
+
+print(sys.version)
+for tester in (myTimer2.timer, myTimer2.best):
+    print(('<%s>' % tester.__name__))
+    for test in (for_loop2, list__comp2, map_call2, gen_expr2, gen_function2):
+        elapsed, result = tester(test)
+        print('-' * 33)
+        print('%-9s: %.5f =>[%s...%s]' % (test.__name__, elapsed, result[0], result[-1]))

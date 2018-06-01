@@ -1,21 +1,25 @@
-def rangetest(*argsCheck):
-    def onDecorator(func):
+def range_test(*argsCheck):
+    def on_decorator(func):
         if not __debug__:
             return func
         else:
-            def onCall(*args):
-                for (ix,low,high) in argsCheck:
+            def on_call(*args):
+                for (ix, low, high) in argsCheck:
                     if args[ix] < low or args[ix] > high:
-                        errmsq = 'Argument %s is not in range %s...%s ' % (ix,low,high)
+                        errmsq = 'Argument %s is not in range %s...%s ' % (ix, low, high)
                         raise TypeError(errmsq)
                 return func(*args)
-            return onCall
-    return onDecorator
+
+            return on_call
+
+    return on_decorator
 
 
-trace =  True
-def rangetest_extend(**argchecks):
-    def onDecorator(func):
+trace = True
+
+
+def range_test_extend(**argchecks):
+    def on_decorator(func):
         if not __debug__:
             return func
         else:
@@ -24,14 +28,14 @@ def rangetest_extend(**argchecks):
             allargs = code.co_varnames[:code.co_argcount]
             funcname = func.__name__
 
-            def onCall(*pargs,**kwargs):
+            def on_call(*pargs, **kwargs):
                 positionals = list(allargs)
                 positionals = positionals[:len(pargs)]
 
-                for(argname , (low, high)) in argchecks.items():
+                for (argname, (low, high)) in argchecks.items():
                     if argname in kwargs:
                         if kwargs[argname] < low or kwargs[argname] > high:
-                            errmsq = '%s Argument %s is not in range %s...%s ' % (funcname,argname,low,high)
+                            errmsq = '%s Argument %s is not in range %s...%s ' % (funcname, argname, low, high)
                             raise TypeError(errmsq)
                     elif argname in positionals:
                         position = positionals.index(argname)
@@ -40,30 +44,34 @@ def rangetest_extend(**argchecks):
                             raise TypeError(errmsq)
                     else:
                         if trace:
-                            print('Argument %s has default value' % argname )
-                return func(*pargs,**kwargs)
-            return onCall
-    return onDecorator
+                            print('Argument %s has default value' % argname)
+                return func(*pargs, **kwargs)
+
+            return on_call
+
+    return on_decorator
 
 
 if __name__ == '__main__':
-    @rangetest([0,1,31],[1,1,12],[2,0,2009])
-    def birthday(D,M,Y):
-        print('Birthday = {0}/{1}/{2}'.format(D,M,Y))
+    @range_test([0, 1, 31], [1, 1, 12], [2, 0, 2009])
+    def birthday(D, M, Y):
+        print('Birthday = {0}/{1}/{2}'.format(D, M, Y))
 
 
-    birthday(1,1,2)
+    birthday(1, 1, 2)
     try:
-        birthday(31,13,2009)
+        birthday(31, 13, 2009)
     except TypeError as e:
         print(e)
 
-    @rangetest_extend(age =(0,120))
-    def person(name,age):
-        print('%s has %s age'% (name,age))
 
-    person("test",20)
+    @range_test_extend(age=(0, 120))
+    def person(name, age):
+        print('%s has %s age' % (name, age))
+
+
+    person("test", 20)
     try:
-        person("test2",121)
+        person("test2", 121)
     except TypeError as e:
         print(e)

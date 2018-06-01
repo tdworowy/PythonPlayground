@@ -4,7 +4,7 @@ import time
 from PIL import ImageGrab
 
 
-def screenGrab():
+def screen_crab():
     box = ()
     im = ImageGrab.grab()
     im.save(os.getcwd() + '\\full_snap__' + str(int(time.time())) +
@@ -12,7 +12,7 @@ def screenGrab():
 
 
 def main():
-    screenGrab()
+    screen_crab()
 
 
 if __name__ == '__main__':
