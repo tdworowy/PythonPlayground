@@ -4,7 +4,8 @@ import falcon
 
 
 class QuoteResource:
-    def on_get(selfs, req, resp):
+    @staticmethod
+    def on_get(req, resp):
         quote = {
             'quote': 'Crush your enemies. See them driven before you. Hear the lamentations of their women.',
             'author': 'conan'

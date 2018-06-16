@@ -8,7 +8,7 @@ from rootDirectory import getRootDirectory
 sys.setrecursionlimit(10000)
 
 
-def get_all_filles(paths):
+def get_all_files(paths):
     folders = []
     for path in paths:
         try:
@@ -23,8 +23,8 @@ def get_all_filles(paths):
 
         except Exception:
             continue
-    get_all_filles(folders)
+    get_all_files(folders)
 
 
 if __name__ == "__main__":
-    get_all_filles([getRootDirectory(), "files"])
+    get_all_files([getRootDirectory(), "files"])

@@ -34,12 +34,12 @@ def get_to_append(i):
 
 def extend_employ(file, range_):
     file.write("[ ")
-    addString = ""
+    add_string = ""
     for i in range(range_[0], range_[1]):
-        addString = addString + get_to_append(str(i))
+        add_string = add_string + get_to_append(str(i))
 
-    addString = addString + " ]"
-    file.write(addString)
+    add_string = add_string + " ]"
+    file.write(add_string)
 
 
 # file = open("C:/PLIKI/Load_tests/users_with_traits2.txt",'a')
