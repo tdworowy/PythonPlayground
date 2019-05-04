@@ -1,3 +1,0 @@
-w Android\sdk\platform-tools adb install [patrh to .apk]
-
-adb install  D:\Google_drive\Apium\ApiumPython\apk\Chess_Free.apk

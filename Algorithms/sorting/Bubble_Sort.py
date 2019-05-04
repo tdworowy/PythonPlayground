@@ -1,7 +1,7 @@
 from random import randint
 
 
-def buble_sort(list_):
+def bubble_sort(list_):
     list_sort = list_[:]
     result = []
     i = 1
@@ -18,7 +18,7 @@ def buble_sort(list_):
 
 if __name__ == '__main__':
     list_sort = [randint(0, 1000) for x in range(1000)]
-    sortedList = buble_sort(list_sort)
+    sortedList = bubble_sort(list_sort)
     print(sortedList)
 
     list_sort.sort()
