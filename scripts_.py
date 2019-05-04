@@ -50,7 +50,7 @@ def recur(num):
         return recur(recur(num + 11))
 
 
-def minimalize_path(grid, num):
+def minimize_path(grid, num):
     """min(x,y)=grid(x,y) + min(min(x+1,y),min(x,y+1)"""
 
     def min(x, y):
