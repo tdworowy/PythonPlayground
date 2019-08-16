@@ -1,7 +1,7 @@
 import _thread
 import socket
 
-from MyUtils import randomString
+from my_utils import randomString
 
 
 class TCP:

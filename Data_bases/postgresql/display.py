@@ -2,8 +2,8 @@ import time
 
 from PIL import Image
 
-from DataBases.postgresql.filesUtilitis import filesUtllitis
-from DataBases.postgresql.utils import randomString
+from Data_bases.postgresql.filesUtilitis import filesUtllitis
+from Data_bases.postgresql.utils import randomString
 
 
 class display():

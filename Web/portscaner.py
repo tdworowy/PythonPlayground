@@ -1,6 +1,6 @@
 from socket import *
 
-from MyUtils.decorators import catch_exception
+from my_utils.decorators import catch_exception
 
 
 @catch_exception

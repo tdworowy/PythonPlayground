@@ -1,5 +1,5 @@
-from DecisionsTrees.CART.DecisionsTreesUtils2 import Utils
-from DecisionsTrees.CART.tree import Cart
+from Decisions_Trees.CART.DecisionsTreesUtils2 import Utils
+from Decisions_Trees.CART.tree import Cart
 
 
 def test():

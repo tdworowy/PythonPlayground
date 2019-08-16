@@ -1,6 +1,6 @@
 from imp import reload
 
-from MyUtils.randomString import generate_random_string
+from my_utils.randomString import generate_random_string
 from Python_Staff.reload_ import changer
 
 f = open("changer.py",'w')

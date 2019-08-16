@@ -1,6 +1,6 @@
 input = "UDDDUDUU"
 
-def counting_valleys(n, s):
+def counting_valleys(s):
     level = 0
     valleys = 0
     in_valley = False
@@ -17,4 +17,4 @@ def counting_valleys(n, s):
 
     return valleys
 
-print(counting_valleys(1, input))
+print(counting_valleys(input))

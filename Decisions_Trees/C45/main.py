@@ -1,7 +1,7 @@
 import csv
 
-from DecisionsTrees.C45.c45 import C45Algorithm
-from DecisionsTrees.data.dataUtils import getDataPath
+from Decisions_Trees.C45.c45 import C45Algorithm
+from Decisions_Trees.data.dataUtils import getDataPath
 
 
 def main():

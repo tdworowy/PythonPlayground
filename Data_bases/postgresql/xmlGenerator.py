@@ -1,5 +1,5 @@
-from DataBases.postgresql.filesUtilitis import filesUtllitis
-from DataBases.postgresql.querys import query
+from Data_bases.postgresql.filesUtilitis import filesUtllitis
+from Data_bases.postgresql.querys import query
 
 
 class xmlGenerator():

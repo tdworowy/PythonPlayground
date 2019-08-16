@@ -1,6 +1,6 @@
 from random import randrange
 
-from DecisionsTrees.CART.DecisionsTreesUtils2 import Utils
+from Decisions_Trees.CART.DecisionsTreesUtils2 import Utils
 
 
 class Cart:

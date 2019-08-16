@@ -1,5 +1,5 @@
 
-from DecisionsTrees.C45.DecisionsTreesUtils import DTUtils
+from Decisions_Trees.C45.DecisionsTreesUtils import DTUtils
 
 
 class C45Algorithm:

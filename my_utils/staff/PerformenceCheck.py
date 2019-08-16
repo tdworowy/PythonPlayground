@@ -1,6 +1,6 @@
 import sys
 
-from MyUtils import myTimer2, mytimer
+from my_utils import myTimer2, mytimer
 
 reps = 10000
 replist = range(reps)

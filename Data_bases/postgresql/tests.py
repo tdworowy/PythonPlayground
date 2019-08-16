@@ -1,6 +1,6 @@
 from psycopg2.tests import unittest
 
-from DataBases.postgresql.postgresConection import postgresConection
+from Data_bases.postgresql.postgresConection import postgresConection
 
 
 class Tests(unittest.TestCase):

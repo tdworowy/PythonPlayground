@@ -1,6 +1,6 @@
 import sys
 
-from MyUtils.myTimer3 import timer3
+from my_utils.myTimer3 import timer3
 
 sys.setrecursionlimit(10000)
 

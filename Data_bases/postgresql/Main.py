@@ -1,7 +1,7 @@
-from DataBases.postgresql.display import display
-from DataBases.postgresql.postgresConection import postgresConection
-from DataBases.postgresql.querys import query
-from DataBases.postgresql.xmlGenerator import xmlGenerator
+from Data_bases.postgresql.display import display
+from Data_bases.postgresql.postgresConection import postgresConection
+from Data_bases.postgresql.querys import query
+from Data_bases.postgresql.xmlGenerator import xmlGenerator
 
 
 def main():
