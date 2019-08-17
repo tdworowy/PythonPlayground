@@ -30,6 +30,6 @@ my_tree=Solution()
 root=None
 for i in T:
     data=i
-    root=my_tree.insert(root, data)
-height= my_tree.get_height(root) - 1
+    root = my_tree.insert(root, data)
+height = my_tree.get_height(root) - 1
 print(height)
