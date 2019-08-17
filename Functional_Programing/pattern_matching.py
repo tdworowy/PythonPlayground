@@ -1,9 +1,21 @@
 from  multipledispatch import dispatch
 
 class Thing(object): pass
-class Rock(Thing): pass
-class Paper(Thing): pass
-class Scissors(Thing): pass
+class Rock(Thing):
+    def __init__(self):
+        self.name = "ROCK"
+    def __repr__(self):
+        return self.name
+class Paper(Thing):
+    def __init__(self):
+        self.name = "PAPER"
+    def __repr__(self):
+        return self.name
+class Scissors(Thing):
+    def __init__(self):
+        self.name = "SCISSORS"
+    def __repr__(self):
+        return self.name
 
 class RPS:
 
