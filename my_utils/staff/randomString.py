@@ -11,4 +11,4 @@ def generate_random_string_all(size):
 
 
 if __name__ == '__main__':
-    print(generate_random_string_all(66))
+    print(generate_random_string_all(12))
