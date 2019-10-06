@@ -2,15 +2,15 @@
 import  pika
 
 
-class conection_:
-    def __init__(self, connectionInfo):
+class Connection_:
+    def __init__(self, connection_info):
         try:
             print("Connecting")
 
-            credentials = pika.PlainCredentials(connectionInfo.getUserName(), connectionInfo.getPassword())
-            parameters = pika.ConnectionParameters(connectionInfo.getIP(),
-                                                   connectionInfo.getPort(),
-                                                   connectionInfo.getvHsot(),
+            credentials = pika.PlainCredentials(connection_info.getUserName(), connection_info.pssword)
+            parameters = pika.ConnectionParameters(connection_info.ip,
+                                                   connection_info.port,
+                                                   connection_info.host,
                                                    credentials)
 
             connection = pika.BlockingConnection(parameters)
@@ -25,9 +25,9 @@ class conection_:
 
 
 
-    def getChannel(self):
+    def get_channel(self):
         return  self.channel
 
 
-    def colse(self):
+    def close(self):
         self.connection.close()

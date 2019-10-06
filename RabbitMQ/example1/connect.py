@@ -3,12 +3,12 @@ import  pika
 from RabbitMQ.example1 import connectionInfo
 
 
-def conect():
+def connect():
     try:
         print("Connecting")
 
-        credentials = pika.PlainCredentials(connectionInfo.getUserName(), connectionInfo.getPassword())
-        parameters = pika.ConnectionParameters(connectionInfo.getIP(),
+        credentials = pika.PlainCredentials(connectionInfo.get_user_name(), connectionInfo.get_password())
+        parameters = pika.ConnectionParameters(connectionInfo.get_ip(),
                                                5672,
                                                '/',
                                                credentials)
@@ -16,11 +16,12 @@ def conect():
         connection = pika.BlockingConnection(parameters)
         global channel
         channel = connection.channel()
-    except:
+    except Exception as ex:
         print("Connection failed")
+        print(ex)
     else:
         print("Connection succeedd")
 
 
-def colse():
+def close():
     connection.close()

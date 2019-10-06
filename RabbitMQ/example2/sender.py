@@ -1,15 +1,15 @@
 
-class sneder:
-    def __init__(self, conect,connectionInfo):
-        self.connect = conect
-        self.conectionInfo = connectionInfo
+class sender:
+    def __init__(self, connect, connection_info):
+        self.connect = connect
+        self.connection_info = connection_info
     def send (self,message):
-        self.connect.getChannel().queue_declare(queue=self.conectionInfo.getQueue())
-        self.connect.getChannel().basic_publish(exchange='',
-                                              routing_key=self.conectionInfo.getQueue(),
-                                              body=message)
+        self.connect.get_channel().queue_declare(queue=self.connection_info.queue)
+        self.connect.get_channel().basic_publish(exchange='',
+                                                 routing_key=self.connection_info.queue,
+                                                 body=message)
         print("Message Sent %r" % message)
 
-    def getQueue(self):
-        return self.conectionInfo.getQueue()
+    def get_queue(self):
+        return self.connection_info.get_queue()
 

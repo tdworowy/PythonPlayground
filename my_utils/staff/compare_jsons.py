@@ -20,8 +20,8 @@ def get_element(file, ele):
 
 def compere(list1, list2):
     first_set = set(map(tuple, list1))
-    secnd_set = set(map(tuple, list2))
-    return first_set.symmetric_difference(secnd_set)
+    second_set = set(map(tuple, list2))
+    return first_set.symmetric_difference(second_set)
 
 
 if __name__ == "__main__":

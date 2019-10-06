@@ -3,36 +3,36 @@ import random
 import threading
 import time
 
-from RabbitMQ.example2.connect import conection_
-from RabbitMQ.example2.connectionInfo import conectionInfo
+from RabbitMQ.example2.connect import Connection_
+from RabbitMQ.example2.connectionInfo import connection_info
 from RabbitMQ.example2.receiver import reciver
-from RabbitMQ.example2.sender import sneder
+from RabbitMQ.example2.sender import sender
 
 
-def prepareSenders(queues):
+def prepare_senders(queues):
     senders = []
     for queue in queues:
-        conInfo = conectionInfo(queue)
-        conection1 = conection_(conInfo)
-        senders.append(sneder(conection1,conInfo))
+        con_info = connection_info(queue)
+        connection1 = Connection_(con_info)
+        senders.append(sender(connection1, con_info))
     return senders
 
-def prepareRecivers(queues):
-    recivers = []
+def prepare_receivers(queues):
+    receivers = []
     for queue in queues:
-        conInfo = conectionInfo(queue)
-        conection1 = conection_(conInfo)
-        recivers.append(reciver(conection1,conInfo))
-    return recivers
+        con_info = connection_info(queue)
+        connection1 = Connection_(con_info)
+        receivers.append(reciver(connection1,con_info))
+    return receivers
 
 
-def sedningThread(sender):
-    while(True):
-        message = sender.getQueue()+","+ str(random.randrange(1, 10000)) +","+ datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+def sending_thread(sender):
+    while True:
+        message = sender.get_queue() + "," + str(random.randrange(1, 10000)) + "," + datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         sender.send(message)
         time.sleep(random.uniform(0.05, 4.0))
 
-def receivingThread(reciver):
+def receiving_thread(reciver):
     while(True):
         reciver.receive()
         time.sleep(random.uniform(0.05, 4.0))
@@ -40,24 +40,24 @@ def receivingThread(reciver):
 
 def main():
     queues = ["Queue1", "Queue2", "Queue3"]
-    senders = prepareSenders(queues)
-    recivers = prepareRecivers(queues)
+    senders = prepare_senders(queues)
+    receivers = prepare_receivers(queues)
     flag = True
     while (flag):
         send = input("send :s , recive:r , bouth:b ")
         if send not in ('s','r','b') : print("incorect")
         else: flag = False
     try:
-     if(send in ('s','b')):
+     if send in ('s', 'b'):
          for sender in senders:
-            threading.Thread(target=sedningThread,
-                         args=(sender,),
-                         ).start()
-     if (send in ('r', 'b')):
-        for reciver in recivers:
-             threading.Thread(target=receivingThread,
-                         args=(reciver,),
-                         ).start()
+            threading.Thread(target=sending_thread,
+                             args=(sender,),
+                             ).start()
+     if send in ('r', 'b'):
+        for reciver in receivers:
+             threading.Thread(target=receiving_thread,
+                              args=(reciver,),
+                              ).start()
 
     except Exception as ex:
         print("Error: unable to start thread")

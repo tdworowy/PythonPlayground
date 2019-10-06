@@ -1,22 +1,22 @@
 
 #conectionInfo
-def getIP():
+def get_ip():
     return  "192.168.99.100"
 
-def getPythonQueue():
+def get_python_queue():
     return  "PythonQueue"
 
-def getJavaQueue():
+def get_java_queue():
     return "JavaQueue"
 
-def getUserName ():
+def get_user_name ():
     return "admin"
 
-def getPassword():
+def get_password():
     return "s0m3p4ssw0rd"
 
-def getPort():
+def get_port():
     return 5672
 
-def getvHsot():
+def get_host():
     return "/"

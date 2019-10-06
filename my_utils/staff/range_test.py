@@ -1,10 +1,10 @@
-def range_test(*argsCheck):
+def range_test(*args_check):
     def on_decorator(func):
         if not __debug__:
             return func
         else:
             def on_call(*args):
-                for (ix, low, high) in argsCheck:
+                for (ix, low, high) in args_check:
                     if args[ix] < low or args[ix] > high:
                         errmsq = 'Argument %s is not in range %s...%s ' % (ix, low, high)
                         raise TypeError(errmsq)
@@ -18,7 +18,7 @@ def range_test(*argsCheck):
 trace = True
 
 
-def range_test_extend(**argchecks):
+def range_test_extend(**arg_checks):
     def on_decorator(func):
         if not __debug__:
             return func
@@ -32,7 +32,7 @@ def range_test_extend(**argchecks):
                 positionals = list(allargs)
                 positionals = positionals[:len(pargs)]
 
-                for (argname, (low, high)) in argchecks.items():
+                for (argname, (low, high)) in arg_checks.items():
                     if argname in kwargs:
                         if kwargs[argname] < low or kwargs[argname] > high:
                             errmsq = '%s Argument %s is not in range %s...%s ' % (funcname, argname, low, high)

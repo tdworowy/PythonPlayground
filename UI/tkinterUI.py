@@ -19,7 +19,7 @@ class GUI:
 
         self.flag = False
 
-    def rectangle_cordinats(self):
+    def rectangle_coordinates(self):
 
         try:
             x = 50
@@ -33,7 +33,7 @@ class GUI:
     def call_back(self):
         try:
             if not self.flag:
-                coordinate = self.rectangle_cordinats()
+                coordinate = self.rectangle_coordinates()
                 self.rectangle = self.canvas.create_rectangle(coordinate['x'], coordinate['y'], coordinate['x1'],
                                                               coordinate['y1'], fill="blue")
 
@@ -49,7 +49,7 @@ class GUI:
         except Exception as ex:
             print(ex)
 
-    def main_Loop(self):
+    def main_loop(self):
         self.button.pack()
         self.canvas.pack()
         self.entryW.pack()
@@ -60,7 +60,7 @@ class GUI:
 
 def main():
     ui = GUI()
-    ui.main_Loop()
+    ui.main_loop()
 
 
 if __name__ == "__main__":

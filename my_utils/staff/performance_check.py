@@ -1,6 +1,6 @@
 import sys
 
-from my_utils import myTimer2, mytimer
+from my_utils import timer2, timmer1
 
 reps = 10000
 replist = range(reps)
@@ -62,18 +62,18 @@ def gen_function2():
 
 print(sys.version)
 for test in (for_loop, list_comp, map_call, gen_expr, gen_function):
-    elapsed, result = mytimer.timer(test)
+    elapsed, result = timmer1.timer(test)
     print('-' * 33)
     print('%-9s: %.5f =>[%s...%s]' % (test.__name__, elapsed, result[0], result[-1]))
 
 print(sys.version)
 for test in (for_loop2, list__comp2, map_call2, gen_expr2, gen_function2):
-    elapsed, result = mytimer.timer(test)
+    elapsed, result = timmer1.timer(test)
     print('-' * 33)
     print('%-9s: %.5f =>[%s...%s]' % (test.__name__, elapsed, result[0], result[-1]))
 
 print(sys.version)
-for tester in (myTimer2.timer, myTimer2.best):
+for tester in (timer2.timer, timer2.best):
     print(('<%s>' % tester.__name__))
     for test in (for_loop, list_comp, map_call, gen_expr, gen_function):
         elapsed, result = tester(test)
@@ -81,7 +81,7 @@ for tester in (myTimer2.timer, myTimer2.best):
         print('%-9s: %.5f =>[%s...%s]' % (test.__name__, elapsed, result[0], result[-1]))
 
 print(sys.version)
-for tester in (myTimer2.timer, myTimer2.best):
+for tester in (timer2.timer, timer2.best):
     print(('<%s>' % tester.__name__))
     for test in (for_loop2, list__comp2, map_call2, gen_expr2, gen_function2):
         elapsed, result = tester(test)
