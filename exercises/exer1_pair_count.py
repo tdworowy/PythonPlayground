@@ -9,3 +9,14 @@ def sock_merchant(ar):
         pairs = pairs + int(Counter(ar)[ele]/2)
     return pairs
 print(sock_merchant(ar))
+print("_____________")
+
+
+
+
+def sock_merchant(ar):
+    pairs = 0
+    for ele in set(ar):
+       print(int(Counter(ar)[ele]/2))
+
+sock_merchant(ar)
