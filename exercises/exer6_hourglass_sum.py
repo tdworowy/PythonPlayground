@@ -54,12 +54,8 @@ def get_all_hourgs(arr):
    return hourugs
 
 def hourglass_sum(arr):
-    max_sum = -1000
-    for horug in get_all_hourgs(arr):
-        horug_sum = sum(horug)
-        if horug_sum > max_sum:
-            max_sum = horug_sum
-    return max_sum
+    return max(list(map(sum,get_all_hourgs(arr))))
+
 
 
 print(hourglass_sum(input4))
