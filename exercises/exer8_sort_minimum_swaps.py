@@ -46,6 +46,8 @@ def minimum_swaps(arr) :
     return swap
 
 #print(minimumSwaps3(x2)) #9
-print(minimum_swaps3(x3)) #46
+#print(minimum_swaps3(x3)) #46
+#print(minimum_swaps(x3))
+print(minimum_swaps(x))
 # swap(3, 7 ,x2)
 # print(x2)

@@ -1,81 +1,81 @@
-from Data_bases.postgresql.display import display
-from Data_bases.postgresql.postgresConection import postgresConection
-from Data_bases.postgresql.querys import query
-from Data_bases.postgresql.xmlGenerator import xmlGenerator
+from Data_bases.postgresql.display import Display
+from Data_bases.postgresql.PostgresConnection import PostgresConnection
+from Data_bases.postgresql.querys import Query
+from Data_bases.postgresql.XmlGenerator import XmlGenerator
 
 
 def main():
     try:
 
-        displayInput = input("Display example pictures ? y/n ")
-        conectionString = "NoSql", "User", "test10"
-        con = postgresConection(*conectionString)
-        q = query(con.getConection)
-        xml = xmlGenerator(con.getConection)
+        display_input = input("Display example pictures ? y/n ")
+        connection_string = "NoSql", "User", "test10"
+        con = PostgresConnection(*connection_string)
+        q = Query(con.get_connection)
+        xml = XmlGenerator(con.get_connection)
 
-        q.initLoad()
-        q.customQuery("select * from workers")
+        q.init_load()
+        q.custom_query("select * from workers")
 
-        q.getHierarchyFrom("AGENT")
-        q.getHierarchyFrom("HOMER")
+        q.get_hierarchy_from("AGENT")
+        q.get_hierarchy_from("HOMER")
 
-        q.getHierarchyLast("AGENT")
-        q.getHierarchyLast("HORSMAN")
-        q.getHierarchyLast("HOMER")
+        q.get_hierarchy_last("AGENT")
+        q.get_hierarchy_last("HORSMAN")
+        q.get_hierarchy_last("HOMER")
 
-        q.getHierarchyExa("BOSS.AGENT.HORSMAN")
-        q.getHierarchyExa("BOSS.AGENT")
-        q.getHierarchyExa("BOSS")
+        q.get_hierarchy_exa("BOSS.AGENT.HORSMAN")
+        q.get_hierarchy_exa("BOSS.AGENT")
+        q.get_hierarchy_exa("BOSS")
 
         print("INSERT DATA")
         q.insertNewWorker("6", "SpongeBob", "SquarePants", "BOSS.SPONGE")
         q.insertNewPicturesLinks("a_56ad0355.jpg", "6")
-        q.insertNewPictures("6", "a_56ad0355.jpg")
+        q.insert_new_pictures("6", "a_56ad0355.jpg")
 
 
-        if(displayInput is 'y'):
-                ui = display()
-                picturesList = [q.getPicture(1),q.getPicture(2),q.getPicture(3)]
-                ui.displayPicturesFomDB(picturesList)
+        if display_input is 'y':
+                ui = Display()
+                pictures_list = [q.get_picture(1), q.get_picture(2), q.get_picture(3)]
+                ui.display_pictures_fom_db(pictures_list)
 
-                picturesList = [q.getPicturePath(1),q.getPicturePath(2)]
-                ui.displayPicturesViaPath(picturesList)
+                pictures_list = [q.get_picture_path(1), q.get_picture_path(2)]
+                ui.display_pictures_via_path(pictures_list)
 
-                picturesList = [q.getPicture(6)]
-                ui.displayPicturesFomDB(picturesList)
+                pictures_list = [q.get_picture(6)]
+                ui.display_pictures_fom_db(pictures_list)
 
-                picturesList = [q.getPicturePath(6)]
-                ui.displayPicturesViaPath(picturesList)
+                pictures_list = [q.get_picture_path(6)]
+                ui.display_pictures_via_path(pictures_list)
 
 
-        xml.exportToXML(1)
-        xml.exportToXML(6)
+        xml.export_to_xml(1)
+        xml.export_to_xml(6)
 
         title= ("Title", "Rick and Morty")
         seasons = ("Seasons", "2")
         genre1 = ("Genre", "SF")
         genre2= ("Genre", "Comedy")
-        xml.generateXML("Sanchez",title,seasons,genre1,genre2)
+        xml.generate_xml("Sanchez", title, seasons, genre1, genre2)
 
-        q.insertXML("Sanchez","1")
+        q.insert_xml("Sanchez", "1")
         title = ("Title", "Archer")
         seasons = ("Seasons", "7")
         genre1 = ("Genre", "Action")
         genre2 = ("Genre", "Comedy")
-        xml.generateXML("Archer", title, seasons, genre1, genre2)
+        xml.generate_xml("Archer", title, seasons, genre1, genre2)
 
-        q.insertXML("Archer", "2")
+        q.insert_xml("Archer", "2")
 
 
-        q.getGenreFromXMLBeID("1")
-        q.getGenreFromXMLBeID("2")
-        q.getGenreFromXML()
+        q.get_genre_from_xml_be_id("1")
+        q.get_genre_from_xml_be_id("2")
+        q.get_genre_from_xml()
 
     except Exception as ex:
        print(ex)
     finally:
-       q.customQuery("select * from workers")
-       q.dropTable()
+       q.custom_query("select * from workers")
+       q.drop_table()
 
 if __name__ == "__main__":
     main()

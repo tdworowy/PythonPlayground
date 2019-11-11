@@ -1,15 +1,15 @@
 from psycopg2.tests import unittest
 
-from Data_bases.postgresql.postgresConection import postgresConection
+from Data_bases.postgresql.PostgresConnection import PostgresConnection
 
 
 class Tests(unittest.TestCase):
 
     def setUp(self):
-        self.con = postgresConection("NoSql","User","test10")
+        self.con = PostgresConnection("NoSql", "User", "test10")
 
 
-    def test_conection(self):
+    def test_connection(self):
         self.assertTrue(self.con is not None)
 
 if __name__ == '__main__':

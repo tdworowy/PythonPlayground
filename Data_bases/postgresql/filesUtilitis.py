@@ -5,37 +5,37 @@ from os.path import isfile, join
 import psycopg2
 
 
-class filesUtllitis():
+class FilesUtils():
     def __init__(self):
         self.path = os.path.dirname(os.path.abspath(__file__)) + "\Data\\"
-        self.pathNew = os.path.dirname(os.path.abspath(__file__)) + "\\newData\\"
-        self.pathExp = os.path.dirname(os.path.abspath(__file__)) + "\ExportedData\\"
+        self.new_path = os.path.dirname(os.path.abspath(__file__)) + "\\newData\\"
+        self.export_path = os.path.dirname(os.path.abspath(__file__)) + "\ExportedData\\"
 
 
-    def fileToStream(self, file,path):
+    def file_to_stream(self, file, path):
 
-        fullPath = path + file
+        full_path = path + file
 
-        print("Full path:", fullPath)
+        print("Full path:", full_path)
 
-        with open(fullPath, "rb") as imageFile:
+        with open(full_path, "rb") as imageFile:
             byte = psycopg2.Binary(imageFile.read())
         return byte
 
-    def getFiles(self,path):
-        onlyfiles = [f for f in listdir(path) if isfile(join(path, f))]
-        return onlyfiles
+    def get_files(self, path):
+        only_files = [f for f in listdir(path) if isfile(join(path, f))]
+        return only_files
 
 
 
-    def removeFile(self, file):
+    def remove_file(self, file):
         os.remove(self.path + file)
 
-    def getPath(self):
+    def get_path(self):
         return  self.path
 
-    def getPathNew(self):
-        return self.pathNew
+    def get_new_path(self):
+        return self.new_path
 
-    def getPathExp(self):
-        return self.pathExp
+    def get_path_exp(self):
+        return self.export_path
