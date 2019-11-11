@@ -1,4 +1,0 @@
-#-*- coding: latin-1 -*-
-
-s = 'ייי'
-print(s)
