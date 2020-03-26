@@ -1,16 +1,17 @@
 class Node:
-    def __init__(self,data):
+    def __init__(self, data):
         self.data = data
-        self.next = None 
-class Solution: 
-    def display(self,head):
+        self.next = None
+
+
+class Solution:
+    def display(self, head):
         current = head
         while current:
-            print(current.data,end=' ')
+            print(current.data, end=' ')
             current = current.next
 
-
-    def insert(self,head,data):
+    def insert(self, head, data):
         if head is None:
             head = Node(data)
         else:
@@ -18,14 +19,15 @@ class Solution:
             while current.next:
                 current = current.next
             else:
-                 current.next = Node(data)
+                current.next = Node(data)
         return head
+
+
 if __name__ == "__main__":
-    my_list= Solution()
+    my_list = Solution()
 
-    head=None
-    for i in [2,3,4,1]:
-        data=i
+    head = None
+    for i in [2, 3, 4, 1]:
+        data = i
         head = my_list.insert(head, data)
-    my_list.display(head) # 2 3 4 1
-
+    my_list.display(head)  # 2 3 4 1

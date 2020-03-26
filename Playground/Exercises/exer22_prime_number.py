@@ -6,6 +6,7 @@ def is_prime(n):
             return False
     return True
 
+
 def is_prime(n):
     if n <= 1:
         return False
@@ -33,7 +34,7 @@ def is_prime(n):
 
 
 if __name__ == "__main__":
-    for i in [3,12,5,7]:
+    for i in [3, 12, 5, 7]:
         if is_prime(i):
             print("Prime")
         else:

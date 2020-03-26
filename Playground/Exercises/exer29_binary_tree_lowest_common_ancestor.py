@@ -1,4 +1,5 @@
-from binarytree import  Node
+from binarytree import Node
+
 
 class BinarySearchTree:
     def __init__(self):
@@ -28,15 +29,17 @@ class BinarySearchTree:
 
 
 def lca(root, v1, v2):
-  node = root
-  while node:
-    if max(v1, v2) < node.value :
-      node = node.left
-    elif min(v1, v2) > node.value:
-      node = node.right
-    else:
-      break
-  return node
+    node = root
+    while node:
+        if max(v1, v2) < node.value:
+            node = node.left
+        elif min(v1, v2) > node.value:
+            node = node.right
+        else:
+            break
+    return node
+
+
 if __name__ == "__main__":
     tree = BinarySearchTree()
     arr = [9, 7, 8, 5, 6, 4, 3, 1]
@@ -49,4 +52,3 @@ if __name__ == "__main__":
     ans = lca(tree.root, v[0], v[1])
     print(ans.value)
     print(tree.root)
-

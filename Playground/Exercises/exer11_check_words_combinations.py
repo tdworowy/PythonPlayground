@@ -5,49 +5,54 @@ pwsit fsqsu hxdpk iamny btnvm wfzpu vflpk lrfqn zxdts gkehg scwml igtnb jruce hf
 import threading
 from multiprocessing import Queue
 
+
 def check(note, magazine):
     for word in note:
         if word not in magazine:
-            return  False
+            return False
         else:
             magazine.remove(word)
     else:
         return True
 
-def partitions ( lst, n ):
-    return [lst[i::n] for i in range(n) ]
+
+def partitions(lst, n):
+    return [lst[i::n] for i in range(n)]
+
 
 def check_magazine(magazine, note):
     if len(note) < 1000:
-        if check(note,magazine):
+        if check(note, magazine):
             print("Yes")
         else:
             print("No")
     else:
-       threads = []
-       que = Queue()
-       for partition in  partitions(note,30):
-           thread =threading.Thread(target=lambda q: q.put(check(partition, magazine)),args=(que,))
-           thread.start()
-           threads.append(thread)
-       for thr in threads:
-           thr.join()
-       while not que.empty():
-           if not que.get():
-               print("No")
-               return 0
-       else:
-           print("Yes")
+        threads = []
+        que = Queue()
+        for partition in partitions(note, 30):
+            thread = threading.Thread(target=lambda q: q.put(check(partition, magazine)), args=(que,))
+            thread.start()
+            threads.append(thread)
+        for thr in threads:
+            thr.join()
+        while not que.empty():
+            if not que.get():
+                print("No")
+                return 0
+        else:
+            print("Yes")
 
 
 def check_(magazine, note):
     return not (Counter(note) - Counter(magazine))
+
 
 def check_magazine(magazine, note):
     if check_(magazine, note):
         print("Yes")
     else:
         print("No")
+
 
 if __name__ == "__main__":
     check_magazine(s1.split(" "), s1.split(" "))

@@ -19,6 +19,6 @@ def bubble_sort(list_):
     print("First Element: %s" % result[0])
     print("Last Element: %s" % result[-1])
 
-if __name__ == "__main__":
 
-    bubble_sort([1,2,3])
+if __name__ == "__main__":
+    bubble_sort([1, 2, 3])
