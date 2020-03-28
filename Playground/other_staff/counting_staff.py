@@ -1,6 +1,7 @@
 def test(A, B):
     return (5 * ((A + B) / 4 + B + A) / 4) - (A + B) / 4
 
+
 if __name__ == "__main__":
     print(test(1, 1))
     print(test(100, 100))
