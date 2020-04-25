@@ -1,6 +1,6 @@
 from itertools import combinations_with_replacement
 
-if __name__ == "_main_":
+if __name__ == "__main__":
 
     count = 0
     for c in combinations_with_replacement("TBL", 4):
