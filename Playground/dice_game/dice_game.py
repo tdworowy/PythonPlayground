@@ -24,11 +24,11 @@ def find_the_best_dice(dices):
         if wins[1] > wins[0]:
             wins_dices[c[1]] += 1
 
-    max_value = max(list(wins_dices.items()))
-    if max_value[1] < len(dices) - 1:
+    max_value = max(list(wins_dices.values()))
+    if max_value < len(dices) - 1:
         return -1
     else:
-        return max_value[0]
+        return list(wins_dices.keys())[list(wins_dices.values()).index(max_value)]
 
 
 def compute_strategy(dices):
@@ -37,11 +37,21 @@ def compute_strategy(dices):
     strategy = dict()
     strategy["choose_first"] = True
     strategy["first_dice"] = 0
-    for i in range(len(dices)):
-        strategy[i] = (i + 1) % len(dices)
 
-    # TODO
+    optimal_dice = find_the_best_dice(dices)
+    if optimal_dice != -1:
+        strategy["first_dice"] = optimal_dice
 
+    else:
+        strategy["choose_first"] = False
+        strategy.pop("first_dice", None)
+        for i in range(len(dices)):
+            for j in range(i + 1, len(dices)):
+                wins = count_wins(dices[i], dices[j])
+                if wins[0] < wins[1]:
+                    strategy[i] = j
+                elif wins[0] > wins[1]:
+                    strategy[j] = i
     return strategy
 
 
@@ -68,5 +78,9 @@ if __name__ == "__main__":
 
     dices4 = [[1, 2, 3, 4, 5, 6], [1, 1, 2, 4, 5, 7], [1, 2, 2, 3, 4, 7]]
     best_dice = find_the_best_dice(dices4)
-    print(best_dice)  # -1 is inncorrect
-    # assert best_dice == -1
+    assert best_dice == 0
+
+    input = [[1, 1, 4, 6, 7, 8], [2, 2, 2, 6, 7, 7], [3, 3, 3, 5, 5, 8]]
+    excepted = {'choose_first': False, 0: 1, 2: 0, 1: 2}
+    output = compute_strategy(input)
+    assert output == excepted
