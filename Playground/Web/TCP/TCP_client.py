@@ -8,6 +8,7 @@ def main1():
         message = input("Message:  ")
         tcp.client_sent(message)
 
+
 def main2():
     tcp1 = TCP('127.0.0.1', 65524)
     tcp1.client_connect()
@@ -16,5 +17,7 @@ def main2():
 
     tcp1.client_sent("Test1")
     tcp2.client_sent("Test2")
+
+
 if __name__ == "__main__":
     main2()
