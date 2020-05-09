@@ -28,8 +28,8 @@ def main():
         q.get_hierarchy_exa("BOSS")
 
         print("INSERT DATA")
-        q.insertNewWorker("6", "SpongeBob", "SquarePants", "BOSS.SPONGE")
-        q.insertNewPicturesLinks("a_56ad0355.jpg", "6")
+        q.insert_new_worker("6", "SpongeBob", "SquarePants", "BOSS.SPONGE")
+        q.insert_new_pictures_links("a_56ad0355.jpg", "6")
         q.insert_new_pictures("6", "a_56ad0355.jpg")
 
 

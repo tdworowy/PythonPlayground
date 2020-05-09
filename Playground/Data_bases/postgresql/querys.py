@@ -5,7 +5,7 @@ from Data_bases.postgresql.filesUtilitis import FilesUtils
 path = os.path.dirname(os.path.abspath(__file__)) + "\Dane\\"
 
 
-class Query():
+class Query:
     def __init__(self, connection):
         self.connection = connection
         self.cursor = connection.cursor()
@@ -47,12 +47,15 @@ class Query():
                    (5,'Homer ','Simpson','BOSS.AGENT.HORSMAN.HOMER');"""
         self.custom_query(sql.strip())
 
-    def insertNewWorker(self, id, firstName, lastName, hierarchy):
-        sql = "INSERT INTO workers (id,first_name,last_name,hierarchy) VALUES('{x}','{x1}','{x2}','{x3}')".format(x=id,x1=firstName,x2=lastName, x3=hierarchy)
+    def insert_new_worker(self, id, first_name, last_name, hierarchy):
+        sql = "INSERT INTO workers (id,first_name,last_name,hierarchy) VALUES('{x}','{x1}','{x2}','{x3}')".format(x=id,
+                                                                                                                  x1=first_name,
+                                                                                                                  x2=last_name,
+                                                                                                                  x3=hierarchy)
         self.custom_query(sql.strip())
         self.connection.commit()
 
-    def insertPictures(self):
+    def insert_pictures(self):
         fs = FilesUtils()
         i = 1
         for file in fs.get_files(fs.get_path()):
@@ -63,15 +66,15 @@ class Query():
 
             self.custom_query(sql.strip())
 
-    def insert_new_pictures(self, id, fileName):
+    def insert_new_pictures(self, id, file_name):
         fs = FilesUtils()
         sql = """update workers
                 set picture = {x}
-                WHERE id = {y}""".format(x=str(fs.file_to_stream(fileName, fs.get_new_path())), y=id)
+                WHERE id = {y}""".format(x=str(fs.file_to_stream(file_name, fs.get_new_path())), y=id)
         self.custom_query(sql.strip())
         self.connection.commit()
 
-    def insertPicturesLinks(self):
+    def insert_pictures_links(self):
         fs = FilesUtils()
         i = 1
         for file in fs.get_files(fs.get_path()):
@@ -82,7 +85,7 @@ class Query():
             i += 1
             self.custom_query(sql.strip())
 
-    def insertNewPicturesLinks(self, picture, id):
+    def insert_new_pictures_links(self, picture, id):
         fs = FilesUtils()
         path = "'" + str(fs.get_new_path() + picture).replace("\\", "\\\\") + "'"
         sql = """update workers
@@ -118,7 +121,7 @@ class Query():
         self.custom_query(sql.strip())
 
     def get_genre_from_xml_be_id(self, id):
-        sql = "SELECT  xpath('/INFO/Genre/text()',xml) from workers  where id ="+id
+        sql = "SELECT  xpath('/INFO/Genre/text()',xml) from workers  where id =" + id
         print("Get genre be id: ")
         self.custom_query(sql.strip())
 
@@ -127,12 +130,10 @@ class Query():
         print("Get all genres")
         self.custom_query(sql.strip())
 
-
-
-    def insert_xml(self, xmlFileName, id):
+    def insert_xml(self, xml_file_name, id):
         fs = FilesUtils()
-        xml_file = open(fs.get_new_path() + xmlFileName + ".xml")
-        xml_data =xml_file.read()
+        xml_file = open(fs.get_new_path() + xml_file_name + ".xml")
+        xml_data = xml_file.read()
 
         sql = """update workers
                    set XML = '{x}'
@@ -140,15 +141,14 @@ class Query():
         self.custom_query(sql.strip())
         self.connection.commit()
 
-
     def init_load(self):
         print("***Start initial data Load***")
         try:
-            self.add_Itree_extension() #need to be run only onece
+            self.add_Itree_extension()  # need to be run only onece
             self.create_table()
             self.insert_data()
-            self.insertPicturesLinks()
-            self.insertPictures()
+            self.insert_pictures_links()
+            self.insert_pictures()
             self.connection.commit()
             print("***initial data Load Completed***")
         except Exception as ex:

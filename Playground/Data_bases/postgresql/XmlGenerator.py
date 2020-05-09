@@ -2,7 +2,7 @@ from Data_bases.postgresql.filesUtilitis import FilesUtils
 from Data_bases.postgresql.querys import Query
 
 
-class XmlGenerator():
+class XmlGenerator:
     def __init__(self, connection):
         self.connection = connection
         self.cursor = connection.cursor()

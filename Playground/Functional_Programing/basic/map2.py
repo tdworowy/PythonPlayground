@@ -1,20 +1,20 @@
+def inc(x): return x + 10
 
-def inc(x):return x +10
+
 if __name__ == "__main__":
-    counters = [1,2,3,4,5,6,7,8]
-    mapa = map(inc,counters)
-    mapaL = list(mapa)
-    print(mapaL)
+    counters = [1, 2, 3, 4, 5, 6, 7, 8]
+    map1 = map(inc, counters)
+    mapL = list(map1)
+    print(mapL)
 
+    map2 = map((lambda x: x + 3), counters)
 
-    mapa2 = map((lambda x : x+3),counters)
+    mapL = list(map2)
+    print(mapL)
 
-    mapaL = list(mapa2)
-    print(mapaL)
+    print(pow(3, 4))
 
-    print(pow(3,4))
+    map3 = map(pow, [1, 2, 3], [1, 2, 3])
 
-    mapa3=map(pow,[1,2,3],[1,2,3])
-
-    mapaL = list(mapa3)
-    print(mapaL)
+    mapL = list(map3)
+    print(mapL)

@@ -6,18 +6,18 @@ from Data_bases.postgresql.filesUtilitis import FilesUtils
 from Data_bases.postgresql.utils import random_string
 
 
-class Display():
+class Display:
     def __init__(self):
 
         self.fu = FilesUtils()
         self.path = self.fu.get_path()
 
-    def display_picture_from_db(self, memoryView):
+    def display_picture_from_db(self, memory_view):
         try:
             x = random_string(30)
             temp_file_name = 'tempFile' + x + '.jpg'
             temp_file_path = self.path + temp_file_name
-            byte = bytes(memoryView[0][0])  # memoryView to lista krotek obiektów memoryview
+            byte = bytes(memory_view[0][0])  # memoryView to lista krotek obiektów memoryview
             print(byte)
             open(temp_file_path, 'wb').write(byte)
             self.image = Image.open(temp_file_path).show()
@@ -30,9 +30,9 @@ class Display():
             time.sleep(2)
             self.fu.remove_file(temp_file_name)
 
-    def display_pictures_fom_db(self, memoryViews):
+    def display_pictures_fom_db(self, memory_views):
 
-        for view in memoryViews:
+        for view in memory_views:
             try:
 
                 input("press any key to display next picture: ")

@@ -12,6 +12,7 @@ class QuoteResource:
         }
         resp.body = json.dump(quote)
 
+
 if __name__ == "__main__":
     api = falcon.API()
     api.add_route('/quote', QuoteResource())
