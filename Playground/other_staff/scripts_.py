@@ -78,9 +78,9 @@ def perfect_number(n):
     return sum == n
 
 
-# i thin it don't work
+# i think it doesn't work
 #TODO
-def magic_squer(size):
+def magic_square(size):
     count = size ** 2
     matrix = [[(size * y) + x + 1 for x in range(size)] for y in range(size)]
     for i in range(0, size // 4):
@@ -118,5 +118,5 @@ if __name__ == "__main__":
     # print(x(0, 0))
     # x = sum([i for i in range(10001) if perfect_number(i)])
     # print(x)
-    for row in magic_squer(4):
+    for row in magic_square(4):
         print(row)

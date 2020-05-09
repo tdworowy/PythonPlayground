@@ -14,6 +14,7 @@ class TestStaff:
             funcs["Name" + str(i)] = fun
         return funcs
 
+
 if __name__ == "__main__":
     x = TestStaff()
     functions = x.generate_functions()

@@ -5,7 +5,7 @@ if __name__ == "__main__":
     for i in range(1, 10000):
         A = list(range(1, 11))
         shuffle(A)
-        shufled = A[:]
+        shuffled = A[:]
         swaps = 0
         for i in range(len(A)):
 
@@ -15,7 +15,7 @@ if __name__ == "__main__":
                     min_idx = j
             A[i], A[min_idx] = A[min_idx], A[i]
             swaps += 1
-        result[swaps] = shufled
+        result[swaps] = shuffled
 
     max_swaps = max(result.keys())
     print(result[max_swaps])
