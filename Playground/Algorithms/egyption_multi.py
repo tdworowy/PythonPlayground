@@ -34,7 +34,7 @@ class MultiTests(unittest.TestCase):
     def test_multiplication(self):
         for tuple_ in self.args:
             print("%s * %s = %s" % tuple_)
-            res =multi(tuple_[0], tuple_[1])
+            res = multi(tuple_[0], tuple_[1])
             print("RESULT: %s" % res)
             assert res == tuple_[2]
 
