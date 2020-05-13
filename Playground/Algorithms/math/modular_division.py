@@ -11,14 +11,11 @@ def extended_gcd(a: int, b: int) -> tuple:
     return d, x, y
 
 
-def diophantine(a, b, c):
-    ex_gcd = extended_gcd(a, b)
-    assert c % ex_gcd[0] == 0
-    z = c / ex_gcd[0]
-    return ex_gcd[1] * z, ex_gcd[2] * z
-
-
-eq1 = (6, 9, 27)
-eq2 = (5, 3, 22)
-print(diophantine(*eq1))
-print(diophantine(*eq2))
+def divide(a: int, b: int, n: int) -> int:
+    ex_gcd = extended_gcd(a, n)
+    assert n > 1 and a > 0 and ex_gcd[0] == 1
+    d, s, t = ex_gcd[0], ex_gcd[1], ex_gcd[2]
+    s %= n
+    x = (b * s) % n
+    assert x >= 0
+    return x

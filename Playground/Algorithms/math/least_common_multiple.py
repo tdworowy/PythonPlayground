@@ -1,4 +1,4 @@
-def gcd(a, b):
+def gcd(a: int, b: int) -> int:
     while a > 0 and b > 0:
         if a >= b:
             a = a % b
@@ -8,8 +8,8 @@ def gcd(a, b):
     return max(a, b)
 
 
-def lcm(a, b):
-    return (a * b) / gcd(a, b)
+def lcm(a: int, b: int) -> int:
+    return (a * b) // gcd(a, b)
 
 
 print(lcm(2, 3))

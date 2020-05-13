@@ -1,5 +1,5 @@
 def extended_gcd(a: int, b: int) -> tuple:
-    assert a >= b >= 0 and a + b > 0
+    assert a >= 0 and b >= 0 and a + b > 0
 
     if b == 0:
         d, x, y = a, 1, 0
