@@ -8,15 +8,15 @@ def fast_modular_exponentiation_(b, k, m):
 def fast_modular_exponentiation(b, e, m):
     """for all K"""
     n = ""
-    answer = 1
+    result = 1
     while e != 0:
         n = n + str(e % 2)
         e = int(e // 2)
     for i in range(len(n)):
         if n[i] == '1':
-            answer *= fast_modular_exponentiation_(b, i, m)
-        answer = answer % m
-    return answer
+            result *= fast_modular_exponentiation_(b, i, m)
+        result = result % m
+    return result
 
 
 print(fast_modular_exponentiation(7, 128, 11))
