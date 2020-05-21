@@ -1,4 +1,5 @@
 import networkx as nx
+from itertools import permutations
 
 
 def cycle_length(g: nx.Graph, cycle: list) -> int:
@@ -8,6 +9,12 @@ def cycle_length(g: nx.Graph, cycle: list) -> int:
         weights += g[cycle[i]][cycle[i + 1]]['weight']
     weights += g[cycle[-1]][cycle[0]]['weight']
     return weights
+
+
+def brute_force(g: nx.Graph) -> int:
+    n = g.number_of_nodes()
+    cycles = [cycle_length(g, p) for p in permutations(range(n))]
+    return min(cycles)
 
 
 if __name__ == "__main__":
@@ -24,3 +31,5 @@ if __name__ == "__main__":
 
     assert (cycle_length(g, cycle1) == 8)
     assert (cycle_length(g, cycle2) == 6)
+
+    print(brute_force(g))
