@@ -1,5 +1,5 @@
 import networkx as nx
-from itertools import permutations
+from itertools import permutations, chain, combinations
 
 
 def cycle_length(g: nx.Graph, cycle: list) -> int:
@@ -97,6 +97,27 @@ def branch_and_bound(g: nx.Graph, sub_cycle: list = None, current_min: float = f
         return current_min
 
 
+def powerset(s):
+    return chain.from_iterable(combinations(s, r) for r in range(len(s) + 1))
+
+
+def dynamic_programming(g: nx.Graph) -> int:
+    n = g.number_of_nodes()
+
+    power = powerset(range(1, n))
+    T = {}
+    for i in range(1, n):
+        T[(i,), i] = g[0][i]['weight']
+
+    for s in power:
+        if len(s) > 1:
+            for i in s:
+                t = tuple([x for x in s if x != i])
+                # TODO
+
+    return min(T[tuple(range(1, n)), i] + g[i][0]['weight'] for i in range(1, n))
+
+
 if __name__ == "__main__":
     g = nx.Graph()
     g.add_edge(0, 1, weight=2)
@@ -116,3 +137,4 @@ if __name__ == "__main__":
     print(average(g))
     print(nearest_neighbors(g))
     print(branch_and_bound(g))
+    print(dynamic_programming(g))
