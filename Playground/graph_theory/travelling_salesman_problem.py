@@ -1,5 +1,20 @@
+import math
+
 import networkx as nx
 from itertools import permutations, chain, combinations
+
+
+def dist(x1: int, y1: int, x2: int, y2: int) -> float:
+    return math.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2)
+
+
+def get_graph(coordinates: list) ->nx.Graph:
+    g = nx.Graph()
+    n = len(coordinates)
+    for i in range(n):
+        for j in range(i + 1):
+            g.add_edge(i, j, weight=dist(coordinates[i][0], coordinates[i][1], coordinates[j][0], coordinates[j][1]))
+    return g
 
 
 def cycle_length(g: nx.Graph, cycle: list) -> int:
@@ -118,6 +133,17 @@ def dynamic_programming(g: nx.Graph) -> int:
     return min(T[tuple(range(1, n)), i] + g[i][0]['weight'] for i in range(1, n))
 
 
+def approximation(g: nx.Graph) -> float:
+    min_tree = nx.minimum_spanning_tree(g)
+    depth_first_preorder = list(nx.dfs_preorder_nodes(min_tree, 0))
+    result = 0
+    for i in range(0, len(depth_first_preorder)-1):
+        result += g[depth_first_preorder[i]][depth_first_preorder[i + 1]]["weight"]
+    result += g[depth_first_preorder[-1]][depth_first_preorder[0]]["weight"]
+
+    return result
+
+
 if __name__ == "__main__":
     g = nx.Graph()
     g.add_edge(0, 1, weight=2)
@@ -137,4 +163,10 @@ if __name__ == "__main__":
     print(average(g))
     print(nearest_neighbors(g))
     print(branch_and_bound(g))
-    print(dynamic_programming(g))
+    # print(dynamic_programming(g))
+
+    coordinates = [(181, 243), (101, 143), (100, 216), (167, 15), (37, 201), (163, 226), (2, 42), (35, 73), (85, 116),
+                   (142, 235), (200, 18)]
+    optimal_cycle = [0, 5, 9, 2, 4, 1, 8, 7, 6, 3, 10]
+    g = get_graph(coordinates)
+    print(approximation(g))
