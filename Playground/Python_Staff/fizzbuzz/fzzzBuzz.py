@@ -21,11 +21,9 @@ def fizzbuzz2():
     return s
 
 
-
 def fizzbuzz3():
     for i in range(1, 100):
         print("Fizz" * (not i % 3) + "Buzz" * (not i % 5) or i)
-
 
 
 def fizzbuzz4():
@@ -38,6 +36,7 @@ def fizzbuzz5():
     fizzbuzz = ("FizzBuzz" if i % 3 == 0 and i % 5 == 0 else "Fizz" if i % 3 == 0 else "Buzz" if i % 5 == 0 else i for i
                 in range(1, 100))
     return fizzbuzz
+
 
 def fizzbuzz6():
     fizzbuzz = map(
@@ -58,6 +57,7 @@ def fizzbuzz8():
 
 def fizzbuzz9():
     print(list(map((lambda i: "Fizz" * (not i % 3) + "Buzz" * (not i % 5) or i), range(1, 100))))
+
 
 if __name__ == "__main__":
     fizzbuzz1()
