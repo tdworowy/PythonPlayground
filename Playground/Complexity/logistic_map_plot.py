@@ -12,8 +12,11 @@ def plot_logistic_map(r: float, x: float, iterations: int):
     plt.show()
 
 
-plot_logistic_map(2.0, 0.2, 40)  # fix point
+plot_logistic_map(-1.0, 0.2, 40)
+plot_logistic_map(1.0, 0.2, 40)  # fix point1
+plot_logistic_map(2.0, 0.2, 40)  # fix point2
 plot_logistic_map(3.0, 0.2, 40)  # cyclical
 plot_logistic_map(3.5, 0.2, 40)  # cyclical2
 plot_logistic_map(4.0, 0.2, 40)  # chaotic
 plot_logistic_map(4.0, 0.3, 40)  # chaotic2
+plot_logistic_map(5.0, 0.3, 10)  # negative values
