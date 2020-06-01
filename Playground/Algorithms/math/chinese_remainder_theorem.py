@@ -17,4 +17,5 @@ def chinese_remainder_theorem(n1, r1, n2, r2):
     return n % (n1 * n2)
 
 
-print(chinese_remainder_theorem(686579304, 295310485, 26855093, 8217207))
+if __name__ == "__main__":
+    print(chinese_remainder_theorem(686579304, 295310485, 26855093, 8217207))

@@ -19,9 +19,10 @@ def plot_staff(r: float, x: float, iterations: int):
     return plt
 
 
-pdf = pdf.PdfPages("experiment _1_output.pdf")
-for i in numpy.arange(0.1, 5.0, 0.1):
-    for j in numpy.arange(0.1, 0.9, 0.1):
-        pdf.savefig(plot_staff(i, j, 10).gcf())
-        plt.clf()
-pdf.close()
+if __name__ == "__main__":
+    pdf = pdf.PdfPages("experiment_1_output.pdf")
+    for i in numpy.arange(0.1, 5.0, 0.1):
+        for j in numpy.arange(0.1, 0.9, 0.1):
+            pdf.savefig(plot_staff(i, j, 10).gcf())
+            plt.clf()
+    pdf.close()

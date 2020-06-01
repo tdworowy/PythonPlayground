@@ -1,4 +1,3 @@
-
 def extended_euclid(a: int, b: int) -> tuple:
     if b == 0:
         return 1, 0
@@ -58,10 +57,11 @@ def decrypt(cipher_text: int, p: int, q: int, exponent: int) -> str:
     return convert_to_str(fast_modular_exponentiation(cipher_text, d, p * q))
 
 
-p = 1000000007
-q = 1000000009
-exponent = 23917
-modulo = p * q
-cipher_text = encrypt("test", modulo, exponent)
-message = decrypt(cipher_text, p, q, exponent)
-print(message)
+if __name__ == "__main__":
+    p = 1000000007
+    q = 1000000009
+    exponent = 23917
+    modulo = p * q
+    cipher_text = encrypt("test", modulo, exponent)
+    message = decrypt(cipher_text, p, q, exponent)
+    print(message)

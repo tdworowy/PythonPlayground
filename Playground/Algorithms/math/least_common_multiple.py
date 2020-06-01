@@ -12,6 +12,7 @@ def lcm(a: int, b: int) -> int:
     return (a * b) // gcd(a, b)
 
 
-print(lcm(2, 3))
-print(lcm(10, 15))
-print(lcm(35, 70))
+if __name__ == "__main__":
+    print(lcm(2, 3))
+    print(lcm(10, 15))
+    print(lcm(35, 70))

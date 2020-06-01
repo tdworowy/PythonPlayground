@@ -1,4 +1,6 @@
 import matplotlib.pyplot as plt
+import matplotlib.backends.backend_pdf as pdf
+import numpy
 
 
 def plot_logistic_map(r: float, x: float, iterations: int):
@@ -8,15 +10,17 @@ def plot_logistic_map(r: float, x: float, iterations: int):
         x = r * (x - x ** 2)
         results_list.append(x)
         iterations_list.append(i)
+
+    plt.xlabel("Iterations")
+    plt.ylabel(f"R = {r}")
     plt.plot(iterations_list, results_list)
-    plt.show()
+
+    return plt
 
 
-plot_logistic_map(-1.0, 0.2, 40)
-plot_logistic_map(1.0, 0.2, 40)  # fix point1
-plot_logistic_map(2.0, 0.2, 40)  # fix point2
-plot_logistic_map(3.0, 0.2, 40)  # cyclical
-plot_logistic_map(3.5, 0.2, 40)  # cyclical2
-plot_logistic_map(4.0, 0.2, 40)  # chaotic
-plot_logistic_map(4.0, 0.3, 40)  # chaotic2
-plot_logistic_map(5.0, 0.3, 10)  # negative values
+if __name__ == "__main__":
+    pdf = pdf.PdfPages("logistic_map_output.pdf")
+    for i in numpy.arange(0.1, 5.0, 0.1):
+        pdf.savefig(plot_logistic_map(i, .02, 30).gcf())
+        plt.clf()
+    pdf.close()

@@ -18,7 +18,8 @@ def diophantine(a: int, b: int, c: int) -> tuple:
     return ex_gcd[1] * z, ex_gcd[2] * z
 
 
-eq1 = (6, 9, 27)
-eq2 = (5, 3, 22)
-print(diophantine(*eq1))
-print(diophantine(*eq2))
+if __name__ == "__main__":
+    eq1 = (6, 9, 27)
+    eq2 = (5, 3, 22)
+    print(diophantine(*eq1))
+    print(diophantine(*eq2))

@@ -19,5 +19,6 @@ def fast_modular_exponentiation(b, e, m):
     return result
 
 
-print(fast_modular_exponentiation(7, 128, 11))
-print(fast_modular_exponentiation(7, 127, 11))
+if __name__ == "__main__":
+    print(fast_modular_exponentiation(7, 128, 11))
+    print(fast_modular_exponentiation(7, 127, 11))

@@ -11,7 +11,8 @@ def extended_gcd(a: int, b: int) -> tuple:
     return d, x, y
 
 
-print(extended_gcd(10, 6))
-print(extended_gcd(7, 5))
-print(extended_gcd(391, 299))
-print(extended_gcd(239, 201))
+if __name__ == "__main__":
+    print(extended_gcd(10, 6))
+    print(extended_gcd(7, 5))
+    print(extended_gcd(391, 299))
+    print(extended_gcd(239, 201))
