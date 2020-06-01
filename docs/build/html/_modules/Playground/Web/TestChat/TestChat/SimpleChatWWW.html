@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Playground.Web.TestChat.TestChat.SimpleChatWWW &#8212; Playground  documentation</title>
+    <link rel="stylesheet" href="../../../../../_static/pyramid.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../../../../../" src="../../../../../_static/documentation_options.js"></script>
+    <script src="../../../../../_static/jquery.js"></script>
+    <script src="../../../../../_static/underscore.js"></script>
+    <script src="../../../../../_static/doctools.js"></script>
+    <script src="../../../../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../search.html" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neuton&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nobile:regular,italic,bold,bolditalic&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<!--[if lte IE 6]>
+<link rel="stylesheet" href="../../../../../_static/ie6.css" type="text/css" media="screen" charset="utf-8" />
+<![endif]-->
+
+  </head><body>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../index.html">Playground  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" accesskey="U">Module code</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for Playground.Web.TestChat.TestChat.SimpleChatWWW</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">from</span> <span class="nn">threading</span> <span class="kn">import</span> <span class="n">Lock</span>
+
+
+<div class="viewcode-block" id="SimpleChatWWW"><a class="viewcode-back" href="../../../../../Playground.Web.TestChat.TestChat.html#Playground.Web.TestChat.TestChat.SimpleChatWWW.SimpleChatWWW">[docs]</a><span class="k">class</span> <span class="nc">SimpleChatWWW</span><span class="p">():</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">the_end</span><span class="p">):</span>
+        <span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;[ INFO ] Simple chat initialization&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">the_end</span> <span class="o">=</span> <span class="n">the_end</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">files</span> <span class="o">=</span> <span class="s2">&quot;.&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">file_cache</span> <span class="o">=</span><span class="p">{}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">file_cache_lock</span> <span class="o">=</span> <span class="n">Lock</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">messages</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">messages_offset</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">messages_lock</span> <span class="o">=</span> <span class="n">Lock</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">messages_limit</span> <span class="o">=</span> <span class="mi">1000</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">handlers</span><span class="o">=</span><span class="p">{</span>
+            <span class="p">(</span><span class="s1">&#39;GET&#39;</span><span class="p">,</span><span class="s1">&#39;/&#39;</span><span class="p">):</span> <span class="bp">self</span><span class="o">.</span><span class="n">__handle_GET_index</span><span class="p">,</span>
+            <span class="p">(</span><span class="s1">&#39;GET&#39;</span><span class="p">,</span><span class="s1">&#39;/index.html&#39;</span><span class="p">):</span> <span class="bp">self</span><span class="o">.</span><span class="n">__handle_GET_index</span><span class="p">,</span>
+            <span class="p">(</span><span class="s1">&#39;GET&#39;</span><span class="p">,</span><span class="s1">&#39;/style.css&#39;</span><span class="p">):</span> <span class="bp">self</span><span class="o">.</span><span class="n">__handle_GET_style</span><span class="p">,</span>
+            <span class="p">(</span><span class="s1">&#39;GET&#39;</span><span class="p">,</span><span class="s1">&#39;/main.js&#39;</span><span class="p">):</span> <span class="bp">self</span><span class="o">.</span><span class="n">__handle_GET_javascript</span><span class="p">,</span>
+            <span class="p">(</span><span class="s1">&#39;POST&#39;</span><span class="p">,</span><span class="s1">&#39;/chat&#39;</span><span class="p">):</span> <span class="bp">self</span><span class="o">.</span><span class="n">__handle_POST_chat</span><span class="p">,</span>
+            <span class="p">(</span><span class="s1">&#39;GET&#39;</span><span class="p">,</span><span class="s1">&#39;/,essages&#39;</span><span class="p">):</span> <span class="bp">self</span><span class="o">.</span><span class="n">__handle_POST_messages</span><span class="p">,</span>
+            <span class="p">}</span>
+
+<div class="viewcode-block" id="SimpleChatWWW.handle_http_request"><a class="viewcode-back" href="../../../../../Playground.Web.TestChat.TestChat.html#Playground.Web.TestChat.TestChat.SimpleChatWWW.SimpleChatWWW.handle_http_request">[docs]</a>    <span class="k">def</span> <span class="nf">handle_http_request</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">req</span><span class="p">):</span>
+        <span class="n">req_query</span><span class="o">=</span><span class="p">(</span><span class="n">req</span><span class="p">[</span><span class="s1">&#39;method&#39;</span><span class="p">],</span><span class="n">req</span><span class="p">[</span><span class="s1">&#39;query&#39;</span><span class="p">])</span>
+        <span class="k">if</span> <span class="n">req_query</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">handlers</span><span class="p">:</span>
+            <span class="k">return</span> <span class="p">{</span><span class="s1">&#39;status&#39;</span><span class="p">:(</span><span class="mi">404</span><span class="p">,</span><span class="s1">&#39;Not Found&#39;</span><span class="p">)}</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">handlers</span><span class="p">[</span><span class="n">req_query</span><span class="p">](</span><span class="n">req</span><span class="p">)</span></div>
+
+    <span class="k">def</span> <span class="nf">__handle_GET_index</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">req</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__send_file</span><span class="p">(</span><span class="s1">&#39;httpchat_index.html&#39;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__handle_GET_style</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">req</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__send_file</span><span class="p">(</span><span class="s1">&#39;httpchat_style.css&#39;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__handle_GET_javascript</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">req</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__send_file</span><span class="p">(</span><span class="s1">&#39;httpchat_main.js&#39;</span><span class="p">)</span>
+
+
+    <span class="k">def</span> <span class="nf">__handle_POST_chat</span><span class="p">(</span><span class="bp">self</span> <span class="p">,</span><span class="n">req</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">obj</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">req</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">])</span>
+        <span class="k">except</span>  <span class="ne">ValueError</span><span class="p">:</span>
+            <span class="k">return</span> <span class="p">{</span><span class="s1">&#39;status&#39;</span><span class="p">:(</span><span class="mi">400</span><span class="p">,</span><span class="s1">&#39;Bad request&#39;</span><span class="p">)}</span>
+        <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span> <span class="ow">is</span> <span class="ow">not</span> <span class="nb">dict</span> <span class="ow">or</span> <span class="s1">&#39;text&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">obj</span><span class="p">:</span>
+            <span class="k">return</span> <span class="p">{</span><span class="s1">&#39;status&#39;</span><span class="p">:(</span><span class="mi">400</span><span class="p">,</span><span class="s1">&#39;Bad request&#39;</span><span class="p">)}</span>
+        <span class="n">text</span> <span class="o">=</span> <span class="n">obj</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">text</span><span class="p">)</span> <span class="ow">is</span> <span class="ow">not</span> <span class="nb">str</span> <span class="p">:</span>
+            <span class="k">return</span> <span class="p">{</span><span class="s1">&#39;status&#39;</span><span class="p">:(</span><span class="mi">400</span><span class="p">,</span><span class="s1">&#39;Bad request&#39;</span><span class="p">)}</span>
+        <span class="n">sender_ip</span> <span class="o">=</span> <span class="n">req</span><span class="p">[</span><span class="s1">&#39;client_ip&#39;</span><span class="p">]</span>
+        <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">messages_lock</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">messages</span><span class="p">)</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">messages_limit</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">messages</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">messages_offset</span><span class="o">+=</span><span class="mi">1</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">messages</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">sender_ip</span><span class="p">,</span><span class="n">text</span><span class="p">))</span>
+
+        <span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;[ info]&lt;</span><span class="si">%s</span><span class="s2">&gt; </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">sender_ip</span><span class="p">,</span><span class="n">text</span><span class="p">))</span>
+        <span class="k">return</span> <span class="p">{</span><span class="s1">&#39;status&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mi">200</span><span class="p">,</span><span class="s1">&#39;OK&#39;</span><span class="p">)}</span>
+
+    <span class="k">def</span> <span class="nf">__handle_POST_messages</span><span class="p">(</span><span class="bp">self</span> <span class="p">,</span><span class="n">req</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">obj</span><span class="o">=</span><span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">req</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">])</span>
+        <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+            <span class="k">return</span> <span class="p">{</span><span class="s1">&#39;status&#39;</span><span class="p">:(</span><span class="mi">400</span><span class="p">,</span><span class="s1">&#39;Bad request&#39;</span><span class="p">)}</span> 
+        <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span> <span class="ow">is</span> <span class="ow">not</span> <span class="nb">dict</span> <span class="ow">or</span> <span class="s1">&#39;last_message_id&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">obj</span><span class="p">:</span>
+             <span class="k">return</span> <span class="p">{</span><span class="s1">&#39;status&#39;</span><span class="p">:(</span><span class="mi">400</span><span class="p">,</span><span class="s1">&#39;Bad request&#39;</span><span class="p">)}</span>
+        <span class="n">last_massage_id</span><span class="o">=</span> <span class="n">obj</span><span class="p">[</span><span class="s1">&#39;last_massage_id&#39;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">last_massage_id</span><span class="p">)</span> <span class="ow">is</span> <span class="ow">not</span> <span class="nb">int</span><span class="p">:</span>
+             <span class="k">return</span> <span class="p">{</span><span class="s1">&#39;status&#39;</span><span class="p">:(</span><span class="mi">400</span><span class="p">,</span><span class="s1">&#39;Bad request&#39;</span><span class="p">)}</span>
+
+        <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">messages_lock</span><span class="p">:</span>
+            <span class="n">last_massage_id</span> <span class="o">-=</span> <span class="bp">self</span><span class="o">.</span><span class="n">messages_offset</span>
+            <span class="k">if</span> <span class="n">last_massage_id</span> <span class="o">&lt;</span><span class="mi">0</span><span class="p">:</span>
+                <span class="n">last_massage_id</span> <span class="o">=</span><span class="mi">0</span>
+            <span class="n">messages</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">messages</span><span class="p">[</span><span class="n">last_massage_id</span><span class="p">:]</span>
+            <span class="n">new_last_message_id</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">messages_offset</span> <span class="o">+</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">messages</span><span class="p">)</span>
+
+        <span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">({</span>
+            <span class="s2">&quot;last_message_id&quot;</span><span class="p">:</span><span class="n">new_last_message_id</span><span class="p">,</span>
+            <span class="s2">&quot;messages&quot;</span><span class="p">:</span><span class="n">messages</span>
+            <span class="p">})</span>
+        <span class="k">return</span> <span class="p">{</span>
+            <span class="s1">&#39;status&#39;</span><span class="p">:(</span><span class="mi">200</span><span class="p">,</span><span class="s1">&#39;OK&#39;</span><span class="p">),</span>
+            <span class="s1">&#39;headers&#39;</span><span class="p">:[</span>
+                <span class="p">(</span><span class="s1">&#39;Content-Type&#39;</span><span class="p">,</span><span class="s1">&#39;application/json;charset=utf-8&#39;</span><span class="p">),</span>
+                <span class="p">],</span>
+            <span class="s1">&#39;data&#39;</span><span class="p">:</span><span class="n">data</span>
+            <span class="p">}</span>
+
+    <span class="k">def</span> <span class="nf">__send_file</span><span class="p">(</span><span class="bp">self</span> <span class="p">,</span> <span class="n">fname</span><span class="p">):</span>
+        <span class="n">ext</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">splitext</span><span class="p">(</span><span class="n">fname</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">mime_type</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;.html&#39;</span><span class="p">:</span><span class="s1">&#39;text/html;charset=utf-8&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;.js&#39;</span><span class="p">:</span><span class="s1">&#39;application/javascript;charset=utf-8&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;.css&#39;</span><span class="p">:</span><span class="s1">&#39;text/css;charset=utf-8&#39;</span><span class="p">,</span>
+            <span class="p">}</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">ext</span><span class="o">.</span><span class="n">lower</span><span class="p">(),</span><span class="s1">&#39;application/octen-stream&#39;</span><span class="p">)</span>
+
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">mtime</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">stat</span><span class="p">(</span><span class="n">fname</span><span class="p">)</span><span class="o">.</span><span class="n">st_mtime</span>
+        <span class="k">except</span><span class="p">:</span>
+            <span class="k">return</span> <span class="p">{</span><span class="s1">&#39;status&#39;</span><span class="p">:(</span><span class="mi">404</span> <span class="p">,</span><span class="s1">&#39;Not found&#39;</span><span class="p">)}</span>
+
+        <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">file_cache_lock</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">fname</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">file_cache</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">file_cache</span><span class="p">[</span><span class="n">fname</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">mtime</span><span class="p">:</span>
+                <span class="k">return</span> <span class="p">{</span>
+                    <span class="s1">&#39;status&#39;</span><span class="p">:(</span><span class="mi">200</span><span class="p">,</span><span class="s1">&#39;OK&#39;</span><span class="p">),</span>
+                    <span class="s1">&#39;headers&#39;</span> <span class="p">:[</span>
+                        <span class="p">(</span><span class="s1">&#39;Content-Type&#39;</span><span class="p">,</span><span class="n">mime_type</span><span class="p">),</span>
+                        <span class="p">],</span>
+                    <span class="s1">&#39;data&#39;</span><span class="p">:</span><span class="bp">self</span><span class="o">.</span><span class="n">file_cache</span><span class="p">[</span><span class="n">fname</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+                    <span class="p">}</span>
+
+            <span class="k">try</span><span class="p">:</span>
+                <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">fname</span><span class="p">,</span><span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+                    <span class="n">data</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+                    <span class="n">mtime</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">fstat</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">fileno</span><span class="p">()</span><span class="o">.</span><span class="n">st_mtime</span><span class="p">)</span>
+            <span class="k">except</span> <span class="ne">IOError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                   <span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;[WARNING] File </span><span class="si">%s</span><span class="s2"> not found , but requested.</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">fname</span><span class="p">)</span>
+            <span class="k">return</span> <span class="p">{</span><span class="s1">&#39;status&#39;</span><span class="p">:{</span><span class="mi">404</span> <span class="p">,</span> <span class="s1">&#39;Not Found&#39;</span><span class="p">}}</span>
+
+        <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">file_cache_lock</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">fname</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">file_cache</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">file_cache</span><span class="p">[</span><span class="n">fname</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">mntime</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">file_cache</span><span class="p">[</span><span class="n">fname</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="n">mtime</span> <span class="p">,</span><span class="n">data</span><span class="p">}</span>
+
+                <span class="k">return</span> <span class="p">{</span>
+                    <span class="s1">&#39;status&#39;</span><span class="p">:(</span><span class="mi">200</span> <span class="p">,</span> <span class="s1">&#39;OK&#39;</span><span class="p">),</span>
+                    <span class="s1">&#39;headers&#39;</span><span class="p">:[</span>
+                        <span class="p">(</span><span class="s1">&#39;Content-Type&#39;</span><span class="p">,</span><span class="n">mime_type</span><span class="p">),</span>
+                        <span class="p">],</span>
+                    <span class="s1">&#39;data&#39;</span><span class="p">:</span><span class="n">data</span>
+                    <span class="p">}</span></div>
+                
+
+                 
+
+
+
+
+
+
+               
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../index.html">Playground  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" >Module code</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Tom.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.
+    </div>
+  </body>
+</html>

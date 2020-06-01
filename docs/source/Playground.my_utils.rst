@@ -11,6 +11,7 @@ Subpackages
    Playground.my_utils.classTools_
    Playground.my_utils.danger
    Playground.my_utils.files
+   Playground.my_utils.hex_
    Playground.my_utils.staff
 
 Module contents

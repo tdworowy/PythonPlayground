@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Playground.Web.TestChat.TestChat.serverHTTP &#8212; Playground  documentation</title>
+    <link rel="stylesheet" href="../../../../../_static/pyramid.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../../../../../" src="../../../../../_static/documentation_options.js"></script>
+    <script src="../../../../../_static/jquery.js"></script>
+    <script src="../../../../../_static/underscore.js"></script>
+    <script src="../../../../../_static/doctools.js"></script>
+    <script src="../../../../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../search.html" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neuton&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nobile:regular,italic,bold,bolditalic&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<!--[if lte IE 6]>
+<link rel="stylesheet" href="../../../../../_static/ie6.css" type="text/css" media="screen" charset="utf-8" />
+<![endif]-->
+
+  </head><body>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../index.html">Playground  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" accesskey="U">Module code</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for Playground.Web.TestChat.TestChat.serverHTTP</h1><div class="highlight"><pre>
+<span></span>
+<span class="kn">import</span> <span class="nn">socket</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">from</span> <span class="nn">threading</span> <span class="kn">import</span> <span class="n">Thread</span>
+
+
+<div class="viewcode-block" id="ClientThread"><a class="viewcode-back" href="../../../../../Playground.Web.TestChat.TestChat.html#Playground.Web.TestChat.TestChat.serverHTTP.ClientThread">[docs]</a><span class="k">class</span> <span class="nc">ClientThread</span><span class="p">(</span><span class="n">Thread</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">website</span><span class="p">,</span><span class="n">sock</span><span class="p">,</span><span class="n">sock_addr</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">(</span><span class="n">ClientThread</span><span class="p">,</span><span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">s</span> <span class="o">=</span> <span class="n">sock</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">s_addr</span> <span class="o">=</span> <span class="n">sock_addr</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">website</span> <span class="o">=</span> <span class="n">website</span>
+
+    <span class="k">def</span> <span class="nf">__recy_http_request</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">recv_until</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">s</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\r\n\r\n</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">data</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+        <span class="n">lines</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\r\n</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="n">query_tokens</span> <span class="o">=</span> <span class="n">lines</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">query_tokens</span><span class="p">)</span> <span class="o">!=</span><span class="mi">3</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+
+        <span class="n">method</span><span class="p">,</span><span class="n">query</span><span class="p">,</span><span class="n">cersion</span> <span class="o">=</span> <span class="n">query_tokens</span>
+        <span class="n">headers</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
+            <span class="n">tokens</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;:&#39;</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">tokens</span><span class="p">)</span> <span class="o">!=</span><span class="mi">2</span><span class="p">:</span>
+                <span class="k">continue</span>
+
+        <span class="n">header_name</span> <span class="o">=</span> <span class="n">tokens</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+        <span class="n">header_value</span> <span class="o">=</span> <span class="n">tokens</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+        <span class="n">headers</span><span class="p">[</span><span class="n">header_name</span><span class="p">]</span> <span class="o">=</span> <span class="n">header_value</span>
+        
+        <span class="k">if</span> <span class="n">method</span> <span class="o">==</span> <span class="s1">&#39;POST&#39;</span><span class="p">:</span>
+          <span class="k">try</span><span class="p">:</span>
+              <span class="n">data_length</span> <span class="o">=</span> <span class="nb">int</span> <span class="p">(</span><span class="n">headers</span><span class="p">[</span><span class="s1">&#39;content-length&#39;</span><span class="p">])</span>
+              <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">recv_all</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">s</span><span class="p">,</span> <span class="n">data_length</span><span class="p">)</span>
+          <span class="k">except</span> <span class="ne">KeyError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+              <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">recv_remaining</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">s</span><span class="p">)</span>
+          <span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+              <span class="k">return</span> <span class="kc">None</span>
+          <span class="k">else</span><span class="p">:</span>
+              <span class="n">data</span> <span class="o">=</span> <span class="kc">None</span>
+
+          <span class="n">request</span> <span class="o">=</span><span class="p">{</span>
+              <span class="s2">&quot;method&quot;</span><span class="p">:</span><span class="n">method</span><span class="p">,</span>
+              <span class="s2">&quot;query&quot;</span><span class="p">:</span><span class="n">query</span><span class="p">,</span>
+              <span class="s2">&quot;headers&quot;</span><span class="p">:</span><span class="n">headers</span><span class="p">,</span>
+              <span class="s2">&quot;data&quot;</span><span class="p">:</span><span class="n">data</span><span class="p">,</span>
+              <span class="s2">&quot;client_ip&quot;</span><span class="p">:</span><span class="bp">self</span><span class="o">.</span><span class="n">s_addr</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+              <span class="s2">&quot;client_port&quot;</span><span class="p">:</span><span class="bp">self</span><span class="o">.</span><span class="n">s_addr</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+              <span class="p">}</span> 
+          <span class="k">return</span> <span class="n">request</span>
+      
+    <span class="k">def</span> <span class="nf">__send_http_response</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">response</span><span class="p">):</span>
+         <span class="n">lines</span> <span class="o">=</span> <span class="p">[]</span>
+         <span class="n">lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;HTTP/1.1 </span><span class="si">%u</span><span class="s1"> </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">response</span><span class="p">[</span><span class="s1">&#39;status&#39;</span><span class="p">])</span> 
+
+         <span class="n">lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;server: example&#39;</span><span class="p">)</span>
+         <span class="k">if</span> <span class="s1">&#39;data&#39;</span> <span class="ow">in</span> <span class="n">response</span><span class="p">:</span>
+             <span class="n">lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;Content-Length: </span><span class="si">%u</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">response</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">]))</span>
+         <span class="k">else</span><span class="p">:</span>
+             <span class="n">lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;Content-Length: 0&#39;</span><span class="p">)</span>
+                        
+         <span class="k">if</span> <span class="s1">&#39;headers&#39;</span> <span class="ow">in</span> <span class="n">response</span><span class="p">:</span>
+             <span class="k">for</span> <span class="n">header</span> <span class="ow">in</span> <span class="n">response</span><span class="p">[</span><span class="s1">&#39;headers&#39;</span><span class="p">]:</span> 
+                <span class="n">lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%s</span><span class="s1">: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">header</span><span class="p">)</span>
+                <span class="n">lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+         <span class="k">if</span> <span class="s1">&#39;data&#39;</span> <span class="ow">in</span> <span class="n">response</span><span class="p">:</span>
+             <span class="n">lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">response</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">])</span>
+
+         <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="o">.</span><span class="n">major</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+             <span class="n">converted_lines</span> <span class="o">=</span> <span class="p">[]</span>
+             <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
+                 <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">line</span><span class="p">)</span> <span class="ow">is</span> <span class="nb">bytes</span><span class="p">:</span>
+                     <span class="n">converted_lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+                 <span class="k">else</span><span class="p">:</span>
+                     <span class="n">converted_lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">bytes</span><span class="p">(</span><span class="n">line</span><span class="p">,</span><span class="s1">&#39;utf-8&#39;</span><span class="p">))</span>
+             <span class="n">lines</span> <span class="o">=</span> <span class="n">converted_lines</span>
+
+         <span class="bp">self</span><span class="o">.</span><span class="n">s</span><span class="o">.</span><span class="n">sendall</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;</span><span class="se">\r\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">lines</span><span class="p">))</span>
+
+
+    <span class="k">def</span> <span class="nf">__handle_client</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">request</span><span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__recy_http_request</span><span class="p">()</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">request</span><span class="p">:</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;[WARNING] Client </span><span class="si">%s</span><span class="s2">:</span><span class="si">%i</span><span class="s2"> doesn&#39;t make any sense.&quot;</span>
+                             <span class="s2">&quot;Disconnecting. </span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">s_addr</span><span class="p">)</span>
+            <span class="k">return</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;[ INFO ] Client </span><span class="si">%s</span><span class="s2">:</span><span class="si">%i</span><span class="s2"> requested </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">s_addr</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">s_addr</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">request</span><span class="p">[</span><span class="s1">&#39;query&#39;</span><span class="p">]))</span>
+            <span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">website</span><span class="o">.</span><span class="n">handle_http_request</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">__send_http_response</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+    
+<div class="viewcode-block" id="ClientThread.run"><a class="viewcode-back" href="../../../../../Playground.Web.TestChat.TestChat.html#Playground.Web.TestChat.TestChat.serverHTTP.ClientThread.run">[docs]</a>    <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">s</span><span class="o">.</span><span class="n">settimeout</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">__handle_client</span><span class="p">()</span>
+        <span class="k">except</span> <span class="n">socket</span><span class="o">.</span><span class="n">timeout</span> <span class="k">as</span> <span class="n">e</span> <span class="p">:</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;[WARNING] Client </span><span class="si">%s</span><span class="s2">:</span><span class="si">%i</span><span class="s2"> tomed out. &quot;</span>
+                             <span class="s2">&quot;Disconnecting. </span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">s_addr</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">s</span><span class="o">.</span><span class="n">shutdown</span><span class="p">(</span><span class="n">socket</span><span class="o">.</span><span class="n">SHUT_RDWR</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">s</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="ClientThread.recv_until"><a class="viewcode-back" href="../../../../../Playground.Web.TestChat.TestChat.html#Playground.Web.TestChat.TestChat.serverHTTP.ClientThread.recv_until">[docs]</a>    <span class="k">def</span> <span class="nf">recv_until</span><span class="p">(</span><span class="n">sock</span><span class="p">,</span> <span class="n">txt</span><span class="p">):</span>
+        <span class="n">txt</span> <span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">txt</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="o">.</span><span class="n">major</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+            <span class="n">txt</span> <span class="o">=</span><span class="p">[</span><span class="nb">bytes</span><span class="p">(</span><span class="n">ch</span><span class="p">,</span><span class="s1">&#39;ascii&#39;</span><span class="p">)</span> <span class="k">for</span> <span class="n">ch</span> <span class="ow">in</span> <span class="n">txt</span> <span class="p">]</span>
+        <span class="n">full_data</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">last_n_bytes</span> <span class="o">=</span> <span class="p">[</span><span class="kc">None</span><span class="p">]</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">txt</span><span class="p">)</span>
+
+        <span class="k">while</span> <span class="n">last_n_bytes</span> <span class="o">!=</span><span class="n">txt</span><span class="p">:</span>
+            <span class="n">next_byte</span> <span class="o">=</span> <span class="n">sock</span><span class="o">.</span><span class="n">recv</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">next_byte</span><span class="p">:</span>
+                <span class="k">return</span> <span class="s1">&#39;&#39;</span>
+            <span class="n">full_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">next_byte</span><span class="p">)</span>
+            <span class="n">last_n_bytes</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+            <span class="n">last_n_bytes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">next_byte</span><span class="p">)</span>
+        <span class="n">full_data</span> <span class="o">=</span> <span class="sa">b</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">full_data</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="o">.</span><span class="n">major</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+            <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">full_data</span><span class="p">,</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">full_data</span></div>
+
+<div class="viewcode-block" id="ClientThread.recv_all"><a class="viewcode-back" href="../../../../../Playground.Web.TestChat.TestChat.html#Playground.Web.TestChat.TestChat.serverHTTP.ClientThread.recv_all">[docs]</a>    <span class="k">def</span> <span class="nf">recv_all</span><span class="p">(</span><span class="n">sock</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
+        <span class="n">data</span> <span class="o">=</span><span class="p">[]</span>
+        <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span><span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
+            <span class="n">data_latest</span> <span class="o">=</span> <span class="n">sock</span><span class="o">.</span><span class="n">recv</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">))</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">data_latest</span><span class="p">:</span>
+                <span class="k">return</span> <span class="kc">None</span>
+            <span class="n">data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data_latest</span><span class="p">)</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="sa">b</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="o">.</span><span class="n">major</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+            <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">data</span></div>
+    
+<div class="viewcode-block" id="ClientThread.recv_remaining"><a class="viewcode-back" href="../../../../../Playground.Web.TestChat.TestChat.html#Playground.Web.TestChat.TestChat.serverHTTP.ClientThread.recv_remaining">[docs]</a>    <span class="k">def</span> <span class="nf">recv_remaining</span><span class="p">(</span><span class="n">sock</span><span class="p">):</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+            <span class="n">data_latest</span> <span class="o">=</span> <span class="n">sock</span><span class="o">.</span><span class="n">recv</span><span class="p">(</span><span class="mi">4096</span><span class="p">)</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">data_latest</span><span class="p">:</span>
+                <span class="n">data</span> <span class="o">=</span> <span class="sa">b</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="o">.</span><span class="n">major</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+                     <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+                <span class="k">return</span> <span class="n">data</span>
+            <span class="n">data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data_latest</span><span class="p">)</span></div></div>
+
+
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../index.html">Playground  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" >Module code</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Tom.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.
+    </div>
+  </body>
+</html>

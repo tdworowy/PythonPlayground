@@ -7,7 +7,10 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
+   Playground.Python_Staff.OOP.Property
+   Playground.Python_Staff.OOP.descriptors
    Playground.Python_Staff.OOP.example
+   Playground.Python_Staff.OOP.interfaces
    Playground.Python_Staff.OOP.ovrloading
 
 Submodules

@@ -1,10 +1,11 @@
-from contextlib import  contextmanager
+from contextlib import contextmanager
+
 
 @contextmanager
-def context_illustraction():
+def context_illustration():
     print("Open context")
     try:
-        yield # required by contextlib
+        yield  # required by contextlib
     except Exception as e:
         print("Close context")
         print("With error %s" % e)
@@ -13,13 +14,13 @@ def context_illustraction():
         print("Close context")
         print("Without error")
 
-if __name__ == "__main__":
 
-    with context_illustraction() as action:
+if __name__ == "__main__":
+    with context_illustration() as action:
         print("Done")
 
-    print("_"*20)
+    print("_" * 20)
 
-    with context_illustraction() as action:
+    with context_illustration() as action:
         raise TypeError
         print("Not Done")

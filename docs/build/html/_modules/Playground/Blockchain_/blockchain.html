@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Playground.Blockchain_.blockchain &#8212; Playground  documentation</title>
+    <link rel="stylesheet" href="../../../_static/pyramid.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neuton&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nobile:regular,italic,bold,bolditalic&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<!--[if lte IE 6]>
+<link rel="stylesheet" href="../../../_static/ie6.css" type="text/css" media="screen" charset="utf-8" />
+<![endif]-->
+
+  </head><body>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">Playground  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" accesskey="U">Module code</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for Playground.Blockchain_.blockchain</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">hashlib</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">from</span> <span class="nn">time</span> <span class="kn">import</span> <span class="n">time</span>
+<span class="kn">from</span> <span class="nn">urllib.parse</span> <span class="kn">import</span> <span class="n">urlparse</span>
+
+<span class="kn">import</span> <span class="nn">requests</span>
+
+
+<span class="c1"># based on: https://hackernoon.com/learn-blockchains-by-building-one-117428612f46</span>
+
+<div class="viewcode-block" id="Blockchain"><a class="viewcode-back" href="../../../Playground.Blockchain_.html#Playground.Blockchain_.blockchain.Blockchain">[docs]</a><span class="k">class</span> <span class="nc">Blockchain</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">chain</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">transactions</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">nodes</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add_block</span><span class="p">(</span><span class="n">previous_hash</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">proof</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">last_block</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">chain</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+<div class="viewcode-block" id="Blockchain.hash"><a class="viewcode-back" href="../../../Playground.Blockchain_.html#Playground.Blockchain_.blockchain.Blockchain.hash">[docs]</a>    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">hash</span><span class="p">(</span><span class="n">block</span><span class="p">):</span>
+        <span class="n">block_string</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">block</span><span class="p">,</span> <span class="n">sort_keys</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">sha512</span><span class="p">(</span><span class="n">block_string</span><span class="p">)</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Blockchain.valid_proof"><a class="viewcode-back" href="../../../Playground.Blockchain_.html#Playground.Blockchain_.blockchain.Blockchain.valid_proof">[docs]</a>    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">valid_proof</span><span class="p">(</span><span class="n">last_proof</span><span class="p">,</span> <span class="n">proof</span><span class="p">):</span>
+        <span class="n">guess</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">last_proof</span><span class="si">}{</span><span class="n">proof</span><span class="si">}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">encode</span><span class="p">()</span>
+        <span class="n">guess_hash</span> <span class="o">=</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">sha512</span><span class="p">(</span><span class="n">guess</span><span class="p">)</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">guess_hash</span><span class="p">[:</span><span class="mi">4</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;0000&quot;</span></div>
+
+<div class="viewcode-block" id="Blockchain.register_node"><a class="viewcode-back" href="../../../Playground.Blockchain_.html#Playground.Blockchain_.blockchain.Blockchain.register_node">[docs]</a>    <span class="k">def</span> <span class="nf">register_node</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">address</span><span class="p">):</span>
+        <span class="n">parsed_url</span> <span class="o">=</span> <span class="n">urlparse</span><span class="p">(</span><span class="n">address</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">nodes</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">parsed_url</span><span class="o">.</span><span class="n">netloc</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Blockchain.add_block"><a class="viewcode-back" href="../../../Playground.Blockchain_.html#Playground.Blockchain_.blockchain.Blockchain.add_block">[docs]</a>    <span class="k">def</span> <span class="nf">add_block</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">proof</span><span class="p">,</span> <span class="n">previous_hash</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="n">block</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;index&#39;</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">chain</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="s1">&#39;timestamp&#39;</span><span class="p">:</span> <span class="n">time</span><span class="p">(),</span>
+            <span class="s1">&#39;transactions&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">transactions</span><span class="p">,</span>
+            <span class="s1">&#39;proof&#39;</span><span class="p">:</span> <span class="n">proof</span><span class="p">,</span>
+            <span class="s1">&#39;previous_hash&#39;</span><span class="p">:</span> <span class="n">previous_hash</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">hash</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">chain</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+        <span class="p">}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">transactions</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">chain</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">block</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">block</span></div>
+
+<div class="viewcode-block" id="Blockchain.add_transaction"><a class="viewcode-back" href="../../../Playground.Blockchain_.html#Playground.Blockchain_.blockchain.Blockchain.add_transaction">[docs]</a>    <span class="k">def</span> <span class="nf">add_transaction</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sender</span><span class="p">,</span> <span class="n">recipient</span><span class="p">,</span> <span class="n">amount</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">transactions</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+            <span class="s1">&#39;sender&#39;</span><span class="p">:</span> <span class="n">sender</span><span class="p">,</span>
+            <span class="s1">&#39;recipient&#39;</span><span class="p">:</span> <span class="n">recipient</span><span class="p">,</span>
+            <span class="s1">&#39;amount&#39;</span><span class="p">:</span> <span class="n">amount</span><span class="p">,</span>
+        <span class="p">})</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">last_block</span><span class="p">[</span><span class="s1">&#39;index&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span></div>
+
+<div class="viewcode-block" id="Blockchain.proof_of_work"><a class="viewcode-back" href="../../../Playground.Blockchain_.html#Playground.Blockchain_.blockchain.Blockchain.proof_of_work">[docs]</a>    <span class="k">def</span> <span class="nf">proof_of_work</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">last_proof</span><span class="p">):</span>
+        <span class="n">proof</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">while</span> <span class="bp">self</span><span class="o">.</span><span class="n">valid_proof</span><span class="p">(</span><span class="n">last_proof</span><span class="p">,</span> <span class="n">proof</span><span class="p">)</span> <span class="ow">is</span> <span class="kc">False</span><span class="p">:</span>
+            <span class="n">proof</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">return</span> <span class="n">proof</span></div>
+
+<div class="viewcode-block" id="Blockchain.valid_chain"><a class="viewcode-back" href="../../../Playground.Blockchain_.html#Playground.Blockchain_.blockchain.Blockchain.valid_chain">[docs]</a>    <span class="k">def</span> <span class="nf">valid_chain</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">chain</span><span class="p">):</span>
+        <span class="n">last_block</span> <span class="o">=</span> <span class="n">chain</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">current_index</span> <span class="o">=</span> <span class="mi">1</span>
+
+        <span class="k">while</span> <span class="n">current_index</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">chain</span><span class="p">):</span>
+            <span class="n">block</span> <span class="o">=</span> <span class="n">chain</span><span class="p">[</span><span class="n">current_index</span><span class="p">]</span>
+            <span class="k">if</span> <span class="n">block</span><span class="p">[</span><span class="s1">&#39;previous_hash&#39;</span><span class="p">]</span> <span class="o">!=</span> <span class="bp">self</span><span class="o">.</span><span class="n">hash</span><span class="p">(</span><span class="n">last_block</span><span class="p">):</span>
+                <span class="k">return</span> <span class="kc">False</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">valid_proof</span><span class="p">(</span><span class="n">last_block</span><span class="p">[</span><span class="s1">&#39;proof&#39;</span><span class="p">],</span> <span class="n">block</span><span class="p">[</span><span class="s1">&#39;proof&#39;</span><span class="p">]):</span>
+                <span class="k">return</span> <span class="kc">False</span>
+
+            <span class="n">last_block</span> <span class="o">=</span> <span class="n">block</span>
+            <span class="n">current_index</span> <span class="o">+=</span> <span class="mi">1</span>
+
+        <span class="k">return</span> <span class="kc">True</span></div>
+
+<div class="viewcode-block" id="Blockchain.resolve_conflicts"><a class="viewcode-back" href="../../../Playground.Blockchain_.html#Playground.Blockchain_.blockchain.Blockchain.resolve_conflicts">[docs]</a>    <span class="k">def</span> <span class="nf">resolve_conflicts</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">neighbours</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">nodes</span>
+        <span class="n">new_chain</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="n">max_length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">chain</span><span class="p">)</span>
+
+        <span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">neighbours</span><span class="p">:</span>
+            <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;http://</span><span class="si">{</span><span class="n">node</span><span class="si">}</span><span class="s1">/chain&#39;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
+            <span class="n">length</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s1">&#39;length&#39;</span><span class="p">]</span>
+            <span class="n">chain</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s1">&#39;chain&#39;</span><span class="p">]</span>
+
+            <span class="k">if</span> <span class="n">length</span> <span class="o">&gt;</span> <span class="n">max_length</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">valid_chain</span><span class="p">(</span><span class="n">chain</span><span class="p">):</span>
+                <span class="n">max_length</span> <span class="o">=</span> <span class="n">length</span>
+                <span class="n">new_chain</span> <span class="o">=</span> <span class="n">chain</span>
+        <span class="k">if</span> <span class="n">new_chain</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">chain</span> <span class="o">=</span> <span class="n">new_chain</span>
+            <span class="k">return</span> <span class="kc">True</span>
+
+        <span class="k">return</span> <span class="kc">False</span></div></div>
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">Playground  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" >Module code</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Tom.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.
+    </div>
+  </body>
+</html>

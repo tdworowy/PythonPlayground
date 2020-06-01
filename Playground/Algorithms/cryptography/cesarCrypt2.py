@@ -1,7 +1,28 @@
 import string
 
-from my_utils.compareStrings import get_diff
-from my_utils.myList import RoundList
+
+def get_diff(string1, string2):
+    char_list = list(string2)
+    i = 0
+    diff = []
+    for char1 in string1:
+        if i < len(char_list):
+            if char1 != char_list[i]:
+                diff.append((char_list[i], char1))
+            i += 1
+    return diff
+
+
+class RoundList(list):
+    def __getitem__(self, index):
+
+        while index not in range(0, len(self)):
+            if index >= len(self):
+                index = index - len(self)
+            else:
+                if index < 0: index = len(self) - (index * -1)
+
+        return list.__getitem__(self, index)
 
 
 def cesar_crypt(text, index):

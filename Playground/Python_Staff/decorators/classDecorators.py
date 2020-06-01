@@ -6,13 +6,13 @@ def count(aClass):
 @count
 class Spam:
     def __init__(self):
-        Spam.numInstnaces +=1
-    def print_num_instances():#it works
-        print("Instances created: ",Spam.numInstnaces)
+        Spam.numInstnaces += 1
+
+    def print_num_instances():  # it works
+        print("Instances created: ", Spam.numInstnaces)
+
 
 if __name__ == "__main__":
-
-
     x = Spam()
     y = Spam()
 

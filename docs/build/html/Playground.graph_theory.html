@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Playground.graph_theory package &#8212; Playground  documentation</title>
+    <link rel="stylesheet" href="_static/pyramid.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neuton&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nobile:regular,italic,bold,bolditalic&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<!--[if lte IE 6]>
+<link rel="stylesheet" href="_static/ie6.css" type="text/css" media="screen" charset="utf-8" />
+<![endif]-->
+
+  </head><body>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Playground  documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="playground-graph-theory-package">
+<h1>Playground.graph_theory package<a class="headerlink" href="#playground-graph-theory-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-Playground.graph_theory.gale_shapley_algoritmh">
+<span id="playground-graph-theory-gale-shapley-algoritmh-module"></span><h2>Playground.graph_theory.gale_shapley_algoritmh module<a class="headerlink" href="#module-Playground.graph_theory.gale_shapley_algoritmh" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="Playground.graph_theory.gale_shapley_algoritmh.stable_matching">
+<code class="sig-prename descclassname">Playground.graph_theory.gale_shapley_algoritmh.</code><code class="sig-name descname">stable_matching</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n</span><span class="p">:</span> <span class="n">int</span></em>, <em class="sig-param"><span class="n">men_preferences</span><span class="p">:</span> <span class="n">list</span></em>, <em class="sig-param"><span class="n">women_preferences</span></em><span class="sig-paren">)</span> &#x2192; list<a class="reference internal" href="_modules/Playground/graph_theory/gale_shapley_algoritmh.html#stable_matching"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Playground.graph_theory.gale_shapley_algoritmh.stable_matching" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-Playground.graph_theory.travelling_salesman_problem">
+<span id="playground-graph-theory-travelling-salesman-problem-module"></span><h2>Playground.graph_theory.travelling_salesman_problem module<a class="headerlink" href="#module-Playground.graph_theory.travelling_salesman_problem" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="Playground.graph_theory.travelling_salesman_problem.approximation">
+<code class="sig-prename descclassname">Playground.graph_theory.travelling_salesman_problem.</code><code class="sig-name descname">approximation</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">g</span><span class="p">:</span> <span class="n">networkx.classes.graph.Graph</span></em><span class="sig-paren">)</span> &#x2192; float<a class="reference internal" href="_modules/Playground/graph_theory/travelling_salesman_problem.html#approximation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Playground.graph_theory.travelling_salesman_problem.approximation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="Playground.graph_theory.travelling_salesman_problem.average">
+<code class="sig-prename descclassname">Playground.graph_theory.travelling_salesman_problem.</code><code class="sig-name descname">average</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">g</span><span class="p">:</span> <span class="n">networkx.classes.graph.Graph</span></em><span class="sig-paren">)</span> &#x2192; float<a class="reference internal" href="_modules/Playground/graph_theory/travelling_salesman_problem.html#average"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Playground.graph_theory.travelling_salesman_problem.average" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="Playground.graph_theory.travelling_salesman_problem.branch_and_bound">
+<code class="sig-prename descclassname">Playground.graph_theory.travelling_salesman_problem.</code><code class="sig-name descname">branch_and_bound</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">g</span><span class="p">:</span> <span class="n">networkx.classes.graph.Graph</span></em>, <em class="sig-param"><span class="n">sub_cycle</span><span class="p">:</span> <span class="n">list</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">current_min</span><span class="p">:</span> <span class="n">float</span> <span class="o">=</span> <span class="default_value">inf</span></em><span class="sig-paren">)</span> &#x2192; int<a class="reference internal" href="_modules/Playground/graph_theory/travelling_salesman_problem.html#branch_and_bound"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Playground.graph_theory.travelling_salesman_problem.branch_and_bound" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="Playground.graph_theory.travelling_salesman_problem.brute_force">
+<code class="sig-prename descclassname">Playground.graph_theory.travelling_salesman_problem.</code><code class="sig-name descname">brute_force</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">g</span><span class="p">:</span> <span class="n">networkx.classes.graph.Graph</span></em><span class="sig-paren">)</span> &#x2192; int<a class="reference internal" href="_modules/Playground/graph_theory/travelling_salesman_problem.html#brute_force"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Playground.graph_theory.travelling_salesman_problem.brute_force" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="Playground.graph_theory.travelling_salesman_problem.cycle_length">
+<code class="sig-prename descclassname">Playground.graph_theory.travelling_salesman_problem.</code><code class="sig-name descname">cycle_length</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">g</span><span class="p">:</span> <span class="n">networkx.classes.graph.Graph</span></em>, <em class="sig-param"><span class="n">cycle</span><span class="p">:</span> <span class="n">list</span></em><span class="sig-paren">)</span> &#x2192; int<a class="reference internal" href="_modules/Playground/graph_theory/travelling_salesman_problem.html#cycle_length"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Playground.graph_theory.travelling_salesman_problem.cycle_length" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="Playground.graph_theory.travelling_salesman_problem.dist">
+<code class="sig-prename descclassname">Playground.graph_theory.travelling_salesman_problem.</code><code class="sig-name descname">dist</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x1</span><span class="p">:</span> <span class="n">int</span></em>, <em class="sig-param"><span class="n">y1</span><span class="p">:</span> <span class="n">int</span></em>, <em class="sig-param"><span class="n">x2</span><span class="p">:</span> <span class="n">int</span></em>, <em class="sig-param"><span class="n">y2</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span> &#x2192; float<a class="reference internal" href="_modules/Playground/graph_theory/travelling_salesman_problem.html#dist"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Playground.graph_theory.travelling_salesman_problem.dist" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="Playground.graph_theory.travelling_salesman_problem.dynamic_programming">
+<code class="sig-prename descclassname">Playground.graph_theory.travelling_salesman_problem.</code><code class="sig-name descname">dynamic_programming</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">g</span><span class="p">:</span> <span class="n">networkx.classes.graph.Graph</span></em><span class="sig-paren">)</span> &#x2192; int<a class="reference internal" href="_modules/Playground/graph_theory/travelling_salesman_problem.html#dynamic_programming"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Playground.graph_theory.travelling_salesman_problem.dynamic_programming" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="Playground.graph_theory.travelling_salesman_problem.get_graph">
+<code class="sig-prename descclassname">Playground.graph_theory.travelling_salesman_problem.</code><code class="sig-name descname">get_graph</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">coordinates</span><span class="p">:</span> <span class="n">list</span></em><span class="sig-paren">)</span> &#x2192; networkx.classes.graph.Graph<a class="reference internal" href="_modules/Playground/graph_theory/travelling_salesman_problem.html#get_graph"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Playground.graph_theory.travelling_salesman_problem.get_graph" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="Playground.graph_theory.travelling_salesman_problem.lower_bound">
+<code class="sig-prename descclassname">Playground.graph_theory.travelling_salesman_problem.</code><code class="sig-name descname">lower_bound</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">g</span><span class="p">:</span> <span class="n">networkx.classes.graph.Graph</span></em>, <em class="sig-param"><span class="n">sub_cycle</span><span class="p">:</span> <span class="n">list</span></em><span class="sig-paren">)</span> &#x2192; int<a class="reference internal" href="_modules/Playground/graph_theory/travelling_salesman_problem.html#lower_bound"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Playground.graph_theory.travelling_salesman_problem.lower_bound" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="Playground.graph_theory.travelling_salesman_problem.nearest_neighbors">
+<code class="sig-prename descclassname">Playground.graph_theory.travelling_salesman_problem.</code><code class="sig-name descname">nearest_neighbors</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">g</span><span class="p">:</span> <span class="n">networkx.classes.graph.Graph</span></em><span class="sig-paren">)</span> &#x2192; int<a class="reference internal" href="_modules/Playground/graph_theory/travelling_salesman_problem.html#nearest_neighbors"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Playground.graph_theory.travelling_salesman_problem.nearest_neighbors" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="Playground.graph_theory.travelling_salesman_problem.powerset">
+<code class="sig-prename descclassname">Playground.graph_theory.travelling_salesman_problem.</code><code class="sig-name descname">powerset</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">s</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Playground/graph_theory/travelling_salesman_problem.html#powerset"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Playground.graph_theory.travelling_salesman_problem.powerset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-Playground.graph_theory">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-Playground.graph_theory" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Playground.graph_theory package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-Playground.graph_theory.gale_shapley_algoritmh">Playground.graph_theory.gale_shapley_algoritmh module</a></li>
+<li><a class="reference internal" href="#module-Playground.graph_theory.travelling_salesman_problem">Playground.graph_theory.travelling_salesman_problem module</a></li>
+<li><a class="reference internal" href="#module-Playground.graph_theory">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/Playground.graph_theory.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Playground  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Tom.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.
+    </div>
+  </body>
+</html>

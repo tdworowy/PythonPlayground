@@ -8,6 +8,7 @@ Subpackages
    :maxdepth: 4
 
    Playground.RabbitMQ.example1
+   Playground.RabbitMQ.example2
 
 Module contents
 ---------------
