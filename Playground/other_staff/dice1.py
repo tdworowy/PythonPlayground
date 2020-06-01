@@ -1,4 +1,5 @@
 import random
+
 if __name__ == "__main__":
     res = []
     for i in range(10000000):
@@ -11,8 +12,7 @@ if __name__ == "__main__":
                 res.append(j)
                 roll = False
             else:
-                j +=1
+                j += 1
 
-
-    print(sum(res)/10000000)
+    print(sum(res) / 10000000)
     # print(res)

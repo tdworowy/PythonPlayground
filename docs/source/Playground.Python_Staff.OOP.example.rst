@@ -5,6 +5,7 @@ Subpackages
 -----------
 
 .. toctree::
+   :maxdepth: 4
 
    Playground.Python_Staff.OOP.example.example1
    Playground.Python_Staff.OOP.example.example2_pizza

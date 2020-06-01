@@ -5,6 +5,7 @@ Subpackages
 -----------
 
 .. toctree::
+   :maxdepth: 4
 
    Playground.Python_Staff.OOP.example
    Playground.Python_Staff.OOP.ovrloading

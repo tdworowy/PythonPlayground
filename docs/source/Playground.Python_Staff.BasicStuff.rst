@@ -5,19 +5,12 @@ Subpackages
 -----------
 
 .. toctree::
+   :maxdepth: 4
 
    Playground.Python_Staff.BasicStuff.generators
 
 Submodules
 ----------
-
-Playground.Python\_Staff.BasicStuff.DIctionaryComprehension module
-------------------------------------------------------------------
-
-.. automodule:: Playground.Python_Staff.BasicStuff.DIctionaryComprehension
-   :members:
-   :undoc-members:
-   :show-inheritance:
 
 Playground.Python\_Staff.BasicStuff.Sets module
 -----------------------------------------------
@@ -39,6 +32,14 @@ Playground.Python\_Staff.BasicStuff.counter module
 --------------------------------------------------
 
 .. automodule:: Playground.Python_Staff.BasicStuff.counter
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Playground.Python\_Staff.BasicStuff.dictionary\_comprehension module
+--------------------------------------------------------------------
+
+.. automodule:: Playground.Python_Staff.BasicStuff.dictionary_comprehension
    :members:
    :undoc-members:
    :show-inheritance:
@@ -147,18 +148,18 @@ Playground.Python\_Staff.BasicStuff.iteration module
    :undoc-members:
    :show-inheritance:
 
-Playground.Python\_Staff.BasicStuff.listComprehension module
-------------------------------------------------------------
+Playground.Python\_Staff.BasicStuff.list\_comprehension1 module
+---------------------------------------------------------------
 
-.. automodule:: Playground.Python_Staff.BasicStuff.listComprehension
+.. automodule:: Playground.Python_Staff.BasicStuff.list_comprehension1
    :members:
    :undoc-members:
    :show-inheritance:
 
-Playground.Python\_Staff.BasicStuff.listComprehension2 module
--------------------------------------------------------------
+Playground.Python\_Staff.BasicStuff.list\_comprehension2 module
+---------------------------------------------------------------
 
-.. automodule:: Playground.Python_Staff.BasicStuff.listComprehension2
+.. automodule:: Playground.Python_Staff.BasicStuff.list_comprehension2
    :members:
    :undoc-members:
    :show-inheritance:
@@ -171,10 +172,10 @@ Playground.Python\_Staff.BasicStuff.lists module
    :undoc-members:
    :show-inheritance:
 
-Playground.Python\_Staff.BasicStuff.mapEmulator module
-------------------------------------------------------
+Playground.Python\_Staff.BasicStuff.map\_emulator module
+--------------------------------------------------------
 
-.. automodule:: Playground.Python_Staff.BasicStuff.mapEmulator
+.. automodule:: Playground.Python_Staff.BasicStuff.map_emulator
    :members:
    :undoc-members:
    :show-inheritance:
@@ -219,10 +220,10 @@ Playground.Python\_Staff.BasicStuff.zip module
    :undoc-members:
    :show-inheritance:
 
-Playground.Python\_Staff.BasicStuff.zipEmulator module
-------------------------------------------------------
+Playground.Python\_Staff.BasicStuff.zip\_emulator module
+--------------------------------------------------------
 
-.. automodule:: Playground.Python_Staff.BasicStuff.zipEmulator
+.. automodule:: Playground.Python_Staff.BasicStuff.zip_emulator
    :members:
    :undoc-members:
    :show-inheritance:

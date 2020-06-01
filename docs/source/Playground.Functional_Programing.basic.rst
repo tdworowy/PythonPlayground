@@ -4,14 +4,6 @@ Playground.Functional\_Programing.basic package
 Submodules
 ----------
 
-Playground.Functional\_Programing.basic.Filter module
------------------------------------------------------
-
-.. automodule:: Playground.Functional_Programing.basic.Filter
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
 Playground.Functional\_Programing.basic.Lambda module
 -----------------------------------------------------
 
@@ -28,6 +20,14 @@ Playground.Functional\_Programing.basic.Reduce module
    :undoc-members:
    :show-inheritance:
 
+Playground.Functional\_Programing.basic.filter\_ module
+-------------------------------------------------------
+
+.. automodule:: Playground.Functional_Programing.basic.filter_
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 Playground.Functional\_Programing.basic.lambda2 module
 ------------------------------------------------------
 
@@ -36,10 +36,10 @@ Playground.Functional\_Programing.basic.lambda2 module
    :undoc-members:
    :show-inheritance:
 
-Playground.Functional\_Programing.basic.map module
---------------------------------------------------
+Playground.Functional\_Programing.basic.map1 module
+---------------------------------------------------
 
-.. automodule:: Playground.Functional_Programing.basic.map
+.. automodule:: Playground.Functional_Programing.basic.map1
    :members:
    :undoc-members:
    :show-inheritance:

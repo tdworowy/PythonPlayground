@@ -5,6 +5,7 @@ Subpackages
 -----------
 
 .. toctree::
+   :maxdepth: 4
 
    Playground.my_utils.PT
    Playground.my_utils.classTools_

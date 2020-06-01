@@ -16,7 +16,7 @@ if __name__ == "__main__":
 
 
     def action(x):
-        return (lambda y: x + y)
+        return lambda y: x + y
 
 
     act = action(99)

@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Playground.Python_Staff.otherStaff.formats &#8212; Playground  documentation</title>
+    <link rel="stylesheet" href="../../../../_static/pyramid.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+    <script src="../../../../_static/jquery.js"></script>
+    <script src="../../../../_static/underscore.js"></script>
+    <script src="../../../../_static/doctools.js"></script>
+    <script src="../../../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neuton&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nobile:regular,italic,bold,bolditalic&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<!--[if lte IE 6]>
+<link rel="stylesheet" href="../../../../_static/ie6.css" type="text/css" media="screen" charset="utf-8" />
+<![endif]-->
+
+  </head><body>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../index.html">Playground  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../index.html" accesskey="U">Module code</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for Playground.Python_Staff.otherStaff.formats</h1><div class="highlight"><pre>
+<span></span>
+<div class="viewcode-block" id="commas"><a class="viewcode-back" href="../../../../Playground.Python_Staff.otherStaff.html#Playground.Python_Staff.otherStaff.formats.commas">[docs]</a><span class="k">def</span> <span class="nf">commas</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+    <span class="n">digits</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="p">(</span><span class="n">digits</span><span class="o">.</span><span class="n">isdigit</span><span class="p">())</span>
+    <span class="n">result</span> <span class="o">=</span><span class="s1">&#39;&#39;</span>
+    <span class="k">while</span> <span class="n">digits</span><span class="p">:</span>
+        <span class="n">digits</span><span class="p">,</span> <span class="n">last3</span> <span class="o">=</span> <span class="n">digits</span><span class="p">[:</span><span class="o">-</span><span class="mi">3</span><span class="p">],</span> <span class="n">digits</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">:]</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="p">(</span><span class="n">last3</span> <span class="o">+</span> <span class="s1">&#39;,&#39;</span> <span class="o">+</span> <span class="n">result</span><span class="p">)</span> <span class="k">if</span> <span class="n">result</span> <span class="k">else</span> <span class="n">last3</span>
+    <span class="k">return</span> <span class="n">result</span></div>
+
+
+<div class="viewcode-block" id="money"><a class="viewcode-back" href="../../../../Playground.Python_Staff.otherStaff.html#Playground.Python_Staff.otherStaff.formats.money">[docs]</a><span class="k">def</span> <span class="nf">money</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+    <span class="n">sign</span> <span class="o">=</span> <span class="s1">&#39;-&#39;</span> <span class="k">if</span> <span class="n">N</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="s1">&#39;&#39;</span>
+    <span class="n">N</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>
+    <span class="n">whole</span> <span class="o">=</span> <span class="n">commas</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">N</span><span class="p">))</span>
+    <span class="n">fract</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;</span><span class="si">%.2f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">N</span><span class="p">)[</span><span class="o">-</span><span class="mi">2</span><span class="p">:]</span>
+    <span class="nb">format</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">%s%s</span><span class="s1">.</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">sign</span><span class="p">,</span> <span class="n">whole</span><span class="p">,</span> <span class="n">fract</span><span class="p">)</span>
+    <span class="k">return</span> <span class="s1">&#39;$</span><span class="si">%*s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">width</span><span class="p">,</span> <span class="nb">format</span><span class="p">)</span></div>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">self_test</span><span class="p">():</span>
+        <span class="n">tests</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
+        <span class="n">tests</span> <span class="o">+=</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">123</span><span class="p">,</span> <span class="mi">1234</span><span class="p">,</span> <span class="mi">12345</span><span class="p">,</span> <span class="mi">123456</span><span class="p">,</span> <span class="mi">1234567</span>
+        <span class="k">for</span> <span class="n">test</span> <span class="ow">in</span> <span class="n">tests</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">commas</span><span class="p">(</span><span class="n">test</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+        <span class="n">tests</span> <span class="o">=</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">1.23</span><span class="p">,</span> <span class="mf">1.</span><span class="p">,</span> <span class="mf">1.2</span><span class="p">,</span> <span class="mf">3.14156</span>
+        <span class="n">tests</span> <span class="o">+=</span> <span class="mf">12.34</span><span class="p">,</span> <span class="mf">12.344</span><span class="p">,</span> <span class="mf">12.345</span><span class="p">,</span> <span class="mf">12.346</span>
+        <span class="n">tests</span> <span class="o">+=</span> <span class="mi">2</span> <span class="o">**</span> <span class="mi">32</span><span class="p">,</span> <span class="p">(</span><span class="mi">2</span> <span class="o">**</span> <span class="mi">32</span> <span class="o">+</span> <span class="o">.</span><span class="mi">2345</span><span class="p">)</span>
+        <span class="n">tests</span> <span class="o">+=</span> <span class="mf">1.2345</span><span class="p">,</span> <span class="mf">1.2</span><span class="p">,</span> <span class="mf">0.2345</span>
+        <span class="n">tests</span> <span class="o">+=</span> <span class="p">(</span><span class="mi">2</span> <span class="o">**</span> <span class="mi">32</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span> <span class="o">**</span> <span class="mi">32</span> <span class="o">+</span> <span class="o">.</span><span class="mi">2345</span><span class="p">)</span>
+        <span class="n">tests</span> <span class="o">+=</span> <span class="p">(</span><span class="mi">2</span> <span class="o">**</span> <span class="mi">100</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span> <span class="o">**</span> <span class="mi">100</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">test</span> <span class="ow">in</span> <span class="n">tests</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%s</span><span class="s1"> [</span><span class="si">%s</span><span class="s1">]&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">money</span><span class="p">(</span><span class="n">test</span><span class="p">,</span> <span class="mi">17</span><span class="p">),</span> <span class="n">test</span><span class="p">))</span>
+
+
+    <span class="kn">import</span> <span class="nn">sys</span>
+
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">self_test</span><span class="p">()</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">money</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span> <span class="nb">int</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">])))</span>
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../index.html">Playground  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../index.html" >Module code</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Tom.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.
+    </div>
+  </body>
+</html>

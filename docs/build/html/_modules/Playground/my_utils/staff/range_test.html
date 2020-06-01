@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Playground.my_utils.staff.range_test &#8212; Playground  documentation</title>
+    <link rel="stylesheet" href="../../../../_static/pyramid.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+    <script src="../../../../_static/jquery.js"></script>
+    <script src="../../../../_static/underscore.js"></script>
+    <script src="../../../../_static/doctools.js"></script>
+    <script src="../../../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neuton&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nobile:regular,italic,bold,bolditalic&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<!--[if lte IE 6]>
+<link rel="stylesheet" href="../../../../_static/ie6.css" type="text/css" media="screen" charset="utf-8" />
+<![endif]-->
+
+  </head><body>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../index.html">Playground  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../index.html" accesskey="U">Module code</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for Playground.my_utils.staff.range_test</h1><div class="highlight"><pre>
+<div class="viewcode-block" id="range_test"><a class="viewcode-back" href="../../../../Playground.my_utils.staff.html#Playground.my_utils.staff.range_test.range_test">[docs]</a><span></span><span class="k">def</span> <span class="nf">range_test</span><span class="p">(</span><span class="o">*</span><span class="n">args_check</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">on_decorator</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">__debug__</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">func</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">def</span> <span class="nf">on_call</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
+                <span class="k">for</span> <span class="p">(</span><span class="n">ix</span><span class="p">,</span> <span class="n">low</span><span class="p">,</span> <span class="n">high</span><span class="p">)</span> <span class="ow">in</span> <span class="n">args_check</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="n">args</span><span class="p">[</span><span class="n">ix</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">low</span> <span class="ow">or</span> <span class="n">args</span><span class="p">[</span><span class="n">ix</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">high</span><span class="p">:</span>
+                        <span class="n">errmsq</span> <span class="o">=</span> <span class="s1">&#39;Argument </span><span class="si">%s</span><span class="s1"> is not in range </span><span class="si">%s</span><span class="s1">...</span><span class="si">%s</span><span class="s1"> &#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">ix</span><span class="p">,</span> <span class="n">low</span><span class="p">,</span> <span class="n">high</span><span class="p">)</span>
+                        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="n">errmsq</span><span class="p">)</span>
+                <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">)</span>
+
+            <span class="k">return</span> <span class="n">on_call</span>
+
+    <span class="k">return</span> <span class="n">on_decorator</span></div>
+
+
+<span class="n">trace</span> <span class="o">=</span> <span class="kc">True</span>
+
+
+<div class="viewcode-block" id="range_test_extend"><a class="viewcode-back" href="../../../../Playground.my_utils.staff.html#Playground.my_utils.staff.range_test.range_test_extend">[docs]</a><span class="k">def</span> <span class="nf">range_test_extend</span><span class="p">(</span><span class="o">**</span><span class="n">arg_checks</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">on_decorator</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">__debug__</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">func</span>
+        <span class="k">else</span><span class="p">:</span>
+
+            <span class="n">code</span> <span class="o">=</span> <span class="n">func</span><span class="o">.</span><span class="vm">__code__</span>
+            <span class="n">allargs</span> <span class="o">=</span> <span class="n">code</span><span class="o">.</span><span class="n">co_varnames</span><span class="p">[:</span><span class="n">code</span><span class="o">.</span><span class="n">co_argcount</span><span class="p">]</span>
+            <span class="n">funcname</span> <span class="o">=</span> <span class="n">func</span><span class="o">.</span><span class="vm">__name__</span>
+
+            <span class="k">def</span> <span class="nf">on_call</span><span class="p">(</span><span class="o">*</span><span class="n">pargs</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+                <span class="n">positionals</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">allargs</span><span class="p">)</span>
+                <span class="n">positionals</span> <span class="o">=</span> <span class="n">positionals</span><span class="p">[:</span><span class="nb">len</span><span class="p">(</span><span class="n">pargs</span><span class="p">)]</span>
+
+                <span class="k">for</span> <span class="p">(</span><span class="n">argname</span><span class="p">,</span> <span class="p">(</span><span class="n">low</span><span class="p">,</span> <span class="n">high</span><span class="p">))</span> <span class="ow">in</span> <span class="n">arg_checks</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                    <span class="k">if</span> <span class="n">argname</span> <span class="ow">in</span> <span class="n">kwargs</span><span class="p">:</span>
+                        <span class="k">if</span> <span class="n">kwargs</span><span class="p">[</span><span class="n">argname</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">low</span> <span class="ow">or</span> <span class="n">kwargs</span><span class="p">[</span><span class="n">argname</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">high</span><span class="p">:</span>
+                            <span class="n">errmsq</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">%s</span><span class="s1"> Argument </span><span class="si">%s</span><span class="s1"> is not in range </span><span class="si">%s</span><span class="s1">...</span><span class="si">%s</span><span class="s1"> &#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">funcname</span><span class="p">,</span> <span class="n">argname</span><span class="p">,</span> <span class="n">low</span><span class="p">,</span> <span class="n">high</span><span class="p">)</span>
+                            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="n">errmsq</span><span class="p">)</span>
+                    <span class="k">elif</span> <span class="n">argname</span> <span class="ow">in</span> <span class="n">positionals</span><span class="p">:</span>
+                        <span class="n">position</span> <span class="o">=</span> <span class="n">positionals</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">argname</span><span class="p">)</span>
+                        <span class="k">if</span> <span class="n">pargs</span><span class="p">[</span><span class="n">position</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">low</span> <span class="ow">or</span> <span class="n">pargs</span><span class="p">[</span><span class="n">position</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">high</span><span class="p">:</span>
+                            <span class="n">errmsq</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">%s</span><span class="s1"> Argument </span><span class="si">%s</span><span class="s1"> is not in range </span><span class="si">%s</span><span class="s1">...</span><span class="si">%s</span><span class="s1"> &#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">funcname</span><span class="p">,</span> <span class="n">argname</span><span class="p">,</span> <span class="n">low</span><span class="p">,</span> <span class="n">high</span><span class="p">)</span>
+                            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="n">errmsq</span><span class="p">)</span>
+                    <span class="k">else</span><span class="p">:</span>
+                        <span class="k">if</span> <span class="n">trace</span><span class="p">:</span>
+                            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Argument </span><span class="si">%s</span><span class="s1"> has default value&#39;</span> <span class="o">%</span> <span class="n">argname</span><span class="p">)</span>
+                <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">pargs</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+            <span class="k">return</span> <span class="n">on_call</span>
+
+    <span class="k">return</span> <span class="n">on_decorator</span></div>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="nd">@range_test</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">31</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">12</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2009</span><span class="p">])</span>
+    <span class="k">def</span> <span class="nf">birthday</span><span class="p">(</span><span class="n">D</span><span class="p">,</span> <span class="n">M</span><span class="p">,</span> <span class="n">Y</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Birthday = </span><span class="si">{0}</span><span class="s1">/</span><span class="si">{1}</span><span class="s1">/</span><span class="si">{2}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">D</span><span class="p">,</span> <span class="n">M</span><span class="p">,</span> <span class="n">Y</span><span class="p">))</span>
+
+
+    <span class="n">birthday</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">birthday</span><span class="p">(</span><span class="mi">31</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">2009</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">TypeError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+
+
+    <span class="nd">@range_test_extend</span><span class="p">(</span><span class="n">age</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">120</span><span class="p">))</span>
+    <span class="k">def</span> <span class="nf">person</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%s</span><span class="s1"> has </span><span class="si">%s</span><span class="s1"> age&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">))</span>
+
+
+    <span class="n">person</span><span class="p">(</span><span class="s2">&quot;test&quot;</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">person</span><span class="p">(</span><span class="s2">&quot;test2&quot;</span><span class="p">,</span> <span class="mi">121</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">TypeError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../index.html">Playground  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../index.html" >Module code</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Tom.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.
+    </div>
+  </body>
+</html>

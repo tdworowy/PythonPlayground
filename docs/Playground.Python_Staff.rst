@@ -5,6 +5,7 @@ Subpackages
 -----------
 
 .. toctree::
+   :maxdepth: 4
 
    Playground.Python_Staff.AdvanceStaff
    Playground.Python_Staff.BasicStuff
