@@ -7,7 +7,8 @@ def plot_bifurcation_diagram(map_function, n: int = 10000, iterations: int = 100
     last = 100
     x = 1e-5 * np.ones(n)
     lyapunov = np.zeros(n)
-    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(8, 9),
+    fig, (ax1, ax2) = plt.subplots(2, 1,
+                                   figsize=(8, 9),
                                    sharex=True)
     for i in range(iterations):
         x = map_function(r, x)
