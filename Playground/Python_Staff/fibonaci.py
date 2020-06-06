@@ -48,20 +48,41 @@ def memoize(f):
     return _memoized
 
 
-
 @memoize
 @timer3
 def fib4(count):
     if count < 2:
         return 1
     else:
-        return fib3(count - 1) + fib3(count - 2)
+        return fib4(count - 1) + fib4(count - 2)
+
+
+@memoize
+@timer3
+def fib5(count):
+    if count < 2:
+        return 1
+    else:
+        return fib5(count - 1) + fib5(count - 2)
 
 
 if __name__ == '__main__':
-    print(fib1(40))
-    print(fib2(40))
-    print(fib3(40))
+    print(fib1(35))
+    print("*"*10)
 
-    print(fib4(40))
-    print(fib4(40))
+    print(fib2(35))
+    print("*" * 10)
+
+    print(fib3(35))
+    print("*" * 10)
+
+    print(fib4(35))
+    print("*" * 10)
+
+    print(fib4(35))
+    print("*" * 10)
+
+    print(fib5(35))
+    print("*" * 10)
+
+    print(fib5(35))
