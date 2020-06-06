@@ -1,7 +1,8 @@
 import itertools
+from typing import Union
 
 
-def count_wins(dice1, dice2):
+def count_wins(dice1: list, dice2: list) -> tuple:
     assert len(dice1) == 6 and len(dice2) == 6
     dice1_wins, dice2_wins = 0, 0
     for res in itertools.product(dice1, dice2):
@@ -13,7 +14,7 @@ def count_wins(dice1, dice2):
     return dice1_wins, dice2_wins
 
 
-def find_the_best_dice(dices):
+def find_the_best_dice(dices: list) -> Union[int, list]:
     assert all(len(dice) == 6 for dice in dices)
     dices = {i: dice for i, dice in enumerate(dices)}
     wins_dices = {i: 0 for i, dice in enumerate(dices)}
@@ -31,7 +32,7 @@ def find_the_best_dice(dices):
         return list(wins_dices.keys())[list(wins_dices.values()).index(max_value)]
 
 
-def compute_strategy(dices):
+def compute_strategy(dices: list) -> dict:
     assert all(len(dice) == 6 for dice in dices)
 
     strategy = dict()

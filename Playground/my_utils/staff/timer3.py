@@ -51,13 +51,13 @@ def timer3(f):
         if is_evaluating:
             return f(x)
         else:
-            start_time = time.clock()
+            start_time = time.perf_counter()
             is_evaluating = True
             try:
                 value = f(x)
             finally:
                 is_evaluating = False
-            end_time = time.clock()
+            end_time = time.perf_counter()
             print('time taken: {time}'.format(time=end_time - start_time))
             return value
 
