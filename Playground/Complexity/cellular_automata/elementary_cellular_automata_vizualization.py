@@ -6,6 +6,10 @@ from Playground.Complexity.cellular_automata.elementary_cellular_automata import
     cellular_automata_step
 
 
+def count_rules(neighborhood_size: int) -> int:
+    return 2 ** (2 ** neighborhood_size)
+
+
 class GUI:
     def __init__(self, width: int = 1200, height: int = 900, cell_size: int = 5):
         self.top = tkinter.Tk()
@@ -26,6 +30,13 @@ class GUI:
         self.button_clear = tkinter.Button(master, text="Clear", command=self.clear_call_back)
 
         self.wolfram_rule_number = tkinter.Entry(master)
+        self.wolfram_rule_number.insert(0, "90")
+
+        self.neighborhood_size = tkinter.Entry(master)
+        self.neighborhood_size.insert(0, "3")
+
+        self.labelText = tkinter.StringVar(master)
+        self.rules_count = tkinter.Label(master, textvariable=self.labelText)
 
         self.cell_size = cell_size
 
@@ -39,13 +50,19 @@ class GUI:
         return dic
 
     def init_call_back(self):
-        self.rule = generate_rule(int(self.wolfram_rule_number.get()))
+        self.rule = generate_rule(int(self.wolfram_rule_number.get()), int(self.neighborhood_size.get()))
+
         self.input_list = RoundList([choice([0, 1]) for i in range(self.width // self.cell_size)])
 
+        self.labelText.set(f"Possible Rules: {str(count_rules(int(self.neighborhood_size.get())))}")
+
     def init_one_call_back(self):
-        self.rule = generate_rule(int(self.wolfram_rule_number.get()))
+        self.rule = generate_rule(int(self.wolfram_rule_number.get()), int(self.neighborhood_size.get()))
+
         self.input_list = RoundList([0 for i in range(self.width // self.cell_size)])
         self.input_list[len(self.input_list) // 2] = 1
+
+        self.labelText.set(f"Possible Rules: {str(count_rules(int(self.neighborhood_size.get())))}")
 
     def step_call_back(self):
         self.x = 0
@@ -87,6 +104,8 @@ class GUI:
         self.button_clear.pack(in_=self.top_frame, side="left")
 
         self.wolfram_rule_number.pack(in_=self.top_frame, side="left")
+        self.neighborhood_size.pack(in_=self.top_frame, side="left")
+        self.rules_count.pack(in_=self.top_frame, side="left")
 
         self.canvas.pack(in_=self.button_frame)
 
