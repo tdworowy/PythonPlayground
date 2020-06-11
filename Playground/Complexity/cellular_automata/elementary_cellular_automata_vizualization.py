@@ -79,12 +79,12 @@ class GUI:
         self.button_frame.pack(side="bottom", fill="both")
 
         self.button_step.pack(in_=self.top_frame, side="left")
-        self.button_play.pack(in_=self.top_frame,side="left")
-        self.button_init_random.pack(in_=self.top_frame,side="left")
-        self.button_init_one.pack(in_=self.top_frame,side="left")
-        self.button_clear.pack(in_=self.top_frame,side="left")
+        self.button_play.pack(in_=self.top_frame, side="left")
+        self.button_init_random.pack(in_=self.top_frame, side="left")
+        self.button_init_one.pack(in_=self.top_frame, side="left")
+        self.button_clear.pack(in_=self.top_frame, side="left")
 
-        self.wolfram_rule_number.pack(in_=self.top_frame,side="left")
+        self.wolfram_rule_number.pack(in_=self.top_frame, side="left")
 
         self.canvas.pack(in_=self.button_frame)
 

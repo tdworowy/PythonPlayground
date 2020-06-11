@@ -92,23 +92,44 @@
     <span class="k">return</span> <span class="n">_memoized</span></div>
 
 
-
 <div class="viewcode-block" id="fib4"><a class="viewcode-back" href="../../../Playground.Python_Staff.html#Playground.Python_Staff.fibonaci.fib4">[docs]</a><span class="nd">@memoize</span>
 <span class="nd">@timer3</span>
 <span class="k">def</span> <span class="nf">fib4</span><span class="p">(</span><span class="n">count</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">count</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
         <span class="k">return</span> <span class="mi">1</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">fib3</span><span class="p">(</span><span class="n">count</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">fib3</span><span class="p">(</span><span class="n">count</span> <span class="o">-</span> <span class="mi">2</span><span class="p">)</span></div>
+        <span class="k">return</span> <span class="n">fib4</span><span class="p">(</span><span class="n">count</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">fib4</span><span class="p">(</span><span class="n">count</span> <span class="o">-</span> <span class="mi">2</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="fib5"><a class="viewcode-back" href="../../../Playground.Python_Staff.html#Playground.Python_Staff.fibonaci.fib5">[docs]</a><span class="nd">@memoize</span>
+<span class="nd">@timer3</span>
+<span class="k">def</span> <span class="nf">fib5</span><span class="p">(</span><span class="n">count</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">count</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">fib5</span><span class="p">(</span><span class="n">count</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">fib5</span><span class="p">(</span><span class="n">count</span> <span class="o">-</span> <span class="mi">2</span><span class="p">)</span></div>
 
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">fib1</span><span class="p">(</span><span class="mi">40</span><span class="p">))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">fib2</span><span class="p">(</span><span class="mi">40</span><span class="p">))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">fib3</span><span class="p">(</span><span class="mi">40</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">fib1</span><span class="p">(</span><span class="mi">35</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;*&quot;</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
 
-    <span class="nb">print</span><span class="p">(</span><span class="n">fib4</span><span class="p">(</span><span class="mi">40</span><span class="p">))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">fib4</span><span class="p">(</span><span class="mi">40</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">fib2</span><span class="p">(</span><span class="mi">35</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;*&quot;</span> <span class="o">*</span> <span class="mi">10</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="n">fib3</span><span class="p">(</span><span class="mi">35</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;*&quot;</span> <span class="o">*</span> <span class="mi">10</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="n">fib4</span><span class="p">(</span><span class="mi">35</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;*&quot;</span> <span class="o">*</span> <span class="mi">10</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="n">fib4</span><span class="p">(</span><span class="mi">35</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;*&quot;</span> <span class="o">*</span> <span class="mi">10</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="n">fib5</span><span class="p">(</span><span class="mi">35</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;*&quot;</span> <span class="o">*</span> <span class="mi">10</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="n">fib5</span><span class="p">(</span><span class="mi">35</span><span class="p">))</span>
 </pre></div>
 
           </div>
