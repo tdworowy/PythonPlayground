@@ -9,32 +9,22 @@ from Playground.Complexity.cellular_automata.elementary_cellular_automata import
 class GUI:
     def __init__(self):
         self.top = tkinter.Tk()
+        self.top_frame = tkinter.Frame()
+        self.button_frame = tkinter.Frame()
+
         self.width = 1200
         self.height = 900
 
-        self.btn_step_text = tkinter.StringVar(master)
-        self.btn_step_text.set("Step")
-
-        self.btn_init_text = tkinter.StringVar(master)
-        self.btn_init_text.set("Init Random")
-
-        self.btn_init_one_text = tkinter.StringVar(master)
-        self.btn_init_one_text.set("Init One")
-
-        self.btn_clear_text = tkinter.StringVar(master)
-        self.btn_clear_text.set("Clear")
-
-        self.btn_play_text = tkinter.StringVar(master)
-        self.btn_play_text.set("play")
-
         self.canvas = tkinter.Canvas(master, width=self.width, height=self.height)
 
-        self.button_step = tkinter.Button(master, textvariable=self.btn_step_text, command=self.step_call_back)
-        self.button_play = tkinter.Button(master, textvariable=self.btn_play_text, command=self.play_call_back)
-        
-        self.button_init_random = tkinter.Button(master, textvariable=self.btn_init_text, command=self.init_call_back)
-        self.button_init_one = tkinter.Button(master, textvariable=self.btn_init_one_text, command=self.init_one_call_back)
-        self.button_clear = tkinter.Button(master, textvariable=self.btn_clear_text, command=self.clear_call_back)
+        self.button_step = tkinter.Button(master, text="Step", command=self.step_call_back)
+        self.button_play = tkinter.Button(master, text="Play", command=self.play_call_back)
+
+        self.button_init_random = tkinter.Button(master, text="Init random", command=self.init_call_back)
+        self.button_init_one = tkinter.Button(master, text="Init one", command=self.init_one_call_back)
+
+        self.button_clear = tkinter.Button(master, text="Clear", command=self.clear_call_back)
+
         self.wolfram_rule_number = tkinter.Entry(master)
 
         self.size = 5
@@ -55,8 +45,7 @@ class GUI:
     def init_one_call_back(self):
         self.rule = generate_rule(int(self.wolfram_rule_number.get()))
         self.input_list = RoundList([0 for i in range(self.width // self.size)])
-        self.input_list[len(self.input_list)//2] = 1
-
+        self.input_list[len(self.input_list) // 2] = 1
 
     def step_call_back(self):
         self.x = 0
@@ -85,13 +74,19 @@ class GUI:
             self.canvas.delete(rectangle)
 
     def main_loop(self):
-        self.button_step.pack()
-        self.button_play.pack()
-        self.button_init_random.pack()
-        self.button_init_one.pack()
-        self.button_clear.pack()
-        self.wolfram_rule_number.pack()
-        self.canvas.pack()
+
+        self.top_frame.pack(side="top", fill="both", expand=True)
+        self.button_frame.pack(side="bottom", fill="both")
+
+        self.button_step.pack(in_=self.top_frame, side="left")
+        self.button_play.pack(in_=self.top_frame,side="left")
+        self.button_init_random.pack(in_=self.top_frame,side="left")
+        self.button_init_one.pack(in_=self.top_frame,side="left")
+        self.button_clear.pack(in_=self.top_frame,side="left")
+
+        self.wolfram_rule_number.pack(in_=self.top_frame,side="left")
+
+        self.canvas.pack(in_=self.button_frame)
 
         self.top.mainloop()
 
