@@ -7,13 +7,13 @@ from Playground.Complexity.cellular_automata.elementary_cellular_automata import
 
 
 class GUI:
-    def __init__(self):
+    def __init__(self, width: int = 1200, height: int = 900, cell_size: int = 5):
         self.top = tkinter.Tk()
         self.top_frame = tkinter.Frame()
         self.button_frame = tkinter.Frame()
 
-        self.width = 1200
-        self.height = 900
+        self.width = width
+        self.height = height
 
         self.canvas = tkinter.Canvas(master, width=self.width, height=self.height)
 
@@ -27,24 +27,24 @@ class GUI:
 
         self.wolfram_rule_number = tkinter.Entry(master)
 
-        self.size = 5
+        self.cell_size = cell_size
 
         self.x = 0
         self.y = 0
 
-        self.rectangles = []
+        self.cells = []
 
     def rectangle_coordinates(self, x: int, y: int) -> dict:
-        dic = {'x': x, 'y': y, 'x1': self.size + x, 'y1': self.size + y}
+        dic = {'x': x, 'y': y, 'x1': self.cell_size + x, 'y1': self.cell_size + y}
         return dic
 
     def init_call_back(self):
         self.rule = generate_rule(int(self.wolfram_rule_number.get()))
-        self.input_list = RoundList([choice([0, 1]) for i in range(self.width // self.size)])
+        self.input_list = RoundList([choice([0, 1]) for i in range(self.width // self.cell_size)])
 
     def init_one_call_back(self):
         self.rule = generate_rule(int(self.wolfram_rule_number.get()))
-        self.input_list = RoundList([0 for i in range(self.width // self.size)])
+        self.input_list = RoundList([0 for i in range(self.width // self.cell_size)])
         self.input_list[len(self.input_list) // 2] = 1
 
     def step_call_back(self):
@@ -57,20 +57,20 @@ class GUI:
                                                      coordinate['x1'],
                                                      coordinate['y1'], fill=colour)
 
-            self.rectangles.append(rectangle)
-            self.x += self.size
+            self.cells.append(rectangle)
+            self.x += self.cell_size
         self.input_list = cellular_automata_step(self.input_list, self.rule)
-        self.y += self.size
+        self.y += self.cell_size
 
     def play_call_back(self):
-        for i in range(self.height // self.size):
+        for i in range(self.height // self.cell_size):
             self.step_call_back()
             self.top.update()
 
     def clear_call_back(self):
         self.x = 0
         self.y = 0
-        for rectangle in self.rectangles:
+        for rectangle in self.cells:
             self.canvas.delete(rectangle)
 
     def main_loop(self):
