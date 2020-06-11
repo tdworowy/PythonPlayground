@@ -55,10 +55,12 @@ class GUI:
             rectangle = self.canvas.create_rectangle(coordinate['x'],
                                                      coordinate['y'],
                                                      coordinate['x1'],
-                                                     coordinate['y1'], fill=colour)
+                                                     coordinate['y1'],
+                                                     fill=colour)
 
             self.cells.append(rectangle)
             self.x += self.cell_size
+
         self.input_list = cellular_automata_step(self.input_list, self.rule)
         self.y += self.cell_size
 
