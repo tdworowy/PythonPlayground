@@ -11,7 +11,7 @@ def count_rules(neighborhood_size: int) -> int:
 
 
 class GUI:
-    def __init__(self, width: int = 1200, height: int = 900, cell_size: int = 5):
+    def __init__(self, width: int = 1920, height: int = 1080, cell_size: int = 5):
         self.top = tkinter.Tk()
         self.top_frame = tkinter.Frame()
         self.button_frame = tkinter.Frame()

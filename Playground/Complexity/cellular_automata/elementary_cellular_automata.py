@@ -43,8 +43,11 @@ def cellular_automata_step(input_list: RoundList, rules: list) -> RoundList:
         for rule in rules:
             neighborhood_size = len(rule.neighborhood)
             temp = (neighborhood_size - 1) // 2
-            if tuple(input_list[j] for j in range(i - temp, i + temp + 1)) == rule.neighborhood:
+            current_neighborhood = tuple(input_list[j] for j in range(i - temp, i + temp + 1))
+
+            if current_neighborhood == rule.neighborhood:
                 output_list.append(rule.type)
+
     return RoundList(output_list)
 
 
@@ -54,6 +57,6 @@ if __name__ == "__main__":
     input_list = RoundList(input_list)
     rule = generate_rule(110, 5)
 
-    for i in range(50):
+    for i in range(1):
         input_list = cellular_automata_step(input_list, rule)
         print("".join(["*" if i == 1 else " " for i in input_list]))
