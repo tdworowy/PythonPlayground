@@ -1,13 +1,25 @@
 import tkinter
 from doctest import master
 from random import choice
-
+from os import path, mkdir
 from Playground.Complexity.cellular_automata.elementary_cellular_automata import RoundList, generate_rule, \
     cellular_automata_step
+
+from PIL import Image
 
 
 def count_rules(neighborhood_size: int) -> int:
     return 2 ** (2 ** neighborhood_size)
+
+
+def take_screenshot(folder: str, file_name: str, canvas):
+    if not path.isdir(folder):
+        mkdir(folder)
+    canvas.postscript(file=f'{file_name}.eps')
+    img = Image.open(f'{file_name}.eps')
+    img.save(path.join(folder, f'{file_name}.png'), 'png')
+    # snapshot = ImageGrab.grab()
+    # snapshot.save(path.join(folder, file_name))
 
 
 class GUI:
@@ -24,10 +36,12 @@ class GUI:
         self.button_step = tkinter.Button(master, text="Step", command=self.step_call_back)
         self.button_play = tkinter.Button(master, text="Play", command=self.play_call_back)
 
-        self.button_init_random = tkinter.Button(master, text="Init random", command=self.init_call_back)
+        self.button_init_random = tkinter.Button(master, text="Init random", command=self.init_random_call_back)
         self.button_init_one = tkinter.Button(master, text="Init one", command=self.init_one_call_back)
 
         self.button_clear = tkinter.Button(master, text="Clear", command=self.clear_call_back)
+
+        self.button_play_all = tkinter.Button(master, text="Play all rules", command=self.play_all_rules_call_back)
 
         self.wolfram_rule_number = tkinter.Entry(master)
         self.wolfram_rule_number.insert(0, "90")
@@ -44,25 +58,32 @@ class GUI:
         self.y = 0
 
         self.cells = []
+        self.init_way = "random"
 
     def rectangle_coordinates(self, x: int, y: int) -> dict:
         dic = {'x': x, 'y': y, 'x1': self.cell_size + x, 'y1': self.cell_size + y}
         return dic
 
-    def init_call_back(self):
+    def init(self):
         self.rule = generate_rule(int(self.wolfram_rule_number.get()), int(self.neighborhood_size.get()))
-
-        self.input_list = RoundList([choice([0, 1]) for i in range(self.width // self.cell_size)])
-
         self.labelText.set(f"Possible Rules: {str(count_rules(int(self.neighborhood_size.get())))}")
+
+    def random_init_list(self):
+        return RoundList([choice([0, 1]) for i in range(self.width // self.cell_size)])
+
+    def one_cell_start(self):
+        return RoundList([0 for i in range(self.width // self.cell_size)])
+
+    def init_random_call_back(self):
+        self.init()
+        self.input_list = self.random_init_list()
+        self.init_way = "random_start"
 
     def init_one_call_back(self):
-        self.rule = generate_rule(int(self.wolfram_rule_number.get()), int(self.neighborhood_size.get()))
-
-        self.input_list = RoundList([0 for i in range(self.width // self.cell_size)])
+        self.init()
+        self.input_list = self.one_cell_start()
         self.input_list[len(self.input_list) // 2] = 1
-
-        self.labelText.set(f"Possible Rules: {str(count_rules(int(self.neighborhood_size.get())))}")
+        self.init_way = "one_cell_start"
 
     def step_call_back(self):
         self.x = 0
@@ -92,6 +113,20 @@ class GUI:
         for rectangle in self.cells:
             self.canvas.delete(rectangle)
 
+    def play_all_rules_call_back(self):
+        for rule in range(count_rules(int(self.neighborhood_size.get()))):
+            self.rule = generate_rule(rule, int(self.neighborhood_size.get()))
+
+            self.wolfram_rule_number.delete(0, tkinter.END)
+            self.wolfram_rule_number.insert(0, str(rule))
+
+            self.play_call_back()
+
+            take_screenshot(f"neighborhood_size_{self.neighborhood_size.get()}", f"rule_{rule}_{self.init_way}", self.canvas)
+
+            self.clear_call_back()
+            self.input_list = self.random_init_list() if self.init_way == 'random_start' else self.one_cell_start()
+
     def main_loop(self):
 
         self.top_frame.pack(side="top", fill="both", expand=True)
@@ -102,6 +137,7 @@ class GUI:
         self.button_init_random.pack(in_=self.top_frame, side="left")
         self.button_init_one.pack(in_=self.top_frame, side="left")
         self.button_clear.pack(in_=self.top_frame, side="left")
+        self.button_play_all.pack(in_=self.top_frame, side="left")
 
         self.wolfram_rule_number.pack(in_=self.top_frame, side="left")
         self.neighborhood_size.pack(in_=self.top_frame, side="left")
