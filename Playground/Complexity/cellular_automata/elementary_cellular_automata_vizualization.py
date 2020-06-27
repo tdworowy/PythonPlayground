@@ -12,14 +12,13 @@ def count_rules(neighborhood_size: int) -> int:
     return 2 ** (2 ** neighborhood_size)
 
 
-def take_screenshot(folder: str, file_name: str, canvas):
+def take_screenshot(folder: str, file_name: str, canvas: tkinter.Canvas):
     if not path.isdir(folder):
         mkdir(folder)
-    canvas.postscript(file=f'{file_name}.eps')
-    img = Image.open(f'{file_name}.eps')
-    img.save(path.join(folder, f'{file_name}.png'), 'png')
-    # snapshot = ImageGrab.grab()
-    # snapshot.save(path.join(folder, file_name))
+    if not path.isfile(path.join(folder, f'{file_name}.png')):
+        canvas.postscript(file=f'{file_name}.eps')
+        img = Image.open(f'{file_name}.eps')
+        img.save(path.join(folder, f'{file_name}.png'), 'png')
 
 
 class GUI:
@@ -59,6 +58,7 @@ class GUI:
 
         self.cells = []
         self.init_way = "random"
+        self.silent = False
 
     def rectangle_coordinates(self, x: int, y: int) -> dict:
         dic = {'x': x, 'y': y, 'x1': self.cell_size + x, 'y1': self.cell_size + y}
@@ -105,7 +105,8 @@ class GUI:
     def play_call_back(self):
         for i in range(self.height // self.cell_size):
             self.step_call_back()
-            self.top.update()
+            if not self.silent:
+                self.top.update()
 
     def clear_call_back(self):
         self.x = 0
@@ -114,6 +115,7 @@ class GUI:
             self.canvas.delete(rectangle)
 
     def play_all_rules_call_back(self):
+        self.silent = True
         for rule in range(count_rules(int(self.neighborhood_size.get()))):
             self.rule = generate_rule(rule, int(self.neighborhood_size.get()))
 
@@ -121,10 +123,13 @@ class GUI:
             self.wolfram_rule_number.insert(0, str(rule))
 
             self.play_call_back()
+            self.top.update()
 
-            take_screenshot(f"neighborhood_size_{self.neighborhood_size.get()}", f"rule_{rule}_{self.init_way}", self.canvas)
+            take_screenshot(f"neighborhood_size_{self.neighborhood_size.get()}", f"rule_{rule}_{self.init_way}",
+                            self.canvas)
 
             self.clear_call_back()
+
             self.input_list = self.random_init_list() if self.init_way == 'random_start' else self.one_cell_start()
 
     def main_loop(self):
