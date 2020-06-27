@@ -72,7 +72,9 @@ class GUI:
         return RoundList([choice([0, 1]) for i in range(self.width // self.cell_size)])
 
     def one_cell_start(self):
-        return RoundList([0 for i in range(self.width // self.cell_size)])
+        input_list = RoundList([0 for i in range(self.width // self.cell_size)])
+        input_list[len(input_list) // 2] = 1
+        return input_list
 
     def init_random_call_back(self):
         self.init()
@@ -82,7 +84,6 @@ class GUI:
     def init_one_call_back(self):
         self.init()
         self.input_list = self.one_cell_start()
-        self.input_list[len(self.input_list) // 2] = 1
         self.init_way = "one_cell_start"
 
     def step_call_back(self):
