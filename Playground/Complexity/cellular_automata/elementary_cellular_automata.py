@@ -55,8 +55,10 @@ if __name__ == "__main__":
     input_list = [0] * random.randrange(50, 100) + [1] * random.randrange(50, 100)
     random.shuffle(input_list)
     input_list = RoundList(input_list)
-    rule = generate_rule(110, 5)
+    rule = generate_rule(110, 3)
+    for seg in rule:
+        print(f"{seg.neighborhood} {seg.type} ")
 
-    for i in range(1):
-        input_list = cellular_automata_step(input_list, rule)
-        print("".join(["*" if i == 1 else " " for i in input_list]))
+    for i in range(20):
+         input_list = cellular_automata_step(input_list, rule)
+         print("".join(["*" if i == 1 else " " for i in input_list]))
