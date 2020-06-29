@@ -2,7 +2,7 @@ import tkinter
 from doctest import master
 from random import choice
 from os import path, mkdir
-from Playground.Complexity.cellular_automata.elementary_cellular_automata import RoundList, generate_rule, \
+from Playground.Complexity.cellular_automata.cellular_automata_1d import RoundList, generate_rule, \
     cellular_automata_step
 
 from PIL import Image
@@ -126,7 +126,7 @@ class GUI:
             self.play_call_back()
             self.top.update()
 
-            take_screenshot(f"neighborhood_size_{self.neighborhood_size.get()}", f"rule_{rule}_{self.init_way}",
+            take_screenshot(f"1d_neighborhood_size_{self.neighborhood_size.get()}", f"rule_{rule}_{self.init_way}",
                             self.canvas)
 
             self.clear_call_back()
