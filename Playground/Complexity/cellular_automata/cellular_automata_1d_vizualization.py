@@ -1,6 +1,6 @@
 import tkinter
 from doctest import master
-from random import choice
+from random import choices
 from os import path, mkdir
 from Playground.Complexity.cellular_automata.cellular_automata_1d import RoundList, generate_rule, \
     cellular_automata_step
@@ -10,6 +10,11 @@ from PIL import Image
 
 def count_rules(neighborhood_size: int) -> int:
     return 2 ** (2 ** neighborhood_size)
+
+
+def generate_random(input_list: list, weights: list, length: int):
+    temp = [choices(input_list, weights) for i in range(length)]
+    return [ele[0] for ele in temp]
 
 
 def take_screenshot(folder: str, file_name: str, canvas: tkinter.Canvas):
@@ -59,6 +64,7 @@ class GUI:
         self.cells = []
         self.init_way = "random"
         self.silent = False
+        self.weights = [0.7, 0.3]
 
     def rectangle_coordinates(self, x: int, y: int) -> dict:
         dic = {'x': x, 'y': y, 'x1': self.cell_size + x, 'y1': self.cell_size + y}
@@ -69,7 +75,11 @@ class GUI:
         self.labelText.set(f"Possible Rules: {str(count_rules(int(self.neighborhood_size.get())))}")
 
     def random_init_list(self):
-        return RoundList([choice([0, 1]) for i in range(self.width // self.cell_size)])
+        return RoundList(generate_random(
+            input_list=[0, 1],
+            weights=self.weights,
+            length=self.width // self.cell_size)
+        )
 
     def one_cell_start(self):
         input_list = RoundList([0 for i in range(self.width // self.cell_size)])
