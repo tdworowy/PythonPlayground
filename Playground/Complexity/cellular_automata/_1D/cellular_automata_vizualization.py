@@ -2,7 +2,7 @@ import tkinter
 from doctest import master
 from random import choices
 from os import path, mkdir
-from Playground.Complexity.cellular_automata.cellular_automata_1d import RoundList, generate_rule, \
+from Playground.Complexity.cellular_automata._1D.cellular_automata import RoundList, generate_rule, \
     cellular_automata_step
 
 from PIL import Image
