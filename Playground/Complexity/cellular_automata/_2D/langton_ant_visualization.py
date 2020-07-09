@@ -21,14 +21,14 @@ class GUI:
 
         self.cell_size = cell_size
 
-        self.cells = []
+        self.prev_step = [[[-1, -1] for _ in range(self.width // self.cell_size)] for _ in
+                          range(self.height // self.cell_size)]
 
     def rectangle_coordinates(self, x: int, y: int) -> dict:
         dic = {'x': x, 'y': y, 'x1': self.cell_size + x, 'y1': self.cell_size + y}
         return dic
 
     def step_call_back(self):
-
         colours_rules = {
             (0, 0): "blue",
             (1, 0): "red",
@@ -37,31 +37,29 @@ class GUI:
         }
         x = y = 0
 
-        for _, row in enumerate(self.grid):
-            for _, value in enumerate(row):
+        for row, row_prev in zip(self.grid, self.prev_step):
+            for value, value_prev in zip(row, row_prev):
                 coordinate = self.rectangle_coordinates(x, y)
-                colour = colours_rules[tuple(value)]
-                rectangle = self.canvas.create_rectangle(coordinate['x'],
-                                                         coordinate['y'],
-                                                         coordinate['x1'],
-                                                         coordinate['y1'],
-                                                         fill=colour)
-                self.cells.append(rectangle)
+                if value != value_prev:
+                    colour = colours_rules[tuple(value)]
+                    rectangle = self.canvas.create_rectangle(coordinate['x'],
+                                                             coordinate['y'],
+                                                             coordinate['x1'],
+                                                             coordinate['y1'],
+                                                             fill=colour)
+
                 y = coordinate['y1']
             x = coordinate['x1']
             y = 0
-
+        self.prev_step = [[[value[0], value[1]] for value in row] for row in self.grid]
         self.grid, self.turn = update_grid(self.grid, self.turn)
 
     def play_call_back(self):
-        self.grid, self.turn = generate_grid(self.width // self.cell_size, self.height // self.cell_size)
+        self.grid, self.turn = generate_grid(self.width // self.cell_size, self.height // self.cell_size)[:]
 
         while 1:
             self.step_call_back()
             self.top.update()
-
-            [self.canvas.delete(rectangle) for rectangle in self.cells]
-            self.cells = []
 
     def main_loop(self):
 

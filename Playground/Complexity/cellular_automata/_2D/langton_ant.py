@@ -19,9 +19,9 @@ rules = {
 }
 
 
-def generate_grid(width: int, hight: int) -> tuple:
-    array = [[[0, 0] for _ in range(width)] for _ in range(hight)]
-    array[width // 2][hight // 2] = (0, ant_symbol)
+def generate_grid(width: int, height: int) -> tuple:
+    array = [[[0, 0] for _ in range(width)] for _ in range(height)]
+    array[width // 2][height // 2] = [0, ant_symbol]
     turn = 1
     return array, turn
 
@@ -52,7 +52,9 @@ def update_grid(grid: list, turn: int, rules: dict = rules) -> tuple:
 
 
 if __name__ == "__main__":
-    grid, turn = generate_grid(75, 75)
+    grid, turn = generate_grid(5, 5)
+    for line in grid:
+        print(line)
     for i in range(10):
         grid, turn = update_grid(grid, turn)
         print("*" * 10)
