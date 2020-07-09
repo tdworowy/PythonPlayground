@@ -36,24 +36,24 @@ class GUI:
             (1, 2): "black"
         }
 
-        for x, row in enumerate(self.grid):  # TODO it eats all ram
+        for x, row in enumerate(self.grid):
             for y, value in enumerate(row):
-                print(x, y)
-                coordinate = self.rectangle_coordinates(x, y)
+                coordinate = self.rectangle_coordinates(x, y)# TODO use x1 and y2 or smt
                 colour = colours_rules[tuple(value)]
                 rectangle = self.canvas.create_rectangle(coordinate['x'],
                                                          coordinate['y'],
                                                          coordinate['x1'],
                                                          coordinate['y1'],
                                                          fill=colour)
+                self.top.update()
 
         self.grid, self.turn = update_grid(self.grid, self.turn)
 
     def play_call_back(self):
-        self.grid, self.turn = generate_grid(self.width, self.height)
+        self.grid, self.turn = generate_grid(self.width//self.cell_size, self.height//self.cell_size)
         while 1:
             self.step_call_back()
-            self.top.update()
+            #self.top.update()
 
     def main_loop(self):
 
