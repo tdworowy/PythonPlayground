@@ -5,7 +5,7 @@ from Playground.Complexity.cellular_automata._2D.langton_ant import generate_gri
 
 
 class GUI:
-    def __init__(self, width: int = 1085, height: int = 1085, cell_size: int = 20):
+    def __init__(self, width: int = 1085, height: int = 1085, cell_size: int = 4):
         self.top = tkinter.Tk()
         self.top_frame = tkinter.Frame()
         self.button_frame = tkinter.Frame()
