@@ -33,7 +33,12 @@ def update_grid(grid: list, turn: int, rules: dict = rules) -> tuple:
                 position = i, j
     x, y = position
     grid, turn = rules[grid[x][y][0]](grid, x, y, turn)
-    if turn == 5: turn = 1
+
+    if turn == 5:
+        turn = 1
+    if turn == 0:
+        turn = 4
+
     if turn == 1:
         grid[x + 1][y][1] = 2
     if turn == 2:

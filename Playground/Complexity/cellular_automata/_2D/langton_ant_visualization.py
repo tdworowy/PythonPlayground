@@ -5,7 +5,7 @@ from Playground.Complexity.cellular_automata._2D.langton_ant import generate_gri
 
 
 class GUI:
-    def __init__(self, width: int = 1825, height: int = 1825, cell_size: int = 5):
+    def __init__(self, width: int = 1085, height: int = 1085, cell_size: int = 20):
         self.top = tkinter.Tk()
         self.top_frame = tkinter.Frame()
         self.button_frame = tkinter.Frame()
@@ -35,25 +35,33 @@ class GUI:
             (0, 2): "black",
             (1, 2): "black"
         }
+        x = y = 0
 
-        for x, row in enumerate(self.grid):
-            for y, value in enumerate(row):
-                coordinate = self.rectangle_coordinates(x, y)# TODO use x1 and y2 or smt
+        for _, row in enumerate(self.grid):
+            for _, value in enumerate(row):
+                coordinate = self.rectangle_coordinates(x, y)
                 colour = colours_rules[tuple(value)]
                 rectangle = self.canvas.create_rectangle(coordinate['x'],
                                                          coordinate['y'],
                                                          coordinate['x1'],
                                                          coordinate['y1'],
                                                          fill=colour)
-                self.top.update()
+                self.cells.append(rectangle)
+                y = coordinate['y1']
+            x = coordinate['x1']
+            y = 0
 
         self.grid, self.turn = update_grid(self.grid, self.turn)
 
     def play_call_back(self):
-        self.grid, self.turn = generate_grid(self.width//self.cell_size, self.height//self.cell_size)
+        self.grid, self.turn = generate_grid(self.width // self.cell_size, self.height // self.cell_size)
+
         while 1:
             self.step_call_back()
-            #self.top.update()
+            self.top.update()
+
+            [self.canvas.delete(rectangle) for rectangle in self.cells]
+            self.cells = []
 
     def main_loop(self):
 
