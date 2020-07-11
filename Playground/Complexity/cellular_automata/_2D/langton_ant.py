@@ -2,12 +2,14 @@ ant_symbol = 2
 
 
 def if_zero(grid: list, x: int, y: int, turn: int) -> tuple:
+    grid = [[[value[0], value[1]] for value in row] for row in grid]
     grid[x][y] = [1, 0]
     turn = turn + 1
     return grid, turn
 
 
 def if_one(grid: list, x: int, y: int, turn: int) -> tuple:
+    grid = [[[value[0], value[1]] for value in row] for row in grid]
     grid[x][y] = [0, 0]
     turn = turn - 1
     return grid, turn
@@ -27,6 +29,7 @@ def generate_grid(width: int, height: int) -> tuple:
 
 
 def update_grid(grid: list, turn: int, rules: dict = rules) -> tuple:
+    grid = [[[value[0], value[1]] for value in row] for row in grid]
     for i, row in enumerate(grid):
         for j, value in enumerate(row):
             if ant_symbol in value:
