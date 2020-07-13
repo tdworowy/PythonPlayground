@@ -1,15 +1,7 @@
 import random
 from itertools import product
 
-
-class RoundList(list):
-    def __getitem__(self, index):
-        while index not in range(0, len(self)):
-            if index >= len(self):
-                index = index - len(self)
-            else:
-                if index < 0: index = len(self) - (index * -1)
-        return list.__getitem__(self, index)
+from Playground.Complexity.cellular_automata.utils.utils import RoundList
 
 
 class RuleSegment:
@@ -60,5 +52,5 @@ if __name__ == "__main__":
         print(f"{seg.neighborhood} {seg.type} ")
 
     for i in range(20):
-         input_list = cellular_automata_step(input_list, rule)
-         print("".join(["*" if i == 1 else " " for i in input_list]))
+        input_list = cellular_automata_step(input_list, rule)
+        print("".join(["*" if i == 1 else " " for i in input_list]))
