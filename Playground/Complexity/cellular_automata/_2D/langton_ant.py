@@ -24,7 +24,7 @@ rules = {
 }
 
 
-def generate_grid(width: int, height: int, ant_count: int = 1) -> tuple:
+def generate_grid(width: int, height: int, ant_count: int = 1, random_init_turn=False) -> tuple:
     array = RoundList([RoundList([[0, 0] for _ in range(width)]) for _ in range(height)])
     if ant_count == 1:
         array[width // 2][height // 2] = [0, ant_symbols[0]]
@@ -35,7 +35,8 @@ def generate_grid(width: int, height: int, ant_count: int = 1) -> tuple:
             ant_symbols.append(i)
             array[x][y] = [0, i]
 
-    turns = {ant_symbol: 1 for ant_symbol in ant_symbols}
+    turn = randint(1, 4) if random_init_turn else 1
+    turns = {ant_symbol: turn for ant_symbol in ant_symbols}
     return array, turns
 
 

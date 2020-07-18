@@ -21,6 +21,9 @@ class GUI:
         self.ants_count = tkinter.Entry(master)
         self.ants_count.insert(0, "3")
 
+        self.random_init_turn = tkinter.Entry(master)
+        self.random_init_turn.insert(0, "1")
+
         self.labelText = tkinter.StringVar(master)
         self.rules_count = tkinter.Label(master, textvariable=self.labelText)
 
@@ -62,8 +65,10 @@ class GUI:
         self.grid, self.turn = update_grid(self.grid, self.turn)
 
     def play_call_back(self):
-        self.grid, self.turn = generate_grid(self.width // self.cell_size, self.height // self.cell_size,
-                                             int(self.ants_count.get()))
+        self.grid, self.turn = generate_grid(self.width // self.cell_size,
+                                             self.height // self.cell_size,
+                                             int(self.ants_count.get()),
+                                             bool(int(self.random_init_turn.get())))
 
         while 1:
             self.step_call_back()
@@ -79,6 +84,7 @@ class GUI:
         self.button_play.pack(in_=self.top_frame, side="left")
         self.rules_count.pack(in_=self.top_frame, side="left")
         self.ants_count.pack(in_=self.top_frame, side="left")
+        self.random_init_turn.pack(in_=self.top_frame, side="left")
 
         self.canvas.pack(in_=self.button_frame)
 
