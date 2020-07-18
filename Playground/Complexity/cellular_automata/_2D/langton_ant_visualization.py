@@ -1,11 +1,13 @@
 import tkinter
+from collections import defaultdict
 from doctest import master
 
 from Playground.Complexity.cellular_automata._2D.langton_ant import generate_grid, update_grid
+from Playground.Complexity.cellular_automata.utils.utils import RoundList
 
 
 class GUI:
-    def __init__(self, width: int = 1085, height: int = 1085, cell_size: int = 4):
+    def __init__(self, width: int = 1085, height: int = 1085, cell_size: int = 20):
         self.top = tkinter.Tk()
         self.top_frame = tkinter.Frame()
         self.button_frame = tkinter.Frame()
@@ -16,13 +18,19 @@ class GUI:
         self.canvas = tkinter.Canvas(master, width=self.width, height=self.height)
         self.button_play = tkinter.Button(master, text="Play", command=self.play_call_back)
 
+        self.ants_count = tkinter.Entry(master)
+        self.ants_count.insert(0, "3")
+
         self.labelText = tkinter.StringVar(master)
         self.rules_count = tkinter.Label(master, textvariable=self.labelText)
 
         self.cell_size = cell_size
 
-        self.prev_step = [[[-1, -1] for _ in range(self.width // self.cell_size)] for _ in
-                          range(self.height // self.cell_size)]
+        self.prev_step = RoundList([RoundList([[-1, -1] for _ in range(self.width // self.cell_size)]) for _ in
+                                    range(self.height // self.cell_size)])
+
+        self.cells = []
+        self.step = 1
 
     def rectangle_coordinates(self, x: int, y: int) -> dict:
         dic = {'x': x, 'y': y, 'x1': self.cell_size + x, 'y1': self.cell_size + y}
@@ -32,9 +40,8 @@ class GUI:
         colours_rules = {
             (0, 0): "blue",
             (1, 0): "red",
-            (0, 2): "black",
-            (1, 2): "black"
         }
+        colours_rules = defaultdict(lambda: "black", colours_rules)
         x = y = 0
 
         for row, row_prev in zip(self.grid, self.prev_step):
@@ -51,15 +58,18 @@ class GUI:
                 y = coordinate['y1']
             x = coordinate['x1']
             y = 0
-        self.prev_step = [[[value[0], value[1]] for value in row] for row in self.grid]
+        self.prev_step = RoundList([RoundList([[value[0], value[1]] for value in row]) for row in self.grid])
         self.grid, self.turn = update_grid(self.grid, self.turn)
 
     def play_call_back(self):
-        self.grid, self.turn = generate_grid(self.width // self.cell_size, self.height // self.cell_size)[:]
+        self.grid, self.turn = generate_grid(self.width // self.cell_size, self.height // self.cell_size,
+                                             int(self.ants_count.get()))
 
         while 1:
             self.step_call_back()
+            print(f"step: {self.step}")
             self.top.update()
+            self.step += 1
 
     def main_loop(self):
 
@@ -68,6 +78,7 @@ class GUI:
 
         self.button_play.pack(in_=self.top_frame, side="left")
         self.rules_count.pack(in_=self.top_frame, side="left")
+        self.ants_count.pack(in_=self.top_frame, side="left")
 
         self.canvas.pack(in_=self.button_frame)
 
