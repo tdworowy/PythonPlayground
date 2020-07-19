@@ -1,11 +1,11 @@
 import tkinter
 from doctest import master
 
-from Playground.Complexity.cellular_automata._2D.general_2d_automata import generate_grid, update_grid
+from Playground.Complexity.cellular_automata._2D.general_2d_automata import generate_grid, update_grid, snowflake_rules
 
 
 class GUI:
-    def __init__(self, width: int = 1085, height: int = 1085, cell_size: int = 10):
+    def __init__(self, width: int = 1085, height: int = 1085, cell_size: int = 4):
         self.top = tkinter.Tk()
         self.top_frame = tkinter.Frame()
         self.button_frame = tkinter.Frame()
@@ -24,7 +24,7 @@ class GUI:
         self.prev_step = [[-1 for _ in range(self.width // self.cell_size)] for _ in
                           range(self.height // self.cell_size)]
 
-        self.probability_of_one = 0.7
+        self.probability_of_one = 0.0001
         self.cells = []
         self.step = 1
 
@@ -56,10 +56,12 @@ class GUI:
             x = coordinate['x1']
             y = 0
         self.prev_step = [[value for value in row] for row in self.grid]
-        self.grid = update_grid(self.grid)
+        self.grid = update_grid(self.grid, rules=snowflake_rules)
 
     def play_call_back(self):
-        self.grid = generate_grid(self.width // self.cell_size, self.height // self.cell_size, self.probability_of_one)
+        self.grid = generate_grid(self.width // self.cell_size,
+                                  self.height // self.cell_size,
+                                  self.probability_of_one)
 
         while 1:
             self.step_call_back()
