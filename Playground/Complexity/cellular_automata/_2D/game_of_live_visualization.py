@@ -1,7 +1,7 @@
 import tkinter
 from doctest import master
 
-from Playground.Complexity.cellular_automata._2D.general_2d_automata import generate_grid, update_grid
+from Playground.Complexity.cellular_automata._2D.general_2d_automata import generate_grid_random_cells, update_grid
 
 
 class GUI:
@@ -59,7 +59,7 @@ class GUI:
         self.grid = update_grid(self.grid)
 
     def play_call_back(self):
-        self.grid = generate_grid(self.width // self.cell_size, self.height // self.cell_size, self.probability_of_one)
+        self.grid = generate_grid_random_cells(self.width // self.cell_size, self.height // self.cell_size, self.probability_of_one)
 
         while 1:
             self.step_call_back()

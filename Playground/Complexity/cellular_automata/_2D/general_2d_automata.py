@@ -12,22 +12,34 @@ game_of_live_rules = defaultdict(lambda: 0, game_of_live_rules)
 
 def generate_snowflake_rule(neighbours_numbers: list):
     snowflake_rules = default_dict(lambda self, key: key[0])
+
     for neighbours_number in neighbours_numbers:
         snowflake_rules[(0, neighbours_number)] = 1
         snowflake_rules[(1, neighbours_number)] = 1
+
     return snowflake_rules
 
 
-def generate_grid(width: int, height: int, probability_of_one: float) -> list:
+def generate_grid_random_cells(width: int, height: int, probability_of_one: float) -> list:
     probability_of_zero = 1 - probability_of_one
     return RoundList(
-        [RoundList([choices([0, 1], [probability_of_zero, probability_of_one])[0] for _ in range(width)]) for _ in
-         range(height)])
+        [RoundList([choices([0, 1], [probability_of_zero, probability_of_one])[0] for _ in range(width)])
+         for _ in range(height)])
 
 
 def generate_grid_one_cell(width: int, height: int) -> list:
     grid = RoundList([RoundList([0 for _ in range(width)]) for _ in range(height)])
     grid[width // 2][height // 2] = 1
+    return grid
+
+
+def generate_grid_central(width: int, height: int, cell_count: int = 1) -> list:
+    grid = RoundList([RoundList([0 for _ in range(width)]) for _ in range(height)])
+    x = width // 2
+    y = height // 2
+    for i in range(cell_count // 2):
+        for j in range(cell_count//2):
+            grid[x+i][y+j] = 1
     return grid
 
 
@@ -50,10 +62,7 @@ def update_grid(grid: list, rules: defaultdict = game_of_live_rules):
 
 
 if __name__ == "__main__":
-    grid = generate_grid(5, 5, 0.7)
+    grid = generate_grid_central(5, 5, 2)
     for row in grid:
         print(row)
-    print("*" * 10)
-    grid = update_grid(grid, rules=snowflake_rules)
-    for row in grid:
-        print(row)
+

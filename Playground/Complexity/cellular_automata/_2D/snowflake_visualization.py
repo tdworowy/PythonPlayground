@@ -1,9 +1,8 @@
 import tkinter
 from doctest import master
 
-from Playground.Complexity.cellular_automata._2D.general_2d_automata import generate_grid, update_grid, \
-    generate_snowflake_rule, \
-    generate_grid_one_cell
+from Playground.Complexity.cellular_automata._2D.general_2d_automata import  update_grid, \
+    generate_snowflake_rule, generate_grid_central
 
 
 class GUI:
@@ -21,12 +20,17 @@ class GUI:
         self.labelText = tkinter.StringVar(master)
         self.rules_count = tkinter.Label(master, textvariable=self.labelText)
 
+        self.neighbours_number = tkinter.Entry(master)
+        self.neighbours_number.insert(0, "1,5") # other "1,3,5", "1,3"
+
+        self.ini_cell_count = tkinter.Entry(master)
+        self.ini_cell_count.insert(0, "1")
+
         self.cell_size = cell_size
 
         self.prev_step = [[-1 for _ in range(self.width // self.cell_size)] for _ in
                           range(self.height // self.cell_size)]
 
-        self.neighbours_number = [1, 5]  # other [1,3,5], [1,3]
         self.cells = []
         self.step = 1
 
@@ -58,11 +62,13 @@ class GUI:
             x = coordinate['x1']
             y = 0
         self.prev_step = [[value for value in row] for row in self.grid]
-        self.grid = update_grid(self.grid, rules=generate_snowflake_rule(self.neighbours_number))
+        neighbours_number = [int(number) for number in self.neighbours_number.get().split(",")]
+        self.grid = update_grid(self.grid, rules=generate_snowflake_rule(neighbours_number))
 
     def play_call_back(self):
-        self.grid = generate_grid_one_cell(self.width // self.cell_size,
-                                           self.height // self.cell_size)
+        self.grid = generate_grid_central(self.width // self.cell_size,
+                                           self.height // self.cell_size,
+                                          int(self.ini_cell_count.get()))
 
         while 1:
             self.step_call_back()
@@ -78,6 +84,8 @@ class GUI:
 
         self.button_play.pack(in_=self.top_frame, side="left")
         self.rules_count.pack(in_=self.top_frame, side="left")
+        self.neighbours_number.pack(in_=self.top_frame, side="left")
+        self.ini_cell_count.pack(in_=self.top_frame, side="left")
 
         self.canvas.pack(in_=self.button_frame)
 
