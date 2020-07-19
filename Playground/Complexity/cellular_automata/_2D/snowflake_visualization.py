@@ -1,7 +1,9 @@
 import tkinter
 from doctest import master
 
-from Playground.Complexity.cellular_automata._2D.general_2d_automata import generate_grid, update_grid, snowflake_rules
+from Playground.Complexity.cellular_automata._2D.general_2d_automata import generate_grid, update_grid, \
+    generate_snowflake_rule, \
+    generate_grid_one_cell
 
 
 class GUI:
@@ -24,7 +26,7 @@ class GUI:
         self.prev_step = [[-1 for _ in range(self.width // self.cell_size)] for _ in
                           range(self.height // self.cell_size)]
 
-        self.probability_of_one = 0.0001
+        self.neighbours_number = [1, 5]  # other [1,3,5], [1,3]
         self.cells = []
         self.step = 1
 
@@ -56,12 +58,11 @@ class GUI:
             x = coordinate['x1']
             y = 0
         self.prev_step = [[value for value in row] for row in self.grid]
-        self.grid = update_grid(self.grid, rules=snowflake_rules)
+        self.grid = update_grid(self.grid, rules=generate_snowflake_rule(self.neighbours_number))
 
     def play_call_back(self):
-        self.grid = generate_grid(self.width // self.cell_size,
-                                  self.height // self.cell_size,
-                                  self.probability_of_one)
+        self.grid = generate_grid_one_cell(self.width // self.cell_size,
+                                           self.height // self.cell_size)
 
         while 1:
             self.step_call_back()

@@ -9,9 +9,13 @@ game_of_live_rules = {
 }
 game_of_live_rules = defaultdict(lambda: 0, game_of_live_rules)
 
-snowflake_rules = default_dict(lambda self, key: key[0])
-snowflake_rules[(0, 1)] = 1
-snowflake_rules[(1, 1)] = 1
+
+def generate_snowflake_rule(neighbours_numbers: list):
+    snowflake_rules = default_dict(lambda self, key: key[0])
+    for neighbours_number in neighbours_numbers:
+        snowflake_rules[(0, neighbours_number)] = 1
+        snowflake_rules[(1, neighbours_number)] = 1
+    return snowflake_rules
 
 
 def generate_grid(width: int, height: int, probability_of_one: float) -> list:
@@ -19,6 +23,12 @@ def generate_grid(width: int, height: int, probability_of_one: float) -> list:
     return RoundList(
         [RoundList([choices([0, 1], [probability_of_zero, probability_of_one])[0] for _ in range(width)]) for _ in
          range(height)])
+
+
+def generate_grid_one_cell(width: int, height: int) -> list:
+    grid = RoundList([RoundList([0 for _ in range(width)]) for _ in range(height)])
+    grid[width // 2][height // 2] = 1
+    return grid
 
 
 def count_colored_neighbours(x: int, y: int, grid: list):
