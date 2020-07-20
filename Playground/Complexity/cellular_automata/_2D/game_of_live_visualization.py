@@ -64,6 +64,7 @@ class GUI:
         while 1:
             self.step_call_back()
             self.top.update()
+            print(f"step: {self.step}")
             self.step += 1
             for rectangle in self.cells:
                 self.canvas.delete(rectangle)
