@@ -1,12 +1,13 @@
 import tkinter
+from collections import defaultdict
 from doctest import master
 
-from Playground.Complexity.cellular_automata._2D.general_2d_automata import update_grid, \
-    generate_snowflake_rule, generate_grid_central
+from Playground.Complexity.cellular_automata._2D.general_2d_automata import generate_grid_random_cells, update_grid, \
+    amoeba_rules
 
 
 class GUI:
-    def __init__(self, width: int = 1085, height: int = 1085, cell_size: int = 4):
+    def __init__(self, width: int = 1085, height: int = 1085, cell_size: int = 10):
         self.top = tkinter.Tk()
         self.top_frame = tkinter.Frame()
         self.button_frame = tkinter.Frame()
@@ -20,17 +21,13 @@ class GUI:
         self.labelText = tkinter.StringVar(master)
         self.rules_count = tkinter.Label(master, textvariable=self.labelText)
 
-        self.neighbours_number = tkinter.Entry(master)
-        self.neighbours_number.insert(0, "1,5")  # other "1,3,5", "1,3"
-
-        self.ini_cell_count = tkinter.Entry(master)
-        self.ini_cell_count.insert(0, "1")
-
         self.cell_size = cell_size
 
         self.prev_step = [[-1 for _ in range(self.width // self.cell_size)] for _ in
                           range(self.height // self.cell_size)]
 
+        self.probability_of_one = 0.2
+        self.cells = defaultdict(lambda: (-1, -1), {})
         self.step = 1
 
     def rectangle_coordinates(self, x: int, y: int) -> dict:
@@ -48,29 +45,31 @@ class GUI:
             for value, value_prev in zip(row, row_prev):
                 coordinate = self.rectangle_coordinates(x, y)
                 if value != value_prev:
+                    if self.cells[(x, y)] != (-1, -1):
+                        self.canvas.delete(self.cells[(x, y)])
+
                     colour = colours_rules[value]
                     rectangle = self.canvas.create_rectangle(coordinate['x'],
                                                              coordinate['y'],
                                                              coordinate['x1'],
                                                              coordinate['y1'],
                                                              fill=colour)
+                    self.cells[(x, y)] = rectangle
 
                 y = coordinate['y1']
             x = coordinate['x1']
             y = 0
         self.prev_step = [[value for value in row] for row in self.grid]
-        neighbours_number = [int(number) for number in self.neighbours_number.get().split(",")]
-        self.grid = update_grid(self.grid, rules=generate_snowflake_rule(neighbours_number))
+        self.grid = update_grid(self.grid, rules=amoeba_rules)
 
     def play_call_back(self):
-        self.grid = generate_grid_central(self.width // self.cell_size,
-                                          self.height // self.cell_size,
-                                          int(self.ini_cell_count.get()))
+        self.grid = generate_grid_random_cells(self.width // self.cell_size, self.height // self.cell_size,
+                                               self.probability_of_one)
 
         while 1:
             self.step_call_back()
             self.top.update()
-            print(self.step)
+            print(f"step: {self.step}")
             self.step += 1
 
     def main_loop(self):
@@ -80,8 +79,6 @@ class GUI:
 
         self.button_play.pack(in_=self.top_frame, side="left")
         self.rules_count.pack(in_=self.top_frame, side="left")
-        self.neighbours_number.pack(in_=self.top_frame, side="left")
-        self.ini_cell_count.pack(in_=self.top_frame, side="left")
 
         self.canvas.pack(in_=self.button_frame)
 

@@ -9,6 +9,17 @@ game_of_live_rules = {
 }
 game_of_live_rules = defaultdict(lambda: 0, game_of_live_rules)
 
+amoeba_rules = {
+    (0, 3): 1,
+    (0, 5): 1,
+    (0, 7): 1,
+    (1, 1): 1,
+    (1, 3): 1,
+    (1, 5): 1,
+    (1, 8): 1
+}
+amoeba_rules = defaultdict(lambda: 0, amoeba_rules)
+
 
 def generate_snowflake_rule(neighbours_numbers: list):
     snowflake_rules = default_dict(lambda self, key: key[0])
@@ -34,12 +45,13 @@ def generate_grid_one_cell(width: int, height: int) -> list:
 
 
 def generate_grid_central(width: int, height: int, cell_count: int = 1) -> list:
+    if cell_count == 1 : return generate_grid_one_cell(width,height)
     grid = RoundList([RoundList([0 for _ in range(width)]) for _ in range(height)])
     x = width // 2
     y = height // 2
     for i in range(cell_count // 2):
-        for j in range(cell_count//2):
-            grid[x+i][y+j] = 1
+        for j in range(cell_count // 2):
+            grid[x + i][y + j] = 1
     return grid
 
 
@@ -51,7 +63,7 @@ def count_colored_neighbours(x: int, y: int, grid: list):
     return colored_neighbours
 
 
-def update_grid(grid: list, rules: defaultdict = game_of_live_rules):
+def update_grid(grid: list, rules: defaultdict):
     new_grid = RoundList([RoundList([value for value in row]) for row in grid])
     for i, row in enumerate(grid):
         for j, cell in enumerate(row):
@@ -65,4 +77,3 @@ if __name__ == "__main__":
     grid = generate_grid_central(5, 5, 2)
     for row in grid:
         print(row)
-

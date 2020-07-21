@@ -35,8 +35,7 @@ def generate_grid(width: int, height: int, ant_count: int = 1, random_init_turn=
             ant_symbols.append(i)
             array[x][y] = [0, i]
 
-    turn = randint(1, 4) if random_init_turn else 1
-    turns = {ant_symbol: turn for ant_symbol in ant_symbols}
+    turns = {ant_symbol: randint(1, 4) if random_init_turn else 1 for ant_symbol in ant_symbols}
     return array, turns
 
 

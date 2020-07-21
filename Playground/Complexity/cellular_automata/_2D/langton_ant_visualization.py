@@ -32,7 +32,7 @@ class GUI:
         self.prev_step = RoundList([RoundList([[-1, -1] for _ in range(self.width // self.cell_size)]) for _ in
                                     range(self.height // self.cell_size)])
 
-        self.cells = []
+        self.cells = defaultdict(lambda: (-1, -1), {})
         self.step = 1
 
     def rectangle_coordinates(self, x: int, y: int) -> dict:
@@ -51,12 +51,17 @@ class GUI:
             for value, value_prev in zip(row, row_prev):
                 coordinate = self.rectangle_coordinates(x, y)
                 if value != value_prev:
+
+                    if self.cells[(x, y)] != (-1, -1):
+                        self.canvas.delete(self.cells[(x, y)])
+
                     colour = colours_rules[tuple(value)]
                     rectangle = self.canvas.create_rectangle(coordinate['x'],
                                                              coordinate['y'],
                                                              coordinate['x1'],
                                                              coordinate['y1'],
                                                              fill=colour)
+                    self.cells[(x, y)] = rectangle
 
                 y = coordinate['y1']
             x = coordinate['x1']
