@@ -3,23 +3,13 @@ from doctest import master
 
 from Playground.Complexity.cellular_automata._2D.general_2d_automata import update_grid, \
     generate_snowflake_rule, generate_grid_central
+from Playground.Complexity.cellular_automata._2D.general_visualization import CellularAutomata2DVisualization
 
 
-class GUI:
+class SnowflakeVisualization(CellularAutomata2DVisualization):
     def __init__(self, width: int = 1085, height: int = 1085, cell_size: int = 4):
-        self.top = tkinter.Tk()
-        self.top_frame = tkinter.Frame()
-        self.button_frame = tkinter.Frame()
 
-        self.width = width
-        self.height = height
-
-        self.canvas = tkinter.Canvas(master, width=self.width, height=self.height)
-        self.button_play = tkinter.Button(master, text="Play", command=self.play_call_back)
-
-        self.labelText = tkinter.StringVar(master)
-        self.rules_count = tkinter.Label(master, textvariable=self.labelText)
-
+        super().__init__(None, width=width, height=height, cell_size=cell_size)
         self.neighbours_number = tkinter.Entry(master)
         self.neighbours_number.insert(0, "1,5")  # other "1,3,5", "1,3"
 
@@ -27,15 +17,6 @@ class GUI:
         self.ini_cell_count.insert(0, "1")
 
         self.cell_size = cell_size
-
-        self.prev_step = [[-1 for _ in range(self.width // self.cell_size)] for _ in
-                          range(self.height // self.cell_size)]
-
-        self.step = 1
-
-    def rectangle_coordinates(self, x: int, y: int) -> dict:
-        dic = {'x': x, 'y': y, 'x1': self.cell_size + x, 'y1': self.cell_size + y}
-        return dic
 
     def step_call_back(self):
         colours_rules = {
@@ -49,11 +30,11 @@ class GUI:
                 coordinate = self.rectangle_coordinates(x, y)
                 if value != value_prev:
                     colour = colours_rules[value]
-                    rectangle = self.canvas.create_rectangle(coordinate['x'],
-                                                             coordinate['y'],
-                                                             coordinate['x1'],
-                                                             coordinate['y1'],
-                                                             fill=colour)
+                    self.canvas.create_rectangle(coordinate['x'],
+                                                 coordinate['y'],
+                                                 coordinate['x1'],
+                                                 coordinate['y1'],
+                                                 fill=colour)
 
                 y = coordinate['y1']
             x = coordinate['x1']
@@ -70,7 +51,7 @@ class GUI:
         while 1:
             self.step_call_back()
             self.top.update()
-            print(self.step)
+            print(f"step:{self.step}")
             self.step += 1
 
     def main_loop(self):
@@ -79,7 +60,6 @@ class GUI:
         self.button_frame.pack(side="bottom", fill="both")
 
         self.button_play.pack(in_=self.top_frame, side="left")
-        self.rules_count.pack(in_=self.top_frame, side="left")
         self.neighbours_number.pack(in_=self.top_frame, side="left")
         self.ini_cell_count.pack(in_=self.top_frame, side="left")
 
@@ -89,7 +69,7 @@ class GUI:
 
 
 def main():
-    ui = GUI()
+    ui = SnowflakeVisualization()
     ui.main_loop()
 
 

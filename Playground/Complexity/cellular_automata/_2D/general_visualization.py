@@ -6,7 +6,7 @@ from Playground.Complexity.cellular_automata._2D.general_2d_automata import gene
 
 
 class CellularAutomata2DVisualization:
-    def __init__(self, rules: dict, width: int = 1085, height: int = 1085, cell_size: int = 10,
+    def __init__(self, rules: defaultdict, width: int = 1085, height: int = 1085, cell_size: int = 10,
                  probability_of_one: float = 0.7, ini_grid_function=generate_grid_random_cells):
         self.top = tkinter.Tk()
         self.top_frame = tkinter.Frame()
@@ -17,9 +17,6 @@ class CellularAutomata2DVisualization:
 
         self.canvas = tkinter.Canvas(master, width=self.width, height=self.height)
         self.button_play = tkinter.Button(master, text="Play", command=self.play_call_back)
-
-        self.labelText = tkinter.StringVar(master)
-        self.rules_count = tkinter.Label(master, textvariable=self.labelText)
 
         self.cell_size = cell_size
 
@@ -81,8 +78,6 @@ class CellularAutomata2DVisualization:
         self.button_frame.pack(side="bottom", fill="both")
 
         self.button_play.pack(in_=self.top_frame, side="left")
-        self.rules_count.pack(in_=self.top_frame, side="left")
-
         self.canvas.pack(in_=self.button_frame)
 
         self.top.mainloop()
