@@ -7,7 +7,7 @@ from Playground.Complexity.cellular_automata._2D.general_2d_automata import gene
 
 class CellularAutomata2DVisualization:
     def __init__(self, rules: defaultdict, width: int = 1085, height: int = 1085, cell_size: int = 10,
-                 probability_of_one: float = 0.7, init_grid_function=generate_grid_random_cells):
+                 probability_of_one: float = 0.7, init_grid = None):
         self.top = tkinter.Tk()
         self.top_frame = tkinter.Frame()
         self.button_frame = tkinter.Frame()
@@ -28,7 +28,11 @@ class CellularAutomata2DVisualization:
         self.cells = defaultdict(lambda: (-1, -1), {})
         self.step = 1
         self.rules = rules
-        self.init_grid_function = init_grid_function
+        if not init_grid:
+            self.grid = generate_grid_random_cells(self.width // self.cell_size, self.height // self.cell_size,
+                                                   self.probability_of_one)
+        else:
+            self.grid = init_grid
 
     def rectangle_coordinates(self, x: int, y: int) -> dict:
         dic = {'x': x, 'y': y, 'x1': self.cell_size + x, 'y1': self.cell_size + y}
@@ -63,9 +67,6 @@ class CellularAutomata2DVisualization:
         self.grid = update_grid(self.grid, rules=self.rules)
 
     def play_call_back(self):
-        self.grid = self.init_grid_function(self.width // self.cell_size, self.height // self.cell_size,
-                                            self.probability_of_one)
-
         while 1:
             self.step_call_back()
             self.top.update()
