@@ -11,7 +11,7 @@ class SnowflakeVisualization(CellularAutomata2DVisualization):
 
         super().__init__(None, width=width, height=height, cell_size=cell_size)
         self.neighbours_number = tkinter.Entry(master)
-        self.neighbours_number.insert(0, "1,5")  # other "1,3,5", "1,3"
+        self.neighbours_number.insert(0, "1")  # other "1,5","1,3,5", "1,3", "1"
 
         self.ini_cell_count = tkinter.Entry(master)
         self.ini_cell_count.insert(0, "1")
@@ -69,8 +69,7 @@ class SnowflakeVisualization(CellularAutomata2DVisualization):
 
 
 def main():
-    ui = SnowflakeVisualization()
-    ui.main_loop()
+    SnowflakeVisualization().main_loop()
 
 
 if __name__ == "__main__":

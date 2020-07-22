@@ -20,6 +20,68 @@ amoeba_rules = {
 }
 amoeba_rules = defaultdict(lambda: 0, amoeba_rules)
 
+_2x2_rules = {
+    (0, 3): 1,
+    (0, 6): 1,
+    (1, 1): 1,
+    (1, 2): 1,
+    (1, 5): 1,
+}
+_2x2_rules = defaultdict(lambda: 0, _2x2_rules)
+
+_34_live_rules = {
+    (0, 3): 1,
+    (0, 4): 1,
+    (1, 3): 1,
+    (1, 4): 1,
+}
+_34_live_rules = defaultdict(lambda: 0, _34_live_rules)
+
+coagulations_rules = {
+    (0, 3): 1,
+    (0, 7): 1,
+    (0, 8): 1,
+    (1, 2): 1,
+    (1, 3): 1,
+    (1, 5): 1,
+    (1, 6): 1,
+    (1, 7): 1,
+    (1, 8): 1,
+}
+coagulations_rules = defaultdict(lambda: 0, coagulations_rules)
+
+mazectric_rules = {
+    (0, 3): 1,
+    (1, 1): 1,
+    (1, 2): 1,
+    (1, 3): 1,
+    (1, 4): 1,
+}
+mazectric_rules = defaultdict(lambda: 0, mazectric_rules)
+
+move_rules = {
+    (0, 3): 1,
+    (0, 6): 1,
+    (0, 8): 1,
+    (1, 2): 1,
+    (1, 4): 1,
+    (1, 5): 1,
+}
+move_rules = defaultdict(lambda: 0, move_rules)
+
+walled_cities_rules = {
+    (0, 4): 1,
+    (0, 5): 1,
+    (0, 6): 1,
+    (0, 7): 1,
+    (0, 8): 1,
+
+    (1, 2): 1,
+    (1, 3): 1,
+    (1, 4): 1,
+    (1, 5): 1,
+}
+walled_cities_rules = defaultdict(lambda: 0, walled_cities_rules)
 
 def generate_snowflake_rule(neighbours_numbers: list):
     snowflake_rules = default_dict(lambda self, key: key[0])
@@ -45,7 +107,7 @@ def generate_grid_one_cell(width: int, height: int) -> list:
 
 
 def generate_grid_central(width: int, height: int, cell_count: int = 1) -> list:
-    if cell_count == 1 : return generate_grid_one_cell(width,height)
+    if cell_count == 1: return generate_grid_one_cell(width, height)
     grid = RoundList([RoundList([0 for _ in range(width)]) for _ in range(height)])
     x = width // 2
     y = height // 2
