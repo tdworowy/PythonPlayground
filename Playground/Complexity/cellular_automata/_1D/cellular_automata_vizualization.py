@@ -1,7 +1,9 @@
 import tkinter
 from doctest import master
-from random import choices
+from random import choices, sample, randrange
 from os import path, mkdir
+from typing import Union, Iterable
+
 from Playground.Complexity.cellular_automata._1D.cellular_automata import RoundList, generate_rule, \
     cellular_automata_step
 
@@ -46,6 +48,8 @@ class GUI:
         self.button_clear = tkinter.Button(master, text="Clear", command=self.clear_call_back)
 
         self.button_play_all = tkinter.Button(master, text="Play all rules", command=self.play_all_rules_call_back)
+        self.button_play_all_random = tkinter.Button(master, text="Play all rules random",
+                                                     command=self.play_all_rules_random_call_back)
 
         self.wolfram_rule_number = tkinter.Entry(master)
         self.wolfram_rule_number.insert(0, "90")
@@ -126,8 +130,21 @@ class GUI:
             self.canvas.delete(rectangle)
 
     def play_all_rules_call_back(self):
+        ordered = range(count_rules(int(self.neighborhood_size.get())))
+        self.play_all(ordered)
+
+    def play_all_rules_random_call_back(self):
+        count = count_rules(int(self.neighborhood_size.get()))
+
+        def generator():
+            for i in range(count):
+                yield randrange(0, count)
+
+        self.play_all(generator())
+
+    def play_all(self, rules_iter: Iterable):
         self.silent = True
-        for rule in range(count_rules(int(self.neighborhood_size.get()))):
+        for rule in rules_iter:
             self.rule = generate_rule(rule, int(self.neighborhood_size.get()))
 
             self.wolfram_rule_number.delete(0, tkinter.END)
@@ -154,6 +171,7 @@ class GUI:
         self.button_init_one.pack(in_=self.top_frame, side="left")
         self.button_clear.pack(in_=self.top_frame, side="left")
         self.button_play_all.pack(in_=self.top_frame, side="left")
+        self.button_play_all_random.pack(in_=self.top_frame, side="left")
 
         self.wolfram_rule_number.pack(in_=self.top_frame, side="left")
         self.neighborhood_size.pack(in_=self.top_frame, side="left")
