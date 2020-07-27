@@ -1,3 +1,4 @@
+import os
 import tkinter
 from doctest import master
 from random import choices, sample, randrange
@@ -69,6 +70,7 @@ class GUI:
         self.init_way = "random"
         self.silent = False
         self.weights = [0.7, 0.3]
+        self.replay = False
 
     def rectangle_coordinates(self, x: int, y: int) -> dict:
         dic = {'x': x, 'y': y, 'x1': self.cell_size + x, 'y1': self.cell_size + y}
@@ -144,7 +146,13 @@ class GUI:
 
     def play_all(self, rules_iter: Iterable):
         self.silent = True
+        files_list = os.listdir(f"1d_neighborhood_size_{self.neighborhood_size.get()}")
+
         for rule in rules_iter:
+
+            if not self.replay and f"rule_{rule}_{self.init_way}" in files_list:
+                break
+
             self.rule = generate_rule(rule, int(self.neighborhood_size.get()))
 
             self.wolfram_rule_number.delete(0, tkinter.END)
