@@ -1,4 +1,4 @@
-class wrapper:
+class Wrapper:
     def __init__(self,object):
         self.wrapped = object
 
@@ -8,10 +8,10 @@ class wrapper:
 
 
 if __name__ == '__main__':
-    x = wrapper([1,2,3,4])
+    x = Wrapper([1, 2, 3, 4])
     x.append(5)
     print(x.wrapped)
 
-    y = wrapper({'a':1,'b':2})
+    y = Wrapper({'a':1, 'b':2})
     print(y.keys())
     print(y.wrapped)

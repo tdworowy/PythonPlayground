@@ -1,4 +1,4 @@
-from Playground.my_utils.classTools_.classTools import AttrDisplay
+from Playground.my_utils.classTools_.class_tools import AttrDisplay
 
 
 class Person(AttrDisplay):

@@ -24,8 +24,8 @@ def reload_all(*args):
 
 
 if __name__ == '__main__':
-    import reloadall
+    import reload_all
     import os, tkinter
 
-    reload_all(reloadall)
+    reload_all(reload_all)
     reload_all(os, tkinter)

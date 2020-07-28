@@ -8,6 +8,7 @@ def generate(count):
     f.write(headers)
     for x in credentials:
         f.write(x)
-if __name__ == '__main__':
 
+
+if __name__ == '__main__':
     generate(10)

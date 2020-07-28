@@ -45,6 +45,7 @@ def extend_employ(file, range_):
     add_string = "[" + add_string + " ]"
     file.write(add_string)
 
+
 if __name__ == '__main__':
     # file = open("C:/PLIKI/Load_tests/users_with_traits2.txt",'a')
     file = open(get_root_directory() + "\\users_with_traits2.json", 'w+')

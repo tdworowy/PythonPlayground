@@ -9,12 +9,12 @@ def register(obj):
 if __name__ == '__main__':
     @register
     def spam(x):
-        return (x ** 2)
+        return x ** 2
 
 
     @register
     def ham(x):
-        return (x ** 3)
+        return x ** 3
 
 
     print("Manual Call")

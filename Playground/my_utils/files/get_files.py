@@ -3,7 +3,7 @@ from os import listdir
 
 from os.path import isfile, join
 
-from rootDirectory import get_root_directory
+from Playground.root_directory import get_root_directory
 
 sys.setrecursionlimit(10000)
 
