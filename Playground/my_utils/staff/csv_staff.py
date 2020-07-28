@@ -1,6 +1,6 @@
 import csv
 
-from Playground.rootDirectory import get_root_directory
+from Playground.root_directory import get_root_directory
 
 
 def get_first_column(file,sep=';'):

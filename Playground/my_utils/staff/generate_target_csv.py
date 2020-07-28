@@ -1,5 +1,5 @@
 from Playground.my_utils.staff.random_string import generate_random_string
-from Playground.rootDirectory import get_root_directory
+from Playground.root_directory import get_root_directory
 
 
 def generate(count):
