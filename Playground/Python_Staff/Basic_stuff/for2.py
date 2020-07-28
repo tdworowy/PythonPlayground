@@ -1,29 +1,26 @@
 if __name__ == "__main__":
 
-    S = "Spam" *10
+    S = "Spam" * 10
 
-    for char in S :
-         print(ord(char))
+    for char in S:
+        print(ord(char))
 
-    x =0
+    x = 0
     for char in S:
         x += (ord(char))
-    print("Sum:"+str(x))
-
+    print("Sum:" + str(x))
 
     y = []
-    for char in S :
+    for char in S:
         y.append(ord(char))
-    print("List: "+ str(y))
+    print("List: " + str(y))
 
-    print(list(map(ord,S)))
+    print(list(map(ord, S)))
 
-
-    for i in range (50):
+    for i in range(50):
         print('Welcome %d\n\a' % i)
 
-
-    D = dict(a =1 , b=2 , c=3 , d=10)
+    D = dict(a=1, b=2, c=3, d=10)
 
     for key in sorted(D):
         print(D[key])

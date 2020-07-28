@@ -1,14 +1,18 @@
-class example1_:
+class Example1:
     print("Test1")
 
-class example2_:
-      def __init__(self):
+
+class Example2:
+    def __init__(self):
         print("Test2")
 
-class example3_:
-       def pr(self):
+
+class Example3:
+    def pr(self):
         print("Test3")
+
+
 if __name__ == '__main__':
-    a = example2_()
-    b = example3_()
+    a = Example2()
+    b = Example3()
     b.pr()

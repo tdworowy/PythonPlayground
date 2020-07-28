@@ -6,8 +6,9 @@ if __name__ == '__main__':
     boJack = Person("BoJack Horseman ", job="Actor", pay=1000)
     rick = Manager("Rick Sanches", 20000)
 
-    import  shelve
+    import shelve
+
     db = shelve.open('personDB')
-    for obj in (homer,boJack,rick):
+    for obj in (homer, boJack, rick):
         db[obj.name] = obj
     db.close()

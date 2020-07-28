@@ -1,5 +1,5 @@
 class Name:
-    "Documentnation"
+    "Documentation"
 
     def __get__(self, instance, owner):
         print("get...")
@@ -19,8 +19,9 @@ class Person:
         self._name = name
 
     name = Name()
-if __name__ == '__main__':
 
+
+if __name__ == '__main__':
     bob = Person("Name test1")
     print(bob.name)
     bob.name = "Name test2"

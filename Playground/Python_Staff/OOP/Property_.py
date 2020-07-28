@@ -1,21 +1,20 @@
-class newprops:
+class NewProps:
 
     def __init__(self):
-        self._age =40
+        self._age = 40
 
-    def getage(self):
+    def get_age(self):
         return self._age
 
-    def setage(self,value):
-        print("Set age: ",value)
-        self._age= value
+    def set_age(self, value):
+        print("Set age: ", value)
+        self._age = value
 
-    age = property(getage,setage,None,None)
+    age = property(get_age, set_age, None, None)
 
 
 if __name__ == '__main__':
-
-    x = newprops()
+    x = NewProps()
     print(x.age)
     x.age = 2
     print(x.age)

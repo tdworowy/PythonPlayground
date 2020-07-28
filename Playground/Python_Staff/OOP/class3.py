@@ -1,11 +1,13 @@
-def toUpper(self):
+def to_upper(self):
     return self.x.upper()
 
-class rec : pass
+
+class Rec: pass
+
 
 if __name__ == '__main__':
-    rec.method = toUpper
-    rec.x = "Dupa"
+    Rec.method = to_upper
+    Rec.x = "Dupa"
 
-    a = rec()
+    a = Rec()
     print(a.method())

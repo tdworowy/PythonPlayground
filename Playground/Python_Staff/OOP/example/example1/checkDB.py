@@ -10,4 +10,4 @@ if __name__ == '__main__':
     print(list(db.keys()))
 
     rick = db['Rick Sanches']
-    print(rick.lastName())
+    print(rick.last_name())

@@ -1,33 +1,35 @@
-class Indexer:
+class Indexer1:
     def __getitem__(self, item):
         return item ** 2
 
+
 class Indexer2:
-    def __init__(self,data):
+    def __init__(self, data):
         self.data = data
 
     def __getitem__(self, item):
-        print('getitem: ',item )
+        print('getitem: ', item)
         return self.data[item]
 
     def __setitem__(self, key, value):
         print('setitem: key: ', key)
         print('setitem: value: ', value)
-        dataLeanth = len(self.data)
-        if dataLeanth >= key:
-          self.data[key] =value
+        data_length = len(self.data)
+        if data_length >= key:
+            self.data[key] = value
         else:
-             for i in range(key - dataLeanth):
-                 self.data.append(None)
-             else:
-                 self.data.append(value)
+            for i in range(key - data_length):
+                self.data.append(None)
+            else:
+                self.data.append(value)
+
 
 if __name__ == '__main__':
 
-    X = Indexer()
+    X = Indexer1()
     print(X[2])
 
-    Y = Indexer2([5,6,7,8,9])
+    Y = Indexer2([5, 6, 7, 8, 9])
     print(Y[0])
     print(Y[-1])
 

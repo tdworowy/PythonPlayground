@@ -1,15 +1,16 @@
-class rec : pass
+class rec: pass
+
 
 if __name__ == '__main__':
-    rec.test="Dupa"
+    rec.test = "Test1"
     rec.a = 1
-    rec.b =2
+    rec.b = 2
 
     print(rec.test)
-    print(rec.a+rec.b)
+    print(rec.a + rec.b)
 
     x = rec()
-    x.test2 = "Dupa2"
+    x.test2 = "Test2"
 
     print(x.test2)
     print(x.test)

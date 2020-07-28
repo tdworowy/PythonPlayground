@@ -1,15 +1,19 @@
-from abc import ABCMeta ,abstractmethod
+from abc import ABCMeta, abstractmethod
+
 
 class Super(metaclass=ABCMeta):
     def delegate(self):
-            self.action()
+        self.action()
+
     @abstractmethod
     def action(self):
         pass
 
+
 class Sub(Super):
-        def action(self):
-            print("Spam")
+    def action(self):
+        print("Spam")
+
 
 if __name__ == '__main__':
     X = Sub()

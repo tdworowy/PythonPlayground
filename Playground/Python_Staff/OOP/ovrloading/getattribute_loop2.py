@@ -1,7 +1,8 @@
-class getA:
+class GetA:
     def __getattribute__(self, item):
-       self.other #innfinite loop
+        self.other  # innfinite loop
+
 
 if __name__ == '__main__':
-    x = getA()
+    x = GetA()
     x.name

@@ -1,20 +1,23 @@
-class empty:
+class Empty:
     def __getattr__(self, item):
-        if item =='age':
+        if item == 'age':
             return "Age is: 40"
         else:
             raise ArithmeticError(item)
-class dupa:
+
+
+class Test:
     def __getattr__(self, item):
-            return "dupa"
+        return "Test"
+
+
 if __name__ == '__main__':
-    x = empty()
+    x = Empty()
     print(x.age)
     x.name = "Test"
     x.age = 20
     print(x.name)
     print(x.age)
 
-
-    y = dupa()
+    y = Test()
     print(y.wothever)

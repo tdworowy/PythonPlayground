@@ -6,22 +6,22 @@ def min1(*args):
     return res
 
 
-
-def min2(first,*res):
+def min2(first, *res):
     for arg in res:
         if arg < first:
             first = arg
     return first
 
+
 def min3(*args):
     tmp = list(args)
     tmp.sort()
-    return  tmp[0]
+    return tmp[0]
+
+
 if __name__ == "__main__":
+    print(min1(3, 4, 1, 2))
+    print(min2("bb", "aa"))
+    print(min3([2, 3], [1, 2, 4], [3, 3]))
 
-    print(min1(3,4,1,2))
-    print(min2("bb","aa"))
-    print(min3([2,3],[1,2,4],[3,3]))
-
-
-    #same think as built-in functions min
+    # same think as built-in functions min

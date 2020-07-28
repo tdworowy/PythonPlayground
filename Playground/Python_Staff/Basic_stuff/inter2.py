@@ -2,9 +2,9 @@ def intersect(*args):
     res = []
     for x in args[0]:
         for other in args[1:]:
-            if x not in other : break
+            if x not in other: break
         else:
-                res.append(x)
+            res.append(x)
     return res
 
 
@@ -18,12 +18,11 @@ def union(*args):
 
 
 if __name__ == "__main__":
+    s1, s2, s3 = "Teodor", "Teofil", "Troll"
 
-    s1 ,s2 ,s3 = "Teodor","Teofil" , "Troll"
-
-    print(intersect(s1,s2),union(s1,s2))
-    print(intersect([1,3,2],[1,4]))
-    print(intersect(s1,s2,s3))
-    print(union(s1,s2,s3))
+    print(intersect(s1, s2), union(s1, s2))
+    print(intersect([1, 3, 2], [1, 4]))
+    print(intersect(s1, s2, s3))
+    print(union(s1, s2, s3))
 
     # can use sets operations

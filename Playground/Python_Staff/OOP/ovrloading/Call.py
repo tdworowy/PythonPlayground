@@ -1,21 +1,22 @@
 class Calle:
     def __call__(self, *args, **kwargs):
-        print("Call: ",args,kwargs)
+        print("Call: ", args, kwargs)
 
 
 class Prod:
-    def __init__(self,value):
+    def __init__(self, value):
         self.value = value
+
     def __call__(self, other):
         return self.value * other
 
+
 if __name__ == '__main__':
     C = Calle()
-    C(1,2,3)
-    C(['a','b','c'])
+    C(1, 2, 3)
+    C(['a', 'b', 'c'])
     C("Spam")
-    C({'a':1})
-
+    C({'a': 1})
 
     x = Prod(2)
     print(x(3))

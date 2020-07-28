@@ -8,4 +8,4 @@ if __name__ == "__main__":
     print(x[-1])
 
     for char in x:
-        print(str(char) +" "+ chr(char))
+        print(str(char) + " " + chr(char))

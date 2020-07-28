@@ -2,18 +2,20 @@ from Playground.Python_Staff.OOP.example.example2_pizza.empoyees import Server, 
 
 
 class Customer:
-    def __init__(self,name):
+    def __init__(self, name):
         self.name = name
 
-    def order(self,server):
-        print(self.name , "order from ",server)
+    def order(self, server):
+        print(self.name, "order from ", server)
 
-    def pay(self,server):
-        print(self.name ,"pay for order ", server)
+    def pay(self, server):
+        print(self.name, "pay for order ", server)
+
 
 class Oven:
     def bake(self):
         print("over is bake")
+
 
 class PizzaShop:
     def __init__(self):
@@ -21,8 +23,8 @@ class PizzaShop:
         self.chef = PizzaRobot('Robert')
         self.over = Oven()
 
-    def order(self,name):
-        customer= Customer(name)
+    def order(self, name):
+        customer = Customer(name)
         customer.order(self.server)
         self.chef.work()
         self.over.bake()
