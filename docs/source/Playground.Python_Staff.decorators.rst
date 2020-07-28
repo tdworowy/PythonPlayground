@@ -20,34 +20,34 @@ Playground.Python\_Staff.decorators.buffors\_ module
    :undoc-members:
    :show-inheritance:
 
-Playground.Python\_Staff.decorators.classDecorators module
-----------------------------------------------------------
+Playground.Python\_Staff.decorators.class\_decorators1 module
+-------------------------------------------------------------
 
-.. automodule:: Playground.Python_Staff.decorators.classDecorators
+.. automodule:: Playground.Python_Staff.decorators.class_decorators1
    :members:
    :undoc-members:
    :show-inheritance:
 
-Playground.Python\_Staff.decorators.classDecorators2 module
------------------------------------------------------------
+Playground.Python\_Staff.decorators.class\_decorators2 module
+-------------------------------------------------------------
 
-.. automodule:: Playground.Python_Staff.decorators.classDecorators2
+.. automodule:: Playground.Python_Staff.decorators.class_decorators2
    :members:
    :undoc-members:
    :show-inheritance:
 
-Playground.Python\_Staff.decorators.contextMenager\_decorator module
---------------------------------------------------------------------
+Playground.Python\_Staff.decorators.context\_manager\_decorator module
+----------------------------------------------------------------------
 
-.. automodule:: Playground.Python_Staff.decorators.contextMenager_decorator
+.. automodule:: Playground.Python_Staff.decorators.context_manager_decorator
    :members:
    :undoc-members:
    :show-inheritance:
 
-Playground.Python\_Staff.decorators.dec module
-----------------------------------------------
+Playground.Python\_Staff.decorators.dec1 module
+-----------------------------------------------
 
-.. automodule:: Playground.Python_Staff.decorators.dec
+.. automodule:: Playground.Python_Staff.decorators.dec1
    :members:
    :undoc-members:
    :show-inheritance:

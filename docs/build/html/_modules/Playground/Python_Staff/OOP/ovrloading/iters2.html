@@ -4,6 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playground.Python_Staff.OOP.ovrloading.iters2 &#8212; Playground  documentation</title>
     <link rel="stylesheet" href="../../../../../_static/pyramid.css" type="text/css" />
     <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
@@ -32,7 +33,8 @@
           <a href="../../../../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="nav-item nav-item-0"><a href="../../../../../index.html">Playground  documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="../../../../index.html" accesskey="U">Module code</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" accesskey="U">Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Playground.Python_Staff.OOP.ovrloading.iters2</a></li> 
       </ul>
     </div>  
 
@@ -43,59 +45,64 @@
             
   <h1>Source code for Playground.Python_Staff.OOP.ovrloading.iters2</h1><div class="highlight"><pre>
 <div class="viewcode-block" id="Iters1"><a class="viewcode-back" href="../../../../../Playground.Python_Staff.OOP.ovrloading.html#Playground.Python_Staff.OOP.ovrloading.iters2.Iters1">[docs]</a><span></span><span class="k">class</span> <span class="nc">Iters1</span><span class="p">:</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">value</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">value</span>
+
     <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
         <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;get[</span><span class="si">%s</span><span class="s1">]: &#39;</span> <span class="o">%</span> <span class="n">index</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
+
     <span class="k">def</span> <span class="fm">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;iter=&gt; &#39;</span><span class="p">,</span><span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">ix</span> <span class="o">=</span><span class="mi">0</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;iter=&gt; &#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ix</span> <span class="o">=</span> <span class="mi">0</span>
         <span class="k">return</span> <span class="bp">self</span>
+
     <span class="k">def</span> <span class="fm">__next__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;next: &#39;</span><span class="p">,</span><span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;next: &#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">ix</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">):</span> <span class="k">raise</span> <span class="ne">StopIteration</span>
-        <span class="n">item</span> <span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">ix</span><span class="p">]</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">ix</span> <span class="o">+=</span><span class="mi">1</span>
+        <span class="n">item</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">ix</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ix</span> <span class="o">+=</span> <span class="mi">1</span>
         <span class="k">return</span> <span class="n">item</span>
+
     <span class="k">def</span> <span class="fm">__contains__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Contains: &#39;</span><span class="p">,</span><span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Contains: &#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">item</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span></div>
 
 
-
 <div class="viewcode-block" id="Iters2"><a class="viewcode-back" href="../../../../../Playground.Python_Staff.OOP.ovrloading.html#Playground.Python_Staff.OOP.ovrloading.iters2.Iters2">[docs]</a><span class="k">class</span> <span class="nc">Iters2</span><span class="p">:</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">value</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">value</span>
+
     <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
         <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;get[</span><span class="si">%s</span><span class="s1">]: &#39;</span> <span class="o">%</span> <span class="n">index</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
+
     <span class="k">def</span> <span class="fm">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;iter=&gt; &#39;</span><span class="p">,</span><span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">ix</span> <span class="o">=</span><span class="mi">0</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;iter=&gt; &#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ix</span> <span class="o">=</span> <span class="mi">0</span>
         <span class="k">return</span> <span class="bp">self</span>
+
     <span class="k">def</span> <span class="fm">__next__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;next: &#39;</span><span class="p">,</span><span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;next: &#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">ix</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">):</span> <span class="k">raise</span> <span class="ne">StopIteration</span>
-        <span class="n">item</span> <span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">ix</span><span class="p">]</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">ix</span> <span class="o">+=</span><span class="mi">1</span>
+        <span class="n">item</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">ix</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ix</span> <span class="o">+=</span> <span class="mi">1</span>
         <span class="k">return</span> <span class="n">item</span></div>
 
 
-
 <div class="viewcode-block" id="Iters3"><a class="viewcode-back" href="../../../../../Playground.Python_Staff.OOP.ovrloading.html#Playground.Python_Staff.OOP.ovrloading.iters2.Iters3">[docs]</a><span class="k">class</span> <span class="nc">Iters3</span><span class="p">:</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">value</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">value</span>
+
     <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
         <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;get[</span><span class="si">%s</span><span class="s1">]: &#39;</span> <span class="o">%</span> <span class="n">index</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="n">index</span><span class="p">]</span></div>
 
 
-
 <div class="viewcode-block" id="Iter_est"><a class="viewcode-back" href="../../../../../Playground.Python_Staff.OOP.ovrloading.html#Playground.Python_Staff.OOP.ovrloading.iters2.Iter_est">[docs]</a><span class="k">def</span> <span class="nf">Iter_est</span><span class="p">(</span><span class="n">obj</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span><span class="s1">&#39;_&#39;</span> <span class="o">*</span> <span class="mi">20</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Test: &quot;</span><span class="p">,</span><span class="n">obj</span><span class="o">.</span><span class="vm">__name__</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="o">*</span><span class="mi">20</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="o">+</span> <span class="s1">&#39;_&#39;</span> <span class="o">*</span> <span class="mi">20</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Test: &quot;</span><span class="p">,</span> <span class="n">obj</span><span class="o">.</span><span class="vm">__name__</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;_&#39;</span> <span class="o">*</span> <span class="mi">20</span><span class="p">)</span>
     <span class="n">X</span> <span class="o">=</span> <span class="n">obj</span><span class="p">([</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)])</span>
     <span class="nb">print</span><span class="p">(</span><span class="mi">3</span> <span class="ow">in</span> <span class="n">X</span><span class="p">)</span>
 
@@ -115,13 +122,12 @@
             <span class="k">break</span></div>
 
 
-
-
-<span class="k">if</span> <span class="vm">__name__</span><span class="o">==</span><span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
-    <span class="k">for</span> <span class="n">obj</span> <span class="ow">in</span> <span class="p">[</span><span class="n">Iters1</span><span class="p">,</span><span class="n">Iters2</span><span class="p">,</span><span class="n">Iters3</span><span class="p">]:</span>
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">obj</span> <span class="ow">in</span> <span class="p">[</span><span class="n">Iters1</span><span class="p">,</span> <span class="n">Iters2</span><span class="p">,</span> <span class="n">Iters3</span><span class="p">]:</span>
         <span class="n">Iter_est</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
 </pre></div>
 
+            <div class="clearer"></div>
           </div>
         </div>
       </div>
@@ -151,12 +157,13 @@
           <a href="../../../../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="nav-item nav-item-0"><a href="../../../../../index.html">Playground  documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="../../../../index.html" >Module code</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" >Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Playground.Python_Staff.OOP.ovrloading.iters2</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2019, Tom.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.
+        &#169; Copyright 2020, Tom.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.1.2.
     </div>
   </body>
 </html>

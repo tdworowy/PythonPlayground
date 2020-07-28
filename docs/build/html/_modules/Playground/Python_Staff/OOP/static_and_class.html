@@ -4,6 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playground.Python_Staff.OOP.static_and_class &#8212; Playground  documentation</title>
     <link rel="stylesheet" href="../../../../_static/pyramid.css" type="text/css" />
     <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
@@ -32,7 +33,8 @@
           <a href="../../../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="nav-item nav-item-0"><a href="../../../../index.html">Playground  documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="../../../index.html" accesskey="U">Module code</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="../../../index.html" accesskey="U">Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Playground.Python_Staff.OOP.static_and_class</a></li> 
       </ul>
     </div>  
 
@@ -43,45 +45,54 @@
             
   <h1>Source code for Playground.Python_Staff.OOP.static_and_class</h1><div class="highlight"><pre>
 <div class="viewcode-block" id="Methods"><a class="viewcode-back" href="../../../../Playground.Python_Staff.OOP.html#Playground.Python_Staff.OOP.static_and_class.Methods">[docs]</a><span></span><span class="k">class</span> <span class="nc">Methods</span><span class="p">:</span>
-<div class="viewcode-block" id="Methods.imeth"><a class="viewcode-back" href="../../../../Playground.Python_Staff.OOP.html#Playground.Python_Staff.OOP.static_and_class.Methods.imeth">[docs]</a>    <span class="k">def</span> <span class="nf">imeth</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">X</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">X</span><span class="p">)</span></div>
+<div class="viewcode-block" id="Methods.imeth"><a class="viewcode-back" href="../../../../Playground.Python_Staff.OOP.html#Playground.Python_Staff.OOP.static_and_class.Methods.imeth">[docs]</a>    <span class="k">def</span> <span class="nf">imeth</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">)</span></div>
 
 <div class="viewcode-block" id="Methods.smeth"><a class="viewcode-back" href="../../../../Playground.Python_Staff.OOP.html#Playground.Python_Staff.OOP.static_and_class.Methods.smeth">[docs]</a>    <span class="k">def</span> <span class="nf">smeth</span><span class="p">(</span><span class="n">X</span><span class="p">):</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">X</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="Methods.cmeth"><a class="viewcode-back" href="../../../../Playground.Python_Staff.OOP.html#Playground.Python_Staff.OOP.static_and_class.Methods.cmeth">[docs]</a>    <span class="k">def</span> <span class="nf">cmeth</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span><span class="n">X</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span><span class="n">X</span><span class="p">)</span></div>
+<div class="viewcode-block" id="Methods.cmeth"><a class="viewcode-back" href="../../../../Playground.Python_Staff.OOP.html#Playground.Python_Staff.OOP.static_and_class.Methods.cmeth">[docs]</a>    <span class="k">def</span> <span class="nf">cmeth</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">X</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">X</span><span class="p">)</span></div>
 
     <span class="n">smeth</span> <span class="o">=</span> <span class="nb">staticmethod</span><span class="p">(</span><span class="n">smeth</span><span class="p">)</span>
-    <span class="n">cmeth</span> <span class="o">=</span> <span class="nb">classmethod</span><span class="p">(</span><span class="n">cmeth</span><span class="p">)</span> <span class="c1">#zawsze przekazuje klase(najniższą w hierarhi)</span></div>
+    <span class="n">cmeth</span> <span class="o">=</span> <span class="nb">classmethod</span><span class="p">(</span><span class="n">cmeth</span><span class="p">)</span>  <span class="c1"># zawsze przekazuje klase(najniższą w hierarhi)</span></div>
 
 
 <div class="viewcode-block" id="Methods2"><a class="viewcode-back" href="../../../../Playground.Python_Staff.OOP.html#Playground.Python_Staff.OOP.static_and_class.Methods2">[docs]</a><span class="k">class</span> <span class="nc">Methods2</span><span class="p">:</span>
-<div class="viewcode-block" id="Methods2.imeth"><a class="viewcode-back" href="../../../../Playground.Python_Staff.OOP.html#Playground.Python_Staff.OOP.static_and_class.Methods2.imeth">[docs]</a>    <span class="k">def</span> <span class="nf">imeth</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">X</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">X</span><span class="p">)</span></div>
+<div class="viewcode-block" id="Methods2.imeth"><a class="viewcode-back" href="../../../../Playground.Python_Staff.OOP.html#Playground.Python_Staff.OOP.static_and_class.Methods2.imeth">[docs]</a>    <span class="k">def</span> <span class="nf">imeth</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">)</span></div>
+
 <div class="viewcode-block" id="Methods2.smeth"><a class="viewcode-back" href="../../../../Playground.Python_Staff.OOP.html#Playground.Python_Staff.OOP.static_and_class.Methods2.smeth">[docs]</a>    <span class="nd">@staticmethod</span>
     <span class="k">def</span> <span class="nf">smeth</span><span class="p">(</span><span class="n">X</span><span class="p">):</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">X</span><span class="p">)</span></div>
+
 <div class="viewcode-block" id="Methods2.cmeth"><a class="viewcode-back" href="../../../../Playground.Python_Staff.OOP.html#Playground.Python_Staff.OOP.static_and_class.Methods2.cmeth">[docs]</a>    <span class="nd">@classmethod</span>
-    <span class="k">def</span> <span class="nf">cmeth</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span><span class="n">X</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span><span class="n">X</span><span class="p">)</span></div></div>
+    <span class="k">def</span> <span class="nf">cmeth</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">X</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">X</span><span class="p">)</span></div></div>
 
 
 <div class="viewcode-block" id="Spam"><a class="viewcode-back" href="../../../../Playground.Python_Staff.OOP.html#Playground.Python_Staff.OOP.static_and_class.Spam">[docs]</a><span class="k">class</span> <span class="nc">Spam</span><span class="p">:</span>
     <span class="n">numInstances</span> <span class="o">=</span> <span class="mi">0</span>
+
 <div class="viewcode-block" id="Spam.count"><a class="viewcode-back" href="../../../../Playground.Python_Staff.OOP.html#Playground.Python_Staff.OOP.static_and_class.Spam.count">[docs]</a>    <span class="k">def</span> <span class="nf">count</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
-        <span class="bp">cls</span><span class="o">.</span><span class="n">numInstances</span> <span class="o">+=</span><span class="mi">1</span></div>
+        <span class="bp">cls</span><span class="o">.</span><span class="n">numInstances</span> <span class="o">+=</span> <span class="mi">1</span></div>
+
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+
     <span class="n">count</span> <span class="o">=</span> <span class="nb">classmethod</span><span class="p">(</span><span class="n">count</span><span class="p">)</span></div>
 
+
 <div class="viewcode-block" id="Sub"><a class="viewcode-back" href="../../../../Playground.Python_Staff.OOP.html#Playground.Python_Staff.OOP.static_and_class.Sub">[docs]</a><span class="k">class</span> <span class="nc">Sub</span><span class="p">(</span><span class="n">Spam</span><span class="p">):</span>
-     <span class="n">numInstances</span> <span class="o">=</span><span class="mi">0</span>
-     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">numInstances</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">Spam</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></div>
+
 
 <div class="viewcode-block" id="Other"><a class="viewcode-back" href="../../../../Playground.Python_Staff.OOP.html#Playground.Python_Staff.OOP.static_and_class.Other">[docs]</a><span class="k">class</span> <span class="nc">Other</span><span class="p">(</span><span class="n">Spam</span><span class="p">):</span>
     <span class="n">numInstances</span> <span class="o">=</span> <span class="mi">0</span></div>
+
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
     <span class="n">x</span> <span class="o">=</span> <span class="n">Methods</span><span class="p">()</span>
@@ -92,15 +103,14 @@
     <span class="n">Methods</span><span class="o">.</span><span class="n">smeth</span><span class="p">(</span><span class="s2">&quot;Test3&quot;</span><span class="p">)</span>
     <span class="n">Methods</span><span class="o">.</span><span class="n">cmeth</span><span class="p">(</span><span class="s2">&quot;Test4&quot;</span><span class="p">)</span>
 
-
-
     <span class="n">x</span> <span class="o">=</span> <span class="n">Spam</span><span class="p">()</span>
-    <span class="n">y1</span><span class="p">,</span><span class="n">y2</span> <span class="o">=</span> <span class="n">Sub</span><span class="p">()</span> <span class="p">,</span> <span class="n">Sub</span><span class="p">()</span>
-    <span class="n">z1</span><span class="p">,</span><span class="n">z2</span><span class="p">,</span><span class="n">z3</span> <span class="o">=</span> <span class="n">Other</span><span class="p">(),</span> <span class="n">Other</span><span class="p">(),</span> <span class="n">Other</span><span class="p">()</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">numInstances</span><span class="p">,</span><span class="n">y1</span><span class="o">.</span><span class="n">numInstances</span><span class="p">,</span><span class="n">z1</span><span class="o">.</span><span class="n">numInstances</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">Spam</span><span class="o">.</span><span class="n">numInstances</span><span class="p">,</span><span class="n">Sub</span><span class="o">.</span><span class="n">numInstances</span><span class="p">,</span><span class="n">Other</span><span class="o">.</span><span class="n">numInstances</span><span class="p">)</span>
+    <span class="n">y1</span><span class="p">,</span> <span class="n">y2</span> <span class="o">=</span> <span class="n">Sub</span><span class="p">(),</span> <span class="n">Sub</span><span class="p">()</span>
+    <span class="n">z1</span><span class="p">,</span> <span class="n">z2</span><span class="p">,</span> <span class="n">z3</span> <span class="o">=</span> <span class="n">Other</span><span class="p">(),</span> <span class="n">Other</span><span class="p">(),</span> <span class="n">Other</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">numInstances</span><span class="p">,</span> <span class="n">y1</span><span class="o">.</span><span class="n">numInstances</span><span class="p">,</span> <span class="n">z1</span><span class="o">.</span><span class="n">numInstances</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">Spam</span><span class="o">.</span><span class="n">numInstances</span><span class="p">,</span> <span class="n">Sub</span><span class="o">.</span><span class="n">numInstances</span><span class="p">,</span> <span class="n">Other</span><span class="o">.</span><span class="n">numInstances</span><span class="p">)</span>
 </pre></div>
 
+            <div class="clearer"></div>
           </div>
         </div>
       </div>
@@ -130,12 +140,13 @@
           <a href="../../../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="nav-item nav-item-0"><a href="../../../../index.html">Playground  documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="../../../index.html" >Module code</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="../../../index.html" >Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Playground.Python_Staff.OOP.static_and_class</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2019, Tom.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.
+        &#169; Copyright 2020, Tom.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.1.2.
     </div>
   </body>
 </html>

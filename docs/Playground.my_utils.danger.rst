@@ -4,10 +4,10 @@ Playground.my\_utils.danger package
 Submodules
 ----------
 
-Playground.my\_utils.danger.ultraKill module
---------------------------------------------
+Playground.my\_utils.danger.ultra\_kill module
+----------------------------------------------
 
-.. automodule:: Playground.my_utils.danger.ultraKill
+.. automodule:: Playground.my_utils.danger.ultra_kill
    :members:
    :undoc-members:
    :show-inheritance:

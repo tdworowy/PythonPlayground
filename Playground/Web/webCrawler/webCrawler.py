@@ -9,7 +9,8 @@ class Crawler():
     def __init__(self):
         print("Start")
 
-    def google_url(self, find):
+    @staticmethod
+    def google_url(find):
         return "https://www.google.pl?gws_rd=ssl#q={x}".format(x=find)
 
     def get_links_pages(self, URLs):
@@ -40,27 +41,28 @@ class Crawler():
 
     def regex_links(self, text):
         all = re.findall(r'(https?://\S+)', str(text))
-        map_ = map(self.cleanLink, all)
+        map_ = map(self.clean_link, all)
         list_ = list(map_)
         return list_
 
-    def cleanLink(self, link):
+    def clean_link(self, link):
         if ('>' in link): link = link[:link.index('>')]
         return link.replace("\"", "")
 
-    def tofile(self,list_):
-        list_ = self.cleanList(list_)
+    def to_file(self, list_):
+        list_ = self.clean_list(list_)
         path = os.path.dirname(os.path.abspath(__file__))
-        with open(path+"\\links.txt",'w') as f:
+        with open(path + "\\links.txt", 'w') as f:
             for line in list_:
-                f.write(line.strip()+'\n')
+                f.write(line.strip() + '\n')
                 f.flush()
-        print("Links saved: "+str(len(list_)))
+        print("Links saved: " + str(len(list_)))
 
-    def cleanList(self,list_):
-         list_ = str(list_).replace("[","").replace("]","")
-         list_=list_.split(',')
-         return list_
+    def clean_list(self, list_):
+        list_ = str(list_).replace("[", "").replace("]", "")
+        list_ = list_.split(',')
+        return list_
+
 
 def main():
     bot = Crawler()
@@ -70,7 +72,8 @@ def main():
     links_list3 = bot.get_links_pages(links_list2)
     links_list4 = bot.get_links_pages(links_list3)
 
-    bot.tofile(links_list4)
+    bot.to_file(links_list4)
+
 
 if __name__ == "__main__":
     main()

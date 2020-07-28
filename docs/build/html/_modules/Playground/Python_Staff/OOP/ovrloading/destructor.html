@@ -4,6 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playground.Python_Staff.OOP.ovrloading.destructor &#8212; Playground  documentation</title>
     <link rel="stylesheet" href="../../../../../_static/pyramid.css" type="text/css" />
     <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
@@ -32,7 +33,8 @@
           <a href="../../../../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="nav-item nav-item-0"><a href="../../../../../index.html">Playground  documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="../../../../index.html" accesskey="U">Module code</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" accesskey="U">Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Playground.Python_Staff.OOP.ovrloading.destructor</a></li> 
       </ul>
     </div>  
 
@@ -43,17 +45,20 @@
             
   <h1>Source code for Playground.Python_Staff.OOP.ovrloading.destructor</h1><div class="highlight"><pre>
 <div class="viewcode-block" id="Life"><a class="viewcode-back" href="../../../../../Playground.Python_Staff.OOP.ovrloading.html#Playground.Python_Staff.OOP.ovrloading.destructor.Life">[docs]</a><span></span><span class="k">class</span> <span class="nc">Life</span><span class="p">:</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;unknown&#39;</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Welcome &#39;</span><span class="p">,</span><span class="n">name</span><span class="p">)</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;unknown&#39;</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Welcome &#39;</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
     <span class="k">def</span> <span class="fm">__del__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Goodbye &#39;</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span></div>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Goodbye &#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span></div>
+
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
     <span class="n">brian</span> <span class="o">=</span> <span class="n">Life</span><span class="p">(</span><span class="s2">&quot;Brian&quot;</span><span class="p">)</span>
     <span class="n">brian2</span> <span class="o">=</span> <span class="n">Life</span><span class="p">(</span><span class="s2">&quot;Brian2&quot;</span><span class="p">)</span>
 </pre></div>
 
+            <div class="clearer"></div>
           </div>
         </div>
       </div>
@@ -83,12 +88,13 @@
           <a href="../../../../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="nav-item nav-item-0"><a href="../../../../../index.html">Playground  documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="../../../../index.html" >Module code</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" >Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Playground.Python_Staff.OOP.ovrloading.destructor</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2019, Tom.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.
+        &#169; Copyright 2020, Tom.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.1.2.
     </div>
   </body>
 </html>

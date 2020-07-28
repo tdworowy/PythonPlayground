@@ -4,6 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playground.Web.proxy &#8212; Playground  documentation</title>
     <link rel="stylesheet" href="../../../_static/pyramid.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
@@ -32,7 +33,8 @@
           <a href="../../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="nav-item nav-item-0"><a href="../../../index.html">Playground  documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="../../index.html" accesskey="U">Module code</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="../../index.html" accesskey="U">Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Playground.Web.proxy</a></li> 
       </ul>
     </div>  
 
@@ -48,88 +50,86 @@
 
 
 <div class="viewcode-block" id="proxy_thread"><a class="viewcode-back" href="../../../Playground.Web.html#Playground.Web.proxy.proxy_thread">[docs]</a><span class="k">def</span> <span class="nf">proxy_thread</span><span class="p">(</span><span class="n">conn</span><span class="p">):</span>
-   <span class="n">max_data</span><span class="o">=</span> <span class="mi">4096</span>
-   <span class="n">request</span> <span class="o">=</span><span class="p">(</span><span class="n">conn</span><span class="o">.</span><span class="n">recv</span><span class="p">(</span><span class="n">max_data</span><span class="p">))</span>
-   <span class="n">request_str</span> <span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
-   <span class="nb">print</span><span class="p">(</span><span class="n">request_str</span><span class="p">)</span>
-   <span class="n">first_line</span> <span class="o">=</span> <span class="n">request_str</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;n&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
-   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;first_line:&quot;</span><span class="p">,</span> <span class="n">first_line</span><span class="p">)</span>
-   <span class="n">url</span> <span class="o">=</span> <span class="n">first_line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
-   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;URL:&quot;</span><span class="p">,</span> <span class="n">url</span><span class="p">)</span>
-   <span class="n">url2</span> <span class="o">=</span> <span class="n">url</span><span class="p">[</span><span class="mi">7</span><span class="p">:]</span>
+    <span class="n">max_data</span> <span class="o">=</span> <span class="mi">4096</span>
+    <span class="n">request</span> <span class="o">=</span> <span class="p">(</span><span class="n">conn</span><span class="o">.</span><span class="n">recv</span><span class="p">(</span><span class="n">max_data</span><span class="p">))</span>
+    <span class="n">request_str</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">request_str</span><span class="p">)</span>
+    <span class="n">first_line</span> <span class="o">=</span> <span class="n">request_str</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;n&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;first_line:&quot;</span><span class="p">,</span> <span class="n">first_line</span><span class="p">)</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="n">first_line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;URL:&quot;</span><span class="p">,</span> <span class="n">url</span><span class="p">)</span>
+    <span class="n">url2</span> <span class="o">=</span> <span class="n">url</span><span class="p">[</span><span class="mi">7</span><span class="p">:]</span>
 
-   <span class="k">if</span> <span class="s2">&quot;:&quot;</span> <span class="ow">in</span> <span class="n">url2</span> <span class="p">:</span>
-       <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Found&quot;</span><span class="p">)</span>
-       <span class="n">port_pos</span> <span class="o">=</span> <span class="n">url2</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;:&quot;</span><span class="p">)</span>
-   <span class="k">else</span><span class="p">:</span> <span class="n">port_pos</span> <span class="o">=-</span><span class="mi">1</span>
+    <span class="k">if</span> <span class="s2">&quot;:&quot;</span> <span class="ow">in</span> <span class="n">url2</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Found&quot;</span><span class="p">)</span>
+        <span class="n">port_pos</span> <span class="o">=</span> <span class="n">url2</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;:&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">port_pos</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
 
-   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;port_pos: &quot;</span><span class="p">,</span><span class="n">port_pos</span><span class="p">)</span>
-   <span class="n">webserver_pos</span> <span class="o">=</span> <span class="n">url2</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">)</span>
-   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;webserver_pos: &quot;</span><span class="p">,</span><span class="n">webserver_pos</span><span class="p">)</span>
-   <span class="n">webserver</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;port_pos: &quot;</span><span class="p">,</span> <span class="n">port_pos</span><span class="p">)</span>
+    <span class="n">webserver_pos</span> <span class="o">=</span> <span class="n">url2</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;webserver_pos: &quot;</span><span class="p">,</span> <span class="n">webserver_pos</span><span class="p">)</span>
+    <span class="n">webserver</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
 
-   <span class="k">if</span> <span class="p">(</span><span class="n">port_pos</span><span class="o">==-</span><span class="mi">1</span> <span class="ow">or</span> <span class="n">webserver_pos</span> <span class="o">&lt;</span> <span class="n">port_pos</span><span class="p">):</span>
-    <span class="n">port</span> <span class="o">=</span> <span class="mi">80</span>
-    <span class="n">webserver</span> <span class="o">=</span> <span class="n">url2</span><span class="p">[:</span><span class="n">webserver_pos</span><span class="p">]</span> <span class="c1">#TODO</span>
-   <span class="k">else</span><span class="p">:</span>
-     <span class="n">port</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="n">url2</span><span class="p">[(</span><span class="n">port_pos</span><span class="o">+</span><span class="mi">1</span><span class="p">):])[:</span><span class="n">webserver_pos</span><span class="o">-</span><span class="n">port_pos</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
-     <span class="n">webserver</span> <span class="o">=</span> <span class="n">url2</span><span class="p">[:</span><span class="n">port_pos</span><span class="p">]</span>
-   <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Connect to:&quot;</span><span class="p">,</span> <span class="n">webserver</span><span class="p">,</span> <span class="n">port</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">port_pos</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span> <span class="ow">or</span> <span class="n">webserver_pos</span> <span class="o">&lt;</span> <span class="n">port_pos</span><span class="p">):</span>
+        <span class="n">port</span> <span class="o">=</span> <span class="mi">80</span>
+        <span class="n">webserver</span> <span class="o">=</span> <span class="n">url2</span><span class="p">[:</span><span class="n">webserver_pos</span><span class="p">]</span>  <span class="c1"># TODO</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">port</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="n">url2</span><span class="p">[(</span><span class="n">port_pos</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):])[:</span><span class="n">webserver_pos</span> <span class="o">-</span> <span class="n">port_pos</span> <span class="o">-</span> <span class="mi">1</span><span class="p">])</span>
+        <span class="n">webserver</span> <span class="o">=</span> <span class="n">url2</span><span class="p">[:</span><span class="n">port_pos</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Connect to:&quot;</span><span class="p">,</span> <span class="n">webserver</span><span class="p">,</span> <span class="n">port</span><span class="p">)</span>
 
-   <span class="k">try</span><span class="p">:</span>
+    <span class="k">try</span><span class="p">:</span>
 
-     <span class="n">s</span> <span class="o">=</span> <span class="n">socket</span><span class="o">.</span><span class="n">socket</span><span class="p">(</span><span class="n">socket</span><span class="o">.</span><span class="n">AF_INET</span><span class="p">,</span> <span class="n">socket</span><span class="o">.</span><span class="n">SOCK_STREAM</span><span class="p">)</span>
-     <span class="n">s</span><span class="o">.</span><span class="n">connect</span><span class="p">((</span><span class="n">webserver</span><span class="p">,</span> <span class="n">port</span><span class="p">))</span>
-     <span class="n">s</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
+        <span class="n">s</span> <span class="o">=</span> <span class="n">socket</span><span class="o">.</span><span class="n">socket</span><span class="p">(</span><span class="n">socket</span><span class="o">.</span><span class="n">AF_INET</span><span class="p">,</span> <span class="n">socket</span><span class="o">.</span><span class="n">SOCK_STREAM</span><span class="p">)</span>
+        <span class="n">s</span><span class="o">.</span><span class="n">connect</span><span class="p">((</span><span class="n">webserver</span><span class="p">,</span> <span class="n">port</span><span class="p">))</span>
+        <span class="n">s</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
 
-     <span class="k">while</span> <span class="mi">1</span><span class="p">:</span>
-         <span class="n">data</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">recv</span><span class="p">(</span><span class="n">max_data</span><span class="p">)</span>
-         <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">data</span><span class="p">))</span>
-         <span class="k">if</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">):</span>
-            <span class="n">conn</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-         <span class="k">else</span><span class="p">:</span>
-             <span class="k">break</span>
-         <span class="n">s</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-         <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-   <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">message</span><span class="p">:</span>
+        <span class="k">while</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">data</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">recv</span><span class="p">(</span><span class="n">max_data</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">data</span><span class="p">))</span>
+            <span class="k">if</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">):</span>
+                <span class="n">conn</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">break</span>
+            <span class="n">s</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+            <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">message</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">s</span><span class="p">:</span>
-          <span class="n">s</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+            <span class="n">s</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
         <span class="k">if</span> <span class="n">conn</span><span class="p">:</span>
-          <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-        <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Runtime Error:&quot;</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span>
+            <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Runtime Error:&quot;</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span>
         <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span></div>
 
 
-
 <div class="viewcode-block" id="main"><a class="viewcode-back" href="../../../Playground.Web.html#Playground.Web.proxy.main">[docs]</a><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="n">host</span> <span class="o">=</span> <span class="s2">&quot;localhost&quot;</span>
+    <span class="n">port</span> <span class="o">=</span> <span class="mi">8080</span>
 
-  <span class="n">host</span> <span class="o">=</span> <span class="s2">&quot;localhost&quot;</span>
-  <span class="n">port</span> <span class="o">=</span> <span class="mi">8080</span>
+    <span class="k">try</span><span class="p">:</span>
 
-  <span class="k">try</span><span class="p">:</span>
+        <span class="n">s</span> <span class="o">=</span> <span class="n">socket</span><span class="o">.</span><span class="n">socket</span><span class="p">(</span><span class="n">socket</span><span class="o">.</span><span class="n">AF_INET</span><span class="p">,</span> <span class="n">socket</span><span class="o">.</span><span class="n">SOCK_STREAM</span><span class="p">)</span>
+        <span class="n">s</span><span class="o">.</span><span class="n">bind</span><span class="p">((</span><span class="n">host</span><span class="p">,</span> <span class="n">port</span><span class="p">))</span>
+        <span class="n">s</span><span class="o">.</span><span class="n">listen</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
 
-    <span class="n">s</span> <span class="o">=</span> <span class="n">socket</span><span class="o">.</span><span class="n">socket</span><span class="p">(</span><span class="n">socket</span><span class="o">.</span><span class="n">AF_INET</span><span class="p">,</span> <span class="n">socket</span><span class="o">.</span><span class="n">SOCK_STREAM</span><span class="p">)</span>
-    <span class="n">s</span><span class="o">.</span><span class="n">bind</span><span class="p">((</span><span class="n">host</span><span class="p">,</span> <span class="n">port</span><span class="p">))</span>
-    <span class="n">s</span><span class="o">.</span><span class="n">listen</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
-
-  <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">message</span><span class="p">:</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">message</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">s</span><span class="p">:</span>
             <span class="n">s</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-        <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Could not open socket:&quot;</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Could not open socket:&quot;</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span>
         <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 
-
-  <span class="k">while</span> <span class="mi">1</span><span class="p">:</span>
-    <span class="n">conn</span><span class="p">,</span> <span class="n">client_addr</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">accept</span><span class="p">()</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">conn</span><span class="p">,</span><span class="n">client_addr</span><span class="p">)</span>
-    <span class="n">_thread</span><span class="o">.</span><span class="n">start_new_thread</span><span class="p">(</span><span class="n">proxy_thread</span><span class="p">,</span> <span class="p">(</span><span class="n">conn</span><span class="p">,</span><span class="n">client_addr</span><span class="p">))</span> <span class="c1"># TODO Check</span></div>
-
+    <span class="k">while</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">conn</span><span class="p">,</span> <span class="n">client_addr</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">accept</span><span class="p">()</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">conn</span><span class="p">,</span> <span class="n">client_addr</span><span class="p">)</span>
+        <span class="n">_thread</span><span class="o">.</span><span class="n">start_new_thread</span><span class="p">(</span><span class="n">proxy_thread</span><span class="p">,</span> <span class="p">(</span><span class="n">conn</span><span class="p">,</span> <span class="n">client_addr</span><span class="p">))</span>  <span class="c1"># TODO Check</span></div>
 
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
-  <span class="n">main</span><span class="p">()</span>
+    <span class="n">main</span><span class="p">()</span>
 </pre></div>
 
+            <div class="clearer"></div>
           </div>
         </div>
       </div>
@@ -159,12 +159,13 @@
           <a href="../../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="nav-item nav-item-0"><a href="../../../index.html">Playground  documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="../../index.html" >Module code</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="../../index.html" >Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Playground.Web.proxy</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2019, Tom.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.
+        &#169; Copyright 2020, Tom.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.1.2.
     </div>
   </body>
 </html>

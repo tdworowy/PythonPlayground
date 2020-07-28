@@ -4,6 +4,14 @@ Playground.other\_staff package
 Submodules
 ----------
 
+Playground.other\_staff.a module
+--------------------------------
+
+.. automodule:: Playground.other_staff.a
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 Playground.other\_staff.binimonal module
 ----------------------------------------
 
@@ -84,6 +92,14 @@ Playground.other\_staff.counting\_staff module
    :undoc-members:
    :show-inheritance:
 
+Playground.other\_staff.cw module
+---------------------------------
+
+.. automodule:: Playground.other_staff.cw
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 Playground.other\_staff.dice1 module
 ------------------------------------
 
@@ -104,6 +120,14 @@ Playground.other\_staff.dice3 module
 ------------------------------------
 
 .. automodule:: Playground.other_staff.dice3
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Playground.other\_staff.fibonaci module
+---------------------------------------
+
+.. automodule:: Playground.other_staff.fibonaci
    :members:
    :undoc-members:
    :show-inheritance:
@@ -140,10 +164,26 @@ Playground.other\_staff.find\_number4 module
    :undoc-members:
    :show-inheritance:
 
+Playground.other\_staff.formats module
+--------------------------------------
+
+.. automodule:: Playground.other_staff.formats
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 Playground.other\_staff.hanoi\_tower module
 -------------------------------------------
 
 .. automodule:: Playground.other_staff.hanoi_tower
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Playground.other\_staff.lambda module
+-------------------------------------
+
+.. automodule:: Playground.other_staff.lambda
    :members:
    :undoc-members:
    :show-inheritance:
@@ -160,6 +200,14 @@ Playground.other\_staff.n\_quens module
 ---------------------------------------
 
 .. automodule:: Playground.other_staff.n_quens
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Playground.other\_staff.os\_check module
+----------------------------------------
+
+.. automodule:: Playground.other_staff.os_check
    :members:
    :undoc-members:
    :show-inheritance:
@@ -188,10 +236,34 @@ Playground.other\_staff.rectangle\_with\_squares module
    :undoc-members:
    :show-inheritance:
 
+Playground.other\_staff.script1 module
+--------------------------------------
+
+.. automodule:: Playground.other_staff.script1
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 Playground.other\_staff.scripts\_ module
 ----------------------------------------
 
 .. automodule:: Playground.other_staff.scripts_
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Playground.other\_staff.staff module
+------------------------------------
+
+.. automodule:: Playground.other_staff.staff
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Playground.other\_staff.sys\_check module
+-----------------------------------------
+
+.. automodule:: Playground.other_staff.sys_check
    :members:
    :undoc-members:
    :show-inheritance:

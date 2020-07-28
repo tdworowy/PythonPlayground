@@ -12,10 +12,10 @@ Playground.Python\_Staff.OOP.interfaces.properties2 module
    :undoc-members:
    :show-inheritance:
 
-Playground.Python\_Staff.OOP.interfaces.specialize module
----------------------------------------------------------
+Playground.Python\_Staff.OOP.interfaces.specialize1 module
+----------------------------------------------------------
 
-.. automodule:: Playground.Python_Staff.OOP.interfaces.specialize
+.. automodule:: Playground.Python_Staff.OOP.interfaces.specialize1
    :members:
    :undoc-members:
    :show-inheritance:

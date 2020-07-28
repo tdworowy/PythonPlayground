@@ -4,14 +4,6 @@ Playground.my\_utils.staff package
 Submodules
 ----------
 
-Playground.my\_utils.staff.Tracer\_ module
-------------------------------------------
-
-.. automodule:: Playground.my_utils.staff.Tracer_
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
 Playground.my\_utils.staff.annotate\_ module
 --------------------------------------------
 
@@ -132,10 +124,10 @@ Playground.my\_utils.staff.register\_ module
    :undoc-members:
    :show-inheritance:
 
-Playground.my\_utils.staff.reloadall module
--------------------------------------------
+Playground.my\_utils.staff.reload\_all module
+---------------------------------------------
 
-.. automodule:: Playground.my_utils.staff.reloadall
+.. automodule:: Playground.my_utils.staff.reload_all
    :members:
    :undoc-members:
    :show-inheritance:
@@ -184,6 +176,14 @@ Playground.my\_utils.staff.timer3 module
 ----------------------------------------
 
 .. automodule:: Playground.my_utils.staff.timer3
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Playground.my\_utils.staff.tracer\_ module
+------------------------------------------
+
+.. automodule:: Playground.my_utils.staff.tracer_
    :members:
    :undoc-members:
    :show-inheritance:

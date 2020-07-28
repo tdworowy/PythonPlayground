@@ -4,6 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playground.Python_Staff.Functions_.global &#8212; Playground  documentation</title>
     <link rel="stylesheet" href="../../../../_static/pyramid.css" type="text/css" />
     <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
@@ -32,7 +33,8 @@
           <a href="../../../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="nav-item nav-item-0"><a href="../../../../index.html">Playground  documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="../../../index.html" accesskey="U">Module code</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="../../../index.html" accesskey="U">Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Playground.Python_Staff.Functions_.global</a></li> 
       </ul>
     </div>  
 
@@ -42,28 +44,31 @@
           <div class="body" role="main">
             
   <h1>Source code for Playground.Python_Staff.Functions_.global</h1><div class="highlight"><pre>
-<span></span>
-<span class="c1"># for python 2.6 (can use nonlocal in 3.x)</span>
+<span></span><span class="c1"># for python 2.6 (can use nonlocal in 3.x)</span>
 <div class="viewcode-block" id="tester"><a class="viewcode-back" href="../../../../Playground.Python_Staff.Functions_.html#Playground.Python_Staff.Functions_.global.tester">[docs]</a><span class="k">def</span> <span class="nf">tester</span><span class="p">(</span><span class="n">start</span><span class="p">):</span>
     <span class="k">global</span> <span class="n">state</span>
     <span class="n">state</span> <span class="o">=</span> <span class="n">start</span>
-    <span class="k">def</span> <span class="nf">nasted</span><span class="p">(</span><span class="n">label</span><span class="p">):</span>
-        <span class="k">global</span> <span class="n">state</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">label</span> <span class="p">,</span><span class="n">state</span><span class="p">)</span>
-        <span class="n">state</span> <span class="o">+=</span><span class="mi">1</span>
-    <span class="k">return</span> <span class="n">nasted</span></div>
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
 
+    <span class="k">def</span> <span class="nf">nested</span><span class="p">(</span><span class="n">label</span><span class="p">):</span>
+        <span class="k">global</span> <span class="n">state</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="n">state</span><span class="p">)</span>
+        <span class="n">state</span> <span class="o">+=</span> <span class="mi">1</span>
+
+    <span class="k">return</span> <span class="n">nested</span></div>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
     <span class="n">f</span> <span class="o">=</span> <span class="n">tester</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-    <span class="n">f</span><span class="p">(</span><span class="s2">&quot;spam&quot;</span><span class="p">)</span>
-    <span class="n">f</span><span class="p">(</span><span class="s2">&quot;Dupa&quot;</span><span class="p">)</span>
+    <span class="n">f</span><span class="p">(</span><span class="s2">&quot;spam1&quot;</span><span class="p">)</span>
+    <span class="n">f</span><span class="p">(</span><span class="s2">&quot;test1&quot;</span><span class="p">)</span>
 
     <span class="n">g</span> <span class="o">=</span> <span class="n">tester</span><span class="p">(</span><span class="mi">22</span><span class="p">)</span>
 
-    <span class="n">g</span><span class="p">(</span><span class="s2">&quot;dupa2&quot;</span><span class="p">)</span>
+    <span class="n">g</span><span class="p">(</span><span class="s2">&quot;test2&quot;</span><span class="p">)</span>
     <span class="n">f</span><span class="p">(</span><span class="s2">&quot;spam2&quot;</span><span class="p">)</span>
 </pre></div>
 
+            <div class="clearer"></div>
           </div>
         </div>
       </div>
@@ -93,12 +98,13 @@
           <a href="../../../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="nav-item nav-item-0"><a href="../../../../index.html">Playground  documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="../../../index.html" >Module code</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="../../../index.html" >Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Playground.Python_Staff.Functions_.global</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2019, Tom.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.
+        &#169; Copyright 2020, Tom.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.1.2.
     </div>
   </body>
 </html>

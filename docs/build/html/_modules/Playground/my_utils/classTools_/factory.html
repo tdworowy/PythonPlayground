@@ -4,6 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playground.my_utils.classTools_.factory &#8212; Playground  documentation</title>
     <link rel="stylesheet" href="../../../../_static/pyramid.css" type="text/css" />
     <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
@@ -32,7 +33,8 @@
           <a href="../../../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="nav-item nav-item-0"><a href="../../../../index.html">Playground  documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="../../../index.html" accesskey="U">Module code</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="../../../index.html" accesskey="U">Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Playground.my_utils.classTools_.factory</a></li> 
       </ul>
     </div>  
 
@@ -43,26 +45,27 @@
             
   <h1>Source code for Playground.my_utils.classTools_.factory</h1><div class="highlight"><pre>
 <div class="viewcode-block" id="Factory"><a class="viewcode-back" href="../../../../Playground.my_utils.classTools_.html#Playground.my_utils.classTools_.factory.Factory">[docs]</a><span></span><span class="k">def</span> <span class="nf">Factory</span><span class="p">(</span><span class="n">aclass</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">aclass</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span><span class="n">kwargs</span><span class="p">)</span></div>
-
-
+    <span class="k">return</span> <span class="n">aclass</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">kwargs</span><span class="p">)</span></div>
 
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
     <span class="k">class</span> <span class="nc">Spam</span><span class="p">:</span>
-        <span class="k">def</span> <span class="nf">doit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">message</span><span class="p">):</span>
+        <span class="k">def</span> <span class="nf">do_it</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
             <span class="nb">print</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+
+
     <span class="k">class</span> <span class="nc">Person</span><span class="p">:</span>
-        <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">name</span><span class="p">,</span><span class="n">job</span><span class="p">):</span>
+        <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">job</span><span class="p">):</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">job</span> <span class="o">=</span> <span class="n">job</span>
 
 
     <span class="n">object1</span> <span class="o">=</span> <span class="n">Factory</span><span class="p">(</span><span class="n">Spam</span><span class="p">)</span>
-    <span class="n">object1</span><span class="o">.</span><span class="n">doit</span><span class="p">(</span><span class="s2">&quot;Test&quot;</span><span class="p">)</span>
-    <span class="n">object2</span> <span class="o">=</span> <span class="n">Factory</span><span class="p">(</span><span class="n">Person</span><span class="p">,</span><span class="s2">&quot;Archer&quot;</span><span class="p">,</span><span class="s2">&quot;Spy&quot;</span><span class="p">)</span>
+    <span class="n">object1</span><span class="o">.</span><span class="n">do_it</span><span class="p">(</span><span class="s2">&quot;Test&quot;</span><span class="p">)</span>
+    <span class="n">object2</span> <span class="o">=</span> <span class="n">Factory</span><span class="p">(</span><span class="n">Person</span><span class="p">,</span> <span class="s2">&quot;Archer&quot;</span><span class="p">,</span> <span class="s2">&quot;Spy&quot;</span><span class="p">)</span>
 </pre></div>
 
+            <div class="clearer"></div>
           </div>
         </div>
       </div>
@@ -92,12 +95,13 @@
           <a href="../../../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="nav-item nav-item-0"><a href="../../../../index.html">Playground  documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="../../../index.html" >Module code</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="../../../index.html" >Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Playground.my_utils.classTools_.factory</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2019, Tom.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.
+        &#169; Copyright 2020, Tom.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.1.2.
     </div>
   </body>
 </html>

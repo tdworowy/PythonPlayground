@@ -4,6 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playground.Python_Staff.OOP.ovrloading.overloadingOperators2 &#8212; Playground  documentation</title>
     <link rel="stylesheet" href="../../../../../_static/pyramid.css" type="text/css" />
     <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
@@ -32,7 +33,8 @@
           <a href="../../../../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="nav-item nav-item-0"><a href="../../../../../index.html">Playground  documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="../../../../index.html" accesskey="U">Module code</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" accesskey="U">Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Playground.Python_Staff.OOP.ovrloading.overloadingOperators2</a></li> 
       </ul>
     </div>  
 
@@ -42,36 +44,38 @@
           <div class="body" role="main">
             
   <h1>Source code for Playground.Python_Staff.OOP.ovrloading.overloadingOperators2</h1><div class="highlight"><pre>
-<div class="viewcode-block" id="Indexer"><a class="viewcode-back" href="../../../../../Playground.Python_Staff.OOP.ovrloading.html#Playground.Python_Staff.OOP.ovrloading.overloadingOperators2.Indexer">[docs]</a><span></span><span class="k">class</span> <span class="nc">Indexer</span><span class="p">:</span>
+<div class="viewcode-block" id="Indexer1"><a class="viewcode-back" href="../../../../../Playground.Python_Staff.OOP.ovrloading.html#Playground.Python_Staff.OOP.ovrloading.overloadingOperators2.Indexer1">[docs]</a><span></span><span class="k">class</span> <span class="nc">Indexer1</span><span class="p">:</span>
     <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">):</span>
         <span class="k">return</span> <span class="n">item</span> <span class="o">**</span> <span class="mi">2</span></div>
 
+
 <div class="viewcode-block" id="Indexer2"><a class="viewcode-back" href="../../../../../Playground.Python_Staff.OOP.ovrloading.html#Playground.Python_Staff.OOP.ovrloading.overloadingOperators2.Indexer2">[docs]</a><span class="k">class</span> <span class="nc">Indexer2</span><span class="p">:</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">data</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span>
 
     <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;getitem: &#39;</span><span class="p">,</span><span class="n">item</span> <span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;getitem: &#39;</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="n">item</span><span class="p">]</span>
 
     <span class="k">def</span> <span class="fm">__setitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
         <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;setitem: key: &#39;</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
         <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;setitem: value: &#39;</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
-        <span class="n">dataLeanth</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
-        <span class="k">if</span> <span class="n">dataLeanth</span> <span class="o">&gt;=</span> <span class="n">key</span><span class="p">:</span>
-          <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span><span class="n">value</span>
+        <span class="n">data_length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">data_length</span> <span class="o">&gt;=</span> <span class="n">key</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
         <span class="k">else</span><span class="p">:</span>
-             <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">key</span> <span class="o">-</span> <span class="n">dataLeanth</span><span class="p">):</span>
-                 <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
-             <span class="k">else</span><span class="p">:</span>
-                 <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">value</span><span class="p">)</span></div>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">key</span> <span class="o">-</span> <span class="n">data_length</span><span class="p">):</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">value</span><span class="p">)</span></div>
+
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
 
-    <span class="n">X</span> <span class="o">=</span> <span class="n">Indexer</span><span class="p">()</span>
+    <span class="n">X</span> <span class="o">=</span> <span class="n">Indexer1</span><span class="p">()</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">X</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
 
-    <span class="n">Y</span> <span class="o">=</span> <span class="n">Indexer2</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">])</span>
+    <span class="n">Y</span> <span class="o">=</span> <span class="n">Indexer2</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">])</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">Y</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">Y</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
 
@@ -92,6 +96,7 @@
         <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 </pre></div>
 
+            <div class="clearer"></div>
           </div>
         </div>
       </div>
@@ -121,12 +126,13 @@
           <a href="../../../../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="nav-item nav-item-0"><a href="../../../../../index.html">Playground  documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="../../../../index.html" >Module code</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="../../../../index.html" >Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Playground.Python_Staff.OOP.ovrloading.overloadingOperators2</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2019, Tom.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.
+        &#169; Copyright 2020, Tom.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.1.2.
     </div>
   </body>
 </html>

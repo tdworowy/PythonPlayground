@@ -4,6 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playground.Complexity.cellular_automata package &#8212; Playground  documentation</title>
     <link rel="stylesheet" href="_static/pyramid.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -31,7 +32,8 @@
         <li class="right" >
           <a href="py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">Playground  documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">Playground  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Playground.Complexity.cellular_automata package</a></li> 
       </ul>
     </div>  
 
@@ -42,94 +44,13 @@
             
   <div class="section" id="playground-complexity-cellular-automata-package">
 <h1>Playground.Complexity.cellular_automata package<a class="headerlink" href="#playground-complexity-cellular-automata-package" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="submodules">
-<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="module-Playground.Complexity.cellular_automata.elementary_cellular_automata">
-<span id="playground-complexity-cellular-automata-elementary-cellular-automata-module"></span><h2>Playground.Complexity.cellular_automata.elementary_cellular_automata module<a class="headerlink" href="#module-Playground.Complexity.cellular_automata.elementary_cellular_automata" title="Permalink to this headline">¶</a></h2>
-<dl class="py class">
-<dt id="Playground.Complexity.cellular_automata.elementary_cellular_automata.RoundList">
-<em class="property">class </em><code class="sig-prename descclassname">Playground.Complexity.cellular_automata.elementary_cellular_automata.</code><code class="sig-name descname">RoundList</code><a class="reference internal" href="_modules/Playground/Complexity/cellular_automata/elementary_cellular_automata.html#RoundList"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Playground.Complexity.cellular_automata.elementary_cellular_automata.RoundList" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></p>
-</dd></dl>
-
-<dl class="py class">
-<dt id="Playground.Complexity.cellular_automata.elementary_cellular_automata.RuleSegment">
-<em class="property">class </em><code class="sig-prename descclassname">Playground.Complexity.cellular_automata.elementary_cellular_automata.</code><code class="sig-name descname">RuleSegment</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">neighborhood</span><span class="p">:</span> <span class="n">tuple</span></em>, <em class="sig-param"><span class="n">type</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Playground/Complexity/cellular_automata/elementary_cellular_automata.html#RuleSegment"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Playground.Complexity.cellular_automata.elementary_cellular_automata.RuleSegment" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-</dd></dl>
-
-<dl class="py function">
-<dt id="Playground.Complexity.cellular_automata.elementary_cellular_automata.cellular_automata_step">
-<code class="sig-prename descclassname">Playground.Complexity.cellular_automata.elementary_cellular_automata.</code><code class="sig-name descname">cellular_automata_step</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input_list</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#Playground.Complexity.cellular_automata.elementary_cellular_automata.RoundList" title="Playground.Complexity.cellular_automata.elementary_cellular_automata.RoundList">Playground.Complexity.cellular_automata.elementary_cellular_automata.RoundList</a></span></em>, <em class="sig-param"><span class="n">rules</span><span class="p">:</span> <span class="n">list</span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#Playground.Complexity.cellular_automata.elementary_cellular_automata.RoundList" title="Playground.Complexity.cellular_automata.elementary_cellular_automata.RoundList">Playground.Complexity.cellular_automata.elementary_cellular_automata.RoundList</a><a class="reference internal" href="_modules/Playground/Complexity/cellular_automata/elementary_cellular_automata.html#cellular_automata_step"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Playground.Complexity.cellular_automata.elementary_cellular_automata.cellular_automata_step" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt id="Playground.Complexity.cellular_automata.elementary_cellular_automata.generate_rule">
-<code class="sig-prename descclassname">Playground.Complexity.cellular_automata.elementary_cellular_automata.</code><code class="sig-name descname">generate_rule</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">wolfram_number</span><span class="p">:</span> <span class="n">int</span></em>, <em class="sig-param"><span class="n">neighborhood_size</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">3</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Playground/Complexity/cellular_automata/elementary_cellular_automata.html#generate_rule"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Playground.Complexity.cellular_automata.elementary_cellular_automata.generate_rule" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt id="Playground.Complexity.cellular_automata.elementary_cellular_automata.wolfram_number_to_bin">
-<code class="sig-prename descclassname">Playground.Complexity.cellular_automata.elementary_cellular_automata.</code><code class="sig-name descname">wolfram_number_to_bin</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">wolfram_number</span><span class="p">:</span> <span class="n">int</span></em>, <em class="sig-param"><span class="n">possible_states</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span> &#x2192; list<a class="reference internal" href="_modules/Playground/Complexity/cellular_automata/elementary_cellular_automata.html#wolfram_number_to_bin"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Playground.Complexity.cellular_automata.elementary_cellular_automata.wolfram_number_to_bin" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-</div>
-<div class="section" id="module-Playground.Complexity.cellular_automata.elementary_cellular_automata_vizualization">
-<span id="playground-complexity-cellular-automata-elementary-cellular-automata-vizualization-module"></span><h2>Playground.Complexity.cellular_automata.elementary_cellular_automata_vizualization module<a class="headerlink" href="#module-Playground.Complexity.cellular_automata.elementary_cellular_automata_vizualization" title="Permalink to this headline">¶</a></h2>
-<dl class="py class">
-<dt id="Playground.Complexity.cellular_automata.elementary_cellular_automata_vizualization.GUI">
-<em class="property">class </em><code class="sig-prename descclassname">Playground.Complexity.cellular_automata.elementary_cellular_automata_vizualization.</code><code class="sig-name descname">GUI</code><a class="reference internal" href="_modules/Playground/Complexity/cellular_automata/elementary_cellular_automata_vizualization.html#GUI"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Playground.Complexity.cellular_automata.elementary_cellular_automata_vizualization.GUI" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<dl class="py method">
-<dt id="Playground.Complexity.cellular_automata.elementary_cellular_automata_vizualization.GUI.clear_call_back">
-<code class="sig-name descname">clear_call_back</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Playground/Complexity/cellular_automata/elementary_cellular_automata_vizualization.html#GUI.clear_call_back"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Playground.Complexity.cellular_automata.elementary_cellular_automata_vizualization.GUI.clear_call_back" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="Playground.Complexity.cellular_automata.elementary_cellular_automata_vizualization.GUI.init_call_back">
-<code class="sig-name descname">init_call_back</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Playground/Complexity/cellular_automata/elementary_cellular_automata_vizualization.html#GUI.init_call_back"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Playground.Complexity.cellular_automata.elementary_cellular_automata_vizualization.GUI.init_call_back" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="Playground.Complexity.cellular_automata.elementary_cellular_automata_vizualization.GUI.init_one_call_back">
-<code class="sig-name descname">init_one_call_back</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Playground/Complexity/cellular_automata/elementary_cellular_automata_vizualization.html#GUI.init_one_call_back"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Playground.Complexity.cellular_automata.elementary_cellular_automata_vizualization.GUI.init_one_call_back" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="Playground.Complexity.cellular_automata.elementary_cellular_automata_vizualization.GUI.main_loop">
-<code class="sig-name descname">main_loop</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Playground/Complexity/cellular_automata/elementary_cellular_automata_vizualization.html#GUI.main_loop"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Playground.Complexity.cellular_automata.elementary_cellular_automata_vizualization.GUI.main_loop" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="Playground.Complexity.cellular_automata.elementary_cellular_automata_vizualization.GUI.play_call_back">
-<code class="sig-name descname">play_call_back</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Playground/Complexity/cellular_automata/elementary_cellular_automata_vizualization.html#GUI.play_call_back"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Playground.Complexity.cellular_automata.elementary_cellular_automata_vizualization.GUI.play_call_back" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="Playground.Complexity.cellular_automata.elementary_cellular_automata_vizualization.GUI.rectangle_coordinates">
-<code class="sig-name descname">rectangle_coordinates</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span><span class="p">:</span> <span class="n">int</span></em>, <em class="sig-param"><span class="n">y</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span> &#x2192; dict<a class="reference internal" href="_modules/Playground/Complexity/cellular_automata/elementary_cellular_automata_vizualization.html#GUI.rectangle_coordinates"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Playground.Complexity.cellular_automata.elementary_cellular_automata_vizualization.GUI.rectangle_coordinates" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="Playground.Complexity.cellular_automata.elementary_cellular_automata_vizualization.GUI.step_call_back">
-<code class="sig-name descname">step_call_back</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Playground/Complexity/cellular_automata/elementary_cellular_automata_vizualization.html#GUI.step_call_back"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Playground.Complexity.cellular_automata.elementary_cellular_automata_vizualization.GUI.step_call_back" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
-<dl class="py function">
-<dt id="Playground.Complexity.cellular_automata.elementary_cellular_automata_vizualization.main">
-<code class="sig-prename descclassname">Playground.Complexity.cellular_automata.elementary_cellular_automata_vizualization.</code><code class="sig-name descname">main</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Playground/Complexity/cellular_automata/elementary_cellular_automata_vizualization.html#main"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#Playground.Complexity.cellular_automata.elementary_cellular_automata_vizualization.main" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-</div>
 <div class="section" id="module-Playground.Complexity.cellular_automata">
 <span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-Playground.Complexity.cellular_automata" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
 
+            <div class="clearer"></div>
           </div>
         </div>
       </div>
@@ -138,9 +59,6 @@
   <h3><a href="index.html">Table of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Playground.Complexity.cellular_automata package</a><ul>
-<li><a class="reference internal" href="#submodules">Submodules</a></li>
-<li><a class="reference internal" href="#module-Playground.Complexity.cellular_automata.elementary_cellular_automata">Playground.Complexity.cellular_automata.elementary_cellular_automata module</a></li>
-<li><a class="reference internal" href="#module-Playground.Complexity.cellular_automata.elementary_cellular_automata_vizualization">Playground.Complexity.cellular_automata.elementary_cellular_automata_vizualization module</a></li>
 <li><a class="reference internal" href="#module-Playground.Complexity.cellular_automata">Module contents</a></li>
 </ul>
 </li>
@@ -176,12 +94,13 @@
         <li class="right" >
           <a href="py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">Playground  documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">Playground  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Playground.Complexity.cellular_automata package</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2019, Tom.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.
+        &#169; Copyright 2020, Tom.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.1.2.
     </div>
   </body>
 </html>

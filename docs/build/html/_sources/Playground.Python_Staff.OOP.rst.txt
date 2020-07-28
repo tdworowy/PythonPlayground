@@ -64,6 +64,14 @@ Playground.Python\_Staff.OOP.abstractMethod module
    :undoc-members:
    :show-inheritance:
 
+Playground.Python\_Staff.OOP.calss1 module
+------------------------------------------
+
+.. automodule:: Playground.Python_Staff.OOP.calss1
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 Playground.Python\_Staff.OOP.calss4 module
 ------------------------------------------
 
@@ -76,14 +84,6 @@ Playground.Python\_Staff.OOP.calssStaff module
 ----------------------------------------------
 
 .. automodule:: Playground.Python_Staff.OOP.calssStaff
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-Playground.Python\_Staff.OOP.calss\_ module
--------------------------------------------
-
-.. automodule:: Playground.Python_Staff.OOP.calss_
    :members:
    :undoc-members:
    :show-inheritance:
@@ -108,14 +108,6 @@ Playground.Python\_Staff.OOP.class4\_staticMethods module
 ---------------------------------------------------------
 
 .. automodule:: Playground.Python_Staff.OOP.class4_staticMethods
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-Playground.Python\_Staff.OOP.class5 module
-------------------------------------------
-
-.. automodule:: Playground.Python_Staff.OOP.class5
    :members:
    :undoc-members:
    :show-inheritance:
@@ -152,10 +144,10 @@ Playground.Python\_Staff.OOP.instances module
    :undoc-members:
    :show-inheritance:
 
-Playground.Python\_Staff.OOP.methods module
--------------------------------------------
+Playground.Python\_Staff.OOP.methods1 module
+--------------------------------------------
 
-.. automodule:: Playground.Python_Staff.OOP.methods
+.. automodule:: Playground.Python_Staff.OOP.methods1
    :members:
    :undoc-members:
    :show-inheritance:
@@ -168,10 +160,10 @@ Playground.Python\_Staff.OOP.methods2 module
    :undoc-members:
    :show-inheritance:
 
-Playground.Python\_Staff.OOP.mixedNames module
-----------------------------------------------
+Playground.Python\_Staff.OOP.mixed\_names module
+------------------------------------------------
 
-.. automodule:: Playground.Python_Staff.OOP.mixedNames
+.. automodule:: Playground.Python_Staff.OOP.mixed_names
    :members:
    :undoc-members:
    :show-inheritance:

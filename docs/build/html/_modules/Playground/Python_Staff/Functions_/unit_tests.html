@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playground.Python_Staff.Functions_.unit_tests &#8212; Playground  documentation</title>
+    <link rel="stylesheet" href="../../../../_static/pyramid.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+    <script src="../../../../_static/jquery.js"></script>
+    <script src="../../../../_static/underscore.js"></script>
+    <script src="../../../../_static/doctools.js"></script>
+    <script src="../../../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neuton&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nobile:regular,italic,bold,bolditalic&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<!--[if lte IE 6]>
+<link rel="stylesheet" href="../../../../_static/ie6.css" type="text/css" media="screen" charset="utf-8" />
+<![endif]-->
+
+  </head><body>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../index.html">Playground  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../index.html" accesskey="U">Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Playground.Python_Staff.Functions_.unit_tests</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for Playground.Python_Staff.Functions_.unit_tests</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">unittest</span>
+
+<span class="kn">from</span> <span class="nn">Playground.Python_Staff.Functions_</span> <span class="kn">import</span> <span class="n">numbers_pair_sum</span>
+
+
+<div class="viewcode-block" id="TestStringMethods"><a class="viewcode-back" href="../../../../Playground.Python_Staff.Functions_.html#Playground.Python_Staff.Functions_.unit_tests.TestStringMethods">[docs]</a><span class="k">class</span> <span class="nc">TestStringMethods</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
+    <span class="n">list8</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">20</span><span class="p">]</span>
+    <span class="n">list9</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
+
+<div class="viewcode-block" id="TestStringMethods.test_1"><a class="viewcode-back" href="../../../../Playground.Python_Staff.Functions_.html#Playground.Python_Staff.Functions_.unit_tests.TestStringMethods.test_1">[docs]</a>    <span class="k">def</span> <span class="nf">test_1</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="n">numbers_pair_sum</span><span class="o">.</span><span class="n">find_pair</span><span class="p">(</span><span class="n">list1</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="TestStringMethods.test_2"><a class="viewcode-back" href="../../../../Playground.Python_Staff.Functions_.html#Playground.Python_Staff.Functions_.unit_tests.TestStringMethods.test_2">[docs]</a>    <span class="k">def</span> <span class="nf">test_2</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="n">numbers_pair_sum</span><span class="o">.</span><span class="n">find_pair</span><span class="p">(</span><span class="n">list1</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="TestStringMethods.test_3"><a class="viewcode-back" href="../../../../Playground.Python_Staff.Functions_.html#Playground.Python_Staff.Functions_.unit_tests.TestStringMethods.test_3">[docs]</a>    <span class="k">def</span> <span class="nf">test_3</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">11</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="n">numbers_pair_sum</span><span class="o">.</span><span class="n">find_pair</span><span class="p">(</span><span class="n">list1</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="TestStringMethods.test_4"><a class="viewcode-back" href="../../../../Playground.Python_Staff.Functions_.html#Playground.Python_Staff.Functions_.unit_tests.TestStringMethods.test_4">[docs]</a>    <span class="k">def</span> <span class="nf">test_4</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">11</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">22</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="n">numbers_pair_sum</span><span class="o">.</span><span class="n">find_pair</span><span class="p">(</span><span class="n">list1</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="TestStringMethods.test_5"><a class="viewcode-back" href="../../../../Playground.Python_Staff.Functions_.html#Playground.Python_Staff.Functions_.unit_tests.TestStringMethods.test_5">[docs]</a>    <span class="k">def</span> <span class="nf">test_5</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">22</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertFalse</span><span class="p">(</span><span class="n">numbers_pair_sum</span><span class="o">.</span><span class="n">find_pair</span><span class="p">(</span><span class="n">list1</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="TestStringMethods.test_6"><a class="viewcode-back" href="../../../../Playground.Python_Staff.Functions_.html#Playground.Python_Staff.Functions_.unit_tests.TestStringMethods.test_6">[docs]</a>    <span class="k">def</span> <span class="nf">test_6</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="n">numbers_pair_sum</span><span class="o">.</span><span class="n">find_pair</span><span class="p">(</span><span class="n">list1</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="TestStringMethods.test_7"><a class="viewcode-back" href="../../../../Playground.Python_Staff.Functions_.html#Playground.Python_Staff.Functions_.unit_tests.TestStringMethods.test_7">[docs]</a>    <span class="k">def</span> <span class="nf">test_7</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">20</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="n">numbers_pair_sum</span><span class="o">.</span><span class="n">find_pair</span><span class="p">(</span><span class="n">list1</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="TestStringMethods.test_8"><a class="viewcode-back" href="../../../../Playground.Python_Staff.Functions_.html#Playground.Python_Staff.Functions_.unit_tests.TestStringMethods.test_8">[docs]</a>    <span class="k">def</span> <span class="nf">test_8</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="n">numbers_pair_sum</span><span class="o">.</span><span class="n">find_pair</span><span class="p">(</span><span class="n">list1</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="TestStringMethods.test_9"><a class="viewcode-back" href="../../../../Playground.Python_Staff.Functions_.html#Playground.Python_Staff.Functions_.unit_tests.TestStringMethods.test_9">[docs]</a>    <span class="k">def</span> <span class="nf">test_9</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">notList</span> <span class="o">=</span> <span class="s2">&quot;Test&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">numbers_pair_sum</span><span class="o">.</span><span class="n">find_pair</span><span class="p">(</span><span class="n">notList</span><span class="p">,</span> <span class="mi">8</span><span class="p">),</span> <span class="s2">&quot;First argument must be list&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="TestStringMethods.test_10"><a class="viewcode-back" href="../../../../Playground.Python_Staff.Functions_.html#Playground.Python_Staff.Functions_.unit_tests.TestStringMethods.test_10">[docs]</a>    <span class="k">def</span> <span class="nf">test_10</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">numbers_pair_sum</span><span class="o">.</span><span class="n">find_pair</span><span class="p">(</span><span class="n">list1</span><span class="p">,</span> <span class="mi">8</span><span class="p">),</span> <span class="s2">&quot;List must have at leas 2 elements&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="TestStringMethods.test_11"><a class="viewcode-back" href="../../../../Playground.Python_Staff.Functions_.html#Playground.Python_Staff.Functions_.unit_tests.TestStringMethods.test_11">[docs]</a>    <span class="k">def</span> <span class="nf">test_11</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">numbers_pair_sum</span><span class="o">.</span><span class="n">find_pair</span><span class="p">(</span><span class="n">list1</span><span class="p">,</span> <span class="s2">&quot;A&quot;</span><span class="p">),</span> <span class="s2">&quot;Second argument must be the int&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="TestStringMethods.test_12"><a class="viewcode-back" href="../../../../Playground.Python_Staff.Functions_.html#Playground.Python_Staff.Functions_.unit_tests.TestStringMethods.test_12">[docs]</a>    <span class="k">def</span> <span class="nf">test_12</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">numbers_pair_sum</span><span class="o">.</span><span class="n">find_pair</span><span class="p">(</span><span class="n">list1</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]),</span> <span class="s2">&quot;Second argument must be the int&quot;</span><span class="p">)</span></div></div>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">unittest</span><span class="o">.</span><span class="n">main</span><span class="p">()</span>
+</pre></div>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../index.html">Playground  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../index.html" >Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Playground.Python_Staff.Functions_.unit_tests</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Tom.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.1.2.
+    </div>
+  </body>
+</html>

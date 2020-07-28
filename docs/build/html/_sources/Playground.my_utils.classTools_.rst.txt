@@ -4,18 +4,18 @@ Playground.my\_utils.classTools\_ package
 Submodules
 ----------
 
-Playground.my\_utils.classTools\_.classTools module
----------------------------------------------------
-
-.. automodule:: Playground.my_utils.classTools_.classTools
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
 Playground.my\_utils.classTools\_.class\_Tree module
 ----------------------------------------------------
 
 .. automodule:: Playground.my_utils.classTools_.class_Tree
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Playground.my\_utils.classTools\_.class\_tools module
+-----------------------------------------------------
+
+.. automodule:: Playground.my_utils.classTools_.class_tools
    :members:
    :undoc-members:
    :show-inheritance:
@@ -28,18 +28,18 @@ Playground.my\_utils.classTools\_.factory module
    :undoc-members:
    :show-inheritance:
 
-Playground.my\_utils.classTools\_.listInstance module
------------------------------------------------------
+Playground.my\_utils.classTools\_.list\_Instance module
+-------------------------------------------------------
 
-.. automodule:: Playground.my_utils.classTools_.listInstance
+.. automodule:: Playground.my_utils.classTools_.list_Instance
    :members:
    :undoc-members:
    :show-inheritance:
 
-Playground.my\_utils.classTools\_.listtree module
--------------------------------------------------
+Playground.my\_utils.classTools\_.list\_tree module
+---------------------------------------------------
 
-.. automodule:: Playground.my_utils.classTools_.listtree
+.. automodule:: Playground.my_utils.classTools_.list_tree
    :members:
    :undoc-members:
    :show-inheritance:

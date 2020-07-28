@@ -18,7 +18,6 @@ Subpackages
    Playground.UI
    Playground.Web
    Playground.dice_game
-   Playground.falcon_
    Playground.graph_theory
    Playground.my_utils
    Playground.objgraph_
@@ -36,10 +35,10 @@ Playground.add\_init\_files module
    :undoc-members:
    :show-inheritance:
 
-Playground.rootDirectory module
--------------------------------
+Playground.root\_directory module
+---------------------------------
 
-.. automodule:: Playground.rootDirectory
+.. automodule:: Playground.root_directory
    :members:
    :undoc-members:
    :show-inheritance:

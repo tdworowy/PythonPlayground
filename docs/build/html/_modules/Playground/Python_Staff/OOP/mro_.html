@@ -4,6 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playground.Python_Staff.OOP.mro_ &#8212; Playground  documentation</title>
     <link rel="stylesheet" href="../../../../_static/pyramid.css" type="text/css" />
     <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
@@ -32,7 +33,8 @@
           <a href="../../../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="nav-item nav-item-0"><a href="../../../../index.html">Playground  documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="../../../index.html" accesskey="U">Module code</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="../../../index.html" accesskey="U">Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Playground.Python_Staff.OOP.mro_</a></li> 
       </ul>
     </div>  
 
@@ -42,25 +44,36 @@
           <div class="body" role="main">
             
   <h1>Source code for Playground.Python_Staff.OOP.mro_</h1><div class="highlight"><pre>
-<span></span>
-<div class="viewcode-block" id="base0"><a class="viewcode-back" href="../../../../Playground.Python_Staff.OOP.html#Playground.Python_Staff.OOP.mro_.base0">[docs]</a><span class="k">class</span> <span class="nc">base0</span><span class="p">:</span>
-        <span class="k">pass</span></div>
-<div class="viewcode-block" id="base1"><a class="viewcode-back" href="../../../../Playground.Python_Staff.OOP.html#Playground.Python_Staff.OOP.mro_.base1">[docs]</a><span class="k">class</span> <span class="nc">base1</span><span class="p">(</span><span class="n">base0</span><span class="p">):</span>
-        <span class="k">pass</span></div>
-<div class="viewcode-block" id="base2"><a class="viewcode-back" href="../../../../Playground.Python_Staff.OOP.html#Playground.Python_Staff.OOP.mro_.base2">[docs]</a><span class="k">class</span> <span class="nc">base2</span><span class="p">(</span><span class="n">base0</span><span class="p">):</span>
-        <span class="k">pass</span></div>
-<div class="viewcode-block" id="First"><a class="viewcode-back" href="../../../../Playground.Python_Staff.OOP.html#Playground.Python_Staff.OOP.mro_.First">[docs]</a><span class="k">class</span> <span class="nc">First</span><span class="p">(</span><span class="n">base1</span><span class="p">,</span><span class="n">base2</span><span class="p">):</span>
-        <span class="k">pass</span></div>
-<div class="viewcode-block" id="Second"><a class="viewcode-back" href="../../../../Playground.Python_Staff.OOP.html#Playground.Python_Staff.OOP.mro_.Second">[docs]</a><span class="k">class</span> <span class="nc">Second</span><span class="p">(</span><span class="n">First</span><span class="p">):</span>
-        <span class="k">pass</span></div>
-<div class="viewcode-block" id="Third"><a class="viewcode-back" href="../../../../Playground.Python_Staff.OOP.html#Playground.Python_Staff.OOP.mro_.Third">[docs]</a><span class="k">class</span> <span class="nc">Third</span><span class="p">(</span><span class="n">Second</span><span class="p">):</span>
-        <span class="k">pass</span></div>
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+<div class="viewcode-block" id="Base0"><a class="viewcode-back" href="../../../../Playground.Python_Staff.OOP.html#Playground.Python_Staff.OOP.mro_.Base0">[docs]</a><span></span><span class="k">class</span> <span class="nc">Base0</span><span class="p">:</span>
+    <span class="k">pass</span></div>
 
-        <span class="nb">print</span><span class="p">(</span><span class="n">Third</span><span class="o">.</span><span class="vm">__mro__</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">Third</span><span class="o">.</span><span class="n">mro</span><span class="p">())</span>
+
+<div class="viewcode-block" id="Base1"><a class="viewcode-back" href="../../../../Playground.Python_Staff.OOP.html#Playground.Python_Staff.OOP.mro_.Base1">[docs]</a><span class="k">class</span> <span class="nc">Base1</span><span class="p">(</span><span class="n">Base0</span><span class="p">):</span>
+    <span class="k">pass</span></div>
+
+
+<div class="viewcode-block" id="Base2"><a class="viewcode-back" href="../../../../Playground.Python_Staff.OOP.html#Playground.Python_Staff.OOP.mro_.Base2">[docs]</a><span class="k">class</span> <span class="nc">Base2</span><span class="p">(</span><span class="n">Base0</span><span class="p">):</span>
+    <span class="k">pass</span></div>
+
+
+<div class="viewcode-block" id="First"><a class="viewcode-back" href="../../../../Playground.Python_Staff.OOP.html#Playground.Python_Staff.OOP.mro_.First">[docs]</a><span class="k">class</span> <span class="nc">First</span><span class="p">(</span><span class="n">Base1</span><span class="p">,</span> <span class="n">Base2</span><span class="p">):</span>
+    <span class="k">pass</span></div>
+
+
+<div class="viewcode-block" id="Second"><a class="viewcode-back" href="../../../../Playground.Python_Staff.OOP.html#Playground.Python_Staff.OOP.mro_.Second">[docs]</a><span class="k">class</span> <span class="nc">Second</span><span class="p">(</span><span class="n">First</span><span class="p">):</span>
+    <span class="k">pass</span></div>
+
+
+<div class="viewcode-block" id="Third"><a class="viewcode-back" href="../../../../Playground.Python_Staff.OOP.html#Playground.Python_Staff.OOP.mro_.Third">[docs]</a><span class="k">class</span> <span class="nc">Third</span><span class="p">(</span><span class="n">Second</span><span class="p">):</span>
+    <span class="k">pass</span></div>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">Third</span><span class="o">.</span><span class="vm">__mro__</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">Third</span><span class="o">.</span><span class="n">mro</span><span class="p">())</span>
 </pre></div>
 
+            <div class="clearer"></div>
           </div>
         </div>
       </div>
@@ -90,12 +103,13 @@
           <a href="../../../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="nav-item nav-item-0"><a href="../../../../index.html">Playground  documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="../../../index.html" >Module code</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="../../../index.html" >Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Playground.Python_Staff.OOP.mro_</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2019, Tom.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.
+        &#169; Copyright 2020, Tom.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.1.2.
     </div>
   </body>
 </html>

@@ -4,6 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playground.my_utils.staff.csv_staff &#8212; Playground  documentation</title>
     <link rel="stylesheet" href="../../../../_static/pyramid.css" type="text/css" />
     <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
@@ -32,7 +33,8 @@
           <a href="../../../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="nav-item nav-item-0"><a href="../../../../index.html">Playground  documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="../../../index.html" accesskey="U">Module code</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="../../../index.html" accesskey="U">Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Playground.my_utils.staff.csv_staff</a></li> 
       </ul>
     </div>  
 
@@ -44,21 +46,19 @@
   <h1>Source code for Playground.my_utils.staff.csv_staff</h1><div class="highlight"><pre>
 <span></span><span class="kn">import</span> <span class="nn">csv</span>
 
-<span class="kn">from</span> <span class="nn">Playground.rootDirectory</span> <span class="kn">import</span> <span class="n">get_root_directory</span>
+<span class="kn">from</span> <span class="nn">Playground.root_directory</span> <span class="kn">import</span> <span class="n">get_root_directory</span>
 
 
-<div class="viewcode-block" id="get_first_column"><a class="viewcode-back" href="../../../../Playground.my_utils.staff.html#Playground.my_utils.staff.csv_staff.get_first_column">[docs]</a><span class="k">def</span> <span class="nf">get_first_column</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="n">sep</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">):</span>
+<div class="viewcode-block" id="get_first_column"><a class="viewcode-back" href="../../../../Playground.my_utils.staff.html#Playground.my_utils.staff.csv_staff.get_first_column">[docs]</a><span class="k">def</span> <span class="nf">get_first_column</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">):</span>
     <span class="n">f2</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">get_root_directory</span><span class="p">()</span> <span class="o">+</span> <span class="s1">&#39;//file.csv&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span>
     <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
         <span class="n">reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="n">sep</span><span class="p">)</span>
         <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">reader</span><span class="p">:</span>
             <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
             <span class="n">f2</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;;&quot;</span><span class="p">)</span></div>
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
-
-    <span class="n">get_first_column</span><span class="p">(</span><span class="s2">&quot;D:\Google_drive\Studia_magister\Semestr3\TextMining\dane\coffee_tweets.csv&quot;</span><span class="p">)</span>
 </pre></div>
 
+            <div class="clearer"></div>
           </div>
         </div>
       </div>
@@ -88,12 +88,13 @@
           <a href="../../../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="nav-item nav-item-0"><a href="../../../../index.html">Playground  documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="../../../index.html" >Module code</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="../../../index.html" >Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Playground.my_utils.staff.csv_staff</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2019, Tom.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.
+        &#169; Copyright 2020, Tom.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.1.2.
     </div>
   </body>
 </html>

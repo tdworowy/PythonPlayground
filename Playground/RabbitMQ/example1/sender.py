@@ -8,7 +8,8 @@ def send(message, connect):
                                   body=message)
     print("Message Sent %r" % message)
 
+
 if __name__ == '__main__':
     conn = connect
     conn.connect()
-    send("Test",conn)
+    send("Test", conn)

@@ -1,4 +1,4 @@
-#reciver
+# reciver
 from RabbitMQ.example1 import connect
 from RabbitMQ.example1 import connectionInfo
 
@@ -13,9 +13,9 @@ def receive(connect):
     connect.channel.start_consuming()
 
 
-
 def callback(ch, method, properties, body):
     print(" Received %r" % body)
+
 
 if __name__ == '__main__':
     conn = connect

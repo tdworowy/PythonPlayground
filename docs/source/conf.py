@@ -18,12 +18,12 @@
 # -- Project information -----------------------------------------------------
 import sys
 
-from rootDirectory import get_root_directory
+from root_directory import get_root_directory
 
 sys.path.insert(0, get_root_directory())
 
 project = 'Playground'
-copyright = '2019, Tom'
+copyright = '2020, Tom'
 author = 'Tom'
 
 

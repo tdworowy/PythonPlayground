@@ -36,6 +36,14 @@ Playground.Algorithms.math.fast\_modular\_exponentiation module
    :undoc-members:
    :show-inheritance:
 
+Playground.Algorithms.math.find\_the\_rotation\_point module
+------------------------------------------------------------
+
+.. automodule:: Playground.Algorithms.math.find_the_rotation_point
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 Playground.Algorithms.math.greatest\_common\_divisor module
 -----------------------------------------------------------
 
@@ -56,6 +64,14 @@ Playground.Algorithms.math.modular\_division module
 ---------------------------------------------------
 
 .. automodule:: Playground.Algorithms.math.modular_division
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Playground.Algorithms.math.monte\_carlo\_method module
+------------------------------------------------------
+
+.. automodule:: Playground.Algorithms.math.monte_carlo_method
    :members:
    :undoc-members:
    :show-inheritance:

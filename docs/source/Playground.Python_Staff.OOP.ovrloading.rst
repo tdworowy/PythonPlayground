@@ -36,10 +36,10 @@ Playground.Python\_Staff.OOP.ovrloading.getatrr module
    :undoc-members:
    :show-inheritance:
 
-Playground.Python\_Staff.OOP.ovrloading.getattribute\_loop module
------------------------------------------------------------------
+Playground.Python\_Staff.OOP.ovrloading.getattribute\_loop1 module
+------------------------------------------------------------------
 
-.. automodule:: Playground.Python_Staff.OOP.ovrloading.getattribute_loop
+.. automodule:: Playground.Python_Staff.OOP.ovrloading.getattribute_loop1
    :members:
    :undoc-members:
    :show-inheritance:
@@ -60,10 +60,10 @@ Playground.Python\_Staff.OOP.ovrloading.iadd module
    :undoc-members:
    :show-inheritance:
 
-Playground.Python\_Staff.OOP.ovrloading.iters module
-----------------------------------------------------
+Playground.Python\_Staff.OOP.ovrloading.iters1 module
+-----------------------------------------------------
 
-.. automodule:: Playground.Python_Staff.OOP.ovrloading.iters
+.. automodule:: Playground.Python_Staff.OOP.ovrloading.iters1
    :members:
    :undoc-members:
    :show-inheritance:
@@ -76,10 +76,10 @@ Playground.Python\_Staff.OOP.ovrloading.iters2 module
    :undoc-members:
    :show-inheritance:
 
-Playground.Python\_Staff.OOP.ovrloading.overloadingOperators module
--------------------------------------------------------------------
+Playground.Python\_Staff.OOP.ovrloading.overloadingOperators1 module
+--------------------------------------------------------------------
 
-.. automodule:: Playground.Python_Staff.OOP.ovrloading.overloadingOperators
+.. automodule:: Playground.Python_Staff.OOP.ovrloading.overloadingOperators1
    :members:
    :undoc-members:
    :show-inheritance:

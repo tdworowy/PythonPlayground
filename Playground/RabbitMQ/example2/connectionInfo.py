@@ -5,7 +5,7 @@ class Connection_info:
         self.ip = "localhost"
         #self.ip = "192.168.0.101"
         self.queue = queue
-        self.userName = "admin"
+        self.user_name = "admin"
         self.password = "admin"
         # self.port = 32770
         self.port = 5672

@@ -8,7 +8,6 @@ Subpackages
    :maxdepth: 4
 
    Playground.Web.TCP
-   Playground.Web.TestChat
    Playground.Web.webCrawler
 
 Submodules

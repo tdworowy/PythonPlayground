@@ -4,6 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playground.Python_Staff.decorators.buffors_ &#8212; Playground  documentation</title>
     <link rel="stylesheet" href="../../../../_static/pyramid.css" type="text/css" />
     <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
@@ -32,7 +33,8 @@
           <a href="../../../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="nav-item nav-item-0"><a href="../../../../index.html">Playground  documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="../../../index.html" accesskey="U">Module code</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="../../../index.html" accesskey="U">Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Playground.Python_Staff.decorators.buffors_</a></li> 
       </ul>
     </div>  
 
@@ -48,45 +50,49 @@
 
 <span class="n">cache</span> <span class="o">=</span> <span class="p">{}</span>
 
-<div class="viewcode-block" id="is_obsolete"><a class="viewcode-back" href="../../../../Playground.Python_Staff.decorators.html#Playground.Python_Staff.decorators.buffors_.is_obsolete">[docs]</a><span class="k">def</span> <span class="nf">is_obsolete</span><span class="p">(</span><span class="n">entry</span><span class="p">,</span><span class="n">duration</span><span class="p">):</span>
+
+<div class="viewcode-block" id="is_obsolete"><a class="viewcode-back" href="../../../../Playground.Python_Staff.decorators.html#Playground.Python_Staff.decorators.buffors_.is_obsolete">[docs]</a><span class="k">def</span> <span class="nf">is_obsolete</span><span class="p">(</span><span class="n">entry</span><span class="p">,</span> <span class="n">duration</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">entry</span><span class="p">[</span><span class="s1">&#39;time&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">duration</span></div>
 
-<div class="viewcode-block" id="compute_key"><a class="viewcode-back" href="../../../../Playground.Python_Staff.decorators.html#Playground.Python_Staff.decorators.buffors_.compute_key">[docs]</a><span class="k">def</span> <span class="nf">compute_key</span><span class="p">(</span><span class="n">func</span><span class="p">,</span><span class="n">args</span><span class="p">,</span><span class="n">kw</span><span class="p">):</span>
-    <span class="n">key</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">dumps</span><span class="p">((</span><span class="n">func</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span><span class="n">args</span><span class="p">,</span><span class="n">kw</span><span class="p">))</span>
+
+<div class="viewcode-block" id="compute_key"><a class="viewcode-back" href="../../../../Playground.Python_Staff.decorators.html#Playground.Python_Staff.decorators.buffors_.compute_key">[docs]</a><span class="k">def</span> <span class="nf">compute_key</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">kw</span><span class="p">):</span>
+    <span class="n">key</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">dumps</span><span class="p">((</span><span class="n">func</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">kw</span><span class="p">))</span>
     <span class="k">return</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">sha1</span><span class="p">(</span><span class="n">key</span><span class="p">)</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span></div>
 
-<div class="viewcode-block" id="memoize"><a class="viewcode-back" href="../../../../Playground.Python_Staff.decorators.html#Playground.Python_Staff.decorators.buffors_.memoize">[docs]</a><span class="k">def</span> <span class="nf">memoize</span><span class="p">(</span><span class="n">duration</span> <span class="o">=</span><span class="mi">10</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">_memoize</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
-        <span class="k">def</span> <span class="nf">__memoize</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span><span class="o">**</span><span class="n">kw</span><span class="p">):</span>
-            <span class="n">key</span> <span class="o">=</span> <span class="n">compute_key</span><span class="p">(</span><span class="n">func</span><span class="p">,</span><span class="n">args</span><span class="p">,</span><span class="n">kw</span><span class="p">)</span>
 
-            <span class="k">if</span> <span class="p">(</span><span class="n">key</span> <span class="ow">in</span> <span class="n">cache</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">is_obsolete</span><span class="p">(</span><span class="n">cache</span><span class="p">[</span><span class="n">key</span><span class="p">],</span><span class="n">duration</span><span class="p">)):</span>
+<div class="viewcode-block" id="memoize"><a class="viewcode-back" href="../../../../Playground.Python_Staff.decorators.html#Playground.Python_Staff.decorators.buffors_.memoize">[docs]</a><span class="k">def</span> <span class="nf">memoize</span><span class="p">(</span><span class="n">duration</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">_memoize</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+        <span class="k">def</span> <span class="nf">__memoize</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">):</span>
+            <span class="n">key</span> <span class="o">=</span> <span class="n">compute_key</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">kw</span><span class="p">)</span>
+
+            <span class="k">if</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">cache</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">is_obsolete</span><span class="p">(</span><span class="n">cache</span><span class="p">[</span><span class="n">key</span><span class="p">],</span> <span class="n">duration</span><span class="p">):</span>
                 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Value from cache&quot;</span><span class="p">)</span>
                 <span class="k">return</span> <span class="n">cache</span><span class="p">[</span><span class="n">key</span><span class="p">][</span><span class="s1">&#39;value&#39;</span><span class="p">]</span>
 
-            <span class="n">result</span> <span class="o">=</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span><span class="o">**</span><span class="n">kw</span><span class="p">)</span>
-            <span class="n">cache</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;value&#39;</span><span class="p">:</span> <span class="n">result</span><span class="p">,</span><span class="s1">&#39;time&#39;</span><span class="p">:</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()}</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">)</span>
+            <span class="n">cache</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;value&#39;</span><span class="p">:</span> <span class="n">result</span><span class="p">,</span> <span class="s1">&#39;time&#39;</span><span class="p">:</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()}</span>
             <span class="k">return</span> <span class="n">result</span>
+
         <span class="k">return</span> <span class="n">__memoize</span>
+
     <span class="k">return</span> <span class="n">_memoize</span></div>
 
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
     <span class="nd">@memoize</span><span class="p">()</span>
-    <span class="k">def</span> <span class="nf">someFunc</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
-        <span class="k">return</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
+    <span class="k">def</span> <span class="nf">someFunc</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
 
 
-    <span class="nb">print</span><span class="p">(</span><span class="n">someFunc</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Cache: </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span><span class="n">cache</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">someFunc</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">someFunc</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">someFunc</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Cache: </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">cache</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">someFunc</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
-
-
+    <span class="nb">print</span><span class="p">(</span><span class="n">someFunc</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">someFunc</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Cache: </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">cache</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">someFunc</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
 </pre></div>
 
+            <div class="clearer"></div>
           </div>
         </div>
       </div>
@@ -116,12 +122,13 @@
           <a href="../../../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="nav-item nav-item-0"><a href="../../../../index.html">Playground  documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="../../../index.html" >Module code</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="../../../index.html" >Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Playground.Python_Staff.decorators.buffors_</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2019, Tom.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.
+        &#169; Copyright 2020, Tom.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.1.2.
     </div>
   </body>
 </html>

@@ -4,6 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playground.my_utils.classTools_.class_Tree &#8212; Playground  documentation</title>
     <link rel="stylesheet" href="../../../../_static/pyramid.css" type="text/css" />
     <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
@@ -32,7 +33,8 @@
           <a href="../../../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="nav-item nav-item-0"><a href="../../../../index.html">Playground  documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="../../../index.html" accesskey="U">Module code</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="../../../index.html" accesskey="U">Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Playground.my_utils.classTools_.class_Tree</a></li> 
       </ul>
     </div>  
 
@@ -42,30 +44,39 @@
           <div class="body" role="main">
             
   <h1>Source code for Playground.my_utils.classTools_.class_Tree</h1><div class="highlight"><pre>
-<div class="viewcode-block" id="classtree"><a class="viewcode-back" href="../../../../Playground.my_utils.classTools_.html#Playground.my_utils.classTools_.class_Tree.classtree">[docs]</a><span></span><span class="k">def</span> <span class="nf">classtree</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span><span class="n">indent</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;.&quot;</span> <span class="o">*</span> <span class="n">indent</span><span class="p">,</span><span class="bp">cls</span><span class="o">.</span><span class="vm">__name__</span><span class="p">)</span>
+<div class="viewcode-block" id="class_tree"><a class="viewcode-back" href="../../../../Playground.my_utils.classTools_.html#Playground.my_utils.classTools_.class_Tree.class_tree">[docs]</a><span></span><span class="k">def</span> <span class="nf">class_tree</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">indent</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;.&quot;</span> <span class="o">*</span> <span class="n">indent</span><span class="p">,</span> <span class="bp">cls</span><span class="o">.</span><span class="vm">__name__</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">supercls</span> <span class="ow">in</span> <span class="bp">cls</span><span class="o">.</span><span class="vm">__bases__</span><span class="p">:</span>
-        <span class="n">classtree</span><span class="p">(</span><span class="n">supercls</span><span class="p">,</span><span class="n">indent</span><span class="o">+</span><span class="mi">3</span><span class="p">)</span></div>
+        <span class="n">class_tree</span><span class="p">(</span><span class="n">supercls</span><span class="p">,</span> <span class="n">indent</span> <span class="o">+</span> <span class="mi">3</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="instancetree"><a class="viewcode-back" href="../../../../Playground.my_utils.classTools_.html#Playground.my_utils.classTools_.class_Tree.instancetree">[docs]</a><span class="k">def</span> <span class="nf">instancetree</span><span class="p">(</span><span class="n">inst</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Tree&quot;</span><span class="p">,</span><span class="n">inst</span><span class="p">)</span>
-    <span class="n">classtree</span><span class="p">(</span><span class="n">inst</span><span class="o">.</span><span class="vm">__class__</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="selftest"><a class="viewcode-back" href="../../../../Playground.my_utils.classTools_.html#Playground.my_utils.classTools_.class_Tree.selftest">[docs]</a><span class="k">def</span> <span class="nf">selftest</span><span class="p">():</span>
-    <span class="k">class</span> <span class="nc">A</span> <span class="p">:</span><span class="k">pass</span>
-    <span class="k">class</span> <span class="nc">B</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="p">:</span> <span class="k">pass</span>
-    <span class="k">class</span> <span class="nc">C</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="p">:</span><span class="k">pass</span>
-    <span class="k">class</span> <span class="nc">D</span><span class="p">(</span><span class="n">B</span><span class="p">,</span><span class="n">C</span><span class="p">)</span> <span class="p">:</span> <span class="k">pass</span>
-    <span class="k">class</span> <span class="nc">E</span> <span class="p">:</span><span class="k">pass</span>
-    <span class="k">class</span> <span class="nc">F</span><span class="p">(</span><span class="n">D</span><span class="p">,</span><span class="n">E</span><span class="p">)</span> <span class="p">:</span> <span class="k">pass</span>
+<div class="viewcode-block" id="instance_tree"><a class="viewcode-back" href="../../../../Playground.my_utils.classTools_.html#Playground.my_utils.classTools_.class_Tree.instance_tree">[docs]</a><span class="k">def</span> <span class="nf">instance_tree</span><span class="p">(</span><span class="n">inst</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Tree&quot;</span><span class="p">,</span> <span class="n">inst</span><span class="p">)</span>
+    <span class="n">class_tree</span><span class="p">(</span><span class="n">inst</span><span class="o">.</span><span class="vm">__class__</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span></div>
 
-    <span class="n">instancetree</span><span class="p">(</span><span class="n">B</span><span class="p">())</span>
-    <span class="n">instancetree</span><span class="p">(</span><span class="n">F</span><span class="p">())</span></div>
 
-<span class="k">if</span> <span class="vm">__name__</span><span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
-    <span class="n">selftest</span><span class="p">()</span>
+<div class="viewcode-block" id="self_test"><a class="viewcode-back" href="../../../../Playground.my_utils.classTools_.html#Playground.my_utils.classTools_.class_Tree.self_test">[docs]</a><span class="k">def</span> <span class="nf">self_test</span><span class="p">():</span>
+    <span class="k">class</span> <span class="nc">A</span><span class="p">:</span> <span class="k">pass</span>
+
+    <span class="k">class</span> <span class="nc">B</span><span class="p">(</span><span class="n">A</span><span class="p">):</span> <span class="k">pass</span>
+
+    <span class="k">class</span> <span class="nc">C</span><span class="p">(</span><span class="n">A</span><span class="p">):</span> <span class="k">pass</span>
+
+    <span class="k">class</span> <span class="nc">D</span><span class="p">(</span><span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">):</span> <span class="k">pass</span>
+
+    <span class="k">class</span> <span class="nc">E</span><span class="p">:</span> <span class="k">pass</span>
+
+    <span class="k">class</span> <span class="nc">F</span><span class="p">(</span><span class="n">D</span><span class="p">,</span> <span class="n">E</span><span class="p">):</span> <span class="k">pass</span>
+
+    <span class="n">instance_tree</span><span class="p">(</span><span class="n">B</span><span class="p">())</span>
+    <span class="n">instance_tree</span><span class="p">(</span><span class="n">F</span><span class="p">())</span></div>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">self_test</span><span class="p">()</span>
 </pre></div>
 
+            <div class="clearer"></div>
           </div>
         </div>
       </div>
@@ -95,12 +106,13 @@
           <a href="../../../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="nav-item nav-item-0"><a href="../../../../index.html">Playground  documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="../../../index.html" >Module code</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="../../../index.html" >Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Playground.my_utils.classTools_.class_Tree</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2019, Tom.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.
+        &#169; Copyright 2020, Tom.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.1.2.
     </div>
   </body>
 </html>

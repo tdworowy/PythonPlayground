@@ -4,10 +4,10 @@ Playground.Python\_Staff.OOP.descriptors package
 Submodules
 ----------
 
-Playground.Python\_Staff.OOP.descriptors.desc module
-----------------------------------------------------
+Playground.Python\_Staff.OOP.descriptors.desc1 module
+-----------------------------------------------------
 
-.. automodule:: Playground.Python_Staff.OOP.descriptors.desc
+.. automodule:: Playground.Python_Staff.OOP.descriptors.desc1
    :members:
    :undoc-members:
    :show-inheritance:

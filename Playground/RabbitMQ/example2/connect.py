@@ -1,5 +1,4 @@
-
-import  pika
+import pika
 
 
 class Connection_:
@@ -16,18 +15,14 @@ class Connection_:
             connection = pika.BlockingConnection(parameters)
             self.channel = connection.channel()
 
-        except Exception as ex :
+        except Exception as ex:
             print("Connection failed")
             print(str(ex))
         else:
             print("Connection succeed")
 
-
-
-
     def get_channel(self):
-        return  self.channel
-
+        return self.channel
 
     def close(self):
         self.connection.close()

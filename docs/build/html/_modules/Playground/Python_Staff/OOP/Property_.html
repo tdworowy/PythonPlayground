@@ -4,6 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playground.Python_Staff.OOP.Property_ &#8212; Playground  documentation</title>
     <link rel="stylesheet" href="../../../../_static/pyramid.css" type="text/css" />
     <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
@@ -32,7 +33,8 @@
           <a href="../../../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="nav-item nav-item-0"><a href="../../../../index.html">Playground  documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="../../../index.html" accesskey="U">Module code</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="../../../index.html" accesskey="U">Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Playground.Python_Staff.OOP.Property_</a></li> 
       </ul>
     </div>  
 
@@ -42,29 +44,29 @@
           <div class="body" role="main">
             
   <h1>Source code for Playground.Python_Staff.OOP.Property_</h1><div class="highlight"><pre>
-<div class="viewcode-block" id="newprops"><a class="viewcode-back" href="../../../../Playground.Python_Staff.OOP.html#Playground.Python_Staff.OOP.Property_.newprops">[docs]</a><span></span><span class="k">class</span> <span class="nc">newprops</span><span class="p">:</span>
+<div class="viewcode-block" id="NewProps"><a class="viewcode-back" href="../../../../Playground.Python_Staff.OOP.html#Playground.Python_Staff.OOP.Property_.NewProps">[docs]</a><span></span><span class="k">class</span> <span class="nc">NewProps</span><span class="p">:</span>
 
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_age</span> <span class="o">=</span><span class="mi">40</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_age</span> <span class="o">=</span> <span class="mi">40</span>
 
-<div class="viewcode-block" id="newprops.getage"><a class="viewcode-back" href="../../../../Playground.Python_Staff.OOP.html#Playground.Python_Staff.OOP.Property_.newprops.getage">[docs]</a>    <span class="k">def</span> <span class="nf">getage</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="NewProps.get_age"><a class="viewcode-back" href="../../../../Playground.Python_Staff.OOP.html#Playground.Python_Staff.OOP.Property_.NewProps.get_age">[docs]</a>    <span class="k">def</span> <span class="nf">get_age</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_age</span></div>
 
-<div class="viewcode-block" id="newprops.setage"><a class="viewcode-back" href="../../../../Playground.Python_Staff.OOP.html#Playground.Python_Staff.OOP.Property_.newprops.setage">[docs]</a>    <span class="k">def</span> <span class="nf">setage</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">value</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Set age: &quot;</span><span class="p">,</span><span class="n">value</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_age</span><span class="o">=</span> <span class="n">value</span></div>
+<div class="viewcode-block" id="NewProps.set_age"><a class="viewcode-back" href="../../../../Playground.Python_Staff.OOP.html#Playground.Python_Staff.OOP.Property_.NewProps.set_age">[docs]</a>    <span class="k">def</span> <span class="nf">set_age</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Set age: &quot;</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_age</span> <span class="o">=</span> <span class="n">value</span></div>
 
-    <span class="n">age</span> <span class="o">=</span> <span class="nb">property</span><span class="p">(</span><span class="n">getage</span><span class="p">,</span><span class="n">setage</span><span class="p">,</span><span class="kc">None</span><span class="p">,</span><span class="kc">None</span><span class="p">)</span></div>
+    <span class="n">age</span> <span class="o">=</span> <span class="nb">property</span><span class="p">(</span><span class="n">get_age</span><span class="p">,</span> <span class="n">set_age</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span></div>
 
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
-
-    <span class="n">x</span> <span class="o">=</span> <span class="n">newprops</span><span class="p">()</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">NewProps</span><span class="p">()</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">age</span><span class="p">)</span>
     <span class="n">x</span><span class="o">.</span><span class="n">age</span> <span class="o">=</span> <span class="mi">2</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">age</span><span class="p">)</span>
 </pre></div>
 
+            <div class="clearer"></div>
           </div>
         </div>
       </div>
@@ -94,12 +96,13 @@
           <a href="../../../../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="nav-item nav-item-0"><a href="../../../../index.html">Playground  documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="../../../index.html" >Module code</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="../../../index.html" >Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Playground.Python_Staff.OOP.Property_</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2019, Tom.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.
+        &#169; Copyright 2020, Tom.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.1.2.
     </div>
   </body>
 </html>
