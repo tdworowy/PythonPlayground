@@ -1,25 +1,5 @@
 import itertools
-from collections import defaultdict
 from random import shuffle, choice
-
-
-def random_rule(min_to_born=1):
-    rule_a = {(i, 0): choice([0, 1]) for i in range(27)}
-    rule_b = {(i, 1): choice([0, 1]) for i in range(27)}
-
-    rule = {**rule_a, **rule_b}
-
-    rule[(min_to_born, 0)] = 1
-
-    return rule
-
-
-rule_1 = {
-    (1, 0): 1,
-    (1, 3): 1,
-    (1, 2): 1
-}
-rule_1 = defaultdict(lambda: 0, rule_1)
 
 
 def count_neighbours(cords: tuple, grid: dict):
@@ -53,5 +33,5 @@ def update_grid(grid: dict, rules: dict):
     for key in grid:
         neighbours = count_neighbours(key, grid)
         state = grid[key]
-        new_grid[key] = rules[(neighbours, state)]
+        new_grid[key] = rules[(state, neighbours)]
     return new_grid
