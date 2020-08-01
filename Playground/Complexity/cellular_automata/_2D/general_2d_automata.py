@@ -83,6 +83,7 @@ walled_cities_rules = {
 }
 walled_cities_rules = defaultdict(lambda: 0, walled_cities_rules)
 
+
 def generate_snowflake_rule(neighbours_numbers: list):
     snowflake_rules = default_dict(lambda self, key: key[0])
 
