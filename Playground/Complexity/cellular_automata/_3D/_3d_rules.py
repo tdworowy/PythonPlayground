@@ -3,12 +3,12 @@ from random import choice
 
 
 def random_rule(min_to_born=1):
-    rule_a = {(i, 0): choice([0, 1]) for i in range(27)}
-    rule_b = {(i, 1): choice([0, 1]) for i in range(27)}
+    rule_a = {(0, i): choice([0, 1]) for i in range(27)}
+    rule_b = {(1, i): choice([0, 1]) for i in range(27)}
 
     rule = {**rule_a, **rule_b}
 
-    rule[(min_to_born, 0)] = 1
+    rule[(0, min_to_born)] = 1
 
     return rule
 
