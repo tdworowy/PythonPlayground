@@ -119,7 +119,7 @@ class GUI:
             1: "red",
             2: "green",
             3: "black",
-            4: "while",
+            4: "white",
             5: "gold"
         }
         for i in self.input_list:
@@ -164,7 +164,11 @@ class GUI:
 
     def play_all(self, rules_iter: Iterable):
         self.silent = True
-        files_list = os.listdir(f"1d_neighborhood_size_{self.neighborhood_size.get()}_colours_{self.color_count.get()}")
+
+        folder = f"1d_neighborhood_size_{self.neighborhood_size.get()}_colours_{self.color_count.get()}"
+        if not path.isdir(folder):
+            mkdir(folder)
+        files_list = os.listdir(folder)
 
         for rule in rules_iter:
 
