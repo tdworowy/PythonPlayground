@@ -171,8 +171,9 @@ class GUI:
         files_list = os.listdir(folder)
 
         for rule in rules_iter:
+            rule_file = f"rule_{rule}_{self.init_way}"
 
-            if not self.replay and f"rule_{rule}_{self.init_way}.png" in files_list:
+            if not self.replay and rule_file+".png" in files_list:
                 break
 
             self.rule = generate_rule(rule,
@@ -185,8 +186,8 @@ class GUI:
             self.play_call_back()
             self.top.update()
 
-            take_screenshot(f"1d_neighborhood_size_{self.neighborhood_size.get()}_colours_{int(self.color_count.get())}",
-                            f"rule_{rule}_{self.init_way}",
+            take_screenshot(folder,
+                            rule_file,
                             self.canvas)
 
             self.clear_call_back()
