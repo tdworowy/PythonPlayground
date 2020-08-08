@@ -10,21 +10,31 @@ class RuleSegment:
         self.type = type
 
 
-def wolfram_number_to_bin(wolfram_number: int, possible_states: int) -> list:
-    wolfram_number = bin(wolfram_number)[2:]
+def n_nary(number: int, n: int) -> str:
+    if number == 0:
+        return '0'
+    nums = []
+    while number:
+        number, r = divmod(number, n)
+        nums.append(str(r))
+    return ''.join(reversed(nums))
+
+
+def wolfram_number_to_bin(wolfram_number: int, possible_states: int, colours_count: int) -> list:
+    wolfram_number = n_nary(wolfram_number, colours_count)
     temp = possible_states - len(wolfram_number)
     wolfram_number = "0" * temp + wolfram_number
     return list(wolfram_number)[::-1]
 
 
-def generate_rule(wolfram_number: int, neighborhood_size: int = 3):
-    possible_states = 2 ** neighborhood_size
-    assert wolfram_number < 2 ** possible_states
-    assert neighborhood_size % 2 != 0
+def generate_rule(wolfram_number: int, neighborhood_size: int = 3, colours: list = None):
+    if not colours: colours = [0, 1]
+    colours_count = len(colours)
+    possible_states = colours_count ** neighborhood_size
     rule = []
 
-    wolfram_number = wolfram_number_to_bin(wolfram_number, possible_states)
-    for i, comb in enumerate(product([0, 1], repeat=neighborhood_size)):
+    wolfram_number = wolfram_number_to_bin(wolfram_number, possible_states, colours_count)
+    for i, comb in enumerate(product(colours, repeat=neighborhood_size)):
         rule.append(RuleSegment(comb, int(wolfram_number[i])))
     return rule
 
