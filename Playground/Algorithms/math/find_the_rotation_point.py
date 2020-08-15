@@ -14,13 +14,14 @@ def find_point2(px, py, qx, qy):
     return [xr, yr]
 
 
-print(find_point2(1, 1, 2, 2))
-print(find_point2(4, 3, 5, 2))
-print(find_point2(2, 4, 5, 6))
-print(find_point2(1, 2, 2, 2))
-print(find_point2(1, 1, 1, 1))
-print(find_point2(1, 2, 2, 1))
-print(find_point2(1, 8, 7, 8))
-print(find_point2(9, 1, 1, 1))
-print(find_point2(8, 4, 3, 2))
-print(find_point2(7, 8, 9, 1))
+if __name__ == "__main__":
+    print(find_point2(1, 1, 2, 2))
+    print(find_point2(4, 3, 5, 2))
+    print(find_point2(2, 4, 5, 6))
+    print(find_point2(1, 2, 2, 2))
+    print(find_point2(1, 1, 1, 1))
+    print(find_point2(1, 2, 2, 1))
+    print(find_point2(1, 8, 7, 8))
+    print(find_point2(9, 1, 1, 1))
+    print(find_point2(8, 4, 3, 2))
+    print(find_point2(7, 8, 9, 1))

@@ -20,14 +20,6 @@ Playground.Complexity.bifurcation\_diagram module
    :undoc-members:
    :show-inheritance:
 
-Playground.Complexity.experiment\_1 module
-------------------------------------------
-
-.. automodule:: Playground.Complexity.experiment_1
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
 Playground.Complexity.logistic\_map\_plot module
 ------------------------------------------------
 
