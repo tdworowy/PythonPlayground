@@ -1,4 +1,3 @@
-
 import yaml
 import pygame
 from Playground.Complexity.cellular_automata._1D.cellular_automata import cellular_automata_step, generate_rule
@@ -55,7 +54,8 @@ class GUI:
     def init(self):
         pygame.init()
         self.screen = pygame.display.set_mode((self.width, self.height))
-        pygame.display.set_caption(f'rule: {self.rule_number} colors:{self.color_count} neighborhood_size:{self.neighborhood_size}')
+        pygame.display.set_caption(
+            f'rule: {self.rule_number} colors:{self.color_count} neighborhood_size:{self.neighborhood_size}')
         pygame.display.flip()
 
     def run(self, stop_when_full: bool = False):
@@ -74,8 +74,6 @@ class GUI:
             if stop_when_full and self.y == self.height:
                 self.running = False
                 pygame.quit()
-
-
 
 
 def read_config():
