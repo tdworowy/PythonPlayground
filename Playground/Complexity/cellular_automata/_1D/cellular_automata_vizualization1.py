@@ -80,7 +80,7 @@ class GUI:
         self.replay = False
 
     def rectangle_coordinates(self, x: int, y: int) -> dict:
-        dic = {'x': x, 'y': y, 'x1': self.cell_size + x, 'y1': self.cell_size + y}
+        dic = {'x1': x, 'y1': y, 'x2': self.cell_size + x, 'y2': self.cell_size + y}
         return dic
 
     def init(self):
@@ -125,15 +125,14 @@ class GUI:
         for i in self.input_list:
             coordinate = self.rectangle_coordinates(self.x, self.y)
             colour = colours[i]
-            rectangle = self.canvas.create_rectangle(coordinate['x'],
-                                                     coordinate['y'],
-                                                     coordinate['x1'],
+            rectangle = self.canvas.create_rectangle(coordinate['x1'],
                                                      coordinate['y1'],
+                                                     coordinate['x2'],
+                                                     coordinate['y2'],
                                                      fill=colour)
 
             self.cells.append(rectangle)
             self.x += self.cell_size
-
         self.input_list = cellular_automata_step(self.input_list, self.rule)
         self.y += self.cell_size
 
