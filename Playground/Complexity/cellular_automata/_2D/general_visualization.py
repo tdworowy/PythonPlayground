@@ -35,7 +35,7 @@ class CellularAutomata2DVisualization:
             self.grid = init_grid
 
     def rectangle_coordinates(self, x: int, y: int) -> dict:
-        dic = {'x': x, 'y': y, 'x1': self.cell_size + x, 'y1': self.cell_size + y}
+        dic = {'x1': x, 'y1': y, 'x2': self.cell_size + x, 'y2': self.cell_size + y}
         return dic
 
     def step_call_back(self):
@@ -54,14 +54,14 @@ class CellularAutomata2DVisualization:
                         self.canvas.delete(self.cells[(x, y)])
 
                     colour = colours_rules[value]
-                    rectangle = self.canvas.create_rectangle(coordinate['x'],
-                                                             coordinate['y'],
-                                                             coordinate['x1'],
+                    rectangle = self.canvas.create_rectangle(coordinate['x1'],
                                                              coordinate['y1'],
+                                                             coordinate['x2'],
+                                                             coordinate['y2'],
                                                              fill=colour)
                     self.cells[(x, y)] = rectangle
-                y = coordinate['y1']
-            x = coordinate['x1']
+                y = coordinate['y2']
+            x = coordinate['x2']
             y = 0
         self.prev_step = [[value for value in row] for row in self.grid]
         self.grid = update_grid(self.grid, rules=self.rules)
