@@ -43,22 +43,22 @@ class Robot:
         else:
             self.points -= 1
 
-    def play_strategy(self, strategy: list):
+    def play_strategy(self, strategy: list) -> list:
         current_situation = {}
         try:
-            current_situation["up"] = self.grid[self.x][self.y + 1][0]
+            current_situation["up"] = self.grid[self.x - 1][self.y][0]
         except IndexError:
             current_situation["up"] = "wall"
         try:
-            current_situation["down"] = self.grid[self.x][self.y - 1][0]
+            current_situation["down"] = self.grid[self.x + 1][self.y][0]
         except IndexError:
             current_situation["down"] = "wall"
         try:
-            current_situation["left"] = self.grid[self.x - 1][self.y][0]
+            current_situation["left"] = self.grid[self.x][self.y - 1][0]
         except IndexError:
             current_situation["left"] = "wall"
         try:
-            current_situation["right"] = self.grid[self.x + 1][self.y][0]
+            current_situation["right"] = self.grid[self.x][self.y + 1][0]
         except IndexError:
             current_situation["right"] = "wall"
 

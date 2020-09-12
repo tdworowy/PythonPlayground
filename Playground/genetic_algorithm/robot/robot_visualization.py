@@ -46,9 +46,9 @@ class GUI:
 
 
 if __name__ == "__main__":
-    width: int = 1920
-    height: int = 1080
-    cell_size: int = 50
+    width: int = 400
+    height: int = 400
+    cell_size: int = 20
     grid_states = ["empty", "point"]
 
     grid = generate_grid(width // cell_size, height // cell_size, grid_states, [0.7, 0.3])
