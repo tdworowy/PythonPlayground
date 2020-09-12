@@ -25,16 +25,14 @@ class Robot:
         self.points = 0
 
     def move(self, new_x: int, new_y: int):
-        if new_x >= self.width | new_y >= self.height:
-            self.points -= 10
-        elif new_x < 0 | new_y < 0:
-            self.points -= 10
-        else:
+        if 0 <= new_x < self.height and 0 <= new_y < self.width:
             self.grid[self.x][self.y] = (self.grid[self.x][self.y][0], 0)
             self.grid[new_x][new_y] = (self.grid[new_x][new_y][0], 1)
 
             self.x = new_x
             self.y = new_y
+        else:
+            self.points -= 10
 
     def take_point(self):
         if self.grid[self.x][self.y][0] == "point":
@@ -45,28 +43,32 @@ class Robot:
 
     def play_strategy(self, strategy: list) -> list:
         current_situation = {}
-        try:
-            current_situation["up"] = self.grid[self.x - 1][self.y][0]
-        except IndexError:
+        if self.x - 1 < 0:
             current_situation["up"] = "wall"
-        try:
-            current_situation["down"] = self.grid[self.x + 1][self.y][0]
-        except IndexError:
+        else:
+            current_situation["up"] = self.grid[self.x - 1][self.y][0]
+
+        if self.x + 1 > self.height:
             current_situation["down"] = "wall"
-        try:
-            current_situation["left"] = self.grid[self.x][self.y - 1][0]
-        except IndexError:
+        else:
+            current_situation["down"] = self.grid[self.x + 1][self.y][0]
+
+        if self.y < 0:
             current_situation["left"] = "wall"
-        try:
-            current_situation["right"] = self.grid[self.x][self.y + 1][0]
-        except IndexError:
+        else:
+            current_situation["left"] = self.grid[self.x][self.y - 1][0]
+
+        if self.y + 1 > self.width:
             current_situation["right"] = "wall"
+        else:
+            current_situation["right"] = self.grid[self.x][self.y + 1][0]
 
         current_situation["current"] = self.grid[self.x][self.y][0]
 
         for situation in strategy:
             if situation[0] == current_situation:
                 print(f"Make move: {situation[1]['action']}")
+                print(f"x:{self.x} y:{self.y}")
                 self.actions[situation[1]["action"]](self.x, self.y)
                 break
 

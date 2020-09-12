@@ -34,9 +34,9 @@ class GUI:
                                                                        coordinate["y1"],
                                                                        coordinate["x2"],
                                                                        coordinate["y2"]))
-                y = coordinate['y2']
-            x = coordinate['x2']
-            y = 0
+                x = coordinate['x2']
+            y = coordinate['y2']
+            x = 0
         pygame.display.flip()
 
     def init(self):
