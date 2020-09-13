@@ -96,7 +96,7 @@ class Evolution:
         self.moves = 200
         self.keep_parents = True
 
-        self.epsilon = 0.01
+        self.epsilon = 0.08
 
         self.population = {}
         self.results = {}
@@ -116,9 +116,9 @@ class Evolution:
         for key in self.population:
             for i in range(self.moves):
                 self.robot.play_strategy(self.population[key])
-                self.results[key] = (self.robot.points, self.population[key])
 
-            self.robot = Robot(self.width, self.height, self.init_grid)
+            self.results[key] = (self.robot.points, self.population[key])
+            self.robot = Robot(self.width, self.height, [[value for value in row] for row in self.init_grid])
 
     def _get_best(self, results: dict) -> int:
         self.best = -100000

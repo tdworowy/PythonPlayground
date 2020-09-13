@@ -70,14 +70,14 @@ if __name__ == "__main__":
                  range(height // cell_size)]
 
     evolution = Evolution(width // cell_size, height // cell_size)
-    evolution.generate_init_population(400)
+    evolution.generate_init_population(2000)
 
     steps = 200
-    generations = 400
+    generations = 20
 
     for i in range(generations):
         evolution.play_generation()
-        evolution.generate_new_population(get_best=5)
+        evolution.generate_new_population(get_best=10)
         print(f"generation:{i} best:{evolution.best}")
 
     strategy = evolution.get_best()
