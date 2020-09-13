@@ -153,7 +153,7 @@ class Evolution:
                 if choices([0, 1], weights=[0.99, 0.01])[0]:
                     x = randrange(0, len(new_population[i]))
                     new_population[i][x] = (
-                    new_population[i][x][0], {"action": choices(self.actions)[0]})  # random mutation
+                        new_population[i][x][0], {"action": choices(self.actions)[0]})  # random mutation
                 i += 1
 
         self.population = new_population

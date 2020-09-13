@@ -71,12 +71,13 @@ if __name__ == "__main__":
 
     evolution = Evolution(width // cell_size, height // cell_size)
     evolution.generate_init_population(400)
-    for i in range(200):
+
+    steps = 200
+
+    for i in range(steps):
         evolution.play_generation()
-        evolution.generate_new_population(get_best=10)
-        print("*" * 10)
+        evolution.generate_new_population(get_best=4)
         print(f"generation:{i} best:{evolution.best}")
-        print("*" * 10)
 
     strategy = evolution.get_best()
 
@@ -89,7 +90,7 @@ if __name__ == "__main__":
 
     robot = Robot(width // cell_size, height // cell_size, [[value for value in row] for row in grid])
 
-    for i in range(200):
+    for i in range(steps):
         grid = robot.play_strategy(strategy)
         gui.draw(grid, prev_grid)
         prev_grid = [[value for value in row] for row in grid]
