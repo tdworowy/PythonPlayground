@@ -30,6 +30,7 @@ class Robot:
 
         self.wall_penalty = 10
         self.pickup_empty_penalty = 5
+        self.step_penalty = 1
         self.pickup_reward = 10
 
     def move(self, new_x: int, new_y: int):
@@ -39,6 +40,7 @@ class Robot:
 
             self.x = new_x
             self.y = new_y
+            self.points -= self.step_penalty
         else:
             self.points -= self.wall_penalty
 
@@ -92,6 +94,9 @@ class Evolution:
         self.states = self.robot.states
         self.actions = list(self.robot.actions.keys())
         self.moves = 200
+        self.keep_parents = True
+
+        self.epsilon = 0.01
 
         self.population = {}
         self.results = {}
@@ -141,6 +146,12 @@ class Evolution:
         best = self.selection(get_best)
         new_population = {}
         i = 0
+
+        if self.keep_parents:
+            for id in best:
+                new_population[i] = self.population[id]
+                i += 1
+
         while len(new_population) < len(self.population):
 
             for j in range(get_best - 1):
@@ -150,7 +161,7 @@ class Evolution:
                 second_half = self.population[best[j + 1]][split_place:]
                 new_population[i] = first_half + second_half
 
-                if choices([0, 1], weights=[0.99, 0.01])[0]:
+                if choices([0, 1], weights=[1-self.epsilon, self.epsilon])[0]:
                     x = randrange(0, len(new_population[i]))
                     new_population[i][x] = (
                         new_population[i][x][0], {"action": choices(self.actions)[0]})  # random mutation

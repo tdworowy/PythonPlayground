@@ -73,10 +73,11 @@ if __name__ == "__main__":
     evolution.generate_init_population(400)
 
     steps = 200
+    generations = 400
 
-    for i in range(steps):
+    for i in range(generations):
         evolution.play_generation()
-        evolution.generate_new_population(get_best=4)
+        evolution.generate_new_population(get_best=5)
         print(f"generation:{i} best:{evolution.best}")
 
     strategy = evolution.get_best()
