@@ -2,7 +2,7 @@ import time
 import tkinter
 from collections import defaultdict
 from doctest import master
-
+from matplotlib import pyplot as plt
 from Playground.genetic_algorithm.robot.robot import generate_grid, Robot, Evolution
 
 
@@ -60,6 +60,11 @@ class GUI:
         self.canvas.pack(in_=self.button_frame)
 
 
+def plot_learning_curve(generations: list, result: list):
+    plt.plot(generations, result)
+    plt.show()
+
+
 if __name__ == "__main__":
     width: int = 400
     height: int = 400
@@ -72,13 +77,21 @@ if __name__ == "__main__":
     evolution = Evolution(width // cell_size, height // cell_size)
     evolution.generate_init_population(2500)
 
-    steps = 200
-    generations = 1000
+    steps = 300
+    generations = 500
+    generations_ = []
+    results = []
 
     for i in range(generations):
+
         evolution.play_generation()
         evolution.generate_new_population(get_best=50)
-        print(f"generation:{i} best:{evolution.best}")
+        print(f"generation:{i} best 5:{evolution.selection(5)[1]}")
+
+        generations_.append(i)
+        results.append(evolution.selection(1)[1])
+
+    plot_learning_curve(generations_, results)
 
     strategy = evolution.get_best()
 
@@ -87,7 +100,7 @@ if __name__ == "__main__":
 
     gui.draw(grid, prev_grid)
     prev_grid = [[value for value in row] for row in grid]
-    time.sleep(0.5)
+    time.sleep(0.2)
 
     robot = Robot(width // cell_size, height // cell_size, [[value for value in row] for row in grid])
 
@@ -95,8 +108,10 @@ if __name__ == "__main__":
         grid = robot.play_strategy(strategy)
         gui.draw(grid, prev_grid)
         prev_grid = [[value for value in row] for row in grid]
-        time.sleep(0.5)
+        time.sleep(0.3)
 
     print(f"Robot points: {robot.points}")
     while 1:
         pass
+# best -35
+# best g 218

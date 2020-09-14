@@ -1,3 +1,4 @@
+import statistics
 from random import choices
 from itertools import product
 from random import randrange
@@ -85,18 +86,19 @@ class Robot:
 
 class Evolution:
     def __init__(self, width: int, height: int):
-        grid_states = ["empty", "point"]
+        self.grid_states = ["empty", "point"]
         self.width = width
         self.height = height
-        self.init_grid = generate_grid(width, height, grid_states, [0.7, 0.3])
+        self.init_grid = generate_grid(width, height, self.grid_states, [0.7, 0.3])
         self.robot = Robot(width, height, [[value for value in row] for row in self.init_grid])
 
         self.states = self.robot.states
         self.actions = list(self.robot.actions.keys())
-        self.moves = 200
+        self.moves = 300
+        self.env_per_strategy = 10
         self.keep_parents = True
 
-        self.epsilon = 0.08
+        self.mutation_rate = 0.05
 
         self.population = {}
         self.results = {}
@@ -114,36 +116,43 @@ class Evolution:
 
     def play_generation(self):
         for key in self.population:
-            for i in range(self.moves):
-                self.robot.play_strategy(self.population[key])
+            points = []
+            for j in range(self.env_per_strategy):
+                for i in range(self.moves):
+                    self.robot.play_strategy(self.population[key])
+                points.append(self.robot.points)
+                self.robot = Robot(self.width, self.height,
+                                   generate_grid(self.width, self.height, self.grid_states, [0.7, 0.3]))
 
-            self.results[key] = (self.robot.points, self.population[key])
-            self.robot = Robot(self.width, self.height, [[value for value in row] for row in self.init_grid])
+            self.results[key] = (statistics.mean(points), self.population[key])
 
-    def _get_best(self, results: dict) -> int:
-        self.best = -100000
+    @staticmethod
+    def _get_best(results: dict) -> tuple:
+        best = -100000
         strategy_id = 0
         for key in results:
-            if results[key][0] > self.best:
-                self.best = results[key][0]
+            if results[key][0] > best:
+                best = results[key][0]
                 strategy_id = key
-        return strategy_id
+        return strategy_id, best
 
     def get_best(self) -> list:
-        strategy_id = self._get_best(self.results)
+        strategy_id = self._get_best(self.results)[0]
         return self.population[strategy_id]
 
-    def selection(self, get_best: int = 4) -> list:
+    def selection(self, get_best: int = 4) -> tuple:
         results_temp = self.results.copy()
-        best = []
+        best_ids = []
+        best_points = []
         for i in range(get_best):
-            id = self._get_best(results_temp)
-            best.append(id)
+            id, res = self._get_best(results_temp)
+            best_ids.append(id)
+            best_points.append(res)
             del results_temp[id]
-        return best
+        return best_ids, best_points
 
     def generate_new_population(self, get_best: int = 4):
-        best = self.selection(get_best)
+        best = self.selection(get_best)[0]
         new_population = {}
         i = 0
 
@@ -161,7 +170,7 @@ class Evolution:
                 second_half = self.population[best[j + 1]][split_place:]
                 new_population[i] = first_half + second_half
 
-                if choices([0, 1], weights=[1-self.epsilon, self.epsilon])[0]:
+                if choices([0, 1], weights=[1 - self.mutation_rate, self.mutation_rate])[0]:
                     x = randrange(0, len(new_population[i]))
                     new_population[i][x] = (
                         new_population[i][x][0], {"action": choices(self.actions)[0]})  # random mutation
