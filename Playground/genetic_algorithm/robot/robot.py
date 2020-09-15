@@ -2,11 +2,15 @@ import statistics
 from random import choices
 from itertools import product
 from random import randrange
+from multiprocessing.dummy import Pool as ThreadPool
 
 
-def generate_grid(width: int, height: int, states: list, weights: list) -> list:
+def generate_grid(width: int, height: int, states: list, weights: list, random_start: bool = True) -> list:
     grid = [[(choices(states, weights)[0], 0) for _ in range(width)] for _ in range(height)]
-    grid[0][0] = (states[0], 1)
+    if random_start:
+        grid[randrange(0, height)][randrange(0, width)] = (states[0], 1)
+    else:
+        grid[0][0] = (states[0], 1)
     return grid
 
 
@@ -89,12 +93,10 @@ class Evolution:
         self.grid_states = ["empty", "point"]
         self.width = width
         self.height = height
-        self.init_grid = generate_grid(width, height, self.grid_states, [0.7, 0.3])
-        self.robot = Robot(width, height, [[value for value in row] for row in self.init_grid])
 
-        self.states = self.robot.states
-        self.actions = list(self.robot.actions.keys())
-        self.moves = 300
+        self.states = ["empty", "point", "wall"]
+        self.actions = ["go_up", "go_down", "go_left", "go_right", "take_point"]
+        self.moves = 100
         self.env_per_strategy = 10
         self.keep_parents = True
 
@@ -102,6 +104,8 @@ class Evolution:
 
         self.population = {}
         self.results = {}
+
+        self.pool = ThreadPool(25)
 
     def generate_init_population(self, population_size: int):
         for i in range(population_size):
@@ -111,20 +115,25 @@ class Evolution:
                           "right": state[3],
                           "current": state[4]},
                          {"action": choices(self.actions)[0]}) for state in
-                        product(self.states, repeat=5)]
+                        product(self.states, repeat=len(self.actions))]
             self.population[i] = strategy
 
     def play_generation(self):
-        for key in self.population:
-            points = []
-            for j in range(self.env_per_strategy):
-                for i in range(self.moves):
-                    self.robot.play_strategy(self.population[key])
-                points.append(self.robot.points)
-                self.robot = Robot(self.width, self.height,
-                                   generate_grid(self.width, self.height, self.grid_states, [0.7, 0.3]))
+        threed_results = self.pool.map(self.generation_threed, list(self.population.keys()))
+        for result in threed_results:
+            self.results[result[0]] = result[1], result[2]
 
-            self.results[key] = (statistics.mean(points), self.population[key])
+    def generation_threed(self, key: int):
+        points = []
+        threed_population = self.population.copy()
+        for j in range(self.env_per_strategy):
+            robot = Robot(self.width, self.height,
+                          generate_grid(self.width, self.height, self.grid_states, [0.7, 0.3]))
+
+            [robot.play_strategy(threed_population[key]) for _ in range(self.moves)]
+            points.append(robot.points)
+
+        return key, statistics.mean(points), threed_population[key]
 
     @staticmethod
     def _get_best(results: dict) -> tuple:

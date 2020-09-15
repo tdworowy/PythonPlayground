@@ -70,9 +70,6 @@ if __name__ == "__main__":
     height: int = 400
     cell_size: int = 20
     grid_states = ["empty", "point"]
-    grid = generate_grid(width // cell_size, height // cell_size, grid_states, [0.7, 0.3])
-    prev_grid = [[(-1, -1) for _ in range(width // cell_size)] for _ in
-                 range(height // cell_size)]
 
     evolution = Evolution(width // cell_size, height // cell_size)
     evolution.generate_init_population(2500)
@@ -85,7 +82,7 @@ if __name__ == "__main__":
     for i in range(generations):
 
         evolution.play_generation()
-        evolution.generate_new_population(get_best=50)
+        evolution.generate_new_population(get_best=30)
         print(f"generation:{i} best 5:{evolution.selection(5)[1]}")
 
         generations_.append(i)
@@ -95,14 +92,17 @@ if __name__ == "__main__":
 
     strategy = evolution.get_best()
 
+    grid = generate_grid(width // cell_size, height // cell_size, grid_states, [0.7, 0.3])
+    prev_grid = [[(-1, -1) for _ in range(width // cell_size)] for _ in
+                 range(height // cell_size)]
+
     gui = GUI(width, height, cell_size)
     gui.main_loop()
 
     gui.draw(grid, prev_grid)
     prev_grid = [[value for value in row] for row in grid]
-    time.sleep(0.2)
 
-    robot = Robot(width // cell_size, height // cell_size, [[value for value in row] for row in grid])
+    robot = Robot(width // cell_size, height // cell_size, grid)
 
     for i in range(steps):
         grid = robot.play_strategy(strategy)
