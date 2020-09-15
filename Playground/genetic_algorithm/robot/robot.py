@@ -5,23 +5,27 @@ from random import randrange
 from multiprocessing.dummy import Pool as ThreadPool
 
 
-def generate_grid(width: int, height: int, states: list, weights: list, random_start: bool = True) -> list:
+def generate_grid(width: int, height: int, states: list, weights: list, random_start: bool = True) -> tuple:
     grid = [[(choices(states, weights)[0], 0) for _ in range(width)] for _ in range(height)]
     if random_start:
-        grid[randrange(0, height)][randrange(0, width)] = (states[0], 1)
+        x = randrange(0, height)
+        y = randrange(0, width)
+        grid[x][y] = (states[0], 1)
     else:
+        x = 0
+        y = 0
         grid[0][0] = (states[0], 1)
-    return grid
+    return grid, x, y
 
 
 class Robot:
-    def __init__(self, width: int, height: int, grid: list):
+    def __init__(self, width: int, height: int, grid: tuple):
         self.width = width
         self.height = height
-        self.grid = grid
+        self.grid = grid[0]
 
-        self.x = 0
-        self.y = 0
+        self.x = grid[1]
+        self.y = grid[2]
 
         self.actions = {
             "go_up": lambda x, y: self.move(x - 1, y),

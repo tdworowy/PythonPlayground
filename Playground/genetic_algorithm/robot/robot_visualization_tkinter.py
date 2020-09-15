@@ -98,15 +98,15 @@ if __name__ == "__main__":
     gui = GUI(width, height, cell_size)
     gui.main_loop()
 
-    gui.draw(grid, prev_grid)
-    prev_grid = [[value for value in row] for row in grid]
+    gui.draw(grid[0], prev_grid)
+    prev_grid = [[value for value in row] for row in grid[0]]
 
     robot = Robot(width // cell_size, height // cell_size, grid)
 
     for i in range(steps):
         grid = robot.play_strategy(strategy)
         gui.draw(grid, prev_grid)
-        prev_grid = [[value for value in row] for row in grid]
+        prev_grid = [[value for value in row] for row in grid[0]]
         time.sleep(0.3)
 
     print(f"Robot points: {robot.points}")
