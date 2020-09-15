@@ -36,7 +36,7 @@ class Robot:
         self.wall_penalty = 10
         self.pickup_empty_penalty = 5
         self.step_penalty = 1
-        self.pickup_reward = 10
+        self.pickup_reward = 15
 
     def move(self, new_x: int, new_y: int):
         if 0 <= new_x < self.height and 0 <= new_y < self.width:
@@ -105,7 +105,7 @@ class Evolution:
         self.population = {}
         self.results = {}
 
-        self.pool = ThreadPool(25)
+        self.pool = ThreadPool(50)
 
     def generate_init_population(self, population_size: int):
         for i in range(population_size):
