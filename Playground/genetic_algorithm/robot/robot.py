@@ -18,9 +18,9 @@ def generate_grid(width: int, height: int, states: list, weights: list, random_s
     return grid, x, y
 
 
-def save_grid(grid: list):
+def save_strategy(strategy: list):
     with open("last_strategy.txt", 'w') as f:
-        f.write(str(grid))
+        f.write(str(strategy))
 
 
 class Robot:

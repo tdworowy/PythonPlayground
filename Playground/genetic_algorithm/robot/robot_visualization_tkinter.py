@@ -3,7 +3,7 @@ import tkinter
 from collections import defaultdict
 from doctest import master
 from matplotlib import pyplot as plt
-from Playground.genetic_algorithm.robot.robot import generate_grid, Robot, Evolution, save_grid
+from Playground.genetic_algorithm.robot.robot import generate_grid, Robot, Evolution, save_strategy
 
 
 class GUI:
@@ -75,7 +75,7 @@ if __name__ == "__main__":
     evolution.generate_init_population(1500)
 
     steps = 300
-    generations = 1#1000
+    generations = 1000
     generations_ = []
     results = []
 
@@ -90,7 +90,7 @@ if __name__ == "__main__":
     plot_learning_curve(generations_, results)
 
     strategy = evolution.get_best()
-    save_grid(strategy)
+    save_strategy(strategy)
 
     grid = generate_grid(width // cell_size, height // cell_size, grid_states, [0.7, 0.3])
     prev_grid = [[(-1, -1) for _ in range(width // cell_size)] for _ in
