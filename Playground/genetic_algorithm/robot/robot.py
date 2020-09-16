@@ -18,6 +18,11 @@ def generate_grid(width: int, height: int, states: list, weights: list, random_s
     return grid, x, y
 
 
+def save_grid(grid: list):
+    with open("last_strategy.txt", 'w') as f:
+        f.write(str(grid))
+
+
 class Robot:
     def __init__(self, width: int, height: int, grid: tuple):
         self.width = width
@@ -100,7 +105,7 @@ class Evolution:
 
         self.states = ["empty", "point", "wall"]
         self.actions = ["go_up", "go_down", "go_left", "go_right", "take_point"]
-        self.moves = 100
+        self.moves = 200
         self.env_per_strategy = 10
         self.keep_parents = True
 
@@ -109,7 +114,7 @@ class Evolution:
         self.population = {}
         self.results = {}
 
-        self.pool = ThreadPool(50)
+        self.pool = ThreadPool(100)
 
     def generate_init_population(self, population_size: int):
         for i in range(population_size):
@@ -150,7 +155,8 @@ class Evolution:
         return strategy_id, best
 
     def get_best(self) -> list:
-        strategy_id = self._get_best(self.results)[0]
+        strategy_id, points = self._get_best(self.results)
+        print(f"Get strategy id: {strategy_id}, points: {points}")
         return self.population[strategy_id]
 
     def selection(self, get_best: int = 4) -> tuple:
