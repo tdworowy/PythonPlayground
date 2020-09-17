@@ -19,8 +19,8 @@ def generate_grid(width: int, height: int, states: list, weights: list, random_s
 
 
 def save_strategy(strategy: list):
-    with open("last_strategy.txt", 'w') as f:
-        f.write(str(strategy))
+    with open("last_strategy.txt", 'a') as f:
+        f.write("\n"+str(strategy))
 
 
 class Robot:
@@ -106,10 +106,10 @@ class Evolution:
         self.states = ["empty", "point", "wall"]
         self.actions = ["go_up", "go_down", "go_left", "go_right", "take_point"]
         self.moves = 200
-        self.env_per_strategy = 10
+        self.env_per_strategy = 25
         self.keep_parents = True
 
-        self.mutation_rate = 0.05
+        self.mutation_rate = 0.03
 
         self.population = {}
         self.results = {}

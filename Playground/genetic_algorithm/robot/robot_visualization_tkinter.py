@@ -72,16 +72,16 @@ if __name__ == "__main__":
     grid_states = ["empty", "point"]
 
     evolution = Evolution(width // cell_size, height // cell_size)
-    evolution.generate_init_population(1500)
+    evolution.generate_init_population(3000)
 
-    steps = 300
-    generations = 2000
+    steps = 200
+    generations = 5#2000
     generations_ = []
     results = []
 
     for i in range(generations):
         evolution.play_generation()
-        evolution.generate_new_population(get_best=20)
+        evolution.generate_new_population(get_best=1000)
         print(f"generation:{i} best 5:{evolution.selection(5)}")
 
         generations_.append(i)
@@ -113,6 +113,3 @@ if __name__ == "__main__":
     print(f"Robot points: {robot.points}")
     while 1:
         pass
-
-# 1000 gen: 165
-# Test run: -172
