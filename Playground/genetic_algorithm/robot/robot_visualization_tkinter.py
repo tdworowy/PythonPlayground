@@ -75,7 +75,7 @@ if __name__ == "__main__":
     evolution.generate_init_population(1500)
 
     steps = 300
-    generations = 1000
+    generations = 2000
     generations_ = []
     results = []
 

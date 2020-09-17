@@ -114,7 +114,7 @@ class Evolution:
         self.population = {}
         self.results = {}
 
-        self.pool = ThreadPool(100)
+        self.pool = ThreadPool(500)
 
     def generate_init_population(self, population_size: int):
         for i in range(population_size):
