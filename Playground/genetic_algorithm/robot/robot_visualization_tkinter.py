@@ -2,7 +2,6 @@ import time
 import tkinter
 from collections import defaultdict
 from doctest import master
-from matplotlib import pyplot as plt
 from Playground.genetic_algorithm.robot.robot import generate_grid, Robot, Evolution, save_strategy
 
 
@@ -60,39 +59,35 @@ class GUI:
         self.canvas.pack(in_=self.button_frame)
 
 
-def plot_learning_curve(generations: list, result: list):
-    plt.plot(generations, result)
-    plt.show()
-
-
 if __name__ == "__main__":
     width: int = 400
     height: int = 400
     cell_size: int = 20
-    grid_states = ["empty", "point"]
-
-    evolution = Evolution(width // cell_size, height // cell_size)
-    evolution.generate_init_population(3000)
 
     steps = 200
-    generations = 5#2000
-    generations_ = []
-    results = []
 
-    for i in range(generations):
-        evolution.play_generation()
-        evolution.generate_new_population(get_best=1000)
-        print(f"generation:{i} best 5:{evolution.selection(5)}")
+    rewards = {"wall_penalty": 10, "pickup_empty_penalty": 5, "step_penalty": 1,
+               "pickup_reward": 5}
 
-        generations_.append(i)
-        results.append(evolution.selection(1)[1])
+    evolution_parameters = {
+        "width": width // cell_size,
+        "height": height // cell_size,
+        "init_pop_count": 3000,
+        "generation_count": 2,
+        "env_per_strategy": 25,
+        "keep_parents": True,
+        "keep_best": 1000,
+        "moves": steps,
+        "mutation_rate": 0.03,
+        "threads": 500,
+        "rewards": rewards
+    }
 
-    plot_learning_curve(generations_, results)
-
+    evolution = Evolution(**evolution_parameters)
+    evolution.evolve()
     strategy = evolution.get_best()
-    save_strategy(strategy)
 
-    grid = generate_grid(width // cell_size, height // cell_size, grid_states, [0.7, 0.3])
+    grid = generate_grid(width // cell_size, height // cell_size, ["empty", "point"], [0.7, 0.3])
     prev_grid = [[(-1, -1) for _ in range(width // cell_size)] for _ in
                  range(height // cell_size)]
 
@@ -102,7 +97,7 @@ if __name__ == "__main__":
     gui.draw(grid[0], prev_grid)
     prev_grid = [[value for value in row] for row in grid[0]]
 
-    robot = Robot(width // cell_size, height // cell_size, grid)
+    robot = Robot(width // cell_size, height // cell_size, grid, rewards)
 
     for i in range(steps):
         grid = robot.play_strategy(strategy)

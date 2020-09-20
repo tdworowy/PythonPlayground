@@ -3,6 +3,10 @@ from random import choices
 from itertools import product
 from random import randrange
 from multiprocessing.dummy import Pool as ThreadPool
+from matplotlib import pyplot as plt
+
+states = ['empty', "point", "wall"]
+actions = ["go_up", "go_down", "go_left", "go_right", "take_point"]
 
 
 def generate_grid(width: int, height: int, states: list, weights: list, random_start: bool = True) -> tuple:
@@ -20,11 +24,11 @@ def generate_grid(width: int, height: int, states: list, weights: list, random_s
 
 def save_strategy(strategy: list):
     with open("last_strategy.txt", 'a') as f:
-        f.write("\n"+str(strategy))
+        f.write("\n" + str(strategy))
 
 
 class Robot:
-    def __init__(self, width: int, height: int, grid: tuple):
+    def __init__(self, width: int, height: int, grid: tuple, rewards: dict):
         self.width = width
         self.height = height
         self.grid = grid[0]
@@ -39,13 +43,13 @@ class Robot:
             "go_right": lambda x, y: self.move(x, y + 1),
             "take_point": lambda x, y: self.take_point()
         }
-        self.states = ["empty", "point", "wall"]
+        self.states = states
         self.points = 0
 
-        self.wall_penalty = 10
-        self.pickup_empty_penalty = 5
-        self.step_penalty = 1
-        self.pickup_reward = 15
+        self.wall_penalty = rewards["wall_penalty"]
+        self.pickup_empty_penalty = rewards["pickup_empty_penalty"]
+        self.step_penalty = rewards["step_penalty"]
+        self.pickup_reward = rewards["pickup_reward"]
 
     def move(self, new_x: int, new_y: int):
         if 0 <= new_x < self.height and 0 <= new_y < self.width:
@@ -98,23 +102,35 @@ class Robot:
 
 
 class Evolution:
-    def __init__(self, width: int, height: int):
+    def __init__(self, width: int, height: int, init_pop_count: int, generation_count: int, env_per_strategy,
+                 keep_parents: bool = True, keep_best: int = 1000, moves: int = 200, mutation_rate: float = 0.03,
+                 threads: int = 500, rewards: dict = {"wall_penalty": 10, "pickup_empty_penalty": 5, "step_penalty": 1,
+                                                      "pickup_reward": 5}):
         self.grid_states = ["empty", "point"]
         self.width = width
         self.height = height
 
-        self.states = ["empty", "point", "wall"]
-        self.actions = ["go_up", "go_down", "go_left", "go_right", "take_point"]
-        self.moves = 200
-        self.env_per_strategy = 25
-        self.keep_parents = True
+        self.states = states
+        self.actions = actions
+        self.moves = moves
+        self.env_per_strategy = env_per_strategy
+        self.keep_parents = keep_parents
+        self.init_pop_count = init_pop_count
+        self.generation_count = generation_count
+        self.keep_best = keep_best
 
-        self.mutation_rate = 0.03
+        self.mutation_rate = mutation_rate
 
         self.population = {}
         self.results = {}
 
-        self.pool = ThreadPool(500)
+        self.pool = ThreadPool(threads)
+        self.rewards = rewards
+
+    @staticmethod
+    def plot_learning_curve(generations: list, result: list):
+        plt.plot(generations, result)
+        plt.show()
 
     def generate_init_population(self, population_size: int):
         for i in range(population_size):
@@ -137,7 +153,7 @@ class Evolution:
         threed_population = self.population.copy()
         for j in range(self.env_per_strategy):
             robot = Robot(self.width, self.height,
-                          generate_grid(self.width, self.height, self.grid_states, [0.7, 0.3]))
+                          generate_grid(self.width, self.height, self.grid_states, [0.7, 0.3]), self.rewards)
 
             [robot.play_strategy(threed_population[key]) for _ in range(self.moves)]
             points.append(robot.points)
@@ -156,10 +172,9 @@ class Evolution:
 
     def get_best(self) -> list:
         strategy_id, points = self._get_best(self.results)
-        print(f"Get strategy id: {strategy_id}, points: {points}")
         return self.population[strategy_id]
 
-    def selection(self, get_best: int = 4) -> tuple:
+    def selection(self, get_best) -> tuple:
         results_temp = self.results.copy()
         best_ids = []
         best_points = []
@@ -170,8 +185,9 @@ class Evolution:
             del results_temp[id]
         return best_ids, best_points
 
-    def generate_new_population(self, get_best: int = 4):
-        best = self.selection(get_best)[0]
+    def generate_new_population(self, get_best):
+        self.best = self.selection(get_best)
+        best = self.best[0]
         new_population = {}
         i = 0
 
@@ -196,3 +212,24 @@ class Evolution:
                 i += 1
 
         self.population = new_population
+
+    def evolve(self):
+        self.generate_init_population(self.init_pop_count)
+
+        generations_ = []
+        results = []
+
+        for i in range(self.generation_count):
+            self.play_generation()
+            self.generate_new_population(get_best=self.keep_best)
+            fife_best = sorted(self.best[1],reverse=True)[1:5]
+            print(f"generation:{i} best 5:{fife_best}")
+
+            generations_.append(i)
+            results.append(fife_best[0])
+
+            if i % 100 == 0:
+                strategy = self.get_best()
+                save_strategy(strategy)
+
+        self.plot_learning_curve(generations_, results)
