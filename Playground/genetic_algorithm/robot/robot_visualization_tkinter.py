@@ -64,7 +64,7 @@ if __name__ == "__main__":
     height: int = 400
     cell_size: int = 20
 
-    steps = 200
+    steps = 300
 
     rewards = {"wall_penalty": 10, "pickup_empty_penalty": 5, "step_penalty": 1,
                "pickup_reward": 5}
@@ -73,7 +73,7 @@ if __name__ == "__main__":
         "width": width // cell_size,
         "height": height // cell_size,
         "init_pop_count": 3000,
-        "generation_count": 400,
+        "generation_count": 401,
         "env_per_strategy": 25,
         "keep_parents": True,
         "keep_best": 1000,
