@@ -73,7 +73,7 @@ if __name__ == "__main__":
         "width": width // cell_size,
         "height": height // cell_size,
         "init_pop_count": 3000,
-        "generation_count": 2,
+        "generation_count": 400,
         "env_per_strategy": 25,
         "keep_parents": True,
         "keep_best": 1000,

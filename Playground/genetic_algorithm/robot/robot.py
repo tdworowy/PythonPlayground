@@ -174,7 +174,7 @@ class Evolution:
         strategy_id, points = self._get_best(self.results)
         return self.population[strategy_id]
 
-    def selection(self, get_best) -> tuple:
+    def selection(self, get_best: int) -> tuple:
         results_temp = self.results.copy()
         best_ids = []
         best_points = []
@@ -185,7 +185,7 @@ class Evolution:
             del results_temp[id]
         return best_ids, best_points
 
-    def generate_new_population(self, get_best):
+    def generate_new_population(self, get_best: int):
         self.best = self.selection(get_best)
         best = self.best[0]
         new_population = {}
@@ -222,7 +222,7 @@ class Evolution:
         for i in range(self.generation_count):
             self.play_generation()
             self.generate_new_population(get_best=self.keep_best)
-            fife_best = sorted(self.best[1],reverse=True)[1:5]
+            fife_best = sorted(self.best[1], reverse=True)[0:5]
             print(f"generation:{i} best 5:{fife_best}")
 
             generations_.append(i)
