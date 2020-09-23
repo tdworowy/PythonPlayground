@@ -1,6 +1,6 @@
 import statistics
 import time
-from random import choices,randrange
+from random import choices, randrange
 from itertools import product
 from multiprocessing import Pool as ProcessPool
 from multiprocessing.dummy import Pool as ThreadPool
@@ -105,7 +105,6 @@ class Robot:
 
 
 def generation_threed(evolution, key: int) -> tuple:
-
     population = evolution.population.copy()
     env_per_strategy = evolution.env_per_strategy
     width = evolution.width
@@ -116,14 +115,14 @@ def generation_threed(evolution, key: int) -> tuple:
 
     thread_pool = ThreadPool(env_per_strategy)
 
-    def env_thread(*args):
+    def env_thread(number: int) -> int:
         robot = Robot(width, height,
                       generate_grid(width, height, grid_states, [0.7, 0.3]), rewards)
 
         [robot.play_strategy(population[key]) for _ in range(moves)]
         return robot.points
 
-    points = thread_pool.map(env_thread, list(range(env_per_strategy)))
+    points = thread_pool.map(env_thread, range(env_per_strategy))
     return key, statistics.mean(points), population[key]
 
 
