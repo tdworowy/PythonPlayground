@@ -79,7 +79,6 @@ if __name__ == "__main__":
         "keep_best": 1000,
         "moves": steps,
         "mutation_rate": 0.03,
-        "threads": 500,
         "rewards": rewards
     }
 
