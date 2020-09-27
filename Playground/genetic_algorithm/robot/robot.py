@@ -170,7 +170,7 @@ class Evolution:
 
     def play_generation(self):
         generation_thread_partial = partial(generation_threed, self)
-        with ProcessPool() as pool:
+        with ProcessPool() as pool: # TODO it take to match time
             future = pool.map(generation_thread_partial, list(self.population.keys()), timeout=60 * 5)
             iterator = future.result()
 
@@ -178,10 +178,11 @@ class Evolution:
                 try:
                     result = next(iterator)
                     self.results[result[0]] = result[1], result[2]
+                    print("*", end='')
                 except StopIteration:
-                    break
+                    print("_" * 20)
                 except TimeoutError as error:
-                    print(f"function took longer than {error.args[1]} seconds")
+                    print(f"function took longer than {error.args[1]} seconds", flush=True)
 
     @staticmethod
     def _get_best(results: dict) -> tuple:
@@ -248,7 +249,7 @@ class Evolution:
             self.generate_new_population(get_best=self.keep_best)
 
             fife_best = sorted(self.best[1], reverse=True)[0:5]
-            print(f"generation:{i} best 5:{fife_best}")
+            print(f"generation:{i} best 5:{fife_best}", flush=True)
 
             generations_.append(i)
             results.append(fife_best[0])
