@@ -1,12 +1,13 @@
 import statistics
+
 import time
-from random import choices, randrange
-from itertools import product
-from multiprocessing import Pool as ProcessPool
-from multiprocessing.dummy import Pool as ThreadPool
-from multiprocessing import cpu_count
-from matplotlib import pyplot as plt
 from functools import partial
+from itertools import product
+from multiprocessing.dummy import Pool as ThreadPool
+from pebble import ProcessPool
+from random import choices, randrange
+
+from matplotlib import pyplot as plt
 
 states = ['empty', "point", "wall"]
 actions = ["go_up", "go_down", "go_left", "go_right", "take_point"]
@@ -168,15 +169,19 @@ class Evolution:
             self.population[i] = strategy
 
     def play_generation(self):
-
-        process_pool = ProcessPool(cpu_count() - 1)
         generation_thread_partial = partial(generation_threed, self)
+        with ProcessPool() as pool:
+            future = pool.map(generation_thread_partial, list(self.population.keys()), timeout=60 * 5)
+            iterator = future.result()
 
-        processes_results = process_pool.map(generation_thread_partial,
-                                             list(self.population.keys()))
-
-        for result in processes_results:
-            self.results[result[0]] = result[1], result[2]
+            while True:
+                try:
+                    result = next(iterator)
+                    self.results[result[0]] = result[1], result[2]
+                except StopIteration:
+                    break
+                except TimeoutError as error:
+                    print(f"function took longer than {error.args[1]} seconds")
 
     @staticmethod
     def _get_best(results: dict) -> tuple:
@@ -248,10 +253,9 @@ class Evolution:
             generations_.append(i)
             results.append(fife_best[0])
 
-            if i % 100 == 0:
-                strategy = self.get_best()
-                save_strategy(strategy)
             end = time.time()
             print(f"Generation time: {end - start}")
 
+        strategy = self.get_best()
+        save_strategy(strategy)
         self.plot_learning_curve(generations_, results)

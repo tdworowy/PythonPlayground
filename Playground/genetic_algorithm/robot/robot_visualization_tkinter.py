@@ -72,13 +72,13 @@ if __name__ == "__main__":
     evolution_parameters = {
         "width": width // cell_size,
         "height": height // cell_size,
-        "init_pop_count": 3000,
+        "init_pop_count": 2000,
         "generation_count": 401,
         "env_per_strategy": 25,
         "keep_parents": True,
-        "keep_best": 1000,
+        "keep_best": 500,
         "moves": steps,
-        "mutation_rate": 0.03,
+        "mutation_rate": 0.04,
         "rewards": rewards
     }
 
