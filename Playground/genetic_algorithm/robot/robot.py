@@ -4,6 +4,8 @@ import time
 from functools import partial
 from itertools import product
 from multiprocessing.dummy import Pool as ThreadPool
+from os import cpu_count
+
 from pebble import ProcessPool
 from random import choices, randrange
 
@@ -113,7 +115,7 @@ def generation_threed(evolution, key: int) -> tuple:
     grid_states = evolution.grid_states
     rewards = evolution.rewards
     moves = evolution.moves
-
+    print(key)
     thread_pool = ThreadPool(env_per_strategy)
 
     def env_thread(number: int) -> int:
@@ -170,7 +172,7 @@ class Evolution:
 
     def play_generation(self):
         generation_thread_partial = partial(generation_threed, self)
-        with ProcessPool() as pool: # TODO it take to match time
+        with ProcessPool(max_workers=cpu_count() - 1) as pool: # TODO it take to match time, does it really run concurrently?
             future = pool.map(generation_thread_partial, list(self.population.keys()), timeout=60 * 5)
             iterator = future.result()
 
@@ -180,7 +182,8 @@ class Evolution:
                     self.results[result[0]] = result[1], result[2]
                     print("*", end='')
                 except StopIteration:
-                    print("_" * 20)
+                    print("\n"+"_" * 50)
+                    break
                 except TimeoutError as error:
                     print(f"function took longer than {error.args[1]} seconds", flush=True)
 

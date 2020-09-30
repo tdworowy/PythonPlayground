@@ -76,7 +76,7 @@ if __name__ == "__main__":
         "generation_count": 401,
         "env_per_strategy": 25,
         "keep_parents": True,
-        "keep_best": 500,
+        "keep_best": 300,
         "moves": steps,
         "mutation_rate": 0.04,
         "rewards": rewards
