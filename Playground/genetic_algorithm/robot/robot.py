@@ -115,7 +115,7 @@ def generation_threed(evolution, key: int) -> tuple:
     grid_states = evolution.grid_states
     rewards = evolution.rewards
     moves = evolution.moves
-    print(key)
+    #print(key)
     thread_pool = ThreadPool(env_per_strategy)
 
     def env_thread(number: int) -> int:
@@ -171,11 +171,13 @@ class Evolution:
             self.population[i] = strategy
 
     def play_generation(self):
-        generation_thread_partial = partial(generation_threed, self)
-        with ProcessPool(max_workers=cpu_count() - 1) as pool: # TODO it take to match time, does it really run concurrently?
-            future = pool.map(generation_thread_partial, list(self.population.keys()), timeout=60 * 5)
-            iterator = future.result()
 
+        with ProcessPool(max_workers=cpu_count() - 1) as pool: # TODO it take to match time, does it really run concurrently?
+            generation_thread_partial = partial(generation_threed, self)
+            future = pool.map(generation_thread_partial, list(self.population.keys()), timeout=60 * 5)
+
+            iterator = future.result()
+            print(list(iterator))
             while True:
                 try:
                     result = next(iterator)

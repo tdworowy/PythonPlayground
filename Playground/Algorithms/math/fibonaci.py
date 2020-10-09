@@ -67,22 +67,6 @@ def fib5(count):
 
 
 if __name__ == '__main__':
-    print(fib1(35))
-    print("*"*10)
-
-    print(fib2(35))
-    print("*" * 10)
-
-    print(fib3(35))
-    print("*" * 10)
-
-    print(fib4(35))
-    print("*" * 10)
-
-    print(fib4(35))
-    print("*" * 10)
-
-    print(fib5(35))
-    print("*" * 10)
-
-    print(fib5(35))
+    functions = [fib1, fib2, fib3, fib4, fib4, fib5, fib5]
+    for i, f in enumerate(functions):
+        print(f"{i} {f(35)}")
