@@ -1,23 +1,23 @@
 from random import randint
 
+from Playground.my_utils.staff.timer3 import timer3
 
-def gnome_sort(list_):
+
+@timer3
+def gnome_sort(list_: list) -> list:
     pos = 0
-    list_sort = list_[:]
-    while pos < len(list_sort):
-        if pos == 0 or list_sort[pos] >= list_sort[pos - 1]:
+    while pos < len(list_):
+        if pos == 0 or list_[pos] >= list_[pos - 1]:
             pos += 1
         else:
-            list_sort[pos], list_sort[pos - 1] = list_sort[pos - 1], list_sort[pos]
+            list_[pos], list_[pos - 1] = list_[pos - 1], list_[pos]
             pos -= 1
-    return list_sort
+    return list_
 
 
 if __name__ == '__main__':
-    list_sort = [randint(0, 10000) for x in range(1000)]
-    sortedList = gnome_sort(list_sort)
-    print(sortedList)
+    list_sort = [randint(0, 10000) for x in range(10000)]
+    sorted_list = gnome_sort(list_sort[:])
 
     list_sort.sort()
-    print(list_sort)
-    assert sortedList == list_sort
+    assert sorted_list == list_sort

@@ -1,10 +1,13 @@
 import sys
 from random import randint
 
+from Playground.my_utils.staff.timer3 import timer3
+
 sys.setrecursionlimit(10000)
 
 
-def merge_sort(list_):
+@timer3
+def merge_sort(list_: list) -> list:
     result = []
     if len(list_) < 2:
         return list_
@@ -26,10 +29,8 @@ def merge_sort(list_):
 
 
 if __name__ == '__main__':
-    list_sort = [randint(0, 10000) for x in range(1000)]
-    sortedList = merge_sort(list_sort)
-    print(sortedList)
+    list_sort = [randint(0, 10000) for x in range(10000)]
+    sorted_list = merge_sort(list_sort[:])
 
     list_sort.sort()
-    print(list_sort)
-    assert sortedList == list_sort
+    assert sorted_list == list_sort
