@@ -1,7 +1,10 @@
 from random import randint
 
+from Playground.my_utils.staff.timer3 import timer3
 
-def bubble_sort(list_):
+
+@timer3
+def bubble_sort1(list_: list) -> list:
     list_sort = list_[:]
     result = []
     i = 1
@@ -16,11 +19,20 @@ def bubble_sort(list_):
     return result[::-1]
 
 
-if __name__ == '__main__':
-    list_sort = [randint(0, 1000) for x in range(1000)]
-    sortedList = bubble_sort(list_sort)
-    print(sortedList)
+@timer3
+def bubble_sort2(list_: list) -> list:
+    last_element_index = len(list_) - 1
+    for pass_no in range(last_element_index, 0, -1):
+        for idx in range(pass_no):
+            if list_[idx] > list_[idx + 1]:
+                list_[idx], list_[idx + 1] = list_[idx + 1], list_[idx]
+    return list_
 
-    list_sort.sort()
-    print(list_sort)
-    assert sortedList == list_sort
+
+if __name__ == '__main__':
+    list_ = [randint(0, 1000) for x in range(10000)]
+    sorted_list1 = bubble_sort1(list_)
+    sorted_list2 = bubble_sort2(list_[:])
+
+    list_.sort()
+    assert sorted_list1 == list_ == sorted_list2
