@@ -11,12 +11,17 @@ def merge_sort(list_: list) -> list:
     result = []
     if len(list_) < 2:
         return list_
-    mid = int(len(list_) / 2)
+
+    mid = len(list_) // 2
     part_list1 = merge_sort(list_[:mid])
     part_list2 = merge_sort(list_[mid:])
+
     i = 0
     j = 0
-    while i < len(part_list1) and j < len(part_list2):
+    len1 = len(part_list1)
+    len2 = len(part_list2)
+
+    while i < len1 and j < len2:
         if part_list1[i] > part_list2[j]:
             result.append(part_list2[j])
             j += 1
