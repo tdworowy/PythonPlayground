@@ -6,7 +6,8 @@ from Playground.my_utils.staff.timer3 import timer3
 @timer3
 def gnome_sort(list_: list) -> list:
     pos = 0
-    while pos < len(list_):
+    list_len = len(list_)
+    while pos < list_len:
         if pos == 0 or list_[pos] >= list_[pos - 1]:
             pos += 1
         else:

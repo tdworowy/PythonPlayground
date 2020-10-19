@@ -8,7 +8,8 @@ def bubble_sort1(list_: list) -> list:
     list_sort = list_[:]
     result = []
     i = 1
-    while len(result) < len(list_):
+    list_len = len(list_)
+    while len(result) < list_len:
         for j in range(len(list_sort) - 1):
             if list_sort[j] > list_sort[i]:
                 list_sort[j], list_sort[i] = list_sort[i], list_sort[j]
