@@ -46,15 +46,15 @@ def timer2(label=' ', trace=True):
 def timer3(f):
     is_evaluating = False
 
-    def g(x):
+    def g(*args, **kwargs):
         nonlocal is_evaluating
         if is_evaluating:
-            return f(x)
+            return f(*args, **kwargs)
         else:
             start_time = time.perf_counter()
             is_evaluating = True
             try:
-                value = f(x)
+                value = f(*args, **kwargs)
             finally:
                 is_evaluating = False
             end_time = time.perf_counter()

@@ -137,6 +137,7 @@ def update_grid(grid: list, rules: defaultdict):
 
 
 if __name__ == "__main__":
-    grid = generate_grid_central(5, 5, 2)
-    for row in grid:
-        print(row)
+    grid = generate_grid_random_cells(1000, 1000, 0.7)
+    for i in range(100):
+        print(i)
+        grid = update_grid(grid, game_of_live_rules)
