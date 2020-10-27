@@ -1,4 +1,6 @@
+import functools
 import time
+from functools import wraps
 
 
 def timer(label=' ', trace=True):
@@ -46,6 +48,7 @@ def timer2(label=' ', trace=True):
 def timer3(f):
     is_evaluating = False
 
+    @functools.wraps(f)
     def g(*args, **kwargs):
         nonlocal is_evaluating
         if is_evaluating:

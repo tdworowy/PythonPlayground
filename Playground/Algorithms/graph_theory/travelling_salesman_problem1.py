@@ -8,7 +8,7 @@ def dist(x1: int, y1: int, x2: int, y2: int) -> float:
     return math.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2)
 
 
-def get_graph(coordinates: list) ->nx.Graph:
+def get_graph(coordinates: list) -> nx.Graph:
     g = nx.Graph()
     n = len(coordinates)
     for i in range(n):
@@ -137,7 +137,7 @@ def approximation(g: nx.Graph) -> float:
     min_tree = nx.minimum_spanning_tree(g)
     depth_first_preorder = list(nx.dfs_preorder_nodes(min_tree, 0))
     result = 0
-    for i in range(0, len(depth_first_preorder)-1):
+    for i in range(0, len(depth_first_preorder) - 1):
         result += g[depth_first_preorder[i]][depth_first_preorder[i + 1]]["weight"]
     result += g[depth_first_preorder[-1]][depth_first_preorder[0]]["weight"]
 
