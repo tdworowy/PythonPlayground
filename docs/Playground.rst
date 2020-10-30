@@ -14,11 +14,9 @@ Subpackages
    Playground.Exercises
    Playground.Functional_Programing
    Playground.Python_Staff
-   Playground.RabbitMQ
    Playground.UI
    Playground.Web
    Playground.dice_game
-   Playground.graph_theory
    Playground.my_utils
    Playground.objgraph_
    Playground.other_staff
@@ -43,6 +41,13 @@ Playground.root\_directory module
    :undoc-members:
    :show-inheritance:
 
+Playground.sound\_test module
+-----------------------------
+
+.. automodule:: Playground.sound_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
 
 Module contents
 ---------------

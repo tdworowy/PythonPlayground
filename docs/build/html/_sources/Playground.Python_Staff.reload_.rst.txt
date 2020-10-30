@@ -20,7 +20,6 @@ Playground.Python\_Staff.reload\_.module module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 

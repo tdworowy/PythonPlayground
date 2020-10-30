@@ -12,7 +12,6 @@ Playground.Python\_Staff.fizzbuzz.fzzzBuzz module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 

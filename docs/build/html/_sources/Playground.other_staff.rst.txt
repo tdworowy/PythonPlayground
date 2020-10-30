@@ -124,14 +124,6 @@ Playground.other\_staff.dice3 module
    :undoc-members:
    :show-inheritance:
 
-Playground.other\_staff.fibonaci module
----------------------------------------
-
-.. automodule:: Playground.other_staff.fibonaci
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
 Playground.other\_staff.find\_number1 module
 --------------------------------------------
 
@@ -275,7 +267,6 @@ Playground.other\_staff.test\_staff module
    :members:
    :undoc-members:
    :show-inheritance:
-
 
 Module contents
 ---------------

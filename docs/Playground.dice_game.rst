@@ -12,7 +12,6 @@ Playground.dice\_game.dice\_game module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 

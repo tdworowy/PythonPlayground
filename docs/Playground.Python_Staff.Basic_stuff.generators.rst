@@ -36,7 +36,6 @@ Playground.Python\_Staff.Basic\_stuff.generators.generators4 module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 

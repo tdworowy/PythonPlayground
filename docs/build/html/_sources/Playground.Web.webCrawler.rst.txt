@@ -12,7 +12,6 @@ Playground.Web.webCrawler.webCrawler module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 

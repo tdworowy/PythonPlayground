@@ -44,7 +44,6 @@ Playground.Complexity.sin\_map\_plot module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 

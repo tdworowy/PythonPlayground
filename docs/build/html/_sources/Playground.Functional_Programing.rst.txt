@@ -20,7 +20,6 @@ Playground.Functional\_Programing.pattern\_matching module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 

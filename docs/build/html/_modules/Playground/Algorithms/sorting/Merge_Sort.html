@@ -47,19 +47,27 @@
 <span></span><span class="kn">import</span> <span class="nn">sys</span>
 <span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">randint</span>
 
+<span class="kn">from</span> <span class="nn">Playground.my_utils.staff.timer3</span> <span class="kn">import</span> <span class="n">timer3</span>
+
 <span class="n">sys</span><span class="o">.</span><span class="n">setrecursionlimit</span><span class="p">(</span><span class="mi">10000</span><span class="p">)</span>
 
 
-<div class="viewcode-block" id="merge_sort"><a class="viewcode-back" href="../../../../Playground.Algorithms.sorting.html#Playground.Algorithms.sorting.Merge_Sort.merge_sort">[docs]</a><span class="k">def</span> <span class="nf">merge_sort</span><span class="p">(</span><span class="n">list_</span><span class="p">):</span>
+<div class="viewcode-block" id="merge_sort1"><a class="viewcode-back" href="../../../../Playground.Algorithms.sorting.html#Playground.Algorithms.sorting.Merge_Sort.merge_sort1">[docs]</a><span class="nd">@timer3</span>
+<span class="k">def</span> <span class="nf">merge_sort1</span><span class="p">(</span><span class="n">list_</span><span class="p">:</span> <span class="nb">list</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">:</span>
     <span class="n">result</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">list_</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">list_</span>
-    <span class="n">mid</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">list_</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
-    <span class="n">part_list1</span> <span class="o">=</span> <span class="n">merge_sort</span><span class="p">(</span><span class="n">list_</span><span class="p">[:</span><span class="n">mid</span><span class="p">])</span>
-    <span class="n">part_list2</span> <span class="o">=</span> <span class="n">merge_sort</span><span class="p">(</span><span class="n">list_</span><span class="p">[</span><span class="n">mid</span><span class="p">:])</span>
+
+    <span class="n">mid</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">list_</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span>
+    <span class="n">part_list1</span> <span class="o">=</span> <span class="n">merge_sort1</span><span class="p">(</span><span class="n">list_</span><span class="p">[:</span><span class="n">mid</span><span class="p">])</span>
+    <span class="n">part_list2</span> <span class="o">=</span> <span class="n">merge_sort1</span><span class="p">(</span><span class="n">list_</span><span class="p">[</span><span class="n">mid</span><span class="p">:])</span>
+
     <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">part_list1</span><span class="p">)</span> <span class="ow">and</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">part_list2</span><span class="p">):</span>
+    <span class="n">len1</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">part_list1</span><span class="p">)</span>
+    <span class="n">len2</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">part_list2</span><span class="p">)</span>
+
+    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">len1</span> <span class="ow">and</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">len2</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">part_list1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">part_list2</span><span class="p">[</span><span class="n">j</span><span class="p">]:</span>
             <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">part_list2</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
             <span class="n">j</span> <span class="o">+=</span> <span class="mi">1</span>
@@ -71,14 +79,49 @@
     <span class="k">return</span> <span class="n">result</span></div>
 
 
+<div class="viewcode-block" id="merge_sort2"><a class="viewcode-back" href="../../../../Playground.Algorithms.sorting.html#Playground.Algorithms.sorting.Merge_Sort.merge_sort2">[docs]</a><span class="nd">@timer3</span>
+<span class="k">def</span> <span class="nf">merge_sort2</span><span class="p">(</span><span class="n">list_</span><span class="p">:</span> <span class="nb">list</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">:</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">list_</span><span class="p">)</span> <span class="o">&gt;</span><span class="mi">1</span><span class="p">:</span>
+        <span class="n">mid</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">list_</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span>
+        <span class="n">left</span> <span class="o">=</span> <span class="n">list_</span><span class="p">[:</span><span class="n">mid</span><span class="p">]</span>
+        <span class="n">right</span> <span class="o">=</span> <span class="n">list_</span><span class="p">[</span><span class="n">mid</span><span class="p">:]</span>
+
+        <span class="n">merge_sort2</span><span class="p">(</span><span class="n">left</span><span class="p">)</span>
+        <span class="n">merge_sort2</span><span class="p">(</span><span class="n">right</span><span class="p">)</span>
+        <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span>
+
+        <span class="n">len_left</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">left</span><span class="p">)</span>
+        <span class="n">len_right</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">right</span><span class="p">)</span>
+
+        <span class="k">while</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">len_left</span> <span class="ow">and</span> <span class="n">b</span> <span class="o">&lt;</span> <span class="n">len_right</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">left</span><span class="p">[</span><span class="n">a</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">right</span><span class="p">[</span><span class="n">b</span><span class="p">]:</span>
+                <span class="n">list_</span><span class="p">[</span><span class="n">c</span><span class="p">]</span> <span class="o">=</span> <span class="n">left</span><span class="p">[</span><span class="n">a</span><span class="p">]</span>
+                <span class="n">a</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">list_</span><span class="p">[</span><span class="n">c</span><span class="p">]</span> <span class="o">=</span> <span class="n">right</span><span class="p">[</span><span class="n">b</span><span class="p">]</span>
+                <span class="n">b</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="n">c</span> <span class="o">+=</span> <span class="mi">1</span>
+
+        <span class="k">while</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">len_left</span><span class="p">:</span>
+            <span class="n">list_</span><span class="p">[</span><span class="n">c</span><span class="p">]</span> <span class="o">=</span> <span class="n">left</span><span class="p">[</span><span class="n">a</span><span class="p">]</span>
+            <span class="n">a</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="n">c</span> <span class="o">+=</span> <span class="mi">1</span>
+
+        <span class="k">while</span> <span class="n">b</span> <span class="o">&lt;</span> <span class="n">len_right</span><span class="p">:</span>
+            <span class="n">list_</span><span class="p">[</span><span class="n">c</span><span class="p">]</span> <span class="o">=</span> <span class="n">right</span><span class="p">[</span><span class="n">b</span><span class="p">]</span>
+            <span class="n">b</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="n">c</span> <span class="o">+=</span> <span class="mi">1</span>
+
+    <span class="k">return</span> <span class="n">list_</span></div>
+
+
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
-    <span class="n">list_sort</span> <span class="o">=</span> <span class="p">[</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10000</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1000</span><span class="p">)]</span>
-    <span class="n">sortedList</span> <span class="o">=</span> <span class="n">merge_sort</span><span class="p">(</span><span class="n">list_sort</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">sortedList</span><span class="p">)</span>
+    <span class="n">list_sort</span> <span class="o">=</span> <span class="p">[</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10000</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100000</span><span class="p">)]</span>
+    <span class="n">sorted_list1</span> <span class="o">=</span> <span class="n">merge_sort1</span><span class="p">(</span><span class="n">list_sort</span><span class="p">[:])</span>
+    <span class="n">sorted_list2</span> <span class="o">=</span> <span class="n">merge_sort2</span><span class="p">(</span><span class="n">list_sort</span><span class="p">[:])</span>
 
     <span class="n">list_sort</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">list_sort</span><span class="p">)</span>
-    <span class="k">assert</span> <span class="n">sortedList</span> <span class="o">==</span> <span class="n">list_sort</span>
+    <span class="k">assert</span> <span class="n">sorted_list1</span> <span class="o">==</span> <span class="n">sorted_list2</span> <span class="o">==</span> <span class="n">list_sort</span>
 </pre></div>
 
             <div class="clearer"></div>

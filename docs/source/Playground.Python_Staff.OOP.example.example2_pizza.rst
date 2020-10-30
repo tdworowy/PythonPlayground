@@ -20,7 +20,6 @@ Playground.Python\_Staff.OOP.example.example2\_pizza.pizzashop module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 

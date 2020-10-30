@@ -28,7 +28,6 @@ Playground.Algorithms.cryptography.rsa module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 

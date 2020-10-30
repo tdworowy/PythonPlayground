@@ -52,7 +52,6 @@ Playground.Functional\_Programing.basic.reduce module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 

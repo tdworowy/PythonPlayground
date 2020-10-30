@@ -20,7 +20,6 @@ Playground.Python\_Staff.OOP.interfaces.specialize1 module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 

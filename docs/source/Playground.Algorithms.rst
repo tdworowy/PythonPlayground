@@ -8,6 +8,7 @@ Subpackages
    :maxdepth: 4
 
    Playground.Algorithms.cryptography
+   Playground.Algorithms.graph_theory
    Playground.Algorithms.math
    Playground.Algorithms.sorting
 

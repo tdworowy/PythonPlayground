@@ -12,7 +12,6 @@ Playground.UI.tkinterUI module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 

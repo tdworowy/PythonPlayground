@@ -60,7 +60,6 @@ Playground.my\_utils.classTools\_.trace module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 

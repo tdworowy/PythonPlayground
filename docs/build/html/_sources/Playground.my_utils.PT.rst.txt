@@ -28,7 +28,6 @@ Playground.my\_utils.PT.generate\_csv\_for\_pt module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 

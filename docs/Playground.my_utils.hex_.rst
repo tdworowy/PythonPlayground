@@ -12,7 +12,6 @@ Playground.my\_utils.hex\_.hex\_convert module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 

@@ -12,7 +12,6 @@ Playground.my\_utils.danger.ultra\_kill module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 

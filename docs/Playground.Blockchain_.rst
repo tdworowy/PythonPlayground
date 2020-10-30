@@ -20,7 +20,6 @@ Playground.Blockchain\_.blockchain module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 

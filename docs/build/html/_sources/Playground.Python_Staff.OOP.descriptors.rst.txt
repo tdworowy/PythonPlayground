@@ -36,7 +36,6 @@ Playground.Python\_Staff.OOP.descriptors.propertyAsDesc module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 

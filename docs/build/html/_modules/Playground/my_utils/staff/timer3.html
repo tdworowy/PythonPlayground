@@ -44,7 +44,9 @@
           <div class="body" role="main">
             
   <h1>Source code for Playground.my_utils.staff.timer3</h1><div class="highlight"><pre>
-<span></span><span class="kn">import</span> <span class="nn">time</span>
+<span></span><span class="kn">import</span> <span class="nn">functools</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">wraps</span>
 
 
 <div class="viewcode-block" id="timer"><a class="viewcode-back" href="../../../../Playground.my_utils.staff.html#Playground.my_utils.staff.timer3.timer">[docs]</a><span class="k">def</span> <span class="nf">timer</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="n">trace</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
@@ -92,15 +94,16 @@
 <div class="viewcode-block" id="timer3"><a class="viewcode-back" href="../../../../Playground.my_utils.staff.html#Playground.my_utils.staff.timer3.timer3">[docs]</a><span class="k">def</span> <span class="nf">timer3</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
     <span class="n">is_evaluating</span> <span class="o">=</span> <span class="kc">False</span>
 
-    <span class="k">def</span> <span class="nf">g</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="nd">@functools</span><span class="o">.</span><span class="n">wraps</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">g</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="k">nonlocal</span> <span class="n">is_evaluating</span>
         <span class="k">if</span> <span class="n">is_evaluating</span><span class="p">:</span>
-            <span class="k">return</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">f</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="n">start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">perf_counter</span><span class="p">()</span>
             <span class="n">is_evaluating</span> <span class="o">=</span> <span class="kc">True</span>
             <span class="k">try</span><span class="p">:</span>
-                <span class="n">value</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+                <span class="n">value</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
             <span class="k">finally</span><span class="p">:</span>
                 <span class="n">is_evaluating</span> <span class="o">=</span> <span class="kc">False</span>
             <span class="n">end_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">perf_counter</span><span class="p">()</span>

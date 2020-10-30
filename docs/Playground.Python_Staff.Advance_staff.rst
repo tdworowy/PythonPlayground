@@ -84,7 +84,6 @@ Playground.Python\_Staff.Advance\_staff.struct\_ module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 

@@ -12,7 +12,6 @@ Playground.Data\_bases.neo4j.neo4jP module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 

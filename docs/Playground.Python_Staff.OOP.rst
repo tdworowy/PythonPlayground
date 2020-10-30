@@ -200,7 +200,6 @@ Playground.Python\_Staff.OOP.super\_ module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 

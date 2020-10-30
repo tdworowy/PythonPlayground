@@ -12,7 +12,6 @@ Playground.Python\_Staff.OOP.Property.properties module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 

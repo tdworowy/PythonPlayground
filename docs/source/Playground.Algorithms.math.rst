@@ -36,6 +36,14 @@ Playground.Algorithms.math.fast\_modular\_exponentiation module
    :undoc-members:
    :show-inheritance:
 
+Playground.Algorithms.math.fibonaci module
+------------------------------------------
+
+.. automodule:: Playground.Algorithms.math.fibonaci
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 Playground.Algorithms.math.find\_the\_rotation\_point module
 ------------------------------------------------------------
 
@@ -76,6 +84,13 @@ Playground.Algorithms.math.monte\_carlo\_method module
    :undoc-members:
    :show-inheritance:
 
+Playground.Algorithms.math.sieve\_of\_eratosthenes module
+---------------------------------------------------------
+
+.. automodule:: Playground.Algorithms.math.sieve_of_eratosthenes
+   :members:
+   :undoc-members:
+   :show-inheritance:
 
 Module contents
 ---------------

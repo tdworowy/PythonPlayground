@@ -20,7 +20,6 @@ Playground.Python\_Staff.funny\_staff.script module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 

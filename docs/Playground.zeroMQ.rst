@@ -12,7 +12,6 @@ Playground.zeroMQ.0mq\_ module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 

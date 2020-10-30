@@ -20,7 +20,6 @@ Playground.Web.TCP.TCP\_client module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 

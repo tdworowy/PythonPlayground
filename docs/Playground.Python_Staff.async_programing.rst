@@ -12,7 +12,6 @@ Playground.Python\_Staff.async\_programing.example\_ module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 

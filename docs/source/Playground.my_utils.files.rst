@@ -12,7 +12,6 @@ Playground.my\_utils.files.get\_files module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 

@@ -196,7 +196,6 @@ Playground.Python\_Staff.Basic\_stuff.zip\_emulator module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 

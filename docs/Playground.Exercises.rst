@@ -260,7 +260,6 @@ Playground.Exercises.exer\_31\_check\_string module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 

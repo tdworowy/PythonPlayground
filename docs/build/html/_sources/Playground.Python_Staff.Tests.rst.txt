@@ -20,7 +20,6 @@ Playground.Python\_Staff.Tests.unit\_tests2 module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 

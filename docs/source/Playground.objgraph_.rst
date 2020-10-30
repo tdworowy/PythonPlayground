@@ -12,7 +12,6 @@ Playground.objgraph\_.obj\_graph module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 

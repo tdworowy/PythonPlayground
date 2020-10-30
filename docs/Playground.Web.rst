@@ -29,7 +29,6 @@ Playground.Web.proxy module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 

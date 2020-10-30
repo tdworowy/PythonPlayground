@@ -20,6 +20,14 @@ Playground.Algorithms.sorting.Gnome\_Sort module
    :undoc-members:
    :show-inheritance:
 
+Playground.Algorithms.sorting.Insertion\_Sort module
+----------------------------------------------------
+
+.. automodule:: Playground.Algorithms.sorting.Insertion_Sort
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 Playground.Algorithms.sorting.Merge\_Sort module
 ------------------------------------------------
 
@@ -44,6 +52,13 @@ Playground.Algorithms.sorting.Select\_Sort module
    :undoc-members:
    :show-inheritance:
 
+Playground.Algorithms.sorting.Shell\_Sort module
+------------------------------------------------
+
+.. automodule:: Playground.Algorithms.sorting.Shell_Sort
+   :members:
+   :undoc-members:
+   :show-inheritance:
 
 Module contents
 ---------------

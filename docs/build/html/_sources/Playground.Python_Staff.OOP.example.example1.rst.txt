@@ -36,7 +36,6 @@ Playground.Python\_Staff.OOP.example.example1.updateDB module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 

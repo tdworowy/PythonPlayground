@@ -188,7 +188,6 @@ Playground.my\_utils.staff.tracer\_ module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 

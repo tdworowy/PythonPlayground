@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playground.Data_bases.postgresql.querys &#8212; Playground  documentation</title>
+    <link rel="stylesheet" href="../../../../_static/pyramid.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+    <script src="../../../../_static/jquery.js"></script>
+    <script src="../../../../_static/underscore.js"></script>
+    <script src="../../../../_static/doctools.js"></script>
+    <script src="../../../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neuton&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nobile:regular,italic,bold,bolditalic&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<!--[if lte IE 6]>
+<link rel="stylesheet" href="../../../../_static/ie6.css" type="text/css" media="screen" charset="utf-8" />
+<![endif]-->
+
+  </head><body>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../index.html">Playground  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../index.html" accesskey="U">Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Playground.Data_bases.postgresql.querys</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for Playground.Data_bases.postgresql.querys</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">os</span>
+
+<span class="kn">from</span> <span class="nn">Data_bases.postgresql.filesUtilitis</span> <span class="kn">import</span> <span class="n">FilesUtils</span>
+
+<span class="n">path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="vm">__file__</span><span class="p">))</span> <span class="o">+</span> <span class="s2">&quot;\Dane</span><span class="se">\\</span><span class="s2">&quot;</span>
+
+
+<div class="viewcode-block" id="Query"><a class="viewcode-back" href="../../../../Playground.Data_bases.postgresql.html#Playground.Data_bases.postgresql.querys.Query">[docs]</a><span class="k">class</span> <span class="nc">Query</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">connection</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">connection</span> <span class="o">=</span> <span class="n">connection</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">cursor</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+<div class="viewcode-block" id="Query.custom_query"><a class="viewcode-back" href="../../../../Playground.Data_bases.postgresql.html#Playground.Data_bases.postgresql.querys.Query.custom_query">[docs]</a>    <span class="k">def</span> <span class="nf">custom_query</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">query</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">cursor</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">result</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">ex</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Query.add_Itree_extension"><a class="viewcode-back" href="../../../../Playground.Data_bases.postgresql.html#Playground.Data_bases.postgresql.querys.Query.add_Itree_extension">[docs]</a>    <span class="k">def</span> <span class="nf">add_Itree_extension</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">custom_query</span><span class="p">(</span><span class="s2">&quot;CREATE EXTENSION ltree;&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Query.create_table"><a class="viewcode-back" href="../../../../Playground.Data_bases.postgresql.html#Playground.Data_bases.postgresql.querys.Query.create_table">[docs]</a>    <span class="k">def</span> <span class="nf">create_table</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">sql</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;CREATE TABLE workers(</span>
+<span class="s2">                                       id SERIAL,</span>
+<span class="s2">                                       first_name varchar,</span>
+<span class="s2">                                       last_name varchar,</span>
+<span class="s2">                                       picture bytea,</span>
+<span class="s2">                                       Link_to_picture varchar,</span>
+<span class="s2">                                       hierarchy ltree,</span>
+<span class="s2">                                       XML xml,</span>
+<span class="s2">                                       PRIMARY KEY(id)</span>
+<span class="s2">                                       );&quot;&quot;&quot;</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">custom_query</span><span class="p">(</span><span class="n">sql</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Table Workers created correctly&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Query.insert_data"><a class="viewcode-back" href="../../../../Playground.Data_bases.postgresql.html#Playground.Data_bases.postgresql.querys.Query.insert_data">[docs]</a>    <span class="k">def</span> <span class="nf">insert_data</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">sql</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;INSERT INTO workers (id,first_name,last_name,hierarchy)</span>
+<span class="s2">                  VALUES (1,&#39;Rick&#39;,&#39;Sanchez&#39;,&#39;BOSS&#39;),</span>
+<span class="s2">                   (2,&#39;Sterling&#39;,&#39;Archer&#39;,&#39;BOSS.AGENT&#39;),</span>
+<span class="s2">                   (3,&#39;William&#39;,&#39;Murderface&#39;,&#39;BOSS.DRUMER&#39;),</span>
+<span class="s2">                   (4,&#39;BoJack&#39;,&#39;Horseman&#39;,&#39;BOSS.AGENT.HORSMAN&#39;),</span>
+<span class="s2">                   (5,&#39;Homer &#39;,&#39;Simpson&#39;,&#39;BOSS.AGENT.HORSMAN.HOMER&#39;);&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">custom_query</span><span class="p">(</span><span class="n">sql</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span></div>
+
+<div class="viewcode-block" id="Query.insert_new_worker"><a class="viewcode-back" href="../../../../Playground.Data_bases.postgresql.html#Playground.Data_bases.postgresql.querys.Query.insert_new_worker">[docs]</a>    <span class="k">def</span> <span class="nf">insert_new_worker</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">,</span> <span class="n">first_name</span><span class="p">,</span> <span class="n">last_name</span><span class="p">,</span> <span class="n">hierarchy</span><span class="p">):</span>
+        <span class="n">sql</span> <span class="o">=</span> <span class="s2">&quot;INSERT INTO workers (id,first_name,last_name,hierarchy) VALUES(&#39;</span><span class="si">{x}</span><span class="s2">&#39;,&#39;</span><span class="si">{x1}</span><span class="s2">&#39;,&#39;</span><span class="si">{x2}</span><span class="s2">&#39;,&#39;</span><span class="si">{x3}</span><span class="s2">&#39;)&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="nb">id</span><span class="p">,</span>
+                                                                                                                  <span class="n">x1</span><span class="o">=</span><span class="n">first_name</span><span class="p">,</span>
+                                                                                                                  <span class="n">x2</span><span class="o">=</span><span class="n">last_name</span><span class="p">,</span>
+                                                                                                                  <span class="n">x3</span><span class="o">=</span><span class="n">hierarchy</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">custom_query</span><span class="p">(</span><span class="n">sql</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">connection</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Query.insert_pictures"><a class="viewcode-back" href="../../../../Playground.Data_bases.postgresql.html#Playground.Data_bases.postgresql.querys.Query.insert_pictures">[docs]</a>    <span class="k">def</span> <span class="nf">insert_pictures</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">fs</span> <span class="o">=</span> <span class="n">FilesUtils</span><span class="p">()</span>
+        <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">fs</span><span class="o">.</span><span class="n">get_files</span><span class="p">(</span><span class="n">fs</span><span class="o">.</span><span class="n">get_path</span><span class="p">()):</span>
+            <span class="n">sql</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;update workers</span>
+<span class="s2">            set picture = </span><span class="si">{x}</span><span class="s2"></span>
+<span class="s2">            WHERE id = </span><span class="si">{y}</span><span class="s2">&quot;&quot;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">fs</span><span class="o">.</span><span class="n">file_to_stream</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">fs</span><span class="o">.</span><span class="n">get_path</span><span class="p">())),</span> <span class="n">y</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+            <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+
+            <span class="bp">self</span><span class="o">.</span><span class="n">custom_query</span><span class="p">(</span><span class="n">sql</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span></div>
+
+<div class="viewcode-block" id="Query.insert_new_pictures"><a class="viewcode-back" href="../../../../Playground.Data_bases.postgresql.html#Playground.Data_bases.postgresql.querys.Query.insert_new_pictures">[docs]</a>    <span class="k">def</span> <span class="nf">insert_new_pictures</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">,</span> <span class="n">file_name</span><span class="p">):</span>
+        <span class="n">fs</span> <span class="o">=</span> <span class="n">FilesUtils</span><span class="p">()</span>
+        <span class="n">sql</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;update workers</span>
+<span class="s2">                set picture = </span><span class="si">{x}</span><span class="s2"></span>
+<span class="s2">                WHERE id = </span><span class="si">{y}</span><span class="s2">&quot;&quot;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">fs</span><span class="o">.</span><span class="n">file_to_stream</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="n">fs</span><span class="o">.</span><span class="n">get_new_path</span><span class="p">())),</span> <span class="n">y</span><span class="o">=</span><span class="nb">id</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">custom_query</span><span class="p">(</span><span class="n">sql</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">connection</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Query.insert_pictures_links"><a class="viewcode-back" href="../../../../Playground.Data_bases.postgresql.html#Playground.Data_bases.postgresql.querys.Query.insert_pictures_links">[docs]</a>    <span class="k">def</span> <span class="nf">insert_pictures_links</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">fs</span> <span class="o">=</span> <span class="n">FilesUtils</span><span class="p">()</span>
+        <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">fs</span><span class="o">.</span><span class="n">get_files</span><span class="p">(</span><span class="n">fs</span><span class="o">.</span><span class="n">get_path</span><span class="p">()):</span>
+            <span class="n">path</span> <span class="o">=</span> <span class="s2">&quot;&#39;&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">fs</span><span class="o">.</span><span class="n">get_path</span><span class="p">()</span> <span class="o">+</span> <span class="n">file</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\\</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\\\\</span><span class="s2">&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;&#39;&quot;</span>
+            <span class="n">sql</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;update workers</span>
+<span class="s2">                  set Link_to_picture = </span><span class="si">{x}</span><span class="s2"></span>
+<span class="s2">                  WHERE id = </span><span class="si">{y}</span><span class="s2">&quot;&quot;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">path</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+            <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">custom_query</span><span class="p">(</span><span class="n">sql</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span></div>
+
+<div class="viewcode-block" id="Query.insert_new_pictures_links"><a class="viewcode-back" href="../../../../Playground.Data_bases.postgresql.html#Playground.Data_bases.postgresql.querys.Query.insert_new_pictures_links">[docs]</a>    <span class="k">def</span> <span class="nf">insert_new_pictures_links</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">picture</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
+        <span class="n">fs</span> <span class="o">=</span> <span class="n">FilesUtils</span><span class="p">()</span>
+        <span class="n">path</span> <span class="o">=</span> <span class="s2">&quot;&#39;&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">fs</span><span class="o">.</span><span class="n">get_new_path</span><span class="p">()</span> <span class="o">+</span> <span class="n">picture</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\\</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\\\\</span><span class="s2">&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;&#39;&quot;</span>
+        <span class="n">sql</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;update workers</span>
+<span class="s2">                     set Link_to_picture = </span><span class="si">{x}</span><span class="s2"></span>
+<span class="s2">                     WHERE id = </span><span class="si">{y}</span><span class="s2">&quot;&quot;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">path</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="nb">id</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">custom_query</span><span class="p">(</span><span class="n">sql</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">connection</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Query.get_picture"><a class="viewcode-back" href="../../../../Playground.Data_bases.postgresql.html#Playground.Data_bases.postgresql.querys.Query.get_picture">[docs]</a>    <span class="k">def</span> <span class="nf">get_picture</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
+        <span class="n">sql</span> <span class="o">=</span> <span class="s2">&quot;SELECT picture FROM workers WHERE id=&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">custom_query</span><span class="p">(</span><span class="n">sql</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
+        <span class="k">return</span> <span class="n">result</span></div>
+
+<div class="viewcode-block" id="Query.get_picture_path"><a class="viewcode-back" href="../../../../Playground.Data_bases.postgresql.html#Playground.Data_bases.postgresql.querys.Query.get_picture_path">[docs]</a>    <span class="k">def</span> <span class="nf">get_picture_path</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
+        <span class="n">sql</span> <span class="o">=</span> <span class="s2">&quot;SELECT Link_to_picture FROM workers WHERE id=&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">custom_query</span><span class="p">(</span><span class="n">sql</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
+        <span class="k">return</span> <span class="n">result</span></div>
+
+<div class="viewcode-block" id="Query.get_hierarchy_from"><a class="viewcode-back" href="../../../../Playground.Data_bases.postgresql.html#Playground.Data_bases.postgresql.querys.Query.get_hierarchy_from">[docs]</a>    <span class="k">def</span> <span class="nf">get_hierarchy_from</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">root</span><span class="p">):</span>
+        <span class="n">sql</span> <span class="o">=</span> <span class="s2">&quot;SELECT * FROM workers where hierarchy ~ &#39;*.&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">root</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;.*</span><span class="se">\&#39;</span><span class="s2">&quot;</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Match any label path containing the label: &quot;</span> <span class="o">+</span> <span class="n">root</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">custom_query</span><span class="p">(</span><span class="n">sql</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span></div>
+
+<div class="viewcode-block" id="Query.get_hierarchy_last"><a class="viewcode-back" href="../../../../Playground.Data_bases.postgresql.html#Playground.Data_bases.postgresql.querys.Query.get_hierarchy_last">[docs]</a>    <span class="k">def</span> <span class="nf">get_hierarchy_last</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">last</span><span class="p">):</span>
+        <span class="n">sql</span> <span class="o">=</span> <span class="s2">&quot;SELECT * FROM workers where hierarchy ~ &#39;*.&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">last</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\&#39;</span><span class="s2">&quot;</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Match any label path whose last label is: &quot;</span> <span class="o">+</span> <span class="n">last</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">custom_query</span><span class="p">(</span><span class="n">sql</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span></div>
+
+<div class="viewcode-block" id="Query.get_hierarchy_exa"><a class="viewcode-back" href="../../../../Playground.Data_bases.postgresql.html#Playground.Data_bases.postgresql.querys.Query.get_hierarchy_exa">[docs]</a>    <span class="k">def</span> <span class="nf">get_hierarchy_exa</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">exa</span><span class="p">):</span>
+        <span class="n">sql</span> <span class="o">=</span> <span class="s2">&quot;SELECT * FROM workers where hierarchy ~ &#39;&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">exa</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\&#39;</span><span class="s2">&quot;</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Match the exact label path: &quot;</span> <span class="o">+</span> <span class="n">exa</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">custom_query</span><span class="p">(</span><span class="n">sql</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span></div>
+
+<div class="viewcode-block" id="Query.get_genre_from_xml_be_id"><a class="viewcode-back" href="../../../../Playground.Data_bases.postgresql.html#Playground.Data_bases.postgresql.querys.Query.get_genre_from_xml_be_id">[docs]</a>    <span class="k">def</span> <span class="nf">get_genre_from_xml_be_id</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
+        <span class="n">sql</span> <span class="o">=</span> <span class="s2">&quot;SELECT  xpath(&#39;/INFO/Genre/text()&#39;,xml) from workers  where id =&quot;</span> <span class="o">+</span> <span class="nb">id</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Get genre be id: &quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">custom_query</span><span class="p">(</span><span class="n">sql</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span></div>
+
+<div class="viewcode-block" id="Query.get_genre_from_xml"><a class="viewcode-back" href="../../../../Playground.Data_bases.postgresql.html#Playground.Data_bases.postgresql.querys.Query.get_genre_from_xml">[docs]</a>    <span class="k">def</span> <span class="nf">get_genre_from_xml</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">sql</span> <span class="o">=</span> <span class="s2">&quot;SELECT  xpath(&#39;/INFO/Genre/text()&#39;,xml) from workers&quot;</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Get all genres&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">custom_query</span><span class="p">(</span><span class="n">sql</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span></div>
+
+<div class="viewcode-block" id="Query.insert_xml"><a class="viewcode-back" href="../../../../Playground.Data_bases.postgresql.html#Playground.Data_bases.postgresql.querys.Query.insert_xml">[docs]</a>    <span class="k">def</span> <span class="nf">insert_xml</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">xml_file_name</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
+        <span class="n">fs</span> <span class="o">=</span> <span class="n">FilesUtils</span><span class="p">()</span>
+        <span class="n">xml_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">fs</span><span class="o">.</span><span class="n">get_new_path</span><span class="p">()</span> <span class="o">+</span> <span class="n">xml_file_name</span> <span class="o">+</span> <span class="s2">&quot;.xml&quot;</span><span class="p">)</span>
+        <span class="n">xml_data</span> <span class="o">=</span> <span class="n">xml_file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+
+        <span class="n">sql</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;update workers</span>
+<span class="s2">                   set XML = &#39;</span><span class="si">{x}</span><span class="s2">&#39;</span>
+<span class="s2">                   WHERE id = </span><span class="si">{y}</span><span class="s2">&quot;&quot;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">xml_data</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="nb">id</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">custom_query</span><span class="p">(</span><span class="n">sql</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">connection</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Query.init_load"><a class="viewcode-back" href="../../../../Playground.Data_bases.postgresql.html#Playground.Data_bases.postgresql.querys.Query.init_load">[docs]</a>    <span class="k">def</span> <span class="nf">init_load</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;***Start initial data Load***&quot;</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">add_Itree_extension</span><span class="p">()</span>  <span class="c1"># need to be run only onece</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">create_table</span><span class="p">()</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">insert_data</span><span class="p">()</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">insert_pictures_links</span><span class="p">()</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">insert_pictures</span><span class="p">()</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">connection</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;***initial data Load Completed***&quot;</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">ex</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;***initial data Load failed***&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Query.drop_table"><a class="viewcode-back" href="../../../../Playground.Data_bases.postgresql.html#Playground.Data_bases.postgresql.querys.Query.drop_table">[docs]</a>    <span class="k">def</span> <span class="nf">drop_table</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">custom_query</span><span class="p">(</span><span class="s2">&quot;DROP TABLE workers&quot;</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">connection</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">ex</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span></div></div>
+</pre></div>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../index.html">Playground  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../index.html" >Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Playground.Data_bases.postgresql.querys</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Tom.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.2.1.
+    </div>
+  </body>
+</html>

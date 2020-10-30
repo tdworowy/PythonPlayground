@@ -78,7 +78,6 @@ Playground.Data\_bases.postgresql.utils module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 

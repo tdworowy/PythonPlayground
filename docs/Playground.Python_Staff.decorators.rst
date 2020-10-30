@@ -76,7 +76,6 @@ Playground.Python\_Staff.decorators.tracer module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 
