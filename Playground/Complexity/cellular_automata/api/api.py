@@ -58,7 +58,8 @@ class CellularAutomata2DStep(Resource):
         grid = RoundList([RoundList([value for value in row]) for row in grid])
         new_grid = update_grid_one_d(grid, rules[rule])
 
-        return new_grid, 200
+        response = {'grid': new_grid}
+        return response, 200
 
 
 @api.route('/grid/1d/random')
@@ -104,8 +105,8 @@ class CellularAutomata1DStep(Resource):
                               neighborhood_size=int(neighborhood_size),
                               colours=colours)
         new_grid = cellular_automata_step_1d(input_list=grid, rules=rules)
-
-        return new_grid, 200
+        response = {'grid': new_grid}
+        return response, 200
 
 
 @api.route('/')
