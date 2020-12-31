@@ -83,6 +83,18 @@ walled_cities_rules = {
 }
 walled_cities_rules = defaultdict(lambda: 0, walled_cities_rules)
 
+rules = {
+    'game_of_life': game_of_live_rules,
+    'amoeba': amoeba_rules,
+    'twoXTwo': _2x2_rules,
+    'threeFourLive': _34_live_rules,
+    'coagulations': coagulations_rules,
+    'mazectric_rules': mazectric_rules,
+    'move': move_rules,
+    'walled_cities': walled_cities_rules
+
+}
+
 
 def generate_snowflake_rule(neighbours_numbers: list):
     snowflake_rules = default_dict(lambda self, key: key[0])
@@ -94,20 +106,20 @@ def generate_snowflake_rule(neighbours_numbers: list):
     return snowflake_rules
 
 
-def generate_grid_random_cells(width: int, height: int, probability_of_one: float) -> list:
+def generate_grid_random_cells(width: int, height: int, probability_of_one: float) -> RoundList:
     probability_of_zero = 1 - probability_of_one
     return RoundList(
         [RoundList([choices([0, 1], [probability_of_zero, probability_of_one])[0] for _ in range(width)])
          for _ in range(height)])
 
 
-def generate_grid_one_cell(width: int, height: int) -> list:
+def generate_grid_one_cell(width: int, height: int) -> RoundList:
     grid = RoundList([RoundList([0 for _ in range(width)]) for _ in range(height)])
     grid[width // 2][height // 2] = 1
     return grid
 
 
-def generate_grid_central(width: int, height: int, cell_count: int = 1) -> list:
+def generate_grid_central(width: int, height: int, cell_count: int = 1) -> RoundList:
     if cell_count == 1: return generate_grid_one_cell(width, height)
     grid = RoundList([RoundList([0 for _ in range(width)]) for _ in range(height)])
     x = width // 2
@@ -118,7 +130,7 @@ def generate_grid_central(width: int, height: int, cell_count: int = 1) -> list:
     return grid
 
 
-def count_colored_neighbours(x: int, y: int, grid: list):
+def count_colored_neighbours(x: int, y: int, grid: RoundList):
     colored_neighbours = 0
     for i in range(x - 1, x + 2):
         for j in range(y - 1, y + 2):
@@ -126,7 +138,7 @@ def count_colored_neighbours(x: int, y: int, grid: list):
     return colored_neighbours
 
 
-def update_grid(grid: list, rules: defaultdict):
+def update_grid_one_d(grid: RoundList, rules: defaultdict):
     new_grid = RoundList([RoundList([value for value in row]) for row in grid])
     for i, row in enumerate(grid):
         for j, cell in enumerate(row):
@@ -140,4 +152,4 @@ if __name__ == "__main__":
     grid = generate_grid_random_cells(1000, 1000, 0.7)
     for i in range(100):
         print(i)
-        grid = update_grid(grid, game_of_live_rules)
+        grid = update_grid_one_d(grid, game_of_live_rules)

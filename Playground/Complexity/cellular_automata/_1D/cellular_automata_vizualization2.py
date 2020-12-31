@@ -1,6 +1,6 @@
 import yaml
 import pygame
-from Playground.Complexity.cellular_automata._1D.cellular_automata import cellular_automata_step, generate_rule
+from Playground.Complexity.cellular_automata._1D.cellular_automata import cellular_automata_step_1d, generate_rule
 from Playground.Complexity.cellular_automata._1D.cellular_automata_vizualization1 import generate_random
 from Playground.Complexity.cellular_automata.utils.utils import RoundList
 
@@ -65,7 +65,7 @@ class GUI:
 
         while self.running:
             self.draw_cell(self.input_list)
-            self.input_list = cellular_automata_step(self.input_list, rule)
+            self.input_list = cellular_automata_step_1d(self.input_list, rule)
 
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:

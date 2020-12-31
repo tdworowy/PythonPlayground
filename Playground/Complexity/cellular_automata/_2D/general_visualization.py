@@ -2,7 +2,7 @@ import tkinter
 from collections import defaultdict
 from doctest import master
 
-from Playground.Complexity.cellular_automata._2D.general_2d_automata import generate_grid_random_cells, update_grid
+from Playground.Complexity.cellular_automata._2D.general_2d_automata import generate_grid_random_cells, update_grid_one_d
 
 
 # TODO use pyglet to increase performance
@@ -65,7 +65,7 @@ class CellularAutomata2DVisualization:
             x = coordinate['x2']
             y = 0
         self.prev_step = [[value for value in row] for row in self.grid]
-        self.grid = update_grid(self.grid, rules=self.rules)
+        self.grid = update_grid_one_d(self.grid, rules=self.rules)
 
     def play_call_back(self):
         while 1:

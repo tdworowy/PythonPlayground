@@ -8,7 +8,7 @@ from typing import Iterable
 from PIL import Image
 
 from Playground.Complexity.cellular_automata._1D.cellular_automata import RoundList, generate_rule, \
-    cellular_automata_step
+    cellular_automata_step_1d, generate_random
 
 
 def count_rules(neighborhood_size: int, color_count: int) -> int:
@@ -18,10 +18,6 @@ def count_rules(neighborhood_size: int, color_count: int) -> int:
 # def generate_random(input_list: list, weights: list, length: int):
 #     temp = [choices(input_list, weights) for i in range(length)]
 #     return [ele[0] for ele in temp]
-
-def generate_random(input_list: list, length: int):
-    temp = [choices(input_list) for i in range(length)]
-    return [ele[0] for ele in temp]
 
 
 def take_screenshot(folder: str, file_name: str, canvas: tkinter.Canvas):
@@ -133,7 +129,7 @@ class GUI:
 
             self.cells.append(rectangle)
             self.x += self.cell_size
-        self.input_list = cellular_automata_step(self.input_list, self.rule)
+        self.input_list = cellular_automata_step_1d(self.input_list, self.rule)
         self.y += self.cell_size
 
     def play_call_back(self):
@@ -172,7 +168,7 @@ class GUI:
         for rule in rules_iter:
             rule_file = f"rule_{rule}_{self.init_way}"
 
-            if not self.replay and rule_file+".png" in files_list:
+            if not self.replay and rule_file + ".png" in files_list:
                 break
 
             self.rule = generate_rule(rule,

@@ -39,7 +39,7 @@ def generate_rule(wolfram_number: int, neighborhood_size: int = 3, colours: list
     return rule
 
 
-def cellular_automata_step(input_list: RoundList, rules: list) -> RoundList:
+def cellular_automata_step_1d(input_list: RoundList, rules: list) -> RoundList:
     output_list = []
     for i in range(len(input_list)):
         for rule in rules:
@@ -53,6 +53,11 @@ def cellular_automata_step(input_list: RoundList, rules: list) -> RoundList:
     return RoundList(output_list)
 
 
+def generate_random(input_list: list, length: int):
+    temp = [random.choices(input_list) for i in range(length)]
+    return [ele[0] for ele in temp]
+
+
 if __name__ == "__main__":
     input_list = [0] * random.randrange(50, 100) + [1] * random.randrange(50, 100)
     random.shuffle(input_list)
@@ -62,5 +67,5 @@ if __name__ == "__main__":
         print(f"{seg.neighborhood} {seg.type} ")
 
     for i in range(20):
-        input_list = cellular_automata_step(input_list, rule)
+        input_list = cellular_automata_step_1d(input_list, rule)
         print("".join(["*" if i == 1 else " " for i in input_list]))
