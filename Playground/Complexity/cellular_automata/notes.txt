@@ -1,3 +1,0 @@
-TODO:
- - flask api
- - web frontend
