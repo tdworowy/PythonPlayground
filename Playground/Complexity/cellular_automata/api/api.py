@@ -12,10 +12,20 @@ app = Flask(__name__)
 api.init_app(app)
 
 
+@app.after_request
+def after_request(response):
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
+    response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE')
+    print(response)
+    return response
+
+
 @api.route('/grid/2d/random')
 class Grid2dRandom(Resource):
     @api.doc(params={'width': 'width', 'height': 'height', 'one_prob': 'probability of one (colored state)'})
     def get(self):
+        print(request.args)
         width = request.args.get('width')
         height = request.args.get('height')
         probability_of_one = request.args.get('one_prob')
@@ -120,4 +130,4 @@ class Default(Resource):
 
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=5000)
+    app.run(host="0.0.0.0", port=5000, debug=True)
