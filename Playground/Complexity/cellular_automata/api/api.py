@@ -40,6 +40,7 @@ class Grid2dRandom(Resource):
 class Grid2dCenter(Resource):
     @api.doc(params={'width': 'width', 'height': 'height', 'cell_count': 'number of cells in grid center'})
     def get(self):
+        print(request.args)
         width = request.args.get('width')
         height = request.args.get('height')
         cell_count = request.args.get('cell_count')
@@ -76,6 +77,7 @@ class CellularAutomata2DStep(Resource):
 class Grid1dRandom(Resource):
     @api.doc(params={'width': 'width', 'colors_count': 'colors count (states)'})
     def get(self):
+        print(request.args)
         width = request.args.get('width')
         colors_count = request.args.get('colors_count')
         grid = RoundList(generate_random(
