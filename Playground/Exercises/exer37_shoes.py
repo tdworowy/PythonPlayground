@@ -1,20 +1,15 @@
 from collections import Counter
 
 
-# it is ugly
-def count_earnings(shoes_sizes: list, demands: list):
-    shoes_sizes = Counter(shoes_sizes)
-    indexes = []
-    earnings = 0
-    for size in shoes_sizes:
-        shou_count = shoes_sizes[size]
-        for count in range(shoes_sizes[size]):
-            for i, demand in enumerate(demands):
-                if size == demand[0] and i not in indexes and shou_count != 0:
-                    indexes.append(i)
-                    earnings += demand[1]
-                    shou_count -= 1
-    return earnings
+class shoeShop:
+    def __init__(self, shoes_sizes: list):
+        self.shoes_sizes = Counter(shoes_sizes)
+        self.earnings = 0
+
+    def sale(self, size: int, price: int):
+        if self.shoes_sizes[size]:
+            self.shoes_sizes[size] -= 1
+            self.earnings += price
 
 
 if __name__ == '__main__':
@@ -29,4 +24,7 @@ if __name__ == '__main__':
         (18, 60),
         (10, 50)
     ]
-    print(count_earnings(shoes_sizes, demands))
+    shoe_shop = shoeShop(shoes_sizes)
+    for demand in demands:
+        shoe_shop.sale(*demand)
+    print(shoe_shop.earnings)  # 200
