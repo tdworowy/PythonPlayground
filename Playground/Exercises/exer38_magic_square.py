@@ -32,11 +32,11 @@ def generate_square(size: int) -> np.ndarray:
 def generate_all_magic_squares(size: int) -> list:
     rotations = [np.rot90(generate_square(size), x) for x in range(size + 1)]
     reflections = [np.flip(x, 1) for x in rotations]
-    all_magic_3x3 = rotations + reflections
-    return [ele.tolist() for ele in all_magic_3x3]
+    all_magic = rotations + reflections
+    return [ele.tolist() for ele in all_magic]
 
 
-def forming_magic_square(square: list)->int:
+def forming_magic_square(square: list) -> int:
     all_magic_squares = generate_all_magic_squares(len(square[0]))
 
     if square in all_magic_squares:
