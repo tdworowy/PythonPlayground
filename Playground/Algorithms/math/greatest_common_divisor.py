@@ -12,7 +12,8 @@ def extended_gcd(a: int, b: int) -> tuple:
 
 
 if __name__ == "__main__":
-    print(extended_gcd(10, 6))
-    print(extended_gcd(7, 5))
-    print(extended_gcd(391, 299))
-    print(extended_gcd(239, 201))
+    numbers = [981982, 23232, 232323, 224242, 23232323, 2930290392039, 232323]
+    g = numbers[0]
+    for number in numbers[1::]:
+        g = extended_gcd(g, number)[0]
+    print(g)
