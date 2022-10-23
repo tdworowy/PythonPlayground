@@ -1,21 +1,24 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
+x_lower_lim = 2.8  # 2.5
+x_upper_lim = 4  # 4
 
-def plot_bifurcation_diagram(map_function, n: int = 10000, iterations: int = 1000):
-    r = np.linspace(2.5, 4.0, n)
+
+def plot_bifurcation_diagram(map_function, n: int = 100000, iterations: int = 10000):
+    r = np.linspace(x_lower_lim, x_upper_lim, n, dtype=np.float64)
     last = 100
-    x = 1e-5 * np.ones(n)
-    lyapunov = np.zeros(n)
+    x = 1e-5 * np.ones(n, dtype=np.float64)
+    lyapunov = np.zeros(n, dtype=np.float64)
     fig, (ax1, ax2) = plt.subplots(2, 1,
                                    figsize=(8, 9),
                                    sharex=True)
     for i in range(iterations):
         x = map_function(r, x)
-        lyapunov += np.log(abs(r - 2 * r * x))
+        lyapunov += np.log(abs(r - 2 * r * x), dtype=np.float64)
         if i >= (iterations - last):
             ax1.plot(r, x, ',k', alpha=.25)
-    ax1.set_xlim(2.5, 4)
+    ax1.set_xlim(x_lower_lim, x_upper_lim)
     ax1.set_title("Bifurcation diagram")
 
     ax2.axhline(0, color='k', lw=.5, alpha=.5)
@@ -25,7 +28,7 @@ def plot_bifurcation_diagram(map_function, n: int = 10000, iterations: int = 100
     ax2.plot(r[lyapunov >= 0],
              lyapunov[lyapunov >= 0] / iterations,
              '.r', alpha=.5, ms=.5)
-    ax2.set_xlim(2.5, 4)
+    ax2.set_xlim(x_lower_lim, x_upper_lim)
     ax2.set_ylim(-2, 1)
     ax2.set_title("Lyapunov exponent")
     plt.tight_layout()

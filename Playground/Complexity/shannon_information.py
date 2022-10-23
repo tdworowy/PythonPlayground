@@ -15,6 +15,7 @@ def shannon_information_text(text: str) -> float:
     result = -sum(probabilities)
     return result if result > 0 else 0
 
+
 if __name__ == "__main__":
     print(shannon_information_text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi facilisis quam et "
                                    "mauris cursus laoreet."))
