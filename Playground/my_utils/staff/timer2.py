@@ -8,10 +8,10 @@ def timer(func, *pargs, **kargs):
     _reps = kargs.pop('_reps', 1000)
     trace(func, pargs, kargs, _reps)
     replist = range(_reps)
-    start = time.clock()
+    start = time.process_time()
     for i in replist:
         ret = func(*pargs, **kargs)
-    elapsed = time.clock() - start
+    elapsed = time.process_time() - start
     return elapsed, ret
 
 

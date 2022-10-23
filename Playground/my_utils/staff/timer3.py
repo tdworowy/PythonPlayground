@@ -1,6 +1,5 @@
 import functools
 import time
-from functools import wraps
 
 
 def timer(label=' ', trace=True):
@@ -10,9 +9,9 @@ def timer(label=' ', trace=True):
             self.alltime = 0
 
         def __call__(self, *args, **kwargs):
-            start = time.clock()
+            start = time.process_time()
             result = self.func(*args, **kwargs)
-            elapsed = time.clock() - start
+            elapsed = time.process_time() - start
             self.alltime += elapsed
             if trace:
                 format = '%s %s: %.5f, %.5f'

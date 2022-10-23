@@ -2,7 +2,7 @@ import sys
 
 from Playground.my_utils.staff import timer1, timer2
 
-reps = 10000
+reps = 100000
 replist = range(reps)
 
 

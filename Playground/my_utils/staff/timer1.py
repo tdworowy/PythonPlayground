@@ -5,10 +5,10 @@ reps_list = range(reps)
 
 
 def timer(func, *params, **kargs):
-    start = time.clock()
+    start = time.process_time()
     for i in reps_list:
         ret = func(*params, **kargs)
-    elapsed = time.clock() - start
+    elapsed = time.process_time() - start
     return elapsed, ret
 
 
