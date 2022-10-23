@@ -5,7 +5,7 @@ x_lower_lim = 2.8  # 2.5
 x_upper_lim = 4  # 4
 
 
-def plot_bifurcation_diagram(map_function, n: int = 100000, iterations: int = 10000):
+def plot_bifurcation_diagram(map_function, n: int = 100000, iterations: int = 10000) -> plt:
     r = np.linspace(x_lower_lim, x_upper_lim, n, dtype=np.float64)
     last = 100
     x = 1e-5 * np.ones(n, dtype=np.float64)
@@ -35,7 +35,7 @@ def plot_bifurcation_diagram(map_function, n: int = 100000, iterations: int = 10
     return plt
 
 
-def logistic_map(r: float, x: float):
+def logistic_map(r: np.ndarray, x: np.ndarray) -> np.ndarray:
     return r * x * (1 - x)
 
 
