@@ -1,6 +1,6 @@
-message = "njchdgvkggnvfaecmxlq"
+message = "xjuqoqutirqxcjhnxqsh"
 def printer():
-    print(message)
-message2 = "fwncp"
+      print(message)
+message2 = "qcdhz"
 def printer2():
-    print(message2)
+     print(message2)
