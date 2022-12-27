@@ -11,10 +11,10 @@ def maximum_bags(capacity: List[int], rocks: List[int], additional_rocks: int) -
             not_full_bags.append(cap - rocks)
 
     not_full_bags.sort()
-    for i in range(len(not_full_bags)):
-        if not_full_bags[i] <= additional_rocks:
+    for bag in not_full_bags:
+        if bag <= additional_rocks:
             full_bags_count += 1
-            additional_rocks -= not_full_bags[i]
+            additional_rocks -= bag
         else:
             break
     return full_bags_count
