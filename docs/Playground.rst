@@ -7,19 +7,18 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
-   Playground.Algorithms
-   Playground.Blockchain_
-   Playground.Complexity
-   Playground.Data_bases
-   Playground.Exercises
-   Playground.Functional_Programing
-   Playground.Python_Staff
    Playground.UI
-   Playground.Web
+   Playground.algorithms
+   Playground.blockchain_
+   Playground.data_bases
    Playground.dice_game
+   Playground.exercises
+   Playground.functional_programing
    Playground.my_utils
    Playground.objgraph_
    Playground.other_staff
+   Playground.python_staff
+   Playground.web
    Playground.zeroMQ
 
 Submodules
