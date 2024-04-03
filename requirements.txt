@@ -6,7 +6,7 @@ Modules==1.0.0
 networkx==3.2.1
 numpy==1.26.4
 objgraph==3.6.0
-Pillow==10.2.0
+Pillow==10.3.0
 psycopg2==2.9.9
 pulp==2.8.0
 pyodbc==5.1.0
