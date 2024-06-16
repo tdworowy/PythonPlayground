@@ -11,8 +11,13 @@ def bitwise_and(n, k):
 
 
 def bitwise_and(n, k):
-    return max([(combination[0] & combination[1]) for combination in combinations(range(1, n + 1), 2) if
-                combination[0] & combination[1] < k])
+    return max(
+        [
+            (combination[0] & combination[1])
+            for combination in combinations(range(1, n + 1), 2)
+            if combination[0] & combination[1] < k
+        ]
+    )
 
 
 def bitwise_and(n, k):

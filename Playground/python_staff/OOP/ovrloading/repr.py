@@ -9,7 +9,7 @@ class Adder:
         self.data += other
 
 
-class Multip():
+class Multip:
     def __init__(self, value=0):
         self.data = value
 
@@ -22,10 +22,10 @@ class Multip():
 
 class AddRepr(Adder, Multip):
     def __repr__(self):
-        return 'addrepr(%s)' % self.data
+        return "addrepr(%s)" % self.data
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     x = AddRepr(2)
     y = AddRepr(3)
     x + 1

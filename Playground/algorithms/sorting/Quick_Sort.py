@@ -8,7 +8,8 @@ sys.setrecursionlimit(10000)
 
 @timer3
 def quick_sort(list_: list) -> list:
-    if not list_: return []
+    if not list_:
+        return []
     ran = randint(0, len(list_) - 1)
     pivot = list_[ran]
 
@@ -19,7 +20,7 @@ def quick_sort(list_: list) -> list:
     return quick_sort(list_smaller) + pivots + quick_sort(list_bigger)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     list_sort = [randint(0, 10000) for x in range(10000)]
     sorted_list = quick_sort(list_sort[:])
 

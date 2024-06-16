@@ -18,7 +18,7 @@ def repeated_string(s, n):
 def repeated_string(s, n):
     if len(s) == 1 and s == "a":
         return n
-    if not 'a' in s:
+    if not "a" in s:
         return 0
     res = []
     while len(res) < n:
@@ -28,7 +28,7 @@ def repeated_string(s, n):
 
 
 def repeated_string(s, n):
-    return s.count("a") * (n // len(s)) + s[:n % len(s)].count("a")
+    return s.count("a") * (n // len(s)) + s[: n % len(s)].count("a")
 
 
 if __name__ == "__main__":

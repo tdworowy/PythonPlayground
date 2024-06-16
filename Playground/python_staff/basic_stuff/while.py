@@ -12,7 +12,8 @@ if __name__ == "__main__":
 
     while True:
         reply = input("Enter digit")
-        if reply == "stop": break
+        if reply == "stop":
+            break
         try:
             num = int(reply)
         except Exception:

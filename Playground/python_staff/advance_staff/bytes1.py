@@ -1,7 +1,7 @@
 if __name__ == "__main__":
-    x = 'test 123 aa'.encode()
+    x = "test 123 aa".encode()
 
-    x1 = b'test 123 aa'
+    x1 = b"test 123 aa"
 
     print(x)
     print(x[0])

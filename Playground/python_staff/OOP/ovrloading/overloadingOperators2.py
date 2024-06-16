@@ -1,6 +1,6 @@
 class Indexer1:
     def __getitem__(self, item):
-        return item ** 2
+        return item**2
 
 
 class Indexer2:
@@ -8,12 +8,12 @@ class Indexer2:
         self.data = data
 
     def __getitem__(self, item):
-        print('getitem: ', item)
+        print("getitem: ", item)
         return self.data[item]
 
     def __setitem__(self, key, value):
-        print('setitem: key: ', key)
-        print('setitem: value: ', value)
+        print("setitem: key: ", key)
+        print("setitem: value: ", value)
         data_length = len(self.data)
         if data_length >= key:
             self.data[key] = value
@@ -24,7 +24,7 @@ class Indexer2:
                 self.data.append(value)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 
     X = Indexer1()
     print(X[2])

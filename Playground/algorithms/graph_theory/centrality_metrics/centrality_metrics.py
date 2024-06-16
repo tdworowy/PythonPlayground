@@ -25,7 +25,7 @@ if __name__ == "__main__":
     graph.add_nodes_from(vertices)
     graph.add_edges_from(edges)
 
-    nx.draw(graph, with_labels=True, node_color='y', node_size=800)
+    nx.draw(graph, with_labels=True, node_color="y", node_size=800)
     plt.show()
 
     print(f"Degree centrality: {nx.degree_centrality(graph)}")

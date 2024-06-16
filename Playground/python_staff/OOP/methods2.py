@@ -9,7 +9,7 @@ class Number:
         return self.base * 3
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     x = Number(2)
     y = Number(3)
     z = Number(4)

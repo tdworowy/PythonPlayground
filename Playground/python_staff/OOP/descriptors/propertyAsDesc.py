@@ -41,10 +41,12 @@ class Person:
         print("Delete...")
         del self._name
 
-    name = Property(get_name, set_name, del_name, "DOCUMENTATION: Property name documentation")
+    name = Property(
+        get_name, set_name, del_name, "DOCUMENTATION: Property name documentation"
+    )
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 
     homer = Person("Homer Simpson")
     print(homer.name)

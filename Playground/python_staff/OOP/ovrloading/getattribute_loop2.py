@@ -3,6 +3,6 @@ class GetA:
         self.other  # innfinite loop
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     x = GetA()
     x.name

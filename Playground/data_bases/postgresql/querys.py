@@ -48,10 +48,9 @@ class Query:
         self.custom_query(sql.strip())
 
     def insert_new_worker(self, id, first_name, last_name, hierarchy):
-        sql = "INSERT INTO workers (id,first_name,last_name,hierarchy) VALUES('{x}','{x1}','{x2}','{x3}')".format(x=id,
-                                                                                                                  x1=first_name,
-                                                                                                                  x2=last_name,
-                                                                                                                  x3=hierarchy)
+        sql = "INSERT INTO workers (id,first_name,last_name,hierarchy) VALUES('{x}','{x1}','{x2}','{x3}')".format(
+            x=id, x1=first_name, x2=last_name, x3=hierarchy
+        )
         self.custom_query(sql.strip())
         self.connection.commit()
 
@@ -61,7 +60,9 @@ class Query:
         for file in fs.get_files(fs.get_path()):
             sql = """update workers
             set picture = {x}
-            WHERE id = {y}""".format(x=str(fs.file_to_stream(file, fs.get_path())), y=str(i))
+            WHERE id = {y}""".format(
+                x=str(fs.file_to_stream(file, fs.get_path())), y=str(i)
+            )
             i += 1
 
             self.custom_query(sql.strip())
@@ -70,7 +71,9 @@ class Query:
         fs = FilesUtils()
         sql = """update workers
                 set picture = {x}
-                WHERE id = {y}""".format(x=str(fs.file_to_stream(file_name, fs.get_new_path())), y=id)
+                WHERE id = {y}""".format(
+            x=str(fs.file_to_stream(file_name, fs.get_new_path())), y=id
+        )
         self.custom_query(sql.strip())
         self.connection.commit()
 
@@ -81,7 +84,9 @@ class Query:
             path = "'" + str(fs.get_path() + file).replace("\\", "\\\\") + "'"
             sql = """update workers
                   set Link_to_picture = {x}
-                  WHERE id = {y}""".format(x=path, y=str(i))
+                  WHERE id = {y}""".format(
+                x=path, y=str(i)
+            )
             i += 1
             self.custom_query(sql.strip())
 
@@ -90,7 +95,9 @@ class Query:
         path = "'" + str(fs.get_new_path() + picture).replace("\\", "\\\\") + "'"
         sql = """update workers
                      set Link_to_picture = {x}
-                     WHERE id = {y}""".format(x=path, y=id)
+                     WHERE id = {y}""".format(
+            x=path, y=id
+        )
 
         self.custom_query(sql.strip())
         self.connection.commit()
@@ -106,17 +113,17 @@ class Query:
         return result
 
     def get_hierarchy_from(self, root):
-        sql = "SELECT * FROM workers where hierarchy ~ '*." + str(root) + ".*\'"
+        sql = "SELECT * FROM workers where hierarchy ~ '*." + str(root) + ".*'"
         print("Match any label path containing the label: " + root)
         self.custom_query(sql.strip())
 
     def get_hierarchy_last(self, last):
-        sql = "SELECT * FROM workers where hierarchy ~ '*." + str(last) + "\'"
+        sql = "SELECT * FROM workers where hierarchy ~ '*." + str(last) + "'"
         print("Match any label path whose last label is: " + last)
         self.custom_query(sql.strip())
 
     def get_hierarchy_exa(self, exa):
-        sql = "SELECT * FROM workers where hierarchy ~ '" + str(exa) + "\'"
+        sql = "SELECT * FROM workers where hierarchy ~ '" + str(exa) + "'"
         print("Match the exact label path: " + exa)
         self.custom_query(sql.strip())
 
@@ -137,7 +144,9 @@ class Query:
 
         sql = """update workers
                    set XML = '{x}'
-                   WHERE id = {y}""".format(x=xml_data, y=id)
+                   WHERE id = {y}""".format(
+            x=xml_data, y=id
+        )
         self.custom_query(sql.strip())
         self.connection.commit()
 

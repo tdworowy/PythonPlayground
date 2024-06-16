@@ -26,6 +26,7 @@ def tracer(func):
 
 # work for functions and methods
 
+
 class Tracer2:
     def __init__(self, func):
         self.calls = 0
@@ -70,28 +71,24 @@ class Tracer3:
 
 
 if __name__ == "__main__":
+
     @Tracer
     def spam(a, b, c):
         print(a, b, c)
 
-
     spam(1, 2, 3)
-    spam('a', 'b', 'c')
-
+    spam("a", "b", "c")
 
     @Tracer2
     def spam(a, b, c):
         print(a, b, c)
 
-
     spam(1, 2, 3)
-    spam('a', 'b', 'c')
-
+    spam("a", "b", "c")
 
     @Tracer3
     def spam(a, b, c):
         print(a, b, c)
 
-
     spam(1, 2, 3)
-    spam('a', 'b', 'c')
+    spam("a", "b", "c")

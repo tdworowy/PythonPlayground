@@ -5,7 +5,7 @@ import requests
 from bs4 import BeautifulSoup
 
 
-class Crawler():
+class Crawler:
     def __init__(self):
         print("Start")
 
@@ -40,27 +40,28 @@ class Crawler():
         return self.regex_links(links)
 
     def regex_links(self, text):
-        all = re.findall(r'(https?://\S+)', str(text))
+        all = re.findall(r"(https?://\S+)", str(text))
         map_ = map(self.clean_link, all)
         list_ = list(map_)
         return list_
 
     def clean_link(self, link):
-        if ('>' in link): link = link[:link.index('>')]
-        return link.replace("\"", "")
+        if ">" in link:
+            link = link[: link.index(">")]
+        return link.replace('"', "")
 
     def to_file(self, list_):
         list_ = self.clean_list(list_)
         path = os.path.dirname(os.path.abspath(__file__))
-        with open(path + "\\links.txt", 'w') as f:
+        with open(path + "\\links.txt", "w") as f:
             for line in list_:
-                f.write(line.strip() + '\n')
+                f.write(line.strip() + "\n")
                 f.flush()
         print("Links saved: " + str(len(list_)))
 
     def clean_list(self, list_):
         list_ = str(list_).replace("[", "").replace("]", "")
-        list_ = list_.split(',')
+        list_ = list_.split(",")
         return list_
 
 

@@ -1,6 +1,6 @@
 def gen():
     while True:
-        x = (yield)
+        x = yield
         print(x)
 
 

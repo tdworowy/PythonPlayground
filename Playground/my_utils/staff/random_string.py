@@ -7,8 +7,8 @@ def generate_random_string(size):
 
 
 def generate_random_string_all(size):
-    return ''.join(choices(string.ascii_letters + string.digits, k=size))
+    return "".join(choices(string.ascii_letters + string.digits, k=size))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(generate_random_string_all(12))

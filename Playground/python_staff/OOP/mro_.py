@@ -22,6 +22,6 @@ class Third(Second):
     pass
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(Third.__mro__)
     print(Third.mro())

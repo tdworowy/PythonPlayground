@@ -6,7 +6,7 @@ cache = {}
 
 
 def is_obsolete(entry, duration):
-    return time.time() - entry['time'] > duration
+    return time.time() - entry["time"] > duration
 
 
 def compute_key(func, args, kw):
@@ -21,10 +21,10 @@ def memoize(duration=10):
 
             if key in cache and not is_obsolete(cache[key], duration):
                 print("Value from cache")
-                return cache[key]['value']
+                return cache[key]["value"]
 
             result = func(*args, **kw)
-            cache[key] = {'value': result, 'time': time.time()}
+            cache[key] = {"value": result, "time": time.time()}
             return result
 
         return __memoize
@@ -32,11 +32,11 @@ def memoize(duration=10):
     return _memoize
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
+
     @memoize()
     def someFunc(a, b):
         return a + b
-
 
     print(someFunc(2, 2))
     print("Cache: %s" % cache)

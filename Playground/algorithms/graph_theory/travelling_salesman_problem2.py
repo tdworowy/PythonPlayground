@@ -22,31 +22,37 @@ def distance_point(first: int, second: int) -> int:
 
 def generate_cities(number: int) -> frozenset:
     random.seed((number, seed))
-    return frozenset(complex(random.randint(1, width), random.randint(1, height)) for c in range(number))
+    return frozenset(
+        complex(random.randint(1, width), random.randint(1, height))
+        for c in range(number)
+    )
 
 
 def shortest_tout(tours):
     return min(tours, key=distance_tour)
 
 
-def visualize_tour(tour, style='bo-'):
-    if len(tour) > 1000: plt.figure(figsize=(15, 10))
+def visualize_tour(tour, style="bo-"):
+    if len(tour) > 1000:
+        plt.figure(figsize=(15, 10))
     start = tour[0:1]
     visualize_segment(tour + start, style)
-    visualize_segment(start, 'rd')
+    visualize_segment(start, "rd")
     plt.show()
 
 
-def visualize_segment(segment, style='bo-'):
+def visualize_segment(segment, style="bo-"):
     plt.plot([X(c) for c in segment], [Y(c) for c in segment], style, clip_on=False)
-    plt.axis('scaled')
-    plt.axis('off')
+    plt.axis("scaled")
+    plt.axis("off")
 
 
-def X(city): return city.real
+def X(city):
+    return city.real
 
 
-def Y(city): return city.imag
+def Y(city):
+    return city.imag
 
 
 def first(collection: Iterable):
@@ -87,4 +93,3 @@ if __name__ == "__main__":
     print("Greedy algorithm")
     tour = tsp(greedy_algorithm, generate_cities(2000))
     visualize_tour(tour)
-

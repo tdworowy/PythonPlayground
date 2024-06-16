@@ -11,12 +11,12 @@ class Prod:
         return self.value * other
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     C = Calle()
     C(1, 2, 3)
-    C(['a', 'b', 'c'])
+    C(["a", "b", "c"])
     C("Spam")
-    C({'a': 1})
+    C({"a": 1})
 
     x = Prod(2)
     print(x(3))

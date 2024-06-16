@@ -31,22 +31,27 @@ if __name__ == "__main__":
     lines = [line.rstrip() for line in open(get_root_directory() + "\\testFile.txt")]
     print(lines)
 
-    f2 = open(get_root_directory() + '\\testFile2.txt', 'r+')
+    f2 = open(get_root_directory() + "\\testFile2.txt", "r+")
     for _ in range(1, 30):
-        print(''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(50)), file=f2)
+        print(
+            "".join(
+                random.choice(string.ascii_uppercase + string.digits) for _ in range(50)
+            ),
+            file=f2,
+        )
     lines = f2.readlines()
     print(lines)
 
-    lines = [line for line in lines if line[0] == 'P']
+    lines = [line for line in lines if line[0] == "P"]
     print(lines)
 
-    test = [x + y for x in 'abc' for y in 'lmn']
+    test = [x + y for x in "abc" for y in "lmn"]
     print(test)
 
     test = [x for x in range(20) if x % 2 == 0]
     print(test)
 
-    test = [x ** 2 for x in range(20) if x % 2 == 0]
+    test = [x**2 for x in range(20) if x % 2 == 0]
     print(test)
 
     test = [x + y for x in [0, 1, 2] for y in [100, 200, 300]]

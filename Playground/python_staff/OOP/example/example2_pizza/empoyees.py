@@ -7,10 +7,10 @@ class Employee:
         self.salary = self.salary + (self.salary * precent)
 
     def work(self):
-        print(self.name, 'Doing staff')
+        print(self.name, "Doing staff")
 
     def __repr__(self):
-        return '<Employee: name= %s, salary= %s>' % (self.name, self.salary)
+        return "<Employee: name= %s, salary= %s>" % (self.name, self.salary)
 
 
 class Chef(Employee):
@@ -18,7 +18,7 @@ class Chef(Employee):
         Employee.__init__(self, name, 5000)
 
     def work(self):
-        print(self.name, 'Cooking food')
+        print(self.name, "Cooking food")
 
 
 class Server(Employee):
@@ -26,7 +26,7 @@ class Server(Employee):
         Employee.__init__(self, name, 40000)
 
     def work(self):
-        print(self.name, 'Serving client')
+        print(self.name, "Serving client")
 
 
 class PizzaRobot(Chef):
@@ -34,11 +34,11 @@ class PizzaRobot(Chef):
         Chef.__init__(self, name)
 
     def work(self):
-        print(self.name, 'Makeing pizza')
+        print(self.name, "Makeing pizza")
 
 
-if __name__ == '__main__':
-    bob = PizzaRobot('Robert')
+if __name__ == "__main__":
+    bob = PizzaRobot("Robert")
     print(bob)
     bob.work()
     bob.give_raise(0.20)

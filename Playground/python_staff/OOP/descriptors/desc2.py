@@ -21,7 +21,7 @@ class Person:
     name = Name()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     bob = Person("Name test1")
     print(bob.name)
     bob.name = "Name test2"

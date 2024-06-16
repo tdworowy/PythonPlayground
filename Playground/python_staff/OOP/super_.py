@@ -1,4 +1,4 @@
-class First():
+class First:
     def message(self):
         print("In first class")
 
@@ -15,10 +15,10 @@ class Third(Second):
         print("In Third Class")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     x = Second()
     x.message()
-    print('_' * 10)
+    print("_" * 10)
     y = Third()
     y.message()
 

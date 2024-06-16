@@ -1,24 +1,24 @@
 def func():
     x = 4
-    action = (lambda n: x ** n)
+    action = lambda n: x**n
     return action
 
 
 def make_actions1():
     acts = []
     for i in range(5):
-        acts.append(lambda x: i ** x)
+        acts.append(lambda x: i**x)
     return acts
 
 
 def make_actions2():
     acts = []
     for i in range(5):
-        acts.append(lambda x, i=i: i ** x)
+        acts.append(lambda x, i=i: i**x)
     return acts
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     x = func()
     print(x(2))
     print(x(4))

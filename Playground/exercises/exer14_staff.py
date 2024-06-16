@@ -19,7 +19,7 @@ class Student(Person):
         "A": lambda av: av in range(70, 80),
         "P": lambda av: av in range(55, 70),
         "D": lambda av: av in range(40, 55),
-        "T": lambda av: av < 40
+        "T": lambda av: av < 40,
     }
 
     def __init__(self, first_name, last_name, student_id, scores):

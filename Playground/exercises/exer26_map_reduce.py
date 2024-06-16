@@ -22,7 +22,7 @@ class MapReduce:
 
         self.result.sort()
         for item in self.result:
-            print("{\"key\":\"" + item[0] + "\",\"value\":\"" + str(item[1]) + "\"}")
+            print('{"key":"' + item[0] + '","value":"' + str(item[1]) + '"}')
 
     def mapper(self, record):
         v1, v2 = record.split()
@@ -33,7 +33,7 @@ class MapReduce:
         self.emit([key, len(list_of_values)])
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     inputData = ["Joe Sue", "Sue Phi", "Phi Joe", "Phi Alice"]
     mapReducer = MapReduce()
     mapReducer.execute(inputData)

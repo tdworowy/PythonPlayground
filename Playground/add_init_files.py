@@ -8,7 +8,7 @@ def add_init(path):
     files = [f for f in listdir(path) if isfile(join(path, f))]
     folders = [join(path, f) for f in listdir(path) if not isfile(join(path, f))]
     if "__init__.py" not in files:
-        open(join(path, "__init__.py"), 'w')
+        open(join(path, "__init__.py"), "w")
     for folder in folders:
         add_init(folder)
 

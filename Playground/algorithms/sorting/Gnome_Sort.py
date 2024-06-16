@@ -16,7 +16,7 @@ def gnome_sort(list_: list) -> list:
     return list_
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     list_sort = [randint(0, 10000) for x in range(10000)]
     sorted_list = gnome_sort(list_sort[:])
 

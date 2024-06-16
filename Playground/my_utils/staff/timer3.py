@@ -2,7 +2,7 @@ import functools
 import time
 
 
-def timer(label=' ', trace=True):
+def timer(label=" ", trace=True):
     class Timer:
         def __init__(self, func):
             self.func = func
@@ -14,7 +14,7 @@ def timer(label=' ', trace=True):
             elapsed = time.process_time() - start
             self.alltime += elapsed
             if trace:
-                format = '%s %s: %.5f, %.5f'
+                format = "%s %s: %.5f, %.5f"
                 values = (label, self.func.__name__, elapsed, self.alltime)
                 print(format % values)
             return result
@@ -25,7 +25,7 @@ def timer(label=' ', trace=True):
 # dosen't work on methods
 
 
-def timer2(label=' ', trace=True):
+def timer2(label=" ", trace=True):
     def on_decorator(func):
         def on_call(*args, **kwargs):
             start = time.clock()
@@ -33,7 +33,7 @@ def timer2(label=' ', trace=True):
             elapsed = time.clock() - start
             on_call.alltime += elapsed
             if trace:
-                format = '%s %s: %.5f, %.5f'
+                format = "%s %s: %.5f, %.5f"
                 values = (label, func.__name__, elapsed, on_call.alltime)
                 print(format % values)
             return result
@@ -60,7 +60,7 @@ def timer3(f):
             finally:
                 is_evaluating = False
             end_time = time.perf_counter()
-            print('time taken: {time}'.format(time=end_time - start_time))
+            print("time taken: {time}".format(time=end_time - start_time))
             return value
 
     return g

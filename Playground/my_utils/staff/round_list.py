@@ -5,6 +5,7 @@ class RoundList(list):
             if index >= len(self):
                 index = index - len(self)
             else:
-                if index < 0: index = len(self) - (index * -1)
+                if index < 0:
+                    index = len(self) - (index * -1)
 
         return list.__getitem__(self, index)

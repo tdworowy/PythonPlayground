@@ -29,7 +29,11 @@ def get_to_append(i):
 					}
 					]
 			},},
-	""" % (i, i, i)
+	""" % (
+        i,
+        i,
+        i,
+    )
 
 
 def extend_employ(file, range_):
@@ -42,8 +46,8 @@ def extend_employ(file, range_):
     file.write(add_string)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # file = open("C:/PLIKI/Load_tests/users_with_traits2.txt",'a')
-    file = open(get_root_directory() + "\\users_with_No_traits.json", 'w+')
+    file = open(get_root_directory() + "\\users_with_No_traits.json", "w+")
 
     extend_employ(file, (1, 2000))

@@ -60,31 +60,41 @@ def gen_function2():
     return list(gen())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(sys.version)
     for test in (for_loop, list_comp, map_call, gen_expr, gen_function):
         elapsed, result = timer1.timer(test)
-        print('-' * 33)
-        print('%-9s: %.5f =>[%s...%s]' % (test.__name__, elapsed, result[0], result[-1]))
+        print("-" * 33)
+        print(
+            "%-9s: %.5f =>[%s...%s]" % (test.__name__, elapsed, result[0], result[-1])
+        )
 
     print(sys.version)
     for test in (for_loop2, list__comp2, map_call2, gen_expr2, gen_function2):
         elapsed, result = timer1.timer(test)
-        print('-' * 33)
-        print('%-9s: %.5f =>[%s...%s]' % (test.__name__, elapsed, result[0], result[-1]))
+        print("-" * 33)
+        print(
+            "%-9s: %.5f =>[%s...%s]" % (test.__name__, elapsed, result[0], result[-1])
+        )
 
     print(sys.version)
     for tester in (timer2.timer, timer2.best):
-        print(('<%s>' % tester.__name__))
+        print(("<%s>" % tester.__name__))
         for test in (for_loop, list_comp, map_call, gen_expr, gen_function):
             elapsed, result = tester(test)
-            print('-' * 33)
-            print('%-9s: %.5f =>[%s...%s]' % (test.__name__, elapsed, result[0], result[-1]))
+            print("-" * 33)
+            print(
+                "%-9s: %.5f =>[%s...%s]"
+                % (test.__name__, elapsed, result[0], result[-1])
+            )
 
     print(sys.version)
     for tester in (timer2.timer, timer2.best):
-        print(('<%s>' % tester.__name__))
+        print(("<%s>" % tester.__name__))
         for test in (for_loop2, list__comp2, map_call2, gen_expr2, gen_function2):
             elapsed, result = tester(test)
-            print('-' * 33)
-            print('%-9s: %.5f =>[%s...%s]' % (test.__name__, elapsed, result[0], result[-1]))
+            print("-" * 33)
+            print(
+                "%-9s: %.5f =>[%s...%s]"
+                % (test.__name__, elapsed, result[0], result[-1])
+            )

@@ -9,7 +9,9 @@ class FilesUtils:
     def __init__(self):
         self.path = os.path.dirname(os.path.abspath(__file__)) + "\Data\\"
         self.new_path = os.path.dirname(os.path.abspath(__file__)) + "\\newData\\"
-        self.export_path = os.path.dirname(os.path.abspath(__file__)) + "\ExportedData\\"
+        self.export_path = (
+            os.path.dirname(os.path.abspath(__file__)) + "\ExportedData\\"
+        )
 
     def file_to_stream(self, file, path):
         full_path = path + file

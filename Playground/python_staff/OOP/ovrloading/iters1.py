@@ -14,7 +14,7 @@ class Squares:
         if self.value == self.stop:
             raise StopIteration
         self.value += 1
-        return self.value ** 2
+        return self.value**2
 
     def check(self, value):
         flag = value > 0

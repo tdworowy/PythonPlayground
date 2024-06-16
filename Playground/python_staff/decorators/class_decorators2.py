@@ -13,7 +13,7 @@ def decorator(cls):
 @decorator
 class c:
     def __init__(self, x, y):
-        self.atr = 'spam'
+        self.atr = "spam"
 
 
 if __name__ == "__main__":

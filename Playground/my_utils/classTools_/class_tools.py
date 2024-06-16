@@ -9,7 +9,8 @@ class AttrDisplay:
         return "[%s: %s ]" % (self.__class__.__name__, self.__getherAttrs())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
+
     class TopTest(AttrDisplay):
         count = 0
 
@@ -18,9 +19,8 @@ if __name__ == '__main__':
             self.attr2 = TopTest.count + 1
             TopTest.count += 2
 
-
-    class SubTest(TopTest): pass
-
+    class SubTest(TopTest):
+        pass
 
     X, Y = TopTest(), SubTest()
     print(X)

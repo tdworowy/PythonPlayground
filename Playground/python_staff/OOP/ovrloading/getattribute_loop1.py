@@ -10,10 +10,10 @@ class GetA:
         self.other = value  # infinite loop
 
     def __setattr__(self, key, value):
-        self.__dict__['other'] = value  # now works ok
+        self.__dict__["other"] = value  # now works ok
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     x = GetA()
-    x.name = 'test'
+    x.name = "test"
     x.name

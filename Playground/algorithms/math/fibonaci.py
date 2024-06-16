@@ -66,7 +66,7 @@ def fib5(count):
         return fib5(count - 1) + fib5(count - 2)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     functions = [fib1, fib2, fib3, fib4, fib4, fib5, fib5]
     for i, f in enumerate(functions):
         print(f"{i} {f(35)}")

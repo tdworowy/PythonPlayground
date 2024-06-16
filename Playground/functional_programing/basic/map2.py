@@ -1,4 +1,5 @@
-def inc(x): return x + 10
+def inc(x):
+    return x + 10
 
 
 if __name__ == "__main__":

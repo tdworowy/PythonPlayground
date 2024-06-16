@@ -5,7 +5,7 @@ def my_sum(l):
             return 0
         else:
             return l[0] + my_sum(l[1:])
-    except RecursionError  as re:
+    except RecursionError as re:
         print(re)
         return 0
 
@@ -15,10 +15,10 @@ def my_sum2(l):
         first, *rest = l
         print(l)
         return first if not rest else first + my_sum2(rest)
-    except RecursionError  as re:
+    except RecursionError as re:
         print(re)
         return 0
-    except MemoryError  as re:
+    except MemoryError as re:
         print(re)
         return 0
 

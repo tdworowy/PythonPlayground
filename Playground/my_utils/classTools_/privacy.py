@@ -1,4 +1,5 @@
-class PrivateExc(Exception): pass
+class PrivateExc(Exception):
+    pass
 
 
 class Privacy:
@@ -10,14 +11,14 @@ class Privacy:
 
 
 class Privates1(Privacy):
-    privates = ['age']
+    privates = ["age"]
 
 
 class Privates2(Privacy):
-    privates = ['name', 'pay']
+    privates = ["name", "pay"]
 
     def __init__(self):
-        self.__dict__['name'] = "Homer"
+        self.__dict__["name"] = "Homer"
 
 
 if __name__ == "__main__":

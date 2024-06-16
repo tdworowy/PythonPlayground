@@ -23,7 +23,7 @@ def reload_all(*args):
             transitive_reload(arg, visited)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     import reload_all
     import os, tkinter
 

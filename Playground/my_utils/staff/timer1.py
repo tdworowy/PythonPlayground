@@ -10,6 +10,3 @@ def timer(func, *params, **kargs):
         ret = func(*params, **kargs)
     elapsed = time.process_time() - start
     return elapsed, ret
-
-
-

@@ -1,12 +1,12 @@
 if __name__ == "__main__":
+
     def echo_IMP():
         while 1:
-            x = input('IMS ---')
-            if x == 'quit':
+            x = input("IMS ---")
+            if x == "quit":
                 break
             else:
                 print(x)
-
 
     # echo_IMP()
 
@@ -16,8 +16,7 @@ if __name__ == "__main__":
             print(y)
             return y
 
-        echo = lambda: identity_print(input('FP --- ')) == 'quit' or echo()
+        echo = lambda: identity_print(input("FP --- ")) == "quit" or echo()
         echo()
-
 
     echo_func()

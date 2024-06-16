@@ -30,7 +30,7 @@ def bubble_sort2(list_: list) -> list:
     return list_
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     list_ = [randint(0, 10000) for x in range(10000)]
     sorted_list1 = bubble_sort1(list_)
     sorted_list2 = bubble_sort2(list_[:])

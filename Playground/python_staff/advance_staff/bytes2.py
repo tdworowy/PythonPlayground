@@ -1,6 +1,6 @@
 if __name__ == "__main__":
 
-    list = [x for x in range(0,256)]
+    list = [x for x in range(0, 256)]
     print(bytes(list))
     chars = []
     for byte in bytes(list):
@@ -9,5 +9,4 @@ if __name__ == "__main__":
         except Exception:
             continue
 
-    print(','.join(chars))
-
+    print(",".join(chars))

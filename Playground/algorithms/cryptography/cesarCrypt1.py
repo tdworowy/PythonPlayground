@@ -1,7 +1,6 @@
 import string
 
 
-
 def get_diff(string1, string2):
     char_list = list(string2)
     i = 0
@@ -15,11 +14,11 @@ def get_diff(string1, string2):
 
 
 def cesar_crypt(text, index):
-    return ''.join([get_letter(char, index, set_index_up) for char in text.lower()])
+    return "".join([get_letter(char, index, set_index_up) for char in text.lower()])
 
 
 def cesar_uncrypt(text, index):
-    return ''.join([get_letter(char, -index, set_index_down) for char in text.lower()])
+    return "".join([get_letter(char, -index, set_index_down) for char in text.lower()])
 
 
 def get_letter(char, jump, set_index_function):
@@ -35,8 +34,10 @@ def get_letter(char, jump, set_index_function):
 
 def set_index_up(i, alphabet_size):
     index = i
-    if index >= alphabet_size: index = alphabet_size - index
-    if index < 0: index = index * -1
+    if index >= alphabet_size:
+        index = alphabet_size - index
+    if index < 0:
+        index = index * -1
     return index
 
 
@@ -46,9 +47,11 @@ def set_index_down(i, alphabet_size):
     return index
 
 
-if __name__ == '__main__':
-    test = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rhoncus laoreet erat, sed lobortis nibh " \
-           "venenatis sit amet. Nullam quis. "
+if __name__ == "__main__":
+    test = (
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rhoncus laoreet erat, sed lobortis nibh "
+        "venenatis sit amet. Nullam quis. "
+    )
     encrypted = cesar_crypt(test, 100)
     unEncrypted = cesar_uncrypt(encrypted, 100)
 

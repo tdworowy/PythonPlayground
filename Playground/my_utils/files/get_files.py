@@ -13,7 +13,9 @@ def get_all_files(paths):
     for path in paths:
         try:
             only_files = [f for f in listdir(path) if isfile(join(path, f))]
-            folders.extend([join(path, f) for f in listdir(path) if not isfile(join(path, f))])
+            folders.extend(
+                [join(path, f) for f in listdir(path) if not isfile(join(path, f))]
+            )
             print(str(only_files))
             temp = path.replace(":", "_")
             temp = temp.replace("\\", "_")

@@ -12,7 +12,7 @@ class Example3:
         print("Test3")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     a = Example2()
     b = Example3()
     b.pr()

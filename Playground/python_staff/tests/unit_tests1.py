@@ -20,8 +20,8 @@ class TestAdd(unittest.TestCase):
         self.assertEquals(add(-2, -2), -4)
 
     def test_add_chars(self):
-        self.assertEquals(add('x', 'z'), 'xz')
+        self.assertEquals(add("x", "z"), "xz")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

@@ -13,7 +13,7 @@ class Solution:
             head.next = p
         else:
             start = head
-            while (start.next != None):
+            while start.next != None:
                 start = start.next
             start.next = p
         return head
@@ -21,7 +21,7 @@ class Solution:
     def display(self, head):
         current = head
         while current:
-            print(current.data, end=' ')
+            print(current.data, end=" ")
             current = current.next
 
     def remove_duplicates(self, head):

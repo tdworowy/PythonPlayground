@@ -2,7 +2,8 @@ def intersect(*args):
     res = []
     for x in args[0]:
         for other in args[1:]:
-            if x not in other: break
+            if x not in other:
+                break
         else:
             res.append(x)
     return res

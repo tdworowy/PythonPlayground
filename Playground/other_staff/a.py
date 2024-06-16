@@ -1,6 +1,6 @@
 import random
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     x = 0
     y = random.sample(range(1, 100), 99)
     print(sum(y))

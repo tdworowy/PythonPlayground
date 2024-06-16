@@ -1,4 +1,5 @@
-'''Find primes'''
+"""Find primes"""
+
 from Playground.my_utils.staff.timer3 import timer3
 
 
@@ -6,15 +7,17 @@ def primes_sieve(limit: int) -> iter:
     a = [True] * limit
     a[0] = a[1] = False
 
-    for (i, is_prime) in enumerate(a):
+    for i, is_prime in enumerate(a):
         if is_prime:
             yield i
             for n in range(i * i, limit, i):
                 a[n] = False
 
+
 @timer3
 def is_prime1(number: int) -> bool:
     return number in list(primes_sieve(number))
+
 
 @timer3
 def is_prime2(number: int) -> int:

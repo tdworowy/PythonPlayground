@@ -8,7 +8,7 @@ class MixedNames:
         print(self.data, MixedNames.data)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     a = MixedNames(1)
     b = MixedNames(2)
 

@@ -9,7 +9,7 @@ class c2:
             print("__init__ was not run (like static in java)")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     obj1 = c2()
     obj1.display()
 

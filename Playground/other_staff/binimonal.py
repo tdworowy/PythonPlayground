@@ -24,7 +24,7 @@ if __name__ == "__main__":
     p = ratio / (ratio + child_per_birth)
 
     n = 6
-    res = sum(p ** k * (1 - p) ** (n - k) * comb(n, k) for k in range(3, 7))
+    res = sum(p**k * (1 - p) ** (n - k) * comb(n, k) for k in range(3, 7))
     print(res)
 
     defective = 12
@@ -39,8 +39,8 @@ if __name__ == "__main__":
     p_def = 1 / 3
     p_ok = 2 / 3
     tries = 5
-    print(round((p_ok ** 4) * p_def, 3))
+    print(round((p_ok**4) * p_def, 3))
 
-    print(round(1 / 3 ** 5), 3)
+    print(round(1 / 3**5), 3)
 
     print(round(sum([(p_ok ** (i - 1)) * p_def for i in range(1, tries + 1)]), 3))

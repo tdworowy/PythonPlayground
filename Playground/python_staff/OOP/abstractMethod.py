@@ -15,6 +15,6 @@ class Sub(Super):
         print("Spam")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     X = Sub()
     X.delegate()

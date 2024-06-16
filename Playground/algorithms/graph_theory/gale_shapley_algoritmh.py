@@ -30,5 +30,5 @@ def stable_matching(n: int, men_preferences: list, women_preferences) -> list:
 
 
 if __name__ == "__main__":
-    assert (stable_matching(1, [[0]], [[0]]) == [0])
-    assert (stable_matching(2, [[0, 1], [1, 0]], [[0, 1], [1, 0]]))
+    assert stable_matching(1, [[0]], [[0]]) == [0]
+    assert stable_matching(2, [[0, 1], [1, 0]], [[0, 1], [1, 0]])

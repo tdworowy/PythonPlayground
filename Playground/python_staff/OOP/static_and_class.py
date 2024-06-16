@@ -48,7 +48,7 @@ class Other(Spam):
     numInstances = 0
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     x = Methods()
 
     x.smeth("Test1")

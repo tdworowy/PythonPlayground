@@ -7,8 +7,9 @@ def staff():
     print(x)
 
     for i, j in enumerate(x):
-        num = int(''.join(map(str, [x[i][0], x[i][1]])))
-        if (j[0] + j[1]) * 5 == num: print(num)
+        num = int("".join(map(str, [x[i][0], x[i][1]])))
+        if (j[0] + j[1]) * 5 == num:
+            print(num)
 
 
 def primes(num):
@@ -21,13 +22,14 @@ def primes(num):
 
 
 def staff2():
-    e_ = '2.718281828459045235360287471352662497757247093699959574966967627724076630353547594571382178525166427427466391932003059921817413596629043572900334295260595630738132328627943490763233829880753195251019011573834187930702154089149 '
+    e_ = "2.718281828459045235360287471352662497757247093699959574966967627724076630353547594571382178525166427427466391932003059921817413596629043572900334295260595630738132328627943490763233829880753195251019011573834187930702154089149 "
     return map(primes, list(e_.replace(".", "")))
 
 
 def Ackermann(m, n):
     sys.setrecursionlimit(10000)
-    if m == 0: return n + 1
+    if m == 0:
+        return n + 1
     if m > 0 and n == 0:
         return Ackermann(m - 1, 1)
     else:
@@ -79,9 +81,9 @@ def perfect_number(n):
 
 
 # i think it doesn't work
-#TODO
+# TODO
 def magic_square(size):
-    count = size ** 2
+    count = size**2
     matrix = [[(size * y) + x + 1 for x in range(size)] for y in range(size)]
     for i in range(0, size // 4):
         for j in range(3 * (size // 4), size):

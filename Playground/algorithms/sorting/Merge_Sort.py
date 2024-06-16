@@ -35,7 +35,7 @@ def merge_sort1(list_: list) -> list:
 
 @timer3
 def merge_sort2(list_: list) -> list:
-    if len(list_) >1:
+    if len(list_) > 1:
         mid = len(list_) // 2
         left = list_[:mid]
         right = list_[mid:]
@@ -69,7 +69,7 @@ def merge_sort2(list_: list) -> list:
     return list_
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     list_sort = [randint(0, 10000) for x in range(100000)]
     sorted_list1 = merge_sort1(list_sort[:])
     sorted_list2 = merge_sort2(list_sort[:])

@@ -11,6 +11,6 @@ class Y:
         return str(self.x)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     X()
     print(Y())

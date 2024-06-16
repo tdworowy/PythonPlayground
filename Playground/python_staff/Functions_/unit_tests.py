@@ -41,20 +41,29 @@ class TestStringMethods(unittest.TestCase):
 
     def test_9(self):
         notList = "Test"
-        self.assertEqual(numbers_pair_sum.find_pair(notList, 8), "First argument must be list")
+        self.assertEqual(
+            numbers_pair_sum.find_pair(notList, 8), "First argument must be list"
+        )
 
     def test_10(self):
         list1 = [0]
-        self.assertEqual(numbers_pair_sum.find_pair(list1, 8), "List must have at leas 2 elements")
+        self.assertEqual(
+            numbers_pair_sum.find_pair(list1, 8), "List must have at leas 2 elements"
+        )
 
     def test_11(self):
         list1 = [1, 2]
-        self.assertEqual(numbers_pair_sum.find_pair(list1, "A"), "Second argument must be the int")
+        self.assertEqual(
+            numbers_pair_sum.find_pair(list1, "A"), "Second argument must be the int"
+        )
 
     def test_12(self):
         list1 = [1, 2]
-        self.assertEqual(numbers_pair_sum.find_pair(list1, [1, 2, 3]), "Second argument must be the int")
+        self.assertEqual(
+            numbers_pair_sum.find_pair(list1, [1, 2, 3]),
+            "Second argument must be the int",
+        )
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

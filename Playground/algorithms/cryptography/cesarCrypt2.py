@@ -20,17 +20,18 @@ class RoundList(list):
             if index >= len(self):
                 index = index - len(self)
             else:
-                if index < 0: index = len(self) - (index * -1)
+                if index < 0:
+                    index = len(self) - (index * -1)
 
         return list.__getitem__(self, index)
 
 
 def cesar_crypt(text, index):
-    return ''.join([get_letter(char, index) for char in text.lower()])
+    return "".join([get_letter(char, index) for char in text.lower()])
 
 
 def cesar_uncrypt(text, index):
-    return ''.join([get_letter(char, -index) for char in text.lower()])
+    return "".join([get_letter(char, -index) for char in text.lower()])
 
 
 def get_letter(char, jump):
@@ -42,9 +43,11 @@ def get_letter(char, jump):
         return char
 
 
-if __name__ == '__main__':
-    test = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rhoncus laoreet erat, sed lobortis nibh " \
-           "venenatis sit amet. Nullam quis. "
+if __name__ == "__main__":
+    test = (
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rhoncus laoreet erat, sed lobortis nibh "
+        "venenatis sit amet. Nullam quis. "
+    )
     encrypted = cesar_crypt(test, 100)
     unEncrypted = cesar_uncrypt(encrypted, 100)
 

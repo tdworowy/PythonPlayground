@@ -17,7 +17,7 @@ def count_triplets(arr: list, r: int) -> int:
         return 0
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     arr = [1, 5, 5, 25, 125]
     r = 5
     triplets_count = count_triplets(arr, r)

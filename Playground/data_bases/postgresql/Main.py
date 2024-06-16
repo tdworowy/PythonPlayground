@@ -32,29 +32,27 @@ def main():
         q.insert_new_pictures_links("a_56ad0355.jpg", "6")
         q.insert_new_pictures("6", "a_56ad0355.jpg")
 
+        if display_input is "y":
+            ui = Display()
+            pictures_list = [q.get_picture(1), q.get_picture(2), q.get_picture(3)]
+            ui.display_pictures_fom_db(pictures_list)
 
-        if display_input is 'y':
-                ui = Display()
-                pictures_list = [q.get_picture(1), q.get_picture(2), q.get_picture(3)]
-                ui.display_pictures_fom_db(pictures_list)
+            pictures_list = [q.get_picture_path(1), q.get_picture_path(2)]
+            ui.display_pictures_via_path(pictures_list)
 
-                pictures_list = [q.get_picture_path(1), q.get_picture_path(2)]
-                ui.display_pictures_via_path(pictures_list)
+            pictures_list = [q.get_picture(6)]
+            ui.display_pictures_fom_db(pictures_list)
 
-                pictures_list = [q.get_picture(6)]
-                ui.display_pictures_fom_db(pictures_list)
-
-                pictures_list = [q.get_picture_path(6)]
-                ui.display_pictures_via_path(pictures_list)
-
+            pictures_list = [q.get_picture_path(6)]
+            ui.display_pictures_via_path(pictures_list)
 
         xml.export_to_xml(1)
         xml.export_to_xml(6)
 
-        title= ("Title", "Rick and Morty")
+        title = ("Title", "Rick and Morty")
         seasons = ("Seasons", "2")
         genre1 = ("Genre", "SF")
-        genre2= ("Genre", "Comedy")
+        genre2 = ("Genre", "Comedy")
         xml.generate_xml("Sanchez", title, seasons, genre1, genre2)
 
         q.insert_xml("Sanchez", "1")
@@ -66,16 +64,16 @@ def main():
 
         q.insert_xml("Archer", "2")
 
-
         q.get_genre_from_xml_be_id("1")
         q.get_genre_from_xml_be_id("2")
         q.get_genre_from_xml()
 
     except Exception as ex:
-       print(ex)
+        print(ex)
     finally:
-       q.custom_query("select * from workers")
-       q.drop_table()
+        q.custom_query("select * from workers")
+        q.drop_table()
+
 
 if __name__ == "__main__":
     main()

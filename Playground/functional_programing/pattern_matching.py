@@ -1,7 +1,8 @@
 from multipledispatch import dispatch
 
 
-class Thing(object): pass
+class Thing(object):
+    pass
 
 
 class Rock(Thing):
@@ -74,7 +75,7 @@ class RPS:
             raise TypeError("Unknown second thing")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     game = RPS()
     print(game.beats(Rock(), Paper()))
     print(game.beats(Rock(), Scissors()))

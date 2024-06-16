@@ -1,8 +1,10 @@
-
 def find_pair(numbers, sume):
-    if type(sume) != int: return "Second argument must be the int"
-    if type(numbers) != list: return "First argument must be list"
-    if len(numbers) < 2: return "List must have at leas 2 elements"
+    if type(sume) != int:
+        return "Second argument must be the int"
+    if type(numbers) != list:
+        return "First argument must be list"
+    if len(numbers) < 2:
+        return "List must have at leas 2 elements"
     while True:
         print("List", numbers)
 
@@ -26,6 +28,7 @@ def find_pair(numbers, sume):
             if number + largest == sume:
                 print("TRUE")
                 return True
+
 
 if __name__ == "__main__":
     list1 = [1, 2, 3, 4, 5]

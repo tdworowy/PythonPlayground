@@ -6,10 +6,10 @@ def annotate(label):
     return decorate
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
+
     @annotate("Test label")
     def spam(a, b):
         return a + b
-
 
     print(spam(1, 2), spam.label)

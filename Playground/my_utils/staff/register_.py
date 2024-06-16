@@ -6,16 +6,15 @@ def register(obj):
     return obj
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
+
     @register
     def spam(x):
-        return x ** 2
-
+        return x**2
 
     @register
     def ham(x):
-        return x ** 3
-
+        return x**3
 
     print("Manual Call")
     print(spam(2))
@@ -24,4 +23,4 @@ if __name__ == '__main__':
     print("Calls from registry")
 
     for name in registry:
-        print(name, '=>', registry[name](4))
+        print(name, "=>", registry[name](4))

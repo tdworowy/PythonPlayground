@@ -31,7 +31,7 @@ class TCP:
         self.socket_.connect((self.host, self.port))
 
     def client_sent(self, message):
-        self.socket_.send(bytes(message, 'utf-8'))
+        self.socket_.send(bytes(message, "utf-8"))
 
     def infinite_sent(self):
         self.client_connect()
@@ -40,7 +40,7 @@ class TCP:
 
 
 def infinite():
-    tcp = TCP('127.0.0.1', 65524)
+    tcp = TCP("127.0.0.1", 65524)
 
     try:
         _thread.start_new_thread(tcp.start_TCP_server, ())
@@ -54,5 +54,5 @@ def infinite():
 
 
 if __name__ == "__main__":
-    tcp = TCP('127.0.0.1', 65524)
+    tcp = TCP("127.0.0.1", 65524)
     tcp.start_TCP_server(2)

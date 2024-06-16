@@ -15,13 +15,14 @@ class Display:
     def display_picture_from_db(self, memory_view):
         try:
             x = random_string(30)
-            temp_file_name = 'tempFile' + x + '.jpg'
+            temp_file_name = "tempFile" + x + ".jpg"
             temp_file_path = self.path + temp_file_name
-            byte = bytes(memory_view[0][0])  # memoryView to lista krotek obiektów memoryview
+            byte = bytes(
+                memory_view[0][0]
+            )  # memoryView to lista krotek obiektów memoryview
             print(byte)
-            open(temp_file_path, 'wb').write(byte)
+            open(temp_file_path, "wb").write(byte)
             self.image = Image.open(temp_file_path).show()
-
 
         except Exception as ex:
             print(ex)
@@ -46,7 +47,7 @@ class Display:
         for path in paths:
             try:
                 input("press any key to display next picture: ")
-                self.image = Image.open(path[0][0], 'r').show()
+                self.image = Image.open(path[0][0], "r").show()
             except Exception as ex:
                 print(ex)
 

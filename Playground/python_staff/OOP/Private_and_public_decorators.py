@@ -2,7 +2,8 @@ traceMy = False
 
 
 def trace(*args):
-    if traceMy: print('[' + ' '.join(map(str, args)) + ']')
+    if traceMy:
+        print("[" + " ".join(map(str, args)) + "]")
 
 
 def access_control(fail_if):
@@ -12,7 +13,7 @@ def access_control(fail_if):
                 self.__wrapped = a_class(*args, **kwargs)
 
             def __getattr__(self, attr):
-                trace('Get: ', attr)
+                trace("Get: ", attr)
                 if fail_if(attr):
                     raise TypeError("Attribute is private: " + attr)
                 else:
@@ -20,7 +21,7 @@ def access_control(fail_if):
 
             def __setattr__(self, attr, value):
                 trace("SET: ", attr, value)
-                if attr == 'wrapped':
+                if attr == "wrapped":
                     self.__dict__[attr] = value
                 elif fail_if(attr):
                     raise TypeError("Attribute is private: " + attr)
@@ -40,12 +41,11 @@ def Public(*attributes):
     return access_control(fail_if=lambda attr: attr not in attributes)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 
     traceMy = True
 
-
-    @Private('data', 'size')
+    @Private("data", "size")
     class Doubler:
         def __init__(self, label, start):
             self.label = label
@@ -59,10 +59,9 @@ if __name__ == '__main__':
                 self.data[i] = self.data[i] * 2
 
         def disply(self):
-            print('%s => %s' % (self.label, self.data))
+            print("%s => %s" % (self.label, self.data))
 
-
-    x = Doubler('X: ', [1, 2, 3, 4])
+    x = Doubler("X: ", [1, 2, 3, 4])
 
     x.disply()
     x.double()

@@ -22,6 +22,6 @@ if __name__ == "__main__":
 
     pdf = pdf.PdfPages("sin_map_output.pdf")
     for i in numpy.arange(0.1, 5.0, 0.1):
-        pdf.savefig(plot_sin_map(i, .02, 30).gcf())
+        pdf.savefig(plot_sin_map(i, 0.02, 30).gcf())
         plt.clf()
     pdf.close()

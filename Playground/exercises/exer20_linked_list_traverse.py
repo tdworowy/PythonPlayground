@@ -41,7 +41,7 @@ class Solution:
         if root is None:
             return
         if level == 1:
-            print(root.data, end=' ')
+            print(root.data, end=" ")
         elif level > 1:
             self.print_given_level(root.left, level - 1)
             self.print_given_level(root.right, level - 1)

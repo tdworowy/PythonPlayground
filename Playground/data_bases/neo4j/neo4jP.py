@@ -5,7 +5,9 @@ from neo4j import GraphDatabase, basic_auth
 
 class Neo:
     def __init__(self):
-        self.driver = GraphDatabase.driver("bolt://localhost:7687", auth=basic_auth("neo4j", "test10"))
+        self.driver = GraphDatabase.driver(
+            "bolt://localhost:7687", auth=basic_auth("neo4j", "test10")
+        )
 
     def clear_base(self):
         session = self.driver.session()
@@ -16,15 +18,16 @@ class Neo:
         session = self.driver.session()
         print("Create Persons with data: ", people_list)
         for person in people_list:
-            session.run("CREATE (a:Person{FirstName: {fname}, LastName: {lname}})",
-                        {"fname": person[0], "lname": person[1]})
+            session.run(
+                "CREATE (a:Person{FirstName: {fname}, LastName: {lname}})",
+                {"fname": person[0], "lname": person[1]},
+            )
 
     def create_shows(self, shows_list):
         session = self.driver.session()
         print("Create Show with data: ", shows_list)
         for show in shows_list:
-            session.run("CREATE (a:Show {Title: {title}})",
-                        {"title": show})
+            session.run("CREATE (a:Show {Title: {title}})", {"title": show})
 
     def create_groups(self):
         session = self.driver.session()
@@ -36,8 +39,13 @@ class Neo:
         result_list = []
         session = self.driver.session()
         for person in people_List:
-            query = "MATCH (a:Person) WHERE a.FirstName =" + "\"" + person[
-                0] + "\"" + " RETURN a.FirstName AS FirstName, a.LastName AS LastName"
+            query = (
+                "MATCH (a:Person) WHERE a.FirstName ="
+                + '"'
+                + person[0]
+                + '"'
+                + " RETURN a.FirstName AS FirstName, a.LastName AS LastName"
+            )
             print(query)
             result = session.run(query)
             result_list.append(result)
@@ -51,7 +59,13 @@ class Neo:
 
     def add_character_relations(self, person_first_name, show):
         session = self.driver.session()
-        query = "MATCH (p:Person {FirstName:'" + person_first_name + "'}), (s:Show {Title:'" + show + "'})CREATE (p)-[:CHARACTER_FROM]->(s)"
+        query = (
+            "MATCH (p:Person {FirstName:'"
+            + person_first_name
+            + "'}), (s:Show {Title:'"
+            + show
+            + "'})CREATE (p)-[:CHARACTER_FROM]->(s)"
+        )
         print(query)
         session.run(query)
 
@@ -59,20 +73,32 @@ class Neo:
 
         for person in people:
             session = self.driver.session()
-            query = "MATCH (p:Person {FirstName:'" + person[
-                0] + "'}), (g:Group {Name:'Persons'})CREATE (p)-[:BELONGS_TO_GROUP]->(g)"
+            query = (
+                "MATCH (p:Person {FirstName:'"
+                + person[0]
+                + "'}), (g:Group {Name:'Persons'})CREATE (p)-[:BELONGS_TO_GROUP]->(g)"
+            )
             print(query)
             session.run(query)
 
         for show in shows:
             session = self.driver.session()
-            query = "MATCH (s:Show {Title:'" + show + "'}), (g:Group {Name:'Shows'})CREATE (s)-[:BELONGS_TO_GROUP]->(g)"
+            query = (
+                "MATCH (s:Show {Title:'"
+                + show
+                + "'}), (g:Group {Name:'Shows'})CREATE (s)-[:BELONGS_TO_GROUP]->(g)"
+            )
             print(query)
             session.run(query)
 
 
 def main():
-    people = [("Homer", "Simpson"), ("Rick", "Sanchez"), ("Morty", "Sanchez"), ("Sterling", "Archer")]
+    people = [
+        ("Homer", "Simpson"),
+        ("Rick", "Sanchez"),
+        ("Morty", "Sanchez"),
+        ("Sterling", "Archer"),
+    ]
     shows = ["Rick & Morty", "Simpsons", "Archer"]
 
     neo4j_ = Neo()

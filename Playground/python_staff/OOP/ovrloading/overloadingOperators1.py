@@ -1,4 +1,4 @@
-class OverloadingClass():
+class OverloadingClass:
     def __init__(self, value):
         self.data = value
 
@@ -15,12 +15,12 @@ class OverloadingClass():
         print("Value: %s" % self.data)
 
 
-if __name__ == '__main__':
-    a = OverloadingClass('abc')
+if __name__ == "__main__":
+    a = OverloadingClass("abc")
     a.display()
     print(a)
 
-    b = a + 'xyz'
+    b = a + "xyz"
     b.display()
     print(b)
 

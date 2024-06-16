@@ -15,7 +15,7 @@ class Numbers2:
         return Numbers2(self.val + other)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     x = Numbers(5)
     x += 1
     x += 1

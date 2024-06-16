@@ -1,6 +1,6 @@
 def show(f):
     def warp(*args, **kwds):
-        print('Run:', f.__name__)
+        print("Run:", f.__name__)
         return f(*args, **kwds)
 
     return warp

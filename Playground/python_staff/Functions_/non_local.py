@@ -21,15 +21,15 @@ def tester2(start):
 if __name__ == "__main__":
     F = tester1(0)
 
-    print(F('Spam'))
-    print(F('Dupa'))
+    print(F("Spam"))
+    print(F("Dupa"))
 
     F = tester2(0)
-    print(F('Spam'))
-    print(F('Dupa'))
+    print(F("Spam"))
+    print(F("Dupa"))
 
     G = tester2(50)
-    print(G('Spam'))
-    print(G('Dupa'))
+    print(G("Spam"))
+    print(G("Dupa"))
 
-    print(F('AAAA'))
+    print(F("AAAA"))

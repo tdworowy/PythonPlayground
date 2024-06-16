@@ -30,7 +30,9 @@ def check_magazine(magazine, note):
         threads = []
         que = Queue()
         for partition in partitions(note, 30):
-            thread = threading.Thread(target=lambda q: q.put(check(partition, magazine)), args=(que,))
+            thread = threading.Thread(
+                target=lambda q: q.put(check(partition, magazine)), args=(que,)
+            )
             thread.start()
             threads.append(thread)
         for thr in threads:

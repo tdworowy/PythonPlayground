@@ -1,4 +1,4 @@
-def f(ham: str, eggs: str = 'eggs') -> str:
+def f(ham: str, eggs: str = "eggs") -> str:
     pass
 
 

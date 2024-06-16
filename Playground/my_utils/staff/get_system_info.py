@@ -1,6 +1,7 @@
 import os
 import re
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     drivers = re.findall(r"[A-Z]+:.*$", os.popen("mountvol /").read(), re.MULTILINE)
     print(drivers)
 

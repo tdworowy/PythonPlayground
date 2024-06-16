@@ -6,10 +6,12 @@ def min_max(test, *args):
     return res
 
 
-def less_than(x, y): return x < y
+def less_than(x, y):
+    return x < y
 
 
-def grtr_than(x, y): return x > y
+def grtr_than(x, y):
+    return x > y
 
 
 if __name__ == "__main__":

@@ -14,10 +14,10 @@ class InitOnAccess:
         return self._initialized
 
 
-if __name__ == '__main__':
-    class MyClass:
-        lazily_initilized = InitOnAccess(list, 'Argument')
+if __name__ == "__main__":
 
+    class MyClass:
+        lazily_initilized = InitOnAccess(list, "Argument")
 
     m = MyClass()
     print(m.lazily_initilized)

@@ -73,7 +73,12 @@ if __name__ == "__main__":
     dices2 = [[1, 1, 2, 4, 5, 7], [1, 2, 2, 3, 4, 7], [1, 2, 3, 4, 5, 6]]
     best_dice = find_the_best_dice(dices2)
     assert best_dice == 2
-    dices3 = [[3, 3, 3, 3, 3, 3], [6, 6, 2, 2, 2, 2], [4, 4, 4, 4, 0, 0], [5, 5, 5, 1, 1, 1]]
+    dices3 = [
+        [3, 3, 3, 3, 3, 3],
+        [6, 6, 2, 2, 2, 2],
+        [4, 4, 4, 4, 0, 0],
+        [5, 5, 5, 1, 1, 1],
+    ]
     best_dice = find_the_best_dice(dices3)
     assert best_dice == -1
 
@@ -82,6 +87,6 @@ if __name__ == "__main__":
     assert best_dice == 0
 
     input = [[1, 1, 4, 6, 7, 8], [2, 2, 2, 6, 7, 7], [3, 3, 3, 5, 5, 8]]
-    excepted = {'choose_first': False, 0: 1, 2: 0, 1: 2}
+    excepted = {"choose_first": False, 0: 1, 2: 0, 1: 2}
     output = compute_strategy(input)
     assert output == excepted

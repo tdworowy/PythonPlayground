@@ -15,8 +15,20 @@ def print_time(threadName, delay):
 if __name__ == "__main__":
 
     try:
-        _thread.start_new_thread(print_time, ("Thread-1", 2,))
-        _thread.start_new_thread(print_time, ("Thread-2", 4,))
+        _thread.start_new_thread(
+            print_time,
+            (
+                "Thread-1",
+                2,
+            ),
+        )
+        _thread.start_new_thread(
+            print_time,
+            (
+                "Thread-2",
+                4,
+            ),
+        )
     except Exception:
         print("Error: unable to start thread")
 

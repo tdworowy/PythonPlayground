@@ -1,4 +1,5 @@
 """Find point of rotation """
+
 import math
 
 

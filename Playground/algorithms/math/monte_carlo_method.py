@@ -23,17 +23,19 @@ def monte_carlo_method(sample_size: int, square_size: int):
     points_inside_circle = 0
     points_inside_square = 0
 
-    plt.axes().set_aspect('equal')
+    plt.axes().set_aspect("equal")
     plt.plot(1 * np.cos(arc), 1 * np.sin(arc))
 
     for i in range(sample_size):
         point = generate_point(square_size)
-        plt.plot(point[0], point[1], 'c.')
+        plt.plot(point[0], point[1], "c.")
         points_inside_square += 1
         if is_in_circle(point, square_size):
             points_inside_circle += 1
 
-    print(f"Approximate value of pi is {compute_pi(points_inside_circle, points_inside_square)}")
+    print(
+        f"Approximate value of pi is {compute_pi(points_inside_circle, points_inside_square)}"
+    )
     plt.show()
 
 

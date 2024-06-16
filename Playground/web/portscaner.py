@@ -4,11 +4,12 @@ from Playground.my_utils.staff.decorators import catch_exception
 
 
 @catch_exception
-def scan_host(host, port,debug=False):
+def scan_host(host, port, debug=False):
     s = socket(AF_INET, SOCK_STREAM)
     code = s.connect_ex((host, port))
     s.close()
-    if debug: print("Port checked: %s response %s" % (port, code))
+    if debug:
+        print("Port checked: %s response %s" % (port, code))
     return port, code
 
 
@@ -26,6 +27,6 @@ def scan_ports(host, min, max):
     return [x[0] for x in results if x[1] == 0]
 
 
-if __name__ == '__main__':
-    open_ports = scan_ports('127.0.0.1', 8080, 8080)
+if __name__ == "__main__":
+    open_ports = scan_ports("127.0.0.1", 8080, 8080)
     print("Open Ports:", open_ports)

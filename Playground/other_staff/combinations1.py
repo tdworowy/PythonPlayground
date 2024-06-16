@@ -7,4 +7,3 @@ if __name__ == "__main__":
         if x.count(1) == x.count(0):
             i += 1
     print(i)
-

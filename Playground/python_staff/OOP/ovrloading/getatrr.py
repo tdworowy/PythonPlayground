@@ -1,6 +1,6 @@
 class Empty:
     def __getattr__(self, item):
-        if item == 'age':
+        if item == "age":
             return "Age is: 40"
         else:
             raise ArithmeticError(item)
@@ -11,7 +11,7 @@ class Test:
         return "Test"
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     x = Empty()
     print(x.age)
     x.name = "Test"

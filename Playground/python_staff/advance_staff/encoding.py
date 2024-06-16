@@ -1,5 +1,5 @@
-#-*- coding: latin-1 -*-
+# -*- coding: latin-1 -*-
 if __name__ == "__main__":
 
-    s = 'ייי'
+    s = "ייי"
     print(s)

@@ -30,7 +30,7 @@ def myzip5(*args):
 
 
 if __name__ == "__main__":
-    s1, s2 = 'abc', 'def'
+    s1, s2 = "abc", "def"
 
     print(myzip(s1, s2))
     print(list(myzip2(s1, s2)))

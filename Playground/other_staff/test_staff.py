@@ -8,6 +8,7 @@ class TestStaff:
     def generate_functions(self):
         funcs = {}
         for i in range(3):
+
             def fun():
                 self.prt()
 

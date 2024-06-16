@@ -50,16 +50,22 @@ def test2():
 
 
 def test3():
-    objgraph.show_refs(example2(), filename="obj3.png", refcounts=True, max_depth=5, too_many=10)
+    objgraph.show_refs(
+        example2(), filename="obj3.png", refcounts=True, max_depth=5, too_many=10
+    )
 
 
 def test4():
     """Take lot of time"""
-    objgraph.show_refs(example3(), filename="obj4.png", refcounts=True, max_depth=10, too_many=100)
+    objgraph.show_refs(
+        example3(), filename="obj4.png", refcounts=True, max_depth=10, too_many=100
+    )
 
 
 def test5():
-    objgraph.show_refs(example3(), filename="obj5.png", refcounts=True, max_depth=10, too_many=20)
+    objgraph.show_refs(
+        example3(), filename="obj5.png", refcounts=True, max_depth=10, too_many=20
+    )
 
 
 if __name__ == "__main__":

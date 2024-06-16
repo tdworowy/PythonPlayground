@@ -13,7 +13,7 @@ def fast_modular_exponentiation(b, e, m):
         n = n + str(e % 2)
         e = int(e // 2)
     for i in range(len(n)):
-        if n[i] == '1':
+        if n[i] == "1":
             result *= fast_modular_exponentiation_(b, i, m)
         result = result % m
     return result

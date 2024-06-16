@@ -19,7 +19,7 @@ class Person:
         del self._name
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 
     homer = Person("Homer Simpson")
     print(homer.name)

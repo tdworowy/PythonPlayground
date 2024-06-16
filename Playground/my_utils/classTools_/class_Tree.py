@@ -10,21 +10,27 @@ def instance_tree(inst):
 
 
 def self_test():
-    class A: pass
+    class A:
+        pass
 
-    class B(A): pass
+    class B(A):
+        pass
 
-    class C(A): pass
+    class C(A):
+        pass
 
-    class D(B, C): pass
+    class D(B, C):
+        pass
 
-    class E: pass
+    class E:
+        pass
 
-    class F(D, E): pass
+    class F(D, E):
+        pass
 
     instance_tree(B())
     instance_tree(F())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     self_test()

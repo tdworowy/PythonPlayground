@@ -13,7 +13,16 @@ def get_graph(coordinates: list) -> nx.Graph:
     n = len(coordinates)
     for i in range(n):
         for j in range(i + 1):
-            g.add_edge(i, j, weight=dist(coordinates[i][0], coordinates[i][1], coordinates[j][0], coordinates[j][1]))
+            g.add_edge(
+                i,
+                j,
+                weight=dist(
+                    coordinates[i][0],
+                    coordinates[i][1],
+                    coordinates[j][0],
+                    coordinates[j][1],
+                ),
+            )
     return g
 
 
@@ -21,8 +30,8 @@ def cycle_length(g: nx.Graph, cycle: list) -> int:
     assert len(cycle) == g.number_of_nodes()
     weights = 0
     for i in range(len(cycle) - 1):
-        weights += g[cycle[i]][cycle[i + 1]]['weight']
-    weights += g[cycle[-1]][cycle[0]]['weight']
+        weights += g[cycle[i]][cycle[i + 1]]["weight"]
+    weights += g[cycle[-1]][cycle[0]]["weight"]
     return weights
 
 
@@ -35,7 +44,7 @@ def brute_force(g: nx.Graph) -> int:
 def average(g: nx.Graph) -> float:
     n = g.number_of_nodes()
 
-    sum_of_weights = sum(g[i][j]['weight'] for i in range(n) for j in range(i))
+    sum_of_weights = sum(g[i][j]["weight"] for i in range(n) for j in range(i))
     return 2 * sum_of_weights / (n - 1)
 
 
@@ -50,56 +59,69 @@ def nearest_neighbors(g: nx.Graph) -> int:
 
         for v in g.nodes():
             if g.has_edge(current_node, v) and v not in path:
-                if g[current_node][v]['weight'] < min_edge:
-                    min_edge = g[current_node][v]['weight']
+                if g[current_node][v]["weight"] < min_edge:
+                    min_edge = g[current_node][v]["weight"]
                     next_node = v
 
         assert next_node is not None
         path.append(next_node)
         current_node = next_node
 
-    weight = sum(g[path[i]][path[i + 1]]['weight'] for i in range(g.number_of_nodes() - 1))
-    weight += g[path[-1]][path[0]]['weight']
+    weight = sum(
+        g[path[i]][path[i + 1]]["weight"] for i in range(g.number_of_nodes() - 1)
+    )
+    weight += g[path[-1]][path[0]]["weight"]
     return weight
 
 
 def lower_bound(g: nx.Graph, sub_cycle: list) -> int:
-    current_weight = sum([g[sub_cycle[i]][sub_cycle[i + 1]]['weight'] for i in range(len(sub_cycle) - 1)])
+    current_weight = sum(
+        [g[sub_cycle[i]][sub_cycle[i + 1]]["weight"] for i in range(len(sub_cycle) - 1)]
+    )
 
     unused = [v for v in g.nodes() if v not in sub_cycle]
     h = g.subgraph(unused)
 
     t = list(nx.minimum_spanning_edges(h))
-    mst_weight = sum([h.get_edge_data(e[0], e[1])['weight'] for e in t])
+    mst_weight = sum([h.get_edge_data(e[0], e[1])["weight"] for e in t])
 
     if len(sub_cycle) == 0 or len(sub_cycle) == g.number_of_nodes():
         return mst_weight + current_weight
 
     s = sub_cycle[0]
     t = sub_cycle[-1]
-    min_to_s_weight = min([g[v][s]['weight'] for v in g.nodes() if v not in sub_cycle])
-    min_from_t_weight = min([g[t][v]['weight'] for v in g.nodes() if v not in sub_cycle])
+    min_to_s_weight = min([g[v][s]["weight"] for v in g.nodes() if v not in sub_cycle])
+    min_from_t_weight = min(
+        [g[t][v]["weight"] for v in g.nodes() if v not in sub_cycle]
+    )
 
     return current_weight + min_from_t_weight + mst_weight + min_to_s_weight
 
 
-def branch_and_bound(g: nx.Graph, sub_cycle: list = None, current_min: float = float("inf")) -> int:
+def branch_and_bound(
+    g: nx.Graph, sub_cycle: list = None, current_min: float = float("inf")
+) -> int:
     if sub_cycle is None:
         sub_cycle = [0]
 
     if len(sub_cycle) == g.number_of_nodes():
-        weight = sum([g[sub_cycle[i]][sub_cycle[i + 1]]['weight'] for i in range(len(sub_cycle) - 1)])
-        weight = weight + g[sub_cycle[-1]][sub_cycle[0]]['weight']
+        weight = sum(
+            [
+                g[sub_cycle[i]][sub_cycle[i + 1]]["weight"]
+                for i in range(len(sub_cycle) - 1)
+            ]
+        )
+        weight = weight + g[sub_cycle[-1]][sub_cycle[0]]["weight"]
         return weight
 
     unused_nodes = list()
     for v in g.nodes():
         if v not in sub_cycle:
-            unused_nodes.append((g[sub_cycle[-1]][v]['weight'], v))
+            unused_nodes.append((g[sub_cycle[-1]][v]["weight"], v))
 
     unused_nodes = sorted(unused_nodes)
 
-    for (d, v) in unused_nodes:
+    for d, v in unused_nodes:
         assert v not in sub_cycle
         extended_subcycle = sub_cycle[:]
         extended_subcycle.append(v)
@@ -122,7 +144,7 @@ def dynamic_programming(g: nx.Graph) -> int:
     power = powerset(range(1, n))
     T = {}
     for i in range(1, n):
-        T[(i,), i] = g[0][i]['weight']
+        T[(i,), i] = g[0][i]["weight"]
 
     for s in power:
         if len(s) > 1:
@@ -130,7 +152,7 @@ def dynamic_programming(g: nx.Graph) -> int:
                 t = tuple([x for x in s if x != i])
                 # TODO
 
-    return min(T[tuple(range(1, n)), i] + g[i][0]['weight'] for i in range(1, n))
+    return min(T[tuple(range(1, n)), i] + g[i][0]["weight"] for i in range(1, n))
 
 
 def approximation(g: nx.Graph) -> float:
@@ -156,8 +178,8 @@ if __name__ == "__main__":
     cycle1 = [0, 1, 2, 3]
     cycle2 = [0, 2, 1, 3]
 
-    assert (cycle_length(g, cycle1) == 8)
-    assert (cycle_length(g, cycle2) == 6)
+    assert cycle_length(g, cycle1) == 8
+    assert cycle_length(g, cycle2) == 6
 
     print(brute_force(g))
     print(average(g))
@@ -165,8 +187,19 @@ if __name__ == "__main__":
     print(branch_and_bound(g))
     # print(dynamic_programming(g))
 
-    coordinates = [(181, 243), (101, 143), (100, 216), (167, 15), (37, 201), (163, 226), (2, 42), (35, 73), (85, 116),
-                   (142, 235), (200, 18)]
+    coordinates = [
+        (181, 243),
+        (101, 143),
+        (100, 216),
+        (167, 15),
+        (37, 201),
+        (163, 226),
+        (2, 42),
+        (35, 73),
+        (85, 116),
+        (142, 235),
+        (200, 18),
+    ]
     optimal_cycle = [0, 5, 9, 2, 4, 1, 8, 7, 6, 3, 10]
     g = get_graph(coordinates)
     print(approximation(g))

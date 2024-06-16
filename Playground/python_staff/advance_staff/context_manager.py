@@ -1,16 +1,16 @@
 class TraceBlock:
-    def message(self,arg):
-        print("Executing",arg)
+    def message(self, arg):
+        print("Executing", arg)
 
     def __enter__(self):
         print("Start with block")
-        return  self
+        return self
 
     def __exit__(self, exc_type, exc_val, exc_tb):
         if exc_type is None:
             print("Normal exit \n")
         else:
-            print("Exception raised" , exc_type)
+            print("Exception raised", exc_type)
             return False
 
 

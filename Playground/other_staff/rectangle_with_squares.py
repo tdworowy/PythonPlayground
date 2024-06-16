@@ -13,7 +13,7 @@ def squares(n, m):
     if _gtc == 1:
         return n * m
     else:
-        return n * m / _gtc ** 2
+        return n * m / _gtc**2
 
 
 assert squares(2, 2) == 1

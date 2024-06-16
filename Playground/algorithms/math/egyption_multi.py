@@ -13,7 +13,8 @@ def accumulate_multi(res, number1, number2):
     while 1:
         if odd(number1):
             res = res + number2
-            if number1 == 1: return res
+            if number1 == 1:
+                return res
         number1 = half(number1)
         number2 = number2 + number2
 
@@ -24,7 +25,8 @@ def multi(number1, number2):
     while not odd(number1):
         number2 = number2 + number2
         number1 = half(number1)
-    if number1 == 1: return number2
+    if number1 == 1:
+        return number2
     return accumulate_multi(number2, half(number1 - 1), number2 + number2)
 
 
@@ -40,14 +42,15 @@ class MultiTests(unittest.TestCase):
 
 
 if __name__ == "__main__":
-    args = [(9, 9, 81),
-            (99, 99, 9801),
-            (1, 99, 99),
-            (99, 1, 99),
-            (1, 1, 1),
-            (5, 9, 45),
-            (9, 5, 45)
-            ]
+    args = [
+        (9, 9, 81),
+        (99, 99, 9801),
+        (1, 99, 99),
+        (99, 1, 99),
+        (1, 1, 1),
+        (5, 9, 45),
+        (9, 5, 45),
+    ]
 
     MultiTests.args = args
     unittest.main()

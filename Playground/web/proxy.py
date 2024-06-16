@@ -5,12 +5,12 @@ import sys
 
 def proxy_thread(conn):
     max_data = 4096
-    request = (conn.recv(max_data))
+    request = conn.recv(max_data)
     request_str = str(request)
     print(request_str)
-    first_line = request_str.split('n')[0]
+    first_line = request_str.split("n")[0]
     print("first_line:", first_line)
-    url = first_line.split(' ')[1]
+    url = first_line.split(" ")[1]
     print("URL:", url)
     url2 = url[7:]
 
@@ -25,11 +25,11 @@ def proxy_thread(conn):
     print("webserver_pos: ", webserver_pos)
     webserver = ""
 
-    if (port_pos == -1 or webserver_pos < port_pos):
+    if port_pos == -1 or webserver_pos < port_pos:
         port = 80
         webserver = url2[:webserver_pos]  # TODO
     else:
-        port = int((url2[(port_pos + 1):])[:webserver_pos - port_pos - 1])
+        port = int((url2[(port_pos + 1) :])[: webserver_pos - port_pos - 1])
         webserver = url2[:port_pos]
     print("Connect to:", webserver, port)
 
@@ -42,7 +42,7 @@ def proxy_thread(conn):
         while 1:
             data = s.recv(max_data)
             print(str(data))
-            if (len(data) > 0):
+            if len(data) > 0:
                 conn.send(data)
             else:
                 break
@@ -79,5 +79,5 @@ def main():
         _thread.start_new_thread(proxy_thread, (conn, client_addr))  # TODO Check
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

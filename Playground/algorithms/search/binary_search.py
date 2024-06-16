@@ -22,7 +22,7 @@ def binary_search(list_: list, item):
     return False
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     list_ = [randint(0, 10000) for x in range(100000)]
     list_.sort()
     print(binary_search(list_, 500))

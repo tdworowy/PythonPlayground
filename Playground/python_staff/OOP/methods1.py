@@ -3,7 +3,7 @@ class Class:
         print("I'm a method")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     obj = Class()
 
     x = obj.method

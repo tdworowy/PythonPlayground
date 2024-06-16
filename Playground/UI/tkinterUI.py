@@ -13,7 +13,9 @@ class GUI:
         self.btn_text = tkinter.StringVar(master)
         self.btn_text.set("Display Rectangle")
         self.canvas = tkinter.Canvas(master, width=self.width, height=self.height)
-        self.button = tkinter.Button(master, textvariable=self.btn_text, command=self.call_back)
+        self.button = tkinter.Button(
+            master, textvariable=self.btn_text, command=self.call_back
+        )
         self.entryW = tkinter.Entry(master)
         self.entryH = tkinter.Entry(master)
 
@@ -24,7 +26,12 @@ class GUI:
         try:
             x = 50
             y = 25
-            dic = {'x': x, 'y': y, 'x1': int(self.entryW.get()) + x, 'y1': int(self.entryH.get()) + y}
+            dic = {
+                "x": x,
+                "y": y,
+                "x1": int(self.entryW.get()) + x,
+                "y1": int(self.entryH.get()) + y,
+            }
             return dic
 
         except Exception as ex:
@@ -34,8 +41,13 @@ class GUI:
         try:
             if not self.flag:
                 coordinate = self.rectangle_coordinates()
-                self.rectangle = self.canvas.create_rectangle(coordinate['x'], coordinate['y'], coordinate['x1'],
-                                                              coordinate['y1'], fill="blue")
+                self.rectangle = self.canvas.create_rectangle(
+                    coordinate["x"],
+                    coordinate["y"],
+                    coordinate["x1"],
+                    coordinate["y1"],
+                    fill="blue",
+                )
 
                 self.flag = True
                 self.btn_text.set("Hide Rectangle")

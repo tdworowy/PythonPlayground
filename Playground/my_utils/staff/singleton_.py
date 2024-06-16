@@ -38,7 +38,8 @@ class Singleton3:
         return self.instances
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
+
     @singleton
     class X:
         def __init__(self, value):
@@ -47,9 +48,8 @@ if __name__ == '__main__':
         def getvalue(self):
             print(self.value)
 
-
     # will create only one instance
-    x = X('z')
+    x = X("z")
     x.getvalue()
-    y = X('a')
+    y = X("a")
     y.getvalue()

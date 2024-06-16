@@ -13,7 +13,7 @@ class NewProps:
     age = property(get_age, set_age, None, None)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     x = NewProps()
     print(x.age)
     x.age = 2

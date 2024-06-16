@@ -1,8 +1,7 @@
-
 def prime_number(*numbers):
     for number in numbers:
-        x = number //2
-        while x >1:
+        x = number // 2
+        while x > 1:
             if number % x == 0:
                 print(number, "divide by", x)
                 break

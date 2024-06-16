@@ -25,7 +25,7 @@ class Manager(Person):
 
 class Manager2:
     def __init__(self, name, pay):
-        self.person = Person(name, 'Manager', pay)
+        self.person = Person(name, "Manager", pay)
 
     def giveRaise(self, precent, bonus=10):
         self.person.give_raise(precent + bonus)
@@ -72,5 +72,5 @@ def test1():
     team.showAll()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test1()

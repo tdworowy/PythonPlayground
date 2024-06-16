@@ -1,4 +1,7 @@
-from Playground.python_staff.OOP.example.example2_pizza.empoyees import Server, PizzaRobot
+from Playground.python_staff.OOP.example.example2_pizza.empoyees import (
+    Server,
+    PizzaRobot,
+)
 
 
 class Customer:
@@ -19,8 +22,8 @@ class Oven:
 
 class PizzaShop:
     def __init__(self):
-        self.server = Server('ServerName1')
-        self.chef = PizzaRobot('Robert')
+        self.server = Server("ServerName1")
+        self.chef = PizzaRobot("Robert")
         self.over = Oven()
 
     def order(self, name):
@@ -31,8 +34,8 @@ class PizzaShop:
         customer.pay(self.server)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     scene = PizzaShop()
     scene.order("Homer")
-    print('....')
-    scene.order('Bojack')
+    print("....")
+    scene.order("Bojack")

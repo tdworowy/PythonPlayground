@@ -12,5 +12,5 @@ class Tests(unittest.TestCase):
         self.assertTrue(self.con is not None)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

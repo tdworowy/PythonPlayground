@@ -53,18 +53,11 @@ def forming_magic_square(square: list) -> int:
     return int(min(all_costs))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # print(generate_all_magic_squares(3))
-    s1 = [
-        [5, 3, 4],
-        [1, 5, 8],
-        [6, 4, 2]
-    ]
+    s1 = [[5, 3, 4], [1, 5, 8], [6, 4, 2]]
     result = forming_magic_square(s1)
     print(result)  # 7
-    s2 = [
-        [2.0, 7.0, 6.0],
-        [9.0, 5.0, 1.0],
-        [4.0, 3.0, 8.0]]
+    s2 = [[2.0, 7.0, 6.0], [9.0, 5.0, 1.0], [4.0, 3.0, 8.0]]
     result = forming_magic_square(s2)
     print(result)  # 0

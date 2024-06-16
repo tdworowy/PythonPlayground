@@ -13,7 +13,8 @@ def fizzbuzz1():
 def fizzbuzz2():
     s = ""
     for i in range(1, 100):
-        if i % 3 == 0: s += "Fizz"
+        if i % 3 == 0:
+            s += "Fizz"
         if i % 5 == 0:
             s += "Buzz"
         else:
@@ -27,28 +28,58 @@ def fizzbuzz3():
 
 
 def fizzbuzz4():
-    fizzbuzz = ["FizzBuzz" if i % 3 == 0 and i % 5 == 0 else "Fizz" if i % 3 == 0 else "Buzz" if i % 5 == 0 else i for i
-                in range(1, 100)]
+    fizzbuzz = [
+        (
+            "FizzBuzz"
+            if i % 3 == 0 and i % 5 == 0
+            else "Fizz" if i % 3 == 0 else "Buzz" if i % 5 == 0 else i
+        )
+        for i in range(1, 100)
+    ]
     return fizzbuzz
 
 
 def fizzbuzz5():
-    fizzbuzz = ("FizzBuzz" if i % 3 == 0 and i % 5 == 0 else "Fizz" if i % 3 == 0 else "Buzz" if i % 5 == 0 else i for i
-                in range(1, 100))
+    fizzbuzz = (
+        (
+            "FizzBuzz"
+            if i % 3 == 0 and i % 5 == 0
+            else "Fizz" if i % 3 == 0 else "Buzz" if i % 5 == 0 else i
+        )
+        for i in range(1, 100)
+    )
     return fizzbuzz
 
 
 def fizzbuzz6():
     fizzbuzz = map(
-        (lambda i: "FizzBuzz" if i % 3 == 0 and i % 5 == 0 else "Fizz" if i % 3 == 0 else "Buzz" if i % 5 == 0 else i),
-        range(1, 100))
+        (
+            lambda i: (
+                "FizzBuzz"
+                if i % 3 == 0 and i % 5 == 0
+                else "Fizz" if i % 3 == 0 else "Buzz" if i % 5 == 0 else i
+            )
+        ),
+        range(1, 100),
+    )
     print(list(fizzbuzz))
 
 
 def fizzbuzz7():
-    print(list(map(
-        (lambda i: "FizzBuzz" if i % 3 == 0 and i % 5 == 0 else "Fizz" if i % 3 == 0 else "Buzz" if i % 5 == 0 else i),
-        range(1, 100))))
+    print(
+        list(
+            map(
+                (
+                    lambda i: (
+                        "FizzBuzz"
+                        if i % 3 == 0 and i % 5 == 0
+                        else "Fizz" if i % 3 == 0 else "Buzz" if i % 5 == 0 else i
+                    )
+                ),
+                range(1, 100),
+            )
+        )
+    )
 
 
 def fizzbuzz8():
@@ -56,7 +87,14 @@ def fizzbuzz8():
 
 
 def fizzbuzz9():
-    print(list(map((lambda i: "Fizz" * (not i % 3) + "Buzz" * (not i % 5) or i), range(1, 100))))
+    print(
+        list(
+            map(
+                (lambda i: "Fizz" * (not i % 3) + "Buzz" * (not i % 5) or i),
+                range(1, 100),
+            )
+        )
+    )
 
 
 if __name__ == "__main__":

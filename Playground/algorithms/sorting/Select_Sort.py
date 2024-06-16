@@ -25,7 +25,7 @@ def select_sort2(list_: list) -> list:
     return list_
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     list_sort = [randint(0, 10000) for x in range(10000)]
     sorted_list1 = select_sort1(list_sort[:])
     sorted_list2 = select_sort2(list_sort[:])

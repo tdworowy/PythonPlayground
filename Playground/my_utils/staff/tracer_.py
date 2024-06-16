@@ -12,18 +12,19 @@ def tracer(aClass):
     return Wrapper
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
+
     @tracer
     class Spam:
         def display(self):
-            print('SPAM')
+            print("SPAM")
 
     x = Spam()
     y = Spam()
     x.display()
     x.display()
     y.display()
-    x.test = 'Test'
+    x.test = "Test"
     print(x.test)
     print(x.fetches)
     print(y.fetches)

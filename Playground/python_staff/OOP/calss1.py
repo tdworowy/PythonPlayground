@@ -23,14 +23,14 @@ class klas1:
             print("Test")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     f = tester(0)
-    f.nested('spam')
-    f.nested('dupa')
+    f.nested("spam")
+    f.nested("dupa")
 
     g = tester(33)
     g.nested("spam2")
-    f.nested('dupa2')
+    f.nested("dupa2")
 
     print(f.sate)
     print(g.sate)

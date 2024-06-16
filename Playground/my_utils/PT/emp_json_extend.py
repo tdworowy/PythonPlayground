@@ -40,14 +40,16 @@ def extend_employ(file, range_):
     clean(file)
     add_string = ""
     for i in range(range_[0], range_[1]):
-        add_string = add_string + ToAppend.replace("employee{x}".format(x=range_[0]), "employee" + str(i))
+        add_string = add_string + ToAppend.replace(
+            "employee{x}".format(x=range_[0]), "employee" + str(i)
+        )
 
     add_string = "[" + add_string + " ]"
     file.write(add_string)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # file = open("C:/PLIKI/Load_tests/users_with_traits2.txt",'a')
-    file = open(get_root_directory() + "\\users_with_traits2.json", 'w+')
+    file = open(get_root_directory() + "\\users_with_traits2.json", "w+")
 
     extend_employ(file, (2500, 5000))

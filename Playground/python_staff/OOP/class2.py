@@ -1,7 +1,8 @@
-class rec: pass
+class rec:
+    pass
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     rec.test = "Test1"
     rec.a = 1
     rec.b = 2

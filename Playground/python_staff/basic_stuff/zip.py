@@ -5,8 +5,8 @@ if __name__ == "__main__":
 
     zpiList = list(zip(L1, L2))
 
-    for (x, y) in zpiList:
-        print(x, y, '--', x + y)
+    for x, y in zpiList:
+        print(x, y, "--", x + y)
 
     keys = ["spam", "eggs", "tost"]
     vals = [1, 3, 5]

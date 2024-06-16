@@ -1,5 +1,5 @@
 seplen = 60
-sepchr = '-'
+sepchr = "-"
 
 
 def listing(module, verbose=True):
@@ -11,8 +11,8 @@ def listing(module, verbose=True):
     count = 0
     for attr in module.__dict__:
         print("%02d) %s" % (count, attr), end=" ")
-        if attr.startswith('__'):
-            print('<built-in variable>')
+        if attr.startswith("__"):
+            print("<built-in variable>")
         else:
             print(getattr(module, attr))
         count += 1
@@ -23,7 +23,7 @@ def listing(module, verbose=True):
         print(sepline)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     import Modules
     import tkinter
 

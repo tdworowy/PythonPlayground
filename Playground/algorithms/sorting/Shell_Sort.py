@@ -26,7 +26,7 @@ def shell_sort(list_: list) -> list:
     return list_
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     list_ = [randint(0, 10000) for x in range(100000)]
     sorted_list = shell_sort(list_[:])
 

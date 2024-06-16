@@ -12,14 +12,20 @@ if __name__ == "__main__":
     print(next(I))
     print(next(I))
 
-    D = {'a': 1, 'b': 2, 'c': 3}
+    D = {"a": 1, "b": 2, "c": 3}
 
     for key in D:
         print(key, D[key])
 
-        f2 = open('testFile2.txt', 'r+')
+        f2 = open("testFile2.txt", "r+")
         for _ in range(1, 30):
-            print(''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(50)), file=f2)
+            print(
+                "".join(
+                    random.choice(string.ascii_uppercase + string.digits)
+                    for _ in range(50)
+                ),
+                file=f2,
+            )
         lines = f2.readlines()
         print(lines)
 
@@ -42,7 +48,8 @@ if __name__ == "__main__":
     print(next(M))
     print(next(M))
 
-    for x in M: print(x)
+    for x in M:
+        print(x)
 
     R = range(3)
     I1 = iter(R)

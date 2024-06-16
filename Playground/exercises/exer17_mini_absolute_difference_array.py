@@ -8,7 +8,7 @@ def minimum_absolute_difference(arr):
 
     for n in range(0, len(arr)):
         ele_i = arr[n]
-        for ele_j in arr[n + 1:]:
+        for ele_j in arr[n + 1 :]:
             abs_diffs.add(abs(ele_i - ele_j))
     return min(abs_diffs)
 
@@ -18,7 +18,7 @@ def minimum_absolute_difference2(arr):
 
     for n in range(0, len(arr)):
         ele_i = arr[n]
-        [abs_diffs.add(abs(ele_i - ele_j)) for ele_j in arr[n + 1:]]
+        [abs_diffs.add(abs(ele_i - ele_j)) for ele_j in arr[n + 1 :]]
     return min(abs_diffs)
 
 

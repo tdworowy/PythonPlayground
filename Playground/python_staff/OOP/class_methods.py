@@ -8,7 +8,7 @@ class Spam:
         print("Instances created: ", Spam.num_instances)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     x = Spam()
     y = Spam()
 
