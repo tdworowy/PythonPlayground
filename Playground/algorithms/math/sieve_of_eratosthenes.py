@@ -19,7 +19,7 @@ def is_prime1(number: int) -> bool:
     return number in list(primes_sieve(number))
 
 
-@timer3
+# @timer3
 def is_prime2(number: int) -> int:
     if number & 1 == 0:
         return 2
